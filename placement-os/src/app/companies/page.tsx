@@ -10,8 +10,8 @@ export default function CompaniesPage() {
   const companies = useDataStore((s) => s.companies);
 
   return (
-    <AppShell title="Companies" subtitle="From sheets/companies/profiles.csv">
-      <PageHeader title="Company Preparation Hub" description="Edit company rows in /sheets — auto-loaded on refresh" />
+    <AppShell title="Companies" subtitle="Research and prepare for target companies">
+      <PageHeader title="Company Preparation Hub" description="Explore company profiles, OA patterns, and hiring strategies for your target employers." />
       <div className="grid gap-4 sm:grid-cols-2">
         {companies.map((c, i) => (
           <Link key={c.slug} href={`/companies/${c.slug}`}>

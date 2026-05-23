@@ -92,7 +92,7 @@ export default function ProjectsPage() {
     <AppShell title="Projects Board" subtitle="Your primary hiring differentiator">
       <PageHeader 
         title="Technical Projects Board" 
-        description="For top-tier product roles, a polished, deployable project with active users beating standard DSA stats. Track your build milestones below." 
+        description="For top-tier product roles, a polished and deployable project with real users often outweighs standard DSA scores alone. Track your build milestones below." 
         action={
           <button 
             onClick={() => setShowAddForm(true)}

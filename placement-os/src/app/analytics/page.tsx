@@ -30,8 +30,8 @@ export default function AnalyticsPage() {
   ];
 
   return (
-    <AppShell title="Analytics" subtitle="Computed from sheet questions + your progress">
-      <PageHeader title="Analytics" description={`${questions.length} questions in sheet bank`} />
+    <AppShell title="Analytics" subtitle="Track your performance trends across all modules">
+      <PageHeader title="Performance Analytics" description={`${questions.length} questions in your study bank`} />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 mb-6">
         <GlassCard hover={false}><p className="text-xs text-zinc-500">Readiness</p><p className="text-2xl font-bold">{placementReadiness}%</p></GlassCard>
         <GlassCard hover={false}><p className="text-xs text-zinc-500">Solved</p><p className="text-2xl font-bold">{solved}/{total}</p></GlassCard>
@@ -40,7 +40,7 @@ export default function AnalyticsPage() {
       </div>
       <div className="grid gap-6 lg:grid-cols-2">
         <GlassCard hover={false}>
-          <h3 className="mb-4 font-semibold">Skills</h3>
+          <h3 className="mb-4 font-semibold">Skills Overview</h3>
           <div className="h-64 min-h-[16rem]">
             <ResponsiveContainer width="100%" height="100%" minHeight={256}>
               <BarChart data={areaData}><XAxis dataKey="area" stroke="#71717a" fontSize={10} /><YAxis domain={[0, 100]} stroke="#71717a" /><Tooltip /><Bar dataKey="score" fill="#22d3ee" radius={[6, 6, 0, 0]} /></BarChart>
@@ -48,7 +48,7 @@ export default function AnalyticsPage() {
           </div>
         </GlassCard>
         <GlassCard hover={false}>
-          <h3 className="mb-4 font-semibold">Status breakdown</h3>
+          <h3 className="mb-4 font-semibold">Problem Status Breakdown</h3>
           <div className="h-64 min-h-[16rem]">
             <ResponsiveContainer width="100%" height="100%" minHeight={256}>
               <PieChart>
@@ -62,7 +62,7 @@ export default function AnalyticsPage() {
         </GlassCard>
       </div>
       <GlassCard className="mt-6" hover={false}>
-        <h3 className="mb-4 font-semibold">Topic heatmap (sheet topics)</h3>
+        <h3 className="mb-4 font-semibold">Topic Progress Heatmap</h3>
         <ProgressHeatmap data={heatmap} />
       </GlassCard>
     </AppShell>

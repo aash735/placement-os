@@ -9,7 +9,7 @@ const habits = ["Sleep before 12", "Phone outside desk (focus)", "1 DSA block", 
 export default function HabitsPage() {
   return (
     <AppShell title="Habits" subtitle="Identity-based consistency">
-      <PageHeader title="Habit Tracker" description="Max 5 habits—more = failure" />
+      <PageHeader title="Habit Tracker" description="Track up to 5 daily habits. Fewer habits means higher consistency." />
       {habits.map((h, i) => (
         <GlassCard key={h} className="mb-2 flex items-center gap-3" delay={i * 0.03}>
           <input type="checkbox" className="h-4 w-4 rounded" />

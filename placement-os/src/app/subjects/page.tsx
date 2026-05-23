@@ -226,7 +226,7 @@ export default function SubjectsPage() {
   return (
     <AppShell title="CS Core Subjects" subtitle="High-yield placement theory revision">
       <PageHeader 
-        title="Core Computer Science revision" 
+        title="Core Computer Science Revision" 
         description="Interviewers focus heavily on DBMS, OS, CN, and OOP fundamentals to filter candidates. Complete the syllabus checklists below." 
       />
 
@@ -453,7 +453,7 @@ export default function SubjectsPage() {
                         {selectedOpt === activeQuizSubject.quiz[quizIdx].answer ? (
                           <span className="text-emerald-400 font-bold">✓ Correct!</span>
                         ) : (
-                          <span className="text-rose-400 font-bold">✗ Incorrect (Ans: {activeQuizSubject.quiz[quizIdx].answer})</span>
+                          <span className="text-rose-400 font-bold">✗ Incorrect &mdash; Correct answer: {activeQuizSubject.quiz[quizIdx].answer}</span>
                         )}
                       </div>
                       <p className="text-zinc-400">{activeQuizSubject.quiz[quizIdx].explanation}</p>
@@ -495,7 +495,7 @@ export default function SubjectsPage() {
 
                   {correctAnswersCount === activeQuizSubject.quiz.length ? (
                     <div className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] leading-relaxed">
-                      🎉 **Perfect score!** You have unlocked the subject completion status and gained **50 XP**! Keep studying!
+                      🎉 Perfect score! You have unlocked the subject completion status and earned 50 XP. Keep it up!
                     </div>
                   ) : (
                     <div className="p-3.5 rounded-xl bg-zinc-900 border border-white/5 text-zinc-400 text-[11px] leading-relaxed">

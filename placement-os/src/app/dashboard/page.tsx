@@ -376,7 +376,7 @@ export default function DashboardPage() {
       {/* NAVIGATION LINKS */}
       <div className="mt-8 border-t border-white/5 pt-6 flex flex-wrap gap-3">
         <Link href="/ai-mentor" className="btn-ghost text-xs font-semibold flex items-center gap-1">
-          <Brain className="h-3.5 w-3.5 text-violet-400" /> AI Mentors
+          <Brain className="h-3.5 w-3.5 text-violet-400" /> AI Mentor
         </Link>
         <Link href="/projects" className="btn-ghost text-xs font-semibold flex items-center gap-1">
           <Briefcase className="h-3.5 w-3.5 text-amber-400" /> Projects Board
@@ -385,7 +385,7 @@ export default function DashboardPage() {
           <BookOpen className="h-3.5 w-3.5 text-emerald-400" /> Core CS Tracker
         </Link>
         <Link href="/settings" className="btn-ghost text-xs font-semibold flex items-center gap-1">
-          <Layers className="h-3.5 w-3.5 text-zinc-400" /> Configurations
+          <Layers className="h-3.5 w-3.5 text-zinc-400" /> Settings
         </Link>
       </div>
     </AppShell>

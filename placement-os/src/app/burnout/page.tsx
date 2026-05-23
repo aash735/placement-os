@@ -10,9 +10,9 @@ export default function BurnoutPage() {
   const { setEnergyMode } = usePlacementStore();
   return (
     <AppShell title="Burnout Recovery" subtitle="Comeback system">
-      <PageHeader title="Recovery Mode" description="72-hour minimum recovery when: sleep broken, dread opening laptop, zero retention." />
+      <PageHeader title="Recovery Mode" description="A 72-hour minimum recovery period for when sleep is broken, you dread opening your laptop, or you're experiencing zero information retention." />
       <GlassCard hover={false}>
-        <h3 className="font-semibold">Recovery week protocol</h3>
+        <h3 className="font-semibold">Recovery Week Protocol</h3>
         <ul className="mt-3 space-y-2 text-sm text-zinc-300">
           <li>Day 1–2: No DSA. Walk + sleep + light project browsing only</li>
           <li>Day 3–4: 1 easy problem + 10 aptitude</li>

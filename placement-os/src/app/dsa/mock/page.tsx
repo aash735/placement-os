@@ -429,7 +429,7 @@ export default function MockTestPage() {
                         </div>
                         <h3 className="font-bold text-white mt-3 text-lg leading-tight">{mock.title}</h3>
                         <p className="text-xs text-zinc-500 mt-2 font-mono">
-                          {mock.questionIds.length} resolved questions
+                          {mock.questionIds.length} questions
                         </p>
                         {mock.companyTags.length > 0 && (
                           <div className="mt-2 flex gap-1">
@@ -446,7 +446,7 @@ export default function MockTestPage() {
                             <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400" /> Solved {new Date(record.completedAt).toLocaleDateString()}
                           </span>
                         ) : (
-                          <span className="text-[10px] text-zinc-500">Not attempted</span>
+                          <span className="text-[10px] text-zinc-500">Not started</span>
                         )}
                         <button 
                           type="button" 
@@ -461,7 +461,7 @@ export default function MockTestPage() {
                 })
               ) : (
                 <div className="col-span-full py-8 text-center text-zinc-500">
-                  No mock test configurations detected in mock-tests.csv
+                  No preset assessments available. Add entries to your mock-tests sheet to see them here.
                 </div>
               )}
             </div>
@@ -656,7 +656,7 @@ export default function MockTestPage() {
                 </div>
               ) : (
                 <GlassCard hover={false} className="py-12 text-center text-zinc-500">
-                  No mock test attempts recorded yet. Head to "Standard Mock Tests" or "Dynamic Custom Generator" to get started!
+                  No assessment attempts recorded yet. Head to &quot;Preset Assessments&quot; or &quot;Dynamic Custom Generator&quot; to get started.
                 </GlassCard>
               )}
             </div>

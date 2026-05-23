@@ -209,7 +209,7 @@ function RecommendationsPanel() {
       <div className="flex items-center gap-2 mb-4">
         <Brain className="h-4 w-4 text-cyan-400" />
         <h3 className="font-bold text-sm text-white">Smart Recommendations</h3>
-        <span className="text-[10px] text-zinc-500 ml-auto">from your sheets</span>
+        <span className="text-[10px] text-zinc-500 ml-auto">personalized</span>
       </div>
 
       {/* Tabs */}
@@ -265,7 +265,7 @@ function RecommendationsPanel() {
               ))
             ) : (
               <p className="text-xs text-zinc-500 text-center py-8">
-                No weak topics detected — keep solving! 🎉
+                No weak areas detected — great work! Keep solving. 🎉
               </p>
             )}
           </>

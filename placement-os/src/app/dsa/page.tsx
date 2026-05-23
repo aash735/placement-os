@@ -27,19 +27,19 @@ export default function DSATrackerPage() {
 
       <div className="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <GlassCard hover={false}><p className="text-xs text-zinc-500">Solved</p><p className="text-2xl font-bold">{solved}</p></GlassCard>
-        <GlassCard hover={false}><p className="text-xs text-zinc-500">Due revisions</p><p className="text-2xl font-bold text-amber-400">{dueRevisions.length}</p></GlassCard>
-        <GlassCard hover={false}><p className="text-xs text-zinc-500">Weak areas</p><p className="text-2xl font-bold text-rose-400">{weakTopics.length}</p></GlassCard>
+        <GlassCard hover={false}><p className="text-xs text-zinc-500">Due Revisions</p><p className="text-2xl font-bold text-amber-400">{dueRevisions.length}</p></GlassCard>
+        <GlassCard hover={false}><p className="text-xs text-zinc-500">Weak Areas</p><p className="text-2xl font-bold text-rose-400">{weakTopics.length}</p></GlassCard>
         <GlassCard hover={false}><p className="text-xs text-zinc-500">Topics</p><p className="text-2xl font-bold">{topics.length}</p></GlassCard>
       </div>
 
       <GlassCard className="mb-6" hover={false}>
-        <h3 className="mb-4 font-semibold flex items-center gap-2"><Target className="h-4 w-4 text-cyan-400" /> Topic heatmap</h3>
+        <h3 className="mb-4 font-semibold flex items-center gap-2"><Target className="h-4 w-4 text-cyan-400" /> Topic Progress Heatmap</h3>
         <ProgressHeatmap data={heatmap} />
       </GlassCard>
 
       {weakTopics.length > 0 && (
         <GlassCard className="mb-6 border-rose-500/20" hover={false}>
-          <h3 className="font-semibold text-rose-300">Weak area alerts</h3>
+          <h3 className="font-semibold text-rose-300">Weak Area Alerts</h3>
           <ul className="mt-2 space-y-1">
             {weakTopics.map((w) => (
               <li key={w.topicId} className="text-sm text-zinc-400">
@@ -52,7 +52,7 @@ export default function DSATrackerPage() {
 
       <div className="mb-4 flex gap-2">
         <Link href="/dsa/roadmap" className="btn-ghost text-sm gap-1"><BookOpen className="h-4 w-4" /> Roadmap</Link>
-        <Link href="/dsa/practice" className="btn-ghost text-sm gap-1"><FlaskConical className="h-4 w-4" /> All questions</Link>
+        <Link href="/dsa/practice" className="btn-ghost text-sm gap-1"><FlaskConical className="h-4 w-4" /> All Questions</Link>
         <Link href="/revision" className="btn-ghost text-sm">Revision queue ({dueRevisions.length})</Link>
       </div>
 

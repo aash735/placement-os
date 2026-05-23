@@ -365,12 +365,10 @@ export default function DSARoadmapPage() {
           <BookOpen className="h-10 w-10 text-zinc-600 mx-auto mb-3" />
           <h3 className="font-bold text-zinc-400 text-lg">No questions loaded yet</h3>
           <p className="text-zinc-500 text-sm mt-2 max-w-sm mx-auto">
-            Make sure your spreadsheets are in the{" "}
-            <code className="text-cyan-400">/sheets</code> folder. Run{" "}
-            <code className="text-cyan-400">npm run sheets:sync</code> to sync data.
+            Your question bank is empty. Visit the Admin panel to sync your study data.
           </p>
           <Link href="/admin" className="btn-primary text-sm mt-4 inline-block">
-            View Sheet Admin →
+            Go to Admin Panel →
           </Link>
         </GlassCard>
       )}

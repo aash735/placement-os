@@ -6,15 +6,15 @@ import { GlassCard } from "@/components/ui/glass-card";
 
 export default function ResumePage() {
   return (
-    <AppShell title="Resume" subtitle="HireLens-powered ATS optimization">
-      <PageHeader title="Resume Builder / Tracker" description="1 page · impact bullets · project links · ATS keywords per company." />
+    <AppShell title="Resume" subtitle="ATS-optimized resume tracking">
+      <PageHeader title="Resume Builder & Tracker" description="Build a 1-page, impact-driven resume with strong project links and ATS-optimized keywords tailored to your target companies." />
       <GlassCard hover={false}>
-        <h3 className="font-semibold">Checklist</h3>
+        <h3 className="font-semibold">Resume Checklist</h3>
         <ul className="mt-3 space-y-2 text-sm text-zinc-300">
-          <li>☐ Impact verb + metric per bullet</li>
-          <li>☐ HireLens score &gt; 85 for TCS Digital</li>
-          <li>☐ GitHub + live demo links</li>
-          <li>☐ Frontend/product engineer positioning</li>
+          <li>☐ Use an impact verb and measurable metric in each bullet point</li>
+          <li>☐ Achieve an ATS compatibility score above 85 for target companies</li>
+          <li>☐ Include GitHub and live demo links for all projects</li>
+          <li>☐ Position yourself as a Frontend / Product Engineer</li>
         </ul>
       </GlassCard>
     </AppShell>

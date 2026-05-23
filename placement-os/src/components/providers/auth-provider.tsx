@@ -147,6 +147,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   // ── Sign Out ──────────────────────────────────────────────────────────────
   const signOut = () => {
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("placement-os-user");
+      localStorage.removeItem("placement-os-session");
+    }
     clearSession();
     setUser(null);
     clearProgress();

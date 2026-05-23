@@ -354,6 +354,41 @@ html.light :focus-visible {
   outline-color: #0891b2;
 }
 
+/* ── Logout Button ── */
+.btn-logout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: rgba(251, 113, 133, 0.08);
+  border: 1px solid rgba(251, 113, 133, 0.20);
+  color: var(--accent-rose);
+}
+.btn-logout:hover {
+  background: rgba(251, 113, 133, 0.16);
+  border-color: rgba(251, 113, 133, 0.40);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(251, 113, 133, 0.12);
+}
+html.light .btn-logout {
+  background: rgba(225, 29, 72, 0.06);
+  border-color: rgba(225, 29, 72, 0.15);
+  color: var(--accent-rose);
+}
+html.light .btn-logout:hover {
+  background: rgba(225, 29, 72, 0.12);
+  border-color: rgba(225, 29, 72, 0.30);
+  color: #e11d48;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.08);
+}
+
 /* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

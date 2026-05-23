@@ -89,28 +89,30 @@ export function AppShell({
 
           {/* User Footer */}
           <div
-            className="absolute bottom-0 left-0 right-0 p-4"
+            className="absolute bottom-0 left-0 right-0 p-4 space-y-3"
             style={{ borderTop: "1px solid var(--border-subtle)" }}
           >
             {user && (
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-xs font-semibold" style={{ color: "var(--text-primary)" }}>
-                    {user.name || user.username}
-                  </p>
-                  <p className="text-[10px] mt-0.5" style={{ color: "var(--text-muted)" }}>
-                    Lv.{level} · {xp} XP · 🔥 {streak}d
-                  </p>
+              <>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-xs font-semibold" style={{ color: "var(--text-primary)" }}>
+                      {user.name || user.username}
+                    </p>
+                    <p className="text-[10px] mt-0.5" style={{ color: "var(--text-muted)" }}>
+                      Lv.{level} · {xp} XP · 🔥 {streak}d
+                    </p>
+                  </div>
                 </div>
                 <button
                   onClick={signOut}
-                  title="Sign out"
-                  className="p-1.5 rounded-lg transition-colors hover:text-rose-400"
-                  style={{ color: "var(--text-faint)" }}
+                  className="btn-logout"
+                  title="Logout"
                 >
-                  <LogOut className="h-4 w-4" />
+                  <LogOut className="h-3.5 w-3.5" />
+                  <span>Logout</span>
                 </button>
-              </div>
+              </>
             )}
           </div>
         </aside>

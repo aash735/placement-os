@@ -39,6 +39,8 @@ export function getSession(): SessionUser | null {
 export function clearSession(): void {
   if (typeof window === "undefined") return;
   localStorage.removeItem(SESSION_KEY);
+  localStorage.removeItem("placement-os-user");
+  localStorage.removeItem("placement-os-session");
 }
 
 /** Check if a session currently exists */

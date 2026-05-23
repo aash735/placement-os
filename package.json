@@ -1,0 +1,12 @@
+{
+  "name": "placement-os-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix placement-os",
+    "build": "npm run build --prefix placement-os",
+    "start": "npm run start --prefix placement-os",
+    "lint": "npm run lint --prefix placement-os",
+    "sheets:sync": "npm run sheets:sync --prefix placement-os"
+  }
+}

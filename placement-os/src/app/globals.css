@@ -1,0 +1,361 @@
+@import "tailwindcss";
+
+/* ============================================================
+   PLACEMENT OS — PROFESSIONAL DESIGN SYSTEM
+   Full dark + light mode with proper contrast and semantics
+   ============================================================ */
+
+/* ── Dark mode (default) ── */
+:root {
+  --bg-base:       #030712;
+  --bg-subtle:     #0d1117;
+  --bg-elevated:   #111827;
+  --bg-overlay:    rgba(255, 255, 255, 0.04);
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-normal: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.20);
+
+  --text-primary:  #f4f4f5;
+  --text-secondary:#a1a1aa;
+  --text-muted:    #71717a;
+  --text-faint:    #52525b;
+
+  --shadow-card:   0 4px 24px rgba(0,0,0,0.5);
+  --shadow-hover:  0 8px 32px rgba(0,0,0,0.7);
+
+  --accent-cyan:   #22d3ee;
+  --accent-violet: #a78bfa;
+  --accent-emerald:#34d399;
+  --accent-amber:  #fbbf24;
+  --accent-rose:   #fb7185;
+
+  /* Legacy vars used in @theme */
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
+  --glass:      var(--bg-overlay);
+  --glass-border: var(--border-normal);
+}
+
+/* ── Light mode ── */
+html.light {
+  --bg-base:       #f1f5f9;
+  --bg-subtle:     #e8edf3;
+  --bg-elevated:   #ffffff;
+  --bg-overlay:    rgba(15, 23, 42, 0.04);
+
+  --border-subtle: rgba(15, 23, 42, 0.10);
+  --border-normal: rgba(15, 23, 42, 0.16);
+  --border-strong: rgba(15, 23, 42, 0.28);
+
+  --text-primary:  #0f172a;
+  --text-secondary:#334155;
+  --text-muted:    #64748b;
+  --text-faint:    #94a3b8;
+
+  --shadow-card:   0 2px 12px rgba(15,23,42,0.10);
+  --shadow-hover:  0 6px 24px rgba(15,23,42,0.18);
+
+  --accent-cyan:   #0891b2;
+  --accent-violet: #7c3aed;
+  --accent-emerald:#059669;
+  --accent-amber:  #d97706;
+  --accent-rose:   #e11d48;
+
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
+  --glass:      var(--bg-overlay);
+  --glass-border: var(--border-normal);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ── Base ── */
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* ── Mesh background ── */
+.mesh-bg {
+  background-color: var(--bg-base);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(34,211,238,0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(167,139,250,0.12), transparent),
+    radial-gradient(ellipse 50% 30% at 50% 100%, rgba(59,130,246,0.08), transparent);
+}
+html.light .mesh-bg {
+  background-color: var(--bg-base);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 20% -10%, rgba(8,145,178,0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(124,58,237,0.08), transparent);
+}
+
+/* ── Glass Card ── */
+.glass-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-normal);
+  box-shadow: var(--shadow-card);
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+}
+html.light .glass-card {
+  background: #ffffff;
+  border-color: rgba(15,23,42,0.14);
+  box-shadow: 0 2px 12px rgba(15,23,42,0.10);
+}
+
+/* ── Sidebar & Header (theme-aware) ── */
+.sidebar {
+  background: var(--bg-elevated);
+  border-right: 1px solid var(--border-subtle);
+}
+html.light .sidebar {
+  background: #ffffff;
+  border-right-color: rgba(15,23,42,0.12);
+}
+
+.topbar {
+  background: color-mix(in srgb, var(--bg-elevated) 80%, transparent);
+  border-bottom: 1px solid var(--border-subtle);
+  backdrop-filter: blur(20px);
+}
+html.light .topbar {
+  background: rgba(255,255,255,0.92);
+  border-bottom-color: rgba(15,23,42,0.12);
+}
+
+/* ── Nav items ── */
+.nav-item {
+  color: var(--text-muted);
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  transition: background 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+}
+.nav-item:hover {
+  background: var(--bg-overlay);
+  color: var(--text-primary);
+}
+html.light .nav-item:hover {
+  background: rgba(8,145,178,0.08);
+  color: #0f172a;
+}
+.nav-item.active {
+  background: rgba(34,211,238,0.12);
+  color: var(--accent-cyan);
+}
+html.light .nav-item.active {
+  background: rgba(8,145,178,0.12);
+  color: var(--accent-cyan);
+}
+
+/* ── Gradient text ── */
+.gradient-text {
+  background: linear-gradient(135deg, #22d3ee, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+html.light .gradient-text {
+  background: linear-gradient(135deg, #0891b2, #7c3aed, #db2777);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-violet-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:opacity-90 hover:shadow-xl;
+}
+html.light .btn-primary {
+  box-shadow: 0 4px 14px rgba(8,145,178,0.25);
+}
+
+.btn-ghost {
+  background: var(--bg-overlay);
+  border: 1px solid var(--border-normal);
+  color: var(--text-secondary);
+  @apply inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-medium transition;
+}
+.btn-ghost:hover {
+  background: color-mix(in srgb, var(--bg-overlay) 200%, transparent);
+  color: var(--text-primary);
+}
+html.light .btn-ghost {
+  background: rgba(15,23,42,0.05);
+  border-color: rgba(15,23,42,0.18);
+  color: #334155;
+}
+html.light .btn-ghost:hover {
+  background: rgba(15,23,42,0.10);
+  color: #0f172a;
+}
+
+/* ── Progress bars ── */
+.progress-bar {
+  @apply h-2 overflow-hidden rounded-full;
+  background: var(--border-subtle);
+}
+.progress-bar-fill {
+  @apply h-full rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 transition-all duration-500;
+}
+
+/* ── Input fields ── */
+.field-input {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-normal);
+  color: var(--text-primary);
+  @apply rounded-xl px-4 py-2.5 text-sm transition focus:outline-none;
+}
+.field-input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 3px rgba(34,211,238,0.15);
+}
+html.light .field-input {
+  background: #ffffff;
+  border-color: rgba(15,23,42,0.18);
+}
+html.light .field-input:focus {
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgba(8,145,178,0.15);
+}
+.field-input::placeholder {
+  color: var(--text-faint);
+}
+
+/* ── Badges / Tags ── */
+.badge-cyan    { @apply px-2 py-0.5 rounded-full text-[10px] font-bold bg-cyan-500/15 text-cyan-400 border border-cyan-500/25; }
+.badge-violet  { @apply px-2 py-0.5 rounded-full text-[10px] font-bold bg-violet-500/15 text-violet-400 border border-violet-500/25; }
+.badge-emerald { @apply px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-400 border border-emerald-500/25; }
+.badge-amber   { @apply px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/15 text-amber-400 border border-amber-500/25; }
+.badge-rose    { @apply px-2 py-0.5 rounded-full text-[10px] font-bold bg-rose-500/15 text-rose-400 border border-rose-500/25; }
+
+html.light .badge-cyan    { @apply bg-cyan-100 text-cyan-700 border-cyan-300; }
+html.light .badge-violet  { @apply bg-violet-100 text-violet-700 border-violet-300; }
+html.light .badge-emerald { @apply bg-emerald-100 text-emerald-700 border-emerald-300; }
+html.light .badge-amber   { @apply bg-amber-100 text-amber-700 border-amber-300; }
+html.light .badge-rose    { @apply bg-rose-100 text-rose-700 border-rose-300; }
+
+/* ── Difficulty chips ── */
+.diff-easy   { @apply text-xs font-semibold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20; }
+.diff-medium { @apply text-xs font-semibold px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20; }
+.diff-hard   { @apply text-xs font-semibold px-2 py-0.5 rounded-md bg-rose-500/10 text-rose-400 border border-rose-500/20; }
+
+html.light .diff-easy   { @apply bg-emerald-100 text-emerald-700 border-emerald-300; }
+html.light .diff-medium { @apply bg-amber-100 text-amber-700 border-amber-300; }
+html.light .diff-hard   { @apply bg-rose-100 text-rose-700 border-rose-300; }
+
+/* ── Section dividers ── */
+.section-divider {
+  border-color: var(--border-subtle);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar       { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-normal); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-strong); }
+
+/* ── Focus ring ── */
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 2px;
+}
+
+/* ── Light mode overrides for hardcoded Tailwind classes ── */
+/* These patch existing dark-optimized components to work in light mode */
+
+html.light .bg-black\/40,
+html.light .bg-black\/30,
+html.light .bg-black\/20 {
+  background-color: rgba(241,245,249,0.95) !important;
+}
+html.light .bg-black\/60 {
+  background-color: rgba(15,23,42,0.5) !important;
+}
+html.light .border-white\/10 {
+  border-color: rgba(15,23,42,0.12) !important;
+}
+html.light .border-white\/5 {
+  border-color: rgba(15,23,42,0.08) !important;
+}
+html.light .border-white\/15 {
+  border-color: rgba(15,23,42,0.18) !important;
+}
+html.light .bg-white\/5 {
+  background-color: rgba(15,23,42,0.04) !important;
+}
+html.light .bg-white\/10 {
+  background-color: rgba(15,23,42,0.08) !important;
+}
+html.light .text-zinc-400 {
+  color: #475569 !important;
+}
+html.light .text-zinc-500 {
+  color: #64748b !important;
+}
+html.light .text-zinc-600 {
+  color: #94a3b8 !important;
+}
+html.light .text-zinc-300 {
+  color: #334155 !important;
+}
+html.light .text-zinc-200 {
+  color: #1e293b !important;
+}
+html.light .text-zinc-100 {
+  color: #0f172a !important;
+}
+html.light .text-white {
+  color: #0f172a !important;
+}
+html.light .bg-zinc-800,
+html.light .bg-zinc-900 {
+  background-color: #e2e8f0 !important;
+}
+/* Navigation sidebar in light mode */
+html.light aside.fixed,
+html.light aside.static {
+  background-color: rgba(255,255,255,0.95) !important;
+  border-right-color: rgba(15,23,42,0.12) !important;
+}
+/* Header in light mode */
+html.light header.sticky {
+  background-color: rgba(255,255,255,0.90) !important;
+  border-bottom-color: rgba(15,23,42,0.12) !important;
+}
+/* Dropdown / select in light mode */
+html.light select {
+  background-color: #ffffff;
+  color: #0f172a;
+  border-color: rgba(15,23,42,0.18);
+}
+/* Code snippets */
+html.light code {
+  background: rgba(15,23,42,0.07);
+  color: #0891b2;
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
+}
+/* Focus ring in light mode */
+html.light :focus-visible {
+  outline-color: #0891b2;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

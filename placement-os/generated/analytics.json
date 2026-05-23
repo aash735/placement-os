@@ -1,0 +1,2551 @@
+{
+  "mockTests": [
+    {
+      "id": "mock-1",
+      "title": "Placement Warm-up",
+      "durationMin": 60,
+      "questionIds": [
+        "arr-l1-3",
+        "str-l1-2",
+        "ll-l1-1",
+        "tr-l1-1",
+        "st-l1-1"
+      ],
+      "companyTags": []
+    },
+    {
+      "id": "mock-2",
+      "title": "Service OA Simulation",
+      "durationMin": 90,
+      "questionIds": [
+        "arr-l2-3",
+        "bs-l3-1",
+        "tp-l2-2",
+        "hm-l3-1",
+        "tr-l2-3"
+      ],
+      "companyTags": []
+    },
+    {
+      "id": "mock-3",
+      "title": "Product Interview Mix",
+      "durationMin": 90,
+      "questionIds": [
+        "sw-l2-2",
+        "ll-l3-2",
+        "hp-l2-1",
+        "gd-l3-1",
+        "str-l4-1"
+      ],
+      "companyTags": []
+    }
+  ],
+  "companies": [
+    {
+      "slug": "tcs",
+      "name": "TCS",
+      "type": "service",
+      "oaPattern": "NQT → Digital/Prime separation; coding + aptitude + verbal",
+      "codingDifficulty": "Easy–Medium (Digital needs stronger logic)",
+      "aptitudeWeight": "Very High (40–50%)",
+      "rounds": [
+        "NQT OA",
+        "Technical (DSA light + projects)",
+        "HR/MR"
+      ],
+      "communication": "Clear, humble, structured STAR—not flashy",
+      "resume": "Clean 1-page; academics visible; 2 projects max highlighted",
+      "projects": "Important for Digital/Prime—not just NQT pass",
+      "hrQuestions": [
+        "Why TCS?",
+        "Willing to relocate?",
+        "Strengths/weaknesses",
+        "Gap explanation"
+      ],
+      "priority": "Aptitude + communication > hard DSA",
+      "strategy": "Clear NQT first. Parallel: 30 easy–medium DSA. Polish HireLens/Anony Talk bullets for Digital."
+    },
+    {
+      "slug": "infosys",
+      "name": "Infosys",
+      "type": "service",
+      "oaPattern": "Online assessment + HackWithInfy path for better roles",
+      "codingDifficulty": "Easy–Medium",
+      "aptitudeWeight": "High",
+      "rounds": [
+        "OA",
+        "Technical interview",
+        "HR"
+      ],
+      "communication": "Professional, process-oriented answers",
+      "resume": "ATS-friendly; Infosys values stability signals",
+      "projects": "Medium importance—explain stack clearly",
+      "hrQuestions": [
+        "Why Infosys over others?",
+        "Team conflict example",
+        "Learning agility"
+      ],
+      "priority": "OA aptitude + basic coding",
+      "strategy": "HackWithInfy if confident in UI/projects. Otherwise mass hiring OA focus."
+    },
+    {
+      "slug": "wipro",
+      "name": "Wipro",
+      "type": "service",
+      "oaPattern": "NLTH / campus drive OA—aptitude heavy",
+      "codingDifficulty": "Easy",
+      "aptitudeWeight": "Very High",
+      "rounds": [
+        "OA",
+        "Technical",
+        "HR"
+      ],
+      "communication": "Formal, concise",
+      "resume": "Simple format; avoid over-design in PDF",
+      "projects": "Explain one full-stack or frontend project",
+      "hrQuestions": [
+        "Why Wipro?",
+        "Shift flexibility",
+        "Academic consistency"
+      ],
+      "priority": "Aptitude first",
+      "strategy": "High-volume apply strategy. Low DSA depth OK if OA cleared."
+    },
+    {
+      "slug": "cognizant",
+      "name": "Cognizant",
+      "type": "service",
+      "oaPattern": "AMCAT/Cognizant OA—quants + logical + light code",
+      "codingDifficulty": "Easy–Medium",
+      "aptitudeWeight": "High",
+      "rounds": [
+        "OA",
+        "TR",
+        "HR"
+      ],
+      "communication": "Structured answers; show teamwork",
+      "resume": "Keyword match for GenC roles",
+      "projects": "Valued in GenC Next / digital roles",
+      "hrQuestions": [
+        "Cognizant values alignment",
+        "Relocation",
+        "Pressure handling"
+      ],
+      "priority": "Balanced aptitude + 20 core DSA problems",
+      "strategy": "Target GenC Next if projects strong (your profile fits)."
+    },
+    {
+      "slug": "accenture",
+      "name": "Accenture",
+      "type": "consulting",
+      "oaPattern": "Cognitive + technical assessment (varies by campus)",
+      "codingDifficulty": "Easy–Medium",
+      "aptitudeWeight": "High",
+      "rounds": [
+        "OA",
+        "Technical",
+        "HR"
+      ],
+      "communication": "Consulting tone: clarity + client mindset",
+      "resume": "Impact bullets; tools listed",
+      "projects": "Full-stack narrative helps",
+      "hrQuestions": [
+        "Why consulting?",
+        "Adaptability",
+        "Diversity/teamwork"
+      ],
+      "priority": "Communication + aptitude",
+      "strategy": "Emphasize product thinking from Anony Talk for digital roles."
+    },
+    {
+      "slug": "capgemini",
+      "name": "Capgemini",
+      "type": "service",
+      "oaPattern": "Online test + technical",
+      "codingDifficulty": "Easy",
+      "aptitudeWeight": "High",
+      "rounds": [
+        "OA",
+        "Technical",
+        "HR"
+      ],
+      "communication": "European MNC style—polite, direct",
+      "resume": "1 page; certifications help",
+      "projects": "Explain role in team projects",
+      "hrQuestions": [
+        "Why Capgemini?",
+        "Travel willingness",
+        "Learning goals"
+      ],
+      "priority": "OA clearance",
+      "strategy": "Backup mass recruiter; maintain pipeline."
+    },
+    {
+      "slug": "deloitte",
+      "name": "Deloitte",
+      "type": "consulting",
+      "oaPattern": "Aptitude + case-style questions for some tracks",
+      "codingDifficulty": "Medium for tech roles",
+      "aptitudeWeight": "High",
+      "rounds": [
+        "OA",
+        "Technical",
+        "Case/HR"
+      ],
+      "communication": "High bar—articulate tradeoffs",
+      "resume": "Impact metrics; leadership verbs",
+      "projects": "Strong for Analyst/Engineering hybrid roles",
+      "hrQuestions": [
+        "Why Deloitte?",
+        "Ethics scenario",
+        "Leadership example"
+      ],
+      "priority": "Communication + structured thinking",
+      "strategy": "Apply if GPA/communication strong; prep case-style HR."
+    },
+    {
+      "slug": "tech-mahindra",
+      "name": "Tech Mahindra",
+      "type": "service",
+      "oaPattern": "Campus OA—aptitude + pseudo-code/code",
+      "codingDifficulty": "Easy",
+      "aptitudeWeight": "High",
+      "rounds": [
+        "OA",
+        "TR",
+        "HR"
+      ],
+      "communication": "Telecom/enterprise tone OK",
+      "resume": "Standard campus format",
+      "projects": "One good demo project",
+      "hrQuestions": [
+        "Why Tech Mahindra?",
+        "Flexibility",
+        "Goals in 2 years"
+      ],
+      "priority": "Volume + aptitude",
+      "strategy": "Safety net company in portfolio."
+    },
+    {
+      "slug": "product",
+      "name": "Product Companies",
+      "type": "product",
+      "oaPattern": "2–4 OA rounds: DSA mediums + MCQs; system design lite later",
+      "codingDifficulty": "Medium–Hard (role dependent)",
+      "aptitudeWeight": "Low–Medium",
+      "rounds": [
+        "OA",
+        "DSA interviews (2–3)",
+        "Hiring manager",
+        "Bar raiser (sometimes)"
+      ],
+      "communication": "Think aloud; tradeoffs; complexity analysis",
+      "resume": "Impact metrics; links to live demos/GitHub",
+      "projects": "Critical differentiator for frontend/product roles",
+      "hrQuestions": [
+        "Why this company?",
+        "Conflict with PM",
+        "Failure story",
+        "Ownership example"
+      ],
+      "priority": "Projects + medium DSA + system basics",
+      "strategy": "Your path: frontend/product engineer—portfolio > 500 CP problems."
+    },
+    {
+      "slug": "startups",
+      "name": "Startups",
+      "type": "startup",
+      "oaPattern": "Take-home + live coding + culture fit; often no standardized OA",
+      "codingDifficulty": "Varies—practical coding + ship mentality",
+      "aptitudeWeight": "Low",
+      "rounds": [
+        "Take-home assignment",
+        "Founder/tech chat",
+        "Pair programming"
+      ],
+      "communication": "Authentic, curious, show what you shipped",
+      "resume": "Links > GPA; show velocity",
+      "projects": "Primary hiring signal",
+      "hrQuestions": [
+        "Why startup?",
+        "Comfort with ambiguity",
+        "Side projects",
+        "48-hour task approach"
+      ],
+      "priority": "Ship proof + culture fit",
+      "strategy": "Lead with HireLens + Anony Talk demos; contribute to open source."
+    }
+  ],
+  "aptitudeTopics": [
+    {
+      "id": "percentages",
+      "category": "quant",
+      "name": "Percentages & Profit-Loss",
+      "priority": "critical",
+      "difficulty": 2,
+      "strategy": "10 min/day formula drill",
+      "shortcuts": [
+        "multiplier method",
+        "fraction ↔ % table"
+      ],
+      "revision": "Flash cards weekly"
+    },
+    {
+      "id": "ratios",
+      "category": "quant",
+      "name": "Ratio & Proportion",
+      "priority": "critical",
+      "difficulty": 2,
+      "strategy": "Pair with DI questions",
+      "shortcuts": [
+        "componendo-dividendo for speed"
+      ],
+      "revision": "5 problems/day"
+    },
+    {
+      "id": "time-work",
+      "category": "quant",
+      "name": "Time & Work",
+      "priority": "high",
+      "difficulty": 2,
+      "strategy": "LCM efficiency method only",
+      "shortcuts": [
+        "1/a + 1/b = 1/total"
+      ],
+      "revision": "Bi-weekly mock set"
+    },
+    {
+      "id": "speed",
+      "category": "quant",
+      "name": "Time, Speed & Distance",
+      "priority": "high",
+      "difficulty": 2,
+      "strategy": "Unit consistency first",
+      "shortcuts": [
+        "relative speed templates"
+      ],
+      "revision": "Error log in Placement OS"
+    },
+    {
+      "id": "series",
+      "category": "logical",
+      "name": "Number & Letter Series",
+      "priority": "critical",
+      "difficulty": 2,
+      "strategy": "Pattern buckets: +, ×, squares, alternating",
+      "shortcuts": [
+        "difference of differences"
+      ],
+      "revision": "Daily 15 puzzles"
+    },
+    {
+      "id": "coding-decoding",
+      "category": "logical",
+      "name": "Coding-Decoding",
+      "priority": "high",
+      "difficulty": 2,
+      "strategy": "Map alphabet positions",
+      "shortcuts": [
+        "reverse alphabet offset trick"
+      ],
+      "revision": "Weekend batch"
+    },
+    {
+      "id": "blood-relations",
+      "category": "logical",
+      "name": "Blood Relations",
+      "priority": "medium",
+      "difficulty": 2,
+      "strategy": "Draw tree—never mental-only",
+      "shortcuts": [
+        "generation notation"
+      ],
+      "revision": "Monthly refresh"
+    },
+    {
+      "id": "syllogism",
+      "category": "logical",
+      "name": "Syllogism",
+      "priority": "high",
+      "difficulty": 3,
+      "strategy": "Venn only for validity",
+      "shortcuts": [
+        "some/not all keywords"
+      ],
+      "revision": "TCS/Infosys OA prep"
+    },
+    {
+      "id": "rc",
+      "category": "verbal",
+      "name": "Reading Comprehension",
+      "priority": "critical",
+      "difficulty": 3,
+      "strategy": "Skim questions first; annotate passage",
+      "shortcuts": [
+        "eliminate extreme options"
+      ],
+      "revision": "3 RC/week"
+    },
+    {
+      "id": "grammar",
+      "category": "verbal",
+      "name": "Grammar & Sentence Correction",
+      "priority": "high",
+      "difficulty": 2,
+      "strategy": "Error type buckets: tense, agreement, preposition",
+      "shortcuts": [
+        "read aloud test"
+      ],
+      "revision": "Daily 10 questions"
+    },
+    {
+      "id": "vocab",
+      "category": "verbal",
+      "name": "Vocabulary & Para Jumbles",
+      "priority": "medium",
+      "difficulty": 2,
+      "strategy": "Context over memorization",
+      "shortcuts": [
+        "mandatory sentence in PJ"
+      ],
+      "revision": "Spaced repetition app"
+    },
+    {
+      "id": "puzzles",
+      "category": "puzzles",
+      "name": "Seating & Arrangement",
+      "priority": "critical",
+      "difficulty": 3,
+      "strategy": "Grid on paper always",
+      "shortcuts": [
+        "fixed position anchors first"
+      ],
+      "revision": "2 puzzles/day in season"
+    },
+    {
+      "id": "di",
+      "category": "di",
+      "name": "Charts & Tables",
+      "priority": "high",
+      "difficulty": 3,
+      "strategy": "Approximation allowed—note units",
+      "shortcuts": [
+        "% change = (new-old)/old"
+      ],
+      "revision": "Weekly DI set"
+    }
+  ],
+  "aptitudeConfig": {
+    "weekly": "1 full timed aptitude (60 min) — alternate quant-heavy and logical-heavy",
+    "monthly": "Simulate TCS NQT section split",
+    "tracking": "Log accuracy by category in Placement OS Aptitude Tracker"
+  },
+  "revisionCycles": [
+    {
+      "cycle": "Daily",
+      "action": "1 easy warm-up (10 min) + 1 new or medium (35 min)"
+    },
+    {
+      "cycle": "Weekly",
+      "action": "Sunday: redo 3 marked 'shaky' problems without hints"
+    },
+    {
+      "cycle": "Bi-weekly",
+      "action": "Timed 60-min mock: 2 easy + 1 medium"
+    },
+    {
+      "cycle": "Monthly",
+      "action": "Full weak-topic audit from Placement OS analytics"
+    }
+  ],
+  "weeklyPlan": [
+    {
+      "week": 0,
+      "focus": "",
+      "hours": "",
+      "days": []
+    },
+    {
+      "week": 0,
+      "focus": "",
+      "hours": "",
+      "days": []
+    },
+    {
+      "week": 0,
+      "focus": "",
+      "hours": "",
+      "days": []
+    }
+  ],
+  "manifest": [
+    {
+      "path": "analytics/weekly-plan.csv",
+      "rows": 3,
+      "updated": "2026-05-22T22:41:50.837Z"
+    },
+    {
+      "path": "aptitude/config.csv",
+      "rows": 3,
+      "updated": "2026-05-22T22:41:50.837Z"
+    },
+    {
+      "path": "aptitude/topics.csv",
+      "rows": 13,
+      "updated": "2026-05-22T22:41:50.837Z"
+    },
+    {
+      "path": "companies/profiles.csv",
+      "rows": 10,
+      "updated": "2026-05-22T22:41:50.837Z"
+    },
+    {
+      "path": "dsa/mock-tests.csv",
+      "rows": 3,
+      "updated": "2026-05-22T22:41:50.837Z"
+    },
+    {
+      "path": "dsa/questions.csv",
+      "rows": 94,
+      "updated": "2026-05-22T22:41:50.837Z"
+    },
+    {
+      "path": "dsa/topics.csv",
+      "rows": 17,
+      "updated": "2026-05-22T22:41:50.837Z"
+    },
+    {
+      "path": "revision/cycles.csv",
+      "rows": 4,
+      "updated": "2026-05-22T22:41:50.837Z"
+    },
+    {
+      "path": "Book1.xlsx",
+      "rows": 47,
+      "updated": "2026-01-03T15:58:11.988Z"
+    },
+    {
+      "path": "DSA by Shradha Ma'am.xlsx",
+      "rows": 415,
+      "updated": "2026-01-19T06:18:42.000Z"
+    }
+  ],
+  "loadedAt": "2026-05-23T06:50:32.793Z",
+  "validationIssues": [
+    {
+      "row": 96,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 97,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 98,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 99,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 100,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 101,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 102,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 103,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 104,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 105,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 106,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 107,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 108,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 109,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 110,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 111,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 112,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 113,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 114,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 115,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 116,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 117,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 118,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 119,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 120,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 121,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 122,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 123,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 124,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 125,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 126,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 127,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 128,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 129,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 130,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 131,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 132,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 133,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 134,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 135,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 136,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 137,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 138,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 139,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 140,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 141,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 142,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 143,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 144,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 145,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 146,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 147,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 148,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 149,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 150,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 151,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 152,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 153,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 154,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 155,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 156,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 157,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 158,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 159,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 160,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 161,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 162,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 163,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 164,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 165,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 166,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 167,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 168,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 169,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 170,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 171,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 172,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 173,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 174,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 175,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 176,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 177,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 178,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 179,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 180,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 181,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 182,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 183,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 184,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 185,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 186,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 187,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 188,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 189,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 190,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 191,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 192,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 193,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 194,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 195,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 196,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 197,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 198,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 199,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 200,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 201,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 202,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 203,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 204,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 205,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 206,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 207,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 208,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 209,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 210,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 211,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 212,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 213,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 214,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 215,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 216,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 217,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 218,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 219,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 220,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 221,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 222,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 223,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 224,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 225,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 226,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 227,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 228,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 229,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 230,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 231,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 232,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 233,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 234,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 235,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 236,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 237,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 238,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 239,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 240,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 241,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 242,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 243,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 244,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 245,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 246,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 247,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 248,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 249,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 250,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 251,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 252,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 253,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 254,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 255,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 256,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 257,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 258,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 259,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 260,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 261,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 262,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 263,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 264,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 265,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 266,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 267,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 268,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 269,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 270,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 271,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 272,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 273,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 274,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 275,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 276,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 277,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 278,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 279,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 280,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 281,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 282,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 283,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 284,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 285,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 286,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 287,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 288,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 289,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 290,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 291,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 292,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 293,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 294,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 295,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 296,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 297,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 298,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 299,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 300,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 301,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 302,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 303,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 304,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 305,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 306,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 307,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 308,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 309,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 310,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 311,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 312,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 313,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 314,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 315,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 316,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 317,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 318,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 319,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 320,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 321,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 322,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 323,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 324,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 325,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 326,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 327,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 328,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 329,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 330,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 331,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 332,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 333,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 334,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 335,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 336,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 337,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 338,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 339,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 340,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 341,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 342,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 343,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 344,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 345,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 346,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 347,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 348,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 349,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 350,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 351,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 352,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 353,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 354,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 355,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 356,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 357,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 358,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 359,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 360,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 361,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 362,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 363,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 364,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 365,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 366,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 367,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 368,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 369,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 370,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 371,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 372,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 373,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 374,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 375,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 376,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 377,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 378,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 379,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 380,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 381,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 382,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 383,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 384,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 385,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 386,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 387,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 388,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 389,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 390,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 391,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 392,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 393,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 394,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 395,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 396,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 397,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 398,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 399,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 400,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 401,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 402,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 403,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 404,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 405,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 406,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 407,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 408,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 409,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 410,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 411,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 412,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 413,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 414,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 415,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 416,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 417,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 418,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 419,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 420,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 421,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 422,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 423,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 424,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 425,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 426,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 427,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 428,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 429,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 430,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 431,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 432,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 433,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 434,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 435,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 436,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 437,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 438,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 439,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 440,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 441,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 442,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 443,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 444,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 445,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 446,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 447,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 448,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 449,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 450,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 451,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 452,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 453,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 454,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 455,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 456,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 457,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 458,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 459,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 460,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 461,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 462,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 463,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 464,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 465,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 466,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 467,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 468,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 469,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 470,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 471,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 472,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 473,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 474,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 475,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 476,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 477,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 478,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 479,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 480,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 481,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 482,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 483,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 484,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 485,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 486,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 487,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 488,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 489,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 490,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 491,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 492,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 493,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 494,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 495,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 496,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 497,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 498,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    }
+  ]
+}

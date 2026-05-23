@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Resume - HireLens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="upload.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◈</span>
+                HireLens
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="jobs.html" class="nav-link">Browse Jobs</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">◐</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <!-- Job Info Card -->
+            <div class="job-info-card" id="jobInfoCard">
+                <div class="job-info-header">
+                    <button class="back-btn" onclick="window.location.href='jobs.html'">
+                        ← Back to Jobs
+                    </button>
+                </div>
+                <div class="job-info-content">
+                    <div class="job-info-icon" id="jobInfoIcon">💼</div>
+                    <h2 class="job-info-title" id="jobInfoTitle">Select a Job</h2>
+                    <p class="job-info-location" id="jobInfoLocation"></p>
+                    <p class="job-info-level" id="jobInfoLevel"></p>
+                </div>
+            </div>
+
+            <!-- Upload Area -->
+            <div class="upload-container" id="uploadContainer">
+                <div class="upload-avatar">
+                    <div class="avatar">👤</div>
+                    <div class="avatar-pointer">👇</div>
+                </div>
+                
+                <div class="upload-box" id="uploadBox">
+                    <div class="upload-icon">📄</div>
+                    <h3 class="upload-title">Upload your resume</h3>
+                    <p class="upload-subtitle">Drop your PDF file here or click to browse</p>
+                    <input type="file" id="fileInput" accept=".pdf" hidden>
+                    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                        Choose File
+                    </button>
+                    <p class="upload-note">Supported format: PDF only</p>
+                </div>
+            </div>
+
+            <!-- Analysis Results -->
+            <div class="results-container" id="resultsContainer" style="display: none;">
+                <div class="results-header">
+                    <h2 class="results-title">ATS Analysis Results</h2>
+                    <button class="upload-new-btn" id="uploadNewBtn">
+                        Upload Another Resume
+                    </button>
+                </div>
+
+                <!-- Score Card -->
+                <div class="score-card">
+                    <div class="score-circle">
+                        <svg class="score-svg" width="200" height="200">
+                            <circle class="score-bg" cx="100" cy="100" r="85"></circle>
+                            <circle class="score-progress" id="scoreCircle" cx="100" cy="100" r="85"></circle>
+                        </svg>
+                        <div class="score-content">
+                            <div class="score-number" id="scoreNumber">0%</div>
+                            <div class="score-label">ATS Score</div>
+                        </div>
+                    </div>
+                    <div class="score-details">
+                        <div class="score-stat">
+                            <div class="stat-value" id="matchedCount">0</div>
+                            <div class="stat-label">Keywords Matched</div>
+                        </div>
+                        <div class="score-stat">
+                            <div class="stat-value" id="missingCount">0</div>
+                            <div class="stat-label">Keywords Missing</div>
+                        </div>
+                        <div class="score-stat">
+                            <div class="stat-value" id="totalCount">0</div>
+                            <div class="stat-label">Total Keywords</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Keywords Analysis -->
+                <div class="keywords-section">
+                    <h3 class="section-heading">
+                        <span class="heading-icon">✅</span>
+                        Matched Keywords
+                    </h3>
+                    <div class="keywords-grid" id="matchedKeywords">
+                        <!-- Matched keywords will be inserted here -->
+                    </div>
+                </div>
+
+                <div class="keywords-section missing-section">
+                    <h3 class="section-heading">
+                        <span class="heading-icon">⚠️</span>
+                        Missing Keywords & Suggestions
+                    </h3>
+                    <p class="section-description">
+                        Add these keywords to improve your ATS score. Click on a suggestion to see alternatives.
+                    </p>
+                    <div class="missing-keywords-list" id="missingKeywords">
+                        <!-- Missing keywords with suggestions will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Resume Preview -->
+                <div class="resume-preview-section">
+                    <h3 class="section-heading">
+                        <span class="heading-icon">📄</span>
+                        Resume Content
+                    </h3>
+                    <div class="resume-content" id="resumeContent">
+                        <!-- Resume text will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-icon">◈</span>
+                        HireLens
+                    </div>
+                    <p class="footer-tagline">Empowering freshers to land their dream jobs</p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-text">
+                        Built with ❤️ for job seekers everywhere
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="jobDescriptions.js"></script>
+    <script src="upload.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

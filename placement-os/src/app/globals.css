@@ -216,8 +216,8 @@ html.light .btn-ghost:hover {
   border: 1px solid var(--border-normal);
   color: var(--text-primary);
   @apply rounded-xl py-2.5 text-sm transition focus:outline-none;
-  padding-left: 1rem;   /* default left padding — overridden by pl-9 etc. on icon inputs */
-  padding-right: 1rem;  /* default right padding — overridden by pr-10 etc. on icon inputs */
+  padding-left: 2rem;   /* default left padding — overridden by pl-9 etc. on icon inputs */
+  padding-right: 2rem;  /* default right padding — overridden by pr-10 etc. on icon inputs */
 }
 .field-input:focus {
   border-color: var(--accent-cyan);

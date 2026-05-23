@@ -30,7 +30,7 @@ export function AppShell({
         {/* ── Sidebar ── */}
         <aside
           className={cn(
-            "fixed inset-y-0 left-0 z-40 w-72 transition-transform lg:static lg:translate-x-0",
+            "fixed inset-y-0 left-0 z-40 w-72 transition-transform lg:static lg:translate-x-0 flex flex-col h-screen overflow-hidden",
             open ? "translate-x-0" : "-translate-x-full"
           )}
           style={{
@@ -40,19 +40,19 @@ export function AppShell({
         >
           {/* Logo */}
           <div
-            className="flex h-16 items-center gap-2 px-5"
+            className="flex h-16 items-center gap-2.5 px-6 flex-none"
             style={{ borderBottom: "1px solid var(--border-subtle)" }}
           >
-            <Rocket className="h-6 w-6 text-cyan-500" />
-            <span className="font-bold tracking-tight gradient-text">Placement OS</span>
+            <Rocket className="h-5 w-5 text-cyan-500 shrink-0" />
+            <span className="font-bold tracking-tight gradient-text text-sm">Placement OS</span>
           </div>
 
           {/* Navigation */}
-          <nav className="h-[calc(100vh-8rem)] overflow-y-auto p-3">
+          <nav className="flex-1 overflow-y-auto px-4 py-6 space-y-5">
             {mainNav.map((group) => (
-              <div key={group.title} className="mb-4">
+              <div key={group.title} className="space-y-1">
                 <p
-                  className="mb-1.5 px-2 text-[10px] font-bold uppercase tracking-widest"
+                  className="px-2 text-[10px] font-bold uppercase tracking-wider mb-2"
                   style={{ color: "var(--text-faint)" }}
                 >
                   {group.title}
@@ -69,14 +69,14 @@ export function AppShell({
                           href={item.href}
                           onClick={() => setOpen(false)}
                           className={cn(
-                            "nav-item",
+                            "nav-item min-w-0",
                             active && "active"
                           )}
                         >
                           <Icon className="h-4 w-4 shrink-0" />
-                          <span className="truncate">{item.label}</span>
+                          <span className="truncate flex-1">{item.label}</span>
                           {item.badge && (
-                            <span className="ml-auto badge-violet">{item.badge}</span>
+                            <span className="ml-auto badge-violet shrink-0">{item.badge}</span>
                           )}
                         </Link>
                       </li>
@@ -88,33 +88,31 @@ export function AppShell({
           </nav>
 
           {/* User Footer */}
-          <div
-            className="absolute bottom-0 left-0 right-0 p-4 space-y-3"
-            style={{ borderTop: "1px solid var(--border-subtle)" }}
-          >
-            {user && (
-              <>
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-xs font-semibold" style={{ color: "var(--text-primary)" }}>
-                      {user.name || user.username}
-                    </p>
-                    <p className="text-[10px] mt-0.5" style={{ color: "var(--text-muted)" }}>
-                      Lv.{level} · {xp} XP · 🔥 {streak}d
-                    </p>
-                  </div>
+          {user && (
+            <div
+              className="flex-none p-4 space-y-3 border-t border-[var(--border-subtle)]"
+              style={{ background: "var(--bg-elevated)" }}
+            >
+              <div className="flex items-center justify-between">
+                <div className="min-w-0 flex-1">
+                  <p className="text-xs font-semibold truncate" style={{ color: "var(--text-primary)" }}>
+                    {user.name || user.username}
+                  </p>
+                  <p className="text-[10px] mt-0.5 truncate" style={{ color: "var(--text-muted)" }}>
+                    Lv.{level} · {xp} XP · 🔥 {streak}d
+                  </p>
                 </div>
-                <button
-                  onClick={signOut}
-                  className="btn-logout"
-                  title="Logout"
-                >
-                  <LogOut className="h-3.5 w-3.5" />
-                  <span>Logout</span>
-                </button>
-              </>
-            )}
-          </div>
+              </div>
+              <button
+                onClick={signOut}
+                className="btn-logout"
+                title="Logout"
+              >
+                <LogOut className="h-3.5 w-3.5" />
+                <span>Logout</span>
+              </button>
+            </div>
+          )}
         </aside>
 
         {/* Mobile overlay */}

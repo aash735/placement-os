@@ -6,6 +6,7 @@ import { PageHeader } from "@/components/layout/page-header";
 import { GlassCard } from "@/components/ui/glass-card";
 import { useTheme } from "@/components/providers/theme-provider";
 import { useProgressStore } from "@/lib/progress-store";
+import { useAuth } from "@/components/providers/auth-provider";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Moon,
@@ -21,11 +22,13 @@ import {
   Download,
   Compass,
   Info,
-  AlertCircle
+  AlertCircle,
+  LogOut
 } from "lucide-react";
 
 export default function SettingsPage() {
   const { theme, toggle } = useTheme();
+  const { user, signOut } = useAuth();
   
   // Progress Store Values
   const {
@@ -231,6 +234,32 @@ export default function SettingsPage() {
                 )}
               </button>
             </form>
+          </GlassCard>
+
+          {/* Account & Session Settings */}
+          <GlassCard hover={false} className="p-6 border-white/5 space-y-6">
+            <h3 className="text-sm font-bold text-white flex items-center gap-2">
+              <Shield className="h-4 w-4 text-rose-400" />
+              Account & Session
+            </h3>
+
+            <div className="space-y-4">
+              <div>
+                <span className="text-xs font-semibold text-zinc-300 block">Active Profile</span>
+                <p className="text-[11px] text-zinc-500 mt-1">
+                  Logged in as <strong className="text-zinc-200 font-semibold">{user?.name || user?.username || "Guest"}</strong>
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={signOut}
+                className="w-full py-2.5 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 border border-rose-500/25 hover:border-rose-500/40 text-rose-400 font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer"
+              >
+                <LogOut className="h-3.5 w-3.5" />
+                <span>Logout / End Session</span>
+              </button>
+            </div>
           </GlassCard>
         </div>
 

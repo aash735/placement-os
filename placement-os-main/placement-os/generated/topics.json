@@ -1,0 +1,331 @@
+[
+  {
+    "id": "2d-arrays",
+    "name": "2D Arrays",
+    "slug": "2d-arrays",
+    "difficulty": 3,
+    "importanceScore": 85,
+    "interviewFrequency": "high",
+    "estimatedHours": 7,
+    "tier": "must",
+    "overview": "Dynamic DSA roadmap section for 2D Arrays covering core algorithmic patterns. Contains 10 curated problems.",
+    "patterns": []
+  },
+  {
+    "id": "arrays",
+    "name": "Arrays",
+    "slug": "arrays",
+    "difficulty": 3,
+    "importanceScore": 85,
+    "interviewFrequency": "high",
+    "estimatedHours": 23,
+    "tier": "must",
+    "overview": "Dynamic DSA roadmap section for Arrays covering patterns like iteration, hashset, hashmap. Contains 36 curated problems.",
+    "patterns": [
+      "iteration",
+      "hashset",
+      "hashmap",
+      "kadane-variant",
+      "prefix-suffix",
+      "kadane",
+      "sorting",
+      "reverse",
+      "index-marking",
+      "modified-bs",
+      "heap",
+      "two-pointer",
+      "sort+two-pointer",
+      "opposite"
+    ],
+    "unlockAfterTopicId": "2d-arrays"
+  },
+  {
+    "id": "backtracking",
+    "name": "Backtracking",
+    "slug": "backtracking",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 15,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Backtracking covering core algorithmic patterns. Contains 22 curated problems.",
+    "patterns": [],
+    "unlockAfterTopicId": "arrays"
+  },
+  {
+    "id": "binary-search-trees",
+    "name": "Binary Search Trees",
+    "slug": "binary-search-trees",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 17,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Binary Search Trees covering patterns like BST, inorder, range. Contains 25 curated problems.",
+    "patterns": [
+      "BST",
+      "inorder",
+      "range"
+    ],
+    "unlockAfterTopicId": "backtracking"
+  },
+  {
+    "id": "binary-trees",
+    "name": "Binary Trees",
+    "slug": "binary-trees",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 27,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Binary Trees covering patterns like DFS, recursion, BFS. Contains 43 curated problems.",
+    "patterns": [
+      "DFS",
+      "recursion",
+      "BFS",
+      "range",
+      "BST",
+      "BFS/DFS"
+    ],
+    "unlockAfterTopicId": "binary-search-trees"
+  },
+  {
+    "id": "bit-manipulation",
+    "name": "Bit Manipulation",
+    "slug": "bit-manipulation",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 7,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Bit Manipulation covering core algorithmic patterns. Contains 10 curated problems.",
+    "patterns": [],
+    "unlockAfterTopicId": "binary-trees"
+  },
+  {
+    "id": "dynamic-programming",
+    "name": "Dynamic Programming",
+    "slug": "dynamic-programming",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 41,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Dynamic Programming covering patterns like 1d-dp, unbounded-knapsack, LIS. Contains 62 curated problems.",
+    "patterns": [
+      "1d-dp",
+      "unbounded-knapsack",
+      "LIS",
+      "2d-dp"
+    ],
+    "unlockAfterTopicId": "bit-manipulation"
+  },
+  {
+    "id": "graphs",
+    "name": "Graphs",
+    "slug": "graphs",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 33,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Graphs covering patterns like DFS-grid, BFS, DFS. Contains 50 curated problems.",
+    "patterns": [
+      "DFS-grid",
+      "BFS",
+      "DFS",
+      "BFS/DFS",
+      "multi-source-BFS",
+      "topological-sort",
+      "union-find"
+    ],
+    "unlockAfterTopicId": "dynamic-programming"
+  },
+  {
+    "id": "greedy",
+    "name": "Greedy",
+    "slug": "greedy",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 19,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Greedy covering patterns like greedy, intervals. Contains 28 curated problems.",
+    "patterns": [
+      "greedy",
+      "intervals"
+    ],
+    "unlockAfterTopicId": "graphs"
+  },
+  {
+    "id": "heaps-hashing",
+    "name": "Heaps & Hashing",
+    "slug": "heaps-hashing",
+    "difficulty": 3,
+    "importanceScore": 85,
+    "interviewFrequency": "high",
+    "estimatedHours": 28,
+    "tier": "must",
+    "overview": "Dynamic DSA roadmap section for Heaps & Hashing covering patterns like frequency, complement, grouping. Contains 42 curated problems.",
+    "patterns": [
+      "frequency",
+      "complement",
+      "grouping",
+      "bucket-sort",
+      "hashset",
+      "prefix+hashmap",
+      "heap",
+      "two-heaps",
+      "deque"
+    ],
+    "unlockAfterTopicId": "greedy"
+  },
+  {
+    "id": "linked-list",
+    "name": "Linked List",
+    "slug": "linked-list",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 24,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Linked List covering patterns like iteration, dummy-head, slow-fast. Contains 38 curated problems.",
+    "patterns": [
+      "iteration",
+      "dummy-head",
+      "slow-fast",
+      "multi-technique",
+      "two-pointer",
+      "hashmap",
+      "heap"
+    ],
+    "unlockAfterTopicId": "heaps-hashing"
+  },
+  {
+    "id": "searching-sorting",
+    "name": "Searching & Sorting",
+    "slug": "searching-sorting",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 27,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Searching & Sorting covering patterns like two-pointer, merge, dutch-flag. Contains 41 curated problems.",
+    "patterns": [
+      "two-pointer",
+      "merge",
+      "dutch-flag",
+      "sort",
+      "greedy",
+      "template",
+      "lower-bound",
+      "modified-bs",
+      "search-on-answer",
+      "partition"
+    ],
+    "unlockAfterTopicId": "linked-list"
+  },
+  {
+    "id": "segment-trees",
+    "name": "Segment Trees",
+    "slug": "segment-trees",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 4,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Segment Trees covering core algorithmic patterns. Contains 6 curated problems.",
+    "patterns": [],
+    "unlockAfterTopicId": "searching-sorting"
+  },
+  {
+    "id": "sliding-window",
+    "name": "Sliding Window",
+    "slug": "sliding-window",
+    "difficulty": 3,
+    "importanceScore": 85,
+    "interviewFrequency": "high",
+    "estimatedHours": 4,
+    "tier": "must",
+    "overview": "Dynamic DSA roadmap section for Sliding Window covering patterns like fixed-window, variable-window. Contains 5 curated problems.",
+    "patterns": [
+      "fixed-window",
+      "variable-window"
+    ],
+    "unlockAfterTopicId": "segment-trees"
+  },
+  {
+    "id": "stacks-queues",
+    "name": "Stacks & Queues",
+    "slug": "stacks-queues",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 26,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Stacks & Queues covering patterns like stack, design, monotonic-stack. Contains 40 curated problems.",
+    "patterns": [
+      "stack",
+      "design",
+      "monotonic-stack",
+      "queue",
+      "BFS",
+      "deque"
+    ],
+    "unlockAfterTopicId": "sliding-window"
+  },
+  {
+    "id": "strings",
+    "name": "Strings",
+    "slug": "strings",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 17,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Strings covering patterns like two-pointer, frequency, scan. Contains 28 curated problems.",
+    "patterns": [
+      "two-pointer",
+      "frequency",
+      "scan",
+      "sliding-window",
+      "hashmap-grouping",
+      "design",
+      "opposite",
+      "stack",
+      "variable-window",
+      "grouping"
+    ],
+    "unlockAfterTopicId": "stacks-queues"
+  },
+  {
+    "id": "tries",
+    "name": "Tries",
+    "slug": "tries",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 4,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Tries covering core algorithmic patterns. Contains 6 curated problems.",
+    "patterns": [],
+    "unlockAfterTopicId": "strings"
+  },
+  {
+    "id": "two-pointers",
+    "name": "Two Pointers",
+    "slug": "two-pointers",
+    "difficulty": 3,
+    "importanceScore": 85,
+    "interviewFrequency": "high",
+    "estimatedHours": 4,
+    "tier": "must",
+    "overview": "Dynamic DSA roadmap section for Two Pointers covering patterns like opposite, sort+two-pointer, two-pointer. Contains 5 curated problems.",
+    "patterns": [
+      "opposite",
+      "sort+two-pointer",
+      "two-pointer"
+    ],
+    "unlockAfterTopicId": "tries"
+  }
+]

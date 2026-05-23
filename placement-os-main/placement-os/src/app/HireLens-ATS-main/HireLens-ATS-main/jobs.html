@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Jobs - HireLens</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jobs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◈</span>
+                HireLens
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="jobs.html" class="nav-link active">Browse Jobs</a>
+                <a href="discover.html" class="nav-link ">Discover Career</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">◐</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jobs Header -->
+    <section class="jobs-header">
+        <div class="container">
+            <h1 class="page-title fade-in">Find Your Perfect Role</h1>
+            <p class="page-subtitle fade-in-up">
+                Select a job role below to analyze your resume and get your ATS score
+            </p>
+            <div class="search-filter fade-in-up-delay">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search job roles...">
+                <select id="levelFilter" class="level-filter">
+                    <option value="all">All Experience Levels</option>
+                    <option value="junior">Junior / Entry Level</option>
+                    <option value="mid">Mid-Level</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Grid -->
+    <section class="jobs-section">
+        <div class="container">
+            <div class="jobs-count">
+                <span id="jobCount">14</span> roles available
+            </div>
+            <div class="jobs-grid" id="jobsGrid">
+                <!-- Jobs will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-icon">◈</span>
+                        HireLens
+                    </div>
+                    <p class="footer-tagline">Empowering freshers to land their dream jobs</p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-text">
+                        Built with ❤️ for job seekers everywhere
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jobDescriptions.js"></script>
+    <script src="jobs.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

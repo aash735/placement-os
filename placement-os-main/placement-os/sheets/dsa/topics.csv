@@ -1,0 +1,18 @@
+id,name,slug,difficulty,importance_score,interview_frequency,estimated_hours,tier,overview,patterns,unlock_after_topic_id
+arrays,Arrays,arrays,2,98,very-high,12,must,"Foundation of 40%+ OAs. Master two-pointer, prefix, kadane.",two-pointer|prefix-sum|kadane,
+strings,Strings,strings,2,95,very-high,10,must,Frequency maps and sliding window on strings.,frequency|sliding-window|two-pointer,arrays
+hashmaps,HashMap,hashmaps,2,96,very-high,8,must,O(1) lookups unlock optimal solutions.,complement|frequency|grouping,arrays
+sorting,Sorting,sorting,2,85,high,6,must,Apply library sort + custom comparators.,custom-sort|sort+scan,arrays
+binary-search,Binary Search,binary-search,3,92,high,10,must,Template + search on answer space.,lower-upper-bound|search-on-answer,sorting
+sliding-window,Sliding Window,sliding-window,3,90,high,8,must,Fixed and variable window patterns.,fixed-window|variable-window,strings
+two-pointer,Two Pointer,two-pointer,2,94,very-high,8,must,Opposite ends and slow-fast patterns.,opposite|slow-fast,arrays
+stack,Stack,stack,3,88,high,8,must,Monotonic stack and parentheses.,monotonic-stack|parentheses,arrays
+queue,Queue,queue,2,75,medium,5,important,BFS foundation with queues.,BFS|deque,stack
+linked-list,Linked List,linked-list,3,90,high,10,must,"Reverse, cycle, merge patterns.",dummy-head|slow-fast,two-pointer
+trees,Trees,trees,3,95,very-high,14,must,DFS/BFS traversals and recursion.,DFS|BFS|recursion,linked-list
+bst,BST,bst,3,80,medium,6,important,BST property and inorder logic.,inorder|validate-bst,trees
+heap,Heap,heap,3,78,medium,7,important,Top K and merge K patterns.,top-k|two-heaps,trees
+bfs-dfs,BFS / DFS,bfs-dfs,3,88,high,10,must,Grid and graph traversals.,grid-bfs|connected-components,trees
+greedy,Greedy,greedy,3,72,medium,6,important,Interval and jump patterns.,intervals|jump-game,sorting
+graphs,Graph Basics,graphs,4,70,medium,10,important,Adjacency list BFS/DFS.,adjacency-list|cycle-detection,bfs-dfs
+dp,DP Basics,dp,4,65,low,12,optional,1D DP after core topics 60% done.,1d-dp|knapsack-intro,bfs-dfs

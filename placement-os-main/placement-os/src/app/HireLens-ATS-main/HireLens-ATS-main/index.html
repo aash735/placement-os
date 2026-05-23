@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireLens - Optimize Your Resume for ATS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◈</span>
+                HireLens
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="jobs.html" class="nav-link">Browse Jobs</a>
+                <a href="discover.html" class="nav-link">Discover Career</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">◐</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <canvas id="particleCanvas"></canvas>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge fade-in">For Freshers & Interns</div>
+            <h1 class="hero-title fade-in-up">
+                Optimize your resume,<br>
+                <span class="highlight">get noticed</span>,<br>
+                and land your dream job
+            </h1>
+            <p class="hero-subtitle fade-in-up-delay">
+                Get instant ATS scores, discover missing keywords, and perfect your resume 
+                for any job role with our intelligent analysis platform.
+            </p>
+            <div class="hero-actions fade-in-up-delay-2">
+                <a href="jobs.html" class="btn btn-primary">
+                    Get Started
+                    <span class="btn-arrow">→</span>
+                </a>
+                <button class="btn btn-secondary" onclick="scrollToFeatures()">
+                    Learn More
+                </button>
+            </div>
+            
+            <div class="hero-stats fade-in-up-delay-3">
+                <div class="stat">
+                    <div class="stat-number">32+</div>
+                    <div class="stat-label">Career Roles</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">ATS Accuracy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">Free</div>
+                    <div class="stat-label">Forever</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How HireLens Works</h2>
+                <p class="section-subtitle">Three simple steps to optimize your resume</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📄</div>
+                    <h3 class="feature-title">Upload Resume</h3>
+                    <p class="feature-description">
+                        Upload your PDF resume and select the job role you're applying for
+                    </p>
+                    <div class="feature-number">01</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Get ATS Score</h3>
+                    <p class="feature-description">
+                        Our intelligent algorithm analyzes keyword matches and calculates your ATS compatibility score
+                    </p>
+                    <div class="feature-number">02</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">Optimize & Apply</h3>
+                    <p class="feature-description">
+                        Get actionable suggestions, add missing keywords, and improve your resume instantly
+                    </p>
+                    <div class="feature-number">03</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-left">
+                    <h2 class="benefits-title">Why Choose HireLens?</h2>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚡</div>
+                        <div class="benefit-text">
+                            <h4>Instant Analysis</h4>
+                            <p>Get your ATS score in seconds, not hours</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎓</div>
+                        <div class="benefit-text">
+                            <h4>Tailored for Freshers</h4>
+                            <p>Designed specifically for entry-level candidates and interns</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🔒</div>
+                        <div class="benefit-text">
+                            <h4>100% Private</h4>
+                            <p>Your resume is processed locally, never stored on servers</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💡</div>
+                        <div class="benefit-text">
+                            <h4>Smart Suggestions</h4>
+                            <p>Get alternative keywords and contextual recommendations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-right">
+                    <div class="benefits-visual">
+                        <div class="visual-card card-1">
+                            <div class="visual-score">92%</div>
+                            <div class="visual-label">ATS Match</div>
+                        </div>
+                        <div class="visual-card card-2">
+                            <div class="visual-icon">✓</div>
+                            <div class="visual-text">15 Keywords Found</div>
+                        </div>
+                        <div class="visual-card card-3">
+                            <div class="visual-icon">+</div>
+                            <div class="visual-text">5 Suggestions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to optimize your resume?</h2>
+                <p class="cta-subtitle">Join hundreds of freshers who've improved their job prospects</p>
+                <a href="jobs.html" class="btn btn-large">
+                    Start Now - It's Free
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="logo-icon">◈</span>
+                        HireLens
+                    </div>
+                    <p class="footer-tagline">Empowering freshers to land their dream jobs</p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-text">
+                        Built with ❤️ for job seekers everywhere
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+id,category,name,priority,difficulty,strategy,shortcuts,revision
+percentages,quant,Percentages & Profit-Loss,critical,2,10 min/day formula drill,multiplier method|fraction ↔ % table,Flash cards weekly
+ratios,quant,Ratio & Proportion,critical,2,Pair with DI questions,componendo-dividendo for speed,5 problems/day
+time-work,quant,Time & Work,high,2,LCM efficiency method only,1/a + 1/b = 1/total,Bi-weekly mock set
+speed,quant,"Time, Speed & Distance",high,2,Unit consistency first,relative speed templates,Error log in Placement OS
+series,logical,Number & Letter Series,critical,2,"Pattern buckets: +, ×, squares, alternating",difference of differences,Daily 15 puzzles
+coding-decoding,logical,Coding-Decoding,high,2,Map alphabet positions,reverse alphabet offset trick,Weekend batch
+blood-relations,logical,Blood Relations,medium,2,Draw tree—never mental-only,generation notation,Monthly refresh
+syllogism,logical,Syllogism,high,3,Venn only for validity,some/not all keywords,TCS/Infosys OA prep
+rc,verbal,Reading Comprehension,critical,3,Skim questions first; annotate passage,eliminate extreme options,3 RC/week
+grammar,verbal,Grammar & Sentence Correction,high,2,"Error type buckets: tense, agreement, preposition",read aloud test,Daily 10 questions
+vocab,verbal,Vocabulary & Para Jumbles,medium,2,Context over memorization,mandatory sentence in PJ,Spaced repetition app
+puzzles,puzzles,Seating & Arrangement,critical,3,Grid on paper always,fixed position anchors first,2 puzzles/day in season
+di,di,Charts & Tables,high,3,Approximation allowed—note units,% change = (new-old)/old,Weekly DI set

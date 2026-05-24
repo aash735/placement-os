@@ -56,6 +56,63 @@ interface ProgressState {
   llmApiKey: string;
   shortcutsEnabled: boolean;
 
+  // Added States
+  focusSession: {
+    startTime: string | null;
+    endTime: string | null;
+    pausedTimeLeft: number;
+    duration: number;
+    timeLeft: number;
+    task: string;
+    questionId: string | null;
+    isRunning: boolean;
+  };
+  unlockedAchievements: string[];
+  recentUnlock: string | null;
+  pendingAchievementsQueue: string[];
+  countdownGoals: {
+    id: string;
+    title: string;
+    targetDate: string;
+    milestones: { text: string; completed: boolean }[];
+  }[];
+  interviewSession: {
+    id: string;
+    type: "dsa" | "hr" | "frontend" | "project";
+    status: "in-progress" | "completed";
+    score: number;
+    questions: any[];
+    answers: Record<string, string>;
+    feedback?: string;
+    timeLeft: number;
+    isRunning: boolean;
+    endTime: string | null;
+    pausedTimeLeft: number;
+  } | null;
+  interviewHistory: {
+    id: string;
+    type: string;
+    status: string;
+    score: number;
+    questions: any[];
+    answers: Record<string, string>;
+    feedback?: string;
+    completedAt: string;
+  }[];
+  dailyPlannerBlocks: {
+    id: string;
+    time: string;
+    task: string;
+    energy: string;
+    completed: boolean;
+  }[];
+  customWeeklyPlan: {
+    week: number;
+    focus: string;
+    hours: string;
+    days: string[];
+  }[];
+
   setQuestionStatus: (questionId: string, status: QuestionStatus, timeSpentMin?: number) => void;
   setQuestionNotes: (questionId: string, notes: string) => void;
   toggleBookmark: (questionId: string) => void;
@@ -84,6 +141,42 @@ interface ProgressState {
   updateCsSubject: (subjectId: string, status: CsSubjectState["status"], score?: number, checkedItems?: string[]) => void;
   setLlmApiKey: (key: string) => void;
   setShortcutsEnabled: (enabled: boolean) => void;
+
+  // Added Actions
+  startFocusSession: (task: string, durationMin?: number, questionId?: string | null) => void;
+  pauseFocusSession: () => void;
+  resumeFocusSession: () => void;
+  resetFocusSession: () => void;
+  tickFocusSession: (elapsedSeconds?: number) => void;
+  completeFocusSession: () => void;
+
+  unlockAchievement: (id: string) => void;
+  clearRecentUnlock: () => void;
+  checkAchievements: () => void;
+
+  addCountdownGoal: (goal: { title: string; targetDate: string; milestones: string[] }) => void;
+  updateCountdownGoal: (id: string, goal: { title: string; targetDate: string; milestones?: { text: string; completed: boolean }[] }) => void;
+  deleteCountdownGoal: (id: string) => void;
+  toggleMilestone: (goalId: string, milestoneIndex: number) => void;
+
+  startInterviewSession: (type: "dsa" | "hr" | "frontend" | "project", questions: any[]) => void;
+  tickInterviewSession: (elapsedSeconds?: number) => void;
+  updateInterviewAnswer: (questionId: string, answerText: string) => void;
+  submitInterviewSession: (score: number, feedback?: string) => void;
+  discardInterviewSession: () => void;
+
+  addPlannerBlock: (block: { time: string; task: string; energy: string }) => void;
+  updatePlannerBlock: (id: string, updates: Partial<{ time: string; task: string; energy: string; completed: boolean }>) => void;
+  deletePlannerBlock: (id: string) => void;
+  togglePlannerBlock: (id: string) => void;
+
+  setWeeklyPlan: (plan: { week: number; focus: string; hours: string; days: string[] }[]) => void;
+  updateWeeklyWeek: (weekNum: number, focus: string, hours: string) => void;
+  addWeeklyTask: (weekNum: number, task: string) => void;
+  removeWeeklyTask: (weekNum: number, taskIndex: number) => void;
+  updateWeeklyTask: (weekNum: number, taskIndex: number, newTask: string) => void;
+  addWeeklyWeek: (week: { week: number; focus: string; hours: string; days: string[] }) => void;
+  deleteWeeklyWeek: (weekNum: number) => void;
 
   // Supabase Hydration and Management
   hydrateFromDb: (userId: string) => Promise<void>;
@@ -146,6 +239,44 @@ export const useProgressStore = create<ProgressState>()(
       llmApiKey: "",
       shortcutsEnabled: true,
 
+      // Added default states
+      focusSession: {
+        startTime: null,
+        endTime: null,
+        pausedTimeLeft: 0,
+        duration: 25 * 60,
+        timeLeft: 25 * 60,
+        task: "",
+        questionId: null,
+        isRunning: false,
+      },
+      unlockedAchievements: [],
+      recentUnlock: null,
+      pendingAchievementsQueue: [],
+      countdownGoals: [
+        {
+          id: "goal-default",
+          title: "Target Season (Aug 2026)",
+          targetDate: "2026-08-01",
+          milestones: [
+            { text: "60% DSA must-tier", completed: false },
+            { text: "HireLens live", completed: false },
+            { text: "3 mock interviews", completed: false }
+          ]
+        }
+      ],
+      interviewSession: null,
+      interviewHistory: [],
+      dailyPlannerBlocks: [
+        { id: "block-1", time: "7:30", task: "Wake + 5 min plan (Placement OS)", energy: "low", completed: false },
+        { id: "block-2", time: "9:00", task: "College / classes", energy: "normal", completed: false },
+        { id: "block-3", time: "17:00", task: "DSA 1 problem (35 min)", energy: "normal", completed: false },
+        { id: "block-4", time: "17:45", task: "Aptitude 15 questions", energy: "normal", completed: false },
+        { id: "block-5", time: "18:15", task: "Project 30 min (HireLens)", energy: "normal", completed: false },
+        { id: "block-6", time: "21:00", task: "Wind-down · no YouTube spiral", energy: "recovery", completed: false },
+      ],
+      customWeeklyPlan: [],
+
       hydrateFromDb: async (userId) => {
         const data = await db.fetchUserData(userId);
         if (data) {
@@ -167,6 +298,29 @@ export const useProgressStore = create<ProgressState>()(
             companyTargets: data.companyTargets,
             dailyLogs: data.dailyLogs,
             revisionHistory: data.revisionHistory,
+            // Added states hydration
+            unlockedAchievements: data.unlockedAchievements || [],
+            countdownGoals: data.countdownGoals && data.countdownGoals.length > 0 ? data.countdownGoals : [
+              {
+                id: "goal-default",
+                title: "Target Season (Aug 2026)",
+                targetDate: "2026-08-01",
+                milestones: [
+                  { text: "60% DSA must-tier", completed: false },
+                  { text: "HireLens live", completed: false },
+                  { text: "3 mock interviews", completed: false }
+                ]
+              }
+            ],
+            interviewHistory: data.interviewHistory || [],
+            dailyPlannerBlocks: data.dailyPlannerBlocks && data.dailyPlannerBlocks.length > 0 ? data.dailyPlannerBlocks : [
+              { id: "block-1", time: "7:30", task: "Wake + 5 min plan (Placement OS)", energy: "low", completed: false },
+              { id: "block-2", time: "9:00", task: "College / classes", energy: "normal", completed: false },
+              { id: "block-3", time: "17:00", task: "DSA 1 problem (35 min)", energy: "normal", completed: false },
+              { id: "block-4", time: "17:45", task: "Aptitude 15 questions", energy: "normal", completed: false },
+              { id: "block-5", time: "18:15", task: "Project 30 min (HireLens)", energy: "normal", completed: false },
+              { id: "block-6", time: "21:00", task: "Wind-down · no YouTube spiral", energy: "recovery", completed: false },
+            ],
           });
           get().refreshScores();
         } else {
@@ -203,6 +357,43 @@ export const useProgressStore = create<ProgressState>()(
           },
           llmApiKey: "",
           shortcutsEnabled: true,
+           // Added states clear
+          focusSession: {
+            startTime: null,
+            endTime: null,
+            pausedTimeLeft: 0,
+            duration: 25 * 60,
+            timeLeft: 25 * 60,
+            task: "",
+            questionId: null,
+            isRunning: false,
+          },
+          unlockedAchievements: [],
+          recentUnlock: null,
+          pendingAchievementsQueue: [],
+          countdownGoals: [
+            {
+              id: "goal-default",
+              title: "Target Season (Aug 2026)",
+              targetDate: "2026-08-01",
+              milestones: [
+                { text: "60% DSA must-tier", completed: false },
+                { text: "HireLens live", completed: false },
+                { text: "3 mock interviews", completed: false }
+              ]
+            }
+          ],
+          interviewSession: null,
+          interviewHistory: [],
+          dailyPlannerBlocks: [
+            { id: "block-1", time: "7:30", task: "Wake + 5 min plan (Placement OS)", energy: "low", completed: false },
+            { id: "block-2", time: "9:00", task: "College / classes", energy: "normal", completed: false },
+            { id: "block-3", time: "17:00", task: "DSA 1 problem (35 min)", energy: "normal", completed: false },
+            { id: "block-4", time: "17:45", task: "Aptitude 15 questions", energy: "normal", completed: false },
+            { id: "block-5", time: "18:15", task: "Project 30 min (HireLens)", energy: "normal", completed: false },
+            { id: "block-6", time: "21:00", task: "Wind-down · no YouTube spiral", energy: "recovery", completed: false },
+          ],
+          customWeeklyPlan: [],
         });
         get().refreshScores();
       },
@@ -354,6 +545,7 @@ export const useProgressStore = create<ProgressState>()(
           }
         }
 
+        state.checkAchievements();
         get().refreshScores();
       },
 
@@ -443,6 +635,7 @@ export const useProgressStore = create<ProgressState>()(
           });
         }
 
+        state.checkAchievements();
         get().refreshScores();
       },
 
@@ -485,6 +678,7 @@ export const useProgressStore = create<ProgressState>()(
           const activeLog = logs.find((l) => l.date === today());
           if (activeLog) db.saveDailyLog(userId, activeLog);
         }
+        get().checkAchievements();
       },
 
       addXp: (amount) => {
@@ -502,6 +696,7 @@ export const useProgressStore = create<ProgressState>()(
             energyMode: state.energyMode,
           });
         }
+        state.checkAchievements();
         get().refreshScores();
       },
 
@@ -540,6 +735,7 @@ export const useProgressStore = create<ProgressState>()(
           if (activeLog) db.saveDailyLog(state.userId, activeLog);
         }
 
+        state.checkAchievements();
         get().refreshScores();
       },
 
@@ -645,6 +841,7 @@ export const useProgressStore = create<ProgressState>()(
           if (activeLog) db.saveDailyLog(state.userId, activeLog);
         }
 
+        state.checkAchievements();
         get().refreshScores();
       },
 
@@ -678,6 +875,581 @@ export const useProgressStore = create<ProgressState>()(
             shortcutsEnabled: enabled,
           });
         }
+      },
+
+      // Added Actions implementations
+      startFocusSession: (task, durationMin = 25, questionId = null) => {
+        const durationSec = durationMin * 60;
+        const now = Date.now();
+        const endTime = new Date(now + durationSec * 1000).toISOString();
+        set({
+          focusSession: {
+            startTime: new Date(now).toISOString(),
+            endTime,
+            pausedTimeLeft: 0,
+            duration: durationSec,
+            timeLeft: durationSec,
+            task,
+            questionId,
+            isRunning: true,
+            lastTickTime: now,
+          } as any,
+        });
+      },
+
+      pauseFocusSession: () => {
+        set((s) => {
+          const now = Date.now();
+          let timeLeft = s.focusSession.timeLeft;
+          if (s.focusSession.endTime) {
+            timeLeft = Math.max(0, Math.round((new Date(s.focusSession.endTime).getTime() - now) / 1000));
+          }
+          return {
+            focusSession: {
+              ...s.focusSession,
+              isRunning: false,
+              endTime: null,
+              pausedTimeLeft: timeLeft,
+              timeLeft,
+            },
+          };
+        });
+      },
+
+      resumeFocusSession: () => {
+        set((s) => {
+          const now = Date.now();
+          const durationLeftSec = s.focusSession.pausedTimeLeft > 0 ? s.focusSession.pausedTimeLeft : s.focusSession.timeLeft;
+          const endTime = new Date(now + durationLeftSec * 1000).toISOString();
+          return {
+            focusSession: {
+              ...s.focusSession,
+              isRunning: true,
+              endTime,
+              pausedTimeLeft: 0,
+              timeLeft: durationLeftSec,
+              lastTickTime: now,
+            } as any,
+          };
+        });
+      },
+
+      resetFocusSession: () => {
+        set((s) => ({
+          focusSession: {
+            ...s.focusSession,
+            startTime: null,
+            endTime: null,
+            pausedTimeLeft: 0,
+            timeLeft: s.focusSession.duration,
+            isRunning: false,
+          },
+        }));
+      },
+
+      tickFocusSession: (elapsedSeconds) => {
+        const s = get();
+        if (!s.focusSession.isRunning) return;
+        const now = Date.now();
+        let newTimeLeft = s.focusSession.timeLeft;
+        if (s.focusSession.endTime) {
+          newTimeLeft = Math.max(0, Math.round((new Date(s.focusSession.endTime).getTime() - now) / 1000));
+        } else {
+          const elapsed = elapsedSeconds !== undefined ? elapsedSeconds : 1;
+          newTimeLeft = Math.max(0, s.focusSession.timeLeft - elapsed);
+        }
+        set({
+          focusSession: {
+            ...s.focusSession,
+            timeLeft: newTimeLeft,
+            lastTickTime: now,
+            isRunning: newTimeLeft > 0,
+          } as any,
+        });
+        if (newTimeLeft === 0) {
+          s.completeFocusSession();
+        }
+      },
+
+      completeFocusSession: () => {
+        const state = get();
+        const durationMin = Math.round(state.focusSession.duration / 60);
+        const xpGain = durationMin * 2;
+        const newXp = state.xp + xpGain;
+
+        const logs = ensureDailyLog(state.dailyLogs).map((l) =>
+          l.date === today()
+            ? {
+                ...l,
+                focusMinutes: l.focusMinutes + durationMin,
+                xpEarned: l.xpEarned + xpGain,
+              }
+            : l
+        );
+
+        set({
+          focusSession: {
+            ...state.focusSession,
+            isRunning: false,
+            endTime: null,
+            pausedTimeLeft: 0,
+            timeLeft: 0,
+          },
+          dailyLogs: logs,
+          focusScore: Math.min(100, state.focusScore + Math.floor(durationMin / 5)),
+          ...syncLevelFromXp(newXp),
+          ...updateStreak(state.lastActiveDate, state.streak),
+        });
+
+        // Supabase DB Sync
+        if (state.userId) {
+          const activeLog = logs.find((l) => l.date === today());
+          if (activeLog) db.saveDailyLog(state.userId, activeLog);
+          db.saveUserProfile(state.userId, {
+            xp: newXp,
+            level: syncLevelFromXp(newXp).level,
+            streak: state.streak,
+            lastActiveDate: state.lastActiveDate,
+            energyMode: state.energyMode,
+          });
+        }
+
+        if (state.focusSession.questionId) {
+          const qProg = state.questionProgress[state.focusSession.questionId];
+          if (!qProg || qProg.status === "not_started") {
+            state.setQuestionStatus(state.focusSession.questionId, "attempted", durationMin);
+          } else {
+            state.setQuestionStatus(state.focusSession.questionId, qProg.status, durationMin);
+          }
+        } else {
+          state.checkAchievements();
+        }
+        get().refreshScores();
+      },
+
+      unlockAchievement: (id) => {
+        const state = get();
+        if (state.unlockedAchievements.includes(id)) return;
+
+        const newUnlocked = [...state.unlockedAchievements, id];
+        const newQueue = [...(state.pendingAchievementsQueue || []), id];
+        const xpGain = 100;
+        const newXp = state.xp + xpGain;
+        const streakUpdate = updateStreak(state.lastActiveDate, state.streak);
+
+        set({
+          unlockedAchievements: newUnlocked,
+          recentUnlock: id,
+          pendingAchievementsQueue: newQueue,
+          ...syncLevelFromXp(newXp),
+          ...streakUpdate,
+        });
+
+        // Supabase DB Sync
+        if (state.userId) {
+          db.saveAchievement(state.userId, id);
+          db.saveUserProfile(state.userId, {
+            xp: newXp,
+            level: syncLevelFromXp(newXp).level,
+            streak: streakUpdate.streak,
+            lastActiveDate: streakUpdate.lastActiveDate,
+            energyMode: state.energyMode,
+          });
+        }
+        get().refreshScores();
+      },
+
+      clearRecentUnlock: () => {
+        set((s) => {
+          const nextQueue = s.pendingAchievementsQueue.slice(1);
+          return {
+            pendingAchievementsQueue: nextQueue,
+            recentUnlock: nextQueue.length > 0 ? nextQueue[0] : null,
+          };
+        });
+      },
+
+      checkAchievements: () => {
+        const state = get();
+        const questions = useDataStore.getState().questions;
+        const total = questions.length || 1;
+        const solved = questions.filter((q) =>
+          ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
+        ).length;
+        const streak = state.streak;
+        const level = state.level;
+        const xp = state.xp;
+
+        // Specific topics
+        const graphSolved = questions.filter((q) =>
+          q.topicId === "graphs" &&
+          ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
+        ).length;
+        const dpSolved = questions.filter((q) =>
+          q.topicId === "dp" &&
+          ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
+        ).length;
+
+        // Focus minutes
+        const totalFocusMinutes = state.dailyLogs.reduce((sum, log) => sum + (log.focusMinutes || 0), 0);
+
+        // Mocks
+        const mockCompleted = state.mockTests.filter((m) => m.completedAt).length + (state.interviewHistory?.length || 0);
+        const hrMockCompleted = (state.interviewHistory || []).filter((i) => i.type === "hr").length;
+        const frontendMockCompleted = (state.interviewHistory || []).filter((i) => i.type === "frontend").length;
+
+        // Productivity
+        const revisionCount = state.revisionHistory ? state.revisionHistory.length : 0;
+        const completedPlannerTasks = state.dailyPlannerBlocks ? state.dailyPlannerBlocks.filter(b => b.completed).length : 0;
+
+        // Night owl / Early starter checks
+        let hasNightOwl = false;
+        let hasEarlyStarter = false;
+        Object.values(state.questionProgress || {}).forEach((prog) => {
+          if (prog.solvedAt) {
+            const hr = new Date(prog.solvedAt).getHours();
+            if (hr >= 23 || hr < 4) hasNightOwl = true;
+            if (hr >= 4 && hr < 8) hasEarlyStarter = true;
+          }
+        });
+
+        const checks = [
+          // DSA
+          { id: "first_solve", condition: solved >= 1 },
+          { id: "dsa_50", condition: solved >= 50 },
+          { id: "dsa_100", condition: solved >= 100 },
+          { id: "graph_master", condition: graphSolved >= 5 },
+          { id: "dp_expert", condition: dpSolved >= 5 },
+
+          // Focus
+          { id: "first_focus", condition: totalFocusMinutes >= 25 },
+          { id: "focus_champion", condition: totalFocusMinutes >= 125 },
+          { id: "deep_work_beast", condition: totalFocusMinutes >= 375 },
+          { id: "focus_10hr", condition: totalFocusMinutes >= 600 },
+
+          // Streaks
+          { id: "streak_3", condition: streak >= 3 },
+          { id: "streak_7", condition: streak >= 7 },
+          { id: "streak_guardian", condition: streak >= 7 },
+          { id: "streak_30", condition: streak >= 30 },
+
+          // Mocks
+          { id: "mock_starter", condition: mockCompleted >= 1 },
+          { id: "hr_master", condition: hrMockCompleted >= 1 },
+          { id: "frontend_pro", condition: frontendMockCompleted >= 1 },
+
+          // Productivity
+          { id: "revision_warrior", condition: revisionCount >= 5 },
+          { id: "planner_master", condition: completedPlannerTasks >= 5 },
+          { id: "night_owl", condition: hasNightOwl },
+          { id: "early_starter", condition: hasEarlyStarter },
+
+          // Legacy / others
+          { id: "pattern_builder", condition: solved >= 10 },
+          { id: "oa_ready", condition: solved >= total * 0.3 },
+          { id: "level_5", condition: level >= 5 },
+          { id: "century", condition: xp >= 1000 },
+        ];
+
+        checks.forEach((c) => {
+          if (c.condition && !state.unlockedAchievements.includes(c.id)) {
+            state.unlockAchievement(c.id);
+          }
+        });
+      },
+
+      addCountdownGoal: (goal) => {
+        const state = get();
+        const newGoal = {
+          id: `goal-${Date.now()}`,
+          title: goal.title,
+          targetDate: goal.targetDate,
+          milestones: goal.milestones.map((m) => ({ text: m, completed: false })),
+        };
+        const updated = [...state.countdownGoals, newGoal];
+        set({ countdownGoals: updated });
+        if (state.userId) {
+          db.saveCountdownGoal(state.userId, newGoal);
+        }
+      },
+
+      updateCountdownGoal: (id, goal) => {
+        const state = get();
+        const updated = state.countdownGoals.map((g) =>
+          g.id === id
+            ? {
+                ...g,
+                title: goal.title,
+                targetDate: goal.targetDate,
+                milestones: goal.milestones !== undefined ? goal.milestones : g.milestones,
+              }
+            : g
+        );
+        set({ countdownGoals: updated });
+        const updatedGoal = updated.find((g) => g.id === id);
+        if (state.userId && updatedGoal) {
+          db.saveCountdownGoal(state.userId, updatedGoal);
+        }
+      },
+
+      deleteCountdownGoal: (id) => {
+        const state = get();
+        const updated = state.countdownGoals.filter((g) => g.id !== id);
+        set({ countdownGoals: updated });
+        if (state.userId) {
+          db.deleteCountdownGoal(state.userId, id);
+        }
+      },
+
+      toggleMilestone: (goalId, milestoneIndex) => {
+        const state = get();
+        const updated = state.countdownGoals.map((g) => {
+          if (g.id !== goalId) return g;
+          const newMilestones = g.milestones.map((m, idx) =>
+            idx === milestoneIndex ? { ...m, completed: !m.completed } : m
+          );
+          return { ...g, milestones: newMilestones };
+        });
+        set({ countdownGoals: updated });
+        const updatedGoal = updated.find((g) => g.id === goalId);
+        if (state.userId && updatedGoal) {
+          db.saveCountdownGoal(state.userId, updatedGoal);
+        }
+      },
+
+      startInterviewSession: (type, questions) => {
+        const durationSec = 45 * 60;
+        const now = Date.now();
+        const endTime = new Date(now + durationSec * 1000).toISOString();
+        const session = {
+          id: `int-${now}`,
+          type,
+          status: "in-progress" as const,
+          score: 0,
+          questions,
+          answers: {},
+          timeLeft: durationSec,
+          isRunning: true,
+          endTime,
+          pausedTimeLeft: 0,
+        };
+        set({ interviewSession: session });
+      },
+
+      tickInterviewSession: (elapsedSeconds) => {
+        const state = get();
+        if (!state.interviewSession || !state.interviewSession.isRunning) return;
+        const now = Date.now();
+        let newTimeLeft = state.interviewSession.timeLeft;
+        if (state.interviewSession.endTime) {
+          newTimeLeft = Math.max(0, Math.round((new Date(state.interviewSession.endTime).getTime() - now) / 1000));
+        } else {
+          const elapsed = elapsedSeconds !== undefined ? elapsedSeconds : 1;
+          newTimeLeft = Math.max(0, state.interviewSession.timeLeft - elapsed);
+        }
+        set({
+          interviewSession: {
+            ...state.interviewSession,
+            timeLeft: newTimeLeft,
+            isRunning: newTimeLeft > 0,
+          },
+        });
+        if (newTimeLeft === 0) {
+          state.submitInterviewSession(50, "Time expired during mock interview.");
+        }
+      },
+
+      updateInterviewAnswer: (questionId, answerText) => {
+        set((s) => {
+          if (!s.interviewSession) return {};
+          return {
+            interviewSession: {
+              ...s.interviewSession,
+              answers: {
+                ...s.interviewSession.answers,
+                [questionId]: answerText,
+              },
+            },
+          };
+        });
+      },
+
+      submitInterviewSession: (score, feedback = "Well structured outline. Focus on optimizing time complexity.") => {
+        const state = get();
+        if (!state.interviewSession) return;
+
+        const completedInterview = {
+          id: state.interviewSession.id,
+          type: state.interviewSession.type,
+          status: "completed",
+          score,
+          questions: state.interviewSession.questions,
+          answers: state.interviewSession.answers,
+          feedback,
+          completedAt: new Date().toISOString(),
+        };
+
+        const xpGain = score * 3 + 150;
+        const newXp = state.xp + xpGain;
+        const logs = ensureDailyLog(state.dailyLogs).map((l) =>
+          l.date === today() ? { ...l, xpEarned: l.xpEarned + xpGain } : l
+        );
+
+        set({
+          interviewSession: null,
+          interviewHistory: [...state.interviewHistory, completedInterview],
+          dailyLogs: logs,
+          ...syncLevelFromXp(newXp),
+          ...updateStreak(state.lastActiveDate, state.streak),
+        });
+
+        // Supabase DB Sync
+        if (state.userId) {
+          db.saveMockInterview(state.userId, completedInterview);
+          db.saveUserProfile(state.userId, {
+            xp: newXp,
+            level: syncLevelFromXp(newXp).level,
+            streak: state.streak,
+            lastActiveDate: state.lastActiveDate,
+            energyMode: state.energyMode,
+          });
+          const activeLog = logs.find((l) => l.date === today());
+          if (activeLog) db.saveDailyLog(state.userId, activeLog);
+        }
+
+        state.checkAchievements();
+        get().refreshScores();
+      },
+
+      discardInterviewSession: () => {
+        set({ interviewSession: null });
+      },
+
+      addPlannerBlock: (block) => {
+        const state = get();
+        const newBlock = {
+          id: `block-${Date.now()}`,
+          time: block.time,
+          task: block.task,
+          energy: block.energy,
+          completed: false,
+        };
+        const updated = [...state.dailyPlannerBlocks, newBlock];
+        set({ dailyPlannerBlocks: updated });
+        if (state.userId) {
+          db.savePlannerBlock(state.userId, newBlock);
+        }
+      },
+
+      updatePlannerBlock: (id, updates) => {
+        const state = get();
+        const updated = state.dailyPlannerBlocks.map((b) => {
+          if (b.id !== id) return b;
+          return { ...b, ...updates };
+        });
+        set({ dailyPlannerBlocks: updated });
+        const updatedBlock = updated.find((b) => b.id === id);
+        if (state.userId && updatedBlock) {
+          db.savePlannerBlock(state.userId, updatedBlock);
+        }
+      },
+
+      deletePlannerBlock: (id) => {
+        const state = get();
+        const updated = state.dailyPlannerBlocks.filter((b) => b.id !== id);
+        set({ dailyPlannerBlocks: updated });
+        if (state.userId) {
+          db.deletePlannerBlock(state.userId, id);
+        }
+      },
+
+      togglePlannerBlock: (id) => {
+        const state = get();
+        const block = state.dailyPlannerBlocks.find((b) => b.id === id);
+        if (!block) return;
+
+        const newCompleted = !block.completed;
+        const xpGain = newCompleted ? 25 : -25;
+        const newXp = Math.max(0, state.xp + xpGain);
+
+        const updated = state.dailyPlannerBlocks.map((b) =>
+          b.id === id ? { ...b, completed: newCompleted } : b
+        );
+
+        const logs = ensureDailyLog(state.dailyLogs).map((l) =>
+          l.date === today() ? { ...l, xpEarned: Math.max(0, l.xpEarned + xpGain) } : l
+        );
+
+        set({
+          dailyPlannerBlocks: updated,
+          dailyLogs: logs,
+          ...syncLevelFromXp(newXp),
+          ...updateStreak(state.lastActiveDate, state.streak),
+        });
+
+        // Supabase DB Sync
+        const updatedBlock = updated.find((b) => b.id === id);
+        if (state.userId && updatedBlock) {
+          db.savePlannerBlock(state.userId, updatedBlock);
+          db.saveUserProfile(state.userId, {
+            xp: newXp,
+            level: syncLevelFromXp(newXp).level,
+            streak: state.streak,
+            lastActiveDate: state.lastActiveDate,
+            energyMode: state.energyMode,
+          });
+          const activeLog = logs.find((l) => l.date === today());
+          if (activeLog) db.saveDailyLog(state.userId, activeLog);
+        }
+
+        state.checkAchievements();
+        get().refreshScores();
+      },
+
+      setWeeklyPlan: (plan) => set({ customWeeklyPlan: plan }),
+
+      updateWeeklyWeek: (weekNum, focus, hours) => {
+        set((s) => ({
+          customWeeklyPlan: s.customWeeklyPlan.map((w) =>
+            w.week === weekNum ? { ...w, focus, hours } : w
+          ),
+        }));
+      },
+
+      addWeeklyTask: (weekNum, task) => {
+        set((s) => ({
+          customWeeklyPlan: s.customWeeklyPlan.map((w) =>
+            w.week === weekNum ? { ...w, days: [...w.days, task] } : w
+          ),
+        }));
+      },
+
+      removeWeeklyTask: (weekNum, taskIndex) => {
+        set((s) => ({
+          customWeeklyPlan: s.customWeeklyPlan.map((w) =>
+            w.week === weekNum ? { ...w, days: w.days.filter((_, idx) => idx !== taskIndex) } : w
+          ),
+        }));
+      },
+
+      updateWeeklyTask: (weekNum, taskIndex, newTask) => {
+        set((s) => ({
+          customWeeklyPlan: s.customWeeklyPlan.map((w) =>
+            w.week === weekNum ? { ...w, days: w.days.map((d, idx) => idx === taskIndex ? newTask : d) } : w
+          ),
+        }));
+      },
+
+      addWeeklyWeek: (week) => {
+        set((s) => ({
+          customWeeklyPlan: [...s.customWeeklyPlan, week].sort((a, b) => a.week - b.week),
+        }));
+      },
+
+      deleteWeeklyWeek: (weekNum) => {
+        set((s) => ({
+          customWeeklyPlan: s.customWeeklyPlan.filter((w) => w.week !== weekNum),
+        }));
       },
 
       exportProgress: () => {

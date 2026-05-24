@@ -168,7 +168,7 @@ function RecommendationsPanel() {
   }, [questions, weakTopics, questionProgress]);
 
   // Company-specific: pick top companies from solved questions
-  const companyQuestions = useMemo(() => {
+  const companyQuestions = (() => {
     const companyCounts: Record<string, number> = {};
     questions.forEach((q) => {
       if (["solved", "revised", "mastered"].includes(questionProgress[q.id]?.status ?? "")) {
@@ -195,7 +195,7 @@ function RecommendationsPanel() {
           !["solved", "revised", "mastered"].includes(questionProgress[q.id]?.status ?? "")
       )
       .slice(0, 8);
-  }, [questions, questionProgress]);
+  })();
 
   const tabs = [
     { id: "weak" as const, label: "Weak Topics", icon: Target, count: weakQuestions.length },

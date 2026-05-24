@@ -55,71 +55,35 @@ function main() {
     console.log("✅ No row validation warnings found.");
   }
 
-  // Build topic display name map from the questions themselves
-  const topicDisplayNames = new Map<string, string>();
-  questionRows.forEach((row) => {
-    const rawTopic = (row.topic || row.topics || "").trim();
-    const topicLower = rawTopic.toLowerCase();
-    
-    // Canonical topic map
-    const TOPIC_CANONICAL: Record<string, string> = {
-      "dp": "Dynamic Programming", "dynamic programming": "Dynamic Programming",
-      "arrays": "Arrays", "2d arrays": "2D Arrays", "strings": "Strings",
-      "linked list": "Linked List", "linked-list": "Linked List",
-      "stacks & queues": "Stacks & Queues", "stacks and queues": "Stacks & Queues",
-      "stack": "Stacks & Queues", "queue": "Stacks & Queues",
-      "binary trees": "Binary Trees", "trees": "Binary Trees",
-      "binary search trees": "Binary Search Trees", "bst": "Binary Search Trees",
-      "heaps & hashing": "Heaps & Hashing", "heaps and hashing": "Heaps & Hashing",
-      "heap": "Heaps & Hashing", "hashmaps": "Heaps & Hashing",
-      "graphs": "Graphs", "bfs-dfs": "Graphs",
-      "searching & sorting": "Searching & Sorting", "searching and sorting": "Searching & Sorting",
-      "sorting": "Searching & Sorting", "binary-search": "Searching & Sorting",
-      "greedy": "Greedy", "backtracking": "Backtracking", "tries": "Tries",
-      "segment trees": "Segment Trees", "bit manipulation": "Bit Manipulation",
-      "sliding window": "Sliding Window", "sliding-window": "Sliding Window",
-      "two pointers": "Two Pointers", "two-pointer": "Two Pointers",
-      "recursion": "Recursion", "maths": "Maths", "matrix": "2D Arrays",
-    };
-    const displayName = TOPIC_CANONICAL[topicLower] || rawTopic;
-    if (rawTopic) {
-      const slug = displayName.toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w\-]+/g, "").replace(/\-\-+/g, "-");
-      topicDisplayNames.set(slug, displayName);
-    }
-  });
+  // Load topics from topics.csv as the absolute source of truth
+  const topicRows = parseSheetFile(findSheetFile("dsa/topics.csv"));
+  console.log(`   - Loaded topics from topics.csv: ${topicRows.length}`);
 
   // Transform raw rows into typed objects
   const questions = questionRows
     .map(rowToDSAQuestion)
     .filter((q): q is DSAQuestion => q !== null);
 
-  // Dynamic topics map generation
+  // Initialize topicsMap from canonical topics.csv
   const topicsMap = new Map<string, DSATopicMeta>();
-  
+  topicRows.forEach((row) => {
+    const topic = rowToDSATopic(row);
+    if (topic) {
+      topicsMap.set(topic.id, topic);
+    }
+  });
+
+  // Populate patterns for each topic from the parsed questions
   questions.forEach((q) => {
     const topicId = q.topicId;
     if (!topicId) return;
 
-    if (!topicsMap.has(topicId)) {
-      const name = topicDisplayNames.get(topicId) || normalizeTopicName(topicId.replace(/-/g, " "));
-      topicsMap.set(topicId, {
-        id: topicId,
-        name: name,
-        slug: topicId,
-        difficulty: 2,
-        importanceScore: 80,
-        interviewFrequency: "medium",
-        estimatedHours: 8,
-        tier: "important",
-        overview: `${name} — ${topicId}`,
-        patterns: [],
-        unlockAfterTopicId: undefined,
-      });
-    }
-
-    const tMeta = topicsMap.get(topicId)!;
-    if (q.pattern && q.pattern !== "General" && !tMeta.patterns.includes(q.pattern)) {
-      tMeta.patterns.push(q.pattern);
+    // Ensure we handle the topic if it exists in the canonical set
+    const tMeta = topicsMap.get(topicId);
+    if (tMeta) {
+      if (q.pattern && q.pattern !== "General" && !tMeta.patterns.includes(q.pattern)) {
+        tMeta.patterns.push(q.pattern);
+      }
     }
   });
 
@@ -171,11 +135,9 @@ function main() {
     topic.overview = `Dynamic DSA roadmap section for ${topic.name} ${patternStr}. Contains ${topicQuestions.length} curated problems.`;
   });
 
-  // Dynamic Chaining
-  topics.sort((a, b) => a.difficulty - b.difficulty || a.name.localeCompare(b.name));
-  for (let i = 1; i < topics.length; i++) {
-    topics[i].unlockAfterTopicId = topics[i - 1].id;
-  }
+  // Sort topics by their original order in topics.csv to preserve the curriculum flow
+  const topicOrder = topicRows.map((r) => r.id).filter(Boolean);
+  topics.sort((a, b) => topicOrder.indexOf(a.id) - topicOrder.indexOf(b.id));
 
   // Parse remaining datasets
   const mockTests = mockRows.map(rowToMockTest).filter((m) => m !== null);

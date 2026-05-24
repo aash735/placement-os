@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run sheets:sync && next dev --webpack",
-    "build": "npm run sheets:sync && next build",
+    "setup": "node scripts/setup.js",
+    "dev": "node scripts/setup.js && npm run sheets:sync && next dev --webpack",
+    "build": "node scripts/setup.js && npm run sheets:sync && next build",
     "start": "next start",
     "lint": "eslint",
     "sheets:sync": "tsx scripts/sync-sheets.ts"

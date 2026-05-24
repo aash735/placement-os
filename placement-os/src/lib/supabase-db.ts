@@ -93,6 +93,10 @@ export async function fetchUserData(userId: string) {
       companyTargetsRes,
       dailyLogsRes,
       revisionHistoryRes,
+      achievementsRes,
+      countdownGoalsRes,
+      mockInterviewsRes,
+      dailyPlannerRes,
     ] = await Promise.all([
       supabase.from("app_users").select("*").eq("id", userId).maybeSingle(),
       supabase.from("user_progress").select("*").eq("user_id", userId),
@@ -104,6 +108,10 @@ export async function fetchUserData(userId: string) {
       supabase.from("company_targets").select("*").eq("user_id", userId),
       supabase.from("analytics").select("*").eq("user_id", userId),
       supabase.from("revision_history").select("*").eq("user_id", userId),
+      supabase.from("achievements").select("*").eq("user_id", userId),
+      supabase.from("countdown_goals").select("*").eq("user_id", userId),
+      supabase.from("mock_interviews").select("*").eq("user_id", userId),
+      supabase.from("daily_planner").select("*").eq("user_id", userId),
     ]);
 
     // Profile variables
@@ -176,6 +184,38 @@ export async function fetchUserData(userId: string) {
       reviewedAt: r.reviewed_at,
     })) || [];
 
+    // Unlocked achievements list
+    const unlockedAchievements = achievementsRes.data?.map((a) => a.achievement_id) || [];
+
+    // Countdown goals
+    const countdownGoals = countdownGoalsRes.data?.map((g) => ({
+      id: g.id,
+      title: g.title,
+      targetDate: g.target_date,
+      milestones: g.milestones || [],
+    })) || [];
+
+    // Mock interviews history
+    const interviewHistory = mockInterviewsRes.data?.map((i) => ({
+      id: i.id,
+      type: i.type,
+      status: i.status,
+      score: Number(i.score || 0),
+      questions: i.questions || [],
+      answers: i.answers || {},
+      feedback: i.feedback || undefined,
+      completedAt: i.completed_at,
+    })) || [];
+
+    // Daily planner blocks
+    const dailyPlannerBlocks = dailyPlannerRes.data?.map((b) => ({
+      id: b.id,
+      time: b.time,
+      task: b.task,
+      energy: b.energy,
+      completed: b.completed,
+    })) || [];
+
     return {
       xp: profile.xp || 0,
       level: profile.level || 1,
@@ -193,6 +233,10 @@ export async function fetchUserData(userId: string) {
       companyTargets,
       dailyLogs,
       revisionHistory,
+      unlockedAchievements,
+      countdownGoals,
+      interviewHistory,
+      dailyPlannerBlocks,
     };
   } catch (error) {
     console.error("❌ Error fetching user data from Supabase:", error);
@@ -398,4 +442,91 @@ export async function saveRevisionLog(userId: string, r: RevisionEntry) {
     reviewed_at: r.reviewedAt || new Date().toISOString(),
   });
   if (error) console.error("Error adding revision log:", extractError(error));
+}
+
+/** Save unlocked achievement */
+export async function saveAchievement(userId: string, achievementId: string) {
+  if (!hasSupabaseConfig) return;
+  const { error } = await supabase.from("achievements").upsert({
+    user_id: userId,
+    achievement_id: achievementId,
+    unlocked_at: new Date().toISOString(),
+  }, {
+    onConflict: "user_id,achievement_id",
+  });
+  if (error) console.error("Error saving achievement:", extractError(error));
+}
+
+/** Save or update countdown goal */
+export async function saveCountdownGoal(userId: string, g: any) {
+  if (!hasSupabaseConfig) return;
+  const { error } = await supabase.from("countdown_goals").upsert({
+    id: g.id,
+    user_id: userId,
+    title: g.title,
+    target_date: g.targetDate,
+    milestones: g.milestones,
+    updated_at: new Date().toISOString(),
+  }, {
+    onConflict: "user_id,id",
+  });
+  if (error) console.error("Error saving countdown goal:", extractError(error));
+}
+
+/** Delete countdown goal */
+export async function deleteCountdownGoal(userId: string, id: string) {
+  if (!hasSupabaseConfig) return;
+  const { error } = await supabase
+    .from("countdown_goals")
+    .delete()
+    .eq("user_id", userId)
+    .eq("id", id);
+  if (error) console.error("Error deleting countdown goal:", extractError(error));
+}
+
+/** Save mock interview session */
+export async function saveMockInterview(userId: string, i: any) {
+  if (!hasSupabaseConfig) return;
+  const { error } = await supabase.from("mock_interviews").upsert({
+    id: i.id,
+    user_id: userId,
+    type: i.type,
+    status: i.status,
+    score: i.score,
+    questions: i.questions,
+    answers: i.answers,
+    feedback: i.feedback || null,
+    completed_at: i.completedAt || new Date().toISOString(),
+  }, {
+    onConflict: "user_id,id",
+  });
+  if (error) console.error("Error saving mock interview:", extractError(error));
+}
+
+/** Save daily planner block */
+export async function savePlannerBlock(userId: string, b: any) {
+  if (!hasSupabaseConfig) return;
+  const { error } = await supabase.from("daily_planner").upsert({
+    id: b.id,
+    user_id: userId,
+    time: b.time,
+    task: b.task,
+    energy: b.energy,
+    completed: b.completed,
+    updated_at: new Date().toISOString(),
+  }, {
+    onConflict: "user_id,id",
+  });
+  if (error) console.error("Error saving daily planner block:", extractError(error));
+}
+
+/** Delete daily planner block */
+export async function deletePlannerBlock(userId: string, id: string) {
+  if (!hasSupabaseConfig) return;
+  const { error } = await supabase
+    .from("daily_planner")
+    .delete()
+    .eq("user_id", userId)
+    .eq("id", id);
+  if (error) console.error("Error deleting daily planner block:", extractError(error));
 }

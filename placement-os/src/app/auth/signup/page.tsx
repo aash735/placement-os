@@ -21,7 +21,7 @@ import { GlassCard } from "@/components/ui/glass-card";
 
 export default function SignupPage() {
   const router = useRouter();
-  const { signUp } = useAuth();
+  const { signUp, signInAsGuest } = useAuth();
 
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
@@ -232,12 +232,13 @@ export default function SignupPage() {
                 Supabase credentials have not been configured. Add them to{" "}
                 <code className="rounded bg-black/10 px-1 py-0.5">.env.local</code> and restart.
               </div>
-              <Link
-                href="/dashboard"
+              <button
+                type="button"
+                onClick={signInAsGuest}
                 className="btn-primary w-full py-2.5 font-bold tracking-wide flex items-center justify-center gap-1.5"
               >
                 <Rocket className="h-4 w-4" /> Continue as Guest
-              </Link>
+              </button>
             </div>
           )}
 

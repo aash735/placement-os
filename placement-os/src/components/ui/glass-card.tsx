@@ -10,12 +10,14 @@ type GlassCardProps = {
   delay?: number;
   id?: string;
   onClick?: () => void;
+  style?: React.CSSProperties;
 };
 
-export function GlassCard({ children, className, hover = true, delay = 0, id, onClick }: GlassCardProps) {
+export function GlassCard({ children, className, hover = true, delay = 0, id, onClick, style }: GlassCardProps) {
   return (
     <motion.div
       id={id}
+      style={style}
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, delay }}

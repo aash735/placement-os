@@ -32,6 +32,10 @@ drop table if exists public.xp_logs cascade;
 drop table if exists public.user_progress cascade;
 drop table if exists public.app_users cascade;
 drop table if exists public.users cascade;
+drop table if exists public.achievements cascade;
+drop table if exists public.countdown_goals cascade;
+drop table if exists public.mock_interviews cascade;
+drop table if exists public.daily_planner cascade;
 
 -- Drop old Supabase Auth triggers if they exist
 drop trigger if exists on_auth_user_created on auth.users;
@@ -264,6 +268,83 @@ grant all on public.cs_subjects to service_role;
 
 
 -- ============================================================
+-- STEP 12: achievements TABLE — NO FK
+-- ============================================================
+create table public.achievements (
+  user_id        uuid not null,              -- no FK to app_users
+  achievement_id text not null,
+  unlocked_at    timestamptz not null default now(),
+  primary key (user_id, achievement_id)
+);
+
+alter table public.achievements disable row level security;
+grant all on public.achievements to anon;
+grant all on public.achievements to authenticated;
+grant all on public.achievements to service_role;
+
+
+-- ============================================================
+-- STEP 13: countdown_goals TABLE — NO FK
+-- ============================================================
+create table public.countdown_goals (
+  id             text not null,
+  user_id        uuid not null,              -- no FK to app_users
+  title          text not null,
+  target_date    date not null,
+  milestones     jsonb not null default '[]'::jsonb,
+  updated_at     timestamptz not null default now(),
+  primary key (user_id, id)
+);
+
+alter table public.countdown_goals disable row level security;
+grant all on public.countdown_goals to anon;
+grant all on public.countdown_goals to authenticated;
+grant all on public.countdown_goals to service_role;
+
+
+-- ============================================================
+-- STEP 14: mock_interviews TABLE — NO FK
+-- ============================================================
+create table public.mock_interviews (
+  id             text not null,
+  user_id        uuid not null,              -- no FK to app_users
+  type           text not null,              -- dsa, hr, frontend, project
+  status         text not null default 'completed',
+  score          numeric not null default 0,
+  questions      jsonb not null default '[]'::jsonb,
+  answers        jsonb not null default '{}'::jsonb,
+  feedback       text,
+  completed_at   timestamptz not null default now(),
+  primary key (user_id, id)
+);
+
+alter table public.mock_interviews disable row level security;
+grant all on public.mock_interviews to anon;
+grant all on public.mock_interviews to authenticated;
+grant all on public.mock_interviews to service_role;
+
+
+-- ============================================================
+-- STEP 15: daily_planner TABLE — NO FK
+-- ============================================================
+create table public.daily_planner (
+  id             text not null,
+  user_id        uuid not null,              -- no FK to app_users
+  time           text not null,
+  task           text not null,
+  energy         text not null default 'normal',
+  completed      boolean not null default false,
+  updated_at     timestamptz not null default now(),
+  primary key (user_id, id)
+);
+
+alter table public.daily_planner disable row level security;
+grant all on public.daily_planner to anon;
+grant all on public.daily_planner to authenticated;
+grant all on public.daily_planner to service_role;
+
+
+-- ============================================================
 -- VERIFICATION
 -- Run this to confirm tables exist and have no FK constraints:
 -- ============================================================
@@ -277,6 +358,7 @@ grant all on public.cs_subjects to service_role;
 -- WHERE contype = 'f'
 --   AND conrelid::regclass::text IN (
 --     'user_progress','revision_history','bookmarks','analytics',
---     'mock_tests','company_targets','aptitude_attempts','projects','cs_subjects'
+--     'mock_tests','company_targets','aptitude_attempts','projects','cs_subjects',
+--     'achievements', 'countdown_goals', 'mock_interviews', 'daily_planner'
 --   );
 -- ============================================================

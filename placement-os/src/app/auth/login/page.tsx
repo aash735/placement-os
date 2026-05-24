@@ -19,7 +19,7 @@ import { GlassCard } from "@/components/ui/glass-card";
 
 export default function LoginPage() {
   const router = useRouter();
-  const { signIn } = useAuth();
+  const { signIn, signInAsGuest } = useAuth();
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -46,7 +46,7 @@ export default function LoginPage() {
   };
 
   const handleGuestBypass = () => {
-    router.push("/dashboard");
+    signInAsGuest();
   };
 
   return (

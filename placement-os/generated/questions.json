@@ -4,7 +4,7 @@
     "title": "Find Maximum Element",
     "topicId": "arrays",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/find-maximum-element-in-an-array/",
@@ -53,7 +53,7 @@
   {
     "id": "arr-l1-3",
     "title": "Two Sum",
-    "topicId": "arrays",
+    "topicId": "two-pointer",
     "level": 1,
     "category": "easy",
     "difficulty": "Easy",
@@ -151,6 +151,7 @@
     "interviewFrequency": "very-high",
     "revisionPriority": "critical",
     "explanationImportance": "recommended",
+    "striverRef": "kadanes-algorithm",
     "tags": [
       "Kadane"
     ],
@@ -163,7 +164,7 @@
     "title": "Merge Intervals",
     "topicId": "arrays",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/merge-intervals/",
@@ -189,7 +190,7 @@
     "title": "Rotate Array",
     "topicId": "arrays",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/rotate-array/",
@@ -214,7 +215,7 @@
     "title": "First Missing Positive",
     "topicId": "arrays",
     "level": 4,
-    "category": "hard",
+    "category": "mock",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/first-missing-positive/",
@@ -237,9 +238,9 @@
   {
     "id": "arr-r1",
     "title": "Two Sum (Revision)",
-    "topicId": "arrays",
+    "topicId": "two-pointer",
     "level": 2,
-    "category": "easy",
+    "category": "revision",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/two-sum/",
@@ -264,7 +265,7 @@
     "title": "Valid Palindrome",
     "topicId": "strings",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/valid-palindrome/",
@@ -337,7 +338,7 @@
   {
     "id": "str-l2-2",
     "title": "Longest Substring Without Repeating Characters",
-    "topicId": "strings",
+    "topicId": "sliding-window",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -366,7 +367,7 @@
     "title": "Group Anagrams",
     "topicId": "strings",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/group-anagrams/",
@@ -392,7 +393,7 @@
     "title": "Encode and Decode Strings",
     "topicId": "strings",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/encode-and-decode-strings/",
@@ -415,9 +416,9 @@
   {
     "id": "str-l4-1",
     "title": "Minimum Window Substring",
-    "topicId": "strings",
+    "topicId": "sliding-window",
     "level": 4,
-    "category": "hard",
+    "category": "mock",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-window-substring/",
@@ -440,9 +441,9 @@
   {
     "id": "hm-l1-1",
     "title": "Ransom Note",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/ransom-note/",
@@ -465,7 +466,7 @@
   {
     "id": "hm-l1-2",
     "title": "Two Sum",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 1,
     "category": "easy",
     "difficulty": "Easy",
@@ -490,7 +491,7 @@
   {
     "id": "hm-l2-1",
     "title": "Group Anagrams",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -515,7 +516,7 @@
   {
     "id": "hm-l2-2",
     "title": "Top K Frequent Elements",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -540,9 +541,9 @@
   {
     "id": "hm-l3-1",
     "title": "Longest Consecutive Sequence",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
@@ -565,9 +566,9 @@
   {
     "id": "hm-l4-1",
     "title": "Subarray Sum Equals K",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 4,
-    "category": "medium",
+    "category": "mock",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
@@ -590,9 +591,9 @@
   {
     "id": "sort-l1-1",
     "title": "Squares of a Sorted Array",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
@@ -615,7 +616,7 @@
   {
     "id": "sort-l2-1",
     "title": "Merge Sorted Array",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "easy",
     "difficulty": "Easy",
@@ -640,7 +641,7 @@
   {
     "id": "sort-l2-2",
     "title": "Sort Colors",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -665,9 +666,9 @@
   {
     "id": "sort-l3-1",
     "title": "Merge Intervals",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/merge-intervals/",
@@ -690,9 +691,9 @@
   {
     "id": "sort-l4-1",
     "title": "Non-overlapping Intervals",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 4,
-    "category": "medium",
+    "category": "mock",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/non-overlapping-intervals/",
@@ -716,9 +717,9 @@
   {
     "id": "bs-l1-1",
     "title": "Binary Search",
-    "topicId": "searching-sorting",
+    "topicId": "binary-search",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/binary-search/",
@@ -742,7 +743,7 @@
   {
     "id": "bs-l2-1",
     "title": "Search Insert Position",
-    "topicId": "searching-sorting",
+    "topicId": "binary-search",
     "level": 2,
     "category": "easy",
     "difficulty": "Easy",
@@ -767,7 +768,7 @@
   {
     "id": "bs-l2-2",
     "title": "Find Minimum in Rotated Sorted Array",
-    "topicId": "searching-sorting",
+    "topicId": "binary-search",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -792,9 +793,9 @@
   {
     "id": "bs-l3-1",
     "title": "Search in Rotated Sorted Array",
-    "topicId": "searching-sorting",
+    "topicId": "binary-search",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
@@ -818,9 +819,9 @@
   {
     "id": "bs-l3-2",
     "title": "Koko Eating Bananas",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/koko-eating-bananas/",
@@ -843,9 +844,9 @@
   {
     "id": "bs-l4-1",
     "title": "Median of Two Sorted Arrays",
-    "topicId": "searching-sorting",
+    "topicId": "binary-search",
     "level": 4,
-    "category": "hard",
+    "category": "mock",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
@@ -870,7 +871,7 @@
     "title": "Maximum Average Subarray I",
     "topicId": "sliding-window",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-average-subarray-i/",
@@ -945,7 +946,7 @@
     "title": "Permutation in String",
     "topicId": "sliding-window",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/permutation-in-string/",
@@ -970,7 +971,7 @@
     "title": "Minimum Window Substring",
     "topicId": "sliding-window",
     "level": 4,
-    "category": "hard",
+    "category": "mock",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-window-substring/",
@@ -993,9 +994,9 @@
   {
     "id": "tp-l1-1",
     "title": "Valid Palindrome",
-    "topicId": "two-pointers",
+    "topicId": "two-pointer",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/valid-palindrome/",
@@ -1018,7 +1019,7 @@
   {
     "id": "tp-l2-1",
     "title": "Two Sum II",
-    "topicId": "two-pointers",
+    "topicId": "two-pointer",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1043,7 +1044,7 @@
   {
     "id": "tp-l2-2",
     "title": "3Sum",
-    "topicId": "two-pointers",
+    "topicId": "two-pointer",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1068,9 +1069,9 @@
   {
     "id": "tp-l3-1",
     "title": "Container With Most Water",
-    "topicId": "two-pointers",
+    "topicId": "two-pointer",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/container-with-most-water/",
@@ -1093,9 +1094,9 @@
   {
     "id": "tp-l4-1",
     "title": "Trapping Rain Water",
-    "topicId": "two-pointers",
+    "topicId": "two-pointer",
     "level": 4,
-    "category": "hard",
+    "category": "mock",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/trapping-rain-water/",
@@ -1118,9 +1119,9 @@
   {
     "id": "st-l1-1",
     "title": "Valid Parentheses",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/valid-parentheses/",
@@ -1144,7 +1145,7 @@
   {
     "id": "st-l2-1",
     "title": "Min Stack",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1169,7 +1170,7 @@
   {
     "id": "st-l2-2",
     "title": "Evaluate Reverse Polish Notation",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1194,9 +1195,9 @@
   {
     "id": "st-l3-1",
     "title": "Daily Temperatures",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/daily-temperatures/",
@@ -1219,9 +1220,9 @@
   {
     "id": "st-l3-2",
     "title": "Largest Rectangle in Histogram",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 3,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
@@ -1244,9 +1245,9 @@
   {
     "id": "st-l4-1",
     "title": "Valid Parentheses (Timed)",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 4,
-    "category": "easy",
+    "category": "mock",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/valid-parentheses/",
@@ -1269,9 +1270,9 @@
   {
     "id": "qu-l1-1",
     "title": "Implement Stack Using Queues",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/implement-stack-using-queues/",
@@ -1294,7 +1295,7 @@
   {
     "id": "qu-l2-1",
     "title": "Number of Recent Calls",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 2,
     "category": "easy",
     "difficulty": "Easy",
@@ -1319,7 +1320,7 @@
   {
     "id": "qu-l2-2",
     "title": "Binary Tree Level Order Traversal",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1344,9 +1345,9 @@
   {
     "id": "qu-l3-1",
     "title": "Sliding Window Maximum",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 3,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/sliding-window-maximum/",
@@ -1371,7 +1372,7 @@
     "title": "Reverse Linked List",
     "topicId": "linked-list",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-linked-list/",
@@ -1474,7 +1475,7 @@
     "title": "Remove Nth Node From End",
     "topicId": "linked-list",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
@@ -1499,7 +1500,7 @@
     "title": "Copy List with Random Pointer",
     "topicId": "linked-list",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/copy-list-with-random-pointer/",
@@ -1524,7 +1525,7 @@
     "title": "Merge K Sorted Lists",
     "topicId": "linked-list",
     "level": 4,
-    "category": "hard",
+    "category": "mock",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
@@ -1547,9 +1548,9 @@
   {
     "id": "tr-l1-1",
     "title": "Maximum Depth of Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
@@ -1573,7 +1574,7 @@
   {
     "id": "tr-l1-2",
     "title": "Invert Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 1,
     "category": "easy",
     "difficulty": "Easy",
@@ -1598,7 +1599,7 @@
   {
     "id": "tr-l2-1",
     "title": "Same Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "easy",
     "difficulty": "Easy",
@@ -1623,7 +1624,7 @@
   {
     "id": "tr-l2-2",
     "title": "Subtree of Another Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "easy",
     "difficulty": "Easy",
@@ -1648,7 +1649,7 @@
   {
     "id": "tr-l2-3",
     "title": "Binary Tree Level Order Traversal",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1673,9 +1674,9 @@
   {
     "id": "tr-l3-1",
     "title": "Validate Binary Search Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/validate-binary-search-tree/",
@@ -1698,9 +1699,9 @@
   {
     "id": "tr-l3-2",
     "title": "Lowest Common Ancestor of BST",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
@@ -1723,9 +1724,9 @@
   {
     "id": "tr-l4-1",
     "title": "Serialize and Deserialize Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 4,
-    "category": "hard",
+    "category": "mock",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
@@ -1748,9 +1749,9 @@
   {
     "id": "bst-l1-1",
     "title": "Search in a Binary Search Tree",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
@@ -1773,7 +1774,7 @@
   {
     "id": "bst-l2-1",
     "title": "Kth Smallest Element in a BST",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1798,9 +1799,9 @@
   {
     "id": "bst-l3-1",
     "title": "Construct Binary Search Tree from Preorder",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
@@ -1823,9 +1824,9 @@
   {
     "id": "hp-l1-1",
     "title": "Last Stone Weight",
-    "topicId": "heaps-hashing",
+    "topicId": "heap",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/last-stone-weight/",
@@ -1848,7 +1849,7 @@
   {
     "id": "hp-l2-1",
     "title": "Kth Largest Element in an Array",
-    "topicId": "heaps-hashing",
+    "topicId": "heap",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1873,7 +1874,7 @@
   {
     "id": "hp-l2-2",
     "title": "Top K Frequent Elements",
-    "topicId": "heaps-hashing",
+    "topicId": "heap",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1898,9 +1899,9 @@
   {
     "id": "hp-l3-1",
     "title": "Find Median from Data Stream",
-    "topicId": "heaps-hashing",
+    "topicId": "heap",
     "level": 3,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/find-median-from-data-stream/",
@@ -1923,9 +1924,9 @@
   {
     "id": "gd-l1-1",
     "title": "Max Area of Island",
-    "topicId": "graphs",
+    "topicId": "bfs-dfs",
     "level": 1,
-    "category": "medium",
+    "category": "beginner",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/max-area-of-island/",
@@ -1948,7 +1949,7 @@
   {
     "id": "gd-l2-1",
     "title": "Clone Graph",
-    "topicId": "graphs",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1973,7 +1974,7 @@
   {
     "id": "gd-l2-2",
     "title": "Pacific Atlantic Water Flow",
-    "topicId": "graphs",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -1998,9 +1999,9 @@
   {
     "id": "gd-l3-1",
     "title": "Number of Islands",
-    "topicId": "graphs",
+    "topicId": "bfs-dfs",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-islands/",
@@ -2024,9 +2025,9 @@
   {
     "id": "gd-l4-1",
     "title": "Rotting Oranges",
-    "topicId": "graphs",
+    "topicId": "bfs-dfs",
     "level": 4,
-    "category": "medium",
+    "category": "mock",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/rotting-oranges/",
@@ -2051,7 +2052,7 @@
     "title": "Assign Cookies",
     "topicId": "greedy",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/assign-cookies/",
@@ -2126,7 +2127,7 @@
     "title": "Non-overlapping Intervals",
     "topicId": "greedy",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/non-overlapping-intervals/",
@@ -2151,7 +2152,7 @@
     "title": "Find if Path Exists in Graph",
     "topicId": "graphs",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
@@ -2201,7 +2202,7 @@
     "title": "Number of Connected Components",
     "topicId": "graphs",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
@@ -2226,7 +2227,7 @@
     "title": "Course Schedule II",
     "topicId": "graphs",
     "level": 4,
-    "category": "medium",
+    "category": "mock",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/course-schedule-ii/",
@@ -2249,9 +2250,9 @@
   {
     "id": "dp-l1-1",
     "title": "Climbing Stairs",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 1,
-    "category": "easy",
+    "category": "beginner",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/climbing-stairs/",
@@ -2274,7 +2275,7 @@
   {
     "id": "dp-l2-1",
     "title": "House Robber",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -2299,7 +2300,7 @@
   {
     "id": "dp-l2-2",
     "title": "Coin Change",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
@@ -2324,9 +2325,9 @@
   {
     "id": "dp-l3-1",
     "title": "Longest Increasing Subsequence",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 3,
-    "category": "medium",
+    "category": "interview",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
@@ -2349,9 +2350,9 @@
   {
     "id": "dp-l4-1",
     "title": "Edit Distance",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 4,
-    "category": "medium",
+    "category": "mock",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/edit-distance/",
@@ -2381,7 +2382,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Abco",
       "Accolite",
@@ -2413,7 +2414,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Infosys",
       "Moonfrog",
@@ -2437,8 +2438,8 @@
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-subarray/",
-    "pattern": "kadane",
-    "subtopic": "kadane",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Facebook",
@@ -2449,6 +2450,7 @@
     "interviewFrequency": "very-high",
     "revisionPriority": "medium",
     "explanationImportance": "recommended",
+    "striverRef": "kadanes-algorithm",
     "tags": [],
     "xpReward": 100,
     "unlockLevel": 2,
@@ -2464,8 +2466,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/contains-duplicate/",
-    "pattern": "hashset",
-    "subtopic": "hashset",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google"
@@ -2489,7 +2491,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/chocolate-distribution-problem/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -2511,8 +2513,8 @@
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
-    "pattern": "modified-bs",
-    "subtopic": "modified-bs",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw",
       "Amazon",
@@ -2537,7 +2539,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/next-permutation/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Uber",
       "Goldman Sachs",
@@ -2561,8 +2563,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-    "pattern": "kadane-variant",
-    "subtopic": "kadane-variant",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs",
       "Microsoft",
@@ -2587,7 +2589,7 @@
     "platform": "LeetCode",
     "url": "https://www.interviewbit.com/problems/repeat-and-missing-number-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -2609,8 +2611,8 @@
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
-    "pattern": "heap",
-    "subtopic": "heap",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -2632,12 +2634,12 @@
     "title": "Trapping Rain Water",
     "topicId": "arrays",
     "level": 4,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/trapping-rain-water/",
-    "pattern": "two-pointer",
-    "subtopic": "two-pointer",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Samsung",
       "Amazon"
@@ -2661,8 +2663,8 @@
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/product-of-array-except-self/",
-    "pattern": "prefix-suffix",
-    "subtopic": "prefix-suffix",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Facebook",
@@ -2688,7 +2690,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-product-subarray/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -2710,8 +2712,8 @@
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
-    "pattern": "modified-bs",
-    "subtopic": "modified-bs",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley",
       "Amazon"
@@ -2735,7 +2737,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/given-a-sorted-and-rotated-array-find-if-there-is-a-pair-with-a-given-sum/?ref=lbp",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Google",
@@ -2753,14 +2755,14 @@
   {
     "id": "3sum",
     "title": "3Sum",
-    "topicId": "arrays",
+    "topicId": "two-pointer",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/3sum/",
-    "pattern": "sort+two-pointer",
-    "subtopic": "sort+two-pointer",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley",
       "Facebook"
@@ -2777,14 +2779,14 @@
   {
     "id": "container-with-most-water",
     "title": "Container With Most Water",
-    "topicId": "arrays",
+    "topicId": "two-pointer",
     "level": 3,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/container-with-most-water/",
-    "pattern": "opposite",
-    "subtopic": "opposite",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Flipkart",
       "Dunzo",
@@ -2810,7 +2812,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/given-a-sorted-and-rotated-array-find-if-there-is-a-pair-with-a-given-sum/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Infosys",
       "Amazon",
@@ -2835,7 +2837,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Abco",
       "Accolite",
@@ -2867,7 +2869,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/merging-intervals/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -2890,7 +2892,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-minimum-number-of-merge-operations-to-make-an-array-palindrome/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -2913,7 +2915,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/given-an-array-of-numbers-arrange-the-numbers-to-form-the-biggest-number/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Barclays"
     ],
@@ -2936,7 +2938,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/space-optimization-using-bit-manipulations/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -2959,7 +2961,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Snapdeal",
       "Microsoft"
@@ -2983,7 +2985,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/print-all-possible-combinations-of-r-elements-in-a-given-array-of-size-n/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -3006,7 +3008,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/mos-algorithm-query-square-root-decomposition-set-1-introduction/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -3028,8 +3030,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/valid-palindrome/",
-    "pattern": "opposite",
-    "subtopic": "opposite",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley",
       "TCS"
@@ -3052,8 +3054,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/valid-anagram/",
-    "pattern": "frequency",
-    "subtopic": "frequency",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Media.net",
       "Cognizant"
@@ -3076,8 +3078,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/valid-parentheses/",
-    "pattern": "stack",
-    "subtopic": "stack",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "TCS",
@@ -3103,7 +3105,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/consecutive-elements2306/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung",
       "Adobe"
@@ -3126,8 +3128,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/longest-common-prefix/",
-    "pattern": "scan",
-    "subtopic": "scan",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Grofers",
@@ -3153,7 +3155,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/convert-sentence-equivalent-mobile-numeric-keypad-sequence/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe"
     ],
@@ -3176,7 +3178,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ola",
       "Amdocs"
@@ -3193,14 +3195,14 @@
   {
     "id": "longest-substring-without-repeating-characters",
     "title": "Longest Substring without Repeating Characters",
-    "topicId": "strings",
+    "topicId": "sliding-window",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
-    "pattern": "variable-window",
-    "subtopic": "variable-window",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley",
       "Amazon"
@@ -3224,7 +3226,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google"
@@ -3247,8 +3249,8 @@
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/group-anagrams/",
-    "pattern": "grouping",
-    "subtopic": "grouping",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Samsung",
       "Adobe",
@@ -3274,7 +3276,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/longest-palindromic-substring/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Google",
@@ -3300,7 +3302,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/palindromic-substrings/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -3323,7 +3325,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Myntra"
     ],
@@ -3346,7 +3348,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Amazon"
@@ -3370,7 +3372,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/wildcard-string-matching1126/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Amazon",
@@ -3395,7 +3397,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Flipkart",
       "Swiggy"
@@ -3419,7 +3421,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -3442,7 +3444,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/transform-one-string-to-another-using-minimum-number-of-given-operation/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Directi"
     ],
@@ -3460,12 +3462,12 @@
     "title": "Minimum Window Substring",
     "topicId": "strings",
     "level": 4,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-window-substring/",
-    "pattern": "variable-window",
-    "subtopic": "variable-window",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Media.net",
       "Facebook"
@@ -3489,7 +3491,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/boyer-moore-algorithm-for-pattern-searching/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amdocs"
     ],
@@ -3512,7 +3514,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/word-wrap1646/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -3529,14 +3531,14 @@
   {
     "id": "zigzag-or-diagonal-traversal-of-matrix",
     "title": "Zigzag (or diagonal) Traversal of Matrix",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/zigzag-or-diagonal-traversal-of-matrix/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -3552,14 +3554,14 @@
   {
     "id": "set-matrix-zeroes",
     "title": "Set Matrix Zeroes",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/set-matrix-zeroes/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -3576,14 +3578,14 @@
   {
     "id": "spiral-matrix",
     "title": "Spiral Matrix",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/spiral-matrix/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Flipkart",
       "Apple",
@@ -3601,14 +3603,14 @@
   {
     "id": "rotate-image",
     "title": "Rotate Image",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/rotate-image/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Paytm",
@@ -3627,14 +3629,14 @@
   {
     "id": "word-search",
     "title": "Word Search",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/word-search/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Ola",
@@ -3652,14 +3654,14 @@
   {
     "id": "find-the-number-of-islands-set-1-using-dfs",
     "title": "Find the Number of Islands | Set 1 (Using DFS)",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-number-of-islands/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Uber",
@@ -3679,14 +3681,14 @@
   {
     "id": "given-a-matrix-of-o-and-x-replace-o-with-x-if-surrounded-by-x",
     "title": "Given a Matrix of ‘O’ and ‘X’, Replace ‘O’ with ‘X’ if Surrounded by ‘X’",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/given-matrix-o-x-replace-o-x-surrounded-x/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -3702,14 +3704,14 @@
   {
     "id": "find-a-common-element-in-all-rows-of-a-given-row-wise-sorted-matrix",
     "title": "Find a Common Element in all Rows of a Given Row-Wise Sorted Matrix",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-common-element-rows-row-wise-sorted-matrix/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MAQ Software",
       "Software",
@@ -3728,14 +3730,14 @@
   {
     "id": "create-a-matrix-with-alternating-rectangles-of-o-and-x",
     "title": "Create a Matrix with Alternating Rectangles of O and X",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/create-a-matrix-with-alternating-rectangles-of-0-and-x/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MAQ Software",
       "Vmware"
@@ -3752,14 +3754,14 @@
   {
     "id": "maximum-size-rectangle-of-all-1s",
     "title": "Maximum Size Rectangle of all 1s",
-    "topicId": "2d-arrays",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/maximum-size-rectangle-binary-sub-matrix-1s/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -3776,14 +3778,14 @@
   {
     "id": "permute-two-arrays-such-that-sum-of-every-pair-is-greater-or-equal-to-k",
     "title": "Permute Two Arrays such that Sum of Every Pair is Greater or Equal to K",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/permute-two-arrays-sum-every-pair-greater-equal-k/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -3799,14 +3801,14 @@
   {
     "id": "counting-sort",
     "title": "counting sort",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/counting-sort/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung",
       "Morgan Stanley",
@@ -3826,14 +3828,14 @@
   {
     "id": "find-common-elements-three-sorted-arrays",
     "title": "find common elements three sorted arrays",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MAQ Software",
       "Software",
@@ -3852,14 +3854,14 @@
   {
     "id": "searching-in-an-array-where-adjacent-differ-by-at-most-k",
     "title": "Searching in an array where adjacent differ by at most k",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/searching-array-adjacent-differ-k/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "TCS",
       "Amazon"
@@ -3876,14 +3878,14 @@
   {
     "id": "ceiling-in-a-sorted-array",
     "title": "ceiling in a sorted array",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/ceiling-in-a-sorted-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "TCS"
     ],
@@ -3899,14 +3901,14 @@
   {
     "id": "piar-with-given-difference",
     "title": "Piar with given difference",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Visa"
@@ -3923,14 +3925,14 @@
   {
     "id": "majority-element",
     "title": "majority element",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/majority-element/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google"
@@ -3947,14 +3949,14 @@
   {
     "id": "count-triplets-with-sum-smaller-that-a-given-value",
     "title": "count triplets with sum smaller that a given value",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Sap",
@@ -3972,14 +3974,14 @@
   {
     "id": "maximum-sum-subsequence-with-no-adjacent-elements",
     "title": "Maximum Sum Subsequence with no adjacent elements",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Fact",
@@ -4006,14 +4008,14 @@
   {
     "id": "merge-sorted-arrays-using-o1-space",
     "title": "Merge Sorted Arrays using O(1) Space",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/merge-two-sorted-arrays-o1-extra-space/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -4029,14 +4031,14 @@
   {
     "id": "inversion-of-array",
     "title": "Inversion of Array",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -4052,14 +4054,14 @@
   {
     "id": "find-duplicates-in-on-time-and-o1-extra-space",
     "title": "Find Duplicates in O(n) Time and O(1) Extra Space",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -4075,14 +4077,14 @@
   {
     "id": "radix-sort",
     "title": "Radix Sort",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/radix-sort/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -4099,14 +4101,14 @@
   {
     "id": "product-of-array-except-itself",
     "title": "Product of Array except itself",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/a-product-array-puzzle/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -4122,14 +4124,14 @@
   {
     "id": "make-all-array-elements-equal",
     "title": "Make all Array Elements Equal",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/make-array-elements-equal-minimum-cost/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -4145,14 +4147,14 @@
   {
     "id": "check-if-reversing-a-sub-array-make-the-array-sorted",
     "title": "Check if Reversing a Sub Array Make the Array Sorted",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/check-reversing-sub-array-make-array-sorted/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -4168,14 +4170,14 @@
   {
     "id": "find-four-elements-that-sum-to-a-given-value",
     "title": "Find Four Elements that Sum to a Given Value",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Amazon",
@@ -4196,14 +4198,14 @@
   {
     "id": "median-of-two-sorted-array-with-different-size",
     "title": "Median of Two Sorted Array with Different Size",
-    "topicId": "searching-sorting",
+    "topicId": "binary-search",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Samsung",
@@ -4222,14 +4224,14 @@
   {
     "id": "median-of-stream-of-integers-running-integers",
     "title": "Median of Stream of Integers Running Integers",
-    "topicId": "searching-sorting",
+    "topicId": "binary-search",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google"
@@ -4246,14 +4248,14 @@
   {
     "id": "print-subarrays-with-0-sum",
     "title": "Print Subarrays with 0 Sum",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Paytm",
       "Adobe"
@@ -4270,14 +4272,14 @@
   {
     "id": "aggressive-cows",
     "title": "Aggressive Cows",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://www.spoj.com/problems/AGGRCOW/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe"
     ],
@@ -4293,14 +4295,14 @@
   {
     "id": "allocate-minimum-number-of-pages",
     "title": "Allocate Minimum number of Pages",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Infosys",
@@ -4320,14 +4322,14 @@
   {
     "id": "minimum-swaps-to-sort",
     "title": "Minimum Swaps to Sort",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-number-swaps-required-sort-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google"
@@ -4344,14 +4346,14 @@
   {
     "id": "backtracking-set-2-rat-in-a-maze",
     "title": "Backtracking Set 2 Rat in a Maze",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Amazon"
@@ -4368,14 +4370,14 @@
   {
     "id": "combinational-sum",
     "title": "Combinational Sum",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/combinational-sum/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Amazon",
@@ -4393,14 +4395,14 @@
   {
     "id": "crossword-puzzle",
     "title": "Crossword-Puzzle",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://www.hackerrank.com/challenges/crossword-puzzle/problem",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -4416,14 +4418,14 @@
   {
     "id": "longest-possible-route-in-a-matrix-with-hurdles",
     "title": "Longest Possible Route in a Matrix with Hurdles",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/longest-possible-route-in-a-matrix-with-hurdles/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -4439,14 +4441,14 @@
   {
     "id": "printing-all-solutions-in-n-queen-problem",
     "title": "Printing all solutions in N-Queen Problem",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/printing-solutions-n-queen-problem/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -4462,14 +4464,14 @@
   {
     "id": "solve-the-sudoku",
     "title": "Solve the Sudoku",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -4485,14 +4487,14 @@
   {
     "id": "partition-equal-subset-sum",
     "title": "Partition Equal Subset Sum",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Adobe",
@@ -4511,14 +4513,14 @@
   {
     "id": "m-coloring-problem",
     "title": "M Coloring Problem",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -4534,14 +4536,14 @@
   {
     "id": "knight-tour",
     "title": "Knight Tour",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ibm"
     ],
@@ -4557,14 +4559,14 @@
   {
     "id": "soduko",
     "title": "Soduko",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/backtracking-set-7-suduku/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Adobe",
@@ -4583,14 +4585,14 @@
   {
     "id": "remove-invalid-parentheses",
     "title": "Remove Invalid Parentheses",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/remove-invalid-parentheses/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Uber"
     ],
@@ -4606,14 +4608,14 @@
   {
     "id": "word-break-problem-using-backtracking",
     "title": "Word Break Problem using Backtracking",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/word-break-problem-using-backtracking/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -4627,14 +4629,14 @@
   {
     "id": "print-all-palindromic-partitions-of-a-string",
     "title": "Print all Palindromic Partitions of a String",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/print-palindromic-partitions-string/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Facebook",
       "Amazon",
@@ -4652,14 +4654,14 @@
   {
     "id": "find-shortest-safe-route-in-a-path-with-landmines",
     "title": "Find Shortest Safe Route in a Path with Landmines",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-shortest-safe-route-in-a-path-with-landmines/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Facebook",
       "Amazon",
@@ -4677,14 +4679,14 @@
   {
     "id": "partition-of-set-into-k-subsets-with-equal-sum",
     "title": "Partition of Set into K Subsets with Equal Sum",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/partition-set-k-subsets-equal-sum/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -4700,14 +4702,14 @@
   {
     "id": "backtracking-set-7-hamiltonian-cycle",
     "title": "Backtracking set-7 hamiltonian cycle",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -4723,14 +4725,14 @@
   {
     "id": "tug-of-war",
     "title": "tug-of-war",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/tug-of-war/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -4746,14 +4748,14 @@
   {
     "id": "maximum-possible-number-by-doing-at-most-k-swaps",
     "title": "Maximum Possible Number by doing at most K swaps",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-maximum-number-possible-by-doing-at-most-k-swaps/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Adobe",
@@ -4772,14 +4774,14 @@
   {
     "id": "backtracking-set-8-solving-cryptarithmetic-puzzles",
     "title": "Backtracking set-8 solving cryptarithmetic puzzles",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/backtracking-set-8-solving-cryptarithmetic-puzzles/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -4795,14 +4797,14 @@
   {
     "id": "find-paths-from-corner-cell-to-middle-cell-in-maze",
     "title": "Find paths from corner cell to middle cell in maze",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-paths-from-corner-cell-to-middle-cell-in-maze/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Meta"
     ],
@@ -4818,14 +4820,14 @@
   {
     "id": "arithmetic-expressions",
     "title": "Arithmetic Expressions",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://www.hackerrank.com/challenges/arithmetic-expressions/problem",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Flipkart"
     ],
@@ -4847,8 +4849,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-linked-list/",
-    "pattern": "iteration",
-    "subtopic": "iteration",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Sprinklr",
       "All MNCs"
@@ -4872,8 +4874,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/linked-list-cycle/",
-    "pattern": "slow-fast",
-    "subtopic": "slow-fast",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw",
       "Oracle"
@@ -4896,8 +4898,8 @@
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
-    "pattern": "dummy-head",
-    "subtopic": "dummy-head",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip",
       "Microsoft"
@@ -4921,7 +4923,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -4944,7 +4946,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Intuit"
@@ -4968,7 +4970,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -4991,7 +4993,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -5014,7 +5016,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -5036,8 +5038,8 @@
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/reorder-list/",
-    "pattern": "multi-technique",
-    "subtopic": "multi-technique",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -5064,7 +5066,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -5087,7 +5089,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -5110,7 +5112,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -5133,7 +5135,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/linked-list-in-zig-zag-fashion/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Micorsoft"
     ],
@@ -5156,7 +5158,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Walmart"
     ],
@@ -5179,7 +5181,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -5202,7 +5204,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Walmart"
     ],
@@ -5225,7 +5227,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/point-to-next-higher-value-node-in-a-linked-list-with-an-arbitrary-pointer/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Geeky",
       "Ants"
@@ -5249,7 +5251,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ola",
       "Uber"
@@ -5273,7 +5275,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/sort-biotonic-doubly-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -5291,12 +5293,12 @@
     "title": "Merge K Sorted Lists",
     "topicId": "linked-list",
     "level": 4,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/merge-k-sorted-lists/",
-    "pattern": "heap",
-    "subtopic": "heap",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Ola",
@@ -5322,7 +5324,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/merge-sort-for-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Adobe",
@@ -5353,7 +5355,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Paytm"
     ],
@@ -5377,7 +5379,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/sum-of-two-linked-lists/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -5400,7 +5402,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/flattening-a-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -5423,7 +5425,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Triology"
     ],
@@ -5446,7 +5448,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/subtract-two-numbers-represented-as-linked-lists/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -5462,14 +5464,14 @@
   {
     "id": "implement-two-stacks-in-an-array",
     "title": "Implement two stacks in an Array",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/implement-two-stacks-in-an-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "24*7",
       "Innovation",
@@ -5490,14 +5492,14 @@
   {
     "id": "evaluation-of-postfix-expression",
     "title": "Evaluation of Postfix Expression",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google",
@@ -5515,14 +5517,14 @@
   {
     "id": "implement-stack-using-queues",
     "title": "Implement Stack using Queues",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 1,
     "category": "easy",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/implement-stack-using-queues/",
-    "pattern": "queue",
-    "subtopic": "queue",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Facebook",
       "Infosys"
@@ -5539,14 +5541,14 @@
   {
     "id": "queue-reversal",
     "title": "Queue Reversal",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/queue-reversal/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Morgain",
@@ -5564,14 +5566,14 @@
   {
     "id": "implement-stack-queue-using-deque",
     "title": "Implement Stack Queue using Deque",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/implement-stack-queue-using-deque/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Atlassian"
@@ -5588,14 +5590,14 @@
   {
     "id": "reverse-first-k-elements-of-queue",
     "title": "Reverse first k elements of queue",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Amdocs"
@@ -5612,14 +5614,14 @@
   {
     "id": "design-stack-with-middle-operation",
     "title": "Design Stack with Middle Operation",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/design-a-stack-with-find-middle-operation/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ma",
       "Software"
@@ -5636,14 +5638,14 @@
   {
     "id": "infix-to-postfix",
     "title": "Infix to Postfix",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Samsung",
@@ -5663,14 +5665,14 @@
   {
     "id": "design-and-implement-special-stack",
     "title": "Design and Implement Special stack",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/design-and-implement-special-stack-data-structure/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -5686,14 +5688,14 @@
   {
     "id": "longest-valid-string",
     "title": "Longest Valid String",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/length-of-the-longest-valid-substring/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Microsoft"
@@ -5710,14 +5712,14 @@
   {
     "id": "find-if-an-expression-has-duplicate-parenthesis-or-not",
     "title": "Find if an expression has duplicate parenthesis or not",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-expression-duplicate-parenthesis-not/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Flipkart",
       "Oracle",
@@ -5741,14 +5743,14 @@
   {
     "id": "stack-permutations-check-if-an-array-is-stack-permutation-of-other",
     "title": "Stack permutations check if an array is stack permutation of other",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/stack-permutations-check-if-an-array-is-stack-permutation-of-other/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Visa"
     ],
@@ -5764,14 +5766,14 @@
   {
     "id": "count-natural-numbers-whose-permutation-greater-number",
     "title": "Count natural numbers whose permutation greater number",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/count-natural-numbers-whose-permutation-greater-number/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -5787,14 +5789,14 @@
   {
     "id": "sort-a-stack-using-recursion",
     "title": "Sort a stack using Recursion",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/sort-a-stack-using-recursion/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -5810,14 +5812,14 @@
   {
     "id": "queue-based-approach-for-first-non-repeating-character-in-a-stream",
     "title": "Queue based approach for first non repeating character in a stream",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Flipkart"
@@ -5834,14 +5836,14 @@
   {
     "id": "the-celebrity-problem",
     "title": "The Celebrity Problem",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Visa",
@@ -5859,14 +5861,14 @@
   {
     "id": "next-larger-element",
     "title": "Next larger Element",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Visa"
     ],
@@ -5882,14 +5884,14 @@
   {
     "id": "distance-of-nearest-cell",
     "title": "Distance of nearest cell",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1-1587115620/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Flipkar",
       "Facebook"
@@ -5906,14 +5908,14 @@
   {
     "id": "rotten-oranges",
     "title": "Rotten-oranges",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/rotten-oranges2536/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Facebook"
     ],
@@ -5929,14 +5931,14 @@
   {
     "id": "next-smaller-element",
     "title": "Next smaller element",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/next-smaller-element/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Codenation"
     ],
@@ -5952,14 +5954,14 @@
   {
     "id": "circular-tour",
     "title": "Circular-tour",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/circular-tour/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Codenation",
       "Flipkart"
@@ -5976,14 +5978,14 @@
   {
     "id": "efficiently-implement-k-stacks-single-array",
     "title": "Efficiently implement k-stacks single array",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/efficiently-implement-k-stacks-single-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Flipkart"
     ],
@@ -5999,14 +6001,14 @@
   {
     "id": "iterative-tower-of-hanoi",
     "title": "Iterative tower of hanoi",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/iterative-tower-of-hanoi/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Flipkart"
@@ -6023,14 +6025,14 @@
   {
     "id": "find-the-maximum-of-minimums-for-every-window-size-in-a-given-array",
     "title": "Find the maximum of minimums for every window size in a given array",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-the-maximum-of-minimums-for-every-window-size-in-a-given-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -6048,14 +6050,14 @@
   {
     "id": "lru-cache-implementation",
     "title": "lru cache implementation",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/lru-cache-implementation/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Uber",
@@ -6073,14 +6075,14 @@
   {
     "id": "find-a-tour-that-visits-all-stations",
     "title": "Find a tour that visits all stations",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Uber"
     ],
@@ -6103,7 +6105,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -6126,7 +6128,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -6149,7 +6151,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-sum-two-numbers-formed-digits-array-2/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -6172,7 +6174,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-sum-absolute-difference-pairs-two-arrays/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -6195,7 +6197,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-maximum-height-pyramid-from-the-given-array-of-objects/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Flipkart",
       "Amazon"
@@ -6219,7 +6221,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-cost-for-acquiring-all-coins-with-k-extra-coins-allowed-with-every-coin/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -6240,7 +6242,7 @@
     "platform": "GFG",
     "url": "http://geeksforgeeks.org/find-maximum-sum-possible-equal-sum-three-stacks/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Amazon",
@@ -6265,7 +6267,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/job-sequencing-problem/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Acolite"
@@ -6289,7 +6291,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/greedy-algorithm-egyptian-fraction/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -6310,7 +6312,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/fractional-knapsack-problem/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -6333,7 +6335,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/maximum-length-chain-of-pairs-dp-20/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -6357,7 +6359,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-smallest-number-with-given-number-of-digits-and-digit-sum/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MAQ Software",
       "Software",
@@ -6383,7 +6385,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/maximize-sum-consecutive-differences-circular-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Maccafe"
     ],
@@ -6406,7 +6408,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/paper-cut-minimum-number-squares/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -6429,7 +6431,7 @@
     "platform": "GFG",
     "url": "http://geeksforgeeks.org/lexicographically-smallest-array-k-consecutive-swaps/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -6452,7 +6454,7 @@
     "platform": "LeetCode",
     "url": "https://www.spoj.com/problems/CHOCOLA/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Flipkart"
     ],
@@ -6475,7 +6477,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-minimum-time-to-finish-all-jobs-with-given-constraints/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -6496,7 +6498,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -6519,7 +6521,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/rearrange-characters-string-no-two-adjacent/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -6543,7 +6545,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-edges-reverse-make-path-source-destination/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -6564,7 +6566,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -6585,7 +6587,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-cost-cut-board-squares/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Maccafe"
     ],
@@ -6601,14 +6603,14 @@
   {
     "id": "maximum-depth-of-binary-tree",
     "title": "Maximum Depth of Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 1,
     "category": "easy",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
-    "pattern": "DFS",
-    "subtopic": "DFS",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw",
       "Infosys",
@@ -6626,14 +6628,14 @@
   {
     "id": "reverse-level-order-traversal",
     "title": "Reverse Level Order Traversal",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/reverse-level-order-traversal/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -6652,14 +6654,14 @@
   {
     "id": "subtree-of-another-tree",
     "title": "Subtree of Another Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "easy",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/subtree-of-another-tree/",
-    "pattern": "DFS",
-    "subtopic": "DFS",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -6677,14 +6679,14 @@
   {
     "id": "invert-binary-tree",
     "title": "Invert Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 1,
     "category": "easy",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/invert-binary-tree/",
-    "pattern": "recursion",
-    "subtopic": "recursion",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Hike",
@@ -6702,14 +6704,14 @@
   {
     "id": "binary-tree-level-order-traversal",
     "title": "Binary Tree Level Order Traversal",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
-    "pattern": "BFS",
-    "subtopic": "BFS",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw",
       "Meta"
@@ -6726,14 +6728,14 @@
   {
     "id": "left-view-of-binary-tree",
     "title": "Left View of Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Adobe",
@@ -6753,14 +6755,14 @@
   {
     "id": "right-view-of-binary-tree",
     "title": "Right View of Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/right-view-of-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amdocs"
     ],
@@ -6776,14 +6778,14 @@
   {
     "id": "zigzag-tree-traversal",
     "title": "ZigZag Tree Traversal",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Cisco",
@@ -6807,14 +6809,14 @@
   {
     "id": "create-a-mirror-tree-from-the-given-binary-tree",
     "title": "Create a mirror tree from the given binary tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/create-a-mirror-tree-from-the-given-binary-tree/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -6830,14 +6832,14 @@
   {
     "id": "leaf-at-same-level",
     "title": "Leaf at same level",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/leaf-at-same-level/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -6853,14 +6855,14 @@
   {
     "id": "check-for-balanced-tree",
     "title": "Check for Balanced Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Walmart",
@@ -6878,14 +6880,14 @@
   {
     "id": "transform-to-sum-tree",
     "title": "Transform to Sum Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/transform-to-sum-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Fact",
@@ -6906,14 +6908,14 @@
   {
     "id": "check-if-tree-is-isomorphic",
     "title": "Check if Tree is Isomorphic",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/check-if-tree-is-isomorphic/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -6930,14 +6932,14 @@
   {
     "id": "same-tree",
     "title": "Same Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "easy",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/same-tree/",
-    "pattern": "DFS",
-    "subtopic": "DFS",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -6956,14 +6958,14 @@
   {
     "id": "construct-binary-tree-from-preorder-and-inorder-traversal",
     "title": "Construct Binary Tree from Preorder and Inorder Traversal",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -6981,14 +6983,14 @@
   {
     "id": "height-of-binary-tree",
     "title": "Height of Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -7004,14 +7006,14 @@
   {
     "id": "diameter-of-a-binary-tree",
     "title": "Diameter of a Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -7030,14 +7032,14 @@
   {
     "id": "top-view-of-binary-tree",
     "title": "Top View of Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Adobe",
@@ -7056,14 +7058,14 @@
   {
     "id": "bottom-view-of-binary-tree",
     "title": "Bottom View of Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -7079,14 +7081,14 @@
   {
     "id": "diagonal-traversal-of-binary-tree",
     "title": "Diagonal Traversal of Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/diagonal-traversal-of-binary-tree/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -7103,14 +7105,14 @@
   {
     "id": "boundary-traversal-of-binary-tree",
     "title": "Boundary Traversal of binary tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -7132,14 +7134,14 @@
   {
     "id": "construct-binary-tree-from-string-with-brackets",
     "title": "Construct Binary Tree from String with Brackets",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/construct-binary-tree-string-bracket-representation/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -7155,14 +7157,14 @@
   {
     "id": "minimum-swap-required-to-convert-binary-tree-to-binary-search-tree",
     "title": "Minimum swap required to convert binary tree to binary search tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-swap-required-convert-binary-tree-binary-search-tree/#:~:text=Given%20the%20array%20representation%20of,it%20into%20Binary%20Search%20Tree.&text=Swap%201%3A%20Swap%20node%208,node%209%20with%20node%2010.",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Amazon"
@@ -7179,14 +7181,14 @@
   {
     "id": "duplicate-subtree-in-binary-tree",
     "title": "Duplicate subtree in Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/duplicate-subtree-in-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -7202,14 +7204,14 @@
   {
     "id": "check-if-a-given-graph-is-tree-or-not",
     "title": "Check if a given graph is tree or not",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/check-given-graph-tree/#:~:text=Since%20the%20graph%20is%20undirected,graph%20is%20connected%2C%20otherwise%20not.",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Amazon"
@@ -7226,14 +7228,14 @@
   {
     "id": "lowest-common-ancestor-in-a-binary-tree",
     "title": "Lowest Common Ancestor in a Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -7249,14 +7251,14 @@
   {
     "id": "min-distance-between-two-given-nodes-of-a-binary-tree",
     "title": "Min distance between two given nodes of a Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/min-distance-between-two-given-nodes-of-a-binary-tree/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -7272,14 +7274,14 @@
   {
     "id": "duplicate-subtrees",
     "title": "Duplicate Subtrees",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/duplicate-subtrees/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ola"
     ],
@@ -7295,14 +7297,14 @@
   {
     "id": "kth-ancestor-of-a-node-in-binary-tree",
     "title": "Kth ancestor of a node in binary tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/kth-ancestor-node-binary-tree-set-2/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Josh",
       "Technology",
@@ -7320,14 +7322,14 @@
   {
     "id": "binary-tree-maximum-path-sum",
     "title": "Binary Tree Maximum Path Sum",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung",
       "Facebook"
@@ -7344,14 +7346,14 @@
   {
     "id": "serialize-and-deserialize-binary-tree",
     "title": "Serialize and Deserialize Binary Tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 4,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
-    "pattern": "BFS/DFS",
-    "subtopic": "BFS/DFS",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "LinkedIn",
       "Google"
@@ -7368,14 +7370,14 @@
   {
     "id": "binary-tree-to-dll",
     "title": "Binary Tree to DLL",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -7391,14 +7393,14 @@
   {
     "id": "print-all-k-sum-paths-in-a-binary-tree",
     "title": "Print all k-sum paths in a binary tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/print-k-sum-paths-binary-tree/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -7414,14 +7416,14 @@
   {
     "id": "lowest-common-ancestor-of-a-binary-search-tree",
     "title": "Lowest Common Ancestor of a Binary Search Tree",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -7444,14 +7446,14 @@
   {
     "id": "binary-search-tree-set-1-search-and-insertion",
     "title": "Binary Search Tree | Set 1 (Search and Insertion)",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -7471,14 +7473,14 @@
   {
     "id": "minimum-element-in-bst",
     "title": "Minimum element in BST",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/minimum-element-in-bst/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -7494,14 +7496,14 @@
   {
     "id": "predecessor-and-successor",
     "title": "Predecessor and Successor",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Adobe",
@@ -7521,14 +7523,14 @@
   {
     "id": "check-whether-bst-contains-dead-end",
     "title": "Check whether BST contains Dead End",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Walmart"
     ],
@@ -7544,14 +7546,14 @@
   {
     "id": "binary-tree-to-bst",
     "title": "Binary Tree to BST",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/binary-tree-to-bst/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Hsbc"
     ],
@@ -7567,14 +7569,14 @@
   {
     "id": "kth-largest-element-in-bst",
     "title": "Kth largest element in BST",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -7595,14 +7597,14 @@
   {
     "id": "validate-binary-search-tree",
     "title": "Validate Binary Search Tree",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 3,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/validate-binary-search-tree/",
-    "pattern": "range",
-    "subtopic": "range",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Oyo",
       "Rooms",
@@ -7627,14 +7629,14 @@
   {
     "id": "kth-smallest-element-in-a-bst",
     "title": "Kth Smallest Element in a BST",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
-    "pattern": "inorder",
-    "subtopic": "inorder",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -7652,14 +7654,14 @@
   {
     "id": "delete-node-in-a-bst",
     "title": "Delete Node in a BST",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/delete-node-in-a-bst/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Barclays"
@@ -7676,14 +7678,14 @@
   {
     "id": "flatten-bst-to-sorted-list",
     "title": "Flatten BST to sorted list",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/flatten-bst-to-sorted-list-increasing-order/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -7699,14 +7701,14 @@
   {
     "id": "preorder-to-postorder",
     "title": "Preorder to Postorder",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/preorder-to-postorder4423/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "LinkedIn"
     ],
@@ -7722,14 +7724,14 @@
   {
     "id": "count-bst-nodes-that-lie-in-a-given-range",
     "title": "Count BST nodes that lie in a given range",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -7745,14 +7747,14 @@
   {
     "id": "populate-inorder-successor-for-all-nodes",
     "title": "Populate Inorder Successor for all Nodes",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Sap",
       "Labs"
@@ -7769,14 +7771,14 @@
   {
     "id": "convert-normal-bst-to-balanced-bst",
     "title": "Convert Normal BST to Balanced BST",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/convert-normal-bst-balanced-bst/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Paytm"
     ],
@@ -7792,14 +7794,14 @@
   {
     "id": "merge-two-bsts",
     "title": "Merge two BSTs",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -7815,14 +7817,14 @@
   {
     "id": "given-n-appointments-find-all-conflicting-appointments",
     "title": "Given n appointments, find all conflicting appointments",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/given-n-appointments-find-conflicting-appointments/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -7838,14 +7840,14 @@
   {
     "id": "replace-every-element",
     "title": "Replace every element",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/replace-every-element-with-the-least-greater-element-on-its-right/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -7861,14 +7863,14 @@
   {
     "id": "construct-bst-from-given-preorder-traversal",
     "title": "Construct BST from given preorder traversal",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -7884,14 +7886,14 @@
   {
     "id": "find-median-of-bst-in-on-time-and-o1-space",
     "title": "Find median of BST in O(n) time and O(1) space",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-median-bst-time-o1-space/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -7907,14 +7909,14 @@
   {
     "id": "largest-bst-in-a-binary-tree",
     "title": "Largest BST in a Binary Tree",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/largest-bst-binary-tree-set-2/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -7931,14 +7933,14 @@
   {
     "id": "choose-k-array-elements-such-that-difference-of-maximum-and-minimum-is-minimized",
     "title": "Choose k array elements such that difference of maximum and minimum is minimized",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/k-numbers-difference-maximum-minimum-k-number-minimized/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -7952,14 +7954,14 @@
   {
     "id": "heap-sort",
     "title": "Heap Sort",
-    "topicId": "heaps-hashing",
+    "topicId": "heap",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/heap-sort/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe"
     ],
@@ -7975,14 +7977,14 @@
   {
     "id": "top-k-frequent-elements",
     "title": "Top K Frequent Elements",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/top-k-frequent-elements/",
-    "pattern": "heap",
-    "subtopic": "heap",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -7999,14 +8001,14 @@
   {
     "id": "k-largest-elements-in-an-array",
     "title": "k largest elements in an array",
-    "topicId": "heaps-hashing",
+    "topicId": "heap",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -8025,14 +8027,14 @@
   {
     "id": "next-greater-element",
     "title": "Next Greater Element",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/next-greater-element/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -8051,14 +8053,14 @@
   {
     "id": "kth-smallestlargest-element-in-unsorted-array",
     "title": "K’th Smallest/Largest Element in Unsorted Array",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Abco",
       "Accolite",
@@ -8083,14 +8085,14 @@
   {
     "id": "find-the-maximum-repeating-number-in-on-time-and-o1-extra-space",
     "title": "Find the maximum repeating number in O(n) time and O(1) extra space",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon"
@@ -8107,14 +8109,14 @@
   {
     "id": "k-th-smallest-element-after-removing-some-integers-from-natural-numbers",
     "title": "K-th smallest element after removing some integers from natural numbers",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/k-th-smallest-element-removing-integers-natural-numbers/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Abco",
       "Accolite",
@@ -8139,14 +8141,14 @@
   {
     "id": "find-k-closest-elements-to-a-given-value",
     "title": "Find k closest elements to a given value",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-k-closest-elements-given-value/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Oyo",
@@ -8164,14 +8166,14 @@
   {
     "id": "kth-largest-element-in-a-stream",
     "title": "K’th largest element in a stream",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/kth-largest-element-in-a-stream/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Cisco",
@@ -8194,14 +8196,14 @@
   {
     "id": "connect-ropes",
     "title": "Connect Ropes",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/connect-n-ropes-minimum-cost/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazoon",
       "Oyo",
@@ -8219,14 +8221,14 @@
   {
     "id": "cuckoo-hashing",
     "title": "Cuckoo Hashing",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/cuckoo-hashing/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amaxon"
     ],
@@ -8242,14 +8244,14 @@
   {
     "id": "itinerary-from-a-list-of-tickets",
     "title": "Itinerary from a List of Tickets",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Ola",
@@ -8267,14 +8269,14 @@
   {
     "id": "largest-subarray-with-0-sum",
     "title": "Largest Subarray with 0 Sum",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "http://geeksforgeeks.org/find-the-largest-subarray-with-0-sum/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -8290,14 +8292,14 @@
   {
     "id": "count-distinct-elements-in-every-window-of-size-k",
     "title": "Count distinct elements in every window of size  k",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -8315,14 +8317,14 @@
   {
     "id": "group-shifted-strings",
     "title": "Group Shifted Strings",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/group-shifted-string/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Oracle"
     ],
@@ -8338,14 +8340,14 @@
   {
     "id": "find-median-from-data-stream",
     "title": "Find Median from Data Stream",
-    "topicId": "heaps-hashing",
+    "topicId": "heap",
     "level": 3,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/find-median-from-data-stream/",
-    "pattern": "two-heaps",
-    "subtopic": "two-heaps",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley",
       "Google"
@@ -8362,14 +8364,14 @@
   {
     "id": "sliding-window-maximum",
     "title": "Sliding Window Maximum",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 3,
-    "category": "hard",
+    "category": "interview",
     "difficulty": "Hard",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/",
-    "pattern": "deque",
-    "subtopic": "deque",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Directi",
@@ -8389,14 +8391,14 @@
   {
     "id": "find-the-smallest-positive-number",
     "title": "Find the smallest positive number",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -8415,14 +8417,14 @@
   {
     "id": "find-surpasser-count-of-each-element-in-array",
     "title": "Find Surpasser Count of each element in array",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-surpasser-count-of-each-element-in-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -8438,14 +8440,14 @@
   {
     "id": "tournament-tree-and-binary-heap",
     "title": "Tournament Tree and Binary Heap",
-    "topicId": "heaps-hashing",
+    "topicId": "heap",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/tournament-tree-and-binary-heap/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Ola",
@@ -8467,14 +8469,14 @@
   {
     "id": "check-for-palindrome",
     "title": "Check for palindrome",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/online-algorithm-for-checking-palindrome-in-a-stream/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -8490,14 +8492,14 @@
   {
     "id": "length-of-the-largest-subarray-with-contiguous-elements",
     "title": "Length of the largest subarray with contiguous elements",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-2/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Intuit",
@@ -8515,14 +8517,14 @@
   {
     "id": "palindrome-substring-queries",
     "title": "Palindrome Substring Queries",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/palindrome-substring-queries/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -8538,14 +8540,14 @@
   {
     "id": "subarray-distinct-elements",
     "title": "Subarray distinct elements",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/subarrays-distinct-elements/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Ola",
@@ -8563,14 +8565,14 @@
   {
     "id": "find-the-recurring-function",
     "title": "Find the recurring function",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-recurring-sequence-fraction/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MAQ Software",
       "Software"
@@ -8587,14 +8589,14 @@
   {
     "id": "k-maximum-sum-combinations-from-two-arrays",
     "title": "K maximum sum combinations from two arrays",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/k-maximum-sum-combinations-two-arrays/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -8617,7 +8619,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung",
       "Delhivery",
@@ -8643,7 +8645,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung",
       "Intuit",
@@ -8668,7 +8670,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/flood-fill/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Adobe",
@@ -8693,7 +8695,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/number-of-triangles-in-directed-and-undirected-graphs/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ibm"
     ],
@@ -8716,7 +8718,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/detect-cycle-in-a-graph/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Lenksart"
     ],
@@ -8739,7 +8741,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -8762,7 +8764,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Sharechat",
       "Directi"
@@ -8786,7 +8788,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/steps-by-knight5927/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -8808,8 +8810,8 @@
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/clone-graph/",
-    "pattern": "BFS",
-    "subtopic": "BFS",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "MAQ Software",
@@ -8837,7 +8839,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -8860,7 +8862,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -8883,7 +8885,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/topological-sort/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google",
@@ -8911,7 +8913,7 @@
     "platform": "LeetCode",
     "url": "https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/practice-problems/algorithm/oliver-and-the-game-3/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Sharechat",
       "Directi"
@@ -8935,7 +8937,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -8958,7 +8960,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-whether-it-is-possible-to-finish-all-tasks-or-not-from-given-dependencies/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Directi",
       "Sharechat"
@@ -8982,7 +8984,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/find-the-number-of-islands/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Razorpay"
     ],
@@ -9005,7 +9007,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Visa"
     ],
@@ -9028,7 +9030,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/negative-weight-cycle3504/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -9051,7 +9053,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Uber"
@@ -9075,7 +9077,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/graph-coloring-applications/#:~:text=Graph%20coloring%20problem%20is%20to,are%20colored%20using%20same%20color.",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -9098,7 +9100,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/snakes-and-ladders/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs",
       "MakeMyTrip"
@@ -9122,7 +9124,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Paytm"
     ],
@@ -9145,7 +9147,7 @@
     "platform": "LeetCode",
     "url": "https://www.hackerrank.com/challenges/journey-to-the-moon/problem",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Lenksart",
       "Payload"
@@ -9169,7 +9171,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Intuit"
     ],
@@ -9192,7 +9194,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/description/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Uber",
       "PayPal"
@@ -9216,7 +9218,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-if-there-is-a-path-of-more-than-k-length-from-a-source/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Cisco",
       "Intuit"
@@ -9240,7 +9242,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Sharechat",
       "Directi"
@@ -9264,7 +9266,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/bipartite-graph/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Flipkart"
@@ -9288,7 +9290,7 @@
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/word-ladder/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -9311,7 +9313,7 @@
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/alien-dictionary/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -9334,7 +9336,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Cisco",
@@ -9360,7 +9362,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/total-number-spanning-trees-graph/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Cisco",
@@ -9387,7 +9389,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Microsoft",
@@ -9413,7 +9415,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -9436,7 +9438,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/two-clique-problem-check-graph-can-divided-two-cliques/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -9459,7 +9461,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Intuit",
       "Uber"
@@ -9483,7 +9485,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Intuit"
     ],
@@ -9506,7 +9508,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/water-jug-problem-using-bfs/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Intuit",
       "Uber"
@@ -9530,7 +9532,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/water-jug-problem-using-bfs/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -9546,14 +9548,14 @@
   {
     "id": "construct-a-trie-from-scratch",
     "title": "Construct a trie from scratch",
-    "topicId": "tries",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/trie-insert-and-search/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "D.E. Shaw"
     ],
@@ -9569,14 +9571,14 @@
   {
     "id": "print-unique-rows-in-a-given-boolean-matrix",
     "title": "Print unique rows in a given boolean matrix",
-    "topicId": "tries",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/unique-rows-in-boolean-matrix/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Zoho"
@@ -9593,14 +9595,14 @@
   {
     "id": "word-break-problem-trie-solution",
     "title": "Word Break Problem | (Trie solution)",
-    "topicId": "tries",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/word-break-problem-trie-solution/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google",
@@ -9624,14 +9626,14 @@
   {
     "id": "given-a-sequence-of-words-print-all-anagrams-together",
     "title": "Given a sequence of words, print all anagrams together",
-    "topicId": "tries",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/k-anagrams-1/0",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -9647,14 +9649,14 @@
   {
     "id": "find-shortest-unique-prefix-for-every-word-in-a-given-list",
     "title": "Find shortest unique prefix for every word in a given list",
-    "topicId": "tries",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-all-shortest-unique-prefixes-to-represent-each-word-in-a-given-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Google"
@@ -9671,14 +9673,14 @@
   {
     "id": "implement-a-phone-directory",
     "title": "Implement a Phone Directory",
-    "topicId": "tries",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/phone-directory/0",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -9696,14 +9698,14 @@
   {
     "id": "knapsack-with-duplicate-items",
     "title": "Knapsack with Duplicate Items",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -9719,14 +9721,14 @@
   {
     "id": "bbt-counter",
     "title": "BBT counter",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/bbt-counter4914/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -9742,14 +9744,14 @@
   {
     "id": "reach-a-given-score",
     "title": "Reach a given score",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -9765,14 +9767,14 @@
   {
     "id": "maximum-difference-of-zeros-and-ones-in-binary-string",
     "title": "Maximum difference of zeros and ones in binary string",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/maximum-difference-of-zeros-and-ones-in-binary-string4111/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ola"
     ],
@@ -9788,14 +9790,14 @@
   {
     "id": "climbing-stairs",
     "title": "Climbing Stairs",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 1,
     "category": "easy",
     "difficulty": "Easy",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/climbing-stairs/",
-    "pattern": "1d-dp",
-    "subtopic": "1d-dp",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Intuit",
       "TCS"
@@ -9812,14 +9814,14 @@
   {
     "id": "permutation-coefficient",
     "title": "Permutation Coefficient",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/permutation-coefficient/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -9835,14 +9837,14 @@
   {
     "id": "longest-repeating-subsequence",
     "title": "Longest Repeating Subsequence",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/longest-repeating-subsequence2004/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Amazon"
@@ -9859,14 +9861,14 @@
   {
     "id": "pairs-with-specific-difference",
     "title": "Pairs with specific difference",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/pairs-with-specific-difference1533/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ola"
     ],
@@ -9882,14 +9884,14 @@
   {
     "id": "longest-subsequence-1",
     "title": "Longest subsequence-1",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/longest-subsequence-such-that-difference-between-adjacents-is-one4724/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -9905,14 +9907,14 @@
   {
     "id": "coin-change",
     "title": "Coin Change",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/coin-change/",
-    "pattern": "unbounded-knapsack",
-    "subtopic": "unbounded-knapsack",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft",
       "Samsung",
@@ -9933,14 +9935,14 @@
   {
     "id": "lis",
     "title": "LIS",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/longest-increasing-subsequence/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google",
@@ -9960,14 +9962,14 @@
   {
     "id": "longest-common-subsequence",
     "title": "Longest Common Subsequence",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/longest-common-subsequence/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Siemens",
       "Amazon",
@@ -9985,14 +9987,14 @@
   {
     "id": "word-break",
     "title": "Word Break",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/word-break/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google",
@@ -10013,14 +10015,14 @@
   {
     "id": "combination-sum-iv",
     "title": "Combination Sum IV",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/combination-sum-iv/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Amazon",
@@ -10038,14 +10040,14 @@
   {
     "id": "house-robber",
     "title": "House Robber",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/house-robber/",
-    "pattern": "1d-dp",
-    "subtopic": "1d-dp",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Apple",
       "Uber",
@@ -10063,14 +10065,14 @@
   {
     "id": "houe-robber-2",
     "title": "Houe Robber 2",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/house-robber-ii/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Arrays",
       "Dynamic",
@@ -10088,14 +10090,14 @@
   {
     "id": "decode-ways",
     "title": "Decode Ways",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/decode-ways/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Uber"
@@ -10112,14 +10114,14 @@
   {
     "id": "unique-paths",
     "title": "Unique Paths",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/unique-paths/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Microsoft"
@@ -10136,14 +10138,14 @@
   {
     "id": "jumps-game",
     "title": "Jumps Game",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/jump-game/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Facebook",
       "Amazon",
@@ -10162,14 +10164,14 @@
   {
     "id": "knapsack-problem",
     "title": "Knapsack Problem",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -10185,14 +10187,14 @@
   {
     "id": "ncr",
     "title": "nCr",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/ncr1019/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -10208,14 +10210,14 @@
   {
     "id": "catalan-number",
     "title": "Catalan Number",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/program-nth-catalan-number/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google"
@@ -10232,14 +10234,14 @@
   {
     "id": "edit-distance",
     "title": "Edit Distance",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 4,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/edit-distance3702/1",
-    "pattern": "2d-dp",
-    "subtopic": "2d-dp",
+    "pattern": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Goldman Sachs",
@@ -10257,14 +10259,14 @@
   {
     "id": "subset-sum",
     "title": "Subset Sum",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google"
@@ -10281,14 +10283,14 @@
   {
     "id": "gold-mine",
     "title": "Gold mine",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/gold-mine-problem/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung"
     ],
@@ -10304,14 +10306,14 @@
   {
     "id": "assembly-line-scheduling",
     "title": "Assembly Line Scheduling",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/assembly-line-scheduling-dp-34/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -10327,14 +10329,14 @@
   {
     "id": "maximize-the-cut-segments",
     "title": "Maximize The Cut Segments",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/cutted-segments1642/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Oyo",
@@ -10353,14 +10355,14 @@
   {
     "id": "maximum-sum-increasing-subsequence",
     "title": "Maximum sum increasing subsequence",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Morgan Stanley"
     ],
@@ -10376,14 +10378,14 @@
   {
     "id": "count-all-subsequences-having-product-less-than-k",
     "title": "Count all subsequences having product less than K",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/count-subsequences-product-less-k/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -10399,14 +10401,14 @@
   {
     "id": "egg-dropping-puzzle",
     "title": "Egg dropping puzzle",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Goldman Sachs"
     ],
@@ -10422,14 +10424,14 @@
   {
     "id": "max-length-chain",
     "title": "Max length chain",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/max-length-chain/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -10446,14 +10448,14 @@
   {
     "id": "largest-square-in-matrix",
     "title": "Largest Square in Matrix",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/largest-square-formed-in-a-matrix0806/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Samsung"
@@ -10470,14 +10472,14 @@
   {
     "id": "maximum-path-sum",
     "title": "Maximum Path Sum",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft",
@@ -10496,14 +10498,14 @@
   {
     "id": "minimum-number-of-jumps",
     "title": "Minimum Number of Jumps",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Amazon",
@@ -10527,14 +10529,14 @@
   {
     "id": "minimum-removals-from-array-to-make-max-min-k",
     "title": "Minimum removals from array to make max – min <= K",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "http://geeksforgeeks.org/minimum-removals-array-make-max-min-k/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -10550,14 +10552,14 @@
   {
     "id": "longest-common-substring",
     "title": "Longest Common Substring",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Webarch",
       "Club"
@@ -10574,14 +10576,14 @@
   {
     "id": "longest-palindromic-subsequnce",
     "title": "Longest Palindromic Subsequnce",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/longest-palindromic-subsequence-dp-12/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Google"
@@ -10598,14 +10600,14 @@
   {
     "id": "longest-alternating-sequence",
     "title": "Longest Alternating Sequence",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/longest-alternating-subsequence5951/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ola"
     ],
@@ -10621,14 +10623,14 @@
   {
     "id": "weighted-job-scheduling",
     "title": "Weighted Job Scheduling",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/weighted-job-scheduling/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Intuit"
     ],
@@ -10644,14 +10646,14 @@
   {
     "id": "coin-game",
     "title": "Coin Game",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/coin-game-winner-every-player-three-choices/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Salesforce"
     ],
@@ -10667,14 +10669,14 @@
   {
     "id": "coin-game-winner",
     "title": "Coin Game Winner",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/count-derangements-permutation-such-that-no-element-appears-in-its-original-position/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Ola"
     ],
@@ -10690,14 +10692,14 @@
   {
     "id": "optimal-strategy-for-a-game",
     "title": "Optimal Strategy for a game",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/optimal-strategy-for-a-game-1587115620/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Ibm"
@@ -10714,14 +10716,14 @@
   {
     "id": "mobile-numeric-keypad",
     "title": "Mobile numeric keypad",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/mobile-numeric-keypad5456/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -10738,14 +10740,14 @@
   {
     "id": "maximum-length-of-pair-chain",
     "title": "Maximum Length of Pair Chain",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-length-of-pair-chain/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon",
       "Microsoft"
@@ -10762,14 +10764,14 @@
   {
     "id": "matrix-chain-multiplication",
     "title": "Matrix Chain Multiplication",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/matrix-chain-multiplication-dp-8/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Walmart",
       "Flipkart"
@@ -10786,14 +10788,14 @@
   {
     "id": "maximum-profit-by-buying-and-selling-a-share-at-most-twice",
     "title": "Maximum profit by buying and selling a share at most twice",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Accolite",
       "Amazon",
@@ -10811,14 +10813,14 @@
   {
     "id": "optimal-bst",
     "title": "Optimal BST",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/optimal-binary-search-tree-dp-24/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -10834,14 +10836,14 @@
   {
     "id": "largest-submatrix-with-sum-0",
     "title": "Largest Submatrix with sum 0",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/largest-rectangular-sub-matrix-whose-sum-0/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -10857,14 +10859,14 @@
   {
     "id": "largest-area-rectangular-sub-matrix-with-equal-number-of-1s-and-0s",
     "title": "Largest area rectangular sub-matrix with equal number of 1’s and 0’s",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/largest-area-rectangular-sub-matrix-equal-number-1s-0s/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -10880,14 +10882,14 @@
   {
     "id": "count-set-bits-in-an-integer",
     "title": "Count set bits in an integer",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/set-bits0143/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe",
       "Apple"
@@ -10904,14 +10906,14 @@
   {
     "id": "find-the-two-non-repeating-elements-in-an-array-of-repeating-elements",
     "title": "Find the two non-repeating elements in an array of repeating elements",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/finding-the-numbers0215/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MakeMyTrip"
     ],
@@ -10927,14 +10929,14 @@
   {
     "id": "program-to-find-whether-a-no-is-power-of-two",
     "title": "Program to find whether a no is power of two",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/power-of-2/0",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Adobe"
     ],
@@ -10950,14 +10952,14 @@
   {
     "id": "find-position-of-the-only-set-bit",
     "title": "Find position of the only set bit",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/find-position-of-set-bit3706/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -10973,14 +10975,14 @@
   {
     "id": "count-number-of-bits-to-be-flipped-to-convert-a-to-b",
     "title": "Count number of bits to be flipped to convert A to B",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/bit-difference/0",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "MAQ Software",
       "Software"
@@ -10997,14 +10999,14 @@
   {
     "id": "count-total-set-bits-in-all-numbers-from-1-to-n",
     "title": "Count total set bits in all numbers from 1 to n",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/count-total-set-bits/0",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -11020,14 +11022,14 @@
   {
     "id": "copy-set-bits-in-a-range",
     "title": "Copy set bits in a range",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/copy-set-bits-in-a-range/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Facebook"
     ],
@@ -11043,14 +11045,14 @@
   {
     "id": "calculate-square-of-a-number-without-using-and-pow",
     "title": "Calculate square of a number without using *, / and pow()",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/calculate-square-of-a-number-without-using-and-pow/#:~:text=Given%20an%20integer%20n%2C%20calculate,*%2C%20%2F%20and%20pow().&text=A%20Simple%20Solution%20is%20to%20repeatedly%20add%20n%20to%20result.",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Amazon"
     ],
@@ -11066,14 +11068,14 @@
   {
     "id": "divide-two-integers-without-using-multiplication-division-and-mod-operator",
     "title": "Divide two integers without using multiplication, division and mod operator",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/divide-two-integers-without-using-multiplication-division-mod-operator/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Microsoft"
     ],
@@ -11089,14 +11091,14 @@
   {
     "id": "power-set",
     "title": "Power Set",
-    "topicId": "bit-manipulation",
+    "topicId": "arrays",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/power-set4302/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google",
       "Adobe",
@@ -11114,14 +11116,14 @@
   {
     "id": "range-sum-query-immutable",
     "title": "Range Sum Query - Immutable",
-    "topicId": "segment-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/range-sum-query-immutable/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11135,14 +11137,14 @@
   {
     "id": "range-minimum-query",
     "title": "Range Minimum Query",
-    "topicId": "segment-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://cp-algorithms.com/sequences/rmq.html",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Google"
     ],
@@ -11158,14 +11160,14 @@
   {
     "id": "range-sum-query-mutable",
     "title": "Range Sum Query - Mutable",
-    "topicId": "segment-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/range-sum-query-mutable/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Alibaba"
     ],
@@ -11181,14 +11183,14 @@
   {
     "id": "create-sorted-array-through-instructions",
     "title": "Create Sorted Array through Instructions",
-    "topicId": "segment-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/create-sorted-array-through-instructions/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Samsung",
       "Accolite"
@@ -11205,14 +11207,14 @@
   {
     "id": "count-of-range-sum",
     "title": "Count of Range Sum",
-    "topicId": "segment-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/count-of-range-sum/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Walmart"
     ],
@@ -11228,14 +11230,14 @@
   {
     "id": "count-of-smaller-numbers-after-self",
     "title": "Count of Smaller Numbers After Self",
-    "topicId": "segment-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "LeetCode",
     "url": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [
       "Codenation",
       "Google"
@@ -11252,14 +11254,14 @@
   {
     "id": "sort-a-nearly-sorted-or-k-sorted-array",
     "title": "Sort a Nearly Sorted (or K sorted) Array",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/nearly-sorted-algorithm/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11273,14 +11275,14 @@
   {
     "id": "how-to-efficiently-sort-a-big-list-dates-in-20s",
     "title": "How to Efficiently Sort a Big List Dates in 20’s",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/how-to-efficiently-sort-a-big-list-dates-in-20s/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11294,14 +11296,14 @@
   {
     "id": "find-a-repeating-and-a-missing-number",
     "title": "find a repeating and a missing number",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11315,14 +11317,14 @@
   {
     "id": "sort-array-according-count-set-bits",
     "title": "sort array according count set bits",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/sort-array-according-count-set-bits/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11336,14 +11338,14 @@
   {
     "id": "minimum-swaps-to-make-two-array-identical",
     "title": "Minimum Swaps to Make Two Array Identical",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-swaps-to-make-two-array-identical/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11357,14 +11359,14 @@
   {
     "id": "insert-in-sorted-and-non-overlapping-interval-array",
     "title": "Insert in Sorted and Non-Overlapping Interval Array",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/insert-in-sorted-and-non-overlapping-interval-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11378,14 +11380,14 @@
   {
     "id": "3-way-quicksort",
     "title": "3-Way QuickSort",
-    "topicId": "searching-sorting",
+    "topicId": "sorting",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/3-way-quicksort-dutch-national-flag/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11399,14 +11401,14 @@
   {
     "id": "match-a-pattern-and-string-without-using-regular-expressions",
     "title": "Match a Pattern and String without Using Regular Expressions",
-    "topicId": "backtracking",
+    "topicId": "bfs-dfs",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/match-a-pattern-and-string-without-using-regular-expressions/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11427,7 +11429,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/josephus-circle-using-circular-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11448,7 +11450,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-a-triplet-from-three-linked-lists-with-sum-equal-to-a-given-number/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11469,7 +11471,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11490,7 +11492,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11511,7 +11513,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11525,14 +11527,14 @@
   {
     "id": "implement-stack-using-queue-or-heap",
     "title": "Implement Stack using Queue or heap",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/implement-stack-using-priority-queue-or-heap/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11546,14 +11548,14 @@
   {
     "id": "sum-of-minimum-maximum-elements-subarrays-size-k",
     "title": "Sum of minimum-maximum elements subarrays size-k",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/sum-minimum-maximum-elements-subarrays-size-k/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11567,14 +11569,14 @@
   {
     "id": "minimum-time-required-so-that-all-oranges-become-rotten",
     "title": "Minimum time required so that all oranges become rotten",
-    "topicId": "stacks-queues",
+    "topicId": "stack",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/minimum-time-required-so-that-all-oranges-become-rotten/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11588,14 +11590,14 @@
   {
     "id": "efficiently-implement-k-queues-single-array",
     "title": "Efficiently implement k-queues single array",
-    "topicId": "stacks-queues",
+    "topicId": "queue",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/efficiently-implement-k-queues-single-array/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11616,7 +11618,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/maximize-array-sun-after-k-negation-operations/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11637,7 +11639,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/program-for-shortest-job-first-or-sjf-cpu-scheduling-set-1-non-preemptive/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11651,14 +11653,14 @@
   {
     "id": "check-mirror-in-n-ary-tree",
     "title": "Check Mirror in N-ary tree",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/check-mirror-in-n-ary-tree1528/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11672,14 +11674,14 @@
   {
     "id": "maximum-sum-of-nodes-in-binary-tree-such-that-no-two-are-adjacent",
     "title": "Maximum sum of nodes in Binary tree such that no two are adjacent",
-    "topicId": "binary-trees",
+    "topicId": "trees",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/maximum-sum-nodes-binary-tree-no-two-adjacent/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11693,14 +11695,14 @@
   {
     "id": "brothers-from-different-roots",
     "title": "Brothers From Different Roots",
-    "topicId": "binary-search-trees",
+    "topicId": "bst",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/brothers-from-different-root/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11714,14 +11716,14 @@
   {
     "id": "check-the-condition",
     "title": "Check the condition",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11735,14 +11737,14 @@
   {
     "id": "check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k",
     "title": "Check if an array can be divided into pairs whose sum is divisible by k",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11756,14 +11758,14 @@
   {
     "id": "design-a-effective-dsa",
     "title": "Design a effective DSA",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/a-data-structure-question/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11777,14 +11779,14 @@
   {
     "id": "find-number-of-employees-under-every-manager",
     "title": "Find number of Employees Under every Manager",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/find-number-of-employees-under-every-manager/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11798,14 +11800,14 @@
   {
     "id": "pancake-sorting",
     "title": "Pancake Sorting",
-    "topicId": "heaps-hashing",
+    "topicId": "hashmaps",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/a-pancake-sorting-question/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11826,7 +11828,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/bridge-in-a-graph/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11847,7 +11849,7 @@
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/paths-travel-nodes-using-edgeseven-bridges-konigsberg/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11861,14 +11863,14 @@
   {
     "id": "maximum-sum-rectangle",
     "title": "Maximum Sum Rectangle",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11882,14 +11884,14 @@
   {
     "id": "interleaved-strings",
     "title": "Interleaved Strings",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/interleaved-strings/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11903,14 +11905,14 @@
   {
     "id": "painting-the-fence",
     "title": "Painting the Fence",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/painting-the-fence3727/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11924,14 +11926,14 @@
   {
     "id": "largest-independent-set",
     "title": "Largest independent Set",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://www.geeksforgeeks.org/largest-independent-set-problem-dp-26/",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11945,14 +11947,14 @@
   {
     "id": "minimum-cost-to-fill-given-weight-in-a-bag",
     "title": "Minimum cost to fill given weight in a bag",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/minimum-cost-to-fill-given-weight-in-a-bag1956/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11966,14 +11968,14 @@
   {
     "id": "boolean-parenthesization",
     "title": "Boolean Parenthesization",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/boolean-parenthesization5610/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -11987,14 +11989,14 @@
   {
     "id": "maximum-profit",
     "title": "Maximum Profit",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/maximum-profit4657/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",
@@ -12008,14 +12010,14 @@
   {
     "id": "palindromic-partitioning",
     "title": "Palindromic Partitioning",
-    "topicId": "dynamic-programming",
+    "topicId": "dp",
     "level": 2,
     "category": "medium",
     "difficulty": "Medium",
     "platform": "GFG",
     "url": "https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1",
     "pattern": "General",
-    "subtopic": "General",
+    "subtopic": "",
     "companies": [],
     "estimatedMinutes": 40,
     "interviewFrequency": "low",

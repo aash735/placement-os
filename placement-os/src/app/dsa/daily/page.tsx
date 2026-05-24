@@ -32,7 +32,7 @@ export default function DailyChallengePage() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4 text-cyan-400" />
-            <span className="text-sm font-semibold text-zinc-300">Today's Quest</span>
+            <span className="text-sm font-semibold text-zinc-300">Today&apos;s Quest</span>
           </div>
           {!done ? (
             <button
@@ -49,14 +49,14 @@ export default function DailyChallengePage() {
           )}
         </div>
       </GlassCard>
-
+ 
       {/* Today's question */}
       {dailyChallenge ? (
         <div className="mb-8">
           <div className="mb-3 flex items-center gap-2">
             <Zap className="h-4 w-4 text-cyan-400" />
             <h2 className="text-sm font-bold uppercase tracking-wider text-zinc-300">
-              Today's Question
+              Today&apos;s Question
             </h2>
           </div>
           <QuestionCard question={dailyChallenge} />

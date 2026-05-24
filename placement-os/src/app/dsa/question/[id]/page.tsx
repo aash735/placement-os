@@ -67,7 +67,26 @@ export default function QuestionDetailPage({ params }: { params: Promise<{ id: s
           <a href={question.url} target="_blank" rel="noopener noreferrer" className="btn-primary">Solve on {question.platform}</a>
           {question.explanationUrl && <a href={question.explanationUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost">Explanation</a>}
           {question.videoUrl && <a href={question.videoUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost">Video</a>}
-          {question.neetCodeRef && <a href={`https://neetcode.io/problems/${question.neetCodeRef}`} target="_blank" rel="noopener noreferrer" className="btn-ghost">NeetCode</a>}
+          {question.neetCodeRef && (
+            <a
+              href={question.neetCodeRef.startsWith("http") ? question.neetCodeRef : `https://neetcode.io/problems/${question.neetCodeRef}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
+            >
+              NeetCode
+            </a>
+          )}
+          {question.striverRef && (
+            <a
+              href={question.striverRef.startsWith("http") ? question.striverRef : `https://takeuforward.org/plus/dsa/${question.striverRef}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
+            >
+              Striver
+            </a>
+          )}
         </div>
 
         <div className="mt-8">

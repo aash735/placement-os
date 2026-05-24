@@ -9,6 +9,7 @@ import { usePlacementStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 import { DataProvider } from "@/components/providers/data-provider";
 import { useAuth } from "@/components/providers/auth-provider";
+import { AchievementUnlockModal } from "@/components/ui/achievement-unlock-modal";
 
 export function AppShell({
   children,
@@ -178,6 +179,7 @@ export function AppShell({
           </main>
         </div>
       </div>
+      <AchievementUnlockModal />
     </div>
   );
 }

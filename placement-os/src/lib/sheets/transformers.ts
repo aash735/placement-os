@@ -167,6 +167,91 @@ function getRowValue(row: SheetRow, keys: string[]): string {
   return "";
 }
 
+function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string): string {
+  const t = (rawTopic || "").toLowerCase().trim();
+  const c = (rawConcept || "").toLowerCase().trim();
+  const titleLower = (title || "").toLowerCase().trim();
+
+  const hasWord = (str: string, words: string[]) => words.some(w => str.includes(w));
+
+  // Determine if heap vs hashmap for "heaps & hashing"
+  if (t === "heaps & hashing" || t === "heaps and hashing" || t === "heap" || t === "heaps" || t === "hashmaps" || t === "hashmap" || t === "hash" || t === "hashing") {
+    if (hasWord(titleLower, ["heap", "priority queue", "kth", "k largest", "k most", "median", "merge k"]) || hasWord(c, ["heap", "priority"])) {
+      return "heap";
+    }
+    return "hashmaps";
+  }
+
+  // Determine if stack vs queue for "stacks & queues"
+  if (t === "stacks & queues" || t === "stacks and queues" || t === "stack" || t === "queue" || t === "queues") {
+    if (hasWord(titleLower, ["queue", "deque", "circular queue", "fifo"]) || hasWord(c, ["queue", "deque"])) {
+      return "queue";
+    }
+    return "stack";
+  }
+
+  // Determine if sorting vs binary search for "searching & sorting"
+  if (t === "searching & sorting" || t === "searching and sorting" || t === "sorting" || t === "binary-search" || t === "binary search" || t === "bs") {
+    if (hasWord(titleLower, ["binary search", "search in", "search a", "first and last", "search insert", "median of", "find minimum in rotated", "search a 2d"]) || hasWord(c, ["binary search", "binary-search", "lower bound", "upper bound"])) {
+      return "binary-search";
+    }
+    return "sorting";
+  }
+
+  // Basic mappings
+  if (t === "arrays" || t === "array" || t === "2d arrays" || t === "2d array" || t === "matrix" || t === "matrices") {
+    if (hasWord(c, ["sliding window", "sliding-window"]) || hasWord(titleLower, ["sliding window", "longest substring without"])) {
+      return "sliding-window";
+    }
+    if (hasWord(c, ["two pointer", "two-pointer", "two pointers"]) || hasWord(titleLower, ["two sum", "three sum", "3sum", "container with most water"])) {
+      return "two-pointer";
+    }
+    return "arrays";
+  }
+
+  if (t === "strings" || t === "string") {
+    if (hasWord(c, ["sliding window", "sliding-window"]) || hasWord(titleLower, ["sliding window", "longest substring without"])) {
+      return "sliding-window";
+    }
+    return "strings";
+  }
+
+  if (t === "linked list" || t === "linked-list") return "linked-list";
+  if (t === "binary search trees" || t === "bst" || t === "binary search tree") return "bst";
+  
+  if (t === "binary trees" || t === "trees" || t === "tree" || t === "binary tree" || t === "segment trees" || t === "segment tree" || t === "tries" || t === "trie") {
+    return "trees";
+  }
+
+  if (t === "graphs" || t === "graph" || t === "graph basics") return "graphs";
+  if (t === "dp" || t === "dynamic programming" || t === "dp basics") return "dp";
+  if (t === "greedy") return "greedy";
+  if (t === "backtracking" || t === "recursion" || t === "divide and conquer" || t === "bfs-dfs") return "bfs-dfs";
+
+  if (t === "sliding window" || t === "sliding-window") return "sliding-window";
+  if (t === "two pointers" || t === "two pointer" || t === "two-pointer") return "two-pointer";
+
+  // Fallbacks based on concepts
+  if (hasWord(c, ["two pointer", "two-pointer", "two pointers"])) return "two-pointer";
+  if (hasWord(c, ["sliding window", "sliding-window"])) return "sliding-window";
+  if (hasWord(c, ["hashmap", "hashing", "hash", "map", "set"])) return "hashmaps";
+  if (hasWord(c, ["binary search", "binary-search"])) return "binary-search";
+  if (hasWord(c, ["sort", "sorting"])) return "sorting";
+  if (hasWord(c, ["stack"])) return "stack";
+  if (hasWord(c, ["queue", "deque"])) return "queue";
+  if (hasWord(c, ["linked list", "linked-list"])) return "linked-list";
+  if (hasWord(c, ["bst"])) return "bst";
+  if (hasWord(c, ["heap"])) return "heap";
+  if (hasWord(c, ["dfs", "bfs", "backtracking", "recursion"])) return "bfs-dfs";
+  if (hasWord(c, ["graph"])) return "graphs";
+  if (hasWord(c, ["dp", "dynamic programming"])) return "dp";
+  if (hasWord(c, ["tree"])) return "trees";
+  if (hasWord(c, ["greedy"])) return "greedy";
+
+  // General fallbacks
+  return "arrays";
+}
+
 export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
   // Title is required
   const title = getRowValue(row, ["title", "question", "problem", "question_title", "problem_title", "question_375", "name"]);
@@ -197,50 +282,9 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     }
   }
 
-  // Normalize Shradha topic names to canonical display names
-  const TOPIC_CANONICAL: Record<string, string> = {
-    "dp": "Dynamic Programming",
-    "dynamic programming": "Dynamic Programming",
-    "arrays": "Arrays",
-    "2d arrays": "2D Arrays",
-    "strings": "Strings",
-    "linked list": "Linked List",
-    "linked-list": "Linked List",
-    "stacks & queues": "Stacks & Queues",
-    "stacks and queues": "Stacks & Queues",
-    "stack": "Stacks & Queues",
-    "queue": "Stacks & Queues",
-    "binary trees": "Binary Trees",
-    "trees": "Binary Trees",
-    "binary search trees": "Binary Search Trees",
-    "bst": "Binary Search Trees",
-    "heaps & hashing": "Heaps & Hashing",
-    "heaps and hashing": "Heaps & Hashing",
-    "heap": "Heaps & Hashing",
-    "hashmaps": "Heaps & Hashing",
-    "graphs": "Graphs",
-    "bfs-dfs": "Graphs",
-    "searching & sorting": "Searching & Sorting",
-    "searching and sorting": "Searching & Sorting",
-    "sorting": "Searching & Sorting",
-    "binary-search": "Searching & Sorting",
-    "greedy": "Greedy",
-    "backtracking": "Backtracking",
-    "tries": "Tries",
-    "segment trees": "Segment Trees",
-    "bit manipulation": "Bit Manipulation",
-    "sliding window": "Sliding Window",
-    "sliding-window": "Sliding Window",
-    "two pointers": "Two Pointers",
-    "two-pointer": "Two Pointers",
-    "recursion": "Recursion",
-    "maths": "Maths",
-    "matrix": "2D Arrays",
-  };
-  const topicLower = topic.toLowerCase().trim();
-  const canonicalTopic = TOPIC_CANONICAL[topicLower] || topic;
-  const topicId = slugify(canonicalTopic);
-
+  const concept = getRowValue(row, ["pattern", "patterns", "concept", "weak_concept", "weakconcept"]);
+  const subtopic = getRowValue(row, ["subtopic", "sub_topic", "subtopic_name"]) || concept;
+  const topicId = getCanonicalTopicId(topic, concept || subtopic, title);
 
   // Difficulty mapping
   const diffRaw = getRowValue(row, ["difficulty", "level_name", "diff", "difficulty_level", "level"]);
@@ -256,6 +300,27 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     }
   } else if (matchedQ && matchedQ.difficulty) {
     difficulty = matchedQ.difficulty;
+  }
+
+  // Category mapping - MUST be a valid QuestionCategory enum, NEVER "hard"
+  const catRaw = getRowValue(row, ["category", "question_category", "type"]);
+  let category: QuestionCategory = "medium";
+  if (catRaw) {
+    const cLower = catRaw.toLowerCase().trim();
+    if (["beginner", "easy", "medium", "interview", "revision", "mock"].includes(cLower)) {
+      category = cLower as QuestionCategory;
+    } else {
+      if (cLower.includes("begin")) category = "beginner";
+      else if (cLower.includes("easy")) category = "easy";
+      else if (cLower.includes("medium")) category = "medium";
+      else if (cLower.includes("interview") || cLower.includes("hard")) category = "interview";
+      else if (cLower.includes("revision")) category = "revision";
+      else if (cLower.includes("mock")) category = "mock";
+    }
+  } else {
+    if (difficulty === "Easy") category = "easy";
+    else if (difficulty === "Hard") category = "interview";
+    else category = "medium";
   }
 
   // Level mapping
@@ -281,17 +346,6 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     }
   }
 
-  // Pattern / Subtopic
-  let pattern = getRowValue(row, ["pattern", "patterns", "concept", "weak_concept", "weakconcept"]);
-  if (!pattern) {
-    if (matchedQ && matchedQ.pattern) {
-      pattern = matchedQ.pattern;
-    } else {
-      pattern = "General";
-    }
-  }
-  const subtopic = getRowValue(row, ["subtopic", "sub_topic", "subtopic_name"]) || pattern;
-
   // Companies — handle both CSV pipe-separated AND Shradha format (space/+/comma separated)
   const companiesStr = getRowValue(row, ["companies", "company", "target_companies", "company_tags"]);
   
@@ -302,21 +356,16 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     "DE Shaw", "Thought Works", "ThoughtWorks",
   ];
 
-  
   const rawCompanies = companiesStr
-    // First split by pipe (CSV format) or + or comma
     .split(/\||\s*\+\s*|\s*,\s*/)
     .flatMap((chunk) => {
       chunk = chunk.trim();
       if (!chunk) return [];
-      // Check for known multi-word companies
       for (const k of known) {
         if (chunk.toLowerCase() === k.toLowerCase()) return [k];
         if (chunk.toLowerCase().includes(k.toLowerCase())) return [k];
       }
-      // Skip noise tokens
       if (/^(IQ|Interview|Qs|Question|and|or|a|an|the)$/i.test(chunk)) return [];
-      // Split CamelCase company names (e.g. "AmazonMicrosoft")
       const split = chunk
         .replace(/([a-z])([A-Z])/g, "$1 $2")
         .split(/\s+/)
@@ -330,8 +379,6 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     companies = companies.concat(matchedQ.companies);
   }
   const uniqueCompanies = Array.from(new Set(companies));
-
-
 
   // Tags
   const tagsStr = getRowValue(row, ["tags", "tag", "keywords"]);
@@ -363,6 +410,19 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
   if (!neetCodeRef && matchedQ && matchedQ.neetCodeRef) {
     neetCodeRef = matchedQ.neetCodeRef;
   }
+  if (neetCodeRef) {
+    // If it's a full URL, extract slug or keep it clean
+    neetCodeRef = neetCodeRef.trim();
+  }
+
+  // Striver
+  let striverRef = getRowValue(row, ["striver", "striver_ref", "striver_link"]) || undefined;
+  if (!striverRef && matchedQ && matchedQ.striverRef) {
+    striverRef = matchedQ.striverRef;
+  }
+  if (striverRef) {
+    striverRef = striverRef.trim();
+  }
 
   // Video Solution
   const videoUrl = getRowValue(row, ["video_solution", "videosolution", "video_url", "video", "solution_video"]) || undefined;
@@ -374,11 +434,11 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     title,
     topicId,
     level,
-    category: (difficulty === "Easy" ? "easy" : difficulty === "Hard" ? "hard" : "medium") as QuestionCategory,
+    category,
     difficulty,
     platform: (url.includes("geeksforgeeks") ? "GFG" : "LeetCode") as any,
     url,
-    pattern,
+    pattern: concept || "General",
     subtopic,
     companies: uniqueCompanies,
     estimatedMinutes: difficulty === "Easy" ? 20 : difficulty === "Hard" ? 60 : 40,
@@ -390,6 +450,7 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     revisionPriority,
     explanationImportance: level >= 3 ? "must" : "recommended",
     neetCodeRef,
+    striverRef,
     tags: uniqueTags,
     xpReward,
     unlockLevel: level,

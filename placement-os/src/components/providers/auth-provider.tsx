@@ -22,6 +22,7 @@ type AuthContextType = {
     semester: string,
     email?: string
   ) => Promise<{ error: string | null }>;
+  signInAsGuest: () => void;
 };
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -145,6 +146,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return { error: null };
   };
 
+  // ── Sign In As Guest ──────────────────────────────────────────────────────
+  const signInAsGuest = () => {
+    const guestUser: SessionUser = {
+      id: "guest-user-id",
+      username: "guest_builder",
+      name: "Guest Builder",
+      email: "guest@placementos.local",
+      semester: "7th Semester — Placement Season",
+      token: "guest-token",
+      createdAt: new Date().toISOString(),
+    };
+    setSession(guestUser);
+    setUser(guestUser);
+    useProgressStore.setState({ userId: guestUser.id });
+    router.replace("/dashboard");
+  };
+
   // ── Sign Out ──────────────────────────────────────────────────────────────
   const signOut = () => {
     if (typeof window !== "undefined") {
@@ -176,7 +194,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, loading, signOut, signIn, signUp }}>
+    <AuthContext.Provider value={{ user, loading, signOut, signIn, signUp, signInAsGuest }}>
       {children}
     </AuthContext.Provider>
   );

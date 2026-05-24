@@ -178,7 +178,7 @@ export default function MockTestPage() {
   };
 
   // Submit test and sync with progress
-  const handleSubmitTest = () => {
+  function handleSubmitTest() {
     setTestActive(false);
     const totalQs = activeQuestions.length;
     if (totalQs === 0) return;
@@ -211,7 +211,7 @@ export default function MockTestPage() {
     setActiveQuestions([]);
     setSolvedInTest({});
     setActiveTab("history");
-  };
+  }
 
   const formatTime = (seconds: number) => {
     const hrs = Math.floor(seconds / 3600);

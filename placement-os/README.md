@@ -95,7 +95,7 @@ To hook the platform up to a persistent PostgreSQL database:
 4. Copy the contents of [supabase-schema-custom-auth.sql](file:///c:/Users/AASHISH/OneDrive/Desktop/placement-os/placement-os/supabase-schema-custom-auth.sql) from the project root.
 5. Paste the schema contents in the SQL Editor and click **Run**.
 
-This SQL script creates the necessary database schemas, RLS tables, and index structures (`app_users`, `user_progress`, `user_solved_problems`, `user_bookmarks`, `user_revisions`, `user_weekly_planner`, and `custom_roadmaps`).
+This SQL script creates the necessary database schemas, indexes, and tables: `users`, `user_progress`, `revision_history`, `bookmarks`, `analytics`, `mock_tests`, `company_targets`, `aptitude_attempts`, `projects`, `cs_subjects`, `achievements`, `countdown_goals`, `mock_interviews`, and `daily_planner`.
 
 ---
 

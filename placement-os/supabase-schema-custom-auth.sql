@@ -43,15 +43,15 @@ drop function if exists public.handle_new_user();
 
 
 -- ============================================================
--- STEP 2: app_users TABLE
+-- STEP 2: users TABLE
 -- Custom auth — stores username/hashed password. No Supabase Auth link.
 -- ============================================================
-create table public.app_users (
+create table public.users (
   id             uuid    primary key default gen_random_uuid(),
   username       text    not null,
   email          text,
   password_hash  text    not null,
-  name           text    not null default '',
+  full_name      text    not null default '',
   semester       text    not null default '7th Semester — Placement Season',
   xp             integer not null default 0,
   level          integer not null default 1,
@@ -62,16 +62,16 @@ create table public.app_users (
   shortcuts_enabled boolean not null default true,
   created_at     timestamptz not null default now(),
   updated_at     timestamptz not null default now(),
-  constraint app_users_username_unique unique (username)
+  constraint users_username_unique unique (username)
 );
 
-create index idx_app_users_username_lower on public.app_users (lower(username));
-create index idx_app_users_email          on public.app_users (email) where email is not null;
+create index idx_users_username_lower on public.users (lower(username));
+create index idx_users_email          on public.users (email) where email is not null;
 
-alter table public.app_users disable row level security;
-grant all on public.app_users to anon;
-grant all on public.app_users to authenticated;
-grant all on public.app_users to service_role;
+alter table public.users disable row level security;
+grant all on public.users to anon;
+grant all on public.users to authenticated;
+grant all on public.users to service_role;
 
 
 -- ============================================================

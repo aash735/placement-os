@@ -1,7 +1,7 @@
 /**
  * custom-auth.ts
  *
- * Custom authentication layer using Supabase PostgreSQL (app_users table).
+ * Custom authentication layer using Supabase PostgreSQL (users table).
  * NO Supabase Auth. All operations are raw database queries via anon key.
  *
  * KEY FIX: Supabase JS error objects have non-enumerable properties.
@@ -36,8 +36,7 @@ export async function registerUser(
   username: string,
   password: string,
   name: string,
-  semester: string,
-  email?: string
+  semester: string
 ): Promise<AuthResult> {
   if (!hasSupabaseConfig) {
     return {
@@ -50,7 +49,6 @@ export async function registerUser(
   // ── Input validation ─────────────────────────────────────────────────────
   const trimmedUsername = username?.trim().toLowerCase();
   const trimmedName = name?.trim();
-  const trimmedEmail = email?.trim() || null;
 
   if (!trimmedUsername || trimmedUsername.length < 3) {
     return { user: null, error: "Username must be at least 3 characters." };
@@ -71,7 +69,7 @@ export async function registerUser(
   try {
     // ── Check if username is taken ─────────────────────────────────────────
     const { data: existing, error: checkError } = await supabase
-      .from("app_users")
+      .from("users")
       .select("id")
       .ilike("username", trimmedUsername)
       .maybeSingle();
@@ -84,7 +82,7 @@ export async function registerUser(
         return {
           user: null,
           error:
-            "Database tables not set up yet. Please run the SQL schema in your Supabase SQL Editor first. See supabase-schema-custom-auth.sql in your project root.",
+            "Database tables not set up yet. Please run the SQL schema in your Supabase SQL Editor first.",
         };
       }
       return { user: null, error: `Database check failed: ${msg}` };
@@ -100,12 +98,11 @@ export async function registerUser(
 
     // ── Insert new user ────────────────────────────────────────────────────
     const { data, error: insertError } = await supabase
-      .from("app_users")
+      .from("users")
       .insert({
         username: trimmedUsername,
-        email: trimmedEmail,
         password_hash,
-        name: trimmedName,
+        full_name: trimmedName,
         semester,
         xp: 0,
         level: 1,
@@ -113,7 +110,7 @@ export async function registerUser(
         energy_mode: "normal",
         shortcuts_enabled: true,
       })
-      .select("id, username, name, email, semester")
+      .select("id, username, full_name, semester")
       .single();
 
     if (insertError) {
@@ -122,7 +119,7 @@ export async function registerUser(
 
       // Handle specific error codes
       if (insertError.code === "23505") {
-        return { user: null, error: "Username or email is already registered." };
+        return { user: null, error: "Username is already registered." };
       }
       if (insertError.code === "42501" || msg.toLowerCase().includes("permission")) {
         return {
@@ -135,7 +132,7 @@ export async function registerUser(
         return {
           user: null,
           error:
-            "The app_users table does not exist. Please run supabase-schema-custom-auth.sql in your Supabase SQL Editor.",
+            "The users table does not exist. Please run the SQL schema in your Supabase SQL Editor.",
         };
       }
       return { user: null, error: `Registration failed: ${msg}` };
@@ -148,8 +145,8 @@ export async function registerUser(
     const sessionUser: SessionUser = {
       id: data.id,
       username: data.username,
-      name: data.name,
-      email: data.email,
+      name: data.full_name,
+      email: null,
       semester: data.semester,
       token,
       createdAt: new Date().toISOString(),
@@ -187,8 +184,8 @@ export async function loginUser(
   try {
     // ── Fetch user by username (case-insensitive) ──────────────────────────
     const { data, error: fetchError } = await supabase
-      .from("app_users")
-      .select("id, username, name, email, semester, password_hash")
+      .from("users")
+      .select("id, username, full_name, semester, password_hash")
       .ilike("username", trimmedUsername)
       .maybeSingle();
 
@@ -200,7 +197,7 @@ export async function loginUser(
         return {
           user: null,
           error:
-            "Database tables not set up. Please run supabase-schema-custom-auth.sql in your Supabase SQL Editor.",
+            "Database tables not set up. Please run the SQL schema in your Supabase SQL Editor.",
         };
       }
       return { user: null, error: `Login failed: ${msg}` };
@@ -221,8 +218,8 @@ export async function loginUser(
     const sessionUser: SessionUser = {
       id: data.id,
       username: data.username,
-      name: data.name,
-      email: data.email,
+      name: data.full_name,
+      email: null,
       semester: data.semester,
       token,
       createdAt: new Date().toISOString(),
@@ -241,11 +238,14 @@ export async function loginUser(
 
 export async function getUserById(userId: string): Promise<SessionUser | null> {
   if (!hasSupabaseConfig) return null;
+  if (!userId || userId === "guest-user-id") return null;
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  if (!uuidRegex.test(userId)) return null;
 
   try {
     const { data, error } = await supabase
-      .from("app_users")
-      .select("id, username, name, email, semester")
+      .from("users")
+      .select("id, username, full_name, semester")
       .eq("id", userId)
       .maybeSingle();
 
@@ -254,8 +254,8 @@ export async function getUserById(userId: string): Promise<SessionUser | null> {
     return {
       id: data.id,
       username: data.username,
-      name: data.name,
-      email: data.email,
+      name: data.full_name,
+      email: null,
       semester: data.semester,
       token: "",
       createdAt: "",

@@ -178,6 +178,16 @@ export default function LoginPage() {
                   </>
                 )}
               </button>
+
+              <div className="text-center mt-4">
+                <button
+                  type="button"
+                  onClick={handleGuestBypass}
+                  className="text-xs text-zinc-500 hover:text-cyan-400 font-medium transition-colors cursor-pointer"
+                >
+                  Or enter as guest
+                </button>
+              </div>
             </form>
           ) : (
             /* Guest mode fallback */

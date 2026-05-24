@@ -19,8 +19,7 @@ type AuthContextType = {
     username: string,
     password: string,
     name: string,
-    semester: string,
-    email?: string
+    semester: string
   ) => Promise<{ error: string | null }>;
   signInAsGuest: () => void;
 };
@@ -129,10 +128,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     username: string,
     password: string,
     name: string,
-    semester: string,
-    email?: string
+    semester: string
   ): Promise<{ error: string | null }> => {
-    const result = await registerUser(username, password, name, semester, email);
+    const result = await registerUser(username, password, name, semester);
     if (result.error || !result.user) {
       return { error: result.error ?? "Registration failed." };
     }
@@ -152,7 +150,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       id: "guest-user-id",
       username: "guest_builder",
       name: "Guest Builder",
-      email: "guest@placementos.local",
+      email: null,
       semester: "7th Semester — Placement Season",
       token: "guest-token",
       createdAt: new Date().toISOString(),

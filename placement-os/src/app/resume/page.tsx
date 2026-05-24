@@ -3,7 +3,21 @@
 import { AppShell } from "@/components/layout/app-shell";
 import { PageHeader } from "@/components/layout/page-header";
 import { GlassCard } from "@/components/ui/glass-card";
-import { HireLensATS } from "@/components/ats/HireLens";
+import { ExternalLink } from "lucide-react";
+import dynamic from "next/dynamic";
+
+const HireLensATS = dynamic(
+  () => import("@/components/ats/HireLens").then((mod) => mod.HireLensATS),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex flex-col items-center justify-center p-12 text-center space-y-4">
+        <div className="h-8 w-8 animate-spin rounded-full border-4 border-cyan-500 border-t-transparent" />
+        <p className="text-xs text-zinc-500">Loading HireLens ATS Scanner...</p>
+      </div>
+    ),
+  }
+);
 
 export default function ResumePage() {
   return (
@@ -40,6 +54,23 @@ export default function ResumePage() {
             <p className="text-[11px] text-zinc-400 leading-relaxed">
               Large companies use applicant tracking systems (ATS) to filter resumes before human recruiters read them. Resumes without sufficient matching keywords are often filtered out automatically.
             </p>
+          </GlassCard>
+
+          <GlassCard hover={true} className="p-6 border-cyan-500/10 hover:border-cyan-500/30 transition-all">
+            <h3 className="text-xs font-bold text-white uppercase tracking-widest mb-2 flex items-center gap-1.5">
+              Extended ATS Scanner <ExternalLink className="h-3.5 w-3.5 text-cyan-400" />
+            </h3>
+            <p className="text-[11px] text-zinc-400 leading-relaxed mb-4">
+              Need a deeper diagnostic check? Access the standalone HireLens Extended Analyzer to scan custom descriptions and advanced format parsing.
+            </p>
+            <a
+              href="https://hire-lens-ats.vercel.app/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-xl bg-cyan-950/40 hover:bg-cyan-500/20 border border-cyan-500/30 text-[10px] text-cyan-400 font-bold uppercase tracking-wider px-4 py-2 transition-all shadow-inner"
+            >
+              Launch Standalone Checker
+            </a>
           </GlassCard>
         </div>
 

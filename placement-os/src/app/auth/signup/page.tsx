@@ -8,7 +8,6 @@ import {
   Rocket,
   User,
   Lock,
-  Mail,
   GraduationCap,
   Eye,
   EyeOff,
@@ -25,7 +24,6 @@ export default function SignupPage() {
 
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [semester, setSemester] = useState("7th Semester — Placement Season");
@@ -43,8 +41,7 @@ export default function SignupPage() {
       username.trim(),
       password,
       name.trim(),
-      semester,
-      email.trim() || undefined
+      semester
     );
 
     if (error) {
@@ -141,26 +138,7 @@ export default function SignupPage() {
                 </p>
               </label>
 
-              {/* Email (Optional) */}
-              <label className="block text-sm">
-                <span className="font-medium" style={{ color: "var(--text-secondary)" }}>
-                  Email{" "}
-                  <span className="font-normal" style={{ color: "var(--text-faint)" }}>
-                    (optional)
-                  </span>
-                </span>
-                <div className="relative mt-1.5">
-                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4" style={{ color: "var(--text-faint)" }} />
-                  <input
-                    type="email"
-                    autoComplete="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="field-input w-full pl-9"
-                    placeholder="you@college.edu (optional)"
-                  />
-                </div>
-              </label>
+
 
               {/* Password */}
               <label className="block text-sm">
@@ -225,6 +203,16 @@ export default function SignupPage() {
                   </>
                 )}
               </button>
+
+              <div className="text-center mt-4">
+                <button
+                  type="button"
+                  onClick={signInAsGuest}
+                  className="text-xs text-zinc-500 hover:text-cyan-400 font-medium transition-colors cursor-pointer"
+                >
+                  Or enter as guest
+                </button>
+              </div>
             </form>
           ) : (
             <div className="mt-8 space-y-6">

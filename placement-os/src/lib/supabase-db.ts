@@ -2,7 +2,7 @@
  * supabase-db.ts
  *
  * Database operations layer for Placement OS.
- * All tables reference app_users.id (custom auth — no Supabase Auth dependency).
+ * All tables reference users.id (custom database-only auth).
  */
 
 import { supabase, hasSupabaseConfig } from "./supabase";
@@ -75,11 +75,22 @@ function mapDbToAptitudeAttempt(row: any): AptitudeAttempt {
   };
 }
 
+/** Guest Mode check to prevent invalid UUID writes or reads to Supabase */
+export function isGuest(userId: string): boolean {
+  if (!userId || userId === "guest-user-id") {
+    return true;
+  }
+  // Validate UUID format to prevent database query syntax errors (22P02)
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  return !uuidRegex.test(userId);
+}
+
 // ─── Database API Methods ─────────────────────────────────────────────────────
 
 /** Fetch all user data concurrently from Supabase Postgres */
 export async function fetchUserData(userId: string) {
   if (!hasSupabaseConfig) return null;
+  if (isGuest(userId)) return null;
 
   try {
     const [
@@ -98,7 +109,7 @@ export async function fetchUserData(userId: string) {
       mockInterviewsRes,
       dailyPlannerRes,
     ] = await Promise.all([
-      supabase.from("app_users").select("*").eq("id", userId).maybeSingle(),
+      supabase.from("users").select("*").eq("id", userId).maybeSingle(),
       supabase.from("user_progress").select("*").eq("user_id", userId),
       supabase.from("bookmarks").select("question_id").eq("user_id", userId),
       supabase.from("mock_tests").select("*").eq("user_id", userId),
@@ -244,7 +255,9 @@ export async function fetchUserData(userId: string) {
   }
 }
 
-/** Save or update the core user stats/profile info (in app_users table) */
+// isGuest helper defined at top of file
+
+/** Save or update the core user stats/profile info (in users table) */
 export async function saveUserProfile(
   userId: string,
   profile: {
@@ -258,7 +271,8 @@ export async function saveUserProfile(
   }
 ) {
   if (!hasSupabaseConfig) return;
-  const { error } = await supabase.from("app_users").update({
+  if (isGuest(userId)) return;
+  const { error } = await supabase.from("users").update({
     xp: profile.xp,
     level: profile.level,
     streak: profile.streak,
@@ -274,6 +288,7 @@ export async function saveUserProfile(
 /** Save or update question status/attempts/notes */
 export async function saveQuestionProgress(userId: string, p: UserQuestionProgress) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("user_progress").upsert({
     user_id: userId,
     question_id: p.questionId,
@@ -294,6 +309,7 @@ export async function saveQuestionProgress(userId: string, p: UserQuestionProgre
 /** Save or delete bookmarks */
 export async function saveBookmark(userId: string, questionId: string, isBookmarked: boolean) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   if (isBookmarked) {
     const { error } = await supabase.from("bookmarks").upsert({
       user_id: userId,
@@ -314,6 +330,7 @@ export async function saveBookmark(userId: string, questionId: string, isBookmar
 /** Save Mock Test record */
 export async function saveMockTest(userId: string, m: MockTestRecord) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
 
   // Validate required fields before attempting insert
   if (!userId) { console.warn("saveMockTest: userId is required"); return; }
@@ -346,6 +363,7 @@ export async function saveMockTest(userId: string, m: MockTestRecord) {
 /** Save Aptitude Attempt record */
 export async function saveAptitudeAttempt(userId: string, a: AptitudeAttempt) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("aptitude_attempts").upsert({
     id: a.id,
     user_id: userId,
@@ -366,6 +384,7 @@ export async function saveAptitudeAttempt(userId: string, a: AptitudeAttempt) {
 /** Save Project task (Kanban) */
 export async function saveProjectTask(userId: string, p: ProjectTask) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("projects").upsert({
     id: p.id,
     user_id: userId,
@@ -383,6 +402,7 @@ export async function saveProjectTask(userId: string, p: ProjectTask) {
 /** Delete Project task */
 export async function deleteProjectTask(userId: string, id: string) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase
     .from("projects")
     .delete()
@@ -394,6 +414,7 @@ export async function deleteProjectTask(userId: string, id: string) {
 /** Save CS Subject checkbox tracking state */
 export async function saveCsSubject(userId: string, subjectId: string, sub: CsSubjectState) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("cs_subjects").upsert({
     user_id: userId,
     subject_id: subjectId,
@@ -408,6 +429,7 @@ export async function saveCsSubject(userId: string, subjectId: string, sub: CsSu
 /** Save Target Company status */
 export async function saveCompanyTarget(userId: string, slug: string, status: string) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("company_targets").upsert({
     user_id: userId,
     company_slug: slug,
@@ -420,6 +442,7 @@ export async function saveCompanyTarget(userId: string, slug: string, status: st
 /** Save Daily Log (analytics) charts data */
 export async function saveDailyLog(userId: string, l: DailyLog) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("analytics").upsert({
     user_id: userId,
     date: l.date,
@@ -435,6 +458,7 @@ export async function saveDailyLog(userId: string, l: DailyLog) {
 /** Add Revision Log entry */
 export async function saveRevisionLog(userId: string, r: RevisionEntry) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("revision_history").insert({
     id: r.id || undefined,
     user_id: userId,
@@ -447,6 +471,7 @@ export async function saveRevisionLog(userId: string, r: RevisionEntry) {
 /** Save unlocked achievement */
 export async function saveAchievement(userId: string, achievementId: string) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("achievements").upsert({
     user_id: userId,
     achievement_id: achievementId,
@@ -460,6 +485,7 @@ export async function saveAchievement(userId: string, achievementId: string) {
 /** Save or update countdown goal */
 export async function saveCountdownGoal(userId: string, g: any) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("countdown_goals").upsert({
     id: g.id,
     user_id: userId,
@@ -476,6 +502,7 @@ export async function saveCountdownGoal(userId: string, g: any) {
 /** Delete countdown goal */
 export async function deleteCountdownGoal(userId: string, id: string) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase
     .from("countdown_goals")
     .delete()
@@ -487,6 +514,7 @@ export async function deleteCountdownGoal(userId: string, id: string) {
 /** Save mock interview session */
 export async function saveMockInterview(userId: string, i: any) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("mock_interviews").upsert({
     id: i.id,
     user_id: userId,
@@ -506,6 +534,7 @@ export async function saveMockInterview(userId: string, i: any) {
 /** Save daily planner block */
 export async function savePlannerBlock(userId: string, b: any) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase.from("daily_planner").upsert({
     id: b.id,
     user_id: userId,
@@ -523,6 +552,7 @@ export async function savePlannerBlock(userId: string, b: any) {
 /** Delete daily planner block */
 export async function deletePlannerBlock(userId: string, id: string) {
   if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
   const { error } = await supabase
     .from("daily_planner")
     .delete()

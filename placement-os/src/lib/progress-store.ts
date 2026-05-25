@@ -321,6 +321,7 @@ export const useProgressStore = create<ProgressState>()(
               { id: "block-5", time: "18:15", task: "Project 30 min (HireLens)", energy: "normal", completed: false },
               { id: "block-6", time: "21:00", task: "Wind-down · no YouTube spiral", energy: "recovery", completed: false },
             ],
+            customWeeklyPlan: data.customWeeklyPlan || [],
           });
           get().refreshScores();
         } else {
@@ -1089,6 +1090,26 @@ export const useProgressStore = create<ProgressState>()(
           q.topicId === "dp" &&
           ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
         ).length;
+        const arraySolved = questions.filter((q) =>
+          q.topicId === "arrays" &&
+          ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
+        ).length;
+        const binarySearchSolved = questions.filter((q) =>
+          q.topicId === "binary-search" &&
+          ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
+        ).length;
+        const greedySolved = questions.filter((q) =>
+          q.topicId === "greedy" &&
+          ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
+        ).length;
+        const slidingWindowSolved = questions.filter((q) =>
+          q.topicId === "sliding-window" &&
+          ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
+        ).length;
+        const treeSolved = questions.filter((q) =>
+          (q.topicId === "trees" || q.topicId === "bst") &&
+          ["solved", "revised", "mastered"].includes(state.questionProgress[q.id]?.status ?? "")
+        ).length;
 
         // Focus minutes
         const totalFocusMinutes = state.dailyLogs.reduce((sum, log) => sum + (log.focusMinutes || 0), 0);
@@ -1101,6 +1122,22 @@ export const useProgressStore = create<ProgressState>()(
         // Productivity
         const revisionCount = state.revisionHistory ? state.revisionHistory.length : 0;
         const completedPlannerTasks = state.dailyPlannerBlocks ? state.dailyPlannerBlocks.filter(b => b.completed).length : 0;
+
+        // Monday check
+        const mondayLogs = state.dailyLogs.filter((l) => {
+          try {
+            const day = new Date(l.date).getDay();
+            return day === 1 && (l.questionsSolved > 0 || l.revisionsDone > 0 || l.focusMinutes > 0);
+          } catch {
+            return false;
+          }
+        });
+        const neverMissedMonday = mondayLogs.length >= 2;
+
+        // Countdown milestones
+        const completedMilestonesCount = state.countdownGoals.reduce((sum, g) =>
+          sum + (g.milestones?.filter((m: any) => m.completed).length || 0), 0
+        );
 
         // Night owl / Early starter checks
         let hasNightOwl = false;
@@ -1118,31 +1155,54 @@ export const useProgressStore = create<ProgressState>()(
           { id: "first_solve", condition: solved >= 1 },
           { id: "dsa_50", condition: solved >= 50 },
           { id: "dsa_100", condition: solved >= 100 },
+          { id: "dsa_500", condition: solved >= 500 },
           { id: "graph_master", condition: graphSolved >= 5 },
           { id: "dp_expert", condition: dpSolved >= 5 },
+          { id: "array_apprentice", condition: arraySolved >= 5 },
+          { id: "binary_search_specialist", condition: binarySearchSolved >= 3 },
+          { id: "greedy_strategist", condition: greedySolved >= 4 },
+          { id: "sliding_window_ninja", condition: slidingWindowSolved >= 3 },
+          { id: "tree_architect", condition: treeSolved >= 6 },
 
           // Focus
           { id: "first_focus", condition: totalFocusMinutes >= 25 },
           { id: "focus_champion", condition: totalFocusMinutes >= 125 },
           { id: "deep_work_beast", condition: totalFocusMinutes >= 375 },
           { id: "focus_10hr", condition: totalFocusMinutes >= 600 },
+          { id: "deep_work_rookie", condition: totalFocusMinutes >= 25 },
+          { id: "focus_warrior", condition: totalFocusMinutes >= 150 },
+          { id: "marathon_focus_beast", condition: totalFocusMinutes >= 1200 },
 
           // Streaks
           { id: "streak_3", condition: streak >= 3 },
           { id: "streak_7", condition: streak >= 7 },
           { id: "streak_guardian", condition: streak >= 7 },
+          { id: "streak_14", condition: streak >= 14 },
           { id: "streak_30", condition: streak >= 30 },
+          { id: "never_missed_monday", condition: neverMissedMonday },
+          { id: "consistency_king", condition: state.dailyLogs.filter(l => l.questionsSolved > 0 || l.revisionsDone > 0 || l.focusMinutes > 0).length >= 15 },
 
           // Mocks
           { id: "mock_starter", condition: mockCompleted >= 1 },
           { id: "hr_master", condition: hrMockCompleted >= 1 },
+          { id: "hr_survivor", condition: hrMockCompleted >= 1 },
           { id: "frontend_pro", condition: frontendMockCompleted >= 1 },
+          { id: "frontend_wizard", condition: (state.interviewHistory || []).some(i => i.type === "frontend" && i.score >= 80) },
+          { id: "dsa_interview_cracker", condition: (state.interviewHistory || []).some(i => i.type === "dsa" && i.score >= 85) },
+          { id: "system_design_challenger", condition: (state.interviewHistory || []).some(i => i.type === "system-design" || i.type === "project") },
 
           // Productivity
           { id: "revision_warrior", condition: revisionCount >= 5 },
           { id: "planner_master", condition: completedPlannerTasks >= 5 },
+          { id: "weekly_dominator", condition: state.customWeeklyPlan.length >= 3 },
+          { id: "deadline_crusher", condition: completedMilestonesCount >= 3 },
           { id: "night_owl", condition: hasNightOwl },
           { id: "early_starter", condition: hasEarlyStarter },
+
+          // Roadmap
+          { id: "goal_setter", condition: state.countdownGoals.filter(g => g.id !== "goal-default").length >= 1 },
+          { id: "milestone_crusher", condition: state.countdownGoals.some(g => g.milestones.some(m => m.completed)) },
+          { id: "roadmap_architect", condition: state.countdownGoals.filter(g => g.id !== "goal-default").length >= 3 },
 
           // Legacy / others
           { id: "pattern_builder", condition: solved >= 10 },
@@ -1406,50 +1466,90 @@ export const useProgressStore = create<ProgressState>()(
         get().refreshScores();
       },
 
-      setWeeklyPlan: (plan) => set({ customWeeklyPlan: plan }),
+      setWeeklyPlan: (plan) => {
+        set({ customWeeklyPlan: plan });
+        const { userId } = get();
+        if (userId) {
+          plan.forEach((w) => db.saveWeeklyWeek(userId, w));
+        }
+      },
 
       updateWeeklyWeek: (weekNum, focus, hours) => {
-        set((s) => ({
-          customWeeklyPlan: s.customWeeklyPlan.map((w) =>
+        set((s) => {
+          const updated = s.customWeeklyPlan.map((w) =>
             w.week === weekNum ? { ...w, focus, hours } : w
-          ),
-        }));
+          );
+          const { userId } = s;
+          if (userId) {
+            const target = updated.find((w) => w.week === weekNum);
+            if (target) db.saveWeeklyWeek(userId, target);
+          }
+          return { customWeeklyPlan: updated };
+        });
       },
 
       addWeeklyTask: (weekNum, task) => {
-        set((s) => ({
-          customWeeklyPlan: s.customWeeklyPlan.map((w) =>
+        set((s) => {
+          const updated = s.customWeeklyPlan.map((w) =>
             w.week === weekNum ? { ...w, days: [...w.days, task] } : w
-          ),
-        }));
+          );
+          const { userId } = s;
+          if (userId) {
+            const target = updated.find((w) => w.week === weekNum);
+            if (target) db.saveWeeklyWeek(userId, target);
+          }
+          return { customWeeklyPlan: updated };
+        });
       },
 
       removeWeeklyTask: (weekNum, taskIndex) => {
-        set((s) => ({
-          customWeeklyPlan: s.customWeeklyPlan.map((w) =>
+        set((s) => {
+          const updated = s.customWeeklyPlan.map((w) =>
             w.week === weekNum ? { ...w, days: w.days.filter((_, idx) => idx !== taskIndex) } : w
-          ),
-        }));
+          );
+          const { userId } = s;
+          if (userId) {
+            const target = updated.find((w) => w.week === weekNum);
+            if (target) db.saveWeeklyWeek(userId, target);
+          }
+          return { customWeeklyPlan: updated };
+        });
       },
 
       updateWeeklyTask: (weekNum, taskIndex, newTask) => {
-        set((s) => ({
-          customWeeklyPlan: s.customWeeklyPlan.map((w) =>
+        set((s) => {
+          const updated = s.customWeeklyPlan.map((w) =>
             w.week === weekNum ? { ...w, days: w.days.map((d, idx) => idx === taskIndex ? newTask : d) } : w
-          ),
-        }));
+          );
+          const { userId } = s;
+          if (userId) {
+            const target = updated.find((w) => w.week === weekNum);
+            if (target) db.saveWeeklyWeek(userId, target);
+          }
+          return { customWeeklyPlan: updated };
+        });
       },
 
       addWeeklyWeek: (week) => {
-        set((s) => ({
-          customWeeklyPlan: [...s.customWeeklyPlan, week].sort((a, b) => a.week - b.week),
-        }));
+        set((s) => {
+          const updated = [...s.customWeeklyPlan, week].sort((a, b) => a.week - b.week);
+          const { userId } = s;
+          if (userId) {
+            db.saveWeeklyWeek(userId, week);
+          }
+          return { customWeeklyPlan: updated };
+        });
       },
 
       deleteWeeklyWeek: (weekNum) => {
-        set((s) => ({
-          customWeeklyPlan: s.customWeeklyPlan.filter((w) => w.week !== weekNum),
-        }));
+        set((s) => {
+          const updated = s.customWeeklyPlan.filter((w) => w.week !== weekNum);
+          const { userId } = s;
+          if (userId) {
+            db.deleteWeeklyWeek(userId, weekNum);
+          }
+          return { customWeeklyPlan: updated };
+        });
       },
 
       exportProgress: () => {

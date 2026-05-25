@@ -108,6 +108,7 @@ export async function fetchUserData(userId: string) {
       countdownGoalsRes,
       mockInterviewsRes,
       dailyPlannerRes,
+      weeklyPlannerRes,
     ] = await Promise.all([
       supabase.from("users").select("*").eq("id", userId).maybeSingle(),
       supabase.from("user_progress").select("*").eq("user_id", userId),
@@ -123,6 +124,7 @@ export async function fetchUserData(userId: string) {
       supabase.from("countdown_goals").select("*").eq("user_id", userId),
       supabase.from("mock_interviews").select("*").eq("user_id", userId),
       supabase.from("daily_planner").select("*").eq("user_id", userId),
+      supabase.from("weekly_planner").select("*").eq("user_id", userId),
     ]);
 
     // Profile variables
@@ -227,6 +229,14 @@ export async function fetchUserData(userId: string) {
       completed: b.completed,
     })) || [];
 
+    // Custom weekly plan blocks
+    const customWeeklyPlan = weeklyPlannerRes?.data?.map((w) => ({
+      week: w.week,
+      focus: w.focus,
+      hours: w.hours,
+      days: w.days || [],
+    })).sort((a, b) => a.week - b.week) || [];
+
     return {
       xp: profile.xp || 0,
       level: profile.level || 1,
@@ -248,6 +258,7 @@ export async function fetchUserData(userId: string) {
       countdownGoals,
       interviewHistory,
       dailyPlannerBlocks,
+      customWeeklyPlan,
     };
   } catch (error) {
     console.error("❌ Error fetching user data from Supabase:", error);
@@ -559,4 +570,33 @@ export async function deletePlannerBlock(userId: string, id: string) {
     .eq("user_id", userId)
     .eq("id", id);
   if (error) console.error("Error deleting daily planner block:", extractError(error));
+}
+
+/** Save a strategy week to the weekly planner */
+export async function saveWeeklyWeek(userId: string, w: { week: number; focus: string; hours: string; days: string[] }) {
+  if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
+  const { error } = await supabase.from("weekly_planner").upsert({
+    user_id: userId,
+    week: w.week,
+    focus: w.focus,
+    hours: w.hours,
+    days: w.days || [],
+    updated_at: new Date().toISOString(),
+  }, {
+    onConflict: "user_id,week",
+  });
+  if (error) console.error("Error saving weekly week:", extractError(error));
+}
+
+/** Delete a strategy week from the weekly planner */
+export async function deleteWeeklyWeek(userId: string, week: number) {
+  if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
+  const { error } = await supabase
+    .from("weekly_planner")
+    .delete()
+    .eq("user_id", userId)
+    .eq("week", week);
+  if (error) console.error("Error deleting weekly week:", extractError(error));
 }

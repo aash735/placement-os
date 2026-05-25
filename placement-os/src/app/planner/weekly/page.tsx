@@ -32,13 +32,29 @@ export default function WeeklyReviewPage() {
   } = useProgressStore();
 
   const staticWeeklyPlan = useDataStore((s) => s.data?.weeklyPlan ?? []);
+  const [hasHydrated, setHasHydrated] = useState(false);
 
-  // Initialize from sheet data if custom plan is empty
   useEffect(() => {
-    if (customWeeklyPlan.length === 0 && staticWeeklyPlan.length > 0) {
+    setHasHydrated(true);
+  }, []);
+
+  // Initialize from sheet data if custom plan is empty after client hydration completes
+  useEffect(() => {
+    if (hasHydrated && customWeeklyPlan.length === 0 && staticWeeklyPlan.length > 0) {
       setWeeklyPlan(staticWeeklyPlan);
     }
-  }, [customWeeklyPlan, staticWeeklyPlan, setWeeklyPlan]);
+  }, [hasHydrated, customWeeklyPlan, staticWeeklyPlan, setWeeklyPlan]);
+
+  if (!hasHydrated) {
+    return (
+      <AppShell title="Weekly Strategy Review" subtitle="Loading strategy sprint details...">
+        <div className="flex min-h-[40vh] items-center justify-center">
+          <div className="h-10 w-10 animate-spin rounded-full border-2 border-cyan-500 border-t-transparent" />
+          <span className="ml-3 text-zinc-450">Loading strategy sprint...</span>
+        </div>
+      </AppShell>
+    );
+  }
 
   // Edit states
   const [editingWeekNum, setEditingWeekNum] = useState<number | null>(null);

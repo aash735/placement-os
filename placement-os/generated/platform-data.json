@@ -12819,79 +12819,60 @@
       "action": "Full weak-topic audit from Placement OS analytics"
     }
   ],
-  "weeklyPlan": [
-    {
-      "week": 0,
-      "focus": "",
-      "hours": "",
-      "days": []
-    },
-    {
-      "week": 0,
-      "focus": "",
-      "hours": "",
-      "days": []
-    },
-    {
-      "week": 0,
-      "focus": "",
-      "hours": "",
-      "days": []
-    }
-  ],
+  "weeklyPlan": [],
   "manifest": [
     {
       "path": "analytics/weekly-plan.csv",
       "rows": 3,
-      "updated": "2026-05-24T15:40:33.317Z"
+      "updated": "2026-05-24T18:05:12.789Z"
     },
     {
       "path": "aptitude/config.csv",
       "rows": 3,
-      "updated": "2026-05-24T15:40:33.317Z"
+      "updated": "2026-05-24T18:05:12.789Z"
     },
     {
       "path": "aptitude/topics.csv",
       "rows": 13,
-      "updated": "2026-05-24T15:40:33.317Z"
+      "updated": "2026-05-24T18:05:12.789Z"
     },
     {
       "path": "companies/profiles.csv",
       "rows": 10,
-      "updated": "2026-05-24T15:40:33.317Z"
+      "updated": "2026-05-24T18:05:12.789Z"
     },
     {
       "path": "dsa/mock-tests.csv",
       "rows": 3,
-      "updated": "2026-05-24T15:40:33.322Z"
+      "updated": "2026-05-24T18:05:12.789Z"
     },
     {
       "path": "dsa/questions.csv",
       "rows": 94,
-      "updated": "2026-05-24T15:40:33.322Z"
+      "updated": "2026-05-24T18:05:12.789Z"
     },
     {
       "path": "dsa/topics.csv",
       "rows": 17,
-      "updated": "2026-05-24T15:40:33.322Z"
+      "updated": "2026-05-24T18:05:12.789Z"
     },
     {
       "path": "revision/cycles.csv",
       "rows": 4,
-      "updated": "2026-05-24T15:40:33.324Z"
+      "updated": "2026-05-24T18:05:12.789Z"
     },
     {
       "path": "Book1.xlsx",
       "rows": 47,
-      "updated": "2026-05-24T15:40:33.442Z"
+      "updated": "2026-05-24T18:05:12.929Z"
     },
     {
       "path": "DSA by Shradha Ma'am.xlsx",
       "rows": 415,
-      "updated": "2026-05-24T15:40:33.442Z"
+      "updated": "2026-05-24T18:05:12.945Z"
     }
   ],
-  "loadedAt": "2026-05-24T16:58:24.780Z",
+  "loadedAt": "2026-05-25T19:41:22.812Z",
   "validationIssues": [
     {
       "row": 96,

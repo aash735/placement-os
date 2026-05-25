@@ -154,12 +154,14 @@ function main() {
     action: r.action || "",
   }));
 
-  const weeklyPlan = weeklyRows.map((r) => ({
-    week: Number(r.week) || 0,
-    focus: r.focus || "",
-    hours: r.hours || "",
-    days: (r.days || "").split("|").filter(Boolean),
-  }));
+  const weeklyPlan = weeklyRows
+    .map((r) => ({
+      week: parseInt(r.week, 10),
+      focus: r.focus || "",
+      hours: r.hours || "",
+      days: (r.days || "").split("|").filter(Boolean),
+    }))
+    .filter((w) => !isNaN(w.week) && w.week > 0);
 
   // Create the final datasets
   const loadedAt = new Date().toISOString();

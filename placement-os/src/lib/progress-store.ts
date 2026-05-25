@@ -112,6 +112,7 @@ interface ProgressState {
     hours: string;
     days: string[];
   }[];
+  weeklyPlanInitialized: boolean;
 
   setQuestionStatus: (questionId: string, status: QuestionStatus, timeSpentMin?: number) => void;
   setQuestionNotes: (questionId: string, notes: string) => void;
@@ -276,6 +277,7 @@ export const useProgressStore = create<ProgressState>()(
         { id: "block-6", time: "21:00", task: "Wind-down · no YouTube spiral", energy: "recovery", completed: false },
       ],
       customWeeklyPlan: [],
+      weeklyPlanInitialized: false,
 
       hydrateFromDb: async (userId) => {
         const data = await db.fetchUserData(userId);
@@ -322,6 +324,7 @@ export const useProgressStore = create<ProgressState>()(
               { id: "block-6", time: "21:00", task: "Wind-down · no YouTube spiral", energy: "recovery", completed: false },
             ],
             customWeeklyPlan: data.customWeeklyPlan || [],
+            weeklyPlanInitialized: (data.customWeeklyPlan && data.customWeeklyPlan.length > 0) ? true : get().weeklyPlanInitialized,
           });
           get().refreshScores();
         } else {
@@ -395,6 +398,7 @@ export const useProgressStore = create<ProgressState>()(
             { id: "block-6", time: "21:00", task: "Wind-down · no YouTube spiral", energy: "recovery", completed: false },
           ],
           customWeeklyPlan: [],
+          weeklyPlanInitialized: false,
         });
         get().refreshScores();
       },
@@ -1467,10 +1471,20 @@ export const useProgressStore = create<ProgressState>()(
       },
 
       setWeeklyPlan: (plan) => {
-        set({ customWeeklyPlan: plan });
+        const seen = new Set<number>();
+        const cleanPlan = plan
+          .filter((w) => w && typeof w.week === "number" && !isNaN(w.week) && w.week > 0)
+          .filter((w) => {
+            if (seen.has(w.week)) return false;
+            seen.add(w.week);
+            return true;
+          })
+          .sort((a, b) => a.week - b.week);
+
+        set({ customWeeklyPlan: cleanPlan, weeklyPlanInitialized: true });
         const { userId } = get();
         if (userId) {
-          plan.forEach((w) => db.saveWeeklyWeek(userId, w));
+          cleanPlan.forEach((w) => db.saveWeeklyWeek(userId, w));
         }
       },
 
@@ -1531,13 +1545,21 @@ export const useProgressStore = create<ProgressState>()(
       },
 
       addWeeklyWeek: (week) => {
+        if (!week || typeof week.week !== "number" || isNaN(week.week) || week.week <= 0) return;
         set((s) => {
-          const updated = [...s.customWeeklyPlan, week].sort((a, b) => a.week - b.week);
+          const exists = s.customWeeklyPlan.some((w) => w.week === week.week);
+          let updated;
+          if (exists) {
+            updated = s.customWeeklyPlan.map((w) => w.week === week.week ? week : w);
+          } else {
+            updated = [...s.customWeeklyPlan, week];
+          }
+          updated.sort((a, b) => a.week - b.week);
           const { userId } = s;
           if (userId) {
             db.saveWeeklyWeek(userId, week);
           }
-          return { customWeeklyPlan: updated };
+          return { customWeeklyPlan: updated, weeklyPlanInitialized: true };
         });
       },
 

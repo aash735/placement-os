@@ -576,6 +576,10 @@ export async function deletePlannerBlock(userId: string, id: string) {
 export async function saveWeeklyWeek(userId: string, w: { week: number; focus: string; hours: string; days: string[] }) {
   if (!hasSupabaseConfig) return;
   if (isGuest(userId)) return;
+  if (!w || typeof w.week !== "number" || isNaN(w.week) || w.week <= 0) {
+    console.warn("saveWeeklyWeek: invalid week number", w?.week);
+    return;
+  }
   const { error } = await supabase.from("weekly_planner").upsert({
     user_id: userId,
     week: w.week,

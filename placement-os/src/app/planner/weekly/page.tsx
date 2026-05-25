@@ -28,33 +28,13 @@ export default function WeeklyReviewPage() {
     removeWeeklyTask,
     updateWeeklyTask,
     addWeeklyWeek,
-    deleteWeeklyWeek
+    deleteWeeklyWeek,
+    weeklyPlanInitialized
   } = useProgressStore();
 
   const staticWeeklyPlan = useDataStore((s) => s.data?.weeklyPlan ?? []);
+  const fetchData = useDataStore((s) => s.fetchData);
   const [hasHydrated, setHasHydrated] = useState(false);
-
-  useEffect(() => {
-    setHasHydrated(true);
-  }, []);
-
-  // Initialize from sheet data if custom plan is empty after client hydration completes
-  useEffect(() => {
-    if (hasHydrated && customWeeklyPlan.length === 0 && staticWeeklyPlan.length > 0) {
-      setWeeklyPlan(staticWeeklyPlan);
-    }
-  }, [hasHydrated, customWeeklyPlan, staticWeeklyPlan, setWeeklyPlan]);
-
-  if (!hasHydrated) {
-    return (
-      <AppShell title="Weekly Strategy Review" subtitle="Loading strategy sprint details...">
-        <div className="flex min-h-[40vh] items-center justify-center">
-          <div className="h-10 w-10 animate-spin rounded-full border-2 border-cyan-500 border-t-transparent" />
-          <span className="ml-3 text-zinc-450">Loading strategy sprint...</span>
-        </div>
-      </AppShell>
-    );
-  }
 
   // Edit states
   const [editingWeekNum, setEditingWeekNum] = useState<number | null>(null);
@@ -70,9 +50,47 @@ export default function WeeklyReviewPage() {
 
   // Add week form state
   const [showAddWeekForm, setShowAddWeekForm] = useState(false);
-  const [newWeekNum, setNewWeekNum] = useState(customWeeklyPlan.length + 1);
+  const [newWeekNum, setNewWeekNum] = useState(1);
   const [newWeekFocus, setNewWeekFocus] = useState("");
   const [newWeekHours, setNewWeekHours] = useState("10-15 hrs/week");
+
+  // Fetch sheet data on mount if not loaded
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
+
+  // Set hydration complete
+  useEffect(() => {
+    setHasHydrated(true);
+  }, []);
+
+  // Initialize from sheet data if custom plan is empty and not initialized yet
+  useEffect(() => {
+    if (hasHydrated && !weeklyPlanInitialized && customWeeklyPlan.length === 0 && staticWeeklyPlan.length > 0) {
+      setWeeklyPlan(staticWeeklyPlan);
+    }
+  }, [hasHydrated, weeklyPlanInitialized, customWeeklyPlan, staticWeeklyPlan, setWeeklyPlan]);
+
+  // Update newWeekNum when customWeeklyPlan updates
+  useEffect(() => {
+    if (hasHydrated && customWeeklyPlan.length > 0) {
+      const maxWeek = Math.max(...customWeeklyPlan.map(w => w.week));
+      setNewWeekNum(isNaN(maxWeek) || maxWeek <= 0 ? 1 : maxWeek + 1);
+    } else {
+      setNewWeekNum(1);
+    }
+  }, [hasHydrated, customWeeklyPlan]);
+
+  if (!hasHydrated) {
+    return (
+      <AppShell title="Weekly Strategy Review" subtitle="Loading strategy sprint details...">
+        <div className="flex min-h-[40vh] items-center justify-center">
+          <div className="h-10 w-10 animate-spin rounded-full border-2 border-cyan-500 border-t-transparent" />
+          <span className="ml-3 text-zinc-450">Loading strategy sprint...</span>
+        </div>
+      </AppShell>
+    );
+  }
 
   const startEditingWeek = (weekNum: number, focus: string, hours: string) => {
     setEditingWeekNum(weekNum);
@@ -112,6 +130,11 @@ export default function WeeklyReviewPage() {
     e.preventDefault();
     if (!newWeekFocus.trim()) return;
 
+    if (isNaN(newWeekNum) || newWeekNum <= 0) {
+      alert("Please enter a valid week number greater than 0.");
+      return;
+    }
+
     // Check if week already exists
     if (customWeeklyPlan.some((w) => w.week === newWeekNum)) {
       alert(`Week ${newWeekNum} already exists in your plan!`);
@@ -127,7 +150,6 @@ export default function WeeklyReviewPage() {
 
     setNewWeekFocus("");
     setNewWeekHours("10-15 hrs/week");
-    setNewWeekNum(customWeeklyPlan.length + 2);
     setShowAddWeekForm(false);
   };
 

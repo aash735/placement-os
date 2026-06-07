@@ -11,6 +11,9 @@ type TopicCardProps = {
   mastery: string;
   levelUnlocked: number;
   questionCount: number;
+  solvedCount: number;
+  estimatedHours: number;
+  xp: number;
   importanceScore: number;
   unlocked: boolean;
   revisionCount: number;
@@ -24,6 +27,9 @@ export function TopicCard({
   mastery,
   levelUnlocked,
   questionCount,
+  solvedCount,
+  estimatedHours,
+  xp,
   importanceScore,
   unlocked,
   revisionCount,
@@ -56,7 +62,7 @@ export function TopicCard({
               className="mt-1 text-xs capitalize"
               style={{ color: "var(--accent-cyan)" }}
             >
-              {mastery} · Level {levelUnlocked}/4
+              {mastery} · Level {levelUnlocked}/4 · Imp: {importanceScore}
             </p>
           </div>
           <span className={`text-xl font-extrabold shrink-0 ${completionColor}`}>
@@ -69,18 +75,28 @@ export function TopicCard({
           <div className="progress-bar-fill" style={{ width: `${completion}%` }} />
         </div>
 
-        {/* Stats row */}
-        <div
-          className="mt-3 flex justify-between text-[10px]"
-          style={{ color: "var(--text-faint)" }}
-        >
-          <span>{questionCount} questions</span>
-          <span>Importance {importanceScore}</span>
-          <span>{revisionCount} revisions</span>
+        {/* Stats Row */}
+        <div className="mt-4 grid grid-cols-2 gap-y-2 text-[10px]" style={{ color: "var(--text-secondary)" }}>
+          <div className="flex items-center gap-1.5">
+            <span className="text-zinc-500">Progress:</span>
+            <span className="font-semibold text-white">{solvedCount} / {questionCount} Solved</span>
+          </div>
+          <div className="flex items-center gap-1.5 justify-end">
+            <span className="text-zinc-500">Est. Time:</span>
+            <span className="font-semibold text-cyan-400">{estimatedHours}h</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <span className="text-zinc-500">Topic XP:</span>
+            <span className="font-semibold text-violet-400">+{xp} XP</span>
+          </div>
+          <div className="flex items-center gap-1.5 justify-end">
+            <span className="text-zinc-500">Revisions:</span>
+            <span className="font-semibold text-amber-400">{revisionCount} due</span>
+          </div>
         </div>
 
         <p
-          className="mt-3 flex items-center gap-1 text-xs font-medium text-cyan-500 group-hover:text-cyan-400 transition-colors"
+          className="mt-4 flex items-center gap-1 text-xs font-medium text-cyan-500 group-hover:text-cyan-400 transition-colors"
         >
           Continue learning <ChevronRight className="h-3 w-3" />
         </p>

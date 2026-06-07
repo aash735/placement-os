@@ -66,6 +66,9 @@ export default function DSATrackerPage() {
             mastery={t.mastery}
             levelUnlocked={t.levelUnlocked}
             questionCount={t.questionCount}
+            solvedCount={t.solvedCount}
+            estimatedHours={t.estimatedHours}
+            xp={t.xp}
             importanceScore={t.importanceScore}
             unlocked={t.unlocked}
             revisionCount={t.revisionCount}

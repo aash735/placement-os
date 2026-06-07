@@ -27,6 +27,8 @@ import { ProgressRing } from "@/components/ui/progress-ring";
 import { QuestionCard } from "@/components/dsa/question-card";
 import { useProgressStore } from "@/lib/progress-store";
 import { useDSAStats } from "@/hooks/use-dsa";
+import { useDataStore } from "@/store/data-store";
+import { computePlacementReadiness } from "@/lib/dsa-engine";
 import { format } from "date-fns";
 
 export default function DashboardPage() {
@@ -121,7 +123,10 @@ export default function DashboardPage() {
 
   // Component breakdown for Placement Readiness
   // 1. DSA Sheet Progress (50%)
-  const dsaWeightVal = solved > 0 && total > 0 ? Math.round((solved / total) * 100) : 0;
+  const questions = useDataStore((s) => s.questions);
+  const questionProgress = useProgressStore((s) => s.questionProgress);
+  const dsaWeightVal = computePlacementReadiness(questions, questionProgress);
+  
   // 2. Aptitude Performance (20%)
   let aptWeightVal = 0;
   if (aptitudeAttempts.length > 0) {
@@ -195,10 +200,50 @@ export default function DashboardPage() {
             <p className="text-xs text-zinc-500 mt-0.5">Confidence Score: {confidenceScore}%</p>
           </div>
 
-          <div className="border-t border-white/5 pt-4 mt-4 space-y-2.5">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400">
-              Readiness Weights
-            </span>
+          <div className="border-t border-white/5 pt-4 mt-4 space-y-2.5 relative group">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400">
+                Readiness Weights
+              </span>
+              <span className="text-[10px] font-bold text-cyan-400 hover:text-cyan-300 cursor-pointer underline decoration-dotted">
+                How is this calculated?
+              </span>
+            </div>
+
+            {/* Hover Tooltip Popover */}
+            <div className="absolute bottom-full left-0 right-0 mb-3 hidden group-hover:block z-30 p-4 rounded-xl border border-white/10 bg-black/95 backdrop-blur-xl text-[11px] text-zinc-300 leading-relaxed shadow-xl animate-fade-in pointer-events-none">
+              <p className="font-bold text-white mb-2 text-xs">Readiness Score Formula</p>
+              <p className="mb-2">Formula: <code className="text-cyan-400">DSA*50% + Aptitude*20% + Projects*20% + CS Core*10%</code></p>
+              
+              <div className="space-y-1.5 border-t border-white/10 pt-2">
+                <div className="flex justify-between">
+                  <span className="text-zinc-400">DSA Component:</span>
+                  <span className="font-semibold text-white">{dsaWeightVal}% (Raw: {solved}/{total} solved, {questions.filter(q => questionProgress[q.id]?.status === "mastered").length} mastered)</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-zinc-400">Aptitude:</span>
+                  <span className="font-semibold text-white">{aptWeightVal}% (Raw: {aptitudeAttempts.length > 0 ? `${aptitudeAttempts.reduce((acc, a) => acc + a.correctAnswers, 0)}/${aptitudeAttempts.reduce((acc, a) => acc + a.totalQuestions, 0)} correct` : "No tests"})</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-zinc-400">Projects:</span>
+                  <span className="font-semibold text-white">{projWeightVal}% (Raw: {projects.length} projects average)</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-zinc-400">CS Core:</span>
+                  <span className="font-semibold text-white">{csWeightVal}% (Raw: {totalChecked}/20 topics)</span>
+                </div>
+              </div>
+              
+              <div className="border-t border-white/10 pt-2 mt-2 flex justify-between font-bold">
+                <span className="text-zinc-400">Weighted Total:</span>
+                <span className="text-violet-400">{(dsaWeightVal * 0.5 + aptWeightVal * 0.2 + projWeightVal * 0.2 + csWeightVal * 0.1).toFixed(1)}%</span>
+              </div>
+              <div className="flex justify-between font-bold text-xs mt-0.5">
+                <span className="text-zinc-400">Final Rounded Score:</span>
+                <span className="text-cyan-400">{placementReadiness}%</span>
+              </div>
+            </div>
+
             <div className="grid grid-cols-2 gap-2 text-xs">
               <div className="flex justify-between p-1.5 rounded bg-white/5 border border-white/5">
                 <span className="text-zinc-400">DSA (50%)</span>

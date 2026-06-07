@@ -12823,56 +12823,61 @@
   "manifest": [
     {
       "path": "analytics/weekly-plan.csv",
-      "rows": 3,
-      "updated": "2026-05-24T18:05:12.789Z"
+      "rows": 6,
+      "updated": "2026-06-07T13:50:19.272Z"
     },
     {
       "path": "aptitude/config.csv",
       "rows": 3,
-      "updated": "2026-05-24T18:05:12.789Z"
+      "updated": "2026-06-07T13:50:19.272Z"
     },
     {
       "path": "aptitude/topics.csv",
       "rows": 13,
-      "updated": "2026-05-24T18:05:12.789Z"
+      "updated": "2026-06-07T13:50:19.273Z"
     },
     {
       "path": "companies/profiles.csv",
       "rows": 10,
-      "updated": "2026-05-24T18:05:12.789Z"
+      "updated": "2026-06-07T13:50:19.273Z"
     },
     {
       "path": "dsa/mock-tests.csv",
       "rows": 3,
-      "updated": "2026-05-24T18:05:12.789Z"
+      "updated": "2026-06-07T13:50:19.274Z"
     },
     {
       "path": "dsa/questions.csv",
       "rows": 94,
-      "updated": "2026-05-24T18:05:12.789Z"
+      "updated": "2026-06-07T13:50:19.275Z"
     },
     {
       "path": "dsa/topics.csv",
       "rows": 17,
-      "updated": "2026-05-24T18:05:12.789Z"
+      "updated": "2026-06-07T13:50:19.275Z"
     },
     {
       "path": "revision/cycles.csv",
       "rows": 4,
-      "updated": "2026-05-24T18:05:12.789Z"
+      "updated": "2026-06-07T13:50:19.275Z"
     },
     {
       "path": "Book1.xlsx",
       "rows": 47,
-      "updated": "2026-05-24T18:05:12.929Z"
+      "updated": "2026-06-07T13:50:19.365Z"
     },
     {
       "path": "DSA by Shradha Ma'am.xlsx",
       "rows": 415,
-      "updated": "2026-05-24T18:05:12.945Z"
+      "updated": "2026-06-07T13:50:19.365Z"
+    },
+    {
+      "path": "DSA SHEET.xlsx",
+      "rows": 405,
+      "updated": "2026-06-07T13:52:45.055Z"
     }
   ],
-  "loadedAt": "2026-05-25T19:56:21.786Z",
+  "loadedAt": "2026-06-07T15:26:13.344Z",
   "validationIssues": [
     {
       "row": 96,

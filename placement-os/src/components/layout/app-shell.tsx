@@ -26,8 +26,8 @@ export function AppShell({
   const { user, signOut } = useAuth();
 
   return (
-    <div className="mesh-bg min-h-screen" style={{ color: "var(--text-primary)" }}>
-      <div className="flex min-h-screen">
+    <div className="mesh-bg h-screen overflow-hidden" style={{ color: "var(--text-primary)" }}>
+      <div className="flex h-screen overflow-hidden">
         {/* ── Sidebar ── */}
         <aside
           className={cn(
@@ -126,7 +126,7 @@ export function AppShell({
         )}
 
         {/* ── Main ── */}
-        <div className="flex min-w-0 flex-1 flex-col">
+        <div className="flex min-w-0 flex-1 flex-col h-screen overflow-y-auto">
           {/* Header */}
           <header
             className="sticky top-0 z-20 flex h-16 items-center gap-4 px-4 lg:px-8"

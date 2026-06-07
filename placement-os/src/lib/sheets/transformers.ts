@@ -157,8 +157,9 @@ function getRowValue(row: SheetRow, keys: string[]): string {
   // Case-insensitive search
   const entries = Object.entries(row);
   for (const key of keys) {
+    const cleanedKey = key.toLowerCase().replace(/[^a-z0-9]/g, "");
     const found = entries.find(
-      ([k]) => k.toLowerCase().replace(/[\s_-]+/g, "") === key.toLowerCase().replace(/[\s_-]+/g, "")
+      ([k]) => k.toLowerCase().replace(/[^a-z0-9]/g, "") === cleanedKey
     );
     if (found) {
       return String(found[1]).trim();
@@ -167,10 +168,77 @@ function getRowValue(row: SheetRow, keys: string[]): string {
   return "";
 }
 
+const KNOWN_TOPIC_STRINGS = new Set([
+  "arrays", "array", "2d arrays", "2d array", "matrix", "matrices",
+  "strings", "string",
+  "heaps & hashing", "heaps and hashing", "heap", "heaps", "hashmaps", "hashmap", "hash", "hashing",
+  "stacks & queues", "stacks and queues", "stack", "queue", "queues",
+  "searching & sorting", "searching and sorting", "sorting", "binary-search", "binary search", "bs",
+  "linked list", "linked-list",
+  "binary search trees", "bst", "binary search tree",
+  "binary trees", "trees", "tree", "binary tree", "segment trees", "segment tree", "tries", "trie",
+  "graphs", "graph", "graph basics",
+  "dp", "dynamic programming", "dp basics",
+  "greedy",
+  "backtracking", "recursion", "divide and conquer", "bfs-dfs",
+  "sliding window", "sliding-window",
+  "two pointers", "two pointer", "two-pointer"
+]);
+
+const CANONICAL_TOPICS = [
+  "arrays", "strings", "hashmaps", "sorting", "binary-search",
+  "sliding-window", "two-pointer", "stack", "queue", "linked-list",
+  "trees", "bst", "heap", "bfs-dfs", "greedy", "graphs", "dp"
+];
+
+function getLevenshteinDistance(a: string, b: string): number {
+  const tmp: number[][] = [];
+  for (let i = 0; i <= a.length; i++) {
+    tmp[i] = [i];
+  }
+  for (let j = 0; j <= b.length; j++) {
+    tmp[0][j] = j;
+  }
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      tmp[i][j] = Math.min(
+        tmp[i - 1][j] + 1,
+        tmp[i][j - 1] + 1,
+        tmp[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)
+      );
+    }
+  }
+  return tmp[a.length][b.length];
+}
+
+function suggestClosestTopic(rawTopic: string): string {
+  const clean = rawTopic.toLowerCase().trim();
+  let minDistance = Infinity;
+  let closest = "arrays";
+  for (const t of CANONICAL_TOPICS) {
+    const dist = getLevenshteinDistance(clean, t);
+    if (dist < minDistance) {
+      minDistance = dist;
+      closest = t;
+    }
+  }
+  return closest;
+}
+
+const loggedUnrecognizedTopics = new Set<string>();
+
 function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string): string {
   const t = (rawTopic || "").toLowerCase().trim();
   const c = (rawConcept || "").toLowerCase().trim();
   const titleLower = (title || "").toLowerCase().trim();
+
+  // Log unrecognized topic/category and warn
+  if (t && !KNOWN_TOPIC_STRINGS.has(t) && !loggedUnrecognizedTopics.has(t)) {
+    loggedUnrecognizedTopics.add(t);
+    const suggestion = suggestClosestTopic(t);
+    console.warn(`⚠️  Unrecognized topic/category encountered: "${rawTopic}"`);
+    console.warn(`   Suggested closest existing category: "${suggestion}"`);
+  }
 
   const hasWord = (str: string, words: string[]) => words.some(w => str.includes(w));
 

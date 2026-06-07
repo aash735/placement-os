@@ -55,6 +55,13 @@ export function useDSAStats() {
 
     const topicsEnriched = topics.map((meta) => {
       const topicQuestions = questions.filter((q) => q.topicId === meta.id);
+      const solvedCount = topicQuestions.filter((q) =>
+        ["solved", "revised", "mastered"].includes(questionProgress[q.id]?.status ?? "")
+      ).length;
+      const xp = topicQuestions.reduce((sum, q) => {
+        return sum + (q.xpReward || (q.difficulty === "Easy" ? 50 : q.difficulty === "Medium" ? 70 : 100));
+      }, 0);
+
       return {
         ...meta,
         unlocked: isTopicUnlocked(meta.id, topics, topicProgress, questionProgress, questions),
@@ -63,6 +70,8 @@ export function useDSAStats() {
         levelUnlocked: computeLevelUnlocked(meta.id, questionProgress, questions),
         revisionCount: topicProgress[meta.id]?.revisionCount ?? 0,
         questionCount: topicQuestions.length,
+        solvedCount,
+        xp,
         easyCount: topicQuestions.filter((q) => q.difficulty === "Easy").length,
         mediumCount: topicQuestions.filter((q) => q.difficulty === "Medium").length,
         hardCount: topicQuestions.filter((q) => q.difficulty === "Hard").length,

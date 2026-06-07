@@ -212,36 +212,61 @@ function parseShradhaFormat(
 
 // ─── Header-based parser (for structured CSV/XLSX with column headers) ────────
 
+function cleanGoogleRedirectUrl(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+  if (url.includes("google.com/url?q=")) {
+    try {
+      const urlObj = new URL(url);
+      const q = urlObj.searchParams.get("q");
+      if (q) {
+        return q.split("&")[0];
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+  return url;
+}
+
 /** Find the row index where the table headers reside */
 function findHeaderRowIndex(sheet: XLSX.WorkSheet): number {
   const rows = XLSX.utils.sheet_to_json<any[]>(sheet, { header: 1 });
   for (let i = 0; i < Math.min(50, rows.length); i++) {
     const row = rows[i];
     if (!row || !Array.isArray(row)) continue;
-    const matches = row.some((cell) => {
-      if (cell === null || cell === undefined) return false;
+    let matchCount = 0;
+    row.forEach((cell) => {
+      if (cell === null || cell === undefined) return;
       const s = String(cell).toLowerCase().trim();
-      return (
+      const isHeader = (
         s === "topic" ||
         s === "topics" ||
-        s.includes("question") ||
-        s.includes("problem") ||
+        s === "question" ||
+        s === "questions" ||
+        s.startsWith("question (") ||
+        s === "problem" ||
+        s === "problems" ||
         s === "title" ||
         s === "difficulty" ||
         s === "link" ||
         s === "url" ||
         s === "companies" ||
+        s === "company" ||
         s === "remarks" ||
+        s === "notes" ||
         s === "id" ||
         s === "slug" ||
         s === "key" ||
         s === "value" ||
         s === "cycle" ||
         s === "week" ||
-        s === "focus"
+        s === "focus" ||
+        s === "solution" ||
+        s.startsWith("solution ")
       );
+      if (isHeader) matchCount++;
     });
-    if (matches && row.length >= 2) {
+    if (matchCount >= 2) {
       return i;
     }
   }
@@ -284,9 +309,10 @@ function parseHeaderFormat(
         const val = String(row[header] ?? "").trim();
         normalized[key] = val;
 
-        const link = getCellHyperlink(sheet, absoluteRowIndex, cIdx);
+        let link = getCellHyperlink(sheet, absoluteRowIndex, cIdx);
         if (link) {
-          normalized[`${key}_url`] = link;
+          link = cleanGoogleRedirectUrl(link);
+          normalized[`${key}_url`] = link || "";
           if (
             key.includes("question") ||
             key.includes("problem") ||
@@ -294,7 +320,7 @@ function parseHeaderFormat(
             key === "link" ||
             key === "url"
           ) {
-            normalized["url"] = link;
+            normalized["url"] = link || "";
           }
         }
       });
@@ -302,9 +328,10 @@ function parseHeaderFormat(
       // Fallback: scan entire row for any hyperlink
       if (!normalized["url"]) {
         for (let cIdx = 0; cIdx < headerRow.length; cIdx++) {
-          const link = getCellHyperlink(sheet, absoluteRowIndex, cIdx);
+          let link = getCellHyperlink(sheet, absoluteRowIndex, cIdx);
           if (link) {
-            normalized["url"] = link;
+            link = cleanGoogleRedirectUrl(link);
+            normalized["url"] = link || "";
             break;
           }
         }
@@ -423,6 +450,8 @@ export function loadAllQuestions(): SheetRow[] {
     "config.csv",
     "cycles.csv",
     "weekly-plan.csv",
+    "dsa sheet.xlsx",
+    "dsa-sheet.xlsx",
   ]);
 
   for (const root of roots) {

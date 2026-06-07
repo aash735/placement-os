@@ -43,6 +43,7 @@ function main() {
   const sheetsDir = path.join(__dirname, "..", "..", "sheets");
   inspectSheet(path.join(sheetsDir, "Book1.xlsx"));
   inspectSheet(path.join(sheetsDir, "DSA by Shradha Ma'am.xlsx"));
+  inspectSheet(path.join(sheetsDir, "DSA SHEET.xlsx"));
 }
 
 main();

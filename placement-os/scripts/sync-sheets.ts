@@ -20,6 +20,48 @@ function normalizeTopicName(topic: string): string {
     .join(" ");
 }
 
+function cleanUrl(url: string | undefined): string {
+  if (!url) return "";
+  let u = url.trim();
+  if (u.includes("google.com/url?q=")) {
+    try {
+      const urlObj = new URL(u);
+      const q = urlObj.searchParams.get("q");
+      if (q) u = q;
+    } catch (e) {}
+  }
+  u = u.toLowerCase().replace(/^https?:\/\/(www\.)?/, "").replace(/\/+$/, "");
+  return u;
+}
+
+function getExternalId(url: string | undefined): string {
+  const cleaned = cleanUrl(url);
+  if (!cleaned) return "";
+  if (cleaned.includes("google.com/search")) return "";
+  const segments = cleaned.split("/").filter(Boolean);
+  if (segments.length > 0) {
+    return segments[segments.length - 1];
+  }
+  return "";
+}
+
+function isDuplicate(a: { title: string; url: string }, b: { title: string; url: string }): boolean {
+  const normA = a.title.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const normB = b.title.toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (normA === normB) return true;
+  if (a.title.trim().toLowerCase() === b.title.trim().toLowerCase()) return true;
+
+  const aUrlClean = cleanUrl(a.url);
+  const bUrlClean = cleanUrl(b.url);
+  if (aUrlClean && bUrlClean && !aUrlClean.includes("google.com/search") && !bUrlClean.includes("google.com/search")) {
+    if (aUrlClean === bUrlClean) return true;
+    const aExt = getExternalId(a.url);
+    const bExt = getExternalId(b.url);
+    if (aExt && bExt && aExt === bExt) return true;
+  }
+  return false;
+}
+
 function main() {
   console.log("🚀 Starting spreadsheet synchronization pipeline...");
 
@@ -32,8 +74,24 @@ function main() {
   const revisionRows = parseSheetFile(findSheetFile("revision/cycles.csv"));
   const weeklyRows = parseSheetFile(findSheetFile("analytics/weekly-plan.csv"));
 
+  // Check if DSA SHEET.xlsx exists and load it separately
+  const dsaSheetPath = findSheetFile("DSA SHEET.xlsx") || findSheetFile("dsa-sheet.xlsx");
+  let dsaSheetQuestions: DSAQuestion[] = [];
+  let dsaSheetRawRowsCount = 0;
+
+  if (dsaSheetPath) {
+    const dsaSheetRows = parseSheetFile(dsaSheetPath);
+    dsaSheetRawRowsCount = dsaSheetRows.length;
+    dsaSheetQuestions = dsaSheetRows
+      .map(rowToDSAQuestion)
+      .filter((q): q is DSAQuestion => q !== null);
+  } else {
+    console.warn("⚠️  DSA SHEET.xlsx not found in sheet roots.");
+  }
+
   console.log(`📊 Loaded raw data:`);
-  console.log(`   - Questions rows: ${questionRows.length}`);
+  console.log(`   - Questions rows (existing): ${questionRows.length}`);
+  console.log(`   - Questions discovered in DSA SHEET: ${dsaSheetQuestions.length}`);
   console.log(`   - Mock test rows: ${mockRows.length}`);
   console.log(`   - Company profile rows: ${companyRows.length}`);
   console.log(`   - Aptitude topic rows: ${aptitudeRows.length}`);
@@ -60,9 +118,31 @@ function main() {
   console.log(`   - Loaded topics from topics.csv: ${topicRows.length}`);
 
   // Transform raw rows into typed objects
-  const questions = questionRows
+  const baseQuestions = questionRows
     .map(rowToDSAQuestion)
     .filter((q): q is DSAQuestion => q !== null);
+
+  // Merge datasets using duplicate detection
+  const questions = [...baseQuestions];
+  let newQuestionsAdded = 0;
+  let duplicatesSkipped = 0;
+
+  for (const candidate of dsaSheetQuestions) {
+    const isDup = baseQuestions.some((eq) => isDuplicate(eq, candidate));
+    if (isDup) {
+      duplicatesSkipped++;
+    } else {
+      newQuestionsAdded++;
+      questions.push(candidate);
+    }
+  }
+
+  console.log(`\n📊 Sync Summary:`);
+  console.log(`   - Existing question count: ${baseQuestions.length}`);
+  console.log(`   - Questions discovered in DSA SHEET: ${dsaSheetQuestions.length}`);
+  console.log(`   - New questions added: ${newQuestionsAdded}`);
+  console.log(`   - Duplicate questions skipped: ${duplicatesSkipped}`);
+  console.log(`   - Final total count: ${questions.length}\n`);
 
   // Initialize topicsMap from canonical topics.csv
   const topicsMap = new Map<string, DSATopicMeta>();

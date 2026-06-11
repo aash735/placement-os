@@ -157,7 +157,7 @@ function RecommendationsPanel() {
     return questions
       .filter(
         (q) =>
-          weakIds.has(q.topicId) &&
+          (weakIds.has(q.topicId) || q.additionalTopicIds?.some((tId) => weakIds.has(tId))) &&
           !["solved", "revised", "mastered"].includes(questionProgress[q.id]?.status ?? "")
       )
       .sort((a, b) => {

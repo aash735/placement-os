@@ -4,11 +4,11 @@
     "name": "Arrays",
     "slug": "arrays",
     "difficulty": 3,
-    "importanceScore": 70,
-    "interviewFrequency": "medium",
-    "estimatedHours": 34,
-    "tier": "important",
-    "overview": "Dynamic DSA roadmap section for Arrays covering patterns like two-pointer, prefix-sum, kadane. Contains 52 curated problems.",
+    "importanceScore": 85,
+    "interviewFrequency": "high",
+    "estimatedHours": 29,
+    "tier": "must",
+    "overview": "Dynamic DSA roadmap section for Arrays covering patterns like two-pointer, prefix-sum, kadane. Contains 45 curated problems.",
     "patterns": [
       "two-pointer",
       "prefix-sum",
@@ -29,9 +29,9 @@
     "difficulty": 3,
     "importanceScore": 70,
     "interviewFrequency": "medium",
-    "estimatedHours": 15,
+    "estimatedHours": 16,
     "tier": "important",
-    "overview": "Dynamic DSA roadmap section for Strings covering patterns like frequency, sliding-window, two-pointer. Contains 25 curated problems.",
+    "overview": "Dynamic DSA roadmap section for Strings covering patterns like frequency, sliding-window, two-pointer. Contains 26 curated problems.",
     "patterns": [
       "frequency",
       "sliding-window",
@@ -71,7 +71,7 @@
     "interviewFrequency": "medium",
     "estimatedHours": 22,
     "tier": "important",
-    "overview": "Dynamic DSA roadmap section for Sorting covering patterns like custom-sort, sort+scan, two-pointer. Contains 34 curated problems.",
+    "overview": "Dynamic DSA roadmap section for Sorting covering patterns like custom-sort, sort+scan, two-pointer. Contains 33 curated problems.",
     "patterns": [
       "custom-sort",
       "sort+scan",
@@ -79,8 +79,7 @@
       "merge",
       "dutch-flag",
       "sort",
-      "greedy",
-      "search-on-answer"
+      "greedy"
     ],
     "unlockAfterTopicId": "arrays"
   },
@@ -91,9 +90,9 @@
     "difficulty": 3,
     "importanceScore": 85,
     "interviewFrequency": "high",
-    "estimatedHours": 5,
+    "estimatedHours": 8,
     "tier": "must",
-    "overview": "Dynamic DSA roadmap section for Binary Search covering patterns like lower-upper-bound, search-on-answer, template. Contains 7 curated problems.",
+    "overview": "Dynamic DSA roadmap section for Binary Search covering patterns like lower-upper-bound, search-on-answer, template. Contains 12 curated problems.",
     "patterns": [
       "lower-upper-bound",
       "search-on-answer",
@@ -147,9 +146,9 @@
     "difficulty": 3,
     "importanceScore": 70,
     "interviewFrequency": "medium",
-    "estimatedHours": 20,
+    "estimatedHours": 23,
     "tier": "important",
-    "overview": "Dynamic DSA roadmap section for Stack covering patterns like monotonic-stack, parentheses, stack. Contains 30 curated problems.",
+    "overview": "Dynamic DSA roadmap section for Stack covering patterns like monotonic-stack, parentheses, stack. Contains 34 curated problems.",
     "patterns": [
       "monotonic-stack",
       "parentheses",
@@ -183,9 +182,9 @@
     "difficulty": 3,
     "importanceScore": 70,
     "interviewFrequency": "medium",
-    "estimatedHours": 24,
+    "estimatedHours": 25,
     "tier": "important",
-    "overview": "Dynamic DSA roadmap section for Linked List covering patterns like dummy-head, slow-fast, iteration. Contains 38 curated problems.",
+    "overview": "Dynamic DSA roadmap section for Linked List covering patterns like dummy-head, slow-fast, iteration. Contains 39 curated problems.",
     "patterns": [
       "dummy-head",
       "slow-fast",
@@ -204,9 +203,9 @@
     "difficulty": 3,
     "importanceScore": 70,
     "interviewFrequency": "medium",
-    "estimatedHours": 35,
+    "estimatedHours": 39,
     "tier": "important",
-    "overview": "Dynamic DSA roadmap section for Trees covering patterns like DFS, BFS, recursion. Contains 55 curated problems.",
+    "overview": "Dynamic DSA roadmap section for Trees covering patterns like DFS, BFS, recursion. Contains 61 curated problems.",
     "patterns": [
       "DFS",
       "BFS",
@@ -256,11 +255,11 @@
     "name": "BFS / DFS",
     "slug": "bfs-dfs",
     "difficulty": 3,
-    "importanceScore": 70,
-    "interviewFrequency": "medium",
-    "estimatedHours": 18,
-    "tier": "important",
-    "overview": "Dynamic DSA roadmap section for BFS / DFS covering patterns like grid-bfs, connected-components, DFS-grid. Contains 27 curated problems.",
+    "importanceScore": 85,
+    "interviewFrequency": "high",
+    "estimatedHours": 4,
+    "tier": "must",
+    "overview": "Dynamic DSA roadmap section for BFS / DFS covering patterns like grid-bfs, connected-components, DFS-grid. Contains 5 curated problems.",
     "patterns": [
       "grid-bfs",
       "connected-components",
@@ -326,5 +325,36 @@
       "2d-dp"
     ],
     "unlockAfterTopicId": "bfs-dfs"
+  },
+  {
+    "id": "recursion",
+    "name": "Recursion",
+    "slug": "recursion",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 21,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Recursion covering patterns like helper functions. Contains 29 curated problems.",
+    "patterns": [
+      "helper functions"
+    ],
+    "unlockAfterTopicId": "and base conditions."
+  },
+  {
+    "id": "bit-manipulation",
+    "name": "Bit Manipulation",
+    "slug": "bit-manipulation",
+    "difficulty": 3,
+    "importanceScore": 70,
+    "interviewFrequency": "medium",
+    "estimatedHours": 8,
+    "tier": "important",
+    "overview": "Dynamic DSA roadmap section for Bit Manipulation covering patterns like bitwise-operators, bitmask. Contains 11 curated problems.",
+    "patterns": [
+      "bitwise-operators",
+      "bitmask"
+    ],
+    "unlockAfterTopicId": "arrays"
   }
 ]

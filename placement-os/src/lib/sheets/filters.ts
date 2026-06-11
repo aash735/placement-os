@@ -19,7 +19,8 @@ export function filterQuestions(
   let result = [...questions];
 
   if (filters.topic && filters.topic !== "all") {
-    result = result.filter((q) => q.topicId === filters.topic);
+    const topicId = filters.topic!;
+    result = result.filter((q) => q.topicId === topicId || q.additionalTopicIds?.includes(topicId));
   }
   if (filters.difficulty && filters.difficulty !== "all") {
     result = result.filter((q) => q.difficulty === filters.difficulty);

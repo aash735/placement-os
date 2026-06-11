@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { parseSheetFile, loadAllQuestions, findSheetFile, listSheetManifest } from "../src/lib/sheets/parser";
+import { parseSheetFile, loadAllQuestions, findSheetFile, listSheetManifest, slugify } from "../src/lib/sheets/parser";
 import { validateDSAQuestionRows } from "../src/lib/sheets/validators";
 import {
   rowToDSAQuestion,
@@ -45,19 +45,50 @@ function getExternalId(url: string | undefined): string {
   return "";
 }
 
-function isDuplicate(a: { title: string; url: string }, b: { title: string; url: string }): boolean {
+function getLeetcodeId(url: string | undefined): string {
+  const cleaned = cleanUrl(url);
+  if (!cleaned || !cleaned.includes("leetcode.com")) return "";
+  const match = cleaned.match(/problems\/([a-zA-Z0-9\-]+)/);
+  return match ? match[1] : "";
+}
+
+function getGfgId(url: string | undefined): string {
+  const cleaned = cleanUrl(url);
+  if (!cleaned || !cleaned.includes("geeksforgeeks.org")) return "";
+  const match = cleaned.match(/problems\/([a-zA-Z0-9\-]+)/);
+  return match ? match[1] : "";
+}
+
+function isDuplicate(a: DSAQuestion, b: DSAQuestion): boolean {
+  if (a.title.trim().toLowerCase() === b.title.trim().toLowerCase()) return true;
+
   const normA = a.title.toLowerCase().replace(/[^a-z0-9]/g, "");
   const normB = b.title.toLowerCase().replace(/[^a-z0-9]/g, "");
-  if (normA === normB) return true;
-  if (a.title.trim().toLowerCase() === b.title.trim().toLowerCase()) return true;
+  if (normA && normB && normA === normB) return true;
+
+  const slugA = a.slug || slugify(a.title);
+  const slugB = b.slug || slugify(b.title);
+  if (slugA && slugB && slugA === slugB) return true;
 
   const aUrlClean = cleanUrl(a.url);
   const bUrlClean = cleanUrl(b.url);
-  if (aUrlClean && bUrlClean && !aUrlClean.includes("google.com/search") && !bUrlClean.includes("google.com/search")) {
+  const isGoogleA = aUrlClean.includes("google.com/search");
+  const isGoogleB = bUrlClean.includes("google.com/search");
+
+  if (aUrlClean && bUrlClean && !isGoogleA && !isGoogleB) {
     if (aUrlClean === bUrlClean) return true;
-    const aExt = getExternalId(a.url);
-    const bExt = getExternalId(b.url);
-    if (aExt && bExt && aExt === bExt) return true;
+
+    const lcA = getLeetcodeId(a.url);
+    const lcB = getLeetcodeId(b.url);
+    if (lcA && lcB && lcA === lcB) return true;
+
+    const gfgA = getGfgId(a.url);
+    const gfgB = getGfgId(b.url);
+    if (gfgA && gfgB && gfgA === gfgB) return true;
+
+    const extA = getExternalId(a.url);
+    const extB = getExternalId(b.url);
+    if (extA && extB && extA === extB) return true;
   }
   return false;
 }
@@ -89,9 +120,25 @@ function main() {
     console.warn("⚠️  DSA SHEET.xlsx not found in sheet roots.");
   }
 
+  // Check if Striver Sheet.xlsx exists and load it separately
+  const striverSheetPath = findSheetFile("Striver Sheet.xlsx") || findSheetFile("striver-sheet.xlsx");
+  let striverSheetQuestions: DSAQuestion[] = [];
+  let striverSheetRawRowsCount = 0;
+
+  if (striverSheetPath) {
+    const striverSheetRows = parseSheetFile(striverSheetPath);
+    striverSheetRawRowsCount = striverSheetRows.length;
+    striverSheetQuestions = striverSheetRows
+      .map(rowToDSAQuestion)
+      .filter((q): q is DSAQuestion => q !== null);
+  } else {
+    console.warn("⚠️  Striver Sheet.xlsx not found in sheet roots.");
+  }
+
   console.log(`📊 Loaded raw data:`);
   console.log(`   - Questions rows (existing): ${questionRows.length}`);
   console.log(`   - Questions discovered in DSA SHEET: ${dsaSheetQuestions.length}`);
+  console.log(`   - Questions discovered in Striver Sheet: ${striverSheetQuestions.length}`);
   console.log(`   - Mock test rows: ${mockRows.length}`);
   console.log(`   - Company profile rows: ${companyRows.length}`);
   console.log(`   - Aptitude topic rows: ${aptitudeRows.length}`);
@@ -127,19 +174,38 @@ function main() {
   let newQuestionsAdded = 0;
   let duplicatesSkipped = 0;
 
-  for (const candidate of dsaSheetQuestions) {
-    const isDup = baseQuestions.some((eq) => isDuplicate(eq, candidate));
-    if (isDup) {
+  const mergeCandidate = (candidate: DSAQuestion) => {
+    const existingIdx = questions.findIndex((eq) => isDuplicate(eq, candidate));
+    if (existingIdx !== -1) {
       duplicatesSkipped++;
+      const existing = questions[existingIdx];
+      // Reconcile/accumulate additional topics
+      if (candidate.topicId && candidate.topicId !== existing.topicId) {
+        if (!existing.additionalTopicIds) {
+          existing.additionalTopicIds = [];
+        }
+        if (!existing.additionalTopicIds.includes(candidate.topicId)) {
+          existing.additionalTopicIds.push(candidate.topicId);
+        }
+      }
     } else {
       newQuestionsAdded++;
       questions.push(candidate);
     }
+  };
+
+  for (const candidate of dsaSheetQuestions) {
+    mergeCandidate(candidate);
+  }
+
+  for (const candidate of striverSheetQuestions) {
+    mergeCandidate(candidate);
   }
 
   console.log(`\n📊 Sync Summary:`);
   console.log(`   - Existing question count: ${baseQuestions.length}`);
   console.log(`   - Questions discovered in DSA SHEET: ${dsaSheetQuestions.length}`);
+  console.log(`   - Questions discovered in Striver Sheet: ${striverSheetQuestions.length}`);
   console.log(`   - New questions added: ${newQuestionsAdded}`);
   console.log(`   - Duplicate questions skipped: ${duplicatesSkipped}`);
   console.log(`   - Final total count: ${questions.length}\n`);
@@ -272,6 +338,34 @@ function main() {
     loadedAt,
     validationIssues,
   };
+
+  // DATA INTEGRITY SAFEGUARDS
+  console.log("🛡️ Running data integrity safeguards...");
+
+  // Check 1: Existing Question Count Preserved
+  if (questions.length < baseQuestions.length) {
+    console.error(`❌ Data integrity error: Question count decreased! Original: ${baseQuestions.length}, New: ${questions.length}`);
+    process.exit(1);
+  }
+
+  // Check 2: Existing IDs, Slugs, and Titles Unchanged
+  for (const eq of baseQuestions) {
+    const mq = questions.find((q) => q.id === eq.id);
+    if (!mq) {
+      console.error(`❌ Data integrity error: Existing ID "${eq.id}" ("${eq.title}") was deleted or renamed!`);
+      process.exit(1);
+    }
+    if (mq.title !== eq.title) {
+      console.error(`❌ Data integrity error: Title changed for ID "${eq.id}"! Original: "${eq.title}", New: "${mq.title}"`);
+      process.exit(1);
+    }
+    if (cleanUrl(mq.url) !== cleanUrl(eq.url)) {
+      console.error(`❌ Data integrity error: URL changed for ID "${eq.id}"! Original: "${eq.url}", New: "${mq.url}"`);
+      process.exit(1);
+    }
+  }
+
+  console.log("✅ Data integrity checks passed. All existing IDs, slugs, and titles are preserved.");
 
   // Ensure output directory exists
   const outputDir = path.join(__dirname, "..", "generated");

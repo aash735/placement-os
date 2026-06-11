@@ -50,8 +50,20 @@ export default function DSARoadmapPage() {
   const topicQuestionsMap = useMemo(() => {
     const map = new Map<string, typeof questions>();
     questions.forEach((q) => {
+      // Add to main topic
       if (!map.has(q.topicId)) map.set(q.topicId, []);
       map.get(q.topicId)!.push(q);
+
+      // Add to additional topics
+      if (q.additionalTopicIds) {
+        q.additionalTopicIds.forEach((tId) => {
+          if (!map.has(tId)) map.set(tId, []);
+          const list = map.get(tId)!;
+          if (!list.some((existing) => existing.id === q.id)) {
+            list.push(q);
+          }
+        });
+      }
     });
     return map;
   }, [questions]);

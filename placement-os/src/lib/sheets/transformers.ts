@@ -182,13 +182,15 @@ const KNOWN_TOPIC_STRINGS = new Set([
   "greedy",
   "backtracking", "recursion", "divide and conquer", "bfs-dfs",
   "sliding window", "sliding-window",
-  "two pointers", "two pointer", "two-pointer"
+  "two pointers", "two pointer", "two-pointer",
+  "bit manipulation", "bit-manipulation", "bitmanipulation"
 ]);
 
 const CANONICAL_TOPICS = [
   "arrays", "strings", "hashmaps", "sorting", "binary-search",
   "sliding-window", "two-pointer", "stack", "queue", "linked-list",
-  "trees", "bst", "heap", "bfs-dfs", "greedy", "graphs", "dp"
+  "trees", "bst", "heap", "bfs-dfs", "greedy", "graphs", "dp",
+  "recursion", "bit-manipulation"
 ];
 
 function getLevenshteinDistance(a: string, b: string): number {
@@ -258,8 +260,12 @@ function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string
     return "stack";
   }
 
+  if (t === "binary search" || t === "binary-search") {
+    return "binary-search";
+  }
+
   // Determine if sorting vs binary search for "searching & sorting"
-  if (t === "searching & sorting" || t === "searching and sorting" || t === "sorting" || t === "binary-search" || t === "binary search" || t === "bs") {
+  if (t === "searching & sorting" || t === "searching and sorting" || t === "sorting" || t === "bs") {
     if (hasWord(titleLower, ["binary search", "search in", "search a", "first and last", "search insert", "median of", "find minimum in rotated", "search a 2d"]) || hasWord(c, ["binary search", "binary-search", "lower bound", "upper bound"])) {
       return "binary-search";
     }
@@ -294,7 +300,9 @@ function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string
   if (t === "graphs" || t === "graph" || t === "graph basics") return "graphs";
   if (t === "dp" || t === "dynamic programming" || t === "dp basics") return "dp";
   if (t === "greedy") return "greedy";
-  if (t === "backtracking" || t === "recursion" || t === "divide and conquer" || t === "bfs-dfs") return "bfs-dfs";
+  if (t === "backtracking" || t === "recursion") return "recursion";
+  if (t === "divide and conquer" || t === "bfs-dfs") return "bfs-dfs";
+  if (t === "bit manipulation" || t === "bit-manipulation" || t === "bitmanipulation") return "bit-manipulation";
 
   if (t === "sliding window" || t === "sliding-window") return "sliding-window";
   if (t === "two pointers" || t === "two pointer" || t === "two-pointer") return "two-pointer";
@@ -322,8 +330,38 @@ function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string
 
 export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
   // Title is required
-  const title = getRowValue(row, ["title", "question", "problem", "question_title", "problem_title", "question_375", "name"]);
-  if (!title || title.trim() === "" || title.toLowerCase().includes("meet us on youtube") || title.toLowerCase().includes("phase")) {
+  const title = getRowValue(row, ["title", "question", "problem", "question_title", "problem_title", "question_375", "name", "question_link"]);
+  if (!title || title.trim() === "") {
+    return null;
+  }
+
+  // Exclude section dividers, headers, and banners
+  const titleLower = title.toLowerCase().trim();
+  if (
+    titleLower === "question link" ||
+    titleLower === "question" ||
+    titleLower === "problem" ||
+    titleLower === "title" ||
+    titleLower === "intro" ||
+    titleLower.startsWith("intro to") ||
+    titleLower.includes("ideal time") ||
+    titleLower.includes("5 questions each day") ||
+    titleLower.startsWith("arrays :") ||
+    titleLower.startsWith("arrays  :") ||
+    titleLower.startsWith("binary search :") ||
+    titleLower.startsWith("strings :") ||
+    titleLower.startsWith("strings  :") ||
+    titleLower.startsWith("linked list :") ||
+    titleLower.startsWith("recursion :") ||
+    titleLower.startsWith("bit manipulation :") ||
+    titleLower.startsWith("stack :") ||
+    titleLower.startsWith("sliding window :") ||
+    titleLower.startsWith("binary tree :") ||
+    titleLower.startsWith("dp :") ||
+    titleLower.includes("doubly linked list :") ||
+    titleLower.includes("meet us on youtube") ||
+    titleLower.includes("phase")
+  ) {
     return null;
   }
 
@@ -497,6 +535,23 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
 
   const id = row.question_id || row.id || (matchedQ && matchedQ.id) || slugify(title);
 
+  // Excel Workbook extensions
+  const takeaways = getRowValue(row, ["takeaways", "takeaway"]) || undefined;
+  const approach = getRowValue(row, ["approach"]) || undefined;
+  const timeComplexity = getRowValue(row, ["tc", "timecomplexity", "time_complexity"]) || undefined;
+  const spaceComplexity = getRowValue(row, ["sc", "spacecomplexity", "space_complexity"]) || undefined;
+  const sourceSheet = row._sheet_name || undefined;
+  const createdAt = matchedQ?.createdAt || new Date().toISOString();
+  const updatedAt = new Date().toISOString();
+
+  // Related/Sub-questions
+  const sq1 = row.sq1 || undefined;
+  const sq1Url = row.sq1_url || undefined;
+  const sq2 = row.sq2 || undefined;
+  const sq2Url = row.sq2_url || undefined;
+  const sq3 = row.sq3 || undefined;
+  const sq3Url = row.sq3_url || undefined;
+
   return {
     id,
     title,
@@ -525,6 +580,22 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     prerequisites: [],
     videoUrl,
     notes: notes || undefined,
+
+    // Sheet metadata and rich fields
+    slug: slugify(title),
+    takeaways,
+    approach,
+    timeComplexity,
+    spaceComplexity,
+    sourceSheet,
+    createdAt,
+    updatedAt,
+    sq1,
+    sq1Url,
+    sq2,
+    sq2Url,
+    sq3,
+    sq3Url,
   };
 }
 

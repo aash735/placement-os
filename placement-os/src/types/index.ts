@@ -45,6 +45,23 @@ export interface DSAQuestion {
   unlockLevel?: TopicLevel;
   prerequisites?: string[];
   notes?: string;
+
+  // Excel Workbook Ingestion extensions
+  slug?: string;
+  takeaways?: string;
+  approach?: string;
+  timeComplexity?: string;
+  spaceComplexity?: string;
+  sourceSheet?: string;
+  createdAt?: string;
+  updatedAt?: string;
+  additionalTopicIds?: string[];
+  sq1?: string;
+  sq1Url?: string;
+  sq2?: string;
+  sq2Url?: string;
+  sq3?: string;
+  sq3Url?: string;
 }
 
 export interface DSATopicMeta {

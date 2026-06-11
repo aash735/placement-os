@@ -244,6 +244,8 @@ function findHeaderRowIndex(sheet: XLSX.WorkSheet): number {
         s === "question" ||
         s === "questions" ||
         s.startsWith("question (") ||
+        s === "question link" ||
+        s === "problem link" ||
         s === "problem" ||
         s === "problems" ||
         s === "title" ||
@@ -262,7 +264,12 @@ function findHeaderRowIndex(sheet: XLSX.WorkSheet): number {
         s === "week" ||
         s === "focus" ||
         s === "solution" ||
-        s.startsWith("solution ")
+        s.startsWith("solution ") ||
+        s === "takeaways" ||
+        s === "approach" ||
+        s === "tc" ||
+        s === "sc" ||
+        s === "revision"
       );
       if (isHeader) matchCount++;
     });
@@ -452,6 +459,8 @@ export function loadAllQuestions(): SheetRow[] {
     "weekly-plan.csv",
     "dsa sheet.xlsx",
     "dsa-sheet.xlsx",
+    "striver sheet.xlsx",
+    "striver-sheet.xlsx",
   ]);
 
   for (const root of roots) {

@@ -40,12 +40,12 @@ export default function AchievementsPage() {
   ).length;
 
   const graphSolved = questions.filter((q) =>
-    q.topicId === "graphs" &&
+    (q.topicId === "graphs" || q.additionalTopicIds?.includes("graphs")) &&
     ["solved", "revised", "mastered"].includes(questionProgress[q.id]?.status ?? "")
   ).length;
 
   const dpSolved = questions.filter((q) =>
-    q.topicId === "dp" &&
+    (q.topicId === "dp" || q.additionalTopicIds?.includes("dp")) &&
     ["solved", "revised", "mastered"].includes(questionProgress[q.id]?.status ?? "")
   ).length;
 

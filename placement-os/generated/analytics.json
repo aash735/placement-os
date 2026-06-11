@@ -462,61 +462,66 @@
   "manifest": [
     {
       "path": "analytics/weekly-plan.csv",
-      "rows": 6,
-      "updated": "2026-06-07T13:50:19.272Z"
+      "rows": 3,
+      "updated": "2026-06-11T16:12:02.117Z"
     },
     {
       "path": "aptitude/config.csv",
       "rows": 3,
-      "updated": "2026-06-07T13:50:19.272Z"
+      "updated": "2026-06-11T16:12:02.118Z"
     },
     {
       "path": "aptitude/topics.csv",
       "rows": 13,
-      "updated": "2026-06-07T13:50:19.273Z"
+      "updated": "2026-06-11T16:12:02.119Z"
     },
     {
       "path": "companies/profiles.csv",
       "rows": 10,
-      "updated": "2026-06-07T13:50:19.273Z"
+      "updated": "2026-06-11T16:12:02.119Z"
     },
     {
       "path": "dsa/mock-tests.csv",
       "rows": 3,
-      "updated": "2026-06-07T13:50:19.274Z"
+      "updated": "2026-06-11T16:12:02.121Z"
     },
     {
       "path": "dsa/questions.csv",
       "rows": 94,
-      "updated": "2026-06-07T13:50:19.275Z"
+      "updated": "2026-06-11T16:12:02.122Z"
     },
     {
       "path": "dsa/topics.csv",
-      "rows": 17,
-      "updated": "2026-06-07T13:50:19.275Z"
+      "rows": 19,
+      "updated": "2026-06-11T16:36:18.927Z"
     },
     {
       "path": "revision/cycles.csv",
       "rows": 4,
-      "updated": "2026-06-07T13:50:19.275Z"
+      "updated": "2026-06-11T16:12:02.125Z"
     },
     {
       "path": "Book1.xlsx",
       "rows": 47,
-      "updated": "2026-06-07T13:50:19.365Z"
+      "updated": "2026-06-11T16:12:02.265Z"
     },
     {
       "path": "DSA by Shradha Ma'am.xlsx",
       "rows": 415,
-      "updated": "2026-06-07T13:50:19.365Z"
+      "updated": "2026-06-11T16:12:02.268Z"
     },
     {
       "path": "DSA SHEET.xlsx",
       "rows": 405,
-      "updated": "2026-06-07T13:52:45.055Z"
+      "updated": "2026-06-11T16:12:02.266Z"
+    },
+    {
+      "path": "Striver Sheet.xlsx",
+      "rows": 161,
+      "updated": "2026-06-11T16:11:45.074Z"
     }
   ],
-  "loadedAt": "2026-06-07T15:26:13.344Z",
+  "loadedAt": "2026-06-11T16:39:29.936Z",
   "validationIssues": [
     {
       "row": 96,

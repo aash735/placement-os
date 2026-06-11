@@ -50,7 +50,7 @@ export function defaultTopicProgress(topicId: string): UserTopicProgress {
 }
 
 export function getQuestionsByTopic(questions: DSAQuestion[], topicId: string) {
-  return questions.filter((q) => q.topicId === topicId);
+  return questions.filter((q) => q.topicId === topicId || q.additionalTopicIds?.includes(topicId));
 }
 
 export function isTopicUnlocked(

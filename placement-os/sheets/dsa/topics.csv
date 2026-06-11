@@ -16,3 +16,5 @@ bfs-dfs,BFS / DFS,bfs-dfs,3,88,high,10,must,Grid and graph traversals.,grid-bfs|
 greedy,Greedy,greedy,3,72,medium,6,important,Interval and jump patterns.,intervals|jump-game,sorting
 graphs,Graph Basics,graphs,4,70,medium,10,important,Adjacency list BFS/DFS.,adjacency-list|cycle-detection,bfs-dfs
 dp,DP Basics,dp,4,65,low,12,optional,1D DP after core topics 60% done.,1d-dp|knapsack-intro,bfs-dfs
+recursion,Recursion,recursion,3,80,medium,8,important,Master recursive backtracking, helper functions, and base conditions.,backtracking|helper-recursion,linked-list
+bit-manipulation,Bit Manipulation,bit-manipulation,3,75,medium,6,important,Understanding binary representation and bitwise operations.,bitwise-operators|bitmask,arrays

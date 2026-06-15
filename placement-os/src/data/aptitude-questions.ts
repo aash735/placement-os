@@ -12,7 +12,9 @@ export interface AptitudeQuestion {
   companyRelevance: string[];
 }
 
-export const aptitudeQuestions: AptitudeQuestion[] = [
+import { tcsAptitudeQuestions } from "./tcs-questions";
+
+const baseAptitudeQuestions: AptitudeQuestion[] = [
   // ================= QUANTITATIVE APTITUDE =================
   // Percentages & Profit-Loss
   {
@@ -433,4 +435,9 @@ export const aptitudeQuestions: AptitudeQuestion[] = [
     estimatedTime: 90,
     companyRelevance: ["Product Startups", "Google"]
   }
+];
+
+export const aptitudeQuestions: AptitudeQuestion[] = [
+  ...baseAptitudeQuestions,
+  ...tcsAptitudeQuestions
 ];

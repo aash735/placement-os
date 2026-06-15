@@ -69,6 +69,19 @@ export const APTITUDE_TOPIC_COLUMNS = [
   "revision",
 ] as const;
 
+export const COMPANY_RESOURCE_COLUMNS = [
+  "resource_id",
+  "title",
+  "file_path",
+  "size_bytes",
+  "company",
+  "category",
+  "subtopic",
+  "estimated_minutes",
+  "xp_reward",
+  "revision_priority",
+] as const;
+
 export type SheetRow = Record<string, string>;
 
 export function splitList(value: string | undefined, sep = "|"): string[] {

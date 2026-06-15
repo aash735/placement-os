@@ -1,5 +1,5 @@
 import type { DSAQuestion, DSATopicMeta } from "@/types";
-import type { CompanyProfile, AptitudeTopic, MockTestSet } from "./transformers";
+import type { CompanyProfile, AptitudeTopic, MockTestSet, StudyResource } from "./transformers";
 import type { SheetRow } from "./schemas";
 import platformDataRaw from "../../../generated/platform-data.json";
 
@@ -15,6 +15,7 @@ export type PlatformData = {
   manifest: { path: string; rows: number; updated: string }[];
   loadedAt: string;
   validationIssues: { row: number; field: string; message: string }[];
+  resources: StudyResource[];
 };
 
 const platformData = platformDataRaw as unknown as PlatformData;

@@ -5,6 +5,8 @@ import { useRouter, useSearchParams, useParams } from "next/navigation";
 import { AppShell } from "@/components/layout/app-shell";
 import { GlassCard } from "@/components/ui/glass-card";
 import { useProgressStore } from "@/lib/progress-store";
+import { useDataStore } from "@/store/data-store";
+import { getTcsSlugFromResourceId } from "@/lib/tcs-utils";
 import { aptitudeQuestions, AptitudeQuestion } from "@/data/aptitude-questions";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -33,6 +35,21 @@ function TestPageContent() {
   const testId = (params?.testId as string) || "custom";
 
   const { completeAptitudeAttempt, shortcutsEnabled } = useProgressStore();
+  const resources = useDataStore((s) => s.resources || []);
+  
+  const matchingResource = testId.startsWith("tcs-")
+    ? resources.find((r) => getTcsSlugFromResourceId(r.id) === testId)
+    : null;
+    
+  const testTitle = matchingResource 
+    ? matchingResource.title 
+    : testId === "preset-tcs" 
+      ? "TCS NQT Assessment"
+      : testId === "preset-infosys" 
+        ? "Infosys Cognitive Test" 
+        : testId === "preset-deloitte" 
+          ? "Deloitte Assessment" 
+          : "Standard Aptitude Challenge";
 
   // Parse config from URL query
   const reqQuestions = Number(searchParams.get("questions") || "15");
@@ -165,6 +182,13 @@ function TestPageContent() {
       answers,
     });
 
+    if (testId.startsWith("tcs-")) {
+      const matchingRes = resources.find((r) => getTcsSlugFromResourceId(r.id) === testId);
+      if (matchingRes) {
+        useProgressStore.getState().setResourceProgress(matchingRes.id, "completed");
+      }
+    }
+
     // Redirect to review page
     router.replace(`/aptitude/review/${attemptId}`);
   };
@@ -176,6 +200,20 @@ function TestPageContent() {
 
   // Initialize questions
   useEffect(() => {
+    if (testId && testId.startsWith("tcs-")) {
+      const selected = aptitudeQuestions.filter((q) => q.id.startsWith(`${testId}-q`));
+      const sorted = [...selected].sort((a, b) => {
+        const aNum = parseInt(a.id.split("-q")[1] || "0", 10);
+        const bNum = parseInt(b.id.split("-q")[1] || "0", 10);
+        return aNum - bNum;
+      });
+      setQuestions(sorted);
+      if (sorted.length > 0) {
+        setVisited({ [sorted[0].id]: true });
+      }
+      return;
+    }
+
     // Filter questions by categories
     const pool = aptitudeQuestions.filter((q) => reqCategories.includes(q.category));
     
@@ -281,14 +319,15 @@ function TestPageContent() {
         <div>
           <h1 className="text-xl font-bold text-white flex items-center gap-2">
             <span className="px-2 py-0.5 text-xs font-bold rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
-              {testId.startsWith("preset-") ? "MOCK TEST" : "PRACTICE"}
+              {testId.startsWith("preset-") ? "MOCK TEST" : testId.startsWith("tcs-") ? "TCS PRACTICE" : "PRACTICE"}
             </span>
-            {testId === "preset-tcs" ? "TCS NQT Assessment" :
-             testId === "preset-infosys" ? "Infosys Cognitive Test" :
-             testId === "preset-deloitte" ? "Deloitte Assessment" : "Standard Aptitude Challenge"}
+            {testTitle}
           </h1>
           <p className="text-xs text-zinc-400 mt-1">
-            Sectional Mode: {reqCategories.map(c => c.toUpperCase()).join(" + ")} · Negative Marking: {useNegMarking ? "Enabled (+2.0 / -0.5)" : "Disabled (+1.0 / 0.0)"}
+            {testId.startsWith("tcs-")
+              ? `TCS Practice Set · ${questions.length} Questions`
+              : `Sectional Mode: ${reqCategories.map(c => c.toUpperCase()).join(" + ")} · Negative Marking: ${useNegMarking ? "Enabled (+2.0 / -0.5)" : "Disabled (+1.0 / 0.0)"}`
+            }
           </p>
         </div>
 

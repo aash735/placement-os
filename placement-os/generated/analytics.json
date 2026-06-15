@@ -463,65 +463,70 @@
     {
       "path": "analytics/weekly-plan.csv",
       "rows": 3,
-      "updated": "2026-06-11T16:12:02.117Z"
+      "updated": "2026-06-15T05:11:18.190Z"
     },
     {
       "path": "aptitude/config.csv",
       "rows": 3,
-      "updated": "2026-06-11T16:12:02.118Z"
+      "updated": "2026-06-15T05:11:18.190Z"
     },
     {
       "path": "aptitude/topics.csv",
       "rows": 13,
-      "updated": "2026-06-11T16:12:02.119Z"
+      "updated": "2026-06-15T05:11:18.199Z"
     },
     {
       "path": "companies/profiles.csv",
       "rows": 10,
-      "updated": "2026-06-11T16:12:02.119Z"
+      "updated": "2026-06-15T05:11:18.199Z"
+    },
+    {
+      "path": "companies/resources.csv",
+      "rows": 59,
+      "updated": "2026-06-15T05:28:56.943Z"
     },
     {
       "path": "dsa/mock-tests.csv",
       "rows": 3,
-      "updated": "2026-06-11T16:12:02.121Z"
+      "updated": "2026-06-15T05:11:18.199Z"
     },
     {
       "path": "dsa/questions.csv",
       "rows": 94,
-      "updated": "2026-06-11T16:12:02.122Z"
+      "updated": "2026-06-15T05:11:18.199Z"
     },
     {
       "path": "dsa/topics.csv",
       "rows": 19,
-      "updated": "2026-06-11T16:36:18.927Z"
+      "updated": "2026-06-15T05:11:18.199Z"
     },
     {
       "path": "revision/cycles.csv",
       "rows": 4,
-      "updated": "2026-06-11T16:12:02.125Z"
+      "updated": "2026-06-15T05:11:18.199Z"
     },
     {
       "path": "Book1.xlsx",
       "rows": 47,
-      "updated": "2026-06-11T16:12:02.265Z"
+      "updated": "2026-06-15T05:11:18.311Z"
     },
     {
       "path": "DSA by Shradha Ma'am.xlsx",
       "rows": 415,
-      "updated": "2026-06-11T16:12:02.268Z"
+      "updated": "2026-06-15T05:11:18.313Z"
     },
     {
       "path": "DSA SHEET.xlsx",
       "rows": 405,
-      "updated": "2026-06-11T16:12:02.266Z"
+      "updated": "2026-06-15T05:11:18.311Z"
     },
     {
       "path": "Striver Sheet.xlsx",
       "rows": 161,
-      "updated": "2026-06-11T16:11:45.074Z"
+      "updated": "2026-06-15T05:11:18.315Z"
     }
   ],
-  "loadedAt": "2026-06-11T16:39:29.936Z",
+  "loadedAt": "2026-06-15T06:12:26.672Z",
   "validationIssues": [
     {
       "row": 96,
@@ -2537,6 +2542,716 @@
       "row": 498,
       "field": "difficulty",
       "message": "Required difficulty"
+    }
+  ],
+  "resources": [
+    {
+      "id": "dsa-res-250dsa-questions-for-placements",
+      "title": "250+DSA QUESTIONS FOR PLACEMENTS",
+      "filePath": "/resources/dsa/250+DSA QUESTIONS FOR PLACEMENTS.pdf",
+      "sizeBytes": 477995,
+      "company": "general",
+      "category": "DSA",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-pro-tcs-technical-paid-paper",
+      "title": "Pro TCS Technical Paid Paper",
+      "filePath": "/resources/tcs/Pro TCS Technical Paid Paper.pdf",
+      "sizeBytes": 263824,
+      "company": "tcs",
+      "category": "Core Subjects",
+      "subtopic": "Technical & Coding",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "high"
+    },
+    {
+      "id": "tcs-res-tcs-answer1",
+      "title": "TCS Answer(1)",
+      "filePath": "/resources/tcs/TCS Answer(1).pdf",
+      "sizeBytes": 276375,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-aptitude-paid",
+      "title": "TCS Aptitude Paid",
+      "filePath": "/resources/tcs/TCS Aptitude Paid.pdf",
+      "sizeBytes": 5705713,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "",
+      "estimatedMinutes": 120,
+      "xpReward": 150,
+      "revisionPriority": "high"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-quantitative-aptitude-21",
+      "title": "TCS Ninja Quantitative Aptitude 2(1)",
+      "filePath": "/resources/tcs/TCS Ninja - Quantitative Aptitude_2(1).docx",
+      "sizeBytes": 552843,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "Quantitative Aptitude",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-quantitative-aptitude-3r1",
+      "title": "TCS Ninja Quantitative Aptitude 3(R)(1)",
+      "filePath": "/resources/tcs/TCS Ninja - Quantitative Aptitude_3(R)(1).docx",
+      "sizeBytes": 601290,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "Quantitative Aptitude",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-quantitative-aptitude-41",
+      "title": "TCS Ninja Quantitative Aptitude 4(1)",
+      "filePath": "/resources/tcs/TCS Ninja - Quantitative Aptitude_4(1).docx",
+      "sizeBytes": 449982,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "Quantitative Aptitude",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-quantitative-aptitude-51",
+      "title": "TCS Ninja Quantitative Aptitude 5(1)",
+      "filePath": "/resources/tcs/TCS Ninja - Quantitative Aptitude_5(1).docx",
+      "sizeBytes": 254254,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "Quantitative Aptitude",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-quantitative-aptitude-6",
+      "title": "TCS Ninja Quantitative Aptitude 6",
+      "filePath": "/resources/tcs/TCS Ninja - Quantitative Aptitude_6.docx",
+      "sizeBytes": 2066915,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "Quantitative Aptitude",
+      "estimatedMinutes": 120,
+      "xpReward": 150,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-verbal-ability-21",
+      "title": "TCS Ninja Verbal Ability 2(1)",
+      "filePath": "/resources/tcs/TCS Ninja - Verbal Ability_2(1).docx",
+      "sizeBytes": 250390,
+      "company": "tcs",
+      "category": "Verbal Ability",
+      "subtopic": "Verbal Ability",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-verbal-ability-31",
+      "title": "TCS Ninja Verbal Ability 3(1)",
+      "filePath": "/resources/tcs/TCS Ninja - Verbal Ability_3(1).docx",
+      "sizeBytes": 248995,
+      "company": "tcs",
+      "category": "Verbal Ability",
+      "subtopic": "Verbal Ability",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-verbal-ability-41",
+      "title": "TCS Ninja Verbal Ability 4(1)",
+      "filePath": "/resources/tcs/TCS Ninja - Verbal Ability_4(1).docx",
+      "sizeBytes": 248460,
+      "company": "tcs",
+      "category": "Verbal Ability",
+      "subtopic": "Verbal Ability",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-verbal-ability-5r1",
+      "title": "TCS Ninja Verbal Ability 5(R)(1)",
+      "filePath": "/resources/tcs/TCS Ninja - Verbal Ability_5(R)(1).docx",
+      "sizeBytes": 547108,
+      "company": "tcs",
+      "category": "Verbal Ability",
+      "subtopic": "Verbal Ability",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-verbal-ability-6r",
+      "title": "TCS Ninja Verbal Ability 6(R)",
+      "filePath": "/resources/tcs/TCS Ninja - Verbal Ability_6(R).docx",
+      "sizeBytes": 1043445,
+      "company": "tcs",
+      "category": "Verbal Ability",
+      "subtopic": "Verbal Ability",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-most-repeated-questions-from-past-years",
+      "title": "TCS Ninja Most Repeated Questions from past years",
+      "filePath": "/resources/tcs/TCS Ninja Most Repeated Questions from past years.pdf",
+      "sizeBytes": 476791,
+      "company": "tcs",
+      "category": "Core Subjects",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-paper-2015",
+      "title": "tcs paper 2015",
+      "filePath": "/resources/tcs/tcs paper 2015.pdf",
+      "sizeBytes": 486760,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-pdf-2",
+      "title": "TCS PDF 2.",
+      "filePath": "/resources/tcs/TCS PDF 2..pdf",
+      "sizeBytes": 875795,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-paper-2013",
+      "title": "tcs placement paper 2013",
+      "filePath": "/resources/tcs/tcs placement paper 2013.pdf",
+      "sizeBytes": 542444,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-paper",
+      "title": "TCS Placement Paper",
+      "filePath": "/resources/tcs/TCS Placement Paper.pdf",
+      "sizeBytes": 2269877,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 120,
+      "xpReward": 150,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-1",
+      "title": "TCS Placement Papers 1",
+      "filePath": "/resources/tcs/TCS Placement Papers 1.pdf",
+      "sizeBytes": 465046,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-10",
+      "title": "TCS Placement Papers 10",
+      "filePath": "/resources/tcs/TCS Placement Papers 10.pdf",
+      "sizeBytes": 869801,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-11",
+      "title": "TCS Placement Papers 11",
+      "filePath": "/resources/tcs/TCS Placement Papers 11.pdf",
+      "sizeBytes": 621599,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-2",
+      "title": "TCS Placement Papers 2",
+      "filePath": "/resources/tcs/TCS Placement Papers 2.pdf",
+      "sizeBytes": 309508,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-2014",
+      "title": "tcs placement papers 2014",
+      "filePath": "/resources/tcs/tcs placement papers 2014.pdf",
+      "sizeBytes": 371703,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-3",
+      "title": "TCS Placement Papers 3",
+      "filePath": "/resources/tcs/TCS Placement Papers 3.pdf",
+      "sizeBytes": 245662,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-4",
+      "title": "TCS Placement Papers 4",
+      "filePath": "/resources/tcs/TCS Placement Papers 4.pdf",
+      "sizeBytes": 318184,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-5",
+      "title": "TCS Placement Papers 5",
+      "filePath": "/resources/tcs/TCS Placement Papers 5.pdf",
+      "sizeBytes": 271107,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-question",
+      "title": "TCS QUESTION",
+      "filePath": "/resources/tcs/TCS QUESTION.pdf",
+      "sizeBytes": 2581820,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 120,
+      "xpReward": 150,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-technical-paid-paper-good",
+      "title": "TCS Technical Paid Paper GOOD",
+      "filePath": "/resources/tcs/TCS Technical Paid Paper GOOD.pdf",
+      "sizeBytes": 190457,
+      "company": "tcs",
+      "category": "Core Subjects",
+      "subtopic": "Technical & Coding",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "high"
+    },
+    {
+      "id": "tcs-res-tcs-technical-questions-good",
+      "title": "TCS Technical Questions GOOD",
+      "filePath": "/resources/tcs/TCS Technical Questions GOOD.pdf",
+      "sizeBytes": 500832,
+      "company": "tcs",
+      "category": "Core Subjects",
+      "subtopic": "Technical & Coding",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "high"
+    },
+    {
+      "id": "tcs-res-tcs-technical-questions",
+      "title": "TCS Technical Questions",
+      "filePath": "/resources/tcs/TCS Technical Questions.docx",
+      "sizeBytes": 28770,
+      "company": "tcs",
+      "category": "Core Subjects",
+      "subtopic": "Technical & Coding",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-02t",
+      "title": "TCS 02T",
+      "filePath": "/resources/tcs/TCS_02T.docx",
+      "sizeBytes": 243776,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-03t",
+      "title": "TCS 03T",
+      "filePath": "/resources/tcs/TCS_03T.docx",
+      "sizeBytes": 244449,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-04c",
+      "title": "TCS 04C",
+      "filePath": "/resources/tcs/TCS_04C.docx",
+      "sizeBytes": 242993,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-05c",
+      "title": "TCS 05C",
+      "filePath": "/resources/tcs/TCS_05C.docx",
+      "sizeBytes": 243205,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-06c",
+      "title": "TCS 06C",
+      "filePath": "/resources/tcs/TCS_06C.docx",
+      "sizeBytes": 243228,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-with-answers-technical-round-kolkata-13-jan-2",
+      "title": "TCS Placement Papers with Answers Technical Round Kolkata , 13 Jan (2)",
+      "filePath": "/resources/tcs/TCS_Placement_Papers_with_Answers_Technical_Round_Kolkata_,_13_Jan (2).pdf",
+      "sizeBytes": 303497,
+      "company": "tcs",
+      "category": "Core Subjects",
+      "subtopic": "Technical & Coding",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-previous-year-paper",
+      "title": "TCS Previous Year Paper",
+      "filePath": "/resources/tcs/TCS_Previous_Year_Paper.pdf",
+      "sizeBytes": 140312,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-quantitative-aptitude-question-paper-www-matterhere-com-nrr",
+      "title": "TCS Quantitative Aptitude Question Paper www matterhere com NRR",
+      "filePath": "/resources/tcs/TCS_Quantitative_Aptitude_Question_Paper_www_matterhere_com_NRR.pdf",
+      "sizeBytes": 67851,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "Quantitative Aptitude",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-arthematic-placement-papers",
+      "title": "TCS Arthematic Placement Papers",
+      "filePath": "/resources/tcs/TCS-Arthematic-Placement-Papers.pdf",
+      "sizeBytes": 140376,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "Arithmetic",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-coding-programming-questions",
+      "title": "TCS Coding Programming Questions",
+      "filePath": "/resources/tcs/TCS-Coding-Programming-Questions.pdf",
+      "sizeBytes": 426533,
+      "company": "tcs",
+      "category": "DSA",
+      "subtopic": "Technical & Coding",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-model-question-papers",
+      "title": "TCS Model Question Papers",
+      "filePath": "/resources/tcs/TCS-Model-Question-Papers.pdf",
+      "sizeBytes": 144858,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-ninja-quants-primer",
+      "title": "tcs ninja quants primer",
+      "filePath": "/resources/tcs/tcs-ninja-quants-primer.pdf",
+      "sizeBytes": 532222,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-nrr",
+      "title": "tcs nrr",
+      "filePath": "/resources/tcs/tcs-nrr.pdf",
+      "sizeBytes": 739569,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-aptitude-papers",
+      "title": "TCS Placement Aptitude Papers",
+      "filePath": "/resources/tcs/TCS-Placement-Aptitude-Papers.pdf",
+      "sizeBytes": 120995,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-coding-papers",
+      "title": "TCS Placement Coding Papers",
+      "filePath": "/resources/tcs/TCS-Placement-Coding-Papers.pdf",
+      "sizeBytes": 133265,
+      "company": "tcs",
+      "category": "DSA",
+      "subtopic": "Technical & Coding",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-email-writing-papers",
+      "title": "TCS Placement Email Writing Papers",
+      "filePath": "/resources/tcs/TCS-Placement-Email-Writing-Papers.pdf",
+      "sizeBytes": 118237,
+      "company": "tcs",
+      "category": "Verbal Ability",
+      "subtopic": "Verbal Ability",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers-1-alt",
+      "title": "Tcs Placement Papers 1",
+      "filePath": "/resources/tcs/Tcs-Placement-Papers-1.pdf",
+      "sizeBytes": 296917,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-placement-papers",
+      "title": "TCS Placement Papers",
+      "filePath": "/resources/tcs/TCS-Placement-Papers.pdf",
+      "sizeBytes": 15203,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-previous-year-placement-question-paper",
+      "title": "TCS Previous Year Placement Question Paper",
+      "filePath": "/resources/tcs/TCS-Previous-Year-Placement-Question-Paper.pdf",
+      "sizeBytes": 126374,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs-sample-paper",
+      "title": "TCS Sample paper",
+      "filePath": "/resources/tcs/TCS-Sample-paper.pdf",
+      "sizeBytes": 297957,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs17-02t",
+      "title": "TCS17 02T",
+      "filePath": "/resources/tcs/TCS17-02T.docx",
+      "sizeBytes": 246014,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs17-03t",
+      "title": "TCS17 03T",
+      "filePath": "/resources/tcs/TCS17-03T.docx",
+      "sizeBytes": 247023,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs17-04tr",
+      "title": "TCS17 04T(R)",
+      "filePath": "/resources/tcs/TCS17-04T(R).docx",
+      "sizeBytes": 357951,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs17-05t",
+      "title": "TCS17 05T",
+      "filePath": "/resources/tcs/TCS17-05T.docx",
+      "sizeBytes": 989437,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 60,
+      "xpReward": 100,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcs17-06t",
+      "title": "TCS17 06T",
+      "filePath": "/resources/tcs/TCS17-06T.docx",
+      "sizeBytes": 282955,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcsaptitude",
+      "title": "tcsaptitude",
+      "filePath": "/resources/tcs/tcsaptitude.pdf",
+      "sizeBytes": 295328,
+      "company": "tcs",
+      "category": "Aptitude",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcspattern",
+      "title": "tcspattern",
+      "filePath": "/resources/tcs/tcspattern.pdf",
+      "sizeBytes": 221493,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
+    },
+    {
+      "id": "tcs-res-tcsplacement-paper-2010",
+      "title": "tcsplacement paper 2010",
+      "filePath": "/resources/tcs/tcsplacement-paper-2010.pdf",
+      "sizeBytes": 13574,
+      "company": "tcs",
+      "category": "Previous Year Questions",
+      "subtopic": "",
+      "estimatedMinutes": 30,
+      "xpReward": 50,
+      "revisionPriority": "medium"
     }
   ]
 }

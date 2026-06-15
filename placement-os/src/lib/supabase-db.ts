@@ -259,6 +259,7 @@ export async function fetchUserData(userId: string) {
       interviewHistory,
       dailyPlannerBlocks,
       customWeeklyPlan,
+      resourceProgress: {},
     };
   } catch (error) {
     console.error("❌ Error fetching user data from Supabase:", error);

@@ -695,3 +695,34 @@ export function rowToMockTest(row: SheetRow): MockTestSet | null {
     companyTags: splitList(row.company_tags),
   };
 }
+
+export type StudyResource = {
+  id: string;
+  title: string;
+  filePath: string;
+  sizeBytes: number;
+  company: string;
+  category: string;
+  subtopic: string;
+  estimatedMinutes: number;
+  xpReward: number;
+  revisionPriority: "critical" | "high" | "medium" | "low";
+};
+
+export function rowToResource(row: SheetRow): StudyResource | null {
+  const id = getRowValue(row, ["resource_id", "id"]);
+  const title = getRowValue(row, ["title", "name"]);
+  if (!id || !title) return null;
+  return {
+    id,
+    title,
+    filePath: getRowValue(row, ["file_path", "filepath"]),
+    sizeBytes: parseNumber(getRowValue(row, ["size_bytes", "size"]), 0),
+    company: getRowValue(row, ["company"]),
+    category: getRowValue(row, ["category"]),
+    subtopic: getRowValue(row, ["subtopic"]),
+    estimatedMinutes: parseNumber(getRowValue(row, ["estimated_minutes", "estimated_time"]), 30),
+    xpReward: parseNumber(getRowValue(row, ["xp_reward", "xp"]), 50),
+    revisionPriority: (getRowValue(row, ["revision_priority", "priority"]) || "medium") as any,
+  };
+}

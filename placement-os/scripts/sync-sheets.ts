@@ -8,6 +8,7 @@ import {
   rowToCompany,
   rowToAptitudeTopic,
   rowToMockTest,
+  rowToResource,
 } from "../src/lib/sheets/transformers";
 import type { DSAQuestion, DSATopicMeta } from "../src/types";
 
@@ -104,6 +105,7 @@ function main() {
   const aptitudeConfigRows = parseSheetFile(findSheetFile("aptitude/config.csv"));
   const revisionRows = parseSheetFile(findSheetFile("revision/cycles.csv"));
   const weeklyRows = parseSheetFile(findSheetFile("analytics/weekly-plan.csv"));
+  const resourceRows = parseSheetFile(findSheetFile("companies/resources.csv"));
 
   // Check if DSA SHEET.xlsx exists and load it separately
   const dsaSheetPath = findSheetFile("DSA SHEET.xlsx") || findSheetFile("dsa-sheet.xlsx");
@@ -145,6 +147,7 @@ function main() {
   console.log(`   - Aptitude config rows: ${aptitudeConfigRows.length}`);
   console.log(`   - Revision cycles: ${revisionRows.length}`);
   console.log(`   - Weekly plan weeks: ${weeklyRows.length}`);
+  console.log(`   - Resource rows: ${resourceRows.length}`);
 
   // Validate questions
   const validationIssues = validateDSAQuestionRows(questionRows);
@@ -289,6 +292,7 @@ function main() {
   const mockTests = mockRows.map(rowToMockTest).filter((m) => m !== null);
   const companies = companyRows.map(rowToCompany).filter((c) => c !== null);
   const aptitudeTopics = aptitudeRows.map(rowToAptitudeTopic).filter((a) => a !== null);
+  const resources = resourceRows.map(rowToResource).filter((r) => r !== null);
 
   const aptitudeConfig: Record<string, string> = {};
   aptitudeConfigRows.forEach((r) => {
@@ -325,6 +329,7 @@ function main() {
     manifest,
     loadedAt,
     validationIssues,
+    resources,
   };
 
   const analytics = {
@@ -337,6 +342,7 @@ function main() {
     manifest,
     loadedAt,
     validationIssues,
+    resources,
   };
 
   // DATA INTEGRITY SAFEGUARDS

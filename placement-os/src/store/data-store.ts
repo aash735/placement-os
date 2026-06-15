@@ -3,7 +3,7 @@
 import { create } from "zustand";
 import type { PlatformData } from "@/lib/sheets/loader";
 import type { DSAQuestion, DSATopicMeta } from "@/types";
-import type { CompanyProfile, AptitudeTopic, MockTestSet } from "@/lib/sheets/transformers";
+import type { CompanyProfile, AptitudeTopic, MockTestSet, StudyResource } from "@/lib/sheets/transformers";
 
 type DataState = {
   data: PlatformData | null;
@@ -17,6 +17,7 @@ type DataState = {
   mockTests: MockTestSet[];
   companies: CompanyProfile[];
   aptitudeTopics: AptitudeTopic[];
+  resources: StudyResource[];
 };
 
 const CACHE_MS = 60_000;
@@ -31,6 +32,7 @@ export const useDataStore = create<DataState>((set, get) => ({
   mockTests: [],
   companies: [],
   aptitudeTopics: [],
+  resources: [],
 
   fetchData: async (force = false) => {
     const { lastFetched, loading } = get();
@@ -49,6 +51,7 @@ export const useDataStore = create<DataState>((set, get) => ({
         mockTests: data.mockTests,
         companies: data.companies,
         aptitudeTopics: data.aptitudeTopics,
+        resources: data.resources || [],
         loading: false,
         lastFetched: new Date().toISOString(),
         error: null,

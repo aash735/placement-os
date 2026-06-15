@@ -48,6 +48,7 @@ interface ProgressState {
   completedToday: string[];
   companyTargets: Record<string, "not-started" | "preparing" | "applied" | "oa-done" | "interview">;
   bookmarks: string[];
+  resourceProgress: Record<string, "not-started" | "reading" | "completed">;
   
   // New States
   aptitudeAttempts: AptitudeAttempt[];
@@ -142,6 +143,7 @@ interface ProgressState {
   updateCsSubject: (subjectId: string, status: CsSubjectState["status"], score?: number, checkedItems?: string[]) => void;
   setLlmApiKey: (key: string) => void;
   setShortcutsEnabled: (enabled: boolean) => void;
+  setResourceProgress: (resourceId: string, status: "not-started" | "reading" | "completed") => void;
 
   // Added Actions
   startFocusSession: (task: string, durationMin?: number, questionId?: string | null) => void;
@@ -223,6 +225,7 @@ export const useProgressStore = create<ProgressState>()(
       completedToday: [],
       companyTargets: {},
       bookmarks: [],
+      resourceProgress: {},
 
       // New default states
       aptitudeAttempts: [],
@@ -300,6 +303,7 @@ export const useProgressStore = create<ProgressState>()(
             companyTargets: data.companyTargets,
             dailyLogs: data.dailyLogs,
             revisionHistory: data.revisionHistory,
+            resourceProgress: data.resourceProgress && Object.keys(data.resourceProgress).length > 0 ? data.resourceProgress : get().resourceProgress || {},
             // Added states hydration
             unlockedAchievements: data.unlockedAchievements || [],
             countdownGoals: data.countdownGoals && data.countdownGoals.length > 0 ? data.countdownGoals : [
@@ -347,6 +351,7 @@ export const useProgressStore = create<ProgressState>()(
           completedToday: [],
           companyTargets: {},
           bookmarks: [],
+          resourceProgress: {},
           aptitudeAttempts: [],
           projects: [
             { id: "proj-1", name: "Anony Talk", description: "Anonymous chat with 3D elements and wellness UX", stack: "React, 3D, CSS", status: "todo", readiness: 75, tags: ["Frontend", "Socket.io"] },
@@ -835,6 +840,49 @@ export const useProgressStore = create<ProgressState>()(
         // Supabase DB Sync
         if (state.userId) {
           db.saveCsSubject(state.userId, subjectId, updatedSub);
+          db.saveUserProfile(state.userId, {
+            xp: newXp,
+            level: syncLevelFromXp(newXp).level,
+            streak: state.streak,
+            lastActiveDate: state.lastActiveDate,
+            energyMode: state.energyMode,
+          });
+          const activeLog = logs.find((l) => l.date === today());
+          if (activeLog) db.saveDailyLog(state.userId, activeLog);
+        }
+
+        state.checkAchievements();
+        get().refreshScores();
+      },
+
+      setResourceProgress: (resourceId, status) => {
+        const state = get();
+        const resProg = state.resourceProgress || {};
+        const prevStatus = resProg[resourceId] ?? "not-started";
+        if (prevStatus === status) return;
+
+        let xpGain = 0;
+        if (status === "completed" && prevStatus !== "completed") {
+          const resource = useDataStore.getState().resources.find((r) => r.id === resourceId);
+          xpGain = resource?.xpReward ?? 50;
+        } else if (status !== "completed" && prevStatus === "completed") {
+          const resource = useDataStore.getState().resources.find((r) => r.id === resourceId);
+          xpGain = -(resource?.xpReward ?? 50);
+        }
+
+        const newXp = Math.max(0, state.xp + xpGain);
+        const logs = ensureDailyLog(state.dailyLogs).map((l) =>
+          l.date === today() ? { ...l, xpEarned: Math.max(0, l.xpEarned + xpGain) } : l
+        );
+
+        set({
+          resourceProgress: { ...resProg, [resourceId]: status },
+          dailyLogs: logs,
+          ...syncLevelFromXp(newXp),
+          ...updateStreak(state.lastActiveDate, state.streak),
+        });
+
+        if (state.userId) {
           db.saveUserProfile(state.userId, {
             xp: newXp,
             level: syncLevelFromXp(newXp).level,
@@ -1591,6 +1639,7 @@ export const useProgressStore = create<ProgressState>()(
             projects: s.projects,
             csSubjects: s.csSubjects,
             energyMode: s.energyMode,
+            resourceProgress: s.resourceProgress,
           },
           null,
           2

@@ -463,70 +463,70 @@
     {
       "path": "analytics/weekly-plan.csv",
       "rows": 3,
-      "updated": "2026-06-15T05:11:18.190Z"
+      "updated": "2026-06-18T08:39:05.659Z"
     },
     {
       "path": "aptitude/config.csv",
       "rows": 3,
-      "updated": "2026-06-15T05:11:18.190Z"
+      "updated": "2026-06-18T08:39:05.662Z"
     },
     {
       "path": "aptitude/topics.csv",
       "rows": 13,
-      "updated": "2026-06-15T05:11:18.199Z"
+      "updated": "2026-06-18T08:39:05.664Z"
     },
     {
       "path": "companies/profiles.csv",
       "rows": 10,
-      "updated": "2026-06-15T05:11:18.199Z"
+      "updated": "2026-06-18T08:39:05.666Z"
     },
     {
       "path": "companies/resources.csv",
       "rows": 59,
-      "updated": "2026-06-15T05:28:56.943Z"
+      "updated": "2026-06-18T08:39:05.668Z"
     },
     {
       "path": "dsa/mock-tests.csv",
       "rows": 3,
-      "updated": "2026-06-15T05:11:18.199Z"
+      "updated": "2026-06-18T08:39:05.670Z"
     },
     {
       "path": "dsa/questions.csv",
       "rows": 94,
-      "updated": "2026-06-15T05:11:18.199Z"
+      "updated": "2026-06-18T08:39:05.671Z"
     },
     {
       "path": "dsa/topics.csv",
       "rows": 19,
-      "updated": "2026-06-15T05:11:18.199Z"
+      "updated": "2026-06-18T08:39:05.672Z"
     },
     {
       "path": "revision/cycles.csv",
       "rows": 4,
-      "updated": "2026-06-15T05:11:18.199Z"
+      "updated": "2026-06-18T08:39:05.674Z"
     },
     {
       "path": "Book1.xlsx",
       "rows": 47,
-      "updated": "2026-06-15T05:11:18.311Z"
+      "updated": "2026-06-18T08:39:05.877Z"
     },
     {
       "path": "DSA by Shradha Ma'am.xlsx",
       "rows": 415,
-      "updated": "2026-06-15T05:11:18.313Z"
+      "updated": "2026-06-18T08:39:05.877Z"
     },
     {
       "path": "DSA SHEET.xlsx",
       "rows": 405,
-      "updated": "2026-06-15T05:11:18.311Z"
+      "updated": "2026-06-18T08:39:05.877Z"
     },
     {
       "path": "Striver Sheet.xlsx",
       "rows": 161,
-      "updated": "2026-06-15T05:11:18.315Z"
+      "updated": "2026-06-18T08:39:05.877Z"
     }
   ],
-  "loadedAt": "2026-06-15T06:12:26.672Z",
+  "loadedAt": "2026-06-18T10:11:26.997Z",
   "validationIssues": [
     {
       "row": 96,

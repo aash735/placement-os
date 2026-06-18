@@ -125,13 +125,27 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Missing prompt or persona" }, { status: 400 });
     }
 
+    // Resolve API key: check body parameter first, fall back to environment variable
+    let resolvedApiKey = (apiKey || "").trim();
+    if (!resolvedApiKey) {
+      resolvedApiKey = (process.env.GEMINI_API_KEY || "").trim();
+    }
+
+    // Development mode duplicate/excessive request monitoring
+    if (process.env.NODE_ENV === "development") {
+      console.log(
+        `[AI Mentor API] Persona: ${persona}, Prompt Length: ${prompt.length}, ` +
+        `API Key: ${apiKey ? "Provided" : "Env Fallback"}, Timestamp: ${new Date().toISOString()}`
+      );
+    }
+
     const systemPrompt = SYSTEM_PROMPTS[persona as keyof typeof SYSTEM_PROMPTS] || SYSTEM_PROMPTS.sudo;
 
     // 1. CALL GEMINI API IF KEY PROVIDED
-    if (apiKey && apiKey.trim() !== "") {
+    if (resolvedApiKey && resolvedApiKey !== "") {
       try {
         const response = await fetch(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${resolvedApiKey}`,
           {
             method: "POST",
             headers: {

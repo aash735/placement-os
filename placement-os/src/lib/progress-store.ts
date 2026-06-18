@@ -292,7 +292,7 @@ export const useProgressStore = create<ProgressState>()(
             streak: data.streak,
             lastActiveDate: data.lastActiveDate,
             energyMode: data.energyMode,
-            llmApiKey: data.llmApiKey,
+            llmApiKey: get().llmApiKey || "",
             shortcutsEnabled: data.shortcutsEnabled,
             questionProgress: data.questionProgress,
             bookmarks: data.bookmarks,

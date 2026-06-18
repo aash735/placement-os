@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Brain } from "lucide-react";
 import { AppShell } from "@/components/layout/app-shell";
 import { PageHeader } from "@/components/layout/page-header";
 import { GlassCard } from "@/components/ui/glass-card";
@@ -405,6 +407,32 @@ export default function MockInterviewPage() {
         title="Mock Interview Practice Room"
         description="Simulate real-time pressure rounds. We generate randomized questions across four dimensions to dry-run think-aloud outline responses."
       />
+
+      <GlassCard className="mt-6 p-6 border border-cyan-500/20 bg-cyan-950/5 relative overflow-hidden" hover={true}>
+        <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+          <Brain className="h-40 w-40 text-cyan-400" />
+        </div>
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 relative z-10">
+          <div className="space-y-2 max-w-2xl">
+            <span className="inline-flex rounded-full bg-cyan-500/10 border border-cyan-500/30 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-cyan-400">
+              New Feature
+            </span>
+            <h2 className="text-xl font-extrabold text-white tracking-tight flex items-center gap-2">
+              <Sparkles className="h-5 w-5 text-cyan-400 animate-pulse" />
+              AI Mock Interview Simulator
+            </h2>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Experience a realistic, live-simulated technical interview with our active AI Interviewer. Simulates five structured stages (Intro, Basics, Intermediate, Advanced, Wrap), adapts difficulty dynamically, and compiles a comprehensive performance scorecard.
+            </p>
+          </div>
+          <Link
+            href="/mock-interview/ai-room"
+            className="btn-primary py-3 px-6 text-xs font-bold uppercase tracking-wider shrink-0 flex items-center gap-2"
+          >
+            Enter AI Room <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </GlassCard>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mt-6">
         <GlassCard className="flex flex-col justify-between p-6" hover={true}>

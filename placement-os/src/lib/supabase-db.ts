@@ -243,7 +243,7 @@ export async function fetchUserData(userId: string) {
       streak: profile.streak || 0,
       lastActiveDate: profile.last_active_date || "",
       energyMode: (profile.energy_mode || "normal") as "normal" | "low" | "recovery",
-      llmApiKey: profile.llm_api_key || "",
+      llmApiKey: "", // local-only storage for security
       shortcutsEnabled: profile.shortcuts_enabled ?? true,
       questionProgress,
       bookmarks,
@@ -290,7 +290,7 @@ export async function saveUserProfile(
     streak: profile.streak,
     last_active_date: profile.lastActiveDate || null,
     energy_mode: profile.energyMode,
-    llm_api_key: profile.llmApiKey || null,
+    // llm_api_key column is ignored as keys reside client-side in localStorage only
     shortcuts_enabled: profile.shortcutsEnabled ?? true,
     updated_at: new Date().toISOString(),
   }).eq("id", userId);

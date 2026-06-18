@@ -339,6 +339,9 @@ export default function AIMentorPage() {
   const [inputVal, setInputVal] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  
+  // Rate-limiting check to prevent double submissions
+  const lastRequestTimeRef = useRef<number>(0);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -346,6 +349,15 @@ export default function AIMentorPage() {
 
   const handleSend = async (textToSend: string) => {
     if (!textToSend.trim() || isLoading) return;
+
+    // Rate-limiting double-click block
+    // eslint-disable-next-line react-hooks/purity
+    const now = Date.now();
+    if (now - lastRequestTimeRef.current < 2000) {
+      console.warn("[Rate Limit] Blocking rapid mentor submission.");
+      return;
+    }
+    lastRequestTimeRef.current = now;
 
     const userMsg: Message = {
       sender: "user",

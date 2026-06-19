@@ -22,6 +22,7 @@ import {
   AlertCircle
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function CodingChallengePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
@@ -210,17 +211,21 @@ export default function CodingChallengePage({ params }: { params: Promise<{ id: 
                 </div>
 
                 {/* Language Selector */}
-                <select
+                <Select
                   value={language}
-                  onChange={(e) => setLanguage(e.target.value)}
-                  className="bg-black/60 border border-white/10 rounded-lg text-xs font-semibold px-2 py-1 text-zinc-300 outline-none focus:border-cyan-400 transition-all cursor-pointer"
+                  onValueChange={(val) => setLanguage(val)}
                 >
-                  <option value="cpp">C++ (GCC 17)</option>
-                  <option value="c">C (GCC 11)</option>
-                  <option value="python">Python 3.10</option>
-                  <option value="java">Java 17</option>
-                  <option value="javascript">JavaScript (ES6)</option>
-                </select>
+                  <SelectTrigger className="w-[150px] px-2.5 py-1.5 text-xs h-8">
+                    <SelectValue placeholder="Select Language" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="cpp">C++ (GCC 17)</SelectItem>
+                    <SelectItem value="c">C (GCC 11)</SelectItem>
+                    <SelectItem value="python">Python 3.10</SelectItem>
+                    <SelectItem value="java">Java 17</SelectItem>
+                    <SelectItem value="javascript">JavaScript (ES6)</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
 
               {/* Textarea Code Stub */}

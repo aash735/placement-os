@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant light (html.light &);
+
 /* ============================================================
    PLACEMENT OS — PROFESSIONAL DESIGN SYSTEM
    Full dark + light mode with proper contrast and semantics
@@ -23,6 +25,8 @@
 
   --shadow-card:   0 4px 24px rgba(0,0,0,0.5);
   --shadow-hover:  0 8px 32px rgba(0,0,0,0.7);
+
+  --bg-hover:      rgba(255, 255, 255, 0.06);
 
   --accent-cyan:   #22d3ee;
   --accent-violet: #a78bfa;
@@ -56,6 +60,8 @@ html.light {
   --shadow-card:   0 2px 12px rgba(15,23,42,0.10);
   --shadow-hover:  0 6px 24px rgba(15,23,42,0.18);
 
+  --bg-hover:      rgba(15, 23, 42, 0.06);
+
   --accent-cyan:   #0891b2;
   --accent-violet: #7c3aed;
   --accent-emerald:#059669;
@@ -73,6 +79,17 @@ html.light {
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --z-index-base: 0;
+  --z-index-content: 1;
+  --z-index-sticky: 10;
+  --z-index-navbar: 20;
+  --z-index-sidebar: 30;
+  --z-index-dropdown: 100;
+  --z-index-popover: 200;
+  --z-index-tooltip: 300;
+  --z-index-modal: 400;
+  --z-index-toast: 500;
 }
 
 /* ── Base ── */
@@ -219,8 +236,6 @@ html.light .btn-ghost:hover {
   border: 1px solid var(--border-normal);
   color: var(--text-primary);
   @apply rounded-xl py-2.5 text-sm transition focus:outline-none;
-  padding-left: 2rem;   /* default left padding — overridden by pl-9 etc. on icon inputs */
-  padding-right: 2rem;  /* default right padding — overridden by pr-10 etc. on icon inputs */
 }
 .field-input:focus {
   border-color: var(--accent-cyan);
@@ -275,6 +290,15 @@ html.light .diff-hard   { @apply bg-rose-100 text-rose-700 border-rose-300; }
 :focus-visible {
   outline: 2px solid var(--accent-cyan);
   outline-offset: 2px;
+}
+
+/* Reset focus-visible outlines for elements with custom border/ring indication to prevent double borders */
+.field-input:focus-visible,
+select:focus-visible,
+button:focus-visible,
+[role="combobox"]:focus-visible,
+[role="listbox"]:focus-visible {
+  outline: none;
 }
 
 /* ── Light mode overrides for hardcoded Tailwind classes ── */

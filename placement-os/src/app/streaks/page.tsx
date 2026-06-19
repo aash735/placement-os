@@ -6,7 +6,7 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { usePlacementStore } from "@/lib/store";
 
 export default function StreaksPage() {
-  const { streak } = usePlacementStore();
+  const streak = usePlacementStore((s) => s.streak);
   return (
     <AppShell title="Streaks" subtitle="Consistency without guilt">
       <PageHeader title="Streak System" description="Minimum viable day counts: 15 min counts. Rest days planned, not failed." />

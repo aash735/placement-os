@@ -37,6 +37,7 @@ import {
   AlertTriangle,
   Lightbulb,
 } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 // Local Custom Progress Ring that supports customized label
 function ScoreRing({ value, label, size = 110 }: { value: number; label: string; size?: number }) {
@@ -735,7 +736,7 @@ export default function AiMockInterviewRoom() {
                       handleSend();
                     }
                   }}
-                  className="flex-1 rounded-xl border border-zinc-800 bg-zinc-900/60 px-4 py-3 text-xs text-white placeholder-zinc-500 focus:border-cyan-500 focus:outline-none"
+                  className="field-input flex-1 px-4 py-3 text-xs"
                 />
                 <button
                   onClick={() => handleSend(false)}
@@ -1013,7 +1014,7 @@ export default function AiMockInterviewRoom() {
                       max="120"
                       value={customDuration}
                       onChange={(e) => setCustomDuration(Number(e.target.value))}
-                      className="w-20 rounded-lg border border-zinc-800 bg-zinc-950 px-2 py-1 text-xs text-white text-center focus:border-cyan-500 focus:outline-none"
+                      className="field-input w-20 px-2 py-1 text-xs text-center"
                     />
                   </div>
                 )}
@@ -1023,15 +1024,19 @@ export default function AiMockInterviewRoom() {
               <div className="grid gap-4 md:grid-cols-2 pt-2 border-t border-zinc-900">
                 <div className="space-y-2">
                   <label className="text-xs font-bold uppercase tracking-wider text-zinc-400 block">AI Engine</label>
-                  <select
+                  <Select
                     value={provider}
-                    onChange={(e) => setProvider(e.target.value as any)}
-                    className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3.5 py-3 text-xs text-white focus:border-cyan-500 focus:outline-none"
+                    onValueChange={(val) => setProvider(val as any)}
                   >
-                    <option value="gemini">Gemini 2.5 Flash (Recommended)</option>
-                    <option value="openai">OpenAI GPT-4o Mini</option>
-                    <option value="ollama">Ollama Llama3 (Local Offline)</option>
-                  </select>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="Select AI Engine" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="gemini">Gemini 2.5 Flash (Recommended)</SelectItem>
+                      <SelectItem value="openai">OpenAI GPT-4o Mini</SelectItem>
+                      <SelectItem value="ollama">Ollama Llama3 (Local Offline)</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 {/* API Key Box */}
@@ -1048,7 +1053,7 @@ export default function AiMockInterviewRoom() {
                     disabled={provider === "ollama"}
                     value={provider === "ollama" ? "" : apiKeyInput}
                     onChange={(e) => setApiKeyInput(e.target.value)}
-                    className="w-full rounded-xl border border-zinc-800 bg-zinc-900 px-3.5 py-3 text-xs text-white placeholder-zinc-650 focus:border-cyan-500 focus:outline-none disabled:opacity-50"
+                    className="field-input w-full px-3.5 py-3 text-xs disabled:opacity-50"
                   />
                 </div>
               </div>

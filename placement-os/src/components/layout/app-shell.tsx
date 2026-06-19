@@ -22,7 +22,9 @@ export function AppShell({
 }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const { xp, level, streak } = usePlacementStore();
+  const xp = usePlacementStore((s) => s.xp);
+  const level = usePlacementStore((s) => s.level);
+  const streak = usePlacementStore((s) => s.streak);
   const { user, signOut } = useAuth();
 
   return (
@@ -31,7 +33,7 @@ export function AppShell({
         {/* ── Sidebar ── */}
         <aside
           className={cn(
-            "fixed inset-y-0 left-0 z-40 w-72 transition-transform lg:static lg:translate-x-0 flex flex-col h-screen overflow-hidden",
+            "fixed inset-y-0 left-0 z-sidebar w-72 transition-transform lg:static lg:translate-x-0 flex flex-col h-screen overflow-hidden",
             open ? "translate-x-0" : "-translate-x-full"
           )}
           style={{
@@ -105,6 +107,7 @@ export function AppShell({
                 </div>
               </div>
               <button
+                type="button"
                 onClick={signOut}
                 className="btn-logout"
                 title="Logout"
@@ -119,7 +122,8 @@ export function AppShell({
         {/* Mobile overlay */}
         {open && (
           <button
-            className="fixed inset-0 z-30 bg-black/50 lg:hidden"
+            type="button"
+            className="fixed inset-0 z-navbar bg-black/50 lg:hidden"
             onClick={() => setOpen(false)}
             aria-label="Close menu"
           />
@@ -129,7 +133,7 @@ export function AppShell({
         <div className="flex min-w-0 flex-1 flex-col h-screen overflow-y-auto">
           {/* Header */}
           <header
-            className="sticky top-0 z-20 flex h-16 items-center gap-4 px-4 lg:px-8"
+            className="sticky top-0 z-sticky flex h-16 items-center gap-4 px-4 lg:px-8"
             style={{
               background: "color-mix(in srgb, var(--bg-elevated) 85%, transparent)",
               borderBottom: "1px solid var(--border-subtle)",
@@ -137,10 +141,12 @@ export function AppShell({
             }}
           >
             <button
+              type="button"
               className="rounded-lg p-2 lg:hidden transition-colors"
               style={{ color: "var(--text-muted)" }}
               onClick={() => setOpen(true)}
               aria-label="Open menu"
+              aria-expanded={open}
             >
               <Menu className="h-5 w-5" />
             </button>

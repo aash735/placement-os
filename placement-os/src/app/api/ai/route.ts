@@ -125,6 +125,17 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Missing prompt or persona" }, { status: 400 });
     }
 
+    // Validate persona against whitelist to prevent prompt injection
+    const validPersonas = Object.keys(SYSTEM_PROMPTS);
+    if (!validPersonas.includes(persona)) {
+      return NextResponse.json({ error: "Invalid persona" }, { status: 400 });
+    }
+
+    // Cap prompt length to prevent prompt injection via oversized input
+    if (typeof prompt !== "string" || prompt.length > 4000) {
+      return NextResponse.json({ error: "Prompt exceeds maximum length" }, { status: 400 });
+    }
+
     // Resolve API key: check body parameter first, fall back to environment variable
     let resolvedApiKey = (apiKey || "").trim();
     if (!resolvedApiKey) {

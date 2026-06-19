@@ -14,7 +14,7 @@ const tasks = [
 ];
 
 export default function LowEnergyPage() {
-  const { setEnergyMode } = usePlacementStore();
+  const setEnergyMode = usePlacementStore((s) => s.setEnergyMode);
   return (
     <AppShell title="Low-Energy Mode" subtitle="15–30 min wins">
       <PageHeader title="Low-Energy Study" description="Momentum > intensity. Streak preserved with minimum viable effort." />

@@ -23,6 +23,7 @@ import { useDataStore } from "@/store/data-store";
 import { useProgressStore } from "@/lib/progress-store";
 import { useDSAStats } from "@/hooks/use-dsa";
 import type { QuestionStatus } from "@/types";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function PracticePage() {
   const questions = useDataStore((s) => s.questions);
@@ -161,7 +162,7 @@ export default function PracticePage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search problem title, subtopic patterns, companies or tags..."
-              className="w-full rounded-xl border border-white/10 bg-black/40 py-2.5 pl-10 pr-10 text-sm text-white placeholder-zinc-500 focus:border-cyan-500/40 focus:ring-0"
+              className="field-input w-full pl-10 pr-10"
             />
             {search && (
               <button 
@@ -195,108 +196,115 @@ export default function PracticePage() {
           {/* Topic Select */}
           <div className="space-y-1">
             <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Topic</label>
-            <select 
-              value={topic} 
-              onChange={(e) => setTopic(e.target.value)} 
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-xs text-white"
-            >
-              <option value="all">All Topics</option>
-              {topics.map((t) => (
-                <option key={t.id} value={t.id}>{t.name}</option>
-              ))}
-            </select>
+            <Select value={topic} onValueChange={(val) => setTopic(val)}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="All Topics" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Topics</SelectItem>
+                {topics.map((t) => (
+                  <SelectItem key={t.id} value={t.id}>{t.name}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Difficulty Select */}
           <div className="space-y-1">
             <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Difficulty</label>
-            <select 
-              value={difficulty} 
-              onChange={(e) => setDifficulty(e.target.value)} 
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-xs text-white"
-            >
-              <option value="all">All Difficulties</option>
-              <option value="Easy">Easy</option>
-              <option value="Medium">Medium</option>
-              <option value="Hard">Hard</option>
-            </select>
+            <Select value={difficulty} onValueChange={(val) => setDifficulty(val)}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="All Difficulties" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Difficulties</SelectItem>
+                <SelectItem value="Easy">Easy</SelectItem>
+                <SelectItem value="Medium">Medium</SelectItem>
+                <SelectItem value="Hard">Hard</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Status Select */}
           <div className="space-y-1">
             <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Status</label>
-            <select 
-              value={statusFilter} 
-              onChange={(e) => setStatusFilter(e.target.value as any)} 
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-xs text-white"
-            >
-              <option value="all">All Statuses</option>
-              <option value="not_started">Not Started</option>
-              <option value="attempted">Attempted</option>
-              <option value="solved">Solved</option>
-              <option value="revised">Revised</option>
-              <option value="mastered">Mastered</option>
-            </select>
+            <Select value={statusFilter} onValueChange={(val) => setStatusFilter(val as any)}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="All Statuses" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Statuses</SelectItem>
+                <SelectItem value="not_started">Not Started</SelectItem>
+                <SelectItem value="attempted">Attempted</SelectItem>
+                <SelectItem value="solved">Solved</SelectItem>
+                <SelectItem value="revised">Revised</SelectItem>
+                <SelectItem value="mastered">Mastered</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Company Select */}
           <div className="space-y-1">
             <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Target Company</label>
-            <select 
-              value={company} 
-              onChange={(e) => setCompany(e.target.value)} 
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-xs text-white"
-            >
-              <option value="all">All Companies</option>
-              {dynamicCompanies.map((c) => (
-                <option key={c} value={c}>{c}</option>
-              ))}
-            </select>
+            <Select value={company} onValueChange={(val) => setCompany(val)}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="All Companies" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Companies</SelectItem>
+                {dynamicCompanies.map((c) => (
+                  <SelectItem key={c} value={c}>{c}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Subtopic / Pattern Select */}
           <div className="space-y-1">
             <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Pattern Focus</label>
-            <select 
-              value={pattern} 
-              onChange={(e) => setPattern(e.target.value)} 
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-xs text-white"
-            >
-              <option value="all">All Patterns</option>
-              {dynamicPatterns.map((p) => (
-                <option key={p} value={p}>{p}</option>
-              ))}
-            </select>
+            <Select value={pattern} onValueChange={(val) => setPattern(val)}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="All Patterns" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Patterns</SelectItem>
+                {dynamicPatterns.map((p) => (
+                  <SelectItem key={p} value={p}>{p}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Interview Frequency */}
           <div className="space-y-1">
             <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Frequency</label>
-            <select 
-              value={frequency} 
-              onChange={(e) => setFrequency(e.target.value)} 
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-xs text-white"
-            >
-              <option value="all">All Frequencies</option>
-              <option value="very-high">Very High</option>
-              <option value="high">High</option>
-              <option value="medium">Medium</option>
-              <option value="low">Low</option>
-            </select>
+            <Select value={frequency} onValueChange={(val) => setFrequency(val)}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="All Frequencies" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Frequencies</SelectItem>
+                <SelectItem value="very-high">Very High</SelectItem>
+                <SelectItem value="high">High</SelectItem>
+                <SelectItem value="medium">Medium</SelectItem>
+                <SelectItem value="low">Low</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
 
           {/* Sorting */}
           <div className="space-y-1">
             <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Sort By</label>
-            <select 
-              value={sort} 
-              onChange={(e) => setSort(e.target.value as any)} 
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-xs text-white"
-            >
-              <option value="title">Problem Title</option>
-              <option value="difficulty">Difficulty Rating</option>
-              <option value="time">Solve Time Estimate</option>
-            </select>
+            <Select value={sort} onValueChange={(val) => setSort(val as any)}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Problem Title" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="title">Problem Title</SelectItem>
+                <SelectItem value="difficulty">Difficulty Rating</SelectItem>
+                <SelectItem value="time">Solve Time Estimate</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
         </div>
 

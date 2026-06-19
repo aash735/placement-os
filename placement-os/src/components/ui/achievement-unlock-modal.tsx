@@ -19,10 +19,12 @@ import {
   Sun,
   BookOpen,
   UserCheck,
-  Terminal
+  Terminal,
+  Brain
 } from "lucide-react";
 import { useProgressStore } from "@/lib/progress-store";
 import { cn } from "@/lib/utils";
+import { Portal } from "./portal";
  
 export const ACHIEVEMENT_DETAILS: Record<string, {
   name: string;
@@ -414,6 +416,71 @@ export const ACHIEVEMENT_DETAILS: Record<string, {
     badgeStyle: "text-indigo-400 border-indigo-500/30 bg-indigo-500/10",
   },
 
+  // === MCQ ARENA BADGES ===
+  mcq_beginner: {
+    name: "MCQ Beginner",
+    desc: "Attempted your first multiple-choice question in the MCQ Arena",
+    icon: Brain,
+    color: "text-zinc-400",
+    glow: "rgba(161, 161, 170, 0.15)",
+    rarity: "Common",
+    badgeStyle: "text-zinc-300 border-zinc-500/30 bg-zinc-500/10",
+  },
+  mcq_explorer: {
+    name: "MCQ Explorer",
+    desc: "Attempted 20+ multiple-choice questions in the MCQ Arena",
+    icon: Brain,
+    color: "text-zinc-400",
+    glow: "rgba(161, 161, 170, 0.15)",
+    rarity: "Common",
+    badgeStyle: "text-zinc-300 border-zinc-500/30 bg-zinc-500/10",
+  },
+  mcq_specialist: {
+    name: "MCQ Specialist",
+    desc: "Attempted 50+ multiple-choice questions in the MCQ Arena",
+    icon: Brain,
+    color: "text-cyan-400",
+    glow: "rgba(34, 211, 238, 0.20)",
+    rarity: "Rare",
+    badgeStyle: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
+  },
+  mcq_master: {
+    name: "MCQ Master",
+    desc: "Attempted 100+ multiple-choice questions in the MCQ Arena",
+    icon: Trophy,
+    color: "text-indigo-400",
+    glow: "rgba(99, 102, 241, 0.25)",
+    rarity: "Epic",
+    badgeStyle: "text-indigo-400 border-indigo-500/30 bg-indigo-500/10",
+  },
+  mcq_100_correct: {
+    name: "MCQ Centurion",
+    desc: "Answered 100+ multiple-choice questions correctly",
+    icon: Award,
+    color: "text-indigo-400",
+    glow: "rgba(99, 102, 241, 0.25)",
+    rarity: "Epic",
+    badgeStyle: "text-indigo-400 border-indigo-500/30 bg-indigo-500/10",
+  },
+  mcq_500_correct: {
+    name: "MCQ Gladiator",
+    desc: "Answered 500+ multiple-choice questions correctly",
+    icon: Trophy,
+    color: "text-amber-400",
+    glow: "rgba(251, 191, 36, 0.30)",
+    rarity: "Legendary",
+    badgeStyle: "text-amber-400 border-amber-500/30 bg-amber-500/10",
+  },
+  oa_warrior: {
+    name: "OA Warrior",
+    desc: "Completed 3+ Company Online Assessments",
+    icon: Zap,
+    color: "text-amber-400",
+    glow: "rgba(251, 191, 36, 0.30)",
+    rarity: "Legendary",
+    badgeStyle: "text-amber-400 border-amber-500/30 bg-amber-500/10",
+  },
+
   // === OTHERS / LEGACY ===
   pattern_builder: {
     name: "Pattern Builder",
@@ -503,164 +570,166 @@ export function AchievementUnlockModal() {
     }
   }, [currentUnlock, clearRecentUnlock]);
  
-  if (!currentUnlock || !details) return null;
- 
-  const IconComponent = details.icon;
+  const IconComponent = details?.icon;
   const isLowEnergy = energyMode === "low";
 
   return (
-    <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-        {/* Particle animations stylesheet */}
-        <style dangerouslySetInnerHTML={{ __html: `
-          @keyframes particle-burst-anim {
-            0% {
-              transform: translate(0, 0) scale(1);
-              opacity: 1;
-            }
-            100% {
-              transform: translate(var(--p-x), var(--p-y)) scale(0);
-              opacity: 0;
-            }
-          }
-          @keyframes border-glow-pulsate {
-            0%, 100% {
-              box-shadow: 0 4px 30px rgba(0,0,0,0.6), 0 0 15px var(--glow-color);
-              border-color: var(--border-glow-color);
-            }
-            50% {
-              box-shadow: 0 4px 30px rgba(0,0,0,0.6), 0 0 35px var(--glow-color);
-              border-color: var(--border-glow-active);
-            }
-          }
-        `}} />
+    <Portal>
+      <AnimatePresence>
+        {currentUnlock && details && IconComponent && (
+          <div className="fixed inset-0 z-modal flex items-center justify-center p-4">
+            {/* Particle animations stylesheet */}
+            <style dangerouslySetInnerHTML={{ __html: `
+              @keyframes particle-burst-anim {
+                0% {
+                  transform: translate(0, 0) scale(1);
+                  opacity: 1;
+                }
+                100% {
+                  transform: translate(var(--p-x), var(--p-y)) scale(0);
+                  opacity: 0;
+                }
+              }
+              @keyframes border-glow-pulsate {
+                0%, 100% {
+                  box-shadow: 0 4px 30px rgba(0,0,0,0.6), 0 0 15px var(--glow-color);
+                  border-color: var(--border-glow-color);
+                }
+                50% {
+                  box-shadow: 0 4px 30px rgba(0,0,0,0.6), 0 0 35px var(--glow-color);
+                  border-color: var(--border-glow-active);
+                }
+              }
+            `}} />
 
-        {/* Backdrop */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          onClick={clearRecentUnlock}
-          className="absolute inset-0 bg-black/70 backdrop-blur-md"
-        />
- 
-        {/* Modal container */}
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0, y: 20 }}
-          animate={{ scale: 1, opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 25 } }}
-          exit={{ scale: 0.9, opacity: 0, y: 20 }}
-          className="relative w-full max-w-md overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 p-6 text-center shadow-2xl"
-          style={
-            !isLowEnergy
-              ? {
-                  animation: "border-glow-pulsate 3s infinite ease-in-out",
-                  "--glow-color": details.glow.replace("0.25", "0.15").replace("0.35", "0.20"),
-                  "--border-glow-color": details.rarity === "Legendary" ? "rgba(236,72,153,0.4)" : details.rarity === "Epic" ? "rgba(99,102,241,0.3)" : details.rarity === "Rare" ? "rgba(34,211,238,0.3)" : "rgba(63,63,70,0.4)",
-                  "--border-glow-active": details.rarity === "Legendary" ? "rgba(236,72,153,0.7)" : details.rarity === "Epic" ? "rgba(99,102,241,0.6)" : details.rarity === "Rare" ? "rgba(34,211,238,0.6)" : "rgba(63,63,70,0.7)",
-                } as any
-              : undefined
-          }
-        >
-          {/* Close button */}
-          <button
-            onClick={clearRecentUnlock}
-            className="absolute top-4 right-4 text-zinc-400 hover:text-white transition-colors"
-          >
-            <X className="h-5 w-5" />
-          </button>
- 
-          {/* Rotating ambient glow */}
-          {!isLowEnergy && (
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none w-72 h-72 rounded-full filter blur-[60px] opacity-35 mix-blend-screen"
-              style={{
-                background: `radial-gradient(circle, ${details.glow} 0%, transparent 70%)`
-              }}
-            />
-          )}
- 
-          {/* Confetti Particles Burst */}
-          {!isLowEnergy && (
-            <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-              {particles.map((p) => (
-                <div
-                  key={p.id}
-                  className="absolute rounded-full"
-                  style={{
-                    width: p.size,
-                    height: p.size,
-                    backgroundColor: p.color,
-                    "--p-x": `${p.x}px`,
-                    "--p-y": `${p.y}px`,
-                    animation: `particle-burst-anim 1.2s ease-out ${p.delay}s forwards`,
-                  } as any}
-                />
-              ))}
-            </div>
-          )}
-
-          {/* Sparkles / confetti effect wrapper */}
-          <div className="flex justify-center mb-6 relative">
-            {!isLowEnergy && (
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
-                className={cn(
-                  "absolute -inset-4 rounded-full border border-dashed",
-                  details.rarity === "Legendary" ? "border-pink-500/20" : details.rarity === "Epic" ? "border-indigo-500/20" : details.rarity === "Rare" ? "border-cyan-500/20" : "border-zinc-500/10"
-                )}
-              />
-            )}
-            
+            {/* Backdrop */}
             <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: [0, 1.2, 1] }}
-              transition={{ delay: 0.1, duration: 0.5 }}
-              className="relative z-10 flex h-20 w-20 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 shadow-inner"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={clearRecentUnlock}
+              className="absolute inset-0 bg-black/70 backdrop-blur-md"
+            />
+     
+            {/* Modal container */}
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 25 } }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              className="relative w-full max-w-md overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 p-6 text-center shadow-2xl"
+              style={
+                !isLowEnergy
+                  ? {
+                      animation: "border-glow-pulsate 3s infinite ease-in-out",
+                      "--glow-color": details.glow.replace("0.25", "0.15").replace("0.35", "0.20"),
+                      "--border-glow-color": details.rarity === "Legendary" ? "rgba(236,72,153,0.4)" : details.rarity === "Epic" ? "rgba(99,102,241,0.3)" : details.rarity === "Rare" ? "rgba(34,211,238,0.3)" : "rgba(63,63,70,0.4)",
+                      "--border-glow-active": details.rarity === "Legendary" ? "rgba(236,72,153,0.7)" : details.rarity === "Epic" ? "rgba(99,102,241,0.6)" : details.rarity === "Rare" ? "rgba(34,211,238,0.6)" : "rgba(63,63,70,0.7)",
+                    } as any
+                  : undefined
+              }
             >
-              <IconComponent className={`h-10 w-10 ${details.color} ${!isLowEnergy && "animate-pulse"}`} />
-              <Sparkles className="absolute -top-2 -right-2 h-5 w-5 text-yellow-400 animate-bounce" />
+              {/* Close button */}
+              <button
+                onClick={clearRecentUnlock}
+                className="absolute top-4 right-4 text-zinc-400 hover:text-white transition-colors"
+              >
+                <X className="h-5 w-5" />
+              </button>
+     
+              {/* Rotating ambient glow */}
+              {!isLowEnergy && (
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none w-72 h-72 rounded-full filter blur-[60px] opacity-35 mix-blend-screen"
+                  style={{
+                    background: `radial-gradient(circle, ${details.glow} 0%, transparent 70%)`
+                  }}
+                />
+              )}
+     
+              {/* Confetti Particles Burst */}
+              {!isLowEnergy && (
+                <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+                  {particles.map((p) => (
+                    <div
+                      key={p.id}
+                      className="absolute rounded-full"
+                      style={{
+                        width: p.size,
+                        height: p.size,
+                        backgroundColor: p.color,
+                        "--p-x": `${p.x}px`,
+                        "--p-y": `${p.y}px`,
+                        animation: `particle-burst-anim 1.2s ease-out ${p.delay}s forwards`,
+                      } as any}
+                    />
+                  ))}
+                </div>
+              )}
+
+              {/* Sparkles / confetti effect wrapper */}
+              <div className="flex justify-center mb-6 relative">
+                {!isLowEnergy && (
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
+                    className={cn(
+                      "absolute -inset-4 rounded-full border border-dashed",
+                      details.rarity === "Legendary" ? "border-pink-500/20" : details.rarity === "Epic" ? "border-indigo-500/20" : details.rarity === "Rare" ? "border-cyan-500/20" : "border-zinc-500/10"
+                    )}
+                  />
+                )}
+                
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: [0, 1.2, 1] }}
+                  transition={{ delay: 0.1, duration: 0.5 }}
+                  className="relative z-10 flex h-20 w-20 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 shadow-inner"
+                >
+                  <IconComponent className={`h-10 w-10 ${details.color} ${!isLowEnergy && "animate-pulse"}`} />
+                  <Sparkles className="absolute -top-2 -right-2 h-5 w-5 text-yellow-400 animate-bounce" />
+                </motion.div>
+              </div>
+     
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="space-y-3"
+              >
+                <span className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wider ${details.badgeStyle}`}>
+                  {details.rarity} Achievement
+                </span>
+     
+                <h2 className="text-2xl font-extrabold tracking-tight text-white">
+                  Achievement Unlocked!
+                </h2>
+                
+                <p className="text-xl font-bold text-cyan-400">
+                  {details.name}
+                </p>
+     
+                <p className="text-sm text-zinc-400 max-w-xs mx-auto">
+                  {details.desc}
+                </p>
+     
+                <div className="pt-4 flex flex-col gap-2 items-center justify-center">
+                  <span className="text-xs text-zinc-500 uppercase tracking-widest">Reward Unlocked</span>
+                  <div className="flex items-center gap-1 bg-cyan-950/40 border border-cyan-500/20 px-3 py-1 rounded-full text-cyan-300 font-mono text-sm font-semibold">
+                    <span>+100 XP</span>
+                    <span className="text-[10px] text-cyan-400/70">Bonus</span>
+                  </div>
+                </div>
+     
+                <button
+                  onClick={clearRecentUnlock}
+                  className="btn-primary mt-6 w-full py-2.5 font-bold uppercase tracking-wider"
+                >
+                  {pendingAchievementsQueue.length > 1 ? "Next Unlock! 🚀" : "Awesome, Let's Go!"}
+                </button>
+              </motion.div>
             </motion.div>
           </div>
- 
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="space-y-3"
-          >
-            <span className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wider ${details.badgeStyle}`}>
-              {details.rarity} Achievement
-            </span>
- 
-            <h2 className="text-2xl font-extrabold tracking-tight text-white">
-              Achievement Unlocked!
-            </h2>
-            
-            <p className="text-xl font-bold text-cyan-400">
-              {details.name}
-            </p>
- 
-            <p className="text-sm text-zinc-400 max-w-xs mx-auto">
-              {details.desc}
-            </p>
- 
-            <div className="pt-4 flex flex-col gap-2 items-center justify-center">
-              <span className="text-xs text-zinc-500 uppercase tracking-widest">Reward Unlocked</span>
-              <div className="flex items-center gap-1 bg-cyan-950/40 border border-cyan-500/20 px-3 py-1 rounded-full text-cyan-300 font-mono text-sm font-semibold">
-                <span>+100 XP</span>
-                <span className="text-[10px] text-cyan-400/70">Bonus</span>
-              </div>
-            </div>
- 
-            <button
-              onClick={clearRecentUnlock}
-              className="btn-primary mt-6 w-full py-2.5 font-bold uppercase tracking-wider"
-            >
-              {pendingAchievementsQueue.length > 1 ? "Next Unlock! 🚀" : "Awesome, Let's Go!"}
-            </button>
-          </motion.div>
-        </motion.div>
-      </div>
-    </AnimatePresence>
+        )}
+      </AnimatePresence>
+    </Portal>
   );
 }

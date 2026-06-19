@@ -12,6 +12,7 @@ import { useDataStore } from "@/store/data-store";
 import { useProgressStore } from "@/lib/progress-store";
 import type { TopicLevel } from "@/types";
 import { Search, X, Layers, BarChart3, ChevronDown, ChevronUp, Filter } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const LEVEL_LABELS: Record<TopicLevel, { label: string; desc: string; color: string }> = {
   1: { label: "Level 1 — Foundations", desc: "Easy, core concepts", color: "border-emerald-500/30 text-emerald-300" },
@@ -226,29 +227,37 @@ export default function TopicPage({ params }: { params: Promise<{ id: string }> 
           </div>
 
           {/* Difficulty */}
-          <select
+          <Select
             value={diffFilter}
-            onChange={(e) => setDiffFilter(e.target.value as any)}
-            className="field-input"
+            onValueChange={(val) => setDiffFilter(val as any)}
           >
-            <option value="all">All Difficulties</option>
-            <option value="Easy">Easy</option>
-            <option value="Medium">Medium</option>
-            <option value="Hard">Hard</option>
-          </select>
+            <SelectTrigger className="sm:w-[180px] w-full">
+              <SelectValue placeholder="All Difficulties" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="all">All Difficulties</SelectItem>
+              <SelectItem value="Easy">Easy</SelectItem>
+              <SelectItem value="Medium">Medium</SelectItem>
+              <SelectItem value="Hard">Hard</SelectItem>
+            </SelectContent>
+          </Select>
 
           {/* Pattern */}
           {patterns.length > 0 && (
-            <select
+            <Select
               value={patternFilter}
-              onChange={(e) => setPatternFilter(e.target.value)}
-              className="field-input"
+              onValueChange={(val) => setPatternFilter(val)}
             >
-              <option value="all">All Patterns</option>
-              {patterns.map((p) => (
-                <option key={p} value={p}>{p}</option>
-              ))}
-            </select>
+              <SelectTrigger className="sm:w-[180px] w-full">
+                <SelectValue placeholder="All Patterns" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Patterns</SelectItem>
+                {patterns.map((p) => (
+                  <SelectItem key={p} value={p}>{p}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
           )}
 
           {/* Group toggle */}

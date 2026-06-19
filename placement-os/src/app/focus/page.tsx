@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { useProgressStore } from "@/lib/progress-store";
 import { useDataStore } from "@/store/data-store";
 import { motion, AnimatePresence } from "framer-motion";
@@ -21,6 +22,7 @@ import {
 import { GlassCard } from "@/components/ui/glass-card";
 
 export default function FocusPage() {
+  const router = useRouter();
   const {
     focusSession,
     startFocusSession,
@@ -73,7 +75,7 @@ export default function FocusPage() {
   const handleExit = () => {
     if (confirm("Exit focus mode? Unfinished time will be discarded.")) {
       resetFocusSession();
-      window.location.href = "/dashboard";
+      router.push("/dashboard");
     }
   };
 
@@ -129,7 +131,7 @@ export default function FocusPage() {
                     setTaskText(e.target.value);
                     if (e.target.value) setSelectedQuestionId(null);
                   }}
-                  className="w-full rounded-xl border border-zinc-850 bg-zinc-900/50 px-4 py-3 text-sm text-white placeholder-zinc-500 focus:border-cyan-500 focus:outline-none"
+                  className="field-input w-full px-4 py-3 text-sm"
                 />
               </div>
 
@@ -149,7 +151,7 @@ export default function FocusPage() {
                       placeholder="Search questions by title or topic..."
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full rounded-lg border border-zinc-800 bg-zinc-900/50 px-3 py-1.5 text-xs text-white placeholder-zinc-500 focus:border-cyan-500 focus:outline-none mb-1.5"
+                      className="field-input w-full px-3 py-1.5 text-xs mb-1.5"
                     />
                   </div>
                   <div className="h-44 overflow-y-auto rounded-xl border border-zinc-850 bg-zinc-900/20 p-2 space-y-1">

@@ -7,7 +7,7 @@ import { usePlacementStore } from "@/lib/store";
 import { levelFromXp, xpProgressInLevel, xpToNextLevel } from "@/lib/xp";
 
 export default function XPPage() {
-  const { xp } = usePlacementStore();
+  const xp = usePlacementStore((s) => s.xp);
   const level = levelFromXp(xp);
   const progress = xpProgressInLevel(xp);
   const toNext = xpToNextLevel(xp);

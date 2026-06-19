@@ -123,7 +123,7 @@ export default function LoginPage() {
                     autoComplete="username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="field-input w-full pl-9"
+                    className="field-input w-full pl-9 pr-4"
                     placeholder="your_username"
                   />
                 </div>

@@ -25,6 +25,7 @@ import {
   AlertCircle,
   LogOut
 } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function SettingsPage() {
   const { theme, toggle } = useTheme();
@@ -187,7 +188,7 @@ export default function SettingsPage() {
                     value={apiKeyInput}
                     onChange={(e) => setApiKeyInput(e.target.value)}
                     placeholder="AIzaSy..."
-                    className="w-full pl-9 pr-10 py-2.5 text-xs text-white bg-black/40 border border-white/10 rounded-xl focus:border-cyan-400 focus:outline-none transition-all"
+                    className="field-input w-full pl-9 pr-10 text-xs"
                   />
                   <button
                     type="button"
@@ -323,15 +324,19 @@ export default function SettingsPage() {
                 <label className="block text-xs font-semibold text-zinc-300">Hiring Benchmark Strategy</label>
                 <p className="text-[11px] text-zinc-500 mt-0.5 mb-2">Adjusts platform recommendations based on typical hiring patterns.</p>
                 
-                <select
+                <Select
                   value={careerPath}
-                  onChange={(e) => handleCareerPathChange(e.target.value)}
-                  className="w-full text-xs text-white bg-black/40 border border-white/10 rounded-xl px-3 py-2.5 focus:border-cyan-400 focus:outline-none cursor-pointer"
+                  onValueChange={(val) => handleCareerPathChange(val)}
                 >
-                  <option value="product">Product / Frontend Engineer Benchmark</option>
-                  <option value="fullstack">Full-Stack / Core Service Benchmark</option>
-                  <option value="startup">Startup Builder / SaaS Architect Benchmark</option>
-                </select>
+                  <SelectTrigger className="w-full">
+                    <SelectValue placeholder="Select Strategy Benchmark" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="product">Product / Frontend Engineer Benchmark</SelectItem>
+                    <SelectItem value="fullstack">Full-Stack / Core Service Benchmark</SelectItem>
+                    <SelectItem value="startup">Startup Builder / SaaS Architect Benchmark</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
 
               {/* Explanatory text */}

@@ -10,7 +10,7 @@
  */
 
 import { supabase, hasSupabaseConfig } from "./supabase";
-import { hashPassword, verifyPassword, generateSessionToken } from "./auth-utils";
+import { generateSessionToken } from "./auth-utils";
 import type { SessionUser } from "./session-store";
 
 export interface AuthResult {
@@ -67,92 +67,41 @@ export async function registerUser(
   }
 
   try {
-    // ── Check if username is taken ─────────────────────────────────────────
-    const { data: existing, error: checkError } = await supabase
-      .from("users")
-      .select("id")
-      .ilike("username", trimmedUsername)
-      .maybeSingle();
-
-    if (checkError) {
-      const msg = extractError(checkError);
-      console.error("[registerUser] Username check failed:", msg, checkError);
-      // If the table doesn't exist yet, give a specific helpful message
-      if (checkError.code === "42P01" || msg.includes("does not exist")) {
-        return {
-          user: null,
-          error:
-            "Database tables not set up yet. Please run the SQL schema in your Supabase SQL Editor first.",
-        };
-      }
-      return { user: null, error: `Database check failed: ${msg}` };
-    }
-
-    if (existing) {
-      return { user: null, error: "Username is already taken. Please choose another." };
-    }
-
-    // ── Hash password ──────────────────────────────────────────────────────
-    const password_hash = await hashPassword(password);
     const token = generateSessionToken();
 
-    // ── Insert new user ────────────────────────────────────────────────────
-    const { data, error: insertError } = await supabase
-      .from("users")
-      .insert({
-        username: trimmedUsername,
-        password_hash,
-        full_name: trimmedName,
-        semester,
-        xp: 0,
-        level: 1,
-        streak: 0,
-        energy_mode: "normal",
-        shortcuts_enabled: true,
-      })
-      .select("id, username, full_name, semester")
-      .single();
+    // Call database secure registration RPC
+    const { data, error: rpcError } = await supabase.rpc("register_user", {
+      p_username: trimmedUsername,
+      p_password: password,
+      p_full_name: trimmedName,
+      p_semester: semester,
+    });
 
-    if (insertError) {
-      const msg = extractError(insertError);
-      console.error("[registerUser] Insert failed:", msg, insertError);
-
-      // Handle specific error codes
-      if (insertError.code === "23505") {
-        return { user: null, error: "Username is already registered." };
-      }
-      if (insertError.code === "42501" || msg.toLowerCase().includes("permission")) {
-        return {
-          user: null,
-          error:
-            "Database permission error. Please re-run the SQL schema which includes the required GRANT statements.",
-        };
-      }
-      if (insertError.code === "42P01" || msg.includes("does not exist")) {
-        return {
-          user: null,
-          error:
-            "The users table does not exist. Please run the SQL schema in your Supabase SQL Editor.",
-        };
-      }
+    if (rpcError) {
+      const msg = extractError(rpcError);
+      console.error("[registerUser] RPC failed:", msg, rpcError);
       return { user: null, error: `Registration failed: ${msg}` };
     }
 
-    if (!data) {
-      return { user: null, error: "Registration failed: no data returned from database." };
+    if (data?.error) {
+      return { user: null, error: data.error };
+    }
+
+    const userData = data?.user;
+    if (!userData) {
+      return { user: null, error: "Registration failed: no user data returned." };
     }
 
     const sessionUser: SessionUser = {
-      id: data.id,
-      username: data.username,
-      name: data.full_name,
+      id: userData.id,
+      username: userData.username,
+      name: userData.name,
       email: null,
-      semester: data.semester,
+      semester: userData.semester,
       token,
       createdAt: new Date().toISOString(),
     };
 
-    console.log("[registerUser] ✅ User registered successfully:", data.username);
     return { user: sessionUser, error: null };
   } catch (err: any) {
     const msg = extractError(err);
@@ -182,50 +131,39 @@ export async function loginUser(
   }
 
   try {
-    // ── Fetch user by username (case-insensitive) ──────────────────────────
-    const { data, error: fetchError } = await supabase
-      .from("users")
-      .select("id, username, full_name, semester, password_hash")
-      .ilike("username", trimmedUsername)
-      .maybeSingle();
+    const token = generateSessionToken();
 
-    if (fetchError) {
-      const msg = extractError(fetchError);
-      console.error("[loginUser] Fetch failed:", msg, fetchError);
+    // Call database secure login RPC
+    const { data, error: rpcError } = await supabase.rpc("login_user", {
+      p_username: trimmedUsername,
+      p_password: password,
+    });
 
-      if (fetchError.code === "42P01" || msg.includes("does not exist")) {
-        return {
-          user: null,
-          error:
-            "Database tables not set up. Please run the SQL schema in your Supabase SQL Editor.",
-        };
-      }
+    if (rpcError) {
+      const msg = extractError(rpcError);
+      console.error("[loginUser] RPC failed:", msg, rpcError);
       return { user: null, error: `Login failed: ${msg}` };
     }
 
-    if (!data) {
-      return { user: null, error: "No account found with that username." };
+    if (data?.error) {
+      return { user: null, error: data.error };
     }
 
-    // ── Verify password ────────────────────────────────────────────────────
-    const isValid = await verifyPassword(password, data.password_hash);
-    if (!isValid) {
-      return { user: null, error: "Incorrect password. Please try again." };
+    const userData = data?.user;
+    if (!userData) {
+      return { user: null, error: "Login failed: no user data returned." };
     }
-
-    const token = generateSessionToken();
 
     const sessionUser: SessionUser = {
-      id: data.id,
-      username: data.username,
-      name: data.full_name,
+      id: userData.id,
+      username: userData.username,
+      name: userData.name,
       email: null,
-      semester: data.semester,
+      semester: userData.semester,
       token,
       createdAt: new Date().toISOString(),
     };
 
-    console.log("[loginUser] ✅ User logged in:", data.username);
     return { user: sessionUser, error: null };
   } catch (err: any) {
     const msg = extractError(err);

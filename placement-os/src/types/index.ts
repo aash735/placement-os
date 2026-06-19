@@ -171,3 +171,5 @@ export const DB_SCHEMA = {
   company_preparation: ["user_id", "company_slug", "status", "notes"],
 } as const;
 
+export * from "./mcq";
+

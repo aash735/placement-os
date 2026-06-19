@@ -256,7 +256,7 @@ export default function CompanyDetailPage({ params }: { params: Promise<{ slug: 
                   placeholder="Search materials..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-white/2 border border-white/5 rounded-xl pl-9 pr-4 py-2 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-cyan-400 transition-all"
+                  className="field-input w-full pl-9 pr-4 text-xs"
                 />
               </div>
             </div>

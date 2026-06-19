@@ -17,6 +17,7 @@ import {
 import { useAuth } from "@/components/providers/auth-provider";
 import { hasSupabaseConfig } from "@/lib/supabase";
 import { GlassCard } from "@/components/ui/glass-card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function SignupPage() {
   const router = useRouter();
@@ -108,7 +109,7 @@ export default function SignupPage() {
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="field-input w-full pl-9"
+                    className="field-input w-full pl-9 pr-4"
                     placeholder="John Doe"
                   />
                 </div>
@@ -129,7 +130,7 @@ export default function SignupPage() {
                     autoComplete="username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value.toLowerCase())}
-                    className="field-input w-full pl-9"
+                    className="field-input w-full pl-9 pr-4"
                     placeholder="john_doe"
                   />
                 </div>
@@ -175,16 +176,20 @@ export default function SignupPage() {
                   Semester
                 </span>
                 <div className="relative mt-1.5">
-                  <GraduationCap className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4" style={{ color: "var(--text-faint)" }} />
-                  <select
+                  <GraduationCap className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 z-10" style={{ color: "var(--text-faint)" }} />
+                  <Select
                     value={semester}
-                    onChange={(e) => setSemester(e.target.value)}
-                    className="field-input w-full pl-9 pr-4 appearance-none"
+                    onValueChange={(val) => setSemester(val)}
                   >
-                    <option value="7th Semester — Placement Season">7th Semester — Placement Season</option>
-                    <option value="6th Semester — Building Foundation">6th Semester — Building Foundation</option>
-                    <option value="5th Semester or lower — Early Track">5th Semester or lower — Early Track</option>
-                  </select>
+                    <SelectTrigger className="w-full pl-9">
+                      <SelectValue placeholder="Select Semester" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="7th Semester — Placement Season">7th Semester — Placement Season</SelectItem>
+                      <SelectItem value="6th Semester — Building Foundation">6th Semester — Building Foundation</SelectItem>
+                      <SelectItem value="5th Semester or lower — Early Track">5th Semester or lower — Early Track</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
               </label>
 

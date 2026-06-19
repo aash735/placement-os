@@ -21,6 +21,8 @@ import {
   TrendingUp,
   AlertCircle
 } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function MockTestPage() {
   const questions = useDataStore((s) => s.questions);
@@ -483,16 +485,17 @@ export default function MockTestPage() {
                       <label className="block text-xs font-semibold uppercase text-zinc-400 tracking-wider mb-2">
                         Assessment Type
                       </label>
-                      <select 
-                        value={testType} 
-                        onChange={(e) => setTestType(e.target.value as any)}
-                        className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm text-white"
-                      >
-                        <option value="topic">Topic Assessment (Targeted)</option>
-                        <option value="company">Company Simulation (TCS, Amazon, etc.)</option>
-                        <option value="mixed">Mixed Revision (Solves & Revisions)</option>
-                        <option value="adaptive">Adaptive Challenge (Easy to Hard)</option>
-                      </select>
+                      <Select value={testType} onValueChange={(val) => setTestType(val as any)}>
+                        <SelectTrigger className="w-full">
+                          <SelectValue placeholder="Select Assessment Type" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="topic">Topic Assessment (Targeted)</SelectItem>
+                          <SelectItem value="company">Company Simulation (TCS, Amazon, etc.)</SelectItem>
+                          <SelectItem value="mixed">Mixed Revision (Solves & Revisions)</SelectItem>
+                          <SelectItem value="adaptive">Adaptive Challenge (Easy to Hard)</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     {testType === "topic" && (
@@ -500,15 +503,16 @@ export default function MockTestPage() {
                         <label className="block text-xs font-semibold uppercase text-zinc-400 tracking-wider mb-2">
                           Select Topic
                         </label>
-                        <select 
-                          value={selectedTopic} 
-                          onChange={(e) => setSelectedTopic(e.target.value)}
-                          className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm text-white"
-                        >
-                          {topics.map((t) => (
-                            <option key={t.id} value={t.id}>{t.name}</option>
-                          ))}
-                        </select>
+                        <Select value={selectedTopic} onValueChange={(val) => setSelectedTopic(val)}>
+                          <SelectTrigger className="w-full">
+                            <SelectValue placeholder="Select Topic" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {topics.map((t) => (
+                              <SelectItem key={t.id} value={t.id}>{t.name}</SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
                       </div>
                     )}
 
@@ -517,15 +521,16 @@ export default function MockTestPage() {
                         <label className="block text-xs font-semibold uppercase text-zinc-400 tracking-wider mb-2">
                           Target Company
                         </label>
-                        <select 
-                          value={selectedCompany} 
-                          onChange={(e) => setSelectedCompany(e.target.value)}
-                          className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm text-white"
-                        >
-                          {allCompanies.map((c) => (
-                            <option key={c} value={c}>{c}</option>
-                          ))}
-                        </select>
+                        <Select value={selectedCompany} onValueChange={(val) => setSelectedCompany(val)}>
+                          <SelectTrigger className="w-full">
+                            <SelectValue placeholder="Select Company" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            {allCompanies.map((c) => (
+                              <SelectItem key={c} value={c}>{c}</SelectItem>
+                            ))}
+                          </SelectContent>
+                        </Select>
                       </div>
                     )}
 
@@ -533,34 +538,36 @@ export default function MockTestPage() {
                       <label className="block text-xs font-semibold uppercase text-zinc-400 tracking-wider mb-2">
                         Questions Count
                       </label>
-                      <select 
-                        value={customCount} 
-                        onChange={(e) => setCustomCount(Number(e.target.value))}
-                        className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm text-white"
-                      >
-                        <option value={1}>1 Question Challenge</option>
-                        <option value={3}>3 Questions Assessment</option>
-                        <option value={5}>5 Questions Assessment</option>
-                        <option value={8}>8 Questions OA Marathon</option>
-                      </select>
+                      <Select value={String(customCount)} onValueChange={(val) => setCustomCount(Number(val))}>
+                        <SelectTrigger className="w-full">
+                          <SelectValue placeholder="Select Count" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="1">1 Question Challenge</SelectItem>
+                          <SelectItem value="3">3 Questions Assessment</SelectItem>
+                          <SelectItem value="5">5 Questions Assessment</SelectItem>
+                          <SelectItem value="8">8 Questions OA Marathon</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
 
                     <div>
                       <label className="block text-xs font-semibold uppercase text-zinc-400 tracking-wider mb-2">
                         Assessment Duration
                       </label>
-                      <select 
-                        value={customDuration} 
-                        onChange={(e) => setCustomDuration(Number(e.target.value))}
-                        className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-sm text-white"
-                      >
-                        <option value={15}>15 Minutes (Sprint)</option>
-                        <option value={30}>30 Minutes</option>
-                        <option value={45}>45 Minutes (Standard)</option>
-                        <option value={60}>60 Minutes (Deep Session)</option>
-                        <option value={90}>90 Minutes (Standard OA)</option>
-                        <option value={120}>120 Minutes (Full Marathon)</option>
-                      </select>
+                      <Select value={String(customDuration)} onValueChange={(val) => setCustomDuration(Number(val))}>
+                        <SelectTrigger className="w-full">
+                          <SelectValue placeholder="Select Duration" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="15">15 Minutes (Sprint)</SelectItem>
+                          <SelectItem value="30">30 Minutes</SelectItem>
+                          <SelectItem value="45">45 Minutes (Standard)</SelectItem>
+                          <SelectItem value="60">60 Minutes (Deep Session)</SelectItem>
+                          <SelectItem value="90">90 Minutes (Standard OA)</SelectItem>
+                          <SelectItem value="120">120 Minutes (Full Marathon)</SelectItem>
+                        </SelectContent>
+                      </Select>
                     </div>
                   </div>
 

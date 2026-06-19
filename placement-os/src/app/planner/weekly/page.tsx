@@ -210,7 +210,7 @@ export default function WeeklyReviewPage() {
                       required
                       value={newWeekNum}
                       onChange={(e) => setNewWeekNum(parseInt(e.target.value) || 1)}
-                      className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                      className="field-input w-full px-3 py-2"
                     />
                   </div>
                   <div className="space-y-1.5 col-span-2">
@@ -221,7 +221,7 @@ export default function WeeklyReviewPage() {
                       value={newWeekHours}
                       onChange={(e) => setNewWeekHours(e.target.value)}
                       placeholder="e.g., 12-15 hrs/week"
-                      className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                      className="field-input w-full px-3 py-2"
                     />
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export default function WeeklyReviewPage() {
                     placeholder="e.g., Dynamic Programming & Graph BFS/DFS"
                     value={newWeekFocus}
                     onChange={(e) => setNewWeekFocus(e.target.value)}
-                    className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                    className="field-input w-full px-3 py-2"
                   />
                 </div>
 
@@ -269,7 +269,7 @@ export default function WeeklyReviewPage() {
                           type="text"
                           value={editFocus}
                           onChange={(e) => setEditFocus(e.target.value)}
-                          className="flex-1 rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-1.5 text-sm text-white focus:outline-none focus:border-cyan-500 font-bold"
+                          className="field-input flex-1 px-3 py-1.5 text-sm font-bold"
                           placeholder="Week Focus"
                         />
                       </div>
@@ -279,7 +279,7 @@ export default function WeeklyReviewPage() {
                           type="text"
                           value={editHours}
                           onChange={(e) => setEditHours(e.target.value)}
-                          className="rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-1 text-xs text-white focus:outline-none focus:border-cyan-500"
+                          className="field-input px-3 py-1 text-xs"
                           placeholder="Recommended Hours"
                         />
                         <button
@@ -335,7 +335,7 @@ export default function WeeklyReviewPage() {
                                 type="text"
                                 value={editTaskVal}
                                 onChange={(e) => setEditTaskVal(e.target.value)}
-                                className="flex-1 rounded border border-zinc-700 bg-zinc-900 px-2 py-0.5 text-xs text-white focus:outline-none focus:border-cyan-500"
+                                className="field-input flex-1 px-2 py-0.5 text-xs"
                                 autoFocus
                                 onKeyDown={(e) => e.key === "Enter" && saveTaskEdit()}
                               />
@@ -390,7 +390,7 @@ export default function WeeklyReviewPage() {
                       value={newTaskTexts[w.week] || ""}
                       onChange={(e) => setNewTaskTexts((prev) => ({ ...prev, [w.week]: e.target.value }))}
                       onKeyDown={(e) => e.key === "Enter" && handleAddTask(w.week)}
-                      className="flex-1 rounded-lg border border-zinc-850 bg-zinc-900 px-3 py-1.5 text-xs text-white placeholder-zinc-650 focus:border-cyan-500 focus:outline-none"
+                      className="field-input flex-1 px-3 py-1.5 text-xs"
                     />
                     <button
                       onClick={() => handleAddTask(w.week)}

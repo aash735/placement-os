@@ -14,6 +14,8 @@ import type {
   ProjectTask,
   CsSubjectState,
   DailyLog,
+  MCQAttempt,
+  MCQSession,
 } from "@/types";
 
 // ─── Error Extraction Helper ──────────────────────────────────────────────────
@@ -93,6 +95,13 @@ export async function fetchUserData(userId: string) {
   if (isGuest(userId)) return null;
 
   try {
+    const safeMcqAttemptsPromise = supabase.from("mcq_attempts").select("*").eq("user_id", userId)
+      .then(res => res.error ? { data: [] } : res);
+    const safeMcqBookmarksPromise = supabase.from("mcq_bookmarks").select("question_id").eq("user_id", userId)
+      .then(res => res.error ? { data: [] } : res);
+    const safeMcqSessionsPromise = supabase.from("mcq_sessions").select("*").eq("user_id", userId)
+      .then(res => res.error ? { data: [] } : res);
+
     const [
       profileRes,
       progressRes,
@@ -109,6 +118,9 @@ export async function fetchUserData(userId: string) {
       mockInterviewsRes,
       dailyPlannerRes,
       weeklyPlannerRes,
+      mcqAttemptsRes,
+      mcqBookmarksRes,
+      mcqSessionsRes,
     ] = await Promise.all([
       supabase.from("users").select("*").eq("id", userId).maybeSingle(),
       supabase.from("user_progress").select("*").eq("user_id", userId),
@@ -125,6 +137,9 @@ export async function fetchUserData(userId: string) {
       supabase.from("mock_interviews").select("*").eq("user_id", userId),
       supabase.from("daily_planner").select("*").eq("user_id", userId),
       supabase.from("weekly_planner").select("*").eq("user_id", userId),
+      safeMcqAttemptsPromise,
+      safeMcqBookmarksPromise,
+      safeMcqSessionsPromise,
     ]);
 
     // Profile variables
@@ -237,6 +252,32 @@ export async function fetchUserData(userId: string) {
       days: w.days || [],
     })).sort((a, b) => a.week - b.week) || [];
 
+    const mcqAttempts: MCQAttempt[] = mcqAttemptsRes.data?.map((row: any) => ({
+      id: row.id,
+      questionId: row.question_id,
+      selectedOption: row.selected_option,
+      isCorrect: row.is_correct,
+      timeSpentSec: row.time_spent_sec,
+      attemptType: row.attempt_type,
+      sessionId: row.session_id || undefined,
+      completedAt: row.completed_at,
+    })) || [];
+
+    const mcqBookmarks = mcqBookmarksRes.data?.map((row: any) => row.question_id) || [];
+
+    const mcqSessions: MCQSession[] = mcqSessionsRes.data?.map((row: any) => ({
+      id: row.id,
+      type: row.type,
+      title: row.title,
+      companyName: row.company_name || undefined,
+      questionIds: row.question_ids || [],
+      answers: row.answers || {},
+      correctCount: row.correct_count || 0,
+      totalQuestions: row.total_questions || 0,
+      timeSpentSec: row.time_spent_sec || 0,
+      completedAt: row.completed_at,
+    })) || [];
+
     return {
       xp: profile.xp || 0,
       level: profile.level || 1,
@@ -259,6 +300,9 @@ export async function fetchUserData(userId: string) {
       interviewHistory,
       dailyPlannerBlocks,
       customWeeklyPlan,
+      mcqAttempts,
+      mcqBookmarks,
+      mcqSessions,
       resourceProgress: {},
     };
   } catch (error) {
@@ -604,4 +648,69 @@ export async function deleteWeeklyWeek(userId: string, week: number) {
     .eq("user_id", userId)
     .eq("week", week);
   if (error) console.error("Error deleting weekly week:", extractError(error));
+}
+
+/** Save MCQ Attempt */
+export async function saveMcqAttempt(userId: string, a: MCQAttempt) {
+  if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
+  const { error } = await supabase.from("mcq_attempts").upsert({
+    id: a.id,
+    user_id: userId,
+    question_id: a.questionId,
+    selected_option: a.selectedOption,
+    is_correct: a.isCorrect,
+    time_spent_sec: a.timeSpentSec,
+    attempt_type: a.attemptType,
+    session_id: a.sessionId || null,
+    completed_at: a.completedAt,
+  }, {
+    onConflict: "user_id,id",
+  });
+  if (error) console.error("Error saving MCQ attempt:", extractError(error));
+}
+
+/** Save MCQ Bookmark */
+export async function saveMcqBookmark(userId: string, questionId: string, bookmarked: boolean) {
+  if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
+  
+  if (bookmarked) {
+    const { error } = await supabase.from("mcq_bookmarks").upsert({
+      user_id: userId,
+      question_id: questionId,
+    }, {
+      onConflict: "user_id,question_id",
+    });
+    if (error) console.error("Error saving MCQ bookmark:", extractError(error));
+  } else {
+    const { error } = await supabase
+      .from("mcq_bookmarks")
+      .delete()
+      .eq("user_id", userId)
+      .eq("question_id", questionId);
+    if (error) console.error("Error deleting MCQ bookmark:", extractError(error));
+  }
+}
+
+/** Save MCQ Session */
+export async function saveMcqSession(userId: string, s: MCQSession) {
+  if (!hasSupabaseConfig) return;
+  if (isGuest(userId)) return;
+  const { error } = await supabase.from("mcq_sessions").upsert({
+    id: s.id,
+    user_id: userId,
+    type: s.type,
+    title: s.title,
+    company_name: s.companyName || null,
+    question_ids: s.questionIds,
+    answers: s.answers,
+    correct_count: s.correctCount,
+    total_questions: s.totalQuestions,
+    time_spent_sec: s.timeSpentSec,
+    completed_at: s.completedAt,
+  }, {
+    onConflict: "user_id,id",
+  });
+  if (error) console.error("Error saving MCQ session:", extractError(error));
 }

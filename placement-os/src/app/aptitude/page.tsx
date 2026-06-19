@@ -20,6 +20,7 @@ import {
   TrendingUp
 } from "lucide-react";
 import Link from "next/link";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const CATEGORY_MAP = {
   quant: "Quantitative Aptitude",
@@ -234,49 +235,61 @@ export default function AptitudePage() {
                   <label className="block text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
                     Questions Count
                   </label>
-                  <select 
-                    value={questionCount} 
-                    onChange={(e) => setQuestionCount(Number(e.target.value))}
-                    className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white text-sm focus:border-cyan-400 focus:outline-none"
+                  <Select 
+                    value={String(questionCount)} 
+                    onValueChange={(val) => setQuestionCount(Number(val))}
                   >
-                    <option value={5}>5 Questions</option>
-                    <option value={10}>10 Questions</option>
-                    <option value={15}>15 Questions</option>
-                    <option value={20}>20 Questions</option>
-                    <option value={30}>30 Questions</option>
-                  </select>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="5 Questions" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="5">5 Questions</SelectItem>
+                      <SelectItem value="10">10 Questions</SelectItem>
+                      <SelectItem value="15">15 Questions</SelectItem>
+                      <SelectItem value="20">20 Questions</SelectItem>
+                      <SelectItem value="30">30 Questions</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 <div>
                   <label className="block text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
                     Time Limit (Mins)
                   </label>
-                  <select 
-                    value={timeLimit} 
-                    onChange={(e) => setTimeLimit(Number(e.target.value))}
-                    className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white text-sm focus:border-cyan-400 focus:outline-none"
+                  <Select 
+                    value={String(timeLimit)} 
+                    onValueChange={(val) => setTimeLimit(Number(val))}
                   >
-                    <option value={5}>5 Minutes</option>
-                    <option value={10}>10 Minutes</option>
-                    <option value={15}>15 Minutes</option>
-                    <option value={20}>20 Minutes</option>
-                    <option value={30}>30 Minutes</option>
-                    <option value={45}>45 Minutes</option>
-                  </select>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="5 Minutes" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="5">5 Minutes</SelectItem>
+                      <SelectItem value="10">10 Minutes</SelectItem>
+                      <SelectItem value="15">15 Minutes</SelectItem>
+                      <SelectItem value="20">20 Minutes</SelectItem>
+                      <SelectItem value="30">30 Minutes</SelectItem>
+                      <SelectItem value="45">45 Minutes</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
 
                 <div>
                   <label className="block text-xs font-semibold text-zinc-400 uppercase tracking-wider mb-2">
                     Marking Scheme
                   </label>
-                  <select 
+                  <Select 
                     value={negMarking ? "neg" : "none"} 
-                    onChange={(e) => setNegMarking(e.target.value === "neg")}
-                    className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white text-sm focus:border-cyan-400 focus:outline-none"
+                    onValueChange={(val) => setNegMarking(val === "neg")}
                   >
-                    <option value="neg">+2.0 / -0.5 (Standard)</option>
-                    <option value="none">+1.0 / 0.0 (No penalty)</option>
-                  </select>
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder="Marking Scheme" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="neg">+2.0 / -0.5 (Standard)</SelectItem>
+                      <SelectItem value="none">+1.0 / 0.0 (No penalty)</SelectItem>
+                    </SelectContent>
+                  </Select>
                 </div>
               </div>
 

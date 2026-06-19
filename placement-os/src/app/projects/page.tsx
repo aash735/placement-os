@@ -128,7 +128,7 @@ export default function ProjectsPage() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="e.g. HireLens ATS Analyzer"
-                    className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-white focus:border-cyan-400 focus:outline-none"
+                    className="field-input w-full px-3 py-2"
                   />
                 </div>
 
@@ -140,7 +140,7 @@ export default function ProjectsPage() {
                     value={stack}
                     onChange={(e) => setStack(e.target.value)}
                     placeholder="e.g. Next.js, Python, Tailwind"
-                    className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-white focus:border-cyan-400 focus:outline-none"
+                    className="field-input w-full px-3 py-2"
                   />
                 </div>
 
@@ -151,7 +151,7 @@ export default function ProjectsPage() {
                     value={desc}
                     onChange={(e) => setDesc(e.target.value)}
                     placeholder="Describe specific features or goals for this milestone..."
-                    className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-white focus:border-cyan-400 focus:outline-none resize-none"
+                    className="field-input w-full px-3 py-2 resize-none"
                   />
                 </div>
 
@@ -174,7 +174,7 @@ export default function ProjectsPage() {
                       value={tagInput}
                       onChange={(e) => setTagInput(e.target.value)}
                       placeholder="e.g. Frontend, API"
-                      className="w-full rounded-lg border border-white/10 bg-black/40 px-3 py-2 text-white focus:border-cyan-400 focus:outline-none"
+                      className="field-input w-full px-3 py-2"
                     />
                   </div>
                 </div>

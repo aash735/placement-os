@@ -22,9 +22,13 @@ import type {
   AptitudeAttempt,
   ProjectTask,
   CsSubjectState,
+  MCQAttempt,
+  MCQSession,
+  MCQQuestion,
 } from "@/types";
 import { useDataStore } from "@/store/data-store";
 import * as db from "./supabase-db";
+import mcqQuestions from "@/data/mcq-questions.json";
 
 // Re-export xp helpers
 export { levelFromXp } from "@/lib/xp";
@@ -67,6 +71,7 @@ interface ProgressState {
     task: string;
     questionId: string | null;
     isRunning: boolean;
+    lastTickTime?: number;
   };
   unlockedAchievements: string[];
   recentUnlock: string | null;
@@ -184,6 +189,15 @@ interface ProgressState {
   // Supabase Hydration and Management
   hydrateFromDb: (userId: string) => Promise<void>;
   clearProgress: () => void;
+  validateStreak: () => void;
+
+  // MCQ Arena State & Actions
+  mcqAttempts: MCQAttempt[];
+  mcqBookmarks: string[];
+  mcqSessions: MCQSession[];
+  addMcqAttempt: (attempt: Omit<MCQAttempt, "id" | "completedAt">) => void;
+  toggleMcqBookmark: (questionId: string) => void;
+  completeMcqSession: (session: MCQSession) => void;
 }
 
 function today() {
@@ -226,6 +240,9 @@ export const useProgressStore = create<ProgressState>()(
       companyTargets: {},
       bookmarks: [],
       resourceProgress: {},
+      mcqAttempts: [],
+      mcqBookmarks: [],
+      mcqSessions: [],
 
       // New default states
       aptitudeAttempts: [],
@@ -329,11 +346,15 @@ export const useProgressStore = create<ProgressState>()(
             ],
             customWeeklyPlan: data.customWeeklyPlan || [],
             weeklyPlanInitialized: (data.customWeeklyPlan && data.customWeeklyPlan.length > 0) ? true : get().weeklyPlanInitialized,
+            mcqAttempts: data.mcqAttempts || [],
+            mcqBookmarks: data.mcqBookmarks || [],
+            mcqSessions: data.mcqSessions || [],
           });
           get().refreshScores();
         } else {
           set({ userId });
         }
+        get().validateStreak();
       },
 
       clearProgress: () => {
@@ -404,8 +425,33 @@ export const useProgressStore = create<ProgressState>()(
           ],
           customWeeklyPlan: [],
           weeklyPlanInitialized: false,
+          mcqAttempts: [],
+          mcqBookmarks: [],
+          mcqSessions: [],
         });
         get().refreshScores();
+      },
+
+      validateStreak: () => {
+        const state = get();
+        const { lastActiveDate, streak, userId } = state;
+        if (!lastActiveDate) return;
+        const d = today();
+        if (lastActiveDate === d) return;
+        const yesterday = format(new Date(Date.now() - 86400000), "yyyy-MM-dd");
+        if (lastActiveDate !== yesterday) {
+          set({ streak: 0 });
+          if (userId && !db.isGuest(userId)) {
+            db.saveUserProfile(userId, {
+              xp: state.xp,
+              level: state.level,
+              streak: 0,
+              lastActiveDate,
+              energyMode: state.energyMode,
+              shortcutsEnabled: state.shortcutsEnabled,
+            });
+          }
+        }
       },
 
       refreshScores: () => {
@@ -439,9 +485,29 @@ export const useProgressStore = create<ProgressState>()(
         });
         const csPct = Math.min(100, Math.round((totalChecked / 20) * 100)); // 20 total topics in our syllabus
 
+        // 5. MCQ Performance (20%)
+        let mcqPct = 0;
+        const mcqAttempts = get().mcqAttempts || [];
+        if (mcqAttempts.length > 0) {
+          const totalAttempts = mcqAttempts.length;
+          const correctAttempts = mcqAttempts.filter((a) => a.isCorrect).length;
+          const accuracy = totalAttempts > 0 ? (correctAttempts / totalAttempts) : 0;
+          const volumeFactor = Math.min(1.0, totalAttempts / 50); // cap at 50 attempts for volume max
+          mcqPct = Math.round((accuracy * 0.6 + volumeFactor * 0.4) * 100);
+        }
+
+        // 6. Mock Interview Scores (15%)
+        let interviewPct = 0;
+        const interviewHistory = get().interviewHistory || [];
+        if (interviewHistory.length > 0) {
+          const totalScore = interviewHistory.reduce((acc, i) => acc + (i.score || 0), 0);
+          interviewPct = Math.round(totalScore / interviewHistory.length);
+        }
+        // No default — 0 interviewPct when no sessions done (prevents score inflation)
+
         // Weighted placement readiness calculation
         const readiness = Math.round(
-          (dsaPct * 0.5) + (aptPct * 0.2) + (projPct * 0.2) + (csPct * 0.1)
+          (dsaPct * 0.35) + (mcqPct * 0.2) + (interviewPct * 0.15) + (aptPct * 0.15) + (projPct * 0.1) + (csPct * 0.05)
         );
         
         const consistency = computeConsistencyScore(dailyLogs);
@@ -749,6 +815,161 @@ export const useProgressStore = create<ProgressState>()(
         get().refreshScores();
       },
 
+      addMcqAttempt: (partialAttempt) => {
+        const state = get();
+        const id = `mcq-att-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+        const completedAt = new Date().toISOString();
+        const attempt: MCQAttempt = {
+          ...partialAttempt,
+          id,
+          completedAt,
+        };
+
+        const attempts = [...(state.mcqAttempts || []), attempt];
+        const question = (mcqQuestions as any[]).find((q) => q.id === attempt.questionId);
+        
+        let xpGain = 0;
+        if (attempt.isCorrect) {
+          const alreadySolved = (state.mcqAttempts || []).some(
+            (a) => a.questionId === attempt.questionId && a.isCorrect
+          );
+          if (!alreadySolved) {
+            const diff = question?.difficulty || "Medium";
+            if (diff === "Easy") xpGain = 5;
+            else if (diff === "Medium") xpGain = 10;
+            else if (diff === "Hard") xpGain = 20;
+          }
+        }
+        
+        const newXp = state.xp + xpGain;
+        const logs = ensureDailyLog(state.dailyLogs).map((l) =>
+          l.date === today()
+            ? { ...l, xpEarned: l.xpEarned + xpGain }
+            : l
+        );
+        
+        set({
+          mcqAttempts: attempts,
+          dailyLogs: logs,
+          ...syncLevelFromXp(newXp),
+          ...updateStreak(state.lastActiveDate, state.streak),
+        });
+
+        const userId = state.userId;
+        if (userId && !db.isGuest(userId)) {
+          db.saveMcqAttempt(userId, attempt);
+          if (xpGain > 0) {
+            db.saveUserProfile(userId, {
+              xp: newXp,
+              level: syncLevelFromXp(newXp).level,
+              streak: state.streak,
+              lastActiveDate: state.lastActiveDate,
+              energyMode: state.energyMode,
+            });
+            const activeLog = logs.find((l) => l.date === today());
+            if (activeLog) db.saveDailyLog(userId, activeLog);
+          }
+        }
+        
+        state.checkAchievements();
+        get().refreshScores();
+      },
+
+      toggleMcqBookmark: (questionId) => {
+        const state = get();
+        const bookmarks = state.mcqBookmarks || [];
+        const isBookmarked = bookmarks.includes(questionId);
+        const newBookmarks = isBookmarked
+          ? bookmarks.filter((id) => id !== questionId)
+          : [...bookmarks, questionId];
+          
+        set({ mcqBookmarks: newBookmarks });
+        
+        const userId = state.userId;
+        if (userId && !db.isGuest(userId)) {
+          db.saveMcqBookmark(userId, questionId, !isBookmarked);
+        }
+      },
+
+      completeMcqSession: (session) => {
+        const state = get();
+        const sessions = [...(state.mcqSessions || []), session];
+        
+        const isOa = session.type === "oa";
+        const completionBonus = isOa ? 150 : 50;
+        
+        let xpGain = completionBonus;
+        const newAttempts = [...(state.mcqAttempts || [])];
+        
+        session.questionIds.forEach((qId) => {
+          const selected = session.answers[qId] || "";
+          const question = (mcqQuestions as any[]).find((q) => q.id === qId);
+          const isCorrect = question ? (selected === question.answer) : false;
+          
+          const attemptId = `mcq-att-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+          const attempt: MCQAttempt = {
+            id: attemptId,
+            questionId: qId,
+            selectedOption: selected,
+            isCorrect,
+            timeSpentSec: Math.round(session.timeSpentSec / session.questionIds.length),
+            attemptType: session.type,
+            sessionId: session.id,
+            completedAt: session.completedAt,
+          };
+          
+          newAttempts.push(attempt);
+          
+          if (isCorrect) {
+            const alreadySolved = (state.mcqAttempts || []).some(
+              (a) => a.questionId === qId && a.isCorrect
+            );
+            if (!alreadySolved) {
+              const diff = question?.difficulty || "Medium";
+              if (diff === "Easy") xpGain += 5;
+              else if (diff === "Medium") xpGain += 10;
+              else if (diff === "Hard") xpGain += 20;
+            }
+          }
+        });
+        
+        const newXp = state.xp + xpGain;
+        const logs = ensureDailyLog(state.dailyLogs).map((l) =>
+          l.date === today()
+            ? { ...l, xpEarned: l.xpEarned + xpGain }
+            : l
+        );
+        
+        set({
+          mcqSessions: sessions,
+          mcqAttempts: newAttempts,
+          dailyLogs: logs,
+          ...syncLevelFromXp(newXp),
+          ...updateStreak(state.lastActiveDate, state.streak),
+        });
+
+        const userId = state.userId;
+        if (userId && !db.isGuest(userId)) {
+          db.saveMcqSession(userId, session);
+          session.questionIds.forEach((qId) => {
+            const att = newAttempts.find((a) => a.sessionId === session.id && a.questionId === qId);
+            if (att) db.saveMcqAttempt(userId, att);
+          });
+          db.saveUserProfile(userId, {
+            xp: newXp,
+            level: syncLevelFromXp(newXp).level,
+            streak: state.streak,
+            lastActiveDate: state.lastActiveDate,
+            energyMode: state.energyMode,
+          });
+          const activeLog = logs.find((l) => l.date === today());
+          if (activeLog) db.saveDailyLog(userId, activeLog);
+        }
+        
+        state.checkAchievements();
+        get().refreshScores();
+      },
+
       addProjectTask: (task) => {
         const state = get();
         const newTask: ProjectTask = {
@@ -946,7 +1167,7 @@ export const useProgressStore = create<ProgressState>()(
             questionId,
             isRunning: true,
             lastTickTime: now,
-          } as any,
+          },
         });
       },
 
@@ -982,7 +1203,7 @@ export const useProgressStore = create<ProgressState>()(
               pausedTimeLeft: 0,
               timeLeft: durationLeftSec,
               lastTickTime: now,
-            } as any,
+            },
           };
         });
       },
@@ -1017,7 +1238,7 @@ export const useProgressStore = create<ProgressState>()(
             timeLeft: newTimeLeft,
             lastTickTime: now,
             isRunning: newTimeLeft > 0,
-          } as any,
+          },
         });
         if (newTimeLeft === 0) {
           s.completeFocusSession();
@@ -1166,6 +1387,11 @@ export const useProgressStore = create<ProgressState>()(
         // Focus minutes
         const totalFocusMinutes = state.dailyLogs.reduce((sum, log) => sum + (log.focusMinutes || 0), 0);
 
+        // MCQ Arena stats
+        const mcqAttemptsCount = state.mcqAttempts?.length || 0;
+        const mcqCorrectCount = (state.mcqAttempts || []).filter((a) => a.isCorrect).length;
+        const oaSessionsCount = (state.mcqSessions || []).filter((s) => s.type === "oa").length;
+
         // Mocks
         const mockCompleted = state.mockTests.filter((m) => m.completedAt).length + (state.interviewHistory?.length || 0);
         const hrMockCompleted = (state.interviewHistory || []).filter((i) => i.type === "hr").length;
@@ -1178,7 +1404,9 @@ export const useProgressStore = create<ProgressState>()(
         // Monday check
         const mondayLogs = state.dailyLogs.filter((l) => {
           try {
-            const day = new Date(l.date).getDay();
+            const [year, month, dayNum] = l.date.split("-").map(Number);
+            const dateObj = new Date(year, month - 1, dayNum);
+            const day = dateObj.getDay();
             return day === 1 && (l.questionsSolved > 0 || l.revisionsDone > 0 || l.focusMinutes > 0);
           } catch {
             return false;
@@ -1216,19 +1444,28 @@ export const useProgressStore = create<ProgressState>()(
           { id: "sliding_window_ninja", condition: slidingWindowSolved >= 3 },
           { id: "tree_architect", condition: treeSolved >= 6 },
 
+          // MCQ Arena
+          { id: "mcq_beginner", condition: mcqAttemptsCount >= 1 },
+          { id: "mcq_explorer", condition: mcqAttemptsCount >= 20 },
+          { id: "mcq_specialist", condition: mcqAttemptsCount >= 50 },
+          { id: "mcq_master", condition: mcqAttemptsCount >= 100 },
+          { id: "oa_warrior", condition: oaSessionsCount >= 3 },
+          { id: "mcq_100_correct", condition: mcqCorrectCount >= 100 },
+          { id: "mcq_500_correct", condition: mcqCorrectCount >= 500 },
+
           // Focus
           { id: "first_focus", condition: totalFocusMinutes >= 25 },
           { id: "focus_champion", condition: totalFocusMinutes >= 125 },
           { id: "deep_work_beast", condition: totalFocusMinutes >= 375 },
           { id: "focus_10hr", condition: totalFocusMinutes >= 600 },
-          { id: "deep_work_rookie", condition: totalFocusMinutes >= 25 },
+          // Note: "deep_work_rookie" was a duplicate of "first_focus" (same condition) — removed to prevent double XP
           { id: "focus_warrior", condition: totalFocusMinutes >= 150 },
           { id: "marathon_focus_beast", condition: totalFocusMinutes >= 1200 },
 
           // Streaks
           { id: "streak_3", condition: streak >= 3 },
           { id: "streak_7", condition: streak >= 7 },
-          { id: "streak_guardian", condition: streak >= 7 },
+          // Note: "streak_guardian" was a duplicate of "streak_7" (same condition) — removed to prevent double XP
           { id: "streak_14", condition: streak >= 14 },
           { id: "streak_30", condition: streak >= 30 },
           { id: "never_missed_monday", condition: neverMissedMonday },
@@ -1237,7 +1474,7 @@ export const useProgressStore = create<ProgressState>()(
           // Mocks
           { id: "mock_starter", condition: mockCompleted >= 1 },
           { id: "hr_master", condition: hrMockCompleted >= 1 },
-          { id: "hr_survivor", condition: hrMockCompleted >= 1 },
+          // Note: "hr_survivor" was a duplicate of "hr_master" (same condition) — removed to prevent double XP
           { id: "frontend_pro", condition: frontendMockCompleted >= 1 },
           { id: "frontend_wizard", condition: (state.interviewHistory || []).some(i => i.type === "frontend" && i.score >= 80) },
           { id: "dsa_interview_cracker", condition: (state.interviewHistory || []).some(i => i.type === "dsa" && i.score >= 85) },

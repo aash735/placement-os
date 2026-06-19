@@ -183,9 +183,25 @@ export function computePlacementReadiness(
 }
 
 export function computeConsistencyScore(dailyLogs: { date: string; questionsSolved: number }[]): number {
-  const last7 = dailyLogs.slice(-7);
-  if (!last7.length) return 0;
-  const activeDays = last7.filter((d) => d.questionsSolved > 0).length;
+  if (!dailyLogs.length) return 0;
+
+  // Calculate the dates for the last 7 calendar days (inclusive of today) in local time
+  const todayDate = new Date();
+  const past7Days = new Set<string>();
+  for (let i = 0; i < 7; i++) {
+    const d = new Date();
+    d.setDate(todayDate.getDate() - i);
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, "0");
+    const dd = String(d.getDate()).padStart(2, "0");
+    past7Days.add(`${yyyy}-${mm}-${dd}`);
+  }
+
+  // Filter logs for active days within the last 7 calendar days
+  const activeDays = dailyLogs.filter(
+    (log) => past7Days.has(log.date) && log.questionsSolved > 0
+  ).length;
+
   return Math.round((activeDays / 7) * 100);
 }
 

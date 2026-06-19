@@ -39,7 +39,11 @@ function getTimeRemaining(targetDateStr: string) {
 }
 
 export default function CountdownPage() {
-  const { countdownGoals, addCountdownGoal, updateCountdownGoal, deleteCountdownGoal, toggleMilestone } = useProgressStore();
+  const countdownGoals = useProgressStore((s) => s.countdownGoals);
+  const addCountdownGoal = useProgressStore((s) => s.addCountdownGoal);
+  const updateCountdownGoal = useProgressStore((s) => s.updateCountdownGoal);
+  const deleteCountdownGoal = useProgressStore((s) => s.deleteCountdownGoal);
+  const toggleMilestone = useProgressStore((s) => s.toggleMilestone);
 
   const [showAddForm, setShowAddForm] = useState(false);
   const [newTitle, setNewTitle] = useState("");
@@ -123,7 +127,7 @@ export default function CountdownPage() {
                   required
                   value={newTitle}
                   onChange={(e) => setNewTitle(e.target.value)}
-                  className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                  className="field-input w-full px-3 py-2"
                 />
               </div>
 
@@ -134,7 +138,7 @@ export default function CountdownPage() {
                   required
                   value={newDate}
                   onChange={(e) => setNewDate(e.target.value)}
-                  className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                  className="field-input w-full px-3 py-2"
                 />
               </div>
 
@@ -356,7 +360,7 @@ export default function CountdownPage() {
                   required
                   value={editTitle}
                   onChange={(e) => setEditTitle(e.target.value)}
-                  className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                  className="field-input w-full px-3 py-2"
                 />
               </div>
 
@@ -367,7 +371,7 @@ export default function CountdownPage() {
                   required
                   value={editDate}
                   onChange={(e) => setEditDate(e.target.value)}
-                  className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                  className="field-input w-full px-3 py-2"
                 />
               </div>
 

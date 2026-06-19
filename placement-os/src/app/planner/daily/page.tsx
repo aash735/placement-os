@@ -135,7 +135,7 @@ export default function DailyPlannerPage() {
                     required
                     value={timeText}
                     onChange={(e) => setTimeText(e.target.value)}
-                    className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                    className="field-input w-full px-3 py-2"
                   />
                 </div>
                 <div className="col-span-2 space-y-1.5">
@@ -146,7 +146,7 @@ export default function DailyPlannerPage() {
                     required
                     value={taskText}
                     onChange={(e) => setTaskText(e.target.value)}
-                    className="w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                    className="field-input w-full px-3 py-2"
                   />
                 </div>
               </div>

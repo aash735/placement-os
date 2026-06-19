@@ -32,22 +32,20 @@ import { computePlacementReadiness } from "@/lib/dsa-engine";
 import { format } from "date-fns";
 
 export default function DashboardPage() {
-  const {
-    xp,
-    level,
-    streak,
-    placementReadiness,
-    confidenceScore,
-    productivityScore,
-    focusScore,
-    completedToday,
-    completeTask,
-    setQuestionStatus,
-    aptitudeAttempts = [],
-    projects = [],
-    csSubjects = {},
-    dailyLogs = []
-  } = useProgressStore();
+  const xp = useProgressStore((s) => s.xp);
+  const level = useProgressStore((s) => s.level);
+  const streak = useProgressStore((s) => s.streak);
+  const placementReadiness = useProgressStore((s) => s.placementReadiness);
+  const confidenceScore = useProgressStore((s) => s.confidenceScore);
+  const productivityScore = useProgressStore((s) => s.productivityScore);
+  const focusScore = useProgressStore((s) => s.focusScore);
+  const completedToday = useProgressStore((s) => s.completedToday);
+  const completeTask = useProgressStore((s) => s.completeTask);
+  const setQuestionStatus = useProgressStore((s) => s.setQuestionStatus);
+  const aptitudeAttempts = useProgressStore((s) => s.aptitudeAttempts ?? []);
+  const projects = useProgressStore((s) => s.projects ?? []);
+  const csSubjects = useProgressStore((s) => s.csSubjects ?? {});
+  const dailyLogs = useProgressStore((s) => s.dailyLogs ?? []);
 
   const { dueRevisions, weakTopics, dailyChallenge, solved, total } = useDSAStats();
 

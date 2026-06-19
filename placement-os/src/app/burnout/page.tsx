@@ -7,7 +7,7 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { usePlacementStore } from "@/lib/store";
 
 export default function BurnoutPage() {
-  const { setEnergyMode } = usePlacementStore();
+  const setEnergyMode = usePlacementStore((s) => s.setEnergyMode);
   return (
     <AppShell title="Burnout Recovery" subtitle="Comeback system">
       <PageHeader title="Recovery Mode" description="A 72-hour minimum recovery period for when sleep is broken, you dread opening your laptop, or you're experiencing zero information retention." />

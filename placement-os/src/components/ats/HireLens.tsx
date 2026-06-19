@@ -209,10 +209,21 @@ export function HireLensATS() {
     setRoleRecommendations([]);
   };
 
+  // Sanitize raw text to prevent XSS before injecting into innerHTML
+  const sanitizeResumeText = (text: string): string => {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  };
+
   // Render Highlighted Text
   const renderHighlightedResume = () => {
     if (!selectedRole || !resumeText) return "";
-    let html = resumeText.replace(/\n/g, '<br />');
+    // Sanitize raw user text first to prevent XSS, then convert newlines
+    let html = sanitizeResumeText(resumeText).replace(/\n/g, '<br />');
 
     const allMatchTerms = new Set<string>();
     matchedKeywords.forEach(kw => {
@@ -222,7 +233,7 @@ export function HireLensATS() {
       }
     });
 
-    // Replace terms safely using word boundaries
+    // Replace terms safely (terms are from our controlled keyword list, not user input)
     allMatchTerms.forEach(term => {
       const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const regex = new RegExp(`\\b(${escaped})\\b`, 'gi');

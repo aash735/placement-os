@@ -320,7 +320,98 @@ create policy "Allow all operations for roadmap_goals" on public.roadmap_goals f
 create policy "Allow all operations for focus_sessions" on public.focus_sessions for all using (true) with check (true);
 
 -- Grant privileges to anon client role
-grant all on public.users to anon, authenticated, service_role;
+-- Revoke all table-level access on public.users for anon/authenticated to prevent arbitrary password hashes exposure or edits
+revoke all on public.users from anon, authenticated;
+
+-- Grant selective select privilege on safe columns of users table
+grant select (id, username, full_name, semester, xp, level, streak, last_active_date, energy_mode, shortcuts_enabled, created_at, updated_at)
+  on public.users to anon, authenticated;
+
+-- Grant selective update privilege on progress columns of users table
+grant update (full_name, semester, xp, level, streak, last_active_date, energy_mode, shortcuts_enabled, updated_at)
+  on public.users to anon, authenticated;
+
+grant all on public.users to service_role;
+
+-- ============================================================
+-- STEP 6: SECURE AUTHENTICATION RPC FUNCTIONS
+-- ============================================================
+
+-- Custom secure registration RPC
+create or replace function public.register_user(
+  p_username text,
+  p_password text,
+  p_full_name text,
+  p_semester text
+) returns jsonb as $$
+declare
+  v_user_id uuid;
+  v_password_hash text;
+  v_exists boolean;
+begin
+  -- Check if username exists
+  select exists(select 1 from public.users where lower(username) = lower(trim(p_username))) into v_exists;
+  if v_exists then
+    return jsonb_build_object('error', 'Username is already taken.');
+  end if;
+
+  -- Hash password using pgcrypto (bcrypt)
+  v_password_hash := crypt(p_password, gen_salt('bf', 10));
+
+  -- Insert user
+  insert into public.users (username, password_hash, full_name, semester)
+  values (lower(trim(p_username)), v_password_hash, trim(p_full_name), p_semester)
+  returning id into v_user_id;
+
+  return jsonb_build_object(
+    'user', jsonb_build_object(
+      'id', v_user_id,
+      'username', lower(trim(p_username)),
+      'name', trim(p_full_name),
+      'semester', p_semester
+    ),
+    'error', null
+  );
+end;
+$$ language plpgsql security definer;
+
+-- Custom secure login RPC
+create or replace function public.login_user(
+  p_username text,
+  p_password text
+) returns jsonb as $$
+declare
+  v_user record;
+begin
+  select id, username, password_hash, full_name, semester
+  into v_user
+  from public.users
+  where lower(username) = lower(trim(p_username));
+
+  if v_user.id is null then
+    return jsonb_build_object('error', 'No account found with that username.');
+  end if;
+
+  -- Verify password using pgcrypto comparison
+  if v_user.password_hash = crypt(p_password, v_user.password_hash) then
+    return jsonb_build_object(
+      'user', jsonb_build_object(
+        'id', v_user.id,
+        'username', v_user.username,
+        'name', v_user.full_name,
+        'semester', v_user.semester
+      ),
+      'error', null
+    );
+  else
+    return jsonb_build_object('error', 'Incorrect password. Please try again.');
+  end if;
+end;
+$$ language plpgsql security definer;
+
+-- Grant execution permissions for the RPC functions to anon & authenticated clients
+grant execute on function public.register_user(text, text, text, text) to anon, authenticated;
+grant execute on function public.login_user(text, text) to anon, authenticated;
 grant all on public.user_progress to anon, authenticated, service_role;
 grant all on public.bookmarks to anon, authenticated, service_role;
 grant all on public.revision_history to anon, authenticated, service_role;

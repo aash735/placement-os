@@ -55,6 +55,7 @@ export const mainNav: NavGroup[] = [
       { label: "Mock Tests", href: "/dsa/mock", icon: Target },
       { label: "Revision", href: "/revision", icon: BookOpen },
       { label: "Aptitude", href: "/aptitude", icon: Brain },
+      { label: "MCQ Arena", href: "/mcq-arena", icon: Brain, badge: "New" },
       { label: "CS Subjects", href: "/subjects", icon: Notebook },
       { label: "Companies", href: "/companies", icon: Building2 },
       { label: "Mock Interview", href: "/mock-interview", icon: MessageSquare },

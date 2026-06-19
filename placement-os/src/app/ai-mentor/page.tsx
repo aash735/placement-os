@@ -553,7 +553,7 @@ export default function AIMentorPage() {
                   onChange={(e) => setInputVal(e.target.value)}
                   placeholder={`Ask ${activeMentor.name} a question…`}
                   disabled={isLoading}
-                  className="flex-1 rounded-xl border border-white/10 bg-black/50 px-4 py-3 text-xs text-white placeholder-zinc-500 focus:border-cyan-400 focus:outline-none disabled:opacity-50"
+                  className="field-input flex-1 px-4 py-3 text-xs disabled:opacity-50"
                 />
                 <button
                   type="submit"

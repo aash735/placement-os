@@ -21,7 +21,13 @@ const STATUS_COLORS: Record<string, string> = {
 };
 
 export default function AnalyticsPage() {
-  const { placementReadiness, confidenceScore, productivityScore, focusScore, questionProgress, streak, dailyLogs } = useProgressStore();
+  const placementReadiness = useProgressStore((s) => s.placementReadiness);
+  const confidenceScore = useProgressStore((s) => s.confidenceScore);
+  const productivityScore = useProgressStore((s) => s.productivityScore);
+  const focusScore = useProgressStore((s) => s.focusScore);
+  const questionProgress = useProgressStore((s) => s.questionProgress);
+  const streak = useProgressStore((s) => s.streak);
+  const dailyLogs = useProgressStore((s) => s.dailyLogs ?? []);
   const { heatmap, weakTopics, solved, total, solvedPercent } = useDSAStats();
   const questions = useDataStore((s) => s.questions);
 

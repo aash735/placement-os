@@ -52,6 +52,12 @@ const PROTECTED_PATHS = [
   "/aptitude",
   "/projects",
   "/interview",
+  // Previously missing — auth bypass vulnerability fixed:
+  "/mcq-arena",
+  "/countdown",
+  "/notes",
+  "/streaks",
+  "/resume",
 ];
 
 const AUTH_PATHS = ["/auth/login", "/auth/signup"];

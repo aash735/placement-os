@@ -8,7 +8,8 @@
     "build": "node scripts/setup.js && npm run sheets:sync && next build",
     "start": "next start",
     "lint": "eslint",
-    "sheets:sync": "tsx scripts/sync-sheets.ts"
+    "sheets:sync": "tsx scripts/sync-sheets.ts",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",

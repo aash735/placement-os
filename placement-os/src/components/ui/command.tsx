@@ -49,7 +49,7 @@ export function Command({ children, className }: { children: React.ReactNode; cl
   );
 }
 
-export interface CommandInputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "value" | "onChange"> {}
+export type CommandInputProps = Omit<React.InputHTMLAttributes<HTMLInputElement>, "value" | "onChange">;
 
 export function CommandInput({ placeholder, className, ...props }: CommandInputProps) {
   const context = React.useContext(CommandContext);

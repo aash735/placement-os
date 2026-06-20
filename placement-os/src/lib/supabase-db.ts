@@ -122,7 +122,7 @@ export async function fetchUserData(userId: string) {
       mcqBookmarksRes,
       mcqSessionsRes,
     ] = await Promise.all([
-      supabase.from("users").select("*").eq("id", userId).maybeSingle(),
+      supabase.from("users").select("id, username, full_name, semester, xp, level, streak, last_active_date, energy_mode, shortcuts_enabled, created_at, updated_at").eq("id", userId).maybeSingle(),
       supabase.from("user_progress").select("*").eq("user_id", userId),
       supabase.from("bookmarks").select("question_id").eq("user_id", userId),
       supabase.from("mock_tests").select("*").eq("user_id", userId),
@@ -143,7 +143,7 @@ export async function fetchUserData(userId: string) {
     ]);
 
     // Profile variables
-    const profile = profileRes.data || {};
+    const profile = (profileRes.data as any) || {};
 
     // DSA Question Progress
     const questionProgress: Record<string, UserQuestionProgress> = {};

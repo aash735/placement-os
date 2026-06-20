@@ -57,83 +57,6 @@ export default function MCQQuizPage() {
     return ["All Topics", ...Array.from(topics)];
   }, []);
 
-  // Timer effect
-  useEffect(() => {
-    if (phase === "active" && timeLeft > 0) {
-      timerRef.current = setInterval(() => {
-        setTimeLeft((prev) => {
-          if (prev <= 1) {
-            clearInterval(timerRef.current!);
-            handleAutoSubmit();
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    }
-
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [phase, timeLeft]);
-
-  // Start Quiz
-  const handleStartQuiz = () => {
-    // Filter questions based on setup selection
-    let pool = (mcqQuestions as MCQQuestion[]).filter((q) => {
-      const matchesTopic = selectedTopic === "All Topics" || q.topic === selectedTopic;
-      const matchesDiff = selectedDifficulty === "All" || q.difficulty === selectedDifficulty;
-      return matchesTopic && matchesDiff;
-    });
-
-    if (pool.length === 0) {
-      alert("No questions match your current filters. Please choose different filters.");
-      return;
-    }
-
-    // Shuffle and pick size
-    const shuffled = [...pool].sort(() => 0.5 - Math.random());
-    const selected = shuffled.slice(0, Math.min(quizSize, shuffled.length));
-
-    // Time: 90 seconds per question
-    const totalTimeSec = selected.length * 90;
-
-    setQuizQuestions(selected);
-    setCurrentQIndex(0);
-    setAnswers({});
-    setTimeLeft(totalTimeSec);
-    setInitialTime(totalTimeSec);
-    setPhase("active");
-  };
-
-  // Option Select
-  const handleSelectOption = (questionId: string, optionLetter: string) => {
-    setAnswers((prev) => ({
-      ...prev,
-      [questionId]: optionLetter,
-    }));
-  };
-
-  // Auto submit when timer runs out
-  const handleAutoSubmit = () => {
-    submitQuiz(true);
-  };
-
-  // Manual Submit
-  const handleManualSubmit = () => {
-    const unansweredCount = quizQuestions.length - Object.keys(answers).length;
-    if (unansweredCount > 0) {
-      if (
-        !confirm(
-          `You have ${unansweredCount} unanswered questions. Are you sure you want to submit?`
-        )
-      ) {
-        return;
-      }
-    }
-    submitQuiz(false);
-  };
-
   const submitQuiz = (wasTimeout = false) => {
     if (timerRef.current) clearInterval(timerRef.current);
 
@@ -170,6 +93,85 @@ export default function MCQQuizPage() {
       alert("Time limit reached! Your quiz has been automatically submitted.");
     }
   };
+
+  const handleAutoSubmit = () => {
+    submitQuiz(true);
+  };
+
+  // Timer effect
+  useEffect(() => {
+    if (phase === "active" && timeLeft > 0) {
+      timerRef.current = setInterval(() => {
+        setTimeLeft((prev) => {
+          if (prev <= 1) {
+            clearInterval(timerRef.current!);
+            handleAutoSubmit();
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    }
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [phase, timeLeft]);
+
+  // Start Quiz
+  const handleStartQuiz = () => {
+    // Filter questions based on setup selection
+    const pool = (mcqQuestions as MCQQuestion[]).filter((q) => {
+      const matchesTopic = selectedTopic === "All Topics" || q.topic === selectedTopic;
+      const matchesDiff = selectedDifficulty === "All" || q.difficulty === selectedDifficulty;
+      return matchesTopic && matchesDiff;
+    });
+
+    if (pool.length === 0) {
+      alert("No questions match your current filters. Please choose different filters.");
+      return;
+    }
+
+    // Shuffle and pick size
+    const shuffled = [...pool].sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, Math.min(quizSize, shuffled.length));
+
+    // Time: 90 seconds per question
+    const totalTimeSec = selected.length * 90;
+
+    setQuizQuestions(selected);
+    setCurrentQIndex(0);
+    setAnswers({});
+    setTimeLeft(totalTimeSec);
+    setInitialTime(totalTimeSec);
+    setPhase("active");
+  };
+
+  // Option Select
+  const handleSelectOption = (questionId: string, optionLetter: string) => {
+    setAnswers((prev) => ({
+      ...prev,
+      [questionId]: optionLetter,
+    }));
+  };
+
+
+  // Manual Submit
+  const handleManualSubmit = () => {
+    const unansweredCount = quizQuestions.length - Object.keys(answers).length;
+    if (unansweredCount > 0) {
+      if (
+        !confirm(
+          `You have ${unansweredCount} unanswered questions. Are you sure you want to submit?`
+        )
+      ) {
+        return;
+      }
+    }
+    submitQuiz(false);
+  };
+
+
 
   // Retake / Setup Reset
   const handleReset = () => {

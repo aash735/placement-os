@@ -49,6 +49,14 @@ ALTER TABLE public.projects
 ALTER TABLE public.cs_subjects
   DROP CONSTRAINT IF EXISTS cs_subjects_user_id_fkey;
 
+-- ── mcq_sessions ─────────────────────────────────────────────
+-- Add missing columns and drop old score column to match frontend
+ALTER TABLE public.mcq_sessions DROP COLUMN IF EXISTS score;
+ALTER TABLE public.mcq_sessions ADD COLUMN IF NOT EXISTS title text NOT NULL DEFAULT 'MCQ Session';
+ALTER TABLE public.mcq_sessions ADD COLUMN IF NOT EXISTS company_name text;
+ALTER TABLE public.mcq_sessions ADD COLUMN IF NOT EXISTS correct_count integer NOT NULL DEFAULT 0;
+ALTER TABLE public.mcq_sessions ADD COLUMN IF NOT EXISTS total_questions integer NOT NULL DEFAULT 0;
+
 -- ============================================================
 -- VERIFICATION
 -- Run this after to confirm all FK constraints are gone:

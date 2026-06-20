@@ -147,6 +147,48 @@ export default function MCQOAPage() {
     return result;
   };
 
+  const submitOa = (wasTimeout = false) => {
+    if (timerRef.current) clearInterval(timerRef.current);
+
+    const timeSpent = initialTime - timeLeft;
+    let correctCount = 0;
+
+    oaQuestions.forEach((q) => {
+      const ans = answers[q.id];
+      if (ans === q.answer) {
+        correctCount += 1;
+      }
+    });
+
+    const session: MCQSession = {
+      id: `session-${Date.now()}`,
+      type: "oa",
+      title: selectedOa?.name || "Company OA",
+      companyName: selectedOa?.name.replace(" Style OA", "") || undefined,
+      questionIds: oaQuestions.map((q) => q.id),
+      answers,
+      correctCount,
+      totalQuestions: oaQuestions.length,
+      timeSpentSec: timeSpent,
+      completedAt: new Date().toISOString(),
+    };
+
+    // Save session in store and award XP (+150 XP bonus for company OA completion)
+    completeMcqSession(session);
+
+    setSessionResults(session);
+    setPhase("results");
+    setViewQuestionIndex(0);
+
+    if (wasTimeout) {
+      alert("Assessment time has expired! Your answers have been submitted.");
+    }
+  };
+
+  const handleAutoSubmit = () => {
+    submitOa(true);
+  };
+
   // Timer effect
   useEffect(() => {
     if (phase === "active" && timeLeft > 0) {
@@ -206,10 +248,7 @@ export default function MCQOAPage() {
     }));
   };
 
-  // Auto submit when timer runs out
-  const handleAutoSubmit = () => {
-    submitOa(true);
-  };
+
 
   // Manual Submit
   const handleManualSubmit = () => {
@@ -226,43 +265,7 @@ export default function MCQOAPage() {
     submitOa(false);
   };
 
-  const submitOa = (wasTimeout = false) => {
-    if (timerRef.current) clearInterval(timerRef.current);
 
-    const timeSpent = initialTime - timeLeft;
-    let correctCount = 0;
-
-    oaQuestions.forEach((q) => {
-      const ans = answers[q.id];
-      if (ans === q.answer) {
-        correctCount += 1;
-      }
-    });
-
-    const session: MCQSession = {
-      id: `session-${Date.now()}`,
-      type: "oa",
-      title: selectedOa?.name || "Company OA",
-      companyName: selectedOa?.name.replace(" Style OA", "") || undefined,
-      questionIds: oaQuestions.map((q) => q.id),
-      answers,
-      correctCount,
-      totalQuestions: oaQuestions.length,
-      timeSpentSec: timeSpent,
-      completedAt: new Date().toISOString(),
-    };
-
-    // Save session in store and award XP (+150 XP bonus for company OA completion)
-    completeMcqSession(session);
-
-    setSessionResults(session);
-    setPhase("results");
-    setViewQuestionIndex(0);
-
-    if (wasTimeout) {
-      alert("Assessment time has expired! Your answers have been submitted.");
-    }
-  };
 
   // Reset Setup Screen
   const handleReset = () => {
@@ -542,7 +545,7 @@ export default function MCQOAPage() {
               <div>
                 <h2 className="text-2xl font-black text-[var(--text-primary)]">Assessment Completed!</h2>
                 <p className="text-sm text-[var(--text-secondary)] mt-1.5">
-                  Your results have been sync'd to Supabase and merged with your interview readiness dashboard.
+                  Your results have been synced to Supabase and merged with your interview readiness dashboard.
                 </p>
               </div>
 

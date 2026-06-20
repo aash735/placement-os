@@ -7,6 +7,7 @@
     "build": "npm run build --prefix placement-os",
     "start": "npm run start --prefix placement-os",
     "lint": "npm run lint --prefix placement-os",
-    "sheets:sync": "npm run sheets:sync --prefix placement-os"
+    "sheets:sync": "npm run sheets:sync --prefix placement-os",
+    "type-check": "npm run type-check --prefix placement-os"
   }
 }

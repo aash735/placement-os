@@ -1877,15 +1877,6 @@ export const useProgressStore = create<ProgressState>()(
             csSubjects: s.csSubjects,
             energyMode: s.energyMode,
             resourceProgress: s.resourceProgress,
-            // Added properties for complete backup
-            mcqAttempts: s.mcqAttempts,
-            mcqBookmarks: s.mcqBookmarks,
-            mcqSessions: s.mcqSessions,
-            unlockedAchievements: s.unlockedAchievements,
-            countdownGoals: s.countdownGoals,
-            interviewHistory: s.interviewHistory,
-            dailyPlannerBlocks: s.dailyPlannerBlocks,
-            customWeeklyPlan: s.customWeeklyPlan,
           },
           null,
           2

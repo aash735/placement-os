@@ -52,55 +52,42 @@ export function AppShell({
 
           {/* Navigation */}
           <nav className="flex-1 overflow-y-auto px-4 py-6 space-y-5">
-            {(() => {
-              const isMcqEnabled = process.env.NEXT_PUBLIC_ENABLE_MCQ === "true";
-              const filteredNav = mainNav.map((group) => ({
-                ...group,
-                items: group.items.filter((item) => {
-                  if (!isMcqEnabled && (item.href === "/mcq-arena" || item.href === "/mcq-practice")) {
-                    return false;
-                  }
-                  return true;
-                }),
-              }));
-
-              return filteredNav.map((group) => (
-                <div key={group.title} className="space-y-1">
-                  <p
-                    className="px-2 text-[10px] font-bold uppercase tracking-wider mb-2"
-                    style={{ color: "var(--text-faint)" }}
-                  >
-                    {group.title}
-                  </p>
-                  <ul className="space-y-0.5">
-                    {group.items.map((item) => {
-                      const active =
-                        pathname === item.href ||
-                        (item.href !== "/" && pathname.startsWith(item.href + "/"));
-                      const Icon = item.icon;
-                      return (
-                        <li key={item.href}>
-                          <Link
-                            href={item.href}
-                            onClick={() => setOpen(false)}
-                            className={cn(
-                              "nav-item min-w-0",
-                              active && "active"
-                            )}
-                          >
-                            <Icon className="h-4 w-4 shrink-0" />
-                            <span className="truncate flex-1">{item.label}</span>
-                            {item.badge && (
-                              <span className="ml-auto badge-violet shrink-0">{item.badge}</span>
-                            )}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              ));
-            })()}
+            {mainNav.map((group) => (
+              <div key={group.title} className="space-y-1">
+                <p
+                  className="px-2 text-[10px] font-bold uppercase tracking-wider mb-2"
+                  style={{ color: "var(--text-faint)" }}
+                >
+                  {group.title}
+                </p>
+                <ul className="space-y-0.5">
+                  {group.items.map((item) => {
+                    const active =
+                      pathname === item.href ||
+                      (item.href !== "/" && pathname.startsWith(item.href + "/"));
+                    const Icon = item.icon;
+                    return (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          onClick={() => setOpen(false)}
+                          className={cn(
+                            "nav-item min-w-0",
+                            active && "active"
+                          )}
+                        >
+                          <Icon className="h-4 w-4 shrink-0" />
+                          <span className="truncate flex-1">{item.label}</span>
+                          {item.badge && (
+                            <span className="ml-auto badge-violet shrink-0">{item.badge}</span>
+                          )}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
           </nav>
 
           {/* User Footer */}

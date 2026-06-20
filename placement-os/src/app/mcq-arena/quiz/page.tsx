@@ -57,6 +57,26 @@ export default function MCQQuizPage() {
     return ["All Topics", ...Array.from(topics)];
   }, []);
 
+  // Auto submit when timer runs out
+  const handleAutoSubmit = () => {
+    submitQuiz(true);
+  };
+
+  // Manual Submit
+  const handleManualSubmit = () => {
+    const unansweredCount = quizQuestions.length - Object.keys(answers).length;
+    if (unansweredCount > 0) {
+      if (
+        !confirm(
+          `You have ${unansweredCount} unanswered questions. Are you sure you want to submit?`
+        )
+      ) {
+        return;
+      }
+    }
+    submitQuiz(false);
+  };
+
   const submitQuiz = (wasTimeout = false) => {
     if (timerRef.current) clearInterval(timerRef.current);
 
@@ -92,10 +112,6 @@ export default function MCQQuizPage() {
     if (wasTimeout) {
       alert("Time limit reached! Your quiz has been automatically submitted.");
     }
-  };
-
-  const handleAutoSubmit = () => {
-    submitQuiz(true);
   };
 
   // Timer effect
@@ -154,23 +170,6 @@ export default function MCQQuizPage() {
       [questionId]: optionLetter,
     }));
   };
-
-
-  // Manual Submit
-  const handleManualSubmit = () => {
-    const unansweredCount = quizQuestions.length - Object.keys(answers).length;
-    if (unansweredCount > 0) {
-      if (
-        !confirm(
-          `You have ${unansweredCount} unanswered questions. Are you sure you want to submit?`
-        )
-      ) {
-        return;
-      }
-    }
-    submitQuiz(false);
-  };
-
 
 
   // Retake / Setup Reset

@@ -147,6 +147,26 @@ export default function MCQOAPage() {
     return result;
   };
 
+  // Auto submit when timer runs out
+  const handleAutoSubmit = () => {
+    submitOa(true);
+  };
+
+  // Manual Submit
+  const handleManualSubmit = () => {
+    const unansweredCount = oaQuestions.length - Object.keys(answers).length;
+    if (unansweredCount > 0) {
+      if (
+        !confirm(
+          `You have ${unansweredCount} unanswered questions. Are you sure you want to finish the assessment?`
+        )
+      ) {
+        return;
+      }
+    }
+    submitOa(false);
+  };
+
   const submitOa = (wasTimeout = false) => {
     if (timerRef.current) clearInterval(timerRef.current);
 
@@ -183,10 +203,6 @@ export default function MCQOAPage() {
     if (wasTimeout) {
       alert("Assessment time has expired! Your answers have been submitted.");
     }
-  };
-
-  const handleAutoSubmit = () => {
-    submitOa(true);
   };
 
   // Timer effect
@@ -246,23 +262,6 @@ export default function MCQOAPage() {
       ...prev,
       [questionId]: optionLetter,
     }));
-  };
-
-
-
-  // Manual Submit
-  const handleManualSubmit = () => {
-    const unansweredCount = oaQuestions.length - Object.keys(answers).length;
-    if (unansweredCount > 0) {
-      if (
-        !confirm(
-          `You have ${unansweredCount} unanswered questions. Are you sure you want to finish the assessment?`
-        )
-      ) {
-        return;
-      }
-    }
-    submitOa(false);
   };
 
 

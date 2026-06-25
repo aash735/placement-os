@@ -41,13 +41,23 @@ export function AppShell({
             borderRight: "1px solid var(--border-subtle)",
           }}
         >
-          {/* Logo */}
+          {/* Logo & Close Button */}
           <div
-            className="flex h-16 items-center gap-2.5 px-6 flex-none"
+            className="flex h-16 items-center justify-between px-6 flex-none"
             style={{ borderBottom: "1px solid var(--border-subtle)" }}
           >
-            <Rocket className="h-5 w-5 text-cyan-500 shrink-0" />
-            <span className="font-bold tracking-tight gradient-text text-sm">Placement OS</span>
+            <div className="flex items-center gap-2.5">
+              <Rocket className="h-5 w-5 text-cyan-500 shrink-0" />
+              <span className="font-bold tracking-tight gradient-text text-base">Placement OS</span>
+            </div>
+            <button
+              type="button"
+              className="lg:hidden p-1.5 rounded-lg text-[var(--text-muted)] hover:bg-[var(--bg-hover)] transition-colors cursor-pointer"
+              onClick={() => setOpen(false)}
+              aria-label="Close menu"
+            >
+              <X className="h-4 w-4" />
+            </button>
           </div>
 
           {/* Navigation */}

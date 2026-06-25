@@ -42,7 +42,7 @@ export function TopicCard({
       ? "text-cyan-400"
       : completion >= 20
       ? "text-amber-400"
-      : "var(--text-muted)";
+      : "text-[var(--text-muted)]";
 
   return (
     <Link href={`/dsa/topic/${id}`}>

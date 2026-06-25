@@ -183,7 +183,7 @@ export default function DashboardPage() {
                 </defs>
                 <XAxis dataKey="day" stroke="#71717a" fontSize={11} tickLine={false} />
                 <YAxis stroke="#71717a" fontSize={11} tickLine={false} />
-                <Tooltip contentStyle={{ background: "#09090b", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12 }} />
+                <Tooltip contentStyle={{ background: "var(--bg-elevated)", border: "1px solid var(--border-normal)", borderRadius: 12, color: "var(--text-primary)" }} labelStyle={{ color: "var(--text-secondary)" }} />
                 <Area type="monotone" dataKey="xp" stroke="#22d3ee" fill="url(#xpGrad)" strokeWidth={2} />
               </AreaChart>
             </ResponsiveContainer>
@@ -359,10 +359,11 @@ export default function DashboardPage() {
                   <span className="text-xs font-semibold text-white truncate max-w-[70%]">
                     {question.title}
                   </span>
-                  <Link href={`/dsa/question/${question.id}`}>
-                    <button className="text-xs font-bold text-cyan-400 hover:text-white px-3 py-1.5 rounded-lg bg-cyan-500/10 hover:bg-cyan-500 border border-cyan-500/20 hover:text-black transition-all">
-                      Review Now
-                    </button>
+                  <Link
+                    href={`/dsa/question/${question.id}`}
+                    className="text-xs font-bold text-cyan-400 light:text-cyan-600 hover:text-white px-3 py-1.5 rounded-lg bg-cyan-500/10 hover:bg-cyan-500 border border-cyan-500/20 hover:text-black transition-all"
+                  >
+                    Review Now
                   </Link>
                 </div>
               ))}

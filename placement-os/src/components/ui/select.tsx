@@ -42,12 +42,12 @@ export interface SelectProps {
 export function Select({ children, value, onValueChange }: SelectProps) {
   const [open, setOpen] = React.useState(false);
   const [focusedIndex, setFocusedIndex] = React.useState(-1);
-  const [items, setItems] = React.useState<Array<{ value: string; label: string; disabled?: boolean }>>([]);
+  const [dynamicItems, setDynamicItems] = React.useState<Array<{ value: string; label: string; disabled?: boolean }>>([]);
   const containerRef = React.useRef<HTMLDivElement>(null);
   const overlayRef = React.useRef<HTMLDivElement>(null);
 
   const registerItem = React.useCallback((val: string, label: string, disabled?: boolean) => {
-    setItems((prev) => {
+    setDynamicItems((prev) => {
       if (prev.some((item) => item.value === val)) {
         // If label or disabled status updated, map it
         return prev.map((item) =>
@@ -59,8 +59,19 @@ export function Select({ children, value, onValueChange }: SelectProps) {
   }, []);
 
   const unregisterItem = React.useCallback((val: string) => {
-    setItems((prev) => prev.filter((item) => item.value !== val));
+    setDynamicItems((prev) => prev.filter((item) => item.value !== val));
   }, []);
+
+  const staticItems = React.useMemo(() => {
+    return findSelectItems(children);
+  }, [children]);
+
+  const items = React.useMemo(() => {
+    const mergedMap = new Map<string, { value: string; label: string; disabled?: boolean }>();
+    staticItems.forEach(item => mergedMap.set(item.value, item));
+    dynamicItems.forEach(item => mergedMap.set(item.value, item));
+    return Array.from(mergedMap.values());
+  }, [staticItems, dynamicItems]);
 
   // Handle clicking outside to close
   React.useEffect(() => {
@@ -307,4 +318,47 @@ export function SelectItem({
       {isSelected && <Check className="h-3.5 w-3.5 text-[var(--accent-cyan)] ml-2 shrink-0" />}
     </div>
   );
+}
+
+SelectItem.displayName = "SelectItem";
+
+function findSelectItems(children: React.ReactNode): Array<{ value: string; label: string; disabled?: boolean }> {
+  const items: Array<{ value: string; label: string; disabled?: boolean }> = [];
+
+  function traverse(node: React.ReactNode) {
+    if (!node) return;
+
+    React.Children.forEach(node, (child) => {
+      if (!React.isValidElement(child)) return;
+
+      const isSelectItem =
+        child.type === SelectItem ||
+        (child.type as any).displayName === "SelectItem" ||
+        (typeof child.type === "function" && child.type.name === "SelectItem") ||
+        (child.type as any === "SelectItem");
+
+      if (isSelectItem) {
+        const props = child.props as any;
+        const value = props.value;
+        let label = props.label;
+        if (!label) {
+          if (typeof props.children === "string") {
+            label = props.children;
+          } else if (typeof props.children === "number") {
+            label = String(props.children);
+          } else if (Array.isArray(props.children)) {
+            label = props.children.map((c: any) => typeof c === "string" || typeof c === "number" ? String(c) : "").join("");
+          } else {
+            label = String(props.children || "");
+          }
+        }
+        items.push({ value, label, disabled: props.disabled });
+      } else if (child.props && (child.props as any).children) {
+        traverse((child.props as any).children);
+      }
+    });
+  }
+
+  traverse(children);
+  return items;
 }

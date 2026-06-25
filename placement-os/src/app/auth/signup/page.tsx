@@ -88,8 +88,8 @@ export default function SignupPage() {
             <div
               className={`mt-4 rounded-xl border p-3.5 text-xs ${
                 message.type === "success"
-                  ? "border-emerald-500/25 bg-emerald-500/10 text-emerald-600"
-                  : "border-rose-500/25 bg-rose-500/10 text-rose-600"
+                  ? "border-emerald-500/25 bg-emerald-500/10 text-emerald-400 light:text-emerald-700"
+                  : "border-rose-500/25 bg-rose-500/10 text-rose-400 light:text-rose-700"
               }`}
             >
               {message.text}

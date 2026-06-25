@@ -8,13 +8,12 @@ import { STATUS_LABELS } from "@/lib/dsa-engine";
 import { useProgressStore } from "@/lib/progress-store";
 import { cn } from "@/lib/utils";
 
-// Status pill styles — these use explicit colors, not pure dark classes
 const STATUS_STYLES: Record<QuestionStatus, string> = {
-  not_started: "bg-zinc-500/15 text-zinc-500 border-zinc-500/25",
-  attempted:   "bg-amber-500/20 text-amber-500 border-amber-500/25",
-  solved:      "bg-cyan-500/20 text-cyan-600 border-cyan-500/25",
-  revised:     "bg-violet-500/20 text-violet-600 border-violet-500/25",
-  mastered:    "bg-emerald-500/20 text-emerald-600 border-emerald-500/25",
+  not_started: "bg-zinc-500/10 text-zinc-400 light:text-zinc-700 light:bg-zinc-100 border-zinc-500/20 light:border-zinc-300",
+  attempted:   "bg-amber-500/10 text-amber-400 light:text-amber-700 light:bg-amber-100 border-amber-500/20 light:border-amber-300",
+  solved:      "bg-cyan-500/10 text-cyan-400 light:text-cyan-700 light:bg-cyan-100 border-cyan-500/20 light:border-cyan-300",
+  revised:     "bg-violet-500/10 text-violet-400 light:text-violet-700 light:bg-violet-100 border-violet-500/20 light:border-violet-300",
+  mastered:    "bg-emerald-500/10 text-emerald-400 light:text-emerald-700 light:bg-emerald-100 border-emerald-500/20 light:border-emerald-300",
 };
 
 // Difficulty pill styles

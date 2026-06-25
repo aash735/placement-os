@@ -39,14 +39,14 @@ export default function QuestionDetailPage({ params }: { params: Promise<{ id: s
     }
     return (
       <AppShell title="Question not found">
-        <Link href="/dsa/practice" className="text-cyan-400">← Practice</Link>
+        <Link href="/dsa/practice" className="text-cyan-400 light:text-cyan-600 font-semibold hover:underline">← Practice</Link>
       </AppShell>
     );
   }
 
   return (
     <AppShell title={question.title} subtitle={`${topic?.name} · Level ${question.level}`}>
-      <Link href={`/dsa/topic/${question.topicId}`} className="mb-4 inline-block text-sm text-cyan-400">← {topic?.name}</Link>
+      <Link href={`/dsa/topic/${question.topicId}`} className="mb-4 inline-block text-sm text-cyan-400 light:text-cyan-600 font-semibold hover:underline">← {topic?.name}</Link>
 
       <GlassCard hover={false}>
         <div className="flex justify-between gap-4">
@@ -99,7 +99,7 @@ export default function QuestionDetailPage({ params }: { params: Promise<{ id: s
             value={progress?.notes ?? ""}
             onChange={(e) => setNotes(question.id, e.target.value)}
             placeholder="Write hints, approach details, weak concepts, code snippets, or complexity analysis here..."
-            className="mt-2 w-full h-32 rounded-xl border border-white/10 bg-black/20 p-3 text-sm text-white placeholder-zinc-500 focus:border-cyan-400 focus:outline-none"
+            className="field-input mt-2 w-full h-32 p-3 placeholder-zinc-500"
           />
         </div>
 

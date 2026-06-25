@@ -437,10 +437,11 @@ export default function AptitudePage() {
                         </span>
                         <p className="text-[9px] text-zinc-500">{attempt.correctAnswers} Correct</p>
                       </div>
-                      <Link href={`/aptitude/review/${attempt.id}`}>
-                        <button className="p-1 rounded bg-white/10 hover:bg-cyan-500 hover:text-black transition-all">
-                          <ChevronRight className="h-4 w-4" />
-                        </button>
+                      <Link 
+                        href={`/aptitude/review/${attempt.id}`}
+                        className="p-1 rounded bg-white/10 hover:bg-cyan-500 hover:text-black transition-all"
+                      >
+                        <ChevronRight className="h-4 w-4" />
                       </Link>
                     </div>
                   </div>

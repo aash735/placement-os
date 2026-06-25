@@ -77,8 +77,8 @@ export default function AnalyticsPage() {
       label: "Solved",
       count: statusCounts["solved"] || 0,
       percent: statusPercentages["solved"] || "0.0",
-      color: "text-cyan-400 border-cyan-500/20 bg-cyan-500/5",
-      dotColor: "bg-cyan-400",
+      color: "text-cyan-400 light:text-cyan-600 border-cyan-500/20 light:border-cyan-200 bg-cyan-500/5 light:bg-cyan-100/50",
+      dotColor: "bg-cyan-400 light:bg-cyan-600",
       icon: CheckCircle,
     },
     {
@@ -86,8 +86,8 @@ export default function AnalyticsPage() {
       label: "Attempted",
       count: statusCounts["attempted"] || 0,
       percent: statusPercentages["attempted"] || "0.0",
-      color: "text-amber-400 border-amber-500/20 bg-amber-500/5",
-      dotColor: "bg-amber-400",
+      color: "text-amber-400 light:text-amber-600 border-amber-500/20 light:border-amber-200 bg-amber-500/5 light:bg-amber-100/50",
+      dotColor: "bg-amber-400 light:bg-amber-600",
       icon: HelpCircle,
     },
     {
@@ -95,8 +95,8 @@ export default function AnalyticsPage() {
       label: "Revised",
       count: statusCounts["revised"] || 0,
       percent: statusPercentages["revised"] || "0.0",
-      color: "text-violet-400 border-violet-500/20 bg-violet-500/5",
-      dotColor: "bg-violet-400",
+      color: "text-violet-400 light:text-violet-600 border-violet-500/20 light:border-violet-200 bg-violet-500/5 light:bg-violet-100/50",
+      dotColor: "bg-violet-400 light:bg-violet-600",
       icon: RefreshCw,
     },
     {
@@ -104,8 +104,8 @@ export default function AnalyticsPage() {
       label: "Mastered",
       count: statusCounts["mastered"] || 0,
       percent: statusPercentages["mastered"] || "0.0",
-      color: "text-emerald-400 border-emerald-500/20 bg-emerald-500/5",
-      dotColor: "bg-emerald-400",
+      color: "text-emerald-400 light:text-emerald-600 border-emerald-500/20 light:border-emerald-200 bg-emerald-500/5 light:bg-emerald-100/50",
+      dotColor: "bg-emerald-400 light:bg-emerald-600",
       icon: Trophy,
     },
     {
@@ -113,8 +113,8 @@ export default function AnalyticsPage() {
       label: "Not Started",
       count: statusCounts["not_started"] || 0,
       percent: statusPercentages["not_started"] || "0.0",
-      color: "text-zinc-400 border-zinc-500/20 bg-zinc-500/5",
-      dotColor: "bg-zinc-400",
+      color: "text-zinc-400 light:text-zinc-650 border-zinc-500/20 light:border-zinc-200 bg-zinc-500/5 light:bg-zinc-100/50",
+      dotColor: "bg-zinc-450 light:bg-zinc-500",
       icon: BookOpen,
     },
   ];
@@ -195,7 +195,16 @@ export default function AnalyticsPage() {
               <BarChart data={areaData}>
                 <XAxis dataKey="area" stroke="#71717a" fontSize={10} />
                 <YAxis domain={[0, 100]} stroke="#71717a" />
-                <Tooltip />
+                <Tooltip
+                  contentStyle={{
+                    background: "var(--bg-elevated)",
+                    border: "1px solid var(--border-normal)",
+                    borderRadius: "12px",
+                    color: "var(--text-primary)"
+                  }}
+                  labelStyle={{ color: "var(--text-secondary)" }}
+                  itemStyle={{ color: "var(--text-primary)" }}
+                />
                 <Bar dataKey="score" fill="#22d3ee" radius={[6, 6, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
@@ -230,12 +239,13 @@ export default function AnalyticsPage() {
                     return [`${value} questions (${pct}%)`, name];
                   }}
                   contentStyle={{
-                    background: "rgba(9, 9, 11, 0.95)",
-                    border: "1px solid rgba(255,255,255,0.08)",
+                    background: "var(--bg-elevated)",
+                    border: "1px solid var(--border-normal)",
                     borderRadius: "12px",
-                    backdropFilter: "blur(10px)",
+                    color: "var(--text-primary)",
                   }}
-                  itemStyle={{ color: "#fff" }}
+                  labelStyle={{ color: "var(--text-secondary)" }}
+                  itemStyle={{ color: "var(--text-primary)" }}
                 />
                 <Legend />
               </PieChart>

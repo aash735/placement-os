@@ -281,7 +281,7 @@ export default function CompanyDetailPage({ params }: { params: Promise<{ slug: 
                     delay={i * 0.01}
                     className={cn(
                       "p-4 border flex flex-col justify-between transition-all",
-                      isCompleted ? "border-emerald-500/10 bg-emerald-500/2" : "border-white/5"
+                      isCompleted ? "border-emerald-500/10 bg-emerald-500/5" : "border-white/5"
                     )}
                     hover={true}
                   >
@@ -332,7 +332,7 @@ export default function CompanyDetailPage({ params }: { params: Promise<{ slug: 
                       </div>
                       
                       <div className="flex items-center space-x-2">
-                        <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/5 px-2 py-0.5 rounded-full shrink-0">
+                        <span className="text-[9px] font-bold text-emerald-400 light:text-emerald-700 bg-emerald-500/5 px-2 py-0.5 rounded-full shrink-0">
                           +{res.xpReward} XP
                         </span>
                         

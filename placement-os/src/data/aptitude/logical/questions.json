@@ -9,9 +9,9 @@
       "37.5 degrees"
     ],
     "answer": "47.5 degrees",
-    "explanation": "Using the clock angle formula: Angle = |30H - 5.5M|, where H is hours and M is minutes. Here H = 3, M = 25. Angle = |30(3) - 5.5(25)| = |90 - 137.5| = |-47.5| = 47.5 degrees.",
+    "explanation": "Step 1\nUsing the clock angle formula: Angle = |30H - 5.5M|, where H is hours and M is minutes.\n\nStep 2\nHere H = 3, M = 25.\n\nFinal Calculation\nAngle = |30(3) - 5.5(25)| = |90 - 137.5| = |-47.5| = 47.5 degrees.\n\nAnswer: 47.5 degrees",
     "shortcuts": [
-      "Formula: |30*H - 11/2 * M| = |30*3 - 5.5*25| = 47.5"
+      "Formula: |30*H - 11/2 \u00d7 M| = |30*3 - 5.5*25| = 47.5"
     ],
     "difficulty": 2,
     "topic": "clocks",
@@ -41,7 +41,7 @@
       "Sunday"
     ],
     "answer": "Tuesday",
-    "explanation": "2007 is an ordinary year, which has 365 days. 365 days = 52 weeks + 1 odd day. Therefore, January 1, 2008 will be 1 day ahead of January 1, 2007. Since Jan 1, 2007 was Monday, Jan 1, 2008 was Tuesday.",
+    "explanation": "Step 1\n2007 is an ordinary year, which has 365 days.\n\nStep 2\n365 days = 52 weeks + 1 odd day.\n\nStep 3\nTherefore, January 1, 2008 will be 1 day ahead of January 1, 2007.\n\nFinal Calculation\nSince Jan 1, 2007 was Monday, Jan 1, 2008 was Tuesday.\n\nAnswer: Tuesday",
     "shortcuts": [
       "Ordinary year has 1 odd day => Monday + 1 day = Tuesday"
     ],
@@ -73,10 +73,10 @@
       "112"
     ],
     "answer": "108",
-    "explanation": "The terms can be written as: 3 * (1^2) = 3. 3 * (2^2) = 12. 3 * (3^2) = 27. 3 * (4^2) = 48. 3 * (5^2) = 75. Next term = 3 * (6^2) = 3 * 36 = 108.",
+    "explanation": "Step 1\nThe terms can be written as: 3 \u00d7 (1^2) = 3.\n\nStep 2\n3 \u00d7 (2^2) = 12.\n\nStep 3\n3 \u00d7 (3^2) = 27. 3 \u00d7 (4^2) = 48. 3 \u00d7 (5^2) = 75.\n\nFinal Calculation\nNext term = 3 \u00d7 (6^2) = 3 \u00d7 36 = 108.\n\nAnswer: 108",
     "shortcuts": [
-      "Pattern: 3 * n^2 for n = 1, 2, 3, ...",
-      "3 * 36 = 108"
+      "Pattern: 3 \u00d7 n^2 for n = 1, 2, 3, ...",
+      "3 \u00d7 36 = 108"
     ],
     "difficulty": 2,
     "topic": "series",
@@ -106,7 +106,7 @@
       "14"
     ],
     "answer": "10",
-    "explanation": "Alternating series: +3, -2, +3, -2, +3, -2. 7 + 3 = 10. 10 - 2 = 8. 8 + 3 = 11. 11 - 2 = 9. 9 + 3 = 12. Next term = 12 - 2 = 10.",
+    "explanation": "Step 1\nAlternating series: +3, -2, +3, -2, +3, -2.\n\nStep 2\n7 + 3 = 10.\n\nStep 3\n10 - 2 = 8. 8 + 3 = 11. 11 - 2 = 9. 9 + 3 = 12.\n\nFinal Calculation\nNext term = 12 - 2 = 10.\n\nAnswer: 10",
     "shortcuts": [
       "Two alternating series: (7, 8, 9, 10) and (10, 11, 12, 13)",
       "Next term in first series = 10"
@@ -137,7 +137,7 @@
       "241673"
     ],
     "answer": "214673",
-    "explanation": "Direct letter-to-digit mapping: S -> 2 (from ROSE, wait, S is 2). E -> 1 (from ROSE). A -> 4 (from CHAIR/PREACH). R -> 6 (from ROSE/CHAIR/PREACH). C -> 7 (from CHAIR). H -> 3 (from CHAIR). Therefore, SEARCH = 214673.",
+    "explanation": "Step 1\nDirect letter-to-digit mapping: S -> 2 (from ROSE, wait, S is 2).\n\nStep 2\nE -> 1 (from ROSE).\n\nStep 3\nA -> 4 (from CHAIR/PREACH). R -> 6 (from ROSE/CHAIR/PREACH). C -> 7 (from CHAIR). H -> 3 (from CHAIR).\n\nFinal Calculation\nTherefore, SEARCH = 214673.\n\nAnswer: 214673",
     "shortcuts": [
       "Match letters directly from given codes: S=2, E=1, A=4, R=6, C=7, H=3"
     ],
@@ -169,7 +169,7 @@
       "Grandson"
     ],
     "answer": "Great-grandfather",
-    "explanation": "A is brother of B. C is mother of A, so C is mother of B as well. D is father of C, so D is maternal grandfather of B. E is son of B. Therefore, D is maternal grandfather of E's parent (B), making D the Great-grandfather of E.",
+    "explanation": "Step 1\nA is brother of B.\n\nStep 2\nC is mother of A, so C is mother of B as well.\n\nStep 3\nD is father of C, so D is maternal grandfather of B. E is son of B.\n\nFinal Calculation\nTherefore, D is maternal grandfather of E's parent (B), making D the Great-grandfather of E.\n\nAnswer: Great-grandfather",
     "shortcuts": [
       "Draw a family tree: D (G1) -> C (G2) -> A/B (G3) -> E (G4)",
       "Three generations difference = Great-grandfather"
@@ -202,7 +202,7 @@
       "Neither I nor II follows"
     ],
     "answer": "Only I follows",
-    "explanation": "Some actors are singers, and all singers are dancers. This means the intersection of actors and singers is non-empty, and singers are subset of dancers. So, some actors must be dancers (I follows). Since some actors are singers, it contradicts 'No singer is an actor' (II does not follow).",
+    "explanation": "Step 1\nSome actors are singers, and all singers are dancers.\n\nStep 2\nThis means the intersection of actors and singers is non-empty, and singers are subset of dancers.\n\nStep 3\nSo, some actors must be dancers (I follows).\n\nFinal Calculation\nSince some actors are singers, it contradicts 'No singer is an actor' (II does not follow).\n\nAnswer: Only I follows",
     "shortcuts": [
       "Positive statements cannot lead to negative conclusions like 'No singer is...",
       "Conclusion II is immediately rejected"
@@ -235,10 +235,10 @@
       "128"
     ],
     "answer": "127",
-    "explanation": "The pattern is: each term is twice the previous term plus 1. 3*2+1 = 7. 7*2+1 = 15. 15*2+1 = 31. 31*2+1 = 63. The next term is 63*2+1 = 127. Alternatively, the differences are powers of 2: 4, 8, 16, 32, 64. 63 + 64 = 127.",
+    "explanation": "Step 1\nThe pattern is: each term is twice the previous term plus 1.\n\nStep 2\n3*2+1 = 7.\n\nStep 3\n7*2+1 = 15. 15*2+1 = 31. 31*2+1 = 63. The next term is 63*2+1 = 127. Alternatively, the differences are powers of 2: 4, 8, 16, 32, 64.\n\nFinal Calculation\n63 + 64 = 127.\n\nAnswer: 127",
     "shortcuts": [
-      "Next term = 2 * current + 1",
-      "63 * 2 + 1 = 127"
+      "Next term = 2 \u00d7 current + 1",
+      "63 \u00d7 2 + 1 = 127"
     ],
     "difficulty": 1,
     "topic": "series",
@@ -270,7 +270,7 @@
       "EDECMRBE"
     ],
     "answer": "ECEDREBM",
-    "explanation": "The word is split into two halves of 4 letters each: COMP and UTER. Both halves are reversed individually: COMP becomes PMOC, and UTER becomes RETU, combined as PMOCRETU. Similarly, DECEMBER is split into DECE and MBER. Reversing DECE gives ECED, and reversing MBER gives REBM. Combining them gives ECEDREBM.",
+    "explanation": "Step 1\nThe word is split into two halves of 4 letters each: COMP and UTER.\n\nStep 2\nBoth halves are reversed individually: COMP becomes PMOC, and UTER becomes RETU, combined as PMOCRETU.\n\nStep 3\nSimilarly, DECEMBER is split into DECE and MBER. Reversing DECE gives ECED, and reversing MBER gives REBM.\n\nFinal Calculation\nCombining them gives ECEDREBM.\n\nAnswer: ECEDREBM",
     "shortcuts": [
       "Split in half and reverse each half"
     ],
@@ -302,7 +302,7 @@
       "Grandmother"
     ],
     "answer": "Mother",
-    "explanation": "Break it down: 'only daughter of my mother' = the woman herself (since she is talking about her mother's only daughter). Thus, 'His mother' is the woman herself. So, the woman is the mother of the man.",
+    "explanation": "Step 1\nBreak it down: 'only daughter of my mother' = the woman herself (since she is talking about her mother's only daughter).\n\nStep 2\nThus, 'His mother' is the woman herself.\n\nFinal Calculation\nSo, the woman is the mother of the man.\n\nAnswer: Mother",
     "shortcuts": [
       "'Only daughter of my mother' = Myself",
       "So, His mother = Myself => Mother"
@@ -335,7 +335,7 @@
       "Neither I nor II follows"
     ],
     "answer": "Only II follows",
-    "explanation": "Since some books are pencils, it is guaranteed that some pencils are books (II follows, since intersection of books and pencils is non-empty). However, there is no guaranteed intersection between pens and pencils, so I does not necessarily follow.",
+    "explanation": "Step 1\nSince some books are pencils, it is guaranteed that some pencils are books (II follows, since intersection of books and pencils is non-empty).\n\nFinal Calculation\nHowever, there is no guaranteed intersection between pens and pencils, so I does not necessarily follow.\n\nAnswer: Only II follows",
     "shortcuts": [
       "Some A are B => Some B are A is always true.",
       "All A are B + Some B are C => No conclusion between A and C."
@@ -368,7 +368,7 @@
       "South"
     ],
     "answer": "South-East",
-    "explanation": "Starting at (0,0):\n1. Walks 5 km East -> reaches (5, 0).\n2. Turns right (facing South) and walks 4 km -> reaches (5, -4).\n3. Turns left (facing East) and walks 5 km -> reaches (10, -4).\nFrom (0,0), the point (10, -4) lies in the South-East direction.",
+    "explanation": "Step 1\nStarting at (0,0):.\n\nStep 2\n1.\n\nStep 3\nWalks 5 km East -> reaches (5, 0). 2. Turns right (facing South) and walks 4 km -> reaches (5, -4). 3. Turns left (facing East) and walks 5 km -> reaches (10, -4).\n\nFinal Calculation\nFrom (0,0), the point (10, -4) lies in the South-East direction.\n\nAnswer: South-East",
     "shortcuts": [
       "Draw coordinates on paper: (5,0) -> (5,-4) -> (10,-4) => South-East"
     ],
@@ -402,7 +402,7 @@
       "Neither I nor II follows"
     ],
     "answer": "Only conclusion II follows",
-    "explanation": "The statement asserts that morning walks are good for health, which directly leads to conclusion II (they help maintain good health). However, it does not imply that *all* healthy people go for morning walks, so conclusion I does not follow.",
+    "explanation": "Step 1\nThe statement asserts that morning walks are good for health, which directly leads to conclusion II (they help maintain good health).\n\nFinal Calculation\nHowever, it does not imply that *all* healthy people go for morning walks, so conclusion I does not follow.\n\nAnswer: Only conclusion II follows",
     "shortcuts": [
       "Avoid conclusions containing extreme words like 'all', 'never', 'always' unless explicitly stated"
     ],
@@ -434,7 +434,7 @@
       "Election"
     ],
     "answer": "Voter",
-    "explanation": "A doctor serves and provides care to a patient. Similarly, a politician represents and serves a voter/constituent.",
+    "explanation": "Step 1\nA doctor serves and provides care to a patient.\n\nFinal Calculation\nSimilarly, a politician represents and serves a voter/constituent.\n\nAnswer: Voter",
     "shortcuts": [
       "Identify relationship: Server : Served"
     ],
@@ -466,7 +466,7 @@
       "T"
     ],
     "answer": "R",
-    "explanation": "Let's arrange them from left to right:\n1. Q is at the left end: Q, _, _, _, _, _.\n2. S is between P and T: PST or TSP.\n3. U is at the immediate right of T: TU. This makes the block: PSTU or S (not between if P is right? Wait, if S is between P and T, S is PST or TSP. Since U is right of T, the order is PSTU or USTP? If S is between P and T, T-S-P, and U is right of T, so U-T-S-P. Let's check).\n4. R is at the immediate left of P: RP. This makes the block: R-P-S-T-U.\n5. Combining this with Q at the left end: Q, R, P, S, T, U. All six positions are filled! The person sitting next to Q is R.",
+    "explanation": "Step 1\nLet's arrange them from left to right:.\n\nStep 2\n1.\n\nStep 3\nQ is at the left end: Q, _, _, _, _, _. 2. S is between P and T: PST or TSP. 3. U is at the immediate right of T: TU. This makes the block: PSTU or S (not between if P is right? Wait, if S is between P and T, S is PST or TSP. Since U is right of T, the order is PSTU or USTP? If S is between P and T, T-S-P, and U is right of T, so U-T-S-P. Let's check). 4. R is at the immediate left of P: RP. This makes the block: R-P-S-T-U. 5. Combining this with Q at the left end: Q, R, P, S, T, U.\n\nFinal Calculation\nAll six positions are filled! The person sitting next to Q is R.\n\nAnswer: R",
     "shortcuts": [
       "Use absolute anchors first: Q at left end.",
       "RP and PSTU forms RPS-TU, fits Q-R-P-S-T-U."
@@ -501,7 +501,7 @@
       "21.35"
     ],
     "answer": "21.05",
-    "explanation": "C.P. = 1100 4 96.25.4 \uf8eb\uf8f6 - + =\uf8ec\uf8f7\uf8ed\uf8f8Rs. Rs.",
+    "explanation": "Step 1\nC.P.\n\nFinal Calculation\n= 1100 4 96.25.4 () - + =[]{}\u20b9\u20b9.\n\nAnswer: 21.05",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -522,7 +522,7 @@
       "24 hrs 40 min"
     ],
     "answer": "22 hrs 20 min",
-    "explanation": "Cash realised = Rs. (106.25 \u2013 0.25) = Rs. 106.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nCash realised = \u20b9(106.25 \u2013 0.25) = \u20b9106.\n\nAnswer: 22 hrs 20 min",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -543,7 +543,7 @@
       "180\u00b0"
     ],
     "answer": "180\u00b0",
-    "explanation": "C.P. of each share = Rs. (25 + 2% of 25) = Rs. 25.50. \\ Number of shares = 12750 500.25.50 \uf8eb\uf8f6 =\uf8ec\uf8f7 \uf8ed\uf8f8",
+    "explanation": "Step 1\nC.P.\n\nStep 2\nof each share = \u20b9(25 + $2\\% \\text{ of } 25$) = \u20b925.50.\n\nFinal Calculation\n\\ Number of shares = 12750 500.25.50 () =[] {}.\n\nAnswer: 180\u00b0",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -564,7 +564,7 @@
       "12"
     ],
     "answer": "6",
-    "explanation": "By investing Rs. 128, income derived = Rs. 16. By investing Rs. 100, income derived = 16 100 12.5.128 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 Rs. Rs. \\ Interest obtained = 12.5%.",
+    "explanation": "Step 1\nBy investing \u20b9128, income derived = \u20b916.\n\nFinal Calculation\nBy investing \u20b9100, income derived = 16 100 12.5.128 () \u00d7 =[] {} \u20b9\u20b9\\ Interest obtained = 12.5%.\n\nAnswer: 6",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -585,7 +585,7 @@
       "4 3 2"
     ],
     "answer": "4 2 1",
-    "explanation": "Income on Rs. 100 stock = Rs. 13.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nIncome on \u20b9100 stock = \u20b913.\n\nAnswer: 4 2 1",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -606,7 +606,7 @@
       "840\u00b0"
     ],
     "answer": "840\u00b0",
-    "explanation": "Income on each debenture = 15% of Rs. 100 = Rs. 15. Number of debentures required = Rs. 1500 15 \uf8eb\uf8f6\uf8ec\uf8f7\uf8ed\uf8f8 = Rs. 100. Cost of each debenture = Rs. (104 + 1% of 104) = (104 + 1.04) = Rs. 105.04. \\ Total investment = Rs. (105.04 * 100) = Rs. 10504.",
+    "explanation": "Step 1\nIncome on each debenture = 15% of \u20b9100 = \u20b915.\n\nStep 2\nNumber of debentures required = \u20b91500 15 ()[]{} = \u20b9100.\n\nStep 3\nCost of each debenture = \u20b9(104 + $1\\% \\text{ of } 104$) = (104 + 1.04) = \u20b9105.04.\n\nFinal Calculation\n\\ Total investment = \u20b9(105.04 \u00d7 100) = \u20b910504.\n\nAnswer: 840\u00b0",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -627,7 +627,7 @@
       "160\u00b0"
     ],
     "answer": "155\u00b0",
-    "explanation": "Number of shares = 4455 540.8.25 \uf8eb\uf8f6 =\uf8ec\uf8f7 \uf8ed\uf8f8 Face value = Rs. (540 * 10) = Rs. 5400. Annual income = 12 5400 648.100 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8Rs. Rs. 8. Number of shares = 14400 120.120 \uf8eb\uf8f6 =\uf8ec\uf8f7 \uf8ed\uf8f8 Face value = Rs. (100 * 120) = Rs. 12000. Annual income = 5 12000 600.100 \uf8eb\uf8f6 * =\uf8ec\uf8f7\uf8ed\uf8f8 Rs. Rs.",
+    "explanation": "Step 1\nNumber of shares = 4455 540.8.25 () =[] {} Face value = \u20b9(540 \u00d7 10) = \u20b95400.\n\nStep 2\nAnnual income = 12 5400 648.100 () \u00d7 =[] {}\u20b9\u20b98.\n\nStep 3\nNumber of shares = 14400 120.120 () =[] {} Face value = \u20b9(100 \u00d7 120) = \u20b912000.\n\nFinal Calculation\nAnnual income = 5 12000 600.100 () \u00d7 =[]{} \u20b9\u20b9.\n\nAnswer: 155\u00b0",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -648,7 +648,7 @@
       "649"
     ],
     "answer": "649",
-    "explanation": "A man invested Rs. 14,400 in Rs. 100 shares of a company at 20% premium. If the company declares 5% dividend at the end of the year, then how much does he get? (R.R.B., 2008; Hotel Management, 2003) ( a) Rs. 500 (b) Rs. 600 ( c) Rs. 650 (d) Rs. 720",
+    "explanation": "Step 1\nA man invested \u20b914,400 in \u20b9100 shares of a company at 20% premium.\n\nStep 2\nIf the company declares 5% dividend at the end of the year, then how much does he get? (R.R.B., 2008.\n\nFinal Calculation\nHotel Management, 2003) ( a) \u20b9500 (b) \u20b9600 ( c) \u20b9650 (d) \u20b9720.\n\nAnswer: 649",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -669,7 +669,7 @@
       "135\u00b0"
     ],
     "answer": "130\u00b0",
-    "explanation": "Income from bank = 14% of Rs. 13200 = Rs. 1848. Number of shares purchased = Rs. 13200 110 \uf8eb\uf8f6\uf8ec\uf8f7\uf8ed\uf8f8 = Rs. 120. Income from stock = (15% of Rs. 100) * 120 = Rs. (15 * 120) = Rs. 1800. \\ Loss = Rs. (1848 \u2013 1800) = Rs. 48.",
+    "explanation": "Step 1\nIncome from bank = 14% of \u20b913200 = \u20b91848.\n\nStep 2\nNumber of shares purchased = \u20b913200 110 ()[]{} = \u20b9120.\n\nStep 3\nIncome from stock = (15% of \u20b9100) \u00d7 120 = \u20b9(15 \u00d7 120) = \u20b91800.\n\nFinal Calculation\n\\ Loss = \u20b9(1848 \u2013 1800) = \u20b948.\n\nAnswer: 130\u00b0",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -690,7 +690,7 @@
       "1197 2"
     ],
     "answer": "1192 2",
-    "explanation": "For an income of Rs. 8, investment = Rs. 100. For an income of Rs. 6, investment = 100 6 75.8 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 Rs. Rs. \\ Market value of Rs. 100 stock = Rs. 75.",
+    "explanation": "Step 1\nFor an income of \u20b98, investment = \u20b9100.\n\nFinal Calculation\nFor an income of \u20b96, investment = 100 6 75.8 () \u00d7 =[] {} \u20b9\u20b9\\ Market value of \u20b9100 stock = \u20b975.\n\nAnswer: 1192 2",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -711,7 +711,7 @@
       "20\u00b0"
     ],
     "answer": "10\u00b0",
-    "explanation": "To obtain Rs. 8, investment = Rs. 100. To obtain Rs. 9, investment = 100 9 112.50.8 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 Rs. Rs. 214 %7 stock at 120 free from income tax? ( a) 12% stock (b) 214 %7 stock ( c) Both are equally good (d) Cannot be compared",
+    "explanation": "Step 1\nTo obtain \u20b98, investment = \u20b9100.\n\nFinal Calculation\nTo obtain \u20b99, investment = 100 9 112.50.8 () \u00d7 =[] {} \u20b9\u20b9214%7 stock at 120 free from income tax? ( a) 12% stock (b) 214%7 stock ( c) Both are equally good (d) Cannot be compared.\n\nAnswer: 10\u00b0",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -732,7 +732,7 @@
       "172 2"
     ],
     "answer": "167 2",
-    "explanation": "To earn Rs. 10, money invested = Rs. 100. To earn Rs. 12, money invested = 100 12 120.10 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 Rs. Rs. \\ Market value of Rs. 100 stock = Rs. 120.",
+    "explanation": "Step 1\nTo earn \u20b910, money invested = \u20b9100.\n\nFinal Calculation\nTo earn \u20b912, money invested = 100 12 120.10 () \u00d7 =[] {} \u20b9\u20b9\\ Market value of \u20b9100 stock = \u20b9120.\n\nAnswer: 167 2",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -753,7 +753,7 @@
       "9.30"
     ],
     "answer": "7.30",
-    "explanation": "To obtain Rs. 10, investment = Rs. 96. To obtain Rs. 650, investment = 96 650 6240.10 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 Rs. Rs.",
+    "explanation": "Step 1\nTo obtain \u20b910, investment = \u20b996.\n\nFinal Calculation\nTo obtain \u20b9650, investment = 96 650 6240.10 () \u00d7 =[] {} \u20b9\u20b9.\n\nAnswer: 7.30",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -774,7 +774,7 @@
       "None of these"
     ],
     "answer": "183 1",
-    "explanation": "To earn Rs. 50 ,3 investment = Rs. 64. To earn Rs. 1500, investment = 364 1500 5760.50 \uf8eb\uf8f6 * * =\uf8ec\uf8f7 \uf8ed\uf8f8Rs. Rs.",
+    "explanation": "Step 1\nTo earn \u20b950 ,3 investment = \u20b964.\n\nFinal Calculation\nTo earn \u20b91500, investment = 364 1500 5760.50 () \u00d7 * =[] {}\u20b9\u20b9.\n\nAnswer: 183 1",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -795,7 +795,7 @@
       "4559.67 cm"
     ],
     "answer": "4557.67 cm",
-    "explanation": "By investing Rs. 1552, income = Rs. 128. By investing Rs. 97, income = 128 97 8.1552 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8Rs. Rs. \\ Dividend = 8%.",
+    "explanation": "Step 1\nBy investing \u20b91552, income = \u20b9128.\n\nFinal Calculation\nBy investing \u20b997, income = 128 97 8.1552 () \u00d7 =[] {}\u20b9\u20b9\\ Dividend = 8%.\n\nAnswer: 4557.67 cm",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -816,7 +816,7 @@
       "20"
     ],
     "answer": "10",
-    "explanation": "Investment = Rs. [20 * (50 \u2013 5)] = Rs. 900. Face value = Rs. (50 * 20) = Rs. 1000. Dividend = 27 1000 135.2 100 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8Rs. Rs. Interest obtained = 135 100 % 15%.900 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8",
+    "explanation": "Step 1\nInvestment = \u20b9[20 \u00d7 (50 \u2013 5)] = \u20b9900.\n\nStep 2\nFace value = \u20b9(50 \u00d7 20) = \u20b91000.\n\nFinal Calculation\nDividend = 27 1000 135.2 100 () \u00d7 =[] {}\u20b9\u20b9Interest obtained = 135 100% 15%.900 () \u00d7 =[] {}.\n\nAnswer: 10",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -837,7 +837,7 @@
       "10.48 a.m."
     ],
     "answer": "10.48 a.m.",
-    "explanation": "Dividend on Rs. 100 = 8% of Rs. 100 = Rs. 8. Rs. 11 is an income on Rs. 100. \\ Rs. 8 is an income on Rs. 100 811 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8 = Rs. 72.72.",
+    "explanation": "Step 1\nDividend on \u20b9100 = 8% of \u20b9100 = \u20b98.\n\nStep 2\n\u20b911 is an income on \u20b9100.\n\nFinal Calculation\n\\ \u20b98 is an income on \u20b9100 811 () \u00d7 [] {} = \u20b972.72.\n\nAnswer: 10.48 a.m.",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -858,7 +858,7 @@
       "24"
     ],
     "answer": "22",
-    "explanation": "Dividend on 1 share = 10 50 5.100 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8Rs. Rs. Rs. 12.50 is an income on an investment of Rs. 100. Rs. 5 is an income on an investment of 2100 5 40.25 \uf8eb\uf8f6 * * =\uf8ec\uf8f7 \uf8ed\uf8f8Rs. Rs. \\ Cost of 1 share = Rs. 40. SOLUTIONS840 QUANTITATIVE APTITUDE",
+    "explanation": "Step 1\nDividend on 1 share = 10 50 5.100 () \u00d7 =[] {}\u20b9\u20b9\u20b912.50 is an income on an investment of \u20b9100.\n\nFinal Calculation\n\u20b95 is an income on an investment of 2100 5 40.25 () \u00d7 * =[] {}\u20b9\u20b9\\ Cost of 1 share = \u20b940.\n\nAnswer: 22",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -879,7 +879,7 @@
       "48"
     ],
     "answer": "44",
-    "explanation": "For an income of Rs. 756, investment = Rs. 9000. For an income of Rs. 21 ,2 investment = 9000 21 125.756 2 \uf8eb\uf8f6 * =\uf8ec\uf8f7\uf8ed\uf8f8Rs. Rs. \\ For a Rs. 100 stock, investment = Rs. 125. Market value of Rs. 100 stock = 1125 124.75.4 \uf8eb\uf8f6 - =\uf8ec\uf8f7 \uf8ed\uf8f8 Rs. Rs.",
+    "explanation": "Step 1\nFor an income of \u20b9756, investment = \u20b99000.\n\nStep 2\nFor an income of \u20b921 ,2 investment = 9000 21 125.756 2 () \u00d7 =[]{}\u20b9\u20b9\\ For a \u20b9100 stock, investment = \u20b9125.\n\nFinal Calculation\nMarket value of \u20b9100 stock = 1125 124.75.4 () - =[] {} \u20b9\u20b9.\n\nAnswer: 44",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -900,7 +900,7 @@
       "48"
     ],
     "answer": "44",
-    "explanation": "Let investment in 12% stock be Rs. x. Then, investment in 15% stock = Rs. (12000 \u2013 x). 12 15 (12000 ) 1360120 125xx * + * - = \u21d4 3 (12000 ) 136010 25 x x+ - = \u21d4 5 x + 72000 \u2013 6 x = 1360 * 50 \u21d4 x = 4000.",
+    "explanation": "Step 1\nLet investment in 12% stock be \u20b9x.\n\nStep 2\nThen, investment in 15% stock = \u20b9(12000 \u2013 x).\n\nFinal Calculation\n12 15 (12000 ) 1360120 125xx \u00d7 + \u00d7 - = \u21d4 3 (12000 ) 136010 25 x x+ - = \u21d4 5 x + 72000 \u2013 6 x = 1360 \u00d7 50 \u21d4 x = 4000.\n\nAnswer: 44",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -921,7 +921,7 @@
       "48"
     ],
     "answer": "22",
-    "explanation": "Let the investment in 9% stock be Rs. x. Then, investment in 10% stock = Rs. (9800 \u2013 x). 9 10 (9800 )75 80xx * = * - \u21d4 98003 25 8 xx - = \u21d4 24 x = 9800 * 25 \u2013 25 x \u21d4 49x = 9800 * 25 \u21d4 x = 5000.",
+    "explanation": "Step 1\nLet the investment in 9% stock be \u20b9x.\n\nStep 2\nThen, investment in 10% stock = \u20b9(9800 \u2013 x).\n\nFinal Calculation\n9 10 (9800 )75 80xx \u00d7 = \u00d7 - \u21d4 98003 25 8 xx - = \u21d4 24 x = 9800 \u00d7 25 \u2013 25 x \u21d4 49x = 9800 \u00d7 25 \u21d4 x = 5000.\n\nAnswer: 22",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -942,7 +942,7 @@
       "20"
     ],
     "answer": "18",
-    "explanation": "Let the investment in Bond A be Rs. x. Then, investment in Bond B = Rs. (140000 \u2013 x). For maximum return, we have : 140000 \u2013 x = 40% of x => 140000 \u2013 x = 2 5 x => 7 5 x = 140000 => x = 140000 5 7 * = 100000. So, investment in Bond A = Rs. 100000; Investment in Bond B = Rs. (140000 \u2013 100000) = Rs. 40000. \\ Maximum return = 12% of Rs. 100000 + 16% of Rs. 40000 = Rs. (12000 + 4800) = Rs. 16800.",
+    "explanation": "Step 1\nLet the investment in Bond A be \u20b9x.\n\nStep 2\nThen, investment in Bond B = \u20b9(140000 \u2013 x).\n\nStep 3\nFor maximum return, we have : 140000 \u2013 x = 40% of x => 140000 \u2013 x = 2 5 x => 7 5 x = 140000 => x = $(\\frac{5}{7}) \\times 140000$ = 100000. So, investment in Bond A = \u20b9100000. Investment in Bond B = \u20b9(140000 \u2013 100000) = \u20b940000.\n\nFinal Calculation\n\\ Maximum return = 12% of \u20b9100000 + 16% of \u20b940000 = \u20b9(12000 + 4800) = \u20b916800.\n\nAnswer: 18",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -963,7 +963,7 @@
       "None of these"
     ],
     "answer": "390\u00b0",
-    "explanation": "For an income of Rs. 1 in 9% stock at 96, Investment = 96 32 .93 \uf8eb\uf8f6 =\uf8ec\uf8f7\uf8ed\uf8f8 Rs. Rs. For an income of Rs. 1 in 12% stock at 120, investment Rs. 120 12 \uf8eb\uf8f6\uf8ec\uf8f7\uf8ed\uf8f8 = Rs. 10. \\ Ratio of investments = 32 3 : 10 = 32 : 30 = 16 : 15.",
+    "explanation": "Step 1\nFor an income of \u20b91 in 9% stock at 96, Investment = 96 32 .93 () =[]{} \u20b9\u20b9For an income of \u20b91 in 12% stock at 120, investment \u20b9120 12 ()[]{} = \u20b910.\n\nFinal Calculation\n\\ Ratio of investments = 32 3 : 10 = 32 : 30 = 16 : 15.\n\nAnswer: 390\u00b0",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -984,7 +984,7 @@
       "166"
     ],
     "answer": "156",
-    "explanation": "Let investment in each case be Rs. (143 * 117). Income in 1st case = Rs. 11 143 117143 \uf8eb\uf8f6 * * \uf8ec\uf8f7 \uf8ed\uf8f8 = Rs. 1287. Income in 2nd case = Rs. 39 143 1174 117 \uf8eb\uf8f6 * * \uf8ec\uf8f7 * \uf8ed\uf8f8 = Rs. 1394.25. Clearly, 39%4 stock at 117 is better.",
+    "explanation": "Step 1\nLet investment in each case be \u20b9(143 \u00d7 117).\n\nStep 2\nIncome in 1st case = \u20b911 143 117143 () \u00d7 * [] {} = \u20b91287.\n\nStep 3\nIncome in 2nd case = \u20b939 143 1174 117 () \u00d7 * [] \u00d7 {} = \u20b91394.25.\n\nFinal Calculation\nClearly, 39%4 stock at 117 is better.\n\nAnswer: 156",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1005,7 +1005,7 @@
       "11.25 seconds"
     ],
     "answer": "11.25 seconds",
-    "explanation": "Number of shares purchased = 5508 54.102 = Income from each share = 4% of Rs. 100 = Rs. 4. \\ Original income = Rs. (54 * 4) = Rs. 216. Money incurred from sale of share = Rs. (105 * 54) = Rs. 5670. Number of new shares purchased = 5670 45.126 \uf8eb\uf8f6 =\uf8ec\uf8f7 \uf8ed\uf8f8 New income = Rs. (45 * 5) = Rs. 225. \\ Change in income = Rs. (225 \u2013 216) = Rs. 9.",
+    "explanation": "Step 1\nNumber of shares purchased = 5508 54.102 = Income from each share = 4% of \u20b9100 = \u20b94.\n\nStep 2\n\\ Original income = \u20b9(54 \u00d7 4) = \u20b9216.\n\nStep 3\nMoney incurred from sale of share = \u20b9(105 \u00d7 54) = \u20b95670. Number of new shares purchased = 5670 45.126 () =[] {} New income = \u20b9(45 \u00d7 5) = \u20b9225.\n\nFinal Calculation\n\\ Change in income = \u20b9(225 \u2013 216) = \u20b99.\n\nAnswer: 11.25 seconds",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1026,7 +1026,7 @@
       "11"
     ],
     "answer": "11",
-    "explanation": "Number of shares sold = 7500 100 = 75. Proceeds from sale of Rs. 7500 stock = Rs. [(105.50 \u2013 0.5) * 75] = Rs. 7875. Number of new shares purchased 7875 7875 63.124.50 0.50 125 \uf8eb \uf8f6\uf8eb \uf8f6= == \uf8ec\uf8f7\uf8ec\uf8f7 + \uf8ed\uf8f8\uf8ed\uf8f8 Original income = 10% of Rs. 7500 = Rs. 750. New income = 14% of Rs. 6300 = Rs. 14 6300100 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8 = Rs. 882. \\ Change in income = Rs. (882 \u2013 750) = Rs. 132.",
+    "explanation": "Step 1\nNumber of shares sold = 7500 100 = 75.\n\nStep 2\nProceeds from sale of \u20b97500 stock = \u20b9[(105.50 \u2013 0.5) \u00d7 75] = \u20b97875.\n\nStep 3\nNumber of new shares purchased 7875 7875 63.124.50 0.50 125 ( )( )= == [][] + {}{} Original income = 10% of \u20b97500 = \u20b9750. New income = 14% of \u20b96300 = \u20b914 6300100 () \u00d7 [] {} = \u20b9882.\n\nFinal Calculation\n\\ Change in income = \u20b9(882 \u2013 750) = \u20b9132.\n\nAnswer: 11",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1048,7 +1048,7 @@
       "11 : 38 p.m."
     ],
     "answer": "11 : 36 a.m.",
-    "explanation": "Let investment in each case = Rs. (100 * 120). Income from 12% stock = Rs. 12 100 120100 \uf8eb\uf8f6 * * \uf8ec\uf8f7 \uf8ed\uf8f8 = Rs. 1440. Net income = Rs. 51440 1440100 \uf8eb\uf8f6 - * \uf8ec\uf8f7 \uf8ed\uf8f8 = Rs. 1368. Income from 2 10014 % stock 100 1207 7 20 \uf8eb\uf8f6= * * \uf8ec\uf8f7 * \uf8ed\uf8f8 Rs. = Rs. 1428.57. Clearly, 214 %7 stock is better .",
+    "explanation": "Step 1\nLet investment in each case = \u20b9(100 \u00d7 120).\n\nStep 2\nIncome from 12% stock = \u20b912 100 120100 () \u00d7 * [] {} = \u20b91440.\n\nStep 3\nNet income = \u20b951440 1440100 () - \u00d7 [] {} = \u20b91368. Income from 2 10014% stock 100 1207 7 20 ()= \u00d7 * [] \u00d7 {} \u20b9= \u20b91428.57.\n\nFinal Calculation\nClearly, 214%7 stock is better .\n\nAnswer: 11 : 36 a.m.",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1063,13 +1063,13 @@
     "id": "logical-clocks-30",
     "question": "A watch becomes fast by 5 minutes everyday. By what percent does it become fast? (R.R.B., 2006)",
     "options": [
-      "5 %24",
-      "1 %12",
+      "5%24",
+      "1%12",
       "5%",
-      "50 %144"
+      "50%144"
     ],
-    "answer": "50 %144",
-    "explanation": "For an income of Rs. 10, investment = Rs. 96. For an income of Rs. 12, investment = Rs. 96 1210 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8 = Rs. 115.20.841 30 Permutations and Combinations IMPORTANT FACTS AND FORMULAE I. Factorial n: Let n be a positive integer. Then, factorial n is denoted by !,n or n defined as ( \u2013 1) ( \u2013 2) ( \u2013 3) ..... 4 3 2 1.n nn n n= \u22c5\u22c5\u22c5 Ex. ( i) 4 (4 3 2 1) 24.= * * * = ( ii) 5( 54321 )1 2 .= * * * * = 0 Note: We define, 0 1.= II. ( i) Permutations: The different arrangements of a given number of things by taking some or all at a time are called permutations. Ex.1. All permutations or arrangements made with the letters a, b, c by taking two at a time are ( ab, ba, ac, ca, bc, cb ). Ex.2. All permutations made with the letters a, b, c by taking 3 at a time are ( abc, acb, bac, bca, cab, cba ). ( ii) Number of Permutations of n things, taking r at a time is given by: n r nP =nn\u20131 n\u20132 n\u2013 r+1 = . n\u2013r( ) ( ) ..... ( ) Ex. (i) 8P2 = (8 * 7) = 56. (ii) 7P3 = (7 * 6 * 5) = 210. ( iii) Number of all permutations of n things, taking all at a time is n. ( iv) If there are n objects of which p1 are alike of one kind; p2 are alike of another kind; p3 are alike of third kind and so on and pr are alike of rth kind such that ( p1 + p2 + ...+ pr) = n, then number of permutations = 123 ..... r n ppp p \u22c5\u22c5\u22c5\u22c5 III. (i) Combinations: Each of the different groups or selections which can be formed by taking some or all at a time, is called a combination. Ex. 1. Out of three boys A, B, C we want to select two. The possible selections are (AB, BC, CA ). Note that AB and BA represent the same combination. Ex. 2. The only combination of three letters A, B, C taken all at a time is ABC. Ex. 3. Various groups of two out of 4 persons A, B, C, D are AB, AC, AD, BC, BD, CD. Important Note: AB and BA are two different permutations. But, they represent the same combination. ( ii) Number of all combinations of n things, taken r at a time, is ( )( ) ( 1) ( 2) ..... to factorsn r nn n rnC rr nr - - == - ( iii) nCn = 1 and nC0 = 1 (iv) nCr = nC(n \u2013 r) Ex. (i) 8 3 876 56.321C * * == * * ( ii) 16 16 16 13 (16 13) 3 16 15 14 560.321CC C - * * = == = * *",
+    "answer": "50%144",
+    "explanation": "Step 1\nFor an income of \u20b910, investment = \u20b996.\n\nStep 2\nFor an income of \u20b912, investment = \u20b996 1210 () \u00d7 [] {} = \u20b9115.20.841 30 Permutations and Combinations IMPORTANT FACTS AND FORMULAE I.\n\nStep 3\nFactorial n: Let n be a positive integer. Then, factorial n is denoted by !,n or n defined as ( \u2013 1) ( \u2013 2) ( \u2013 3) .... 4 3 2 1.n nn n n= \u22c5\u22c5\u22c5 Ex. ( i) 4 (4 3 2 1) 24.= \u00d7 * \u00d7 = ( ii) 5( 54321 )1 2 .= \u00d7 * \u00d7 * = 0 Note: We define, 0 1.= II. ( i) Permutations: The different arrangements of a given number of things by taking some or all at a time are called permutations. Ex.1. All permutations or arrangements made with the letters a, b, c by taking two at a time are ( ab, ba, ac, ca, bc, cb ). Ex.2. All permutations made with the letters a, b, c by taking 3 at a time are ( abc, acb, bac, bca, cab, cba ). ( ii) Number of Permutations of n things, taking r at a time is given by: n r nP =nn\u20131 n\u20132 n\u2013 r+1 =. n\u2013r( ) ( ) .... ( ) Ex. (i) 8P2 = (8 \u00d7 7) = 56. (ii) 7P3 = (7 \u00d7 6 \u00d7 5) = 210. ( iii) Number of all permutations of n things, taking all at a time is n. ( iv) If there are n objects of which p1 are alike of one kind. p2 are alike of another kind. p3 are alike of third kind and so on and pr are alike of rth kind such that ( p1 + p2 + ...+ pr) = n, then number of permutations = 123 .... r n ppp p \u22c5\u22c5\u22c5\u22c5 III. (i) Combinations: Each of the different groups or selections which can be formed by taking some or all at a time, is called a combination. Ex. 1. Out of three boys A, B, C we want to select two. The possible selections are (AB, BC, CA ). Note that AB and BA represent the same combination. Ex. 2. The only combination of three letters A, B, C taken all at a time is ABC. Ex. 3. Various groups of two out of 4 persons A, B, C, D are AB, AC, AD, BC, BD, CD. Important Note: AB and BA are two different permutations. But, they represent the same combination. ( ii) Number of all combinations of n things, taken r at a time, is ( )( ) ( 1) ( 2) .... to factorsn r nn n rnC rr nr - - == - ( iii) nCn = 1 and nC0 = 1 (iv) nCr = nC(n \u2013 r) Ex.\n\nFinal Calculation\n(i) 8 3 876 56.321C \u00d7 * == \u00d7 * ( ii) 16 16 16 13 (16 13) 3 16 15 14 560.321CC C - \u00d7 * = == = \u00d7 *.\n\nAnswer: 50%144",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1090,7 +1090,7 @@
       "6.30 a.m."
     ],
     "answer": "5.30 a.m.",
-    "explanation": "Time lost in 1 hour = 5 min. Time lost in 6 hours = (5 * 6) min = 30 min. After 6 hours, the correct time will be 6 a.m. and the clock will show 5.30 a.m.",
+    "explanation": "Step 1\nTime lost in 1 hour = 5 min.\n\nStep 2\nTime lost in 6 hours = (5 \u00d7 6) min = 30 min.\n\nStep 3\nAfter 6 hours, the correct time will be 6 a.m.\n\nFinal Calculation\nand the clock will show 5.30 a.m.\n\nAnswer: 5.30 a.m.",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1108,10 +1108,10 @@
       "3 : 45 a.m.",
       "4 : 10 a.m.",
       "4 : 15 a.m.",
-      "4 : 30 a.m.828 QUANTITATIVE APTITUDE"
+      "4 : 30 a.m."
     ],
     "answer": "4 : 10 a.m.",
-    "explanation": "Duration from 12 noon to 4 : 00 a.m. = 16 hours. Time gained in 24 hours = 15 min. Time gained in 16 hours = 5 16 min24 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8 = 10 min. Hence, time shown by the watch at 4 a.m. = 4 : 10 a.m.",
+    "explanation": "Step 1\nDuration from 12 noon to 4 : 00 a.m.\n\nStep 2\n= 16 hours.\n\nStep 3\nTime gained in 24 hours = 15 min. Time gained in 16 hours = 5 16 min24 () \u00d7 [] {} = 10 min. Hence, time shown by the watch at 4 a.m.\n\nFinal Calculation\n= 4 : 10 a.m.\n\nAnswer: 4 : 10 a.m.",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1132,7 +1132,7 @@
       "3.36 P.M."
     ],
     "answer": "3.36 P.M.",
-    "explanation": "At 3 o\u2019 clock, the minute hand is 15 min spaces behind the hour hand. Thus, the minute hand has to gain (15 + 18) = 33 minute spaces. 55 min are gained in 60 min. 33 min are gained in 60 33 24 min .55 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 \\ The hands will be 18 min spaces apart at 3 : 36 P.M.",
+    "explanation": "Step 1\nAt 3 o\u2019 clock, the minute hand is 15 min spaces behind the hour hand.\n\nStep 2\nThus, the minute hand has to gain (15 + 18) = 33 minute spaces.\n\nStep 3\n55 min are gained in 60 min.\n\nFinal Calculation\n33 min are gained in 60 33 24 min .55 () \u00d7 =[] {} \\ The hands will be 18 min spaces apart at 3 : 36 P.M.\n\nAnswer: 3.36 P.M.",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1153,7 +1153,7 @@
       "9 : 26"
     ],
     "answer": "9 : 24",
-    "explanation": "At 9O\u2032 clock, the minute hand is 4 min. spaces behind the hour hand. Thus, the minute hand has to gain (45 \u2013 23) = 22 min sapces. 5 min are gained in 60 min. 22 min are gained in 60 22 24 min.55 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 \\ The hands will be 23 min spaces apart at 9 : 24.",
+    "explanation": "Step 1\nAt 9O\u2032 clock, the minute hand is 4 min.\n\nStep 2\nspaces behind the hour hand.\n\nStep 3\nThus, the minute hand has to gain (45 \u2013 23) = 22 min sapces. 5 min are gained in 60 min.\n\nFinal Calculation\n22 min are gained in 60 22 24 min.55 () \u00d7 =[] {} \\ The hands will be 23 min spaces apart at 9 : 24.\n\nAnswer: 9 : 24",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1174,7 +1174,7 @@
       "96 min."
     ],
     "answer": "832 min .11",
-    "explanation": "55 min. spaces are covered in 60 min. 60 min. spaces are covered in 60 560 min . 65 min .55 11 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 Loss in 64 min. = 5 1665 64 min .11 11 \uf8eb\uf8f6 - =\uf8ec\uf8f7 \uf8ed\uf8f8 Loss in 24 hrs = 16 1 824 60 min . 32 min .11 64 11 \uf8eb\uf8f6 * * * =\uf8ec\uf8f7 \uf8ed\uf8f8",
+    "explanation": "Step 1\n55 min.\n\nStep 2\nspaces are covered in 60 min.\n\nStep 3\n60 min. spaces are covered in 60 560 min. 65 min .55 11 () \u00d7 =[] {} Loss in 64 min. = 5 1665 64 min .11 11 () - =[] {} Loss in 24 hrs = 16 1 824 60 min.\n\nFinal Calculation\n32 min .11 64 11 () \u00d7 * \u00d7 =[] {}.\n\nAnswer: 832 min .11",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1195,7 +1195,7 @@
       "416 11"
     ],
     "answer": "416 11",
-    "explanation": "At 3 o\u2019clock, the minute hand is 15 min. spaces apart from the hour hand. To be coincident, it must gain 15 min. spaces. 55 min. are gained in 60 min. 15 min. are gained in 60 415 min . 16 min .55 11 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 \\ The hands are coincident at 416 min . past 3.11",
+    "explanation": "Step 1\nAt 3 o\u2019clock, the minute hand is 15 min.\n\nStep 2\nspaces apart from the hour hand.\n\nStep 3\nTo be coincident, it must gain 15 min. spaces. 55 min. are gained in 60 min. 15 min. are gained in 60 415 min. 16 min .55 11 () \u00d7 =[] {} \\ The hands are coincident at 416 min.\n\nFinal Calculation\npast 3.11.\n\nAnswer: 416 11",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1216,7 +1216,7 @@
       "248 min . past 911"
     ],
     "answer": "149 min . past 911",
-    "explanation": "To be together between 9 and 10 o\u2019clock, the minute hand has to gain 45 min. spaces. 55 min. spaces are gained in 60 min. 45 min. spaces are gained in 60 145 min . or 49 min .55 11 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8 \\ The hands are together at 149 min . past 9.11",
+    "explanation": "Step 1\nTo be together between 9 and 10 o\u2019clock, the minute hand has to gain 45 min.\n\nStep 2\nspaces.\n\nStep 3\n55 min. spaces are gained in 60 min. 45 min. spaces are gained in 60 145 min. or 49 min .55 11 () \u00d7 [] {} \\ The hands are together at 149 min.\n\nFinal Calculation\npast 9.11.\n\nAnswer: 149 min . past 911",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1237,7 +1237,7 @@
       "55 min . past 711"
     ],
     "answer": "55 min . past 711",
-    "explanation": "When the hands of the clock are in the same straight line but not together, they are 30 minute spaces apart. At 7 o\u2019clock, they are 25 min. spaces apart. \\ Minute hand will have to gain only 5 min. spaces. 55 min. spaces are gained in 60 min. 5 min. spaces are gained in 60 55 min 5 min .55 11 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 \\ Required time = 55 min . past 7.11",
+    "explanation": "Step 1\nWhen the hands of the clock are in the same straight line but not together, they are 30 minute spaces apart.\n\nStep 2\nAt 7 o\u2019clock, they are 25 min.\n\nStep 3\nspaces apart. \\ Minute hand will have to gain only 5 min. spaces. 55 min. spaces are gained in 60 min. 5 min. spaces are gained in 60 55 min 5 min .55 11 () \u00d7 =[] {} \\ Required time = 55 min.\n\nFinal Calculation\npast 7.11.\n\nAnswer: 55 min . past 711",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1258,7 +1258,7 @@
       "654 min . past 411"
     ],
     "answer": "654 min . past 411",
-    "explanation": "At 4 o\u2019clock, the hands of the watch are 20 min. spaces apart. To be in opposite directions, they must be 30 min. spaces apart. \\ Minute hand will have to gain 50 min. spaces. 55 min. spaces are gained in 60 min. 50 min. spaces are gained in 60 650 min . or 54 min .55 11 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8 \\ Required time = 654 min . past 4.11",
+    "explanation": "Step 1\nAt 4 o\u2019clock, the hands of the watch are 20 min.\n\nStep 2\nspaces apart.\n\nStep 3\nTo be in opposite directions, they must be 30 min. spaces apart. \\ Minute hand will have to gain 50 min. spaces. 55 min. spaces are gained in 60 min. 50 min. spaces are gained in 60 650 min. or 54 min .55 11 () \u00d7 [] {} \\ Required time = 654 min.\n\nFinal Calculation\npast 4.11.\n\nAnswer: 654 min . past 411",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1279,7 +1279,7 @@
       "45 min. past 5"
     ],
     "answer": "743 min . past 511",
-    "explanation": "At 5 o\u2019clock, the hands are 25 min. spaces apart. To be at right angles and that too between 5.30 and 6, the minute hand has to gain (25 + 15) = 40 min. spaces. 55 min. spaces are gained in 60 min. 40 min. spaces are gained in 60 740 min . 43 min .55 11 \uf8eb\uf8f6 * =\uf8ec\uf8f7 \uf8ed\uf8f8 \\ Required time = 743 min . past 5.11",
+    "explanation": "Step 1\nAt 5 o\u2019clock, the hands are 25 min.\n\nStep 2\nspaces apart.\n\nStep 3\nTo be at right angles and that too between 5.30 and 6, the minute hand has to gain (25 + 15) = 40 min. spaces. 55 min. spaces are gained in 60 min. 40 min. spaces are gained in 60 740 min. 43 min .55 11 () \u00d7 =[] {} \\ Required time = 743 min.\n\nFinal Calculation\npast 5.11.\n\nAnswer: 743 min . past 511",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1300,7 +1300,7 @@
       "11 hours"
     ],
     "answer": "6 hours",
-    "explanation": "To be together between 8 A.M. and 9 A.M, the minute hand has to gain 40 min space s. 55 min. spaces are gained in 60 min. 40 min. spaces are gained in 60 740 min = 43 min .55 11 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8832 QUANTITATIVE APTITUDE So, Henry started his trip at 743 min11 past 8 A.M. Now, to be 180\u00b0 apart, the hands must be 30 min spaces apart. At 2 P.M, they are 10 min spaces apart. \\ The minute hand will have to gain (10 + 30) = 40 min spaces. As calculated above, 40 min. spaces are gained in 743 min .11 So, Henry\u2019s trip ended at 743 min11 past 2 P.M. \\ Duration of travel = Duration from 743 11 min past 8 A.M. to 743 min11 past 2 P.M. = 6 hours.",
+    "explanation": "Step 1\nTo be together between 8 A.M.\n\nStep 2\nand 9 A.M, the minute hand has to gain 40 min space s.\n\nStep 3\n55 min. spaces are gained in 60 min. 40 min. spaces are gained in 60 740 min = 43 min .55 11 () \u00d7 [] {} So, Henry started his trip at 743 min11 past 8 A.M. Now, to be 180\u00b0 apart, the hands must be 30 min spaces apart. At 2 P.M, they are 10 min spaces apart. \\ The minute hand will have to gain (10 + 30) = 40 min spaces. As calculated above, 40 min. spaces are gained in 743 min .11 So, Henry\u2019s trip ended at 743 min11 past 2 P.M. \\ Duration of travel = Duration from 743 11 min past 8 A.M. to 743 min11 past 2 P.M.\n\nFinal Calculation\n= 6 hours.\n\nAnswer: 6 hours",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1321,7 +1321,7 @@
       "1.30 a.m."
     ],
     "answer": "1 a.m.",
-    "explanation": "The watch loses 1 2 hour each hour. So, it must have taken 8 hours to show 4 p.m. from 12 noon. Thus, it stopped at 8 p.m. So, the correct time is 5 hours ahead of 8 p.m., i.e., 1 a.m.",
+    "explanation": "Step 1\nThe watch loses 1 2 hour each hour.\n\nStep 2\nSo, it must have taken 8 hours to show 4 p.m.\n\nStep 3\nfrom 12 noon. Thus, it stopped at 8 p.m.\n\nFinal Calculation\nSo, the correct time is 5 hours ahead of 8 p.m., i.e., 1 a.m.\n\nAnswer: 1 a.m.",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1342,7 +1342,7 @@
       "14 hr 10 min 32 sec"
     ],
     "answer": "14 hr 9 min 40 sec",
-    "explanation": "Time lost in 116 hours = 6 4 sec22 \uf8eb\uf8f6 * \uf8ec\uf8f7\uf8ed\uf8f8 = 26 sec. Correct time after 16 hours2 = 7 hr 40 min 6 sec + 6 hr 30 min = 14 hr 10 min 6 sec. Time shown by the clock = 14 hr 10 min 6 sec \u2013 26 sec = 14 hr 9 min 40 sec.",
+    "explanation": "Step 1\nTime lost in 116 hours = 6 4 sec22 () \u00d7 []{} = 26 sec.\n\nStep 2\nCorrect time after 16 hours2 = 7 hr 40 min 6 sec + 6 hr 30 min = 14 hr 10 min 6 sec.\n\nFinal Calculation\nTime shown by the clock = 14 hr 10 min 6 sec \u2013 26 sec = 14 hr 9 min 40 sec.\n\nAnswer: 14 hr 9 min 40 sec",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1363,7 +1363,7 @@
       "1440 days"
     ],
     "answer": "1440 days",
-    "explanation": "Clearly, the first watch will show the correct time when it has gained 12 hours i.e., (12 * 60) = 720 min and the secon watch will show the correct time when it has lost 720 min. Time taken by first watch to gain 720 min = 720 days. Time taken by second watch to gain 720 min = 12720 1 days = 720 days23 \uf8eb \uf8f6\uf8eb \uf8f6 / * \uf8ec\uf8f7 \uf8ec\uf8f7\uf8ed\uf8f8 \uf8ed\uf8f8 = 480 days. So the first watch shows correct time after every 720 days and the second wach after every 480 days. \\ Time after which both the clocks will together tell the correct time = L.C.M. of 720 and 480 = 1440 days.",
+    "explanation": "Step 1\nClearly, the first watch will show the correct time when it has gained 12 hours i.e., (12 \u00d7 60) = 720 min and the secon watch will show the correct time when it has lost 720 min.\n\nStep 2\nTime taken by first watch to gain 720 min = 720 days.\n\nStep 3\nTime taken by second watch to gain 720 min = 12720 1 days = 720 days23 ( )( ) / \u00d7 [] []{} {} = 480 days. So the first watch shows correct time after every 720 days and the second wach after every 480 days. \\ Time after which both the clocks will together tell the correct time = L.C.M.\n\nFinal Calculation\nof 720 and 480 = 1440 days.\n\nAnswer: 1440 days",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1384,7 +1384,7 @@
       "5.00 p.m. on Wednesday"
     ],
     "answer": "5.00 a.m. on Wednesday",
-    "explanation": "Time from 1 p.m. on Tuesday to 1 p.m. on Thursday = 48 hours. So, the watch gains (1 + 2) min or 3 min in 48 hrs. Now, 3 min are gained in 48 hrs. So, 1 min is gained in 48 3 \uf8eb\uf8f6\uf8ec\uf8f7\uf8ed\uf8f8 = 16 hrs. Thus, the watch showed the correct time 16 hrs. after 1 p.m. on Tuesday, i.e. 5 a.m. on Wednesday.",
+    "explanation": "Step 1\nTime from 1 p.m.\n\nStep 2\non Tuesday to 1 p.m.\n\nStep 3\non Thursday = 48 hours. So, the watch gains (1 + 2) min or 3 min in 48 hrs. Now, 3 min are gained in 48 hrs. So, 1 min is gained in 48 3 ()[]{} = 16 hrs. Thus, the watch showed the correct time 16 hrs. after 1 p.m. on Tuesday, i.e. 5 a.m.\n\nFinal Calculation\non Wednesday.\n\nAnswer: 5.00 a.m. on Wednesday",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1405,7 +1405,7 @@
       "1 p.m. on Friday"
     ],
     "answer": "2 p.m. on Wednesday",
-    "explanation": "Time from 12 p.m. on Monday to 2 p.m. on the following Monday = 7 days 2 hours = 170 hours. \\ The watch gains 4 342 4 min. or min . in 170 hrs.55 \uf8eb\uf8f6 +\uf8ec\uf8f7\uf8ed\uf8f8 Now, 34 min .5 are gained in 170 hrs. \\ 2 min. are gained in 5170 2 hrs 50 hrs.34 \uf8eb\uf8f6 * * =\uf8ec\uf8f7 \uf8ed\uf8f8 \\ Watch is correct 2 days 2 hrs. after 12 p.m. on Monday i.e. it will be correct at 2 p.m. on Wednesday.",
+    "explanation": "Step 1\nTime from 12 p.m.\n\nStep 2\non Monday to 2 p.m.\n\nStep 3\non the following Monday = 7 days 2 hours = 170 hours. \\ The watch gains 4 342 4 min. or min. in 170 hrs.55 () +[]{} Now, 34 min .5 are gained in 170 hrs. \\ 2 min. are gained in 5170 2 hrs 50 hrs.34 () \u00d7 * =[] {} \\ Watch is correct 2 days 2 hrs. after 12 p.m. on Monday i.e. it will be correct at 2 p.m.\n\nFinal Calculation\non Wednesday.\n\nAnswer: 2 p.m. on Wednesday",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1426,7 +1426,7 @@
       "32 min . past 411"
     ],
     "answer": "4 p.m.",
-    "explanation": "Time from 7 a.m. to 4.15 p.m. = 9 hrs 15 min. = 37 4 hrs. 3 min. 5 sec. of this clock = 3 min. of the correct clock. => 37 720 hrs of this clock = 1 20 hrs of the correct clock => 37 4 hrs of this clock = 1 720 37 20 37 4 \uf8eb\uf8f6 * * \uf8ec\uf8f7 \uf8ed\uf8f8 hrs of the correct clock = 9 hrs of the correct clock \\ The correct time is 9 hrs after 7 a.m., i.e. 4 p.m.",
+    "explanation": "Step 1\nTime from 7 a.m.\n\nStep 2\nto 4.15 p.m.\n\nStep 3\n= 9 hrs 15 min. = 37 4 hrs. 3 min. 5 sec. of this clock = 3 min. of the correct clock. => 37 720 hrs of this clock = 1 20 hrs of the correct clock => 37 4 hrs of this clock = 1 720 37 20 37 4 () \u00d7 * [] {} hrs of the correct clock = 9 hrs of the correct clock \\ The correct time is 9 hrs after 7 a.m., i.e.\n\nFinal Calculation\n4 p.m.\n\nAnswer: 4 p.m.",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1447,7 +1447,7 @@
       "48 minutes past 5"
     ],
     "answer": "24 minutes past 5",
-    "explanation": "Since the time read by the lady was 57 minutes earlier than the correct time, so the minute hand is (60 \u2013 57) = 3 minute spaces behind the hour hand. Now, at 5 o\u2019clock, the minute hand is 25 minute spaces behind the hour hand. To be 3 minute spaces behind, it must gain (25 \u2013 3) = 22 minute spaces. 55 min spaces are gained in 60 min. 22 min spaces are gained in 60 2255 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8 = 24 min. Hence, the correct time was 24 minutes past 5.",
+    "explanation": "Step 1\nSince the time read by the lady was 57 minutes earlier than the correct time, so the minute hand is (60 \u2013 57) = 3 minute spaces behind the hour hand.\n\nStep 2\nNow, at 5 o\u2019clock, the minute hand is 25 minute spaces behind the hour hand.\n\nStep 3\nTo be 3 minute spaces behind, it must gain (25 \u2013 3) = 22 minute spaces. 55 min spaces are gained in 60 min. 22 min spaces are gained in 60 2255 () \u00d7 [] {} = 24 min.\n\nFinal Calculation\nHence, the correct time was 24 minutes past 5.\n\nAnswer: 24 minutes past 5",
     "topic": "clocks",
     "category": "logical",
     "difficulty": 2,
@@ -1468,7 +1468,7 @@
       "150"
     ],
     "answer": "150",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 150",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1489,7 +1489,7 @@
       "83"
     ],
     "answer": "47",
-    "explanation": "8 / 5 = 5.76 Hence, 144.2 wrong number and correct number is 144.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\n8 / 5 = 5.76 Hence, 144.2 wrong number and correct number is 144.\n\nAnswer: 47",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1510,7 +1510,7 @@
       "169"
     ],
     "answer": "36",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 36",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1531,7 +1531,7 @@
       "15"
     ],
     "answer": "91",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 91",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1552,7 +1552,7 @@
       "48"
     ],
     "answer": "34",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 34",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1573,7 +1573,7 @@
       "60"
     ],
     "answer": "0",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 0",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1594,7 +1594,7 @@
       "9"
     ],
     "answer": "11",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 11",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1615,7 +1615,7 @@
       "165"
     ],
     "answer": "165",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 165",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1636,7 +1636,7 @@
       "36"
     ],
     "answer": "190",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 190",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1657,7 +1657,7 @@
       "84"
     ],
     "answer": "100",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 100",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1678,7 +1678,7 @@
       "55"
     ],
     "answer": "70",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 70",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1699,7 +1699,7 @@
       "39"
     ],
     "answer": "160",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 160",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1720,7 +1720,7 @@
       "28"
     ],
     "answer": "132",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 132",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1741,7 +1741,7 @@
       "None of these"
     ],
     "answer": "None of these",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: None of these",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1762,7 +1762,7 @@
       "\u2013 192"
     ],
     "answer": "\u2013 128",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: \u2013 128",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1783,7 +1783,7 @@
       "128"
     ],
     "answer": "122",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 122",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1804,7 +1804,7 @@
       "81"
     ],
     "answer": "164",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 164",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1825,7 +1825,7 @@
       "245"
     ],
     "answer": "343",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 343",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1846,7 +1846,7 @@
       "51"
     ],
     "answer": "43",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 43",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1867,7 +1867,7 @@
       "721"
     ],
     "answer": "523",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 523",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1888,7 +1888,7 @@
       "3"
     ],
     "answer": "\u2013 1",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: \u2013 1",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1909,7 +1909,7 @@
       "523"
     ],
     "answer": "511",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 511",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1930,7 +1930,7 @@
       "70"
     ],
     "answer": "72",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 72",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1951,7 +1951,7 @@
       "72"
     ],
     "answer": "27",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 27",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1972,7 +1972,7 @@
       "390"
     ],
     "answer": "435",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 435",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -1993,7 +1993,7 @@
       "421"
     ],
     "answer": "511",
-    "explanation": "No explanation available.",
+    "explanation": "Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: 511",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2014,7 +2014,7 @@
       "1920"
     ],
     "answer": "1440",
-    "explanation": "Go on multiplying the given numbers by 2, 3, 4, 5, 6. So, the correct next number is 1440.",
+    "explanation": "Step 1\nGo on multiplying the given numbers by 2, 3, 4, 5, 6.\n\nFinal Calculation\nSo, the correct next number is 1440.\n\nAnswer: 1440",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2035,7 +2035,7 @@
       "24"
     ],
     "answer": "20",
-    "explanation": "There are two series (8, 11, 14, 17, 20) and (7, 12, 17, 22) increasing by 3 and 5 respectively.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nThere are two series (8, 11, 14, 17, 20) and (7, 12, 17, 22) increasing by 3 and 5 respectively.\n\nAnswer: 20",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2056,7 +2056,7 @@
       "23"
     ],
     "answer": "40",
-    "explanation": "There are two series (10, 13, 16, 19) and (5, 10, 20, 40), one increasing by 3 and the other multiplied by 2.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nThere are two series (10, 13, 16, 19) and (5, 10, 20, 40), one increasing by 3 and the other multiplied by 2.\n\nAnswer: 40",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2077,7 +2077,7 @@
       "164"
     ],
     "answer": "128",
-    "explanation": "Each previous number is multiplied by 2.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nEach previous number is multiplied by 2.\n\nAnswer: 128",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2095,10 +2095,10 @@
       "77",
       "65",
       "80",
-      "76ODD MAN OUT & SERIES 879"
+      "76ODD MAN OUT &"
     ],
     "answer": "65",
-    "explanation": "Alternately, we add 5 and subtract 7.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nAlternately, we add 5 and subtract 7.\n\nAnswer: 65",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2119,7 +2119,7 @@
       "17"
     ],
     "answer": "16",
-    "explanation": "Alternately, we add 3 and subtract 1.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nAlternately, we add 3 and subtract 1.\n\nAnswer: 16",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2140,7 +2140,7 @@
       "None of these"
     ],
     "answer": "75",
-    "explanation": "Second number is one more than twice the first; third number is one less than twice the second; fourth number is one more than twice the third; fifth number is one less than the fourth. Therefore, the sixth number is one more than twice the fifth. So, the missing number is 75.",
+    "explanation": "Step 1\nSecond number is one more than twice the first.\n\nStep 2\nthird number is one less than twice the second.\n\nStep 3\nfourth number is one more than twice the third. fifth number is one less than the fourth. Therefore, the sixth number is one more than twice the fifth.\n\nFinal Calculation\nSo, the missing number is 75.\n\nAnswer: 75",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2162,7 +2162,7 @@
       "63"
     ],
     "answer": "34",
-    "explanation": "The difference between consecutive terms are respectively 5, 7, 9, 11 and 13. So, 34 is a wrong number.",
+    "explanation": "Step 1\nThe difference between consecutive terms are respectively 5, 7, 9, 11 and 13.\n\nFinal Calculation\nSo, 34 is a wrong number.\n\nAnswer: 34",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2184,7 +2184,7 @@
       "216"
     ],
     "answer": "216",
-    "explanation": "2 = (1 3 + 1); 9 = (2 3 + 1); 28 = (3 3 + 1); 65 = (4 3 + 1); 125 = (53 + 1); 216 \u2260 (6 3 + 1) and 344 = (7 3 + 1). So, 216 is a wrong number.",
+    "explanation": "Step 1\n2 = (1 3 + 1).\n\nStep 2\n9 = (2 3 + 1).\n\nStep 3\n28 = (3 3 + 1). 65 = (4 3 + 1). 125 = (53 + 1). 216 \u2260 (6 3 + 1) and 344 = (7 3 + 1).\n\nFinal Calculation\nSo, 216 is a wrong number.\n\nAnswer: 216",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2206,7 +2206,7 @@
       "15"
     ],
     "answer": "30",
-    "explanation": "Multiply each term by 3 to obtain the next term. Hence, 30 is a wrong number.",
+    "explanation": "Step 1\nMultiply each term by 3 to obtain the next term.\n\nFinal Calculation\nHence, 30 is a wrong number.\n\nAnswer: 30",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2228,7 +2228,7 @@
       "65"
     ],
     "answer": "88",
-    "explanation": "Go on subtracting prime numbers, 19, 17, 13, 11, 7, 5 from the numbers to get the next number. So, 88 is wrong.",
+    "explanation": "Step 1\nGo on subtracting prime numbers, 19, 17, 13, 11, 7, 5 from the numbers to get the next number.\n\nFinal Calculation\nSo, 88 is wrong.\n\nAnswer: 88",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2250,7 +2250,7 @@
       "112"
     ],
     "answer": "128",
-    "explanation": "Go on subtracting 24, 21, 18, 15, 12, 9 from the numbers to get the next number. Clearly, 128 is wrong.",
+    "explanation": "Step 1\nGo on subtracting 24, 21, 18, 15, 12, 9 from the numbers to get the next number.\n\nFinal Calculation\nClearly, 128 is wrong.\n\nAnswer: 128",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2272,7 +2272,7 @@
       "2"
     ],
     "answer": "96",
-    "explanation": "Go on multiplying with 1, 2, 3, 4, 5, 6 to get the next number. So, 96 is wrong.",
+    "explanation": "Step 1\nGo on multiplying with 1, 2, 3, 4, 5, 6 to get the next number.\n\nFinal Calculation\nSo, 96 is wrong.\n\nAnswer: 96",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2294,7 +2294,7 @@
       "10240"
     ],
     "answer": "200",
-    "explanation": "Go on dividing by 4 to get the next number. So, 200 is wrong.",
+    "explanation": "Step 1\nGo on dividing by 4 to get the next number.\n\nFinal Calculation\nSo, 200 is wrong.\n\nAnswer: 200",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2316,7 +2316,7 @@
       "135"
     ],
     "answer": "135",
-    "explanation": "Go on adding 7, 9, 11, 13, 15, 17, 19 respectively to obtain the next number. So, 135 is wrong.",
+    "explanation": "Step 1\nGo on adding 7, 9, 11, 13, 15, 17, 19 respectively to obtain the next number.\n\nFinal Calculation\nSo, 135 is wrong.\n\nAnswer: 135",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2338,7 +2338,7 @@
       "1165"
     ],
     "answer": "228",
-    "explanation": "Let the given numbers be A, B, C, D, E, F, G. Then, A, A * 1, B * 2 + 2, C * 3 + 3, D * 4 + 4, E * 5 + 5, F * 6 + 6 are the required numbers. Clearly, 228 is wrong.",
+    "explanation": "Step 1\nLet the given numbers be A, B, C, D, E, F, G.\n\nStep 2\nThen, A, A \u00d7 1, B \u00d7 2 + 2, C \u00d7 3 + 3, D \u00d7 4 + 4, E \u00d7 5 + 5, F \u00d7 6 + 6 are the required numbers.\n\nFinal Calculation\nClearly, 228 is wrong.\n\nAnswer: 228",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2360,7 +2360,7 @@
       "127"
     ],
     "answer": "27",
-    "explanation": "Go on multiplying the number by 2 and adding 1 to it to get the next number. So, 27 is wrong.",
+    "explanation": "Step 1\nGo on multiplying the number by 2 and adding 1 to it to get the next number.\n\nFinal Calculation\nSo, 27 is wrong.\n\nAnswer: 27",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2382,7 +2382,7 @@
       "74"
     ],
     "answer": "33",
-    "explanation": "Go on adding 7, 9, 11, 13, 15, 17 respectively to obtain the next number. So, 33 is wrong.",
+    "explanation": "Step 1\nGo on adding 7, 9, 11, 13, 15, 17 respectively to obtain the next number.\n\nFinal Calculation\nSo, 33 is wrong.\n\nAnswer: 33",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2404,7 +2404,7 @@
       "4"
     ],
     "answer": "92",
-    "explanation": "Go on dividing by 6, 5, 4, 3, 2, 1 respectively to obtain the next number. Clearly, 92 is wrong.",
+    "explanation": "Step 1\nGo on dividing by 6, 5, 4, 3, 2, 1 respectively to obtain the next number.\n\nFinal Calculation\nClearly, 92 is wrong.\n\nAnswer: 92",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2426,7 +2426,7 @@
       "11"
     ],
     "answer": "46",
-    "explanation": "Go on subtracting 3 and dividing the result by 2 to obtain the next number. Clearly, 46 is wrong.",
+    "explanation": "Step 1\nGo on subtracting 3 and dividing the result by 2 to obtain the next number.\n\nFinal Calculation\nClearly, 46 is wrong.\n\nAnswer: 46",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2448,7 +2448,7 @@
       "127"
     ],
     "answer": "39",
-    "explanation": "Go on multiplying 2 and adding 1 to get the next number. So, 39 is wrong.",
+    "explanation": "Step 1\nGo on multiplying 2 and adding 1 to get the next number.\n\nFinal Calculation\nSo, 39 is wrong.\n\nAnswer: 39",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2470,7 +2470,7 @@
       "356"
     ],
     "answer": "356",
-    "explanation": "A * 2 + 1, B * 3 + 1, C * 2 + 1, D * 3 + 1 and so on. So, 356 is wrong.",
+    "explanation": "Step 1\nA \u00d7 2 + 1, B \u00d7 3 + 1, C \u00d7 2 + 1, D \u00d7 3 + 1 and so on.\n\nFinal Calculation\nSo, 356 is wrong.\n\nAnswer: 356",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2492,7 +2492,7 @@
       "80"
     ],
     "answer": "80",
-    "explanation": "Numbers must be (14) 2, (13) 2, (11)2, (10) 2, (9)2, (8) 2. So, 80 is wrong.",
+    "explanation": "Step 1\nNumbers must be (14) 2, (13) 2, (11)2, (10) 2, (9)2, (8) 2.\n\nFinal Calculation\nSo, 80 is wrong.\n\nAnswer: 80",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2514,7 +2514,7 @@
       "12"
     ],
     "answer": "100",
-    "explanation": "Each even term of the series is obtained by multiplying the previous term by 2. 2nd term = (1st term) * 2 = 6 * 2 = 12; 4th term = (3rd term) * 2 = 48 * 2 = 96; 6th term = (5th term) * 2 = 384 * 2 = 768. \\ 4th term should be 96 instead of 100.",
+    "explanation": "Step 1\nEach even term of the series is obtained by multiplying the previous term by 2.\n\nStep 2\n2nd term = (1st term) \u00d7 2 = 6 \u00d7 2 = 12.\n\nStep 3\n4th term = (3rd term) \u00d7 2 = 48 \u00d7 2 = 96. 6th term = (5th term) \u00d7 2 = 384 \u00d7 2 = 768.\n\nFinal Calculation\n\\ 4th term should be 96 instead of 100.\n\nAnswer: 100",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2536,7 +2536,7 @@
       "1946"
     ],
     "answer": "654",
-    "explanation": "2nd term = (1st term) * 3 \u2013 4 = 10 * 3 \u2013 4 = 26; 3rd term = (2nd term) * 3 \u2013 4 = 26 * 3 \u2013 4 = 74; 4th term = (3rd term) * 3 \u2013 4 = 74 * 3 \u2013 4 = 218; 5th term = (4th term) * 3 \u2013 4 = 218 * 3 \u2013 4 = 650. \\ 5th term must be 650 instead of 654.",
+    "explanation": "Step 1\n2nd term = (1st term) \u00d7 3 \u2013 4 = 10 \u00d7 3 \u2013 4 = 26.\n\nStep 2\n3rd term = (2nd term) \u00d7 3 \u2013 4 = 26 \u00d7 3 \u2013 4 = 74.\n\nStep 3\n4th term = (3rd term) \u00d7 3 \u2013 4 = 74 \u00d7 3 \u2013 4 = 218. 5th term = (4th term) \u00d7 3 \u2013 4 = 218 \u00d7 3 \u2013 4 = 650.\n\nFinal Calculation\n\\ 5th term must be 650 instead of 654.\n\nAnswer: 654",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2558,7 +2558,7 @@
       "2124"
     ],
     "answer": "2124",
-    "explanation": "2nd term = (1st term) * 1 + 1 = 15 * 1 + 1 = 16; 3rd term = (2nd term) * 2 + 2 = 16 * 2 + 2 = 34; 4th term = (3rd term) * 3 + 3 = 34 * 3 + 3 = 105; 5th term = (4th term) * 4 + 4 = 105 * 4 + 4 = 424; 6th term = (5th term) * 5 + 5 = 425 * 5 + 5 = 2125. \\ 6th term should be 2125 instead of 2124.",
+    "explanation": "Step 1\n2nd term = (1st term) \u00d7 1 + 1 = 15 \u00d7 1 + 1 = 16.\n\nStep 2\n3rd term = (2nd term) \u00d7 2 + 2 = 16 \u00d7 2 + 2 = 34.\n\nStep 3\n4th term = (3rd term) \u00d7 3 + 3 = 34 \u00d7 3 + 3 = 105. 5th term = (4th term) \u00d7 4 + 4 = 105 \u00d7 4 + 4 = 424. 6th term = (5th term) \u00d7 5 + 5 = 425 \u00d7 5 + 5 = 2125.\n\nFinal Calculation\n\\ 6th term should be 2125 instead of 2124.\n\nAnswer: 2124",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2580,7 +2580,7 @@
       "41"
     ],
     "answer": "347",
-    "explanation": "7th term = (8th term) * 2 + 1 = 20 * 2 + 1 = 41; 6th term = (7th term) * 2 + 2 = 41 * 2 + 2 = 84; 5th term = (6th term) * 2 + 3 = 84 * 2 + 3 = 171; 4th term = (5th term) * 2 + 4 = 171 * 2 + 4 = 346. \\ 4th term should be 346 instead of 347.",
+    "explanation": "Step 1\n7th term = (8th term) \u00d7 2 + 1 = 20 \u00d7 2 + 1 = 41.\n\nStep 2\n6th term = (7th term) \u00d7 2 + 2 = 41 \u00d7 2 + 2 = 84.\n\nStep 3\n5th term = (6th term) \u00d7 2 + 3 = 84 \u00d7 2 + 3 = 171. 4th term = (5th term) \u00d7 2 + 4 = 171 \u00d7 2 + 4 = 346.\n\nFinal Calculation\n\\ 4th term should be 346 instead of 347.\n\nAnswer: 347",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2602,7 +2602,7 @@
       "171"
     ],
     "answer": "41",
-    "explanation": "2nd term = (1st term) + 2 2 = 32 + 4 = 36; 3rd term = (2nd term) + 3 2 = 36 + 9 = 45; 4th term = (3rd term) + 42 = 45 + 16 = 61; 5th term = (4th term) + 52 = 61 + 25 = 86. \\ 3rd term should be 45 instead of 41.",
+    "explanation": "Step 1\n2nd term = (1st term) + 2 2 = 32 + 4 = 36.\n\nStep 2\n3rd term = (2nd term) + 3 2 = 36 + 9 = 45.\n\nStep 3\n4th term = (3rd term) + 42 = 45 + 16 = 61. 5th term = (4th term) + 52 = 61 + 25 = 86.\n\nFinal Calculation\n\\ 3rd term should be 45 instead of 41.\n\nAnswer: 41",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,
@@ -2624,7 +2624,7 @@
       "202.5"
     ],
     "answer": "4",
-    "explanation": "There are two sequences (3, 9, 67.5, 810) and (4, 22.5,",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nThere are two sequences (3, 9, 67.5, 810) and (4, 22.5,.\n\nAnswer: 4",
     "topic": "series",
     "category": "logical",
     "difficulty": 2,

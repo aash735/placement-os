@@ -9,7 +9,7 @@
       "apathetic"
     ],
     "answer": "optimistic",
-    "explanation": "The word 'but' signals a contrast. Caution contrasts with confidence or hope. Therefore, the manager was hopeful/confident ('optimistic'), yet cautious.",
+    "explanation": "Step 1\nThe word 'but' signals a contrast.\n\nStep 2\nCaution contrasts with confidence or hope.\n\nFinal Calculation\nTherefore, the manager was hopeful/confident ('optimistic'), yet cautious.\n\nAnswer: optimistic",
     "shortcuts": [
       "Look for contrast clues: 'but remained cautious' => opposite of caution/doubt is optimism"
     ],
@@ -41,7 +41,7 @@
       "The group of students is plan a study trip."
     ],
     "answer": "The group of students is planning a study trip.",
-    "explanation": "The subject of the sentence is the collective noun 'group' (singular), not 'students'. Therefore, the singular verb 'is' is required.",
+    "explanation": "Step 1\nThe subject of the sentence is the collective noun 'group' (singular), not 'students'.\n\nFinal Calculation\nTherefore, the singular verb 'is' is required.\n\nAnswer: The group of students is planning a study trip.",
     "shortcuts": [
       "Collective noun (group) is singular => takes singular verb (is)"
     ],
@@ -75,7 +75,7 @@
       "Job losses in the public transportation sector."
     ],
     "answer": "Algorithm-driven prioritizations in crash scenarios.",
-    "explanation": "The passage explicitly states that the transition presents complex ethical challenges regarding decision-making algorithms in unavoidable accident scenarios, such as prioritizing pedestrians, passengers, or other drivers.",
+    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nThe passage explicitly states that the transition presents complex ethical challenges regarding decision-making algorithms in unavoidable accident scenarios, such as prioritizing pedestrians, passengers, or other drivers.\n\nAnswer: Algorithm-driven prioritizations in crash scenarios.",
     "shortcuts": [
       "Match keywords: 'ethical challenges' maps to 'decision-making algorithms in unavoidable accident scenarios'"
     ],
@@ -107,7 +107,7 @@
       "Impatient"
     ],
     "answer": "Cautious",
-    "explanation": "Prudent means showing care and thought for the future; wise or cautious. Therefore, 'Cautious' is the correct synonym.",
+    "explanation": "Step 1\nPrudent means showing care and thought for the future.\n\nStep 2\nwise or cautious.\n\nFinal Calculation\nTherefore, 'Cautious' is the correct synonym.\n\nAnswer: Cautious",
     "shortcuts": [
       "Prudent = Wise, careful, cautious"
     ],
@@ -139,7 +139,7 @@
       "Ambiguous"
     ],
     "answer": "Frank",
-    "explanation": "Candid means truthful, straightforward, or frank. Therefore, 'Frank' is the correct synonym.",
+    "explanation": "Step 1\nCandid means truthful, straightforward, or frank.\n\nFinal Calculation\nTherefore, 'Frank' is the correct synonym.\n\nAnswer: Frank",
     "shortcuts": [
       "Candid = honest, open, frank"
     ],
@@ -169,7 +169,7 @@
       "Merciful"
     ],
     "answer": "Cruel",
-    "explanation": "Compassionate means feeling or showing sympathy and concern for others. The antonym is 'Cruel' (showing a lack of sympathy).",
+    "explanation": "Step 1\nCompassionate means feeling or showing sympathy and concern for others.\n\nFinal Calculation\nThe antonym is 'Cruel' (showing a lack of sympathy).\n\nAnswer: Cruel",
     "shortcuts": [
       "Compassionate (positive) <=> Cruel (negative)"
     ],
@@ -199,7 +199,7 @@
       "No improvement"
     ],
     "answer": "has",
-    "explanation": "Dynamic verbs (like 'is having') should not be used in continuous tense to express possession. The simple present tense 'has' should be used instead.",
+    "explanation": "Step 1\nDynamic verbs (like 'is having') should not be used in continuous tense to express possession.\n\nFinal Calculation\nThe simple present tense 'has' should be used instead.\n\nAnswer: has",
     "shortcuts": [
       "State of possession = use simple present (has/have)"
     ],
@@ -231,7 +231,7 @@
       "D"
     ],
     "answer": "B",
-    "explanation": "The phrase 'One of the...' takes a singular verb because the subject is 'One', not 'players'. Therefore, 'are injured' should be corrected to 'is injured' or 'was injured' depending on the tense.",
+    "explanation": "Step 1\nThe phrase 'One of the...' takes a singular verb because the subject is 'One', not 'players'.\n\nFinal Calculation\nTherefore, 'are injured' should be corrected to 'is injured' or 'was injured' depending on the tense.\n\nAnswer: B",
     "shortcuts": [
       "One of + Plural Noun + Singular Verb"
     ],

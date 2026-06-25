@@ -22,6 +22,7 @@ import {
   Zap
 } from "lucide-react";
 import Link from "next/link";
+import { MathRenderer } from "@/components/ui/math-renderer";
 
 interface LeaderboardEntry {
   name: string;
@@ -289,7 +290,7 @@ export default function ReviewPage() {
 
                   {/* Question */}
                   <p className="text-sm font-medium text-white mb-4 whitespace-pre-line leading-relaxed">
-                    {q.question}
+                    <MathRenderer text={q.question} />
                   </p>
 
                   {/* Answers status */}
@@ -335,8 +336,8 @@ export default function ReviewPage() {
                       <BookOpen className="h-3.5 w-3.5 mr-1 text-cyan-400" />
                       Mathematical Derivation & Solution
                     </h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed bg-black/20 p-3 rounded-lg">
-                      {q.explanation}
+                    <p className="text-xs text-zinc-400 leading-relaxed bg-black/20 p-3 rounded-lg whitespace-pre-line">
+                      <MathRenderer text={q.explanation} />
                     </p>
                   </div>
 

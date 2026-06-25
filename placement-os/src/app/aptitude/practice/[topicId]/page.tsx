@@ -21,6 +21,7 @@ import {
   Sparkles
 } from "lucide-react";
 import Link from "next/link";
+import { MathRenderer } from "@/components/ui/math-renderer";
 import {
   ResponsiveContainer,
   PieChart,
@@ -284,7 +285,7 @@ export default function PracticeRoomPage() {
 
             {/* Question Text */}
             <div className="text-zinc-100 text-base leading-relaxed mb-8 whitespace-pre-line font-medium">
-              {currentQuestion.question}
+              <MathRenderer text={currentQuestion.question} />
             </div>
 
             {/* Visual Assets Reconstruction Rendering */}
@@ -510,7 +511,7 @@ export default function PracticeRoomPage() {
                   Step-by-Step Explanation
                 </h3>
                 <p className="text-sm text-zinc-300 leading-relaxed whitespace-pre-line font-mono text-[13px]">
-                  {currentQuestion.explanation}
+                  <MathRenderer text={currentQuestion.explanation} />
                 </p>
               </GlassCard>
 

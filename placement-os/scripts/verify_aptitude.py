@@ -1,0 +1,171 @@
+import os
+import json
+
+base_dir = r"C:\Users\AASHISH\OneDrive\Desktop\placement-os\placement-os\src\data\aptitude"
+report_path = r"C:\Users\AASHISH\OneDrive\Desktop\placement-os\placement-os\aptitude-audit-report.json"
+
+EXPECTED_COUNTS = {
+    # Quant
+    "number-system": 180,
+    "hcf-lcm": 85,
+    "simplification": 240,
+    "average": 130,
+    "ages": 65,
+    "percentages": 220,
+    "profit-loss": 180,
+    "ratios": 160,
+    "pipes-cisterns": 60,
+    "time-work": 165,
+    "speed": 115,
+    "simple-interest": 80,
+    "compound-interest": 90,
+    "permutation-combination": 45,
+    "probability": 50,
+    # Logical
+    "series": 110,
+    "coding-decoding": 104,
+    "blood-relations": 87,
+    "syllogism": 60,
+    "seating-arrangement": 70,
+    "statement-conclusion": 55,
+    "analogy": 45,
+    "clocks": 30,
+    "calendar": 25,
+    "direction-sense": 125,
+    # Verbal
+    "synonyms": 150,
+    "antonyms": 150,
+    "sentence-improvement": 120,
+    "rc": 80,
+    "error-detection": 100,
+    "vocab": 200,
+    # DI
+    "tables": 100,
+    "pie-charts": 70,
+    "bar-graphs": 80,
+    "line-graphs": 80,
+    "caselets": 40
+}
+
+def verify():
+    categories = ["quantitative", "logical", "verbal", "data-interpretation", "puzzles"]
+    all_questions = []
+    
+    # Track statistics
+    stats = {
+        "total_questions": 0,
+        "valid_questions": 0,
+        "invalid_questions": 0,
+        "duplicates": 0,
+        "broken_assets": 0,
+        "coverage_by_topic": {}
+    }
+    
+    id_set = set()
+    errors = []
+    
+    # 1. Load and validate questions from JSON
+    for cat in categories:
+        json_path = os.path.join(base_dir, cat, "questions.json")
+        if not os.path.exists(json_path):
+            continue
+            
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                qs = json.load(f)
+        except Exception as e:
+            errors.append(f"Failed to parse {json_path}: {str(e)}")
+            continue
+            
+        for idx, q in enumerate(qs):
+            stats["total_questions"] += 1
+            q_id = q.get("id")
+            
+            # Check duplicate ID
+            if q_id in id_set:
+                stats["duplicates"] += 1
+                errors.append(f"Duplicate question ID found: {q_id}")
+                continue
+            id_set.add(q_id)
+            
+            # Check required fields
+            missing_fields = []
+            for field in ["id", "question", "options", "answer", "explanation", "topic", "category"]:
+                if not q.get(field):
+                    missing_fields.append(field)
+                    
+            if missing_fields:
+                stats["invalid_questions"] += 1
+                errors.append(f"Question {q_id or idx} in {cat} is missing fields: {missing_fields}")
+                continue
+                
+            # Verify options
+            opts = q.get("options")
+            if not isinstance(opts, list) or len(opts) < 2:
+                stats["invalid_questions"] += 1
+                errors.append(f"Question {q_id} has invalid options list.")
+                continue
+                
+            # Verify answer is in options
+            ans = q.get("answer")
+            if ans not in opts:
+                # Sometimes option cleaning has spacing differences, let's flag as warning/error
+                stats["invalid_questions"] += 1
+                errors.append(f"Question {q_id} has answer '{ans}' which is not in options: {opts}")
+                continue
+                
+            # Check DI asset structure
+            if q.get("category") == "di":
+                if q.get("chartType") and not q.get("chartData"):
+                    stats["broken_assets"] += 1
+                    errors.append(f"Question {q_id} has chartType but no chartData.")
+                if q.get("topic") == "tables" and not q.get("tableData"):
+                    stats["broken_assets"] += 1
+                    errors.append(f"Question {q_id} is in tables topic but has no tableData.")
+                    
+            stats["valid_questions"] += 1
+            all_questions.append(q)
+            
+    # 2. Calculate Topic Coverage
+    topic_counts = {}
+    for q in all_questions:
+        t = q["topic"]
+        topic_counts[t] = topic_counts.get(t, 0) + 1
+        
+    for topic, expected in EXPECTED_COUNTS.items():
+        imported = topic_counts.get(topic, 0)
+        coverage = min(100.0, (imported / expected) * 100.0) if expected > 0 else 100.0
+        stats["coverage_by_topic"][topic] = {
+            "expected": expected,
+            "imported": imported,
+            "missing": max(0, expected - imported),
+            "coverage_pct": round(coverage, 2)
+        }
+        
+    # 3. Write final report
+    report = {
+        "status": "PASS" if stats["invalid_questions"] == 0 else "WARNINGS_FOUND",
+        "summary": {
+            "total_questions_scanned": stats["total_questions"],
+            "valid_questions_imported": stats["valid_questions"],
+            "invalid_questions_skipped": stats["invalid_questions"],
+            "duplicate_question_count": stats["duplicates"],
+            "broken_asset_count": stats["broken_assets"]
+        },
+        "errors_and_warnings": errors,
+        "coverage": stats["coverage_by_topic"]
+    }
+    
+    with open(report_path, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2)
+        
+    print("Verification execution completed.")
+    print(f"  Total questions scanned: {stats['total_questions']}")
+    print(f"  Valid questions: {stats['valid_questions']}")
+    print(f"  Invalid questions: {stats['invalid_questions']}")
+    print(f"  Duplicates: {stats['duplicates']}")
+    print(f"  Broken Assets: {stats['broken_assets']}")
+    print(f"Report successfully saved to {report_path}")
+
+if __name__ == "__main__":
+    verify()

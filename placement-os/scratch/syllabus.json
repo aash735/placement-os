@@ -1,0 +1,786 @@
+[
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Number System",
+    "subtopics": [
+      "Face Value and Place Value",
+      "Types of Numbers (Prime, Composite, Rational)",
+      "Divisibility Rules",
+      "Properties of Numbers",
+      "Unit Digit Calculation",
+      "Division Algorithm & Remainder Theorem",
+      "Arithmetic & Geometric Progressions (AP/GP)"
+    ],
+    "estimatedQuestions": 180,
+    "difficultyDistribution": {
+      "Easy": 50,
+      "Medium": 90,
+      "Hard": 40
+    },
+    "pageRange": [
+      11,
+      59
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "H.C.F. and L.C.M. of Numbers",
+    "subtopics": [
+      "Factors and Multiples",
+      "H.C.F. and L.C.M. Formulas",
+      "H.C.F. and L.C.M. of Fractions & Decimals",
+      "Product of Two Numbers Relationship",
+      "Application Problems (Traffic Lights, Tolling Bells)"
+    ],
+    "estimatedQuestions": 85,
+    "difficultyDistribution": {
+      "Easy": 30,
+      "Medium": 40,
+      "Hard": 15
+    },
+    "pageRange": [
+      59,
+      77
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Decimal Fractions",
+    "subtopics": [
+      "Conversion of Decimals to Vulgar Fractions",
+      "Arithmetic Operations on Decimal Fractions",
+      "Recurring Decimals",
+      "Comparison of Decimal Fractions"
+    ],
+    "estimatedQuestions": 95,
+    "difficultyDistribution": {
+      "Easy": 40,
+      "Medium": 45,
+      "Hard": 10
+    },
+    "pageRange": [
+      77,
+      103
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Simplification",
+    "subtopics": [
+      "BODMAS Rule",
+      "Modulus of a Real Number",
+      "Algebraic Formula Applications",
+      "Virculum / Bar Bracket Operations",
+      "Comparison of Mathematical Expressions"
+    ],
+    "estimatedQuestions": 240,
+    "difficultyDistribution": {
+      "Easy": 80,
+      "Medium": 120,
+      "Hard": 40
+    },
+    "pageRange": [
+      103,
+      188
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Square Roots and Cube Roots",
+    "subtopics": [
+      "Square Root Evaluation Methods",
+      "Cube Root Evaluation Methods",
+      "Square Root of Fractions and Decimals",
+      "Approximation of Square/Cube Roots"
+    ],
+    "estimatedQuestions": 90,
+    "difficultyDistribution": {
+      "Easy": 35,
+      "Medium": 40,
+      "Hard": 15
+    },
+    "pageRange": [
+      188,
+      214
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Average",
+    "subtopics": [
+      "Average of Numbers",
+      "Average of Consecutive Numbers",
+      "Average Speed Formulas",
+      "Weighted Average",
+      "Change in Average (Addition, Removal, Replacement of values)"
+    ],
+    "estimatedQuestions": 130,
+    "difficultyDistribution": {
+      "Easy": 40,
+      "Medium": 60,
+      "Hard": 30
+    },
+    "pageRange": [
+      214,
+      248
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Problems on Numbers",
+    "subtopics": [
+      "Formulating Algebraic Equations",
+      "Two-Digit and Three-Digit Number Problems",
+      "Fraction Relations and Ratios"
+    ],
+    "estimatedQuestions": 80,
+    "difficultyDistribution": {
+      "Easy": 30,
+      "Medium": 40,
+      "Hard": 10
+    },
+    "pageRange": [
+      248,
+      272
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Problems on Ages",
+    "subtopics": [
+      "Present, Past, and Future Age Relations",
+      "Ratio of Ages",
+      "Average Age of a Group"
+    ],
+    "estimatedQuestions": 65,
+    "difficultyDistribution": {
+      "Easy": 25,
+      "Medium": 30,
+      "Hard": 10
+    },
+    "pageRange": [
+      272,
+      286
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Surds and Indices",
+    "subtopics": [
+      "Laws of Indices",
+      "Laws of Surds",
+      "Comparison of Surds",
+      "Rationalization of Surds"
+    ],
+    "estimatedQuestions": 85,
+    "difficultyDistribution": {
+      "Easy": 25,
+      "Medium": 45,
+      "Hard": 15
+    },
+    "pageRange": [
+      286,
+      305
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Logarithms",
+    "subtopics": [
+      "Definition of Logarithm",
+      "Laws of Logarithms",
+      "Common Logarithms (Characteristic and Mantissa)",
+      "Change of Base Formula"
+    ],
+    "estimatedQuestions": 55,
+    "difficultyDistribution": {
+      "Easy": 20,
+      "Medium": 25,
+      "Hard": 10
+    },
+    "pageRange": [
+      305,
+      316
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Percentage",
+    "subtopics": [
+      "Percentage Concept & Conversion",
+      "Percentage Increase & Decrease",
+      "Commodity Price and Consumption Adjustment",
+      "Population Growth/Depreciation Formulas",
+      "Percentage Comparison (More than/Less than)"
+    ],
+    "estimatedQuestions": 210,
+    "difficultyDistribution": {
+      "Easy": 60,
+      "Medium": 100,
+      "Hard": 50
+    },
+    "pageRange": [
+      316,
+      382
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Profit and Loss",
+    "subtopics": [
+      "Cost Price and Selling Price Concepts",
+      "Profit and Loss Percentage",
+      "False Weight Problems",
+      "Marked Price, List Price, and Discount",
+      "Successive Discounts",
+      "Cost Price / Selling Price Relation under discount"
+    ],
+    "estimatedQuestions": 180,
+    "difficultyDistribution": {
+      "Easy": 50,
+      "Medium": 90,
+      "Hard": 40
+    },
+    "pageRange": [
+      382,
+      434
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Ratio and Proportion",
+    "subtopics": [
+      "Ratio and Proportion Definitions",
+      "Fourth, Third, and Mean Proportional",
+      "Compounded, Duplicate, and Triplicate Ratios",
+      "Componendo and Dividendo",
+      "Bag / Coin-Value Problems",
+      "Ratio Division of Salaries/Profits"
+    ],
+    "estimatedQuestions": 160,
+    "difficultyDistribution": {
+      "Easy": 50,
+      "Medium": 80,
+      "Hard": 30
+    },
+    "pageRange": [
+      434,
+      484
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Partnership",
+    "subtopics": [
+      "Simple Partnership",
+      "Compound Partnership",
+      "Working and Sleeping Partners",
+      "Profit Allocation based on Capital-Time Product"
+    ],
+    "estimatedQuestions": 60,
+    "difficultyDistribution": {
+      "Easy": 20,
+      "Medium": 30,
+      "Hard": 10
+    },
+    "pageRange": [
+      484,
+      501
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Chain Rule",
+    "subtopics": [
+      "Direct Proportion",
+      "Indirect / Inverse Proportion",
+      "Work-Men-Hours Relationship Formula"
+    ],
+    "estimatedQuestions": 70,
+    "difficultyDistribution": {
+      "Easy": 25,
+      "Medium": 35,
+      "Hard": 10
+    },
+    "pageRange": [
+      501,
+      518
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Pipes and Cisterns",
+    "subtopics": [
+      "Inlet and Outlet Pipes",
+      "Leakage Problems",
+      "Alternating Pipe Operations",
+      "Time taken to fill / empty a tank"
+    ],
+    "estimatedQuestions": 60,
+    "difficultyDistribution": {
+      "Easy": 20,
+      "Medium": 30,
+      "Hard": 10
+    },
+    "pageRange": [
+      518,
+      534
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Time and Work",
+    "subtopics": [
+      "Work Efficiency Relationship",
+      "LCM / Efficiency Method",
+      "Leaving & Joining before/after completion",
+      "Wages and Share Allocation",
+      "Group Work (Men, Women, and Children)"
+    ],
+    "estimatedQuestions": 125,
+    "difficultyDistribution": {
+      "Easy": 35,
+      "Medium": 60,
+      "Hard": 30
+    },
+    "pageRange": [
+      534,
+      570
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Time & Distance",
+    "subtopics": [
+      "Speed, Distance, and Time Basics",
+      "Average Speed Formulas",
+      "Relative Speed Concept",
+      "Late / Early Arrival Problems",
+      "Ratio of Speeds and Times"
+    ],
+    "estimatedQuestions": 115,
+    "difficultyDistribution": {
+      "Easy": 30,
+      "Medium": 55,
+      "Hard": 30
+    },
+    "pageRange": [
+      570,
+      608
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Boats and Streams",
+    "subtopics": [
+      "Downstream and Upstream Speeds",
+      "Speed of Boat in Still Water",
+      "Speed of Stream",
+      "Distance and Time Relationships"
+    ],
+    "estimatedQuestions": 40,
+    "difficultyDistribution": {
+      "Easy": 15,
+      "Medium": 20,
+      "Hard": 5
+    },
+    "pageRange": [
+      608,
+      620
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Problems on Trains",
+    "subtopics": [
+      "Crossing Stationary Objects (Poles, Men)",
+      "Crossing Moving Objects (Running Men, Trains)",
+      "Crossing Platforms, Bridges, and Tunnels",
+      "Relative Speed of Two Trains"
+    ],
+    "estimatedQuestions": 80,
+    "difficultyDistribution": {
+      "Easy": 25,
+      "Medium": 40,
+      "Hard": 15
+    },
+    "pageRange": [
+      620,
+      641
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Alligation or Mixture",
+    "subtopics": [
+      "Rule of Alligation",
+      "Mean Price of Mixture",
+      "Repeated Dilution / Replacement Formula",
+      "Mixing Ingredients of different concentrations"
+    ],
+    "estimatedQuestions": 35,
+    "difficultyDistribution": {
+      "Easy": 10,
+      "Medium": 20,
+      "Hard": 5
+    },
+    "pageRange": [
+      641,
+      649
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Simple Interest",
+    "subtopics": [
+      "Principal, Rate, Time, and Interest Formulas",
+      "Amount Calculation",
+      "Sum becoming n-times in T years",
+      "Variable Rate of Interest Problems"
+    ],
+    "estimatedQuestions": 80,
+    "difficultyDistribution": {
+      "Easy": 25,
+      "Medium": 40,
+      "Hard": 15
+    },
+    "pageRange": [
+      649,
+      671
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Compound Interest",
+    "subtopics": [
+      "Compound Interest Formula (Annually, Semi-Annually, Quarterly)",
+      "Compound Depreciation",
+      "Difference between CI and SI (2 years / 3 years)",
+      "Present Worth of Compound Dues"
+    ],
+    "estimatedQuestions": 90,
+    "difficultyDistribution": {
+      "Easy": 25,
+      "Medium": 45,
+      "Hard": 20
+    },
+    "pageRange": [
+      671,
+      696
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Area",
+    "subtopics": [
+      "Area and Perimeter of Triangles (Heron's Formula)",
+      "Area and Perimeter of Rectangles and Squares",
+      "Area of Parallelogram, Rhombus, and Trapezoid",
+      "Area of Circle, Ring, and Sector",
+      "Inner, Outer, and Middle Paths of Gardens"
+    ],
+    "estimatedQuestions": 200,
+    "difficultyDistribution": {
+      "Easy": 50,
+      "Medium": 100,
+      "Hard": 50
+    },
+    "pageRange": [
+      696,
+      774
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Volume and Surface Areas",
+    "subtopics": [
+      "Volume and Surface Area of Cuboid and Cube",
+      "Volume and Surface Area of Cylinder and Cone",
+      "Volume and Surface Area of Sphere and Hemisphere",
+      "Frustum of a Cone",
+      "Melting and Recasting / Dimensional Changes"
+    ],
+    "estimatedQuestions": 150,
+    "difficultyDistribution": {
+      "Easy": 40,
+      "Medium": 75,
+      "Hard": 35
+    },
+    "pageRange": [
+      774,
+      822
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Races and Games of Skill",
+    "subtopics": [
+      "Race Course and Starts (Distance/Time starts)",
+      "Beating/Dead Heat Concepts",
+      "Calculating Speed/Time differences in a race"
+    ],
+    "estimatedQuestions": 20,
+    "difficultyDistribution": {
+      "Easy": 5,
+      "Medium": 10,
+      "Hard": 5
+    },
+    "pageRange": [
+      822,
+      827
+    ]
+  },
+  {
+    "category": "Logical Reasoning",
+    "topic": "Calendar",
+    "subtopics": [
+      "Odd Days Concept",
+      "Leap Year and Ordinary Year",
+      "Day of the Week on a specific date",
+      "Repetition of a Calendar Year"
+    ],
+    "estimatedQuestions": 25,
+    "difficultyDistribution": {
+      "Easy": 10,
+      "Medium": 10,
+      "Hard": 5
+    },
+    "pageRange": [
+      827,
+      831
+    ]
+  },
+  {
+    "category": "Logical Reasoning",
+    "topic": "Clocks",
+    "subtopics": [
+      "Speed of Minute and Hour Hands",
+      "Angle between Clock Hands at a given time",
+      "Gain / Loss of Time (Incorrect clocks)",
+      "Coinciding, Right-Angle, and Opposite Positions"
+    ],
+    "estimatedQuestions": 30,
+    "difficultyDistribution": {
+      "Easy": 10,
+      "Medium": 15,
+      "Hard": 5
+    },
+    "pageRange": [
+      831,
+      849
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Stocks and Shares",
+    "subtopics": [
+      "Face Value, Market Value, and Dividends",
+      "Brokerage & Investment returns",
+      "Yield percentage on investments"
+    ],
+    "estimatedQuestions": 35,
+    "difficultyDistribution": {
+      "Easy": 10,
+      "Medium": 20,
+      "Hard": 5
+    },
+    "pageRange": [
+      834,
+      840
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Permutation and Combination",
+    "subtopics": [
+      "Factorial Notation",
+      "Permutations (nPr) & Circular Permutations",
+      "Combinations (nCr)",
+      "Grouping and Selection Problems"
+    ],
+    "estimatedQuestions": 45,
+    "difficultyDistribution": {
+      "Easy": 15,
+      "Medium": 20,
+      "Hard": 10
+    },
+    "pageRange": [
+      849,
+      858
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Probability",
+    "subtopics": [
+      "Sample Space and Events",
+      "Probability of Coins, Dice, and Cards",
+      "Probability of Balls drawing",
+      "Addition and Multiplication Theorems of Probability"
+    ],
+    "estimatedQuestions": 50,
+    "difficultyDistribution": {
+      "Easy": 15,
+      "Medium": 25,
+      "Hard": 10
+    },
+    "pageRange": [
+      858,
+      869
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "True Discount",
+    "subtopics": [
+      "Present Worth concept",
+      "True Discount Formula",
+      "Relationship between PW, TD, and SI"
+    ],
+    "estimatedQuestions": 25,
+    "difficultyDistribution": {
+      "Easy": 10,
+      "Medium": 12,
+      "Hard": 3
+    },
+    "pageRange": [
+      869,
+      874
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Banker's Discount",
+    "subtopics": [
+      "Banker's Discount Formula",
+      "Banker's Gain",
+      "Face Value and Discounted Value of Bills"
+    ],
+    "estimatedQuestions": 25,
+    "difficultyDistribution": {
+      "Easy": 10,
+      "Medium": 12,
+      "Hard": 3
+    },
+    "pageRange": [
+      874,
+      878
+    ]
+  },
+  {
+    "category": "Quantitative Aptitude",
+    "topic": "Heights and Distances",
+    "subtopics": [
+      "Angle of Elevation",
+      "Angle of Depression",
+      "Right-Angled Triangle applications",
+      "Trigonometric ratio applications in real-world heights"
+    ],
+    "estimatedQuestions": 30,
+    "difficultyDistribution": {
+      "Easy": 10,
+      "Medium": 15,
+      "Hard": 5
+    },
+    "pageRange": [
+      878,
+      885
+    ]
+  },
+  {
+    "category": "Logical Reasoning",
+    "topic": "Odd Man Out and Series",
+    "subtopics": [
+      "Number Series Classification",
+      "Finding the Wrong Term in a series",
+      "Odd One Out detection"
+    ],
+    "estimatedQuestions": 55,
+    "difficultyDistribution": {
+      "Easy": 20,
+      "Medium": 25,
+      "Hard": 10
+    },
+    "pageRange": [
+      885,
+      893
+    ]
+  },
+  {
+    "category": "Data Interpretation",
+    "topic": "Tabulation",
+    "subtopics": [
+      "Table Structure Interpretation",
+      "Row and Column calculations",
+      "Percentage Share & growth rate estimation",
+      "Averages and ratios in tables"
+    ],
+    "estimatedQuestions": 100,
+    "difficultyDistribution": {
+      "Easy": 20,
+      "Medium": 50,
+      "Hard": 30
+    },
+    "pageRange": [
+      895,
+      913
+    ]
+  },
+  {
+    "category": "Data Interpretation",
+    "topic": "Bar Graphs",
+    "subtopics": [
+      "Horizontal and Vertical Bar Chart Reading",
+      "Multi-bar comparisons",
+      "Calculating growth trends from bars"
+    ],
+    "estimatedQuestions": 80,
+    "difficultyDistribution": {
+      "Easy": 20,
+      "Medium": 40,
+      "Hard": 20
+    },
+    "pageRange": [
+      913,
+      931
+    ]
+  },
+  {
+    "category": "Data Interpretation",
+    "topic": "Pie Chart",
+    "subtopics": [
+      "Degree to Percentage Conversions",
+      "Central Angle Calculations",
+      "Sector distribution values"
+    ],
+    "estimatedQuestions": 70,
+    "difficultyDistribution": {
+      "Easy": 15,
+      "Medium": 35,
+      "Hard": 20
+    },
+    "pageRange": [
+      931,
+      945
+    ]
+  },
+  {
+    "category": "Data Interpretation",
+    "topic": "Line Graphs",
+    "subtopics": [
+      "Continuous Trend Reading",
+      "Peak and Trough Analysis",
+      "Comparison of multiple lines / variables"
+    ],
+    "estimatedQuestions": 80,
+    "difficultyDistribution": {
+      "Easy": 20,
+      "Medium": 40,
+      "Hard": 20
+    },
+    "pageRange": [
+      945,
+      961
+    ]
+  }
+]

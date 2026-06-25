@@ -157,6 +157,16 @@ export interface CsSubjectState {
   checkedItems: string[];
 }
 
+export interface AptitudePracticeAttempt {
+  id: string;
+  topicId: string;
+  questionId: string;
+  isCorrect: boolean;
+  timeSpentSec: number;
+  completedAt: string;
+  userAnswer: string;
+}
+
 /** Schema documentation */
 export const DB_SCHEMA = {
   users: ["id", "email", "name", "semester", "path", "created_at"],

@@ -1,0 +1,110 @@
+=== H.C.F. & L.C.M. Start (Page 59) ===
+  51
+  2 H.C.F. and L.C.M. of Numbers
+  IMPORTANT FACTS AND FORMULAE
+   I. Factors and Multiples: If a number a divides another number b exactly, we say that a is a factor of b. In 
+  this case, b is called a multiple of a.
+   II. Highest Common Factor (H.C.F.) or Greatest Common Measure (G.C.M.) or Greatest Common Divisor (G.C.D.): 
+  The H.C.F. of two or more than two numbers is the greatest number that divides each of them exactly.
+  	 	There	 are	two	methods	of	finding	the	H.C.F.	of	a	given	set	of	numbers:
+    1. Factorization Method:  Express each one of the given numbers as the product of prime factors. The 
+  product of least powers of common prime factors gives H.C.F.
+    2. Division Method: Suppose	we	have	to	find	the	H.C.F.	of	two	given	numbers.	Divide	the	larger	number	
+  by the smaller one. Now, divide the divisor by the remainder. Repeat the process of dividing the 
+  preceding number by the remainder last obtained till zero is obtained as remainder. The last divisor is 
+  the required H.C.F.
+     Finding the H.C.F. of more than two numbers:  Suppose	we	have	to	find	the	H.C.F.	of	three	numbers.	
+  Then, H.C.F. of [(H.C.F. of any two) and (the third number)] gives the H.C.F. of three given numbers.
+     Similarly, the H.C.F. of more than three numbers may be obtained.
+   III. Least Common Multiple (L.C.M.): The least number which is exactly divisible by each one of the given 
+  numbers is called their L.C.M.
+    1. Factorization Method of Finding L.C.M. : Resolve each one of the given numbers into a product of prime 
+--------------------------------------------------
+=== H.C.F. & L.C.M. Middle/Exercise (Page 73) ===
+  H.C.F. AND L.C.M. OF NUMBERS 65
+    = ++ ==
+  21 42 56 119 17.77
+   69.  Required length = H.C.F. of 700 cm, 385 cm and 1295 cm 
+  = 35 cm.
+   70.  Required capacity
+     = H.C.F. of 120 litres and 56 litres
+     = 8 litres = 8000 cc.               [ Q 1 litre = 1000 cc]
+   71.  Maximum possible daily wage = H.C.F. of ` 5750 and  
+  ` 5000 = ` 250.
+   72.  For the least number of bottles, the capacity of each bottle 
+  must be maximum.
+    ∴ Capacity of each bottle = H.C.F. of 403 litres, 465 
+  litres and 496 litres = 31 litres.
+    Hence, required number of bottles
+     = ++ ==
+  403 465 496 1364 44.31 31
+   73.  Required number of students = H.C.F. of 1001 and 910 = 
+  91.
+   74.  Largest size of the tile = H.C.F. of 378 cm and 525 cm = 
+--------------------------------------------------
+=== H.C.F. & L.C.M. Answers/Solutions Search (Page 75) ===
+  H.C.F. AND L.C.M. OF NUMBERS 67
+     = 100000 + (60 – 40) = 100020.
+    ∴ N = (100020 + 2) = 100022.
+    Sum of digits in N = (1 + 2 + 2) = 5.
+   104. L.C.M. of 4, 5, 6, 7 and 8 is 840.
+    Let the required number be 840 k + 2, which is a multiple 
+  of 13.
+    Least value of k for which (840 k + 2) is divisible by 13 is 
+  k = 3.
+    ∴ Required number = 840 × 3 + 2 = 2522.
+   105. Here (12 – 7) = 5, (15 – 10) = 5 and (16 – 11) = 5.
+    ∴ Required number = (L.C.M. of 12, 15, 16) – 5
+     = 240 – 5 = 235.
+   106. Here (48 – 38) = 10, (60 – 50) = 10, (72 – 62) = 10
+     (108 – 98) = 10 & (140 – 130) = 10.
+    ∴ Required number = (L.C.M. of 48, 60, 72, 108, 140) 
+  – 10 = 15120 – 10 = 15110.
+   107. Here (18 – 7) = 11, (21 – 10) = 11 and (24 – 13) = 11. 
+  L.C.M. of 18, 21 and 24 is 504.
+    Let the required number be 504 k – 11.
+--------------------------------------------------
+=== Average Start (Page 214) ===
+  IMPORTANT FACTS AND FORMULAE
+   I. = 
+  
+  Sum of observationsAverage Number of observations
+   II.  Suppose a man covers a certain distance at x kmph and an equal distance at y kmph. Then, the average 
+  speed during the whole journey is 2 kmph.xy
+  xy
+  
+   +
+  office 365 off
+  SOLVED EXAMPLES
+   Ex. 1. Find the average of the following set of numbers: 354, 281, 623, 518, 447, 702, 876. (Bank Recruitment, 2009)
+   Sol. Average of given numbers = 354 281 623 518 447 702 876
+  7
+  ++++ ++  = 3801 543.7 =
+   Ex. 2. The body weight of six boys is recorded as 54 kg, 64 kg, 75 kg, 67 kg, 45 kg and 91 kg. What is the average 
+  body weight of all six boys? (Bank Recruitment, 2010)
+   Sol. Average body weight = +++++
+  54 64 75 67 45 91 kg6  = 396 kg 66 kg.6
+   =
+--------------------------------------------------
+=== Pie-Chart Start (Page 931) ===
+   Ex 1. (Questions 1 to 4 ): Study the following pie-chart 
+  carefully and answer the questions given below:
+  (Bank P.O., 2011)
+   Cost Estimated by a Family in  
+  Renovation of their House
+   1. What is the difference 
+  in the amount estimated 
+  by the family on interior 
+  decoration and that on 
+  architect's fees ?
+    ( a) ` 10000
+    ( b) ` 9500
+    ( c) ` 7200
+    ( d) ` 9000
+    ( e) None of these
+   2. Other than getting the 
+  discount of 12 % on the estimated cost of furniture 
+  and the actual miscellaneous expenditure being  
+  Total Estimated Cost
+  = ` 12 0000
+--------------------------------------------------

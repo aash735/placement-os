@@ -10,6 +10,20 @@ import { getTcsSlugFromResourceId } from "@/lib/tcs-utils";
 import { aptitudeQuestions, AptitudeQuestion } from "@/data/aptitude-questions";
 import { motion, AnimatePresence } from "framer-motion";
 import {
+  ResponsiveContainer,
+  PieChart,
+  Pie,
+  Cell,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  LineChart,
+  Line,
+  CartesianGrid
+} from "recharts";
+import {
   Clock,
   Play,
   Pause,
@@ -214,8 +228,39 @@ function TestPageContent() {
       return;
     }
 
+    const reqCategories = searchParams.get("categories")?.split(",") || ["quant", "logical"];
+
     // Filter questions by categories
-    const pool = aptitudeQuestions.filter((q) => reqCategories.includes(q.category));
+    let pool = aptitudeQuestions.filter((q) => reqCategories.includes(q.category));
+    
+    // Support filtering by topic if provided
+    const reqTopics = searchParams.get("topics")?.split(",") || [];
+    if (reqTopics.length > 0 && reqTopics[0] !== "") {
+      pool = pool.filter((q) => reqTopics.includes(q.topic));
+    }
+
+    // Support filtering by difficulty if provided
+    const diffParam = searchParams.get("difficulty");
+    if (diffParam) {
+      let diffNum = 2; // Default to medium if parse fails
+      if (diffParam === "1" || diffParam.toLowerCase() === "beginner" || diffParam.toLowerCase() === "easy") {
+        diffNum = 1;
+      } else if (diffParam === "2" || diffParam.toLowerCase() === "intermediate" || diffParam.toLowerCase() === "medium") {
+        diffNum = 2;
+      } else if (diffParam === "3" || diffParam.toLowerCase() === "advanced" || diffParam.toLowerCase() === "hard") {
+        diffNum = 3;
+      }
+      pool = pool.filter((q) => q.difficulty === diffNum);
+    }
+
+    // Support filtering by company if provided
+    const compParam = searchParams.get("company");
+    if (compParam) {
+      pool = pool.filter((q) => 
+        (q.companyRelevance && q.companyRelevance.some((c) => c.toLowerCase() === compParam.toLowerCase())) ||
+        (q.companyTags && q.companyTags.some((c) => c.toLowerCase() === compParam.toLowerCase()))
+      );
+    }
     
     // Simple deterministic shuffle based on testId or date
     const shuffled = [...pool].sort(() => 0.5 - Math.random());
@@ -418,6 +463,101 @@ function TestPageContent() {
                   {currentQuestion.question}
                 </h3>
               </div>
+
+              {/* Visual Assets Reconstruction Rendering */}
+              {currentQuestion.tableData && (
+                <div className="mb-8 overflow-x-auto rounded-xl border border-white/10 bg-white/5 p-4">
+                  <table className="min-w-full divide-y divide-white/10 text-sm text-zinc-300">
+                    <thead>
+                      <tr className="divide-x divide-white/10">
+                        {currentQuestion.tableData.headers.map((header, i) => (
+                          <th key={i} className="px-4 py-2 text-left font-bold text-white bg-white/5">
+                            {header}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-white/10">
+                      {currentQuestion.tableData.rows.map((row, rIdx) => (
+                        <tr key={rIdx} className="divide-x divide-white/10 hover:bg-white/5 transition-colors">
+                          {row.map((cell, cIdx) => (
+                            <td key={cIdx} className="px-4 py-2 font-mono text-xs">
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {currentQuestion.chartData && currentQuestion.chartType && (
+                <div className="mb-8 p-4 rounded-xl border border-white/10 bg-white/5 h-72 min-h-[18rem]">
+                  <ResponsiveContainer width="100%" height="100%">
+                    {currentQuestion.chartType === "pie" ? (
+                      <PieChart>
+                        <Pie
+                          data={currentQuestion.chartData}
+                          dataKey="value"
+                          nameKey="name"
+                          cx="50%"
+                          cy="50%"
+                          outerRadius={80}
+                          paddingAngle={3}
+                          label={({ name, value }) => `${name}: ${value}%`}
+                        >
+                          {currentQuestion.chartData.map((entry, i) => (
+                            <Cell key={i} fill={["#22d3ee", "#818cf8", "#34d399", "#f472b6", "#fbbf24", "#a78bfa"][i % 6]} />
+                          ))}
+                        </Pie>
+                        <Tooltip
+                          contentStyle={{
+                            background: "rgba(16, 16, 24, 0.9)",
+                            border: "1px solid rgba(255, 255, 255, 0.1)",
+                            borderRadius: "12px",
+                            color: "#fff",
+                          }}
+                        />
+                      </PieChart>
+                    ) : currentQuestion.chartType === "bar" ? (
+                      <BarChart data={currentQuestion.chartData}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
+                        <XAxis dataKey="name" stroke="#a1a1aa" fontSize={10} />
+                        <YAxis stroke="#a1a1aa" fontSize={10} />
+                        <Tooltip
+                          contentStyle={{
+                            background: "rgba(16, 16, 24, 0.9)",
+                            border: "1px solid rgba(255, 255, 255, 0.1)",
+                            borderRadius: "12px",
+                            color: "#fff",
+                          }}
+                        />
+                        <Bar dataKey="value" fill="#22d3ee" radius={[4, 4, 0, 0]}>
+                          {currentQuestion.chartData.map((entry, i) => (
+                            <Cell key={i} fill={["#22d3ee", "#818cf8", "#34d399", "#f472b6", "#fbbf24", "#a78bfa"][i % 6]} />
+                          ))}
+                        </Bar>
+                      </BarChart>
+                    ) : (
+                      <LineChart data={currentQuestion.chartData}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
+                        <XAxis dataKey="name" stroke="#a1a1aa" fontSize={10} />
+                        <YAxis stroke="#a1a1aa" fontSize={10} />
+                        <Tooltip
+                          contentStyle={{
+                            background: "rgba(16, 16, 24, 0.9)",
+                            border: "1px solid rgba(255, 255, 255, 0.1)",
+                            borderRadius: "12px",
+                            color: "#fff",
+                          }}
+                        />
+                        <Line type="monotone" dataKey="value" stroke="#22d3ee" strokeWidth={2} activeDot={{ r: 6 }} />
+                      </LineChart>
+                    )}
+                  </ResponsiveContainer>
+                </div>
+              )}
 
               {/* Options */}
               <div className="space-y-3">

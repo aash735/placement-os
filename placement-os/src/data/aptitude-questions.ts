@@ -4,15 +4,26 @@ export interface AptitudeQuestion {
   options: string[];
   answer: string; // The correct option text
   explanation: string;
-  shortcuts: string[];
+  shortcuts?: string[];
   difficulty: 1 | 2 | 3; // 1 = Easy, 2 = Medium, 3 = Hard
   topic: string; // topic id
   category: "quant" | "logical" | "verbal" | "puzzles" | "di";
   estimatedTime: number; // in seconds
   companyRelevance: string[];
+  companyTags?: string[];
+  subtopic?: string;
+  tags?: string[];
+  tableData?: { headers: string[]; rows: string[][] };
+  chartData?: { name: string; value: number }[];
+  chartType?: "pie" | "bar" | "line";
 }
 
 import { tcsAptitudeQuestions } from "./tcs-questions";
+import quantQs from "./aptitude/quantitative/questions.json";
+import logicalQs from "./aptitude/logical/questions.json";
+import verbalQs from "./aptitude/verbal/questions.json";
+import diQs from "./aptitude/data-interpretation/questions.json";
+import puzzlesQs from "./aptitude/puzzles/questions.json";
 
 const baseAptitudeQuestions: AptitudeQuestion[] = [
   // ================= QUANTITATIVE APTITUDE =================
@@ -437,7 +448,22 @@ const baseAptitudeQuestions: AptitudeQuestion[] = [
   }
 ];
 
+const allJsonQs: AptitudeQuestion[] = [
+  ...(quantQs as AptitudeQuestion[]),
+  ...(logicalQs as AptitudeQuestion[]),
+  ...(verbalQs as AptitudeQuestion[]),
+  ...(diQs as AptitudeQuestion[]),
+  ...(puzzlesQs as AptitudeQuestion[])
+];
+
+const mergedBase = [...baseAptitudeQuestions];
+allJsonQs.forEach(q => {
+  if (!mergedBase.some(bq => bq.id === q.id)) {
+    mergedBase.push(q);
+  }
+});
+
 export const aptitudeQuestions: AptitudeQuestion[] = [
-  ...baseAptitudeQuestions,
+  ...mergedBase,
   ...tcsAptitudeQuestions
 ];

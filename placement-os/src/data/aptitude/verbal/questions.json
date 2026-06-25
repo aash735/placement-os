@@ -1,0 +1,256 @@
+[
+  {
+    "id": "verbal-grammar-2",
+    "question": "Choose the word that best fills the blank: The manager was _______ about the project's success, but remained cautious.",
+    "options": [
+      "optimistic",
+      "pessimistic",
+      "indifferent",
+      "apathetic"
+    ],
+    "answer": "optimistic",
+    "explanation": "The word 'but' signals a contrast. Caution contrasts with confidence or hope. Therefore, the manager was hopeful/confident ('optimistic'), yet cautious.",
+    "shortcuts": [
+      "Look for contrast clues: 'but remained cautious' => opposite of caution/doubt is optimism"
+    ],
+    "difficulty": 1,
+    "topic": "grammar",
+    "category": "verbal",
+    "estimatedTime": 30,
+    "companyRelevance": [
+      "TCS",
+      "Accenture"
+    ],
+    "subtopic": "Grammar & Sentence Correction",
+    "tags": [
+      "grammar",
+      "grammar & sentence correction"
+    ],
+    "companyTags": [
+      "TCS",
+      "Accenture"
+    ]
+  },
+  {
+    "id": "verbal-grammar-3",
+    "question": "Choose the grammatically correct sentence:",
+    "options": [
+      "The group of students is planning a study trip.",
+      "The group of students are planning a study trip.",
+      "The group of students planning a study trip.",
+      "The group of students is plan a study trip."
+    ],
+    "answer": "The group of students is planning a study trip.",
+    "explanation": "The subject of the sentence is the collective noun 'group' (singular), not 'students'. Therefore, the singular verb 'is' is required.",
+    "shortcuts": [
+      "Collective noun (group) is singular => takes singular verb (is)"
+    ],
+    "difficulty": 1,
+    "topic": "grammar",
+    "category": "verbal",
+    "estimatedTime": 30,
+    "companyRelevance": [
+      "TCS",
+      "Cognizant",
+      "Wipro"
+    ],
+    "subtopic": "Grammar & Sentence Correction",
+    "tags": [
+      "subject-verb-agreement",
+      "grammar"
+    ],
+    "companyTags": [
+      "TCS",
+      "Cognizant",
+      "Wipro"
+    ]
+  },
+  {
+    "id": "verbal-rc-2",
+    "question": "Passage: The rise of autonomous vehicles promises to reshape urban landscapes by reducing traffic congestion and emissions. However, the transition presents complex ethical challenges, particularly regarding decision-making algorithms in unavoidable accident scenarios. Who should be prioritized in a crash\u2014pedestrians, passengers, or other drivers? \n\nAccording to the passage, what is the primary ethical issue associated with autonomous vehicles?",
+    "options": [
+      "The high cost of manufacturing autonomous cars.",
+      "Algorithm-driven prioritizations in crash scenarios.",
+      "The reduction of urban traffic congestion.",
+      "Job losses in the public transportation sector."
+    ],
+    "answer": "Algorithm-driven prioritizations in crash scenarios.",
+    "explanation": "The passage explicitly states that the transition presents complex ethical challenges regarding decision-making algorithms in unavoidable accident scenarios, such as prioritizing pedestrians, passengers, or other drivers.",
+    "shortcuts": [
+      "Match keywords: 'ethical challenges' maps to 'decision-making algorithms in unavoidable accident scenarios'"
+    ],
+    "difficulty": 3,
+    "topic": "rc",
+    "category": "verbal",
+    "estimatedTime": 90,
+    "companyRelevance": [
+      "Deloitte",
+      "Infosys"
+    ],
+    "subtopic": "Reading Comprehension",
+    "tags": [
+      "reading-comprehension",
+      "ethics"
+    ],
+    "companyTags": [
+      "Deloitte",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "verbal-vocab-2",
+    "question": "Identify the word that is a synonym of 'PRUDENT':",
+    "options": [
+      "Reckless",
+      "Cautious",
+      "Foolish",
+      "Impatient"
+    ],
+    "answer": "Cautious",
+    "explanation": "Prudent means showing care and thought for the future; wise or cautious. Therefore, 'Cautious' is the correct synonym.",
+    "shortcuts": [
+      "Prudent = Wise, careful, cautious"
+    ],
+    "difficulty": 2,
+    "topic": "vocab",
+    "category": "verbal",
+    "estimatedTime": 30,
+    "companyRelevance": [
+      "Accenture",
+      "TCS Ninja"
+    ],
+    "subtopic": "Vocabulary & Para Jumbles",
+    "tags": [
+      "synonyms",
+      "vocabulary"
+    ],
+    "companyTags": [
+      "Accenture",
+      "TCS Ninja"
+    ]
+  },
+  {
+    "id": "verbal-syn-1",
+    "question": "What is the synonym of 'CANDID'?",
+    "options": [
+      "Secretive",
+      "Frank",
+      "Insincere",
+      "Ambiguous"
+    ],
+    "answer": "Frank",
+    "explanation": "Candid means truthful, straightforward, or frank. Therefore, 'Frank' is the correct synonym.",
+    "shortcuts": [
+      "Candid = honest, open, frank"
+    ],
+    "difficulty": 1,
+    "topic": "synonyms",
+    "category": "verbal",
+    "estimatedTime": 20,
+    "companyRelevance": [
+      "All MNCs"
+    ],
+    "subtopic": "Synonyms",
+    "tags": [
+      "synonyms",
+      "vocabulary"
+    ],
+    "companyTags": [
+      "All MNCs"
+    ]
+  },
+  {
+    "id": "verbal-ant-1",
+    "question": "What is the antonym of 'COMPASSIONATE'?",
+    "options": [
+      "Kind",
+      "Cruel",
+      "Sympathetic",
+      "Merciful"
+    ],
+    "answer": "Cruel",
+    "explanation": "Compassionate means feeling or showing sympathy and concern for others. The antonym is 'Cruel' (showing a lack of sympathy).",
+    "shortcuts": [
+      "Compassionate (positive) <=> Cruel (negative)"
+    ],
+    "difficulty": 1,
+    "topic": "antonyms",
+    "category": "verbal",
+    "estimatedTime": 20,
+    "companyRelevance": [
+      "All MNCs"
+    ],
+    "subtopic": "Antonyms",
+    "tags": [
+      "antonyms",
+      "vocabulary"
+    ],
+    "companyTags": [
+      "All MNCs"
+    ]
+  },
+  {
+    "id": "verbal-imp-1",
+    "question": "Improve the underlined part: The boy *is having* a new smartphone.",
+    "options": [
+      "has",
+      "had had",
+      "is owning",
+      "No improvement"
+    ],
+    "answer": "has",
+    "explanation": "Dynamic verbs (like 'is having') should not be used in continuous tense to express possession. The simple present tense 'has' should be used instead.",
+    "shortcuts": [
+      "State of possession = use simple present (has/have)"
+    ],
+    "difficulty": 2,
+    "topic": "sentence-improvement",
+    "category": "verbal",
+    "estimatedTime": 30,
+    "companyRelevance": [
+      "TCS Ninja",
+      "Cognizant"
+    ],
+    "subtopic": "Sentence Improvement",
+    "tags": [
+      "sentence-improvement",
+      "grammar"
+    ],
+    "companyTags": [
+      "TCS Ninja",
+      "Cognizant"
+    ]
+  },
+  {
+    "id": "verbal-err-1",
+    "question": "Find the part containing a grammatical error: \n(A) One of the players / (B) are injured / (C) during the match. / (D) No error",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": "B",
+    "explanation": "The phrase 'One of the...' takes a singular verb because the subject is 'One', not 'players'. Therefore, 'are injured' should be corrected to 'is injured' or 'was injured' depending on the tense.",
+    "shortcuts": [
+      "One of + Plural Noun + Singular Verb"
+    ],
+    "difficulty": 2,
+    "topic": "error-detection",
+    "category": "verbal",
+    "estimatedTime": 45,
+    "companyRelevance": [
+      "Accenture",
+      "Wipro"
+    ],
+    "subtopic": "Error Detection",
+    "tags": [
+      "error-detection",
+      "grammar"
+    ],
+    "companyTags": [
+      "Accenture",
+      "Wipro"
+    ]
+  }
+]

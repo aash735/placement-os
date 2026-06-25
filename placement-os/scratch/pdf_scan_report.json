@@ -1,0 +1,636 @@
+[
+  {
+    "topic": "Number System",
+    "pageRange": [
+      11,
+      59
+    ],
+    "exercise_pages": [
+      22
+    ],
+    "answers_pages": [
+      39
+    ],
+    "solutions_pages": [
+      41
+    ]
+  },
+  {
+    "topic": "H.C.F. and L.C.M. of Numbers",
+    "pageRange": [
+      59,
+      77
+    ],
+    "exercise_pages": [
+      63
+    ],
+    "answers_pages": [
+      70
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Decimal Fractions",
+    "pageRange": [
+      77,
+      103
+    ],
+    "exercise_pages": [
+      82
+    ],
+    "answers_pages": [
+      93
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Simplification",
+    "pageRange": [
+      103,
+      188
+    ],
+    "exercise_pages": [
+      115
+    ],
+    "answers_pages": [
+      151
+    ],
+    "solutions_pages": [
+      152
+    ]
+  },
+  {
+    "topic": "Square Roots and Cube Roots",
+    "pageRange": [
+      188,
+      214
+    ],
+    "exercise_pages": [
+      193
+    ],
+    "answers_pages": [
+      202
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Average",
+    "pageRange": [
+      214,
+      248
+    ],
+    "exercise_pages": [
+      218,
+      241
+    ],
+    "answers_pages": [
+      222,
+      230,
+      244
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Problems on Numbers",
+    "pageRange": [
+      248,
+      272
+    ],
+    "exercise_pages": [
+      251,
+      268
+    ],
+    "answers_pages": [
+      259,
+      269
+    ],
+    "solutions_pages": [
+      260
+    ]
+  },
+  {
+    "topic": "Problems on Ages",
+    "pageRange": [
+      272,
+      286
+    ],
+    "exercise_pages": [
+      273,
+      282
+    ],
+    "answers_pages": [
+      277,
+      284
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Surds and Indices",
+    "pageRange": [
+      286,
+      305
+    ],
+    "exercise_pages": [
+      290
+    ],
+    "answers_pages": [
+      296
+    ],
+    "solutions_pages": [
+      297
+    ]
+  },
+  {
+    "topic": "Logarithms",
+    "pageRange": [
+      305,
+      316
+    ],
+    "exercise_pages": [
+      307
+    ],
+    "answers_pages": [
+      311
+    ],
+    "solutions_pages": [
+      312
+    ]
+  },
+  {
+    "topic": "Percentage",
+    "pageRange": [
+      316,
+      382
+    ],
+    "exercise_pages": [
+      325,
+      334,
+      376
+    ],
+    "answers_pages": [
+      350,
+      378
+    ],
+    "solutions_pages": [
+      346
+    ]
+  },
+  {
+    "topic": "Profit and Loss",
+    "pageRange": [
+      382,
+      434
+    ],
+    "exercise_pages": [
+      388,
+      399,
+      428
+    ],
+    "answers_pages": [
+      407,
+      430
+    ],
+    "solutions_pages": [
+      408
+    ]
+  },
+  {
+    "topic": "Ratio and Proportion",
+    "pageRange": [
+      434,
+      484
+    ],
+    "exercise_pages": [
+      446,
+      481
+    ],
+    "answers_pages": [
+      462,
+      482
+    ],
+    "solutions_pages": [
+      463
+    ]
+  },
+  {
+    "topic": "Partnership",
+    "pageRange": [
+      484,
+      501
+    ],
+    "exercise_pages": [
+      488,
+      497
+    ],
+    "answers_pages": [
+      493,
+      499
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Chain Rule",
+    "pageRange": [
+      501,
+      518
+    ],
+    "exercise_pages": [
+      505
+    ],
+    "answers_pages": [
+      510
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Pipes and Cisterns",
+    "pageRange": [
+      518,
+      534
+    ],
+    "exercise_pages": [
+      522,
+      531
+    ],
+    "answers_pages": [
+      526,
+      531
+    ],
+    "solutions_pages": [
+      523,
+      532
+    ]
+  },
+  {
+    "topic": "Time and Work",
+    "pageRange": [
+      534,
+      570
+    ],
+    "exercise_pages": [
+      539,
+      564
+    ],
+    "answers_pages": [
+      549,
+      567
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Time & Distance",
+    "pageRange": [
+      570,
+      608
+    ],
+    "exercise_pages": [
+      576,
+      605
+    ],
+    "answers_pages": [
+      590,
+      606
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Boats and Streams",
+    "pageRange": [
+      608,
+      620
+    ],
+    "exercise_pages": [
+      610,
+      616
+    ],
+    "answers_pages": [
+      613,
+      617
+    ],
+    "solutions_pages": [
+      618
+    ]
+  },
+  {
+    "topic": "Problems on Trains",
+    "pageRange": [
+      620,
+      641
+    ],
+    "exercise_pages": [
+      623,
+      635
+    ],
+    "answers_pages": [
+      628,
+      637
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Alligation or Mixture",
+    "pageRange": [
+      641,
+      649
+    ],
+    "exercise_pages": [
+      643
+    ],
+    "answers_pages": [
+      645
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Simple Interest",
+    "pageRange": [
+      649,
+      671
+    ],
+    "exercise_pages": [
+      653,
+      668
+    ],
+    "answers_pages": [
+      660,
+      669
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Compound Interest",
+    "pageRange": [
+      671,
+      696
+    ],
+    "exercise_pages": [
+      676,
+      688
+    ],
+    "answers_pages": [
+      681,
+      691
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Area",
+    "pageRange": [
+      696,
+      774
+    ],
+    "exercise_pages": [
+      708,
+      767
+    ],
+    "answers_pages": [
+      734,
+      770
+    ],
+    "solutions_pages": [
+      735
+    ]
+  },
+  {
+    "topic": "Volume and Surface Areas",
+    "pageRange": [
+      774,
+      822
+    ],
+    "exercise_pages": [
+      782,
+      818
+    ],
+    "answers_pages": [
+      799,
+      820
+    ],
+    "solutions_pages": [
+      800
+    ]
+  },
+  {
+    "topic": "Races and Games of Skill",
+    "pageRange": [
+      822,
+      827
+    ],
+    "exercise_pages": [
+      824
+    ],
+    "answers_pages": [
+      825
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Calendar",
+    "pageRange": [
+      827,
+      831
+    ],
+    "exercise_pages": [
+      829
+    ],
+    "answers_pages": [
+      829
+    ],
+    "solutions_pages": [
+      830
+    ]
+  },
+  {
+    "topic": "Clocks",
+    "pageRange": [
+      831,
+      849
+    ],
+    "exercise_pages": [
+      834,
+      845
+    ],
+    "answers_pages": [
+      837,
+      847
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Stocks and Shares",
+    "pageRange": [
+      834,
+      840
+    ],
+    "exercise_pages": [
+      834
+    ],
+    "answers_pages": [
+      837
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Permutation and Combination",
+    "pageRange": [
+      849,
+      858
+    ],
+    "exercise_pages": [
+      851
+    ],
+    "answers_pages": [
+      854
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Probability",
+    "pageRange": [
+      858,
+      869
+    ],
+    "exercise_pages": [
+      860
+    ],
+    "answers_pages": [
+      864
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "True Discount",
+    "pageRange": [
+      869,
+      874
+    ],
+    "exercise_pages": [
+      870
+    ],
+    "answers_pages": [
+      871
+    ],
+    "solutions_pages": [
+      872
+    ]
+  },
+  {
+    "topic": "Banker's Discount",
+    "pageRange": [
+      874,
+      878
+    ],
+    "exercise_pages": [
+      876
+    ],
+    "answers_pages": [
+      876
+    ],
+    "solutions_pages": [
+      877
+    ]
+  },
+  {
+    "topic": "Heights and Distances",
+    "pageRange": [
+      878,
+      885
+    ],
+    "exercise_pages": [
+      881
+    ],
+    "answers_pages": [
+      882
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Odd Man Out and Series",
+    "pageRange": [
+      885,
+      893
+    ],
+    "exercise_pages": [
+      885
+    ],
+    "answers_pages": [
+      888
+    ],
+    "solutions_pages": [
+      889
+    ]
+  },
+  {
+    "topic": "Tabulation",
+    "pageRange": [
+      895,
+      913
+    ],
+    "exercise_pages": [
+      895,
+      900,
+      907
+    ],
+    "answers_pages": [
+      898,
+      904,
+      911
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Bar Graphs",
+    "pageRange": [
+      913,
+      931
+    ],
+    "exercise_pages": [
+      913,
+      920,
+      926
+    ],
+    "answers_pages": [
+      917,
+      923,
+      929
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Pie Chart",
+    "pageRange": [
+      931,
+      945
+    ],
+    "exercise_pages": [
+      931,
+      936,
+      940
+    ],
+    "answers_pages": [
+      934,
+      938,
+      943
+    ],
+    "solutions_pages": []
+  },
+  {
+    "topic": "Line Graphs",
+    "pageRange": [
+      945,
+      961
+    ],
+    "exercise_pages": [
+      945,
+      951,
+      955
+    ],
+    "answers_pages": [
+      948,
+      954,
+      958
+    ],
+    "solutions_pages": [
+      949
+    ]
+  }
+]

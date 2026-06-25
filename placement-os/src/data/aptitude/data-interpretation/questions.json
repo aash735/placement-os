@@ -1,0 +1,2362 @@
+[
+  {
+    "id": "di-charts-2",
+    "question": "Refer to the sales data: 2023: B1=80, B2=75, B3=95, B4=110. Which branch had the highest average sales over the 3 years if the sales are: \nB1: 80, 90, 95 \nB2: 75, 85, 90 \nB3: 95, 100, 110 \nB4: 110, 105, 120",
+    "options": [
+      "B4",
+      "B3",
+      "B1",
+      "B2"
+    ],
+    "answer": "B4",
+    "explanation": "Let's sum the sales for each branch over 3 years: \nB1 = 80 + 90 + 95 = 265 \nB2 = 75 + 85 + 90 = 250 \nB3 = 95 + 100 + 110 = 305 \nB4 = 110 + 105 + 120 = 335. \nB4 has the highest sum, so it has the highest average sales.",
+    "shortcuts": [
+      "Compare base numbers: B4 started highest (110) and ended highest (120). No need to calculate sum for all."
+    ],
+    "difficulty": 2,
+    "topic": "di",
+    "category": "di",
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "Accenture",
+      "Infosys"
+    ],
+    "subtopic": "Charts & Tables",
+    "tags": [
+      "di",
+      "charts & tables"
+    ],
+    "companyTags": [
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-charts-3",
+    "question": "Refer to the table showing production (in tons) of three crop types (Wheat, Rice, Maize) by a farm:\nWheat: 2023=500, 2024=550, 2025=600\nRice: 2023=300, 2024=320, 2025=350\nMaize: 2023=150, 2024=180, 2025=200\n\nWhat is the average production of Rice over the three years?",
+    "options": [
+      "323.3 tons",
+      "310.0 tons",
+      "340.0 tons",
+      "330.0 tons"
+    ],
+    "answer": "323.3 tons",
+    "explanation": "Rice production over three years is: 300 (2023) + 320 (2024) + 350 (2025) = 970 tons. Average production = 970 / 3 = 323.33 tons.",
+    "shortcuts": [
+      "Sum = 970. Average = 970 / 3 = 323.3"
+    ],
+    "difficulty": 2,
+    "topic": "di",
+    "category": "di",
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "Capgemini",
+      "Accenture"
+    ],
+    "subtopic": "Tabulation",
+    "tags": [
+      "data-interpretation",
+      "tabulation",
+      "averages"
+    ],
+    "companyTags": [
+      "Capgemini",
+      "Accenture"
+    ]
+  },
+  {
+    "id": "di-charts-4",
+    "question": "In a pie chart representing a student's budget allocation, Rent takes up 30%, Food takes 25%, Tuition takes 20%, Entertainment takes 15%, and Savings takes 10%. \n\nWhat is the central angle (in degrees) for the 'Rent' sector?",
+    "options": [
+      "90 degrees",
+      "108 degrees",
+      "120 degrees",
+      "135 degrees"
+    ],
+    "answer": "108 degrees",
+    "explanation": "A circle has 360 degrees. Since Rent takes up 30% of the total budget, the central angle is: 30% of 360 = (30 / 100) * 360 = 0.3 * 360 = 108 degrees.",
+    "shortcuts": [
+      "Angle = Percentage * 3.6",
+      "30 * 3.6 = 108 degrees"
+    ],
+    "difficulty": 3,
+    "topic": "di",
+    "category": "di",
+    "estimatedTime": 45,
+    "companyRelevance": [
+      "TCS Digital",
+      "Infosys"
+    ],
+    "subtopic": "Pie Chart",
+    "tags": [
+      "data-interpretation",
+      "pie-chart",
+      "angles"
+    ],
+    "companyTags": [
+      "TCS Digital",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-table-1",
+    "question": "Refer to the table showing expenses (in $1000s) of a startup:\nRent: Q1=50, Q2=52, Q3=55, Q4=60\nSalaries: Q1=120, Q2=125, Q3=130, Q4=140\nMarketing: Q1=30, Q2=40, Q3=20, Q4=50\n\nWhat is the percentage increase in Salaries from Q1 to Q4?",
+    "options": [
+      "16.67%",
+      "14.28%",
+      "20.0%",
+      "15.5%"
+    ],
+    "answer": "16.67%",
+    "explanation": "Salaries in Q1 = 120, Salaries in Q4 = 140. Increase = 140 - 120 = 20. Percentage increase = (20 / 120) * 100 = 16.67%.",
+    "shortcuts": [
+      "Increase = 20. Base = 120. Growth = 20/120 = 1/6 = 16.67%"
+    ],
+    "difficulty": 2,
+    "topic": "tables",
+    "category": "di",
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS Digital",
+      "Infosys"
+    ],
+    "subtopic": "Tables",
+    "tags": [
+      "data-interpretation",
+      "tables"
+    ],
+    "companyTags": [
+      "TCS Digital",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-1",
+    "question": "In a pie chart representing energy generation in a state, Coal represents 45%, Hydro represents 25%, Solar represents 15%, Wind represents 10%, and Nuclear represents 5%. If the total energy generated is 80,000 MW, how much energy is generated from Solar and Wind combined?",
+    "options": [
+      "20,000 MW",
+      "24,000 MW",
+      "16,000 MW",
+      "12,000 MW"
+    ],
+    "answer": "20,000 MW",
+    "explanation": "Combined percentage for Solar and Wind = 15% + 10% = 25%. Total combined energy generated = 25% of 80,000 = (25 / 100) * 80,000 = 20,000 MW.",
+    "shortcuts": [
+      "25% = 1/4 of total. 80,000 / 4 = 20,000 MW"
+    ],
+    "difficulty": 2,
+    "topic": "pie-charts",
+    "category": "di",
+    "estimatedTime": 45,
+    "companyRelevance": [
+      "Capgemini",
+      "Accenture"
+    ],
+    "subtopic": "Pie Charts",
+    "tags": [
+      "data-interpretation",
+      "pie-charts"
+    ],
+    "companyTags": [
+      "Capgemini",
+      "Accenture"
+    ]
+  },
+  {
+    "id": "di-bar-1",
+    "question": "A bar graph shows sales of three car models (A, B, C) in two consecutive years:\nModel A: 2023=400, 2024=450\nModel B: 2023=300, 2024=350\nModel C: 2023=500, 2024=480\n\nWhat is the total sales growth (in units) for models A and B combined from 2023 to 2024?",
+    "options": [
+      "100 units",
+      "150 units",
+      "50 units",
+      "120 units"
+    ],
+    "answer": "100 units",
+    "explanation": "Combined sales in 2023 = 400 (A) + 300 (B) = 700 units. Combined sales in 2024 = 450 (A) + 350 (B) = 800 units. Total growth = 800 - 700 = 100 units.",
+    "shortcuts": [
+      "Model A growth = 50, Model B growth = 50. Combined growth = 50 + 50 = 100 units"
+    ],
+    "difficulty": 2,
+    "topic": "bar-graphs",
+    "category": "di",
+    "estimatedTime": 45,
+    "companyRelevance": [
+      "Infosys",
+      "Deloitte"
+    ],
+    "subtopic": "Bar Graphs",
+    "tags": [
+      "data-interpretation",
+      "bar-graphs"
+    ],
+    "companyTags": [
+      "Infosys",
+      "Deloitte"
+    ]
+  },
+  {
+    "id": "di-line-1",
+    "question": "Refer to the line graph displaying stock prices of a tech company over 4 days:\nDay 1 = $150, Day 2 = $160, Day 3 = $145, Day 4 = $155.\n\nOn which day did the stock price experience the largest percentage decline compared to the previous day?",
+    "options": [
+      "Day 2",
+      "Day 3",
+      "Day 4",
+      "Cannot be determined"
+    ],
+    "answer": "Day 3",
+    "explanation": "Calculate change for each day:\n- Day 2 vs Day 1: +10 change (increase)\n- Day 3 vs Day 2: -15 change (decline). % decline = (15 / 160) * 100 = 9.38%.\n- Day 4 vs Day 3: +10 change (increase).\nTherefore, the stock price experienced the largest decline on Day 3.",
+    "shortcuts": [
+      "Only decline happened on Day 3, so Day 3 must be the answer."
+    ],
+    "difficulty": 2,
+    "topic": "line-graphs",
+    "category": "di",
+    "estimatedTime": 30,
+    "companyRelevance": [
+      "Wipro",
+      "TCS Digital"
+    ],
+    "subtopic": "Line Graphs",
+    "tags": [
+      "data-interpretation",
+      "line-graphs"
+    ],
+    "companyTags": [
+      "Wipro",
+      "TCS Digital"
+    ]
+  },
+  {
+    "id": "di-case-1",
+    "question": "In a college class of 100 students, 60 study Java, 50 study Python, and 30 study both. How many students do not study either Java or Python?",
+    "options": [
+      "20 students",
+      "10 students",
+      "15 students",
+      "30 students"
+    ],
+    "answer": "20 students",
+    "explanation": "Using the set theory formula:\nTotal students studying either Java or Python = n(Java) + n(Python) - n(Java \u2229 Python) = 60 + 50 - 30 = 80 students.\nStudents studying neither = Total - studying either = 100 - 80 = 20 students.",
+    "shortcuts": [
+      "Java only = 30, Python only = 20, both = 30. Total = 30 + 20 + 30 = 80. Neither = 100 - 80 = 20."
+    ],
+    "difficulty": 3,
+    "topic": "caselets",
+    "category": "di",
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS Digital",
+      "Google"
+    ],
+    "subtopic": "Caselets",
+    "tags": [
+      "data-interpretation",
+      "caselets",
+      "set-theory"
+    ],
+    "companyTags": [
+      "TCS Digital",
+      "Google"
+    ]
+  },
+  {
+    "id": "di-tables-1",
+    "question": "The following table shows the sales of five branches (B1, B2, B3, B4, B5) of a publishing company during two consecutive years 2023 and 2024. Study the table and answer:\n\nWhat is the ratio of the total sales of branch B2 for both years to the total sales of branch B4 for both years?",
+    "options": [
+      "7:9",
+      "4:5",
+      "7:8",
+      "3:4"
+    ],
+    "answer": "7:8",
+    "explanation": "Total sales of B2 = 75 (2023) + 65 (2024) = 140.\nTotal sales of B4 = 85 (2023) + 75 (2024) = 160.\nRatio = 140 / 160 = 7/8.",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 90,
+    "companyRelevance": [
+      "TCS",
+      "Deloitte"
+    ],
+    "tableData": {
+      "headers": [
+        "Branch",
+        "Sales 2023 (in Thousands)",
+        "Sales 2024 (in Thousands)"
+      ],
+      "rows": [
+        [
+          "B1",
+          "80",
+          "105"
+        ],
+        [
+          "B2",
+          "75",
+          "65"
+        ],
+        [
+          "B3",
+          "95",
+          "110"
+        ],
+        [
+          "B4",
+          "85",
+          "75"
+        ],
+        [
+          "B5",
+          "75",
+          "95"
+        ]
+      ]
+    }
+  },
+  {
+    "id": "di-tables-2",
+    "question": "The number of candidates who qualified the test from zone R in the year 2010 was approximately what per - centage of the number of candidates who appeared from zone Q in the year 2008 ?",
+    "options": [
+      "152",
+      "147",
+      "142",
+      "132",
+      "137"
+    ],
+    "answer": "137",
+    "explanation": "In which year was there maximum percentage increase in export of pearls to that in the previous year? ( a) 2002 (b) 2007 ( c) 2005 (d) 2004",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-3",
+    "question": "What was the average number of candidates appeared from zone T over all the years together ?",
+    "options": [
+      "810",
+      "815",
+      "825",
+      "805",
+      "820"
+    ],
+    "answer": "805",
+    "explanation": "In how many years was the export above average for the given period? ( a) 2 (b) 4 ( c) 5 (d) 3",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-4",
+    "question": "What was the ratio of the number of candidates appeared from zone P in the year 2005 to the number of candidates qualified from zone S in the year 2007 ?",
+    "options": [
+      "4 : 7",
+      "4 : 9",
+      "9 : 4",
+      "8 : 13",
+      "None of these"
+    ],
+    "answer": "4 : 7",
+    "explanation": "In which of the following pairs of years was the average export of pearls around Rs. 9 crores? ( a) 2002 and 2003 (b) 2003 and 2004 ( c) 2004 and 2005 (d) 2005 and 2006",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-5",
+    "question": "From which zone was the total number of candidates who qualified the test, the second highest in the year ? 887 36 Tabulation 888 QUANTITATIVE APTITUDE Ex. 2. Directions (Questions 6 to 10 ): Study the following table carefully and answer the questions that follow: (Bank P.O., 2011) Semester Fees (In Rs. thousands) For Five Different Courses In 6 Different Years Years Course B.Tech M.Sc. B.Ed. M.Phil Diploma 2005 11.5 5.8 7.5 4.7 1.8 2006 14.5 6.4 11.6 5.8 3.2 2007 20.0 10.2 13.9 8.6 4.8 2008 22.2 14.6 15.8 12.7 5.6 2009 35.8 17.7 18.5 25.1 12.5 2010 50.7 20.9 22.6 18.9 14.9",
+    "options": [
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T"
+    ],
+    "answer": "T",
+    "explanation": "What was the percentage increase in export from 2006 to 2007? ( a) 216 %3 ( b) 19% (c) 20%t (d) 133 %3 Directions (Questions 6\u201310 ): Study the following pie-chart and bar diagram and answer the following questions (Bank P.O., 2011) Percentage-wise Distribution of students in 6 Different Schools. Total number of students = 6000. Number of Boys in Each School Out of 6000 Students 905",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-6",
+    "question": "What was the approximate per cent increase in the semester fees of B.Ed course in the year 2007 as compared to the previous year ?",
+    "options": [
+      "26 %",
+      "30 %",
+      "20 %",
+      "16 %",
+      "10 %"
+    ],
+    "answer": "20 %",
+    "explanation": "Let the total number of balls faces by D = 3 x and the total number of balls faced by F = 4 x. According to the question, the total number of runs made by D. = 72 3 216 100 100 xx * = The total number of runs made by F = 66 4 264 100 100 xx * = The more runs made by F as compare to D 264 216 48 100 100 100 x xx - * So, the percentage of more runs 48 48 100 200 2100 100 100 22216 100 216 9 9 100 x x x x * - * * = =",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-7",
+    "question": "What was the average semester fee charged for M.Sc. course over all the years together ?",
+    "options": [
+      "Rs. 12700",
+      "Rs. 12600",
+      "Rs. 12060",
+      "Rs. 12070",
+      "Rs. 13140"
+    ],
+    "answer": "Rs. 12600",
+    "explanation": "Total runs scored by batsman E = 28 * 55 The strike rate of E. = Total runs scored 100Total balls faced * = 28 55 100 120.31251280 * * =",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-8",
+    "question": "What was the difference between the total semester fee charged for Diploma course over the years together and the fee charged for B.Tech Course in the year 2009 ?",
+    "options": [
+      "Rs. 8500",
+      "Rs. 8000",
+      "Rs. 6500",
+      "Rs. 7000",
+      "None of these"
+    ],
+    "answer": "Rs. 7000",
+    "explanation": "Let the total number of runs scored by a batsman = x Since given that strike rate, according to the question,",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-9",
+    "question": "The semester fee charged for M.Phil course in the year 2008 was approximately what percentage of the semester fee charged for M.Sc course in the year 2009 ?",
+    "options": [
+      "67",
+      "84",
+      "80",
+      "76",
+      "72"
+    ],
+    "answer": "72",
+    "explanation": "Batsman B faced equal number of balls in first 10 matches he played in the tournament and last 10 matches he played in the tournament. If his strike rate in first 10 matches and last 10 matches of the tournament are 120 and 158 respectively, what is the total number of balls faced by him in the tournament? [RBI Gr. \u2018B\u2019 (Phase \u2013 I) Exam, 2015] ( a) 1150 (b) 1400 (c) 1200 (d) 1446.42 (e) 1500TABULATION 901",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-10",
+    "question": "What was the total semester fee charged for all the courses together in the year 2006 ? Ex. 3. Directions (Questions 11 to 15 ): Study the following table carefully and answer the questions given below: Number (N) of Candidates (In lakhs) Appearing For An Entrance Examination From Six Different States And The Percentage (P) of Candidates Clearing the Same Over the Years (Bank P.O., 2010) STATE \u2192 A B C D E F YEAR \u2193 N P N P N P N P N P N P 2004 1.23 42 1.04 51 1.11 32 1.32 24 1.23 36 1.33 31 2005 1.05 43 1.12 62 1.07 47 1.15 49 1.18 55 1.24 24 2006 2.04 38 1.48 32 1.08 28 1.96 35 1.42 49 1.58 26 2007 1.98 41 2.07 43 1.19 30 1.88 46 1.36 47 1.79 29 2008 1.66 53 1.81 50 1.56 42 1.83 60 1.73 57 1.86 34 2009 1.57 39 1.73 36 1.64 52 2.01 56 1.69 55 1.95 37",
+    "options": [
+      "Rs. 42500",
+      "Rs. 41500",
+      "Rs. 41600",
+      "Rs. 42200",
+      "none of these"
+    ],
+    "answer": "Rs. 41500",
+    "explanation": "The number of matches played by batsman C The total runs scored Total runs made by C Average runs scored The total runs scored = Strike rate * total ball faced 100 = 114 400 456100 * = So, the number of matches played by batsman C = 456 1238 =",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-11",
+    "question": "What is the ratio of the total number of candidates clearing the entrance examination from State B in the year 2004 to that of those clearing the entrance examination from State C in the same year ?",
+    "options": [
+      "221 : 148",
+      "218 : 143",
+      "148 : 221",
+      "143 : 218",
+      "None of these"
+    ],
+    "answer": "221 : 148",
+    "explanation": "Total import of all countries together in 2002 = Rs. 385 crore Now, in 2002 total export of all companies together = 90 + 100 + 65 + 25 + 110 + 120 = 510 crore Total profit in 2002 = 510 \u2013 385 = 125 crore",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-12",
+    "question": "In which year did the highest number of candidates clear the entrance exam from State D ?",
+    "options": [
+      "2008",
+      "2006",
+      "2009",
+      "2007",
+      "None of these"
+    ],
+    "answer": "2009",
+    "explanation": "Import of company S in the year 1998 = 45 2 1 * = Rs. 90 crore Import of company U in the year 1998 = 24 * 1 4 Rs. 6 crore Total import of company U and S together in 1998 = Rs. (90 + 6) = Rs. 96 crore",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-13",
+    "question": "What is the number of candidates not clearing the entrance exam from State A in the year 2007 ?",
+    "options": [
+      "186820",
+      "11682",
+      "1868200",
+      "116820",
+      "None of these"
+    ],
+    "answer": "116820",
+    "explanation": "Total export of country Q in 2001 = Rs. 50 crore. Total export of country T in 2000 = Rs. 55 crore Total export = 50 + 55 = Rs. 105 crore904 QUANTITATIVE APTITUDE Now, total export of country P in 2003 = 105 120 100 * = Rs. 126 crore Total import of country P in 2003 = Rs. 92 crore Profit = 126 \u2013 92 = Rs. 34 crore",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-14",
+    "question": "What is the total number of candidates clearing the entrance examination from States E and F together in the year 2006 ?",
+    "options": [
+      "16160",
+      "110660",
+      "11066",
+      "1106600",
+      "None of theseTABULATION 889"
+    ],
+    "answer": "110660",
+    "explanation": "Total export of country T = 60 + 50 + 55 + 110 + 110 = 376 Average export of Country T = 375 5 = Rs. 75 crore Total export of country R = 50 + 55 + 70 + 90 + 65 = 330 Average export of Country R = 330 5 = Rs. 66 crore Required% 75 66 9 150 7100 100 % 13 %66 11 1166 - * = * = =",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-15",
+    "question": "What is the average number of candidates appearing for the entrance exam from State D in the years 2007, 2008 and 2009 together ? Ex. 4. Directions (Questions 16 to 20 ): Study the following table carefully and answer the questions that follow: (Bank P.O., 2010) Number of Candidates (in lakhs) Appearing In an Entrance Examination From Six Different Cities City A B C D E F Number of candidates 1.25 3.14 1.08 2.27 1.85 2.73 Ratio of Candidates Passing And Failing Within the City City Ratio of Passing and Failing A 7 : 3 B 5 : 3 C 4 : 5 D 1 : 3 E 3 : 2 F 7 : 5",
+    "options": [
+      "21907 3",
+      "118666 3",
+      "11866 3",
+      "2190666 3",
+      "None of these"
+    ],
+    "answer": "2190666 3",
+    "explanation": "Total export of all countries together in 1999 = 40 + 25 + 55 + 60 + 50 + 40 = Rs. 270 crore Total export of all countries together in 2001 = 45 + 50 + 90 + 15 + 100 + 75 = Rs. 375 crore Required % increase = 375 270 105 350100 100 % 38.88% 38.89%11 9270 - * = * = = \u2248",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-16",
+    "question": "What is the ratio of the number of candidates failing the exam from City D to that of those failing the exam from City A ?",
+    "options": [
+      "289 : 42",
+      "42 : 289",
+      "227 : 50",
+      "50 : 227",
+      "None of these"
+    ],
+    "answer": "227 : 50",
+    "explanation": "Total number of pages printed by printer B on Wednesday and Thursday = 141 + 223 = 364 Total number of pages printed by printer C on Monday and Friday = 211 + 257 = 468 Required Ratio = 364 : 468 = 7 : 9",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-17",
+    "question": "The number of candidates appearing for the exam from City C is what per cent of the number of candidates appearing for the exam from City B ? (rounded off to nearest integer)",
+    "options": [
+      "27 %",
+      "34 %",
+      "42 %",
+      "21 %",
+      "38 %"
+    ],
+    "answer": "34 %",
+    "explanation": "Total number of pages printed by printer C and D together on Tuesday = 164 + 189 = 353 Total number of pages printed by printer A and E together on Thursday = 89 + 113 = 202 Required difference = 353 \u2013 202 = 151",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-18",
+    "question": "The number of candidates passing the examination from City F is what per cent of the total number of can - didates appearing from all the cities together ? (rounded off to two digits after the decimal)",
+    "options": [
+      "12.93%",
+      "14.46%",
+      "10.84%",
+      "11.37%",
+      "None of these"
+    ],
+    "answer": "12.93%",
+    "explanation": "Number of pages printed by printer A on Wednesday = 115 Number of pages printed by printer D on Friday = 160 Required percent = 115 100160 * = 575 7 7188 =",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-19",
+    "question": "Which city has the highest number of students failing the entrance exam ?",
+    "options": [
+      "F",
+      "C",
+      "B",
+      "D",
+      "None of these"
+    ],
+    "answer": "D",
+    "explanation": "Total number of pages printed by printer B on Monday, Tuesday and Friday = 147 + 189 + 93 = 429 Required average = 429 1433 =",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-20",
+    "question": "What is the number of candidates passing the exam from City E ? Ex. 5. Directions (Questions 21 to 25 ): Study the table given below and answer the questions that follow: (Bank P.O., 2009) Total Number of Employees in Different Departments of an Organization and Percentage of Females and Males Department Total No. of Employees Percentage of Females Percentage of Males IT 840 45 55 Accounts 220 35 65 Production 900 23 77 HR 360 65 35 Marketing 450 44 56 Customer service 540 40 60",
+    "options": [
+      "13000",
+      "1110000",
+      "113000",
+      "11000",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "Number of pages printed by Printer E on Monday = 184 Number of pages printed by printer C on Thursday = 120 Required percent = 184 \u2013 120 100120 * = 6400 160 1 53 %120 3 2==",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-tables-21",
+    "question": "What is the respective ratio of the number of females in Production department to the number of females in the Marketing department ?",
+    "options": [
+      "22 : 23",
+      "35 : 33",
+      "23 : 22",
+      "33 : 35",
+      "None of these"
+    ],
+    "answer": "23 : 22",
+    "explanation": "Difference between numbers of books published by pub - lishing house M and P. 78 28200 3120010 12 * - * = 19740 \u2013 19200 = 540",
+    "topic": "tables",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-1",
+    "question": "The bar graph shows the production of fertilizers (in lakh tonnes) by a company over six years (2018-2023). Study the graph and answer:\n\nIn how many of the given years was the production of fertilizers more than the average production of the given years?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": "3",
+    "explanation": "Average production = (25 + 40 + 60 + 45 + 65 + 50) / 6 = 285 / 6 = 47.5 lakh tonnes.\nYears with production > 47.5 are 2020 (60), 2022 (65), and 2023 (50). Total = 3 years.",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 90,
+    "companyRelevance": [
+      "Capgemini",
+      "Accenture"
+    ],
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2018",
+        "value": 25
+      },
+      {
+        "name": "2019",
+        "value": 40
+      },
+      {
+        "name": "2020",
+        "value": 60
+      },
+      {
+        "name": "2021",
+        "value": 45
+      },
+      {
+        "name": "2022",
+        "value": 65
+      },
+      {
+        "name": "2023",
+        "value": 50
+      }
+    ]
+  },
+  {
+    "id": "di-bar-graphs-2",
+    "question": "In which year was there maximum percentage increase in export of pearls to that in the previous year?",
+    "options": [
+      "2002",
+      "2007",
+      "2005",
+      "2004"
+    ],
+    "answer": "2004",
+    "explanation": "Other than getting the discount of 12 % on the estimated cost of furniture and the actual miscellaneous expenditure being Total Estimated Cost = Rs. 12 0000 923 38 Pie Chart Rs. 10200 instead of the estimated one, the family's estimated cost is correct. What is the total amount spent by the family in renovating its house? ( a) Rs. 116728 ( b) Rs. 115926 ( c) Rs. 119500 ( d) Rs. 116500 ( e) None of these",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-3",
+    "question": "In how many years was the export above average for the given period?",
+    "options": [
+      "2",
+      "4",
+      "5",
+      "3"
+    ],
+    "answer": "4",
+    "explanation": "What is the cost estimated by the family on painting and flooring together ? ( a) Rs. 36500 ( b) Rs. 34800 ( c) Rs. 36000 ( d) Rs. 34500 ( e) None of these",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-4",
+    "question": "In which of the following pairs of years was the average export of pearls around Rs. 9 crores?",
+    "options": [
+      "2002 and 2003",
+      "2003 and 2004",
+      "2004 and 2005",
+      "2005 and 2006"
+    ],
+    "answer": "2003 and 2004",
+    "explanation": "The family gets a discount on furniture and pays 12% less than the estimated cost on furniture. What is the amount spent on furniture ? ( a) Rs. 13200 ( b) Rs. 14526 ( c) Rs. 13526 ( d) Rs. 13728 ( e) None of these Ex. ( Questions 5\u20139 ): Study the following pie-chart and table carefully and answer the questions given below: (Bank P.O., 2012) Percentagewise Distribution of the Number of Mobile Phones Sold by a Shopkeeper During Six Months Ratio of mobile phones sold of company A & company B Total number of mobile phones sold = 45000 Month Ratio (A : B) July 8 : 7 August 4 : 5 September 3 : 2 October 7 : 5 November 7 : 8 December 7 : 9",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-5",
+    "question": "What was the percentage increase in export from 2006 to 2007? Directions (Questions 6\u201310 ): Study the following pie-chart and bar diagram and answer the following questions (Bank P.O., 2011) Percentage-wise Distribution of students in 6 Different Schools. Total number of students = 6000. Number of Boys in Each School Out of 6000 Students 905906 QUANTITATIVE APTITUDE",
+    "options": [
+      "216 %3",
+      "19%",
+      "20%t",
+      "133 %3"
+    ],
+    "answer": "20%t",
+    "explanation": "What is the ratio of the number of mobile phones sold of Company B during July to those sold during December of the same company? ( a) 119 : 145 (b) 116 : 135 ( c) 119 : 135 (d) 119 : 130 ( e) None of these",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-6",
+    "question": "What is the sum of the number of girls in School C, the number of girls in School E and the number of boys in School D together ?",
+    "options": [
+      "1700",
+      "1900",
+      "1600",
+      "1800",
+      "None of these"
+    ],
+    "answer": "1800",
+    "explanation": "If 35 % of the mobile phones sold by Company A during November were sold at a discount, how many mobile phones of Company A were sold without a discount, during that month? ( a) 882 (b) 1635 ( c) 1638 (d) 885 ( e) None of these EXERCISE \u2013 I",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-7",
+    "question": "What is the ratio of the number of boys in School C, the number of girls in School B and the total number of students in School E?",
+    "options": [
+      "45 : 7 : 97",
+      "43 : 9 : 97",
+      "45 : 7 : 87",
+      "43 : 9 : 87",
+      "None of these"
+    ],
+    "answer": "45 : 7 : 87",
+    "explanation": "Total sales of branch B6 for both years = 70 + 80 = 150 Total sales of branch B3 for both years = 95 + 110 = 205 Required percentage 150 100 73.7%205 * =",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-8",
+    "question": "What is the difference between the total number of students in School F and the number of boys in School E ?",
+    "options": [
+      "820",
+      "860",
+      "880",
+      "900",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "Total sales (in thousands numbers) of branches B1, B3 and B6 in 200 = 80 + 95 + 70 = 245 Average sales (in thousands number) of branches B1, B3 and B6 in 2000 = 245 3 Total sales (in thousands number) of branches B1, B2 and B3 in 2001 = 105 + 65 + 110 = 280 Average sales (in thousands number) of branches B1, B2 and B3 in 2001 = 280 3 So, required percentage = 245 3 100%280 3 * = 245 100 87.5%280 * =",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-9",
+    "question": "In which of the following schools is the total number of students equal to the number of girls in School E ?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F"
+    ],
+    "answer": "B",
+    "explanation": "Total sales of all the six branches (in thousand numbers) for the year 2000 = 80 + 75 + 95 + 85 + 75 + 70 = 480922 QUANTITATIVE APTITUDE Average sales of all the six branches (in thousand numbers) for the year 2000 = 480 808 =",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-10",
+    "question": "The number of girls in School A is approximately what percentage of the total number of students in School B ? Directions (Questions 11\u201315): Study the following bar graph and the table carefully and answer the questions given below: (Bank P.O., 2012) Time Taken (in Hours) by 6 Vehicles on Two Different Days Distance Covered (in km) by 6 Vehicles on Each day Vehicle Day 1 Day 2 A 832 864 B 516 774 C 693 810 D 552 765 E 935 546 F 703 636",
+    "options": [
+      "55",
+      "50",
+      "35",
+      "45",
+      "40"
+    ],
+    "answer": "40",
+    "explanation": "Total safes of branches B1, B3 and B5 for both the years (in thousands numbers) = (80 + 105) + (95 + 110) + (75 + 95) = 560",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-11",
+    "question": "Which of the following vehicles travelled at the same speed on both the days?",
+    "options": [
+      "A",
+      "C",
+      "F",
+      "B",
+      "None of these"
+    ],
+    "answer": "B",
+    "explanation": "Total monthly salary of Arun in all the years = 14000 + 18000 + 23000 + 21000 + 27000 + 25000 = Rs. 1,28,000 Monthly salary of Suman in the year 2007 = Rs 15000 Difference between their Salary = 128000 \u2013 15000 = Rs 1.13 Lakh",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-12",
+    "question": "What was the difference between the speed of vehicle A on Day 1 and the speed of vehicle C on the same day?",
+    "options": [
+      "7 km/hr",
+      "12 km/hr",
+      "11 km/hr",
+      "8 km/hr",
+      "None of these"
+    ],
+    "answer": "11 km/hr",
+    "explanation": "In year 2006 In year 2007 In year 2005 Arun\u2019s salary Suman\u2019s salary Jyoti\u2019s salary 18000 15000 9000 18 15 9 6 5 3",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-13",
+    "question": "What was the speed of vehicle C on Day 2 in terms of metres per second?",
+    "options": [
+      "15.3",
+      "12.8",
+      "11.5",
+      "13.8",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "Year Arun\u2019s Income Jyoti\u2019s Income Difference 2005 14000 9000 5000 2006 18000 11000 7000 2007 23000 18000 5000 2008 21000 27000 6000 2009 27000 26000 1000 2010 25000 35000 10,000 In 2006 difference between Jyoti\u2019s monthly income and Arun\u2019s monthly income second highest.",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-14",
+    "question": "The distance travelled by vehicle F on Day 2 was approximately what per cent of the distance travelled by it on Day 1?",
+    "options": [
+      "80%",
+      "65%",
+      "85%",
+      "95%",
+      "90%"
+    ],
+    "answer": "90%",
+    "explanation": "Monthly income of Suman in year 2009 = Rs 29000 Monthly income of Jyoti in year 2010 = Rs 35000 = 29000 100 82.85 83%3500 * = \u2248",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-15",
+    "question": "What is the ratio of the speeds of vehicle D and vehicle E on Day 2? Directions (Questions 16\u201320 ): Study the following graph carefully and answer the questions given below: (Bank P.O., 2011) Total Number of Students Appeared and Qualified from Various Schools at a Scholarship Exam BAR GRAPH 907 AB C DE SCHOOLS 500 1000 1500 2000 2500 3000 3500 Appeared Qualified 0 NUMBER OF STUDENTS",
+    "options": [
+      "15 : 13",
+      "17 : 13",
+      "13 : 11",
+      "17 : 14",
+      "None o f these"
+    ],
+    "answer": "17 : 13",
+    "explanation": "Joyti\u2019s income in 2008 = Rs 27000 Joyti\u2019s income in 2007 = Rs 18000 Increase percentage = 2700 1800 10018000 - * = 9000 100 50%18000 * =",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-16",
+    "question": "The average number of students qualified in the examination from Schools C and D is what percent of the average number of students appeared for the examination from the same schools? (rounded off to 2 digits after decimal)",
+    "options": [
+      "58.62",
+      "73.91",
+      "62.58",
+      "58.96",
+      "None of these"
+    ],
+    "answer": "73.91",
+    "explanation": "Total marks obtain by C = 75 + 60 + 55 = 190 Total marks obtain by B = 65 + 50 +70 = 185 Difference = 190 \u2013 185 = 5 marks",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-17",
+    "question": "What is the ratio of the number of students appeared to the number of students qualified at the scholarship exam from School C ?",
+    "options": [
+      "7 : 12",
+      "6 : 5",
+      "9 : 13",
+      "9 : 10",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "Total marks of C = 190 Maximum marks = 300 Percentage = 190 100 63.3 63%300 * = \u2248",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-18",
+    "question": "What is the ratio of the number of students qualified in the scholarship examination from School A and the number of students qualified in the examination from School B?",
+    "options": [
+      "8 : 3",
+      "5 : 7",
+      "7 : 3",
+      "7 : 5",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "By observation and solving method A\u2019s overall percentage is 50",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-19",
+    "question": "The number of students appeared for the scholar - ship exam from School D is approximately what percent of the total number of students appeared for the exam from all the schools together ?",
+    "options": [
+      "12",
+      "24",
+      "29",
+      "18",
+      "8"
+    ],
+    "answer": "18",
+    "explanation": "D\u2019s marks: B\u2019s marks 40 : 65 8 : 13",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-20",
+    "question": "What is the difference between the average number of students appeared in the scholarship exam from all the given schools and the average number of students qualified from all the schools together? Directions (Questions 21\u201326): The bar graph given below gives the data of the production of paper (in lakh tonnes) by three different companies X, Y and Z over last 5 years. Study the graph carefully and answer the questions that follow. Production of Paper (in lakh tons) By Companies X, Y and Z over the Years",
+    "options": [
+      "950",
+      "1100",
+      "990",
+      "1020",
+      "None of these"
+    ],
+    "answer": "950",
+    "explanation": "Total marks of D in three subjects = 140 Number of subjects = 3 Average = 140 46.6 473 =\u2248",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-21",
+    "question": "What is the difference between the production of Company Z in 2008 and Company Y in 2006?",
+    "options": [
+      "2 lakh tons",
+      "20 lakh tons",
+      "20 thousand tons",
+      "200 lakh tons",
+      "None of these"
+    ],
+    "answer": "20 lakh tons",
+    "explanation": "Total income of all the five companies = Rs. (35 + 50 + 40 + 40 + 50) crores = Rs. 215 crores Total expenditure of all the five companies = Rs. (45 + 40 + 45 + 30 + 45) crores = Rs. 205 crores \\ Profit percent = Income Expenditure 100Expenditure - * \uf8eb\uf8f6 \uf8ec\uf8f7\uf8ed\uf8f8 = 215 205 100205 - * = 1000 4.88%205 =",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-22",
+    "question": "What is the ratio of the average production of Com - pany X during the period 2008-2010 to the average production of Company Y during the same period?",
+    "options": [
+      "1 : 1",
+      "15 : 17",
+      "23 : 25",
+      "27 : 29",
+      "None of these"
+    ],
+    "answer": "23 : 25",
+    "explanation": "Income of company Q in 2000 = 100 400140110 11 * = Rs. crores If expenditure in 2000 be Rs. x crores. Profit % = 100Income Expenditure Expenditure * - \uf8eb\uf8f6 \uf8ec\uf8f7\uf8ed\uf8f8 = 400 11 x x - => 20 1 400 11 100 5 11 x x - == => 5 * 400 \u2013 55 x = 11 x => 66x = 2000 => x = 2000 66 = Rs. 30.30 crores",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-23",
+    "question": "What is the percentage increase in the production of Company Y from 2006 to 2009?",
+    "options": [
+      "30%",
+      "45%",
+      "50%",
+      "60%",
+      "75%"
+    ],
+    "answer": "60%",
+    "explanation": "From bar diagram Profit percent of company Q. = 40 30 10030 - * = 100 1 33 %33 =",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-24",
+    "question": "The average production for 5 years was maximum for which company?",
+    "options": [
+      "X",
+      "Y",
+      "Z",
+      "X and Y both",
+      "X and Z both"
+    ],
+    "answer": "X and Z both",
+    "explanation": "Total income of companies M and N = Rs. (35 + 50) crores = Rs. 85 crores Total expenditure = Rs. (45 + 40) crores = Rs. 85 crores Hence, the companies M and N had no loss and no profit",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-25",
+    "question": "For which of the following years, the percentage rise or fall in production from the previous year is the maximum for Company Y ?",
+    "options": [
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+      "2007 and 2010908 QUANTITATIVE APTITUDE"
+    ],
+    "answer": "2007",
+    "explanation": "Expenditure of company R in 2000 = 45 100 120 * = Rs. 37.5 crore Let the income of company in 2000 be Rs. x crores \\ 10 = 37.5 10037.5 x - * => x = 37.5 = 37. 10 100 * => x = 37.5 = 3.75 => x \u2013 37.5 = 3.75 => Rs. 41.25 crores Ex 1. (Questions 1 to 4 ): Study the following pie-chart carefully and answer the questions given below: (Bank P.O., 2011) Cost Estimated by a Family in Renovation of their House",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-28",
+    "question": "In which year, the percentage change (compared to previous year) in the investment on raw materials is the same as that in the value of sales of finished goods?",
+    "options": [
+      "2006",
+      "2007",
+      "2008",
+      "2009",
+      "2010"
+    ],
+    "answer": "2007",
+    "explanation": "The percentage change in the amount invested in raw- materials and in the value of sales of finished goods for different years are: Year Percentage change in Amount invested in raw-material Percentage change in value of sales of finished goods 2006 (225 \u2013 120) 100 % 87.5%120 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb (300 \u2013 200) 100 % 50%200 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb 2007 (375 \u2013 225) 100 % 66.67%225 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb (500 \u2013 300) 100 % 66.67%300 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb 2008 (330 \u2013 375) 100 % \u2013 12%375 \uf8ee\uf8f9 * \uf8ef\uf8fa\uf8f0\uf8fb (400 \u2013 500) 100 % \u2013 20%500 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb 2009 (525 \u2013 330) 100 % 59.09%330 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb (600 \u2013 400) 100 % 50%400 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb 2010 (420 \u2013 525) 100 % \u2013 20%525 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb (460 \u2013 600) 100 % \u2013 23.33%.600 \uf8ee\uf8f9 * =\uf8ef\uf8fa\uf8f0\uf8fb Thus, the percentage difference is same during the year 2007.",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-29",
+    "question": "What was the difference between the average amount invested in raw materials during the given period and the average value of sales of finished goods during this period?",
+    "options": [
+      "Rs. 62.5 lakhs",
+      "Rs. 68.5 lakhs",
+      "Rs. 71.5 lakhs",
+      "Rs. 77.5 lakhs",
+      "Rs. 83.5 lakhs"
+    ],
+    "answer": "Rs. 77.5 lakhs",
+    "explanation": "Required difference = \uf8ee\uf8f9 \uf8eb\uf8f6\uf8ec\uf8f7\uf8ef\uf8fa \uf8ed\uf8f8\uf8ef\uf8fa \uf8ef\uf8fa \uf8eb\uf8f6\uf8ec\uf8f7\uf8ef\uf8fa \uf8ed\uf8f8\uf8f0\uf8fb 200+300+500+400+600+460 6 120+225+375+330+525+420\u2013 6 Rs. Rs. lakh = \uf8f1\uf8fc \uf8eb \uf8f6\uf8eb \uf8f6\uf8f2\uf8fd \uf8ec \uf8f7\uf8ec \uf8f7\uf8ed \uf8f8\uf8ed \uf8f8\uf8f3\uf8fe 2460 1995\u2013 lakh66Rs. Rs. = (410 \u2013 332.5) lakh = 77.5 lakh.Rs. Rs.",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-30",
+    "question": "The value of sales of finished goods in 2009 was approximately what percent of the average amount invested in raw materials in the years 2007, 2008 and 2009?",
+    "options": [
+      "33%",
+      "37%",
+      "45%",
+      "49%",
+      "53%"
+    ],
+    "answer": "49%",
+    "explanation": "Required percentage = 600 600100 % 100 %(375 330 525) 1230 \uf8f1 \uf8fc\uf8eb \uf8f6 * = * \uf8ec\uf8f7\uf8f2\uf8fd ++ \uf8ed\uf8f8\uf8f3\uf8fe = 2000 % 48.78% 49%.41 \uf8eb\uf8f6 =\uf8ec\uf8f7\uf8ed\uf8f8 \uf03b \uf8eb\uf8f6= * = =\uf8ec\uf8f7\uf8ed\uf8f8 150 200100 % % 66.67%;225 3 In 2008, there is a decrease. 2009 \u2192 { } * (525 \u2013 330) 100 %330 \uf8eb\uf8f6= * = =\uf8ec\uf8f7 \uf8ed\uf8f8 195 650100 % % 59.09%.330 11 In 2010, there is a decrease. So, the maximum percentage increase in investment is in the year 2006.",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-bar-graphs-31",
+    "question": "The maximum difference between the amount in - vested in raw materials and the value of sales of finished goods was during the year",
+    "options": [
+      "2005",
+      "2006",
+      "2007",
+      "2008",
+      "2009"
+    ],
+    "answer": "2007",
+    "explanation": "(Amount spent on Raw Material) \u2013 (Value of sales of finished goods) for various years are : 2005 \u2192 Rs. (200 \u2013 120) lakh = Rs. 80 lakh. 2006 \u2192 Rs. (300 \u2013 225) lakh = Rs. 75 lakh. 2007 \u2192 Rs. (500 \u2013 375) lakh = Rs. 125 lakh. 2008 \u2192 Rs. (400 \u2013 330) lakh = Rs. 70 lakh. 2009 \u2192 Rs. (600 \u2013 525) lakh = Rs. 75 lakh. 2010 \u2192 Rs. (460 \u2013 420) lakh = Rs. 40 lakh. Clearly, the maximum difference was during the year",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-7",
+    "question": "If the shopkeeper earned a profit of Rs. 433 on each mobile phone sold of Company B during October, what was his total profit earned on the mobile phones of that company during the same month ?",
+    "options": [
+      "Rs. 649900",
+      "Rs. 645900",
+      "Rs. 649400",
+      "Rs. 649500",
+      "None of these"
+    ],
+    "answer": "Rs. 649500",
+    "explanation": "Corresponding angle for expenditure on electricity = 72\u00ba \uf08c 360\u00ba \u2261 100% \\ Total expenditure on electricity = 72 360 * 100 = 20%",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-14",
+    "question": "What is the ratio of the number of female lecturers in Physics to the number of male lecturers in Mathematics ? Ex 4. (Questions 15\u201319 ): The pie-chart shown below gives the distribution of land in a village under various food crops. Study the pie-chart carefully and answer the questions that follow: Distribution of areas (in acres) under various food crops",
+    "options": [
+      "5 : 9",
+      "2 : 9",
+      "3 : 7",
+      "5 : 3",
+      "None of these"
+    ],
+    "answer": "5 : 9",
+    "explanation": "Number of male and female members in Health club E = 6300 * 12 100 = 756 Number of male members in health club E = 2600 8 100 * 288 Number of female members in health club E = 756 \u2013 288 = 468 The number of male members in health club B = 3600 30 100 * = 1080 Required less percentage = 1080 468 1001080 - * = 612 2100 561080 3 * = Solution (15 to 23) Store Nokia cellular Phones Samsung Cellular Phones Total number of cellular phone P 896 672 1568 Q 840 280 1120 R 1120 896 2016 S 1568 1344 2912 T 448 1792 2240 U 704 640 1344",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-15",
+    "question": "Which combination of three crops contribute to 50% of the total area under the food crops?",
+    "options": [
+      "Wheat, Barley and Jowar",
+      "Rice, Wheat and Jowar",
+      "110",
+      "140",
+      "150",
+      "105",
+      "130"
+    ],
+    "answer": "110",
+    "explanation": "Total Nokia Phone sold by stores P, R, S and T = 896 + 1120 + 1568 = 448 = 4032 \uf08c Required average = 4032 4 = 1008",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-9",
+    "question": "What is the total number of mobile phones sold of Company B during August and September together? Ex 3. (Questions 10\u201314) : Study the following pie-chart and the table given below it carefully to answer the questions given below : (Bank P.O., 2010) Percentage-wise distribution of lecturers in 6 different subjects in a university total number of lecturers : 1600 Ratio of male to female lectures Lecturers Males : Females Mathematics 3 : 4 Education 5 : 3 Hindi 1 : 3 Chemistry 1 : 7 Physics 9 : 5 Zoology 7 : 9",
+    "options": [
+      "10000",
+      "15000",
+      "10500",
+      "9500",
+      "None of these"
+    ],
+    "answer": "10000",
+    "explanation": "Corresponding angle for raw materials = 90\u00ba \uf08c 360\u00ba \u2261 100% Percentage of raw material = 90 360 * 100 = 25%",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-10",
+    "question": "Total number of lecturers (both male and female) in Hindi is approximately what per cent of the total number of female lectures in Mathematics and Chemistry together?",
+    "options": [
+      "58",
+      "43",
+      "47",
+      "51",
+      "50"
+    ],
+    "answer": "51",
+    "explanation": "Percentage of male and female members in health club D and E = 20% + 12% = 32% The central angles corresponding to number of male and female in health club D and E. = 360 * 32% = 260 32 100 * = 115.2\u00b0",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-11",
+    "question": "What is the difference between the total number of lecturers (both male and female) is Zoology and the total number of male lecturers in Chemistry and Education together?",
+    "options": [
+      "192",
+      "182",
+      "146",
+      "136",
+      "None of these"
+    ],
+    "answer": "146",
+    "explanation": "The number of female members in health clubs A, B and C 6300 68 3600 72 100 100 * * - = 4284 \u2013 2592 = 1692 Average number of female number in health cube A, B and C = 1692 3 = 564",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-12",
+    "question": "What is the difference between the number of female lecturers in Zoology and the number of male lecturers in Hindi?",
+    "options": [
+      "156",
+      "160",
+      "150",
+      "153",
+      "None of these"
+    ],
+    "answer": "150",
+    "explanation": "Number of male members in health clubs A and C = 3600 40 100 * = 1440 936 QUANTITATIVE APTITUDE Number of male and female members in health clubs B and C = 6300 * 47% = 2961 Number of male members in health club A and C percent less than the number of both male and female members of health club B and C = 2961 1440 2961 - * 100 = 51.36%",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-13",
+    "question": "What is the total number of male lecturers in the university?",
+    "options": [
+      "696",
+      "702",
+      "712",
+      "668",
+      "None of thesePIE CHART 925",
+      "Rice, Wheat and Barley",
+      "Bajra, Maize and Rice"
+    ],
+    "answer": "696",
+    "explanation": "Percentage of both male and female members in health club B = 33% The central angles corresponding to number of male and female in health club B = 360 100 * 33 = 118.8\u00b0",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-16",
+    "question": "If the total area under jowar was 1.5 million acres, then what was the area (in million acres) under rice ?",
+    "options": [
+      "6",
+      "7.5",
+      "9",
+      "4.5"
+    ],
+    "answer": "6",
+    "explanation": "Number of Nokia phones sold by Store R = 1120 Number of Samsung phones sold by store P and Q together = 672 + 280 = 952 \uf08c Required percentage = 1120 952 100952 - * = 16800 300 11% % 17 %952 17 17== more",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-17",
+    "question": "If the production of wheat is 6 times that of barley, then what is the ratio between the yield per acre of wheat and barley?",
+    "options": [
+      "3 : 2",
+      "3 : 1",
+      "12 : 1",
+      "2 : 3"
+    ],
+    "answer": "3 : 1",
+    "explanation": "Percentage of caller phones (both Nokia and Samsung) sold by Store S = 26% Required central angle = 26 360 93.6100 * = \u00b0",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-18",
+    "question": "If the yield per acre of rice was 50% more than that of barley, then the production of barley is what percent of that of rice?",
+    "options": [
+      "30%",
+      "33 1 %3",
+      "35%",
+      "36%"
+    ],
+    "answer": "33 1 %3",
+    "explanation": "Number of Nokia phones sold by Store S = 1568 Number of Samsung phones sold by Store T and U together = 1792 + 640 = 2432 \uf08c Required Ratio = 1568 49 49 : 762432 76==",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-19",
+    "question": "If the total area goes up by 5%, and the area under wheat production goes up by 12%, then what will be the angle for wheat in the new pie-chart? Ex 5. (Questions 20\u201324): The following pie-charts show the distribution of students of graduate and post-graduate levels in 7 different Institutes : M, N, P, Q, R, S and T in a town. Study the pie-charts carefully and answer the questions given below: Distribution of students at graduate and post-graduate levels in seven institutes \u2014 m, n, p, q, r, s and t Total Number of Students of Total Number of Students of Graduate Level = 27300 Post-Graduate Level = 24700",
+    "options": [
+      "62.4\u00b0",
+      "76.8\u00b0",
+      "80.6\u00b0",
+      "84.2\u00b0"
+    ],
+    "answer": "76.8\u00b0",
+    "explanation": "Number of cellular phones (both Nokia and Samsung) sold by store Q in October = 11200 * 10 100 = 1120 \uf08c Number of cellular phones (both Nokia and Samsung) sold by store Q in November = 1120 * 115 100 = 1288 Number of cellular phones (both Nokia and Samsung) sold by Store T in October = 11200 * 20 100 = 2240 \uf08c Number of cellular phones (both Nokia and Samsung) sold by Store T in Number = 2240 * 105 100 = 2352 \uf08c Total number of cellular phones (both Nokia and Sam - sung) sold by Q and T Together in November = 1288 + 2352 = 3640",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-20",
+    "question": "How many students of institutes M and S are studying at graduate level?",
+    "options": [
+      "7516",
+      "8463",
+      "9127",
+      "9404"
+    ],
+    "answer": "8463",
+    "explanation": "Percentage of students who are members of any club = 75 + 15 + 5 = 95% Percentage of students who are not members of any club = 100 \u2013 95% = 5%",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-21",
+    "question": "Total number of students studying at post-graduate level from institutes N and P is",
+    "options": [
+      "5601",
+      "5944",
+      "6669",
+      "7004"
+    ],
+    "answer": "6669",
+    "explanation": "Number of students who are not members of any club = 40 = 5% Percentage of members of cricket club only = 5% Number of members of cricket club only = 40",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-22",
+    "question": "What is the total number of graduate and post- graduate level students in institute R?",
+    "options": [
+      "8320",
+      "7916",
+      "9116",
+      "8372"
+    ],
+    "answer": "8372",
+    "explanation": "Percentage of member of cricket club only = 5% Percentage of member of football club only = 15% Required ratio = 5 : 15 = 1 : 3",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-24",
+    "question": "What is the ratio between the number of students studying at post-graduate level from institute S and the number of students studying at graduate level from institute Q? Ex 6. (Questions 25\u201329 ): Study the following pie-dia - grams carefully and answer the questions given below: Percentage Composition of Human Body",
+    "options": [
+      "13 : 19",
+      "21 : 13",
+      "13 : 8",
+      "19 : 13"
+    ],
+    "answer": "19 : 13",
+    "explanation": "Amount spent on Groceries, Entertainment and Investments = { } (23 10 15) 4845800 45800100 100 ++ \uf8eb\uf8f6 * = * \uf8ec\uf8f7 \uf8ed\uf8f8 Rs. Rs. Amount spent on Commuting = Rs. 2245800 . 100 \uf8eb\uf8f6 * \uf8ec\uf8f7 \uf8ed\uf8f8 Required % = 4845800 2400100 100 % %22 1145800 100 \uf8f1\uf8fc * \uf8f4\uf8f4 * =\uf8f2\uf8fd \uf8f4\uf8f4 * \uf8f3\uf8fe = 218.18% 218%.\uf03b EXERCISE \u2013 III Directions ( Questions 1-5 ): Refer to the pie-charts and answer the given questions. Distribution of total number of Dell Laptops Sold by 5 Stores Total Number : 2400 Distribution of Number of Laptops (both Dell and Lenovo) Sold by 5 Stores in 2011 Total Number : 4500",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-25",
+    "question": "In the human body, what part is made of neither bones nor skin ? 80",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "Part of the body made of neither bones nor skin = 1 \u2013 1 1 11 .6 10 15 \uf8eb\uf8f6 +=\uf8ec\uf8f7\uf8ed\uf8f8",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-1",
+    "question": "The line graph shows the percentage profit earned by a company over six years. Study the graph and answer:\n\nIf the income of the company in 2021 was Rs. 264 crores, what was its expenditure in that year?",
+    "options": [
+      "Rs. 185 crores",
+      "Rs. 200 crores",
+      "Rs. 220 crores",
+      "Rs. 240 crores"
+    ],
+    "answer": "Rs. 220 crores",
+    "explanation": "Profit % in 2021 = 20%.\nProfit = (Income - Expenditure) / Expenditure * 100\n20 = (264 - E) / E * 100\n0.2 = (264 - E) / E => 0.2E = 264 - E => 1.2E = 264 => E = 220 crores.",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 3,
+    "estimatedTime": 120,
+    "companyRelevance": [
+      "TCS Digital",
+      "Infosys"
+    ],
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 40
+      },
+      {
+        "name": "2021",
+        "value": 20
+      },
+      {
+        "name": "2022",
+        "value": 50
+      },
+      {
+        "name": "2023",
+        "value": 45
+      },
+      {
+        "name": "2024",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": "di-line-graphs-2",
+    "question": "What is the average number of students appearing for the Aptitude Test from all the towns together ?",
+    "options": [
+      "33500",
+      "3350",
+      "17500",
+      "33.5",
+      "None of these"
+    ],
+    "answer": "33500",
+    "explanation": "Total number of calories burnt on Saturday =180 * 110 100 + 145 * 120 100 = 198 + 174 = 372",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-3",
+    "question": "The number of students appearing for the Aptitude Test from Town E is approximately what per cent of the total number of students appearing for the Aptitude Test from all the towns together ?",
+    "options": [
+      "15",
+      "17",
+      "19",
+      "21",
+      "23"
+    ],
+    "answer": "21",
+    "explanation": "Total number of calories burnt by A = 185 + 90 + 160 = 435",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-4",
+    "question": "What is the ratio of the number of students appearing for the Aptitude Test from Towns C and D together to the number of students appearing for the Aptitude Test from Towns A, D and E together?",
+    "options": [
+      "11 : 13",
+      "20 : 43",
+      "20 : 47",
+      "37 : 20",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "Average calories = 125 Total calories = 3 * 125 = 375 Number of calories burnt on Saturday = 375 \u2013 280 = 95",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-5",
+    "question": "The number of students appearing for the Aptitude Test from Town D is approximately what percentage of the number of students appearing for the Aptitude Test from Town C ? Directions (Questions 6\u201310): Study the following graph and answer the questions that follow: (Bank P.O., 2012) Production (in tonnes) and Sales (in tonnes) of Company A from 2006 to 2011 200 Years 300 400 500 600 800 700 Productio n & sales (In tonnes) 2006 2007 2008 2009 2010 2011 Production, Sales938 QUANTITATIVE APTITUDE The table given below represents the ratio of the production (in tonnes) of Company A to the production (in tonnes) of Company B and ratio of sales of Company A and Company B. Year Production (A : B) Sales (A : B) 2006 5 : 4 2 : 3 2007 8 : 7 11 : 12 2008 3 : 4 9 : 14 2009 11 : 12 4 : 5 2010 14 : 13 10 : 9 2011 13 : 14 1 : 1",
+    "options": [
+      "243",
+      "413",
+      "134",
+      "341",
+      "143"
+    ],
+    "answer": "243",
+    "explanation": "6 56=",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-6",
+    "question": "What is the approximate percentage increase in the production of Company A from 2009 to 2010 ?",
+    "options": [
+      "18%",
+      "38%",
+      "23%",
+      "27%",
+      "32%"
+    ],
+    "answer": "18%",
+    "explanation": "Total Number of watches sold in Town X in January, February, March and June = 120 + 140 +180 + 240 = 680 Required average = 680 4 = 170",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-7",
+    "question": "The sales of Company A in the year 2009 was approximately what percent of its production in the same year?",
+    "options": [
+      "65%",
+      "73%",
+      "79%",
+      "83%",
+      "69%"
+    ],
+    "answer": "73%",
+    "explanation": "The number of watches sold in Town Y in April = 210 The number of watches sold in Town X in April = 150 Required percentage = - * = * =210 150 60 100 100 40%150 150",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-8",
+    "question": "What is the average production of Company B (in tonnes) from the year 2006 to the year 2011 ?",
+    "options": [
+      "574",
+      "649",
+      "675",
+      "593",
+      "618"
+    ],
+    "answer": "675",
+    "explanation": "Number of Watches sold in Town Y in February = 120 Number of Watches sold in Town Y in May = 230LINE GRAPHS 951 Required percentage increase = 230 120 110 110 5100 100120 120 6 - * * = * = = 275 2 91 %33 =",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-9",
+    "question": "What is the ratio of the total production of Company A to the total sales of Company A ?",
+    "options": [
+      "81 : 64",
+      "64 : 55",
+      "71 : 81",
+      "71 : 55",
+      "81 : 55"
+    ],
+    "answer": "81 : 55",
+    "explanation": "Number of watches sold in Town X in the month of May = 180 Number of watches sold in Town X in the month of July = 180 110 198100 * = Number of watches sold in Town X in the month of January = 120 \\ Required ratio = 198 33 33 : 20120 20==",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-10",
+    "question": "What is the ratio of production of Company B in the year 2006 to production of Company B in the year 2008 ? Directions (Questions 11\u201318): Study the following graphs carefully and answer the questions that follow: (Bank P.O., 2011) Percent Profit Earned By Companies A and B Producing Electronic Goods Over The Years. Percent Profit = Profit Earned 100 %Total Investment \uf8eb\uf8f6 * \uf8ec\uf8f7\uf8ed\uf8f8 Profit Earned = (Total Income) \u2013 (Total Investment in the Year)",
+    "options": [
+      "2 : 5",
+      "4 : 5",
+      "3 : 4",
+      "3 : 5",
+      "1 : 4"
+    ],
+    "answer": "3 : 4",
+    "explanation": "Total number of watches sold in both the towns together in the month of June = 240 + 180 = 420 Total number of watches sold in both the towns together in March = 180 + 150 = 330 Required difference = 420 \u2013 330 = 90",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-11",
+    "question": "If the profit earned in 2006 by Company B was Rs. 812500, what was the total income of the company in that year ?",
+    "options": [
+      "Rs. 1250000",
+      "Rs. 2062500",
+      "Rs. 1650000",
+      "1825000",
+      "None of these"
+    ],
+    "answer": "Rs. 2062500",
+    "explanation": "Profit percent earned by company B in 2009 = 35% Profit percent earned by company B in 2010 = 50% Expenditure of company B in 2009 = 12 lakhs Expenditure of company B in 2010 = 14.5 lakhs Income of company B in 2009 = 35% = 100IE E - * => 35 = ( 12 lakh) 12 lakh I - * 100 => (35 * 12) Lakh = 100I \u2013 1200 lakh => 420 lakh = 100I \u2013 1200 lakh => I = 16.20 lakh Income of company B in 2009 = 50% = \u2013IE E * 100 => 50 = \u2013 14.5 lakh * 10014.5 lakh I => (50 * 14.5) lakh = 100I \u2013 14.50 lakh => 2175 = (100) I => I = 21.75 lakhs So, total income of company B in 2009 and 2010 = 16.2 + 21.75 = Rs. 37.95 Lakhs",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-12",
+    "question": "If the amounts invested by the two companies in 2005 were equal, what was the ratio of the total income of Company A to that of B on 2005 ?",
+    "options": [
+      "31 : 33",
+      "33 : 31",
+      "34 : 31",
+      "14 : 11",
+      "None of these"
+    ],
+    "answer": "34 : 31",
+    "explanation": "For company A, In 2012 P% = IE E - * 100 => 30 = 3 3 I - * 100 => 90 = 100 I \u2013 300 => 390 100 = I => I = 3.9 For company B, in 2012 P% = IE E - * 100 40 = v => 160 = 100 I \u2013 400 => 560 100 = I => I = 5.6 Then required ratio = 3.9 39",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-13",
+    "question": "If the total amount invested by the two companies in 2009 was Rs. 27 lakh, while the amount invested by Company B was 50% of the amount invested by Company A, what was the total profit earned by the two companies together ?",
+    "options": [
+      "Rs. 21.15 lakh",
+      "Rs. 20.70 lakh",
+      "Rs. 18.70 lakh",
+      "Rs. 20.15 lakh",
+      "None of these"
+    ],
+    "answer": "Rs. 20.70 lakh",
+    "explanation": "Solution cannot be determined because profit percentage of company A in all the years are not given.",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-14",
+    "question": "If the income of Company A in 2007 and that in 2008 were equal and the amount invested in 2007 was Rs. 12 lakh, what was the amount invested in 2008 ?",
+    "options": [
+      "Rs. 1087500",
+      "Rs. 1085700",
+      "Rs. 1245000",
+      "Rs. 1285000",
+      "None of theseLINE GRAPHS 939"
+    ],
+    "answer": "Rs. 1087500",
+    "explanation": "Let the income of company A in 2013 = x Let the income of company B in 2013 = (5.7 \u2013 x) Expenditure of company A = Expenditure of Company B = E 40 100100 - - * xE E (5.7 )451.4 .... (i) and 100 xEx EE - - == => 5.7 x E - = 14.5 ...(ii) Divide equation (ii) by (i) we get => 5.7 145 140 xE Ex - * = => 5.7 145= 140 x x => 5.7 * 140 \u2013 140x = 145x => 798 = 285x => x = 2.8 lakhs \uf051 x E = 1.4 E = 2 lakhs Total expenditure of two companies = (2 + 2) = 4 lakhs",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-15",
+    "question": "If the amount of profit earned by Company A in 2006 was Rs. 10.12 lakh, what was the total investment ?",
+    "options": [
+      "Rs. 13.8 lakh",
+      "Rs. 14.9 lakh",
+      "Rs. 15.4 lakh",
+      "Rs. 14.2 lakh",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "In 2010, 50 = 1 1 2 E E - * 100 => 50 E1 = 200 \u2013 100 E1 => 150 E1 = 200 => E1 = 4 3 In 2011, 45 = 2 2 (3 ) E E - * 100 => 45 E2 = 300 \u2013 100 E2 => 145 E2 = 300 => E2 = 300 145 Then, 1 2 4 145 3 300 E E = * => 1 2 29 35 E E =",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-16",
+    "question": "If the amount invested by Company B in 2004 is Rs. 12 lakh and income of 2004 is equal to the investment in 2005, what is the amount of profit earned in 2005 by Company B ?",
+    "options": [
+      "Rs. 6.6 lakh",
+      "Rs. 18.6 lakh",
+      "Rs. 10.23 lakh",
+      "Rs. 9.6 lakh",
+      "None of these"
+    ],
+    "answer": "Rs. 10.23 lakh",
+    "explanation": "Number of governmental projects handled by company A in 2005 and 2006 together = 360 + 250 = 610 Number of Governmental projects handled by company A in 2005 and 2006 together = 20% of 610 = 20 610 122100 * = 952 QUANTITATIVE APTITUDE",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-17",
+    "question": "If the investments of Company A in 2007 and 2008 were equal, what is the difference between the profits earned in the two years if the income in 2008 was Rs. 24 lakh ?",
+    "options": [
+      "Rs. 2.25 lakh",
+      "Rs. 3.6 lakh",
+      "Rs. 1.8 lakh",
+      "Rs. 2.6 lakh",
+      "None of these"
+    ],
+    "answer": "Rs. 2.25 lakh",
+    "explanation": "Average number of non-governmental projects handled by company B = 127 Number of Non-Governmental projects handled by Com - pany B in 2003 and 2004 is = 127 * 2 = 254 Number of Governmental projects handled by Company B in 2003 and 2004 together = 130 + 320 \u2013 254 = 40 \u2013 254 = 196",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-18",
+    "question": "If each of the companies A and B invested Rs. 25 lakh in 2010, what was the average profit earned by the two companies ? Directions (Questions 19\u201323): Study the following graph carefully and answer the questions that follow:",
+    "options": [
+      "Rs. 18 lakh",
+      "Rs. 22.5 lakh",
+      "Rs. 17.5 lakh",
+      "Rs. 20 lakh",
+      "None of these"
+    ],
+    "answer": "Rs. 20 lakh",
+    "explanation": "Number of projects handled by Company B in 2004 = 320 Number of projects handled by Company B in 2006 = 190 Required decrease percentage = 320 190 100320 - * = 130 1300 325100 %320 32 8 * = = = 40 5 8 % decrease",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-19",
+    "question": "What was the ratio between the number of girls enrolled in School C in the year 2011 and the total number of girls enrolled in School A and School B together in the same year ?",
+    "options": [
+      "11 : 3",
+      "3 : 11",
+      "4 : 11",
+      "4 : 7",
+      "None of these"
+    ],
+    "answer": "4 : 11",
+    "explanation": "Number of projects handled by company A in 2008 = 120% of 300 = 120 300 360100 * = Number of projects handled by Company A in 2009 = 105% of 360 = 105 360 378100 * =",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-20",
+    "question": "In which school was the difference between the number of girls enrolled in the years 2012 and 2008 minimum ?",
+    "options": [
+      "Only School A",
+      "Only School B",
+      "Only School C",
+      "Both School A and School B",
+      "Both School A and School C"
+    ],
+    "answer": "Both School A and School B",
+    "explanation": "The number of projects handled by company A in 2003 and 2004 together = 180 + 230 = 410 The number of projects handled by company B in 2005 and 2007 together = 210 + 350 = 560 Required difference = 560 \u2013 410 = 150",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-21",
+    "question": "What was the approximate average number of girls enrolled in the year 2010 in all the three schools together ?",
+    "options": [
+      "20800",
+      "2300",
+      "20000",
+      "22500",
+      "21600"
+    ],
+    "answer": "20800",
+    "explanation": "Visas issued for country A and country B in April = 310 + 350 = 660 Visas issued for country A and country B in June = 320 + 250 = 570 Required difference = 660 \u2013 570 = 90",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-22",
+    "question": "Total number of girls enrolled in all the three schools in the year 2008 was what percentage of the number of girls enrolled in School C in the year 2011 ?",
+    "options": [
+      "44.4 %",
+      "225%",
+      "165%",
+      "240%",
+      "None of these"
+    ],
+    "answer": "225%",
+    "explanation": "Total number of visas issued for country B in March, May, July and August = 300 + 280 + 320 + 360 = 1260 Required average = 300 280 320 360 4 +++ = 1260 4 = 315",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-line-graphs-23",
+    "question": "In which year was the total number of girls enrolled in all the three schools together second highest ?",
+    "options": [
+      "2008",
+      "2009",
+      "2010",
+      "2011",
+      "2012"
+    ],
+    "answer": "2011",
+    "explanation": "Number of visas for country A in February = 400 100 80 * = 500 \\ Required ratio = 500 : 360 = 25 : 18",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ]
+  },
+  {
+    "id": "di-pie-charts-1",
+    "question": "The pie chart shows the percentage distribution of the expenditure incurred in publishing a book. Study the chart and answer:\n\nIf for a certain quantity of books, the publisher has to pay Rs. 30,600 as printing cost, then what will be amount of royalty to be paid for these books?",
+    "options": [
+      "Rs. 19,450",
+      "Rs. 21,200",
+      "Rs. 22,950",
+      "Rs. 26,150"
+    ],
+    "answer": "Rs. 22,950",
+    "explanation": "Let total expenditure be X.\nPrinting Cost = 20% of X = Rs. 30,600 => X = Rs. 153,000.\nRoyalty = 15% of X = 15% of 153,000 = Rs. 22,950.",
+    "topic": "pie-charts",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 90,
+    "companyRelevance": [
+      "Infosys",
+      "Wipro"
+    ],
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "Paper Cost",
+        "value": 25
+      },
+      {
+        "name": "Printing Cost",
+        "value": 20
+      },
+      {
+        "name": "Royalty",
+        "value": 15
+      },
+      {
+        "name": "Binding & Promotion",
+        "value": 20
+      },
+      {
+        "name": "Transportation",
+        "value": 10
+      },
+      {
+        "name": "Other Cost",
+        "value": 10
+      }
+    ]
+  }
+]

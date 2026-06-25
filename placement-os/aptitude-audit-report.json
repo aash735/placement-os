@@ -1,0 +1,270 @@
+{
+  "status": "WARNINGS_FOUND",
+  "summary": {
+    "total_questions_scanned": 2572,
+    "valid_questions_imported": 2553,
+    "invalid_questions_skipped": 19,
+    "duplicate_question_count": 0,
+    "broken_asset_count": 21
+  },
+  "errors_and_warnings": [
+    "Question quant-number-system-348 in quantitative is missing fields: ['answer']",
+    "Question quant-number-system-368 in quantitative is missing fields: ['answer']",
+    "Question quant-simplification-86 in quantitative is missing fields: ['answer']",
+    "Question quant-simplification-93 in quantitative is missing fields: ['answer']",
+    "Question quant-simplification-103 in quantitative is missing fields: ['answer']",
+    "Question quant-average-10 in quantitative is missing fields: ['answer']",
+    "Question quant-average-37 in quantitative is missing fields: ['answer']",
+    "Question quant-percentages-146 in quantitative is missing fields: ['answer']",
+    "Question quant-percentages-314 in quantitative is missing fields: ['answer']",
+    "Question quant-percentages-354 in quantitative is missing fields: ['answer']",
+    "Question quant-percentages-379 in quantitative is missing fields: ['answer']",
+    "Question quant-percentages-381 in quantitative is missing fields: ['answer']",
+    "Question quant-profit-loss-21 in quantitative is missing fields: ['answer']",
+    "Question quant-ratios-57 in quantitative is missing fields: ['answer']",
+    "Question quant-pipes-cisterns-8 in quantitative is missing fields: ['answer']",
+    "Question quant-speed-55 in quantitative is missing fields: ['answer']",
+    "Question quant-percentages-334 in quantitative is missing fields: ['answer']",
+    "Question quant-percentages-339 in quantitative is missing fields: ['answer']",
+    "Question di-table-1 is in tables topic but has no tableData.",
+    "Question di-tables-2 is in tables topic but has no tableData.",
+    "Question di-tables-3 is in tables topic but has no tableData.",
+    "Question di-tables-4 is in tables topic but has no tableData.",
+    "Question di-tables-5 is in tables topic but has no tableData.",
+    "Question di-tables-6 is in tables topic but has no tableData.",
+    "Question di-tables-7 is in tables topic but has no tableData.",
+    "Question di-tables-8 is in tables topic but has no tableData.",
+    "Question di-tables-9 is in tables topic but has no tableData.",
+    "Question di-tables-10 is in tables topic but has no tableData.",
+    "Question di-tables-11 is in tables topic but has no tableData.",
+    "Question di-tables-12 is in tables topic but has no tableData.",
+    "Question di-tables-13 is in tables topic but has no tableData.",
+    "Question di-tables-14 is in tables topic but has no tableData.",
+    "Question di-tables-15 is in tables topic but has no tableData.",
+    "Question di-tables-16 is in tables topic but has no tableData.",
+    "Question di-tables-17 is in tables topic but has no tableData.",
+    "Question di-tables-18 is in tables topic but has no tableData.",
+    "Question di-tables-19 is in tables topic but has no tableData.",
+    "Question di-tables-20 is in tables topic but has no tableData.",
+    "Question di-tables-21 is in tables topic but has no tableData.",
+    "Question puzzles-logic-2 has answer 'The box labeled 'Apples and Oranges'' which is not in options: [\"The box labeled 'Apples and Oranges\", \"The box labeled 'Apples\", \"The box labeled 'Oranges\", 'Any box will work']"
+  ],
+  "coverage": {
+    "number-system": {
+      "expected": 180,
+      "imported": 365,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "hcf-lcm": {
+      "expected": 85,
+      "imported": 2,
+      "missing": 83,
+      "coverage_pct": 2.35
+    },
+    "simplification": {
+      "expected": 240,
+      "imported": 387,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "average": {
+      "expected": 130,
+      "imported": 58,
+      "missing": 72,
+      "coverage_pct": 44.62
+    },
+    "ages": {
+      "expected": 65,
+      "imported": 54,
+      "missing": 11,
+      "coverage_pct": 83.08
+    },
+    "percentages": {
+      "expected": 220,
+      "imported": 408,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "profit-loss": {
+      "expected": 180,
+      "imported": 281,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "ratios": {
+      "expected": 160,
+      "imported": 175,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "pipes-cisterns": {
+      "expected": 60,
+      "imported": 33,
+      "missing": 27,
+      "coverage_pct": 55.0
+    },
+    "time-work": {
+      "expected": 165,
+      "imported": 127,
+      "missing": 38,
+      "coverage_pct": 76.97
+    },
+    "speed": {
+      "expected": 115,
+      "imported": 181,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "simple-interest": {
+      "expected": 80,
+      "imported": 100,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "compound-interest": {
+      "expected": 90,
+      "imported": 67,
+      "missing": 23,
+      "coverage_pct": 74.44
+    },
+    "permutation-combination": {
+      "expected": 45,
+      "imported": 38,
+      "missing": 7,
+      "coverage_pct": 84.44
+    },
+    "probability": {
+      "expected": 50,
+      "imported": 51,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "series": {
+      "expected": 110,
+      "imported": 58,
+      "missing": 52,
+      "coverage_pct": 52.73
+    },
+    "coding-decoding": {
+      "expected": 104,
+      "imported": 2,
+      "missing": 102,
+      "coverage_pct": 1.92
+    },
+    "blood-relations": {
+      "expected": 87,
+      "imported": 2,
+      "missing": 85,
+      "coverage_pct": 2.3
+    },
+    "syllogism": {
+      "expected": 60,
+      "imported": 2,
+      "missing": 58,
+      "coverage_pct": 3.33
+    },
+    "seating-arrangement": {
+      "expected": 70,
+      "imported": 1,
+      "missing": 69,
+      "coverage_pct": 1.43
+    },
+    "statement-conclusion": {
+      "expected": 55,
+      "imported": 1,
+      "missing": 54,
+      "coverage_pct": 1.82
+    },
+    "analogy": {
+      "expected": 45,
+      "imported": 1,
+      "missing": 44,
+      "coverage_pct": 2.22
+    },
+    "clocks": {
+      "expected": 30,
+      "imported": 47,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "calendar": {
+      "expected": 25,
+      "imported": 1,
+      "missing": 24,
+      "coverage_pct": 4.0
+    },
+    "direction-sense": {
+      "expected": 125,
+      "imported": 1,
+      "missing": 124,
+      "coverage_pct": 0.8
+    },
+    "synonyms": {
+      "expected": 150,
+      "imported": 1,
+      "missing": 149,
+      "coverage_pct": 0.67
+    },
+    "antonyms": {
+      "expected": 150,
+      "imported": 1,
+      "missing": 149,
+      "coverage_pct": 0.67
+    },
+    "sentence-improvement": {
+      "expected": 120,
+      "imported": 1,
+      "missing": 119,
+      "coverage_pct": 0.83
+    },
+    "rc": {
+      "expected": 80,
+      "imported": 1,
+      "missing": 79,
+      "coverage_pct": 1.25
+    },
+    "error-detection": {
+      "expected": 100,
+      "imported": 1,
+      "missing": 99,
+      "coverage_pct": 1.0
+    },
+    "vocab": {
+      "expected": 200,
+      "imported": 1,
+      "missing": 199,
+      "coverage_pct": 0.5
+    },
+    "tables": {
+      "expected": 100,
+      "imported": 22,
+      "missing": 78,
+      "coverage_pct": 22.0
+    },
+    "pie-charts": {
+      "expected": 70,
+      "imported": 19,
+      "missing": 51,
+      "coverage_pct": 27.14
+    },
+    "bar-graphs": {
+      "expected": 80,
+      "imported": 30,
+      "missing": 50,
+      "coverage_pct": 37.5
+    },
+    "line-graphs": {
+      "expected": 80,
+      "imported": 24,
+      "missing": 56,
+      "coverage_pct": 30.0
+    },
+    "caselets": {
+      "expected": 40,
+      "imported": 1,
+      "missing": 39,
+      "coverage_pct": 2.5
+    }
+  }
+}

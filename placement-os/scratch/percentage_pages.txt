@@ -1,0 +1,1058 @@
+
+================ PAGE 316 ================
+308
+11 Percentage
+IMPORTANT FACTS AND FORMULAE
+ I. Concept of Percentage: By a certain percent, we mean that many hundredths. Thus, x percent means x 
+hundredths, written as x%.
+  To express x% as a fraction : We have, %= .100
+xx
+  20 1 48 12Thus, 20% ; 48% , etc.100 5 100 25== ==
+  Thus, 1 1 63 3100 % 25%; 0.6 100 % 60%.4 4 10 5 5
+ = ×= = = = ×=  
+ II.  If a certain value p increases by x%, then increased value = (100 + x)% of p. 
+  If a certain value p decreases by x%, then decreased value = (100 – x)% of p.
+ III. If the price of a commodity increases by R%, then the reduction in consumption so as not to increase the 
+expenditure is 
+R 100 %(100 R)
+ × +
+  If the price of a commodity decreases by R%, then the increase in consumption so as not to decrease the 
+expenditure is 
+R 100 %(100 R)
+ × −
+ IV. Results on Population: Let the population of a town be P now and suppose it increases at the rate of R% 
+per annum, then:
+   1. RPopulation after years P 1 . 100
+n
+n =+ 
+   2. PPopulation years ago .
+R1 100
+nn =
+ +
+ V. Results on Depreciation: Let the present value of a machine be P. Suppose it depreciates at the rate of R% 
+per annum. Then:
+   1. RValue of the machine after years P 1 . 100
+n
+n =− 
+   2. PValue of the machine years ago .
+R1 100
+nn =
+ −
+ VI. If A is R% more than B, then B is less than A by R 100 %.(100 R)
+ × +
+  If A is R% less than B, then B is more than A by R 100 %.(100 R)
+ × −
+================ PAGE 317 ================
+PERCENTAGE 309
+SOLVED EXAMPLES
+ Ex. 1. Express each of the following as a fraction:
+  (i) 56%  (ii) 4% (iii) 0.6% (iv) 0.08%
+   Sol. (i) == 56 1456% .100 25   (ii) 414% .100 25==
+  ( iii) 0.6 6 30.6% .100 1000 500== =  (iv) 0.08 8 10.08% .100 10000 1250== =
+ Ex. 2. Express each of the following as a decimal:    (R.R.B., 2006)
+  (i) 6% (ii) 28% (iii) 0.2% (iv) 0.04%  (v) 1 %2
+ Sol. (i) 66% 0.06.100==   (ii) == 2828% 0.28.100
+  ( iii) 0.20.2% 0.002.100==   (iv) 0.040.04% 0.0004.100==
+  ( v) 1 11 1% 0.005.2 2 100 200=× = =  
+ Ex. 3. Express each of the following as rate percent:
+  ( i) 23
+36  ( ii) 0.004 (iii) 36 4  
+ Sol. (i) 23 23 575 8100 % % 63 %.36 36 9 9
+  =× = =     
+  ( ii) 440.004 100 % 0.4%.1000 1000
+== × = 
+
+  ( iii) 3 27 276 100 % 675%.44 4
+== × = 
+
+ Ex. 4. Evaluate:    (Bank P.O., 2009)
+  (i) 70% of 320 + 45% of 240 (ii) 216 %3  of 600 gm – 133 %3  of 180 gm
+ Sol. (i) 70% of 320 + 45% of 240 = 70 45 320 240100 100
+ ×+ ×
+
+ = 224 + 108 = 332.
+  ( ii) 2116 % of 600 gm 33 % of 180 gm33 −
+   50 1 100 1600 180 gm (100 60) gm 40 gm.3 100 3 100
+  = ×× − ×× = − =    
+ Ex. 5. ( i) 2 is what percent of 50?   
+  ( ii) 1
+2  is what percent of 1 ?3   
+  (iii) What percent of 7 is 84?
+  ( iv) What percent of 2 metric tonnes is 40 quintals ?
+  ( v) What percent of 6.5 litres is 130 ml?
+  ( vi) What percent is 1 minute 10 seconds of half an hour ?  (P.C.S., 2009)
+ Sol.  ( i) 2Required percentage = × 100 % = 4%.50
+
+  ( ii) Required percentage = 13× × 100 % = 150%.21
+
+================ PAGE 318 ================
+310 QUANTITATIVE APTITUDE
+  ( iii) 84Required percentage 100 % 1200%.7
+=× = 
+  ( iv) 1 metric tonne = 10 quintals.
+   ∴ 40Required percentage = × 100 % = 200%.2 × 10
+
+
+  ( v) 130Required percentage 100 % 2%.6.5 1000
+= ×=  ×
+  ( vi) 1 minute 10 seconds = 101 60  min = 11 6  min = 7
+6  min.
+   Half an hour = 30 min.
+   \ Required percentage = 7 1 35100 % %6 30 9
+  ×× =  
+  
+ = 3.89%.
+ Ex. 6. Find the missing figures:
+  ( i)?% of 25 = 2.125 (ii) 9% of? = 63 ( iii) 0.25% of?  = 0.04
+ Sol. (i) Let x% of 25 = 2.125. Then, 25 2.125 (2.125 4) 8.5.100
+x x× = ⇔ = ×=
+  ( ii) Let 9% of x = 6.3. 
+6.3 1009Then, 6.3 70.100 9xx ×= ⇔= = 
+
+  ( iii) Let 0.25% of x = 0.04. 
+0.04 1000.25Then, 0.04 16.100 0.25xx ×= ⇔= = 
+
+ Ex. 7. Which is greatest in  2216 %,3 15  and 0.17?
+ Sol. 2 50 1 1 216 % 0.166, 0.133.3 3 100 6 15
+= × == =
+
+ Clearly, 0.17 is the greatest.
+ Ex. 8. Saroj invests ` 72318, which  is 17% of her annual income, in mutual funds. What is her monthly 
+income?    (Bank Recruitment, 2009)
+ Sol. Let the annual income be ` x. 
+  Then, 17% of x = 72318 ⇒ 17 72318100 x =  ⇒ x = 72318 100 425400.17
+× =
+
+	 	\  Saroj‘s monthly income = ` 425400 35450.12
+ =
+ `
+ Ex. 9. An inspector rejects 0.08% of the meters as defective. How many will he examine to reject 2?  
+ Sol. Let the number of meters to be examined be x.
+  Then, 0.08% of x = 2 ⇔ 2 100 10081 2 2500.100 100 8xx ×× × ×=⇔ = =  
+ Ex. 10. The price of a TV set inclusive of sales tax of 9% is ` 13407. Find its marked price.  (R.R.B., 2008)
+ Sol. Let the M.P. of T.V. set be ` x.
+  Then, x + 9% of x = 13407 ⇒ x + 9 13407100
+x = ⇒ 109 13407100
+x = ⇒ x = 13407 100 12300.109
+× =
+
+  Hence, marked price = ` 12300.
+ Ex. 11. The difference between 31% of a number and 13% of the same number is 576. What is 17% of that 
+number?    (Bank Recruitment, 2010)
+ Sol. Let the number be x.
+  Then, 31% of x – 13% of x = 576 ⇒ (31 – 13)% of x = 576 ⇒	18% of x = 576
+  ⇒	 576 10018 576 3200.100 18xx ×= ⇒= = 
+
+  \ 17% of the number = 17% of 3200 = 17 3200 544.100
+ ×=
+
+================ PAGE 319 ================
+PERCENTAGE 311
+ Ex. 12. Sixty-five percent of a number is 21 less than four-fifths of that number. What is the number?  
+ Sol. Let the number be x.
+  4 4 65Then, (65% of ) 21 21 15 2100 140.5 5 100x x xx x x− =⇔ − =⇔ = ⇔ =
+ Ex. 13. If the sales tax be reduced from 113 % to 3 %,23 then what difference does it make to a person who purchases 
+an article with marked price of ` 8400? 
+ Sol.  Required difference = 113 % of 8400 3 % of 840023
+ −  ``
+           = 7 10 1% of 8400 % of 840023 6
+ −= `` = 11 8400 14.6 100
+ ×× =
+``
+ Ex. 14. Difference of two numbers is 1660. If 7.5% of one number is 12.5% of the other number , find the two 
+numbers. 
+ Sol. Let the numbers be x and y. 125 5Then, 7.5% of 12.5% of .75 3x y x yy= ⇔= =
+  1660 352Now, 1660 1660 1660 2490.33 2xy yy y y ×− =⇒ − =⇒ =⇒ = = 
+
+ 
+	 	∴  One number = 2490, Second number = 5 4150.3 y =
+ Ex. 15. The difference between the value of a number increased by 25% and the value of the original number decreased 
+by 30% is 22. What is the original number?    (SNAP, 2010)
+ Sol. Let the number be x. Then,
+  125% of x – 70% of x = 22 ⇒ 55% of x = 22 ⇒ 55 22100 x =  ⇒ x = 22 100 40.55
+× =
+
+  Hence, required number = 40.
+ Ex. 16. Mrs. Roy spent ` 44620 on Deepawali shopping, ` 32764 on buying laptop and the remaining 32% of the 
+total amount she had as cash with her. What was the total amount?  (S.B.I.,P.O., 2008)
+ Sol. Let the total amount be ` x. Then, 
+  (100 – 32)% of x = 44620 + 32764 ⇒ 68% of x = 77384 ⇒ x = 77384 100 113800.68
+× =
+
+  Hence, total amount = ` 113800.
+ Ex. 17. In expressing a length 81.472 km as nearly as possible with three significant digits , find the percentage 
+error. 
+ Sol. Error = (81.5 – 81.472) km = 0.028 km.
+	 	∴  Required percentage = 0.028 100 % 0.034%.81.472
+ ×=
+
+ Ex. 18. The monthly income of a person was ` 13500 and his monthly expenditure was ` 9000. Next year, his income 
+increased by 14% and his expenditure by 7%. Find the percentage increase in his savings.  (S.S.C., 2006)
+ Sol. Increased income = 114% of ` 13500 = ` 114 13500 15390.100
+ ×=
+
+`
+  Increased expenditure = 107% of ` 9000 = ` 107 9000 9630.100
+ ×=
+
+`
+  Increased saving = ` (15390 – 9630) = ` 5760.
+  Original savings = ` (13500 – 9000) = ` 4500.
+  Increase = ` (5760 – 4500) = ` 1260.
+  \ Increase % in savings = 1260 100 % 28%.4500
+ ×=
+
+================ PAGE 320 ================
+312 QUANTITATIVE APTITUDE
+ Ex. 19. Salesperson A’s compensation for any week is ` 360 plus 6 percent of the portion of A’s total sales above  
+` 1000 for that week. Salesperson B’s compensation for any week is 8 percent of B’s total sales for that week. 
+For what amount of total weekly sales would both salespersons earn the same compensation? (M.B.A., 2006)
+ Sol. Let the required weekly sales be ` x.
+  Then, A’s compensation = ` [360 + 6% of ( x – 1000)]
+  B’s compensation = 8% of ` x.
+  \ 360 + 6% of ( x – 1000) = 8% of x ⇒ 360 + 68 ( – 1000)100 100xx =
+               ⇒ 360 + 32 – 60 300 15000.50 25 50
+xxx x = ⇒ = ⇒=
+  Hence, required weekly sales = ` 15000. 
+ Ex. 20. A man buys a house for ` 5 lakh and rents it. He puts 112 %2  of each month’s rent aside for repairs, pays 
+` 1660 as annual taxes and realizes 10% on his investment thereafter. Find the monthly rent of the house.
+(M.A.T., 2009)
+ Sol. Let the annual rent of the house be ` x. Then, 
+      x – 112 % of 1660 10% of 5000002 x +=
+  ⇒ 25 1– 1660 500002 100xx  × ×+ =
+  ⇒ 
+77 – 1660 50000 5166088
+xx = ⇒=  ⇒ x = 51660 8 59040.7
+× =
+  Hence, monthly rent = ` 59040 4920.12
+ = `
+ Ex. 21. The present population of a village is 5500. If the number of males increases by 11% and the number of 
+females increases by 20%, then the population will become 6330. What is the present population of females 
+in the village? 
+ Sol. Let the number of males be x. Then, number of females = (5500 – x).
+  \ 111% of x + 120% of (5500 – x) = 6330
+  ⇒ 111 120 (5500 – ) 6330100 100xx+=
+  ⇒ 111x + 660000 – 120 x = 633000 ⇒ 9 x = 27000 ⇒ x = 3000.
+  Hence, present population of females = 5500 – 3000 = 2500.
+ Ex. 22. In an election between two candidates , 75% of the voters cast their votes , out of which 2% of the votes 
+were declared invalid. A candidate got 9261 votes which were 75% of the total valid votes. Find the total 
+number of votes enrolled in that election.
+ Sol. Let the total number of votes enrolled be x. Then,
+  Number of votes cast = 75% of x. Valid votes = 98% of (75% of x).
+	 	∴  75% of [98% of (75% of x)] = 9261
+	 	⇔  9261 100 100 10075 98 75 9261 16800.100 100 100 75 98 75xx  ××× ××× = ⇔ = =  ××
+ Ex. 23. Shobha’s Mathematics Test had 75 problems i.e., 10 arithmetic, 30 algebra and 35 geometry problems. Although 
+she answered 70% of the arithmetic , 40% of the algebra and 60% of the geometry problems correctly , she 
+did not pass the test because she got less than 60% of the problems right. How many more questions she 
+would have needed to answer correctly to earn a 60% passing grade?  
+ Sol. Number of questions attempted correctly = (70% of 10 + 40% of 30 + 60% of 35)
+             = (7 + 12 + 21) = 40.
+  Questions to be answered correctly for 60% grade = 60% of 75 = 45.
+	 	∴  Required number of questions = (45 – 40) = 5.
+================ PAGE 321 ================
+PERCENTAGE 313
+ Ex. 24. If 50% of (x – y ) = 30% of (x + y ), then what percent of x is y?  
+ Sol. 50% of ( x – y) = 30% of ( x + y)  ⇔		 50 30(–) ( )100 100xy xy =+
+																⇔  5 ( x – y) = 3 ( x + y)  ⇔		 2x = 8 y  ⇔		 x = 4 y.
+	 	∴  Required percentage 100 % 100 % 25%.4
+yy
+xy
+= ×= ×=     
+Ex. 25. Mr. Jones gave 40% of the money he had , to his wife. He also gave 20% of the remaining amount to each 
+of his three sons. Half of the amount now left was spent on miscellaneous items and the remaining amount 
+of ` 12 ,000 was deposited in the bank. How much money did Mr. Jones have initially?  
+ Sol. Let the initial amount with Mr. Jones be ` x. Then,
+  Money given to wife = 40 2 2 3. Balance .100 5 5 5
+x xxxx = = −= `` ` `
+  Money given to 3 sons = 20 3 93. 100 5 25
+xx ××= 
+``
+  Balance = 39 6 .5 25 25
+xx x −=
+
+``
+  Amount deposited in bank = 16 3 .2 25 25
+xx ×=
+
+``
+  ∴ 12000 253 12000 100000.25 3
+x x ×= ⇔= =
+
+  So, Mr. Jones initially had ` 1,00,000 with him. 
+  Short-cut Method: Let the initial amount with Mr. Jones be ` x. Then, 
+  1 of [100 – (3 × 20)]% of (100 – 40)% of = 12000.2 x
+  ⇔	 12000 251 40 60 312000 12000 100000.2 100 100 25 3x xx ×××× = ⇔ = ⇔ = = 
+
+ Ex. 26. Peter got 30% of the maximum marks in an examination and failed by 10 marks. However, Paul who took 
+the same examination got 40% of the total marks and got 15 marks more than the passing marks. What 
+were the passing marks in the examination?   (M.B.A., 2007)
+ Sol. Let the maximum marks be x. Then, 
+  (30% of x) + 10 = (40% of x) – 15 ⇒ 30 40 10 – 15100 100xx+=  ⇒ 10 25 250.100
+x x= ⇒=
+  \ Passing marks = (30% of 250) + 10 = 30 250 10 85.100
+ × +=
+
+ Ex. 27. 10% of the inhabitants of a village having died of cholera , a panic set in , during which 25% of the 
+remaining inhabitants left the village. The population is then reduced to 4050. Find the number of original 
+inhabitants. 
+ Sol. Let the total number of original inhabitants be x.
+  Then, (100 – 25)% of (100 – 10)% of x = 4050
+	 	⇔  4050 4075 90 274050 4050 6000.100 100 40 27x xx × × × =⇔=⇔ = =  
+	 	∴  Number of original inhabitants = 6000.
+ Ex. 28. If z = 
+2x
+y  and x, y are both increased in value by 10%, find the percentage change in the value of z.  
+(M.B.A., 2007)
+ Sol. Let X, Y and Z represent the changed values of x, y and z respectively.
+  Then, X = 110% of x = 1111 ; 110% .10 10
+yx Y of y==
+================ PAGE 322 ================
+314 QUANTITATIVE APTITUDE
+  \ Z = 
+2
+22
+11
+11 1110 . Z.11 10 10
+10
+x
+Xx
+yYy
+= == 
+  Increase in the value of z = 11 –.10 10
+zz z =
+
+  \ Increase % = 1 100 % 10%.10
+z
+z
+ ×× =
+
+ Ex. 29. An investor earns 3% return on 1
+4  of his capital, 5% on 2
+3  and 11% on the remainder. What is the average 
+rate of return he earns on his total capital?     (M.A.T., 2008)
+ Sol. Let the investor’s total capital be ` x.
+  Then, total return =  ` 223% of 5% of 11% of –4 3 43
+x x xxx  ++ +   
+          = ` 3 10 11 .400 300 1200 20
+xxx x ++ =
+
+`
+  \ Average rate of return = 1 100 % 5%.20
+x
+x
+ ×× =
+
+ Ex. 30. In a tournament, a player has a record of 40% wins, out of the number of games he has played so far which 
+in turn is 2
+5  of the total number of games he plays. What is the maximum percentage of the remaining 
+games that the player can lose and still win 50% of all the games played?
+ Sol. Let the total number of games played be x.
+  Number of games already played = 2 .5
+x
+  Games already lost = 60% of 26 .5 25
+xx=
+  Number of games that the player can lose = 50% of x = .2
+x
+  \ Number of games that the player can still lose = 6 13–.2 25 50
+xx x =
+
+  Remaining games to be played = 23–. 55
+xxx =
+
+  \ Required percentage = 13 5 100 % 43.3%.50 3
+x
+x
+ ×× =
+
+ Ex. 31. A man‘s wage was reduced by 50%. Again the reduced wage was increased by 50%. Find his loss in terms 
+of percentage.    (R.R.B., 2008)
+ Sol. Let original wage = ` 100.
+	 	New	 final	wage	=	150%	of	(50%	of	` 100) = ` 150 50 100 75.100 100
+ ×× =
+
+`
+	 	\  Loss = 25%.
+ Ex. 32. A man ’s working hours a day were increased by 20% and his wages per hour  were increased by 15%. By 
+how much percent was his daily earning increased?     (R.R.B., 2008)
+ Sol. Let the original number of working hours a day be x and original wages per hour be ` y.
+  Then, original daily earning = ` ( xy). Increased working hours = 120% of x = 6 .5
+x
+================ PAGE 323 ================
+PERCENTAGE 315
+  Increased wages per hour = 115% of ` y = ` 23 .20
+y
+  New daily earning = ` 23 696 .5 20 50
+y xyx  ×=     `
+  Increase in daily earning = ` 69 19–.50 50
+xy xyxy   =  
+   `  \ Increase % = 19 1 100 % 38%.50
+xy
+xy
+ ×× =
+
+ Ex. 33. The salary of a person was reduced by 10%. By what percent should his reduced salary be raised so as to 
+bring it at par with his original salary?        (S.S.C., 2005, 2007)
+ Sol. Let the original salary be ` 100. New salary = ` 90.
+  Increase on 90 = 10. Increase on 100 = 10 1100 % 11 %.90 9
+ ×=
+
+Ex. 34. When the price of a product was decreased by 10% , the number sold increased by 30%. What was the effect 
+on the total revenue?  
+ Sol. Let the price of the product be ` 100 and let original sale be 100 pieces.
+  Then, Total Revenue = ` (100 × 100) = ` 10000.
+  New revenue = ` (90 × 130) = ` 11700.
+	 	∴  1700Increase in revenue 100 % 17%.10000
+= ×= 
+
+ Ex. 35. If the numerator of a fraction be increased by 15% and its denominator be diminished by 8% , the value of 
+the fraction is 15 .16  Find the original fraction.
+ Sol. Let the original fraction be .x
+y
+  115% of 15 115 15 15 92 3Then, .92% of 16 92 16 16 115 4
+x xx
+y yy
+=⇒ =⇒ =× = 
+ Ex. 36. The price of petrol is increased by 25%. How much percent must a car owner reduce his consumption of 
+petrol so as not to increase his expenditure on petrol?     (S.S.C., 2005, 2007)
+ Sol. Reduction in consumption = 25100 % 100 % 20%.(100 ) 125
+R
+R
+   × =× =  +
+Ex. 37. The population of a town is 1 ,76,400. If it increases at the rate of 5% per annum , what will be its population 
+2 years hence?  What was it 2 years ago?
+ Sol. 
+25 21 21Population after 2 years = 176400 × 1 + = 176400 × × = 194481.100 20 20
+      
+  2
+176400 20 20Population 2 years ago = = 176400 × × = 160000.21 2151+ 100
+
+ Ex. 38. The value of a machine depreciates at the rate of 10% per annum. If its present value is ` 1 ,62,000, what 
+will be its worth after 2 years? What was the value of the machine 2 years ago?
+ Sol. Value of the machine after 2 years
+  = 
+210 9 9162000 1 – 162000 131220.100 10 10
+   × = ×× =   
+  
+` ``
+  Value of the machine 2 years ago
+  = 2
+162000 10 10162000 200000.99101– 100
+  = ×× =  
+
+`` `
+================ PAGE 324 ================
+316 QUANTITATIVE APTITUDE
+ Ex. 39. During one year, the population of a town increased by 5% and during the next year, the population decreased 
+by 5%. If the total population is 9975 at the end of the second year , then what was the population size in 
+the beginning of the first year ? 
+ Sol. Population	in	the	beginning	of	the	first	year	
+  9975 20 209975 10000.55 21 1911 100 100
+= = ×× = +−  
+ 
+ Ex. 40. If A earns 133 %3  more than B , how much percent does B earn less than A ?    (B.Ed Entrance, 2009)
+ Sol. 
+100
+3 100Required percentage 100 % 100 % 25%.400100100 3
+   = × =× =  +
+ Ex. 41. If A’s salary is 30% less than that of B, then how much percent is B’s salary more than that of A?
+(R.R.B., 2008)
+ Sol. Required percentage = 30 300 6100 % % 42 %.(100 – 30) 7 7
+ × ==
+ Ex. 42. How many kg of pure salt must be added to 30 kg of 2% solution of salt and water to increase it to a 10% 
+solution?     (M.A.T., 2004)
+ Sol. 2Amount of salt in 30 kg solution 30 kg 0.6 kg.100
+=× = 
+  Let x kg of pure salt be added.
+  0.6 10 8 2Then, 60 100 300 10 90 240 2 .30 100 3 3
+x x xx xx
++ = ⇔ + = + ⇔ = ⇔ ==+
+ Ex. 43. After 25 kg of water had been evaporated from a solution of salt and water, which had 20% salt, the  
+remaining solution had 30% salt. Find the weight of the original solution.    (S.S.C., 2007)
+ Sol. Let the weight of the original solution be x kg. 
+  Then, weight of salt in x kg solution = 20% of x kg = kg.5
+x
+  Weight of water in x kg solution = 4– kg kg.55
+xxx =
+  Weight of solution after evaporation = ( x – 25) kg.
+	 	\  30 150 ( – 25) 1005( – 25) 100
+x xxx =⇔ =  ⇔ 50 x = 3750 ⇔ x = 75.
+  Hence, weight of the original solution = 75 kg. 
+ Ex. 44. Due to a reduction of 16%4  in the price of sugar , a man is able to buy 1 kg more for ` 120. Find the original 
+and reduced rate of sugar.
+ Sol. Let original rate be ` x per kg.
+  Reduced rate = 25 1 15100 – per kg.4 100 16
+xx ×=
+``
+	 	∴  120 120 128 1201 1 8.15
+16
+xx x xx− =⇔ − =⇔ =
+  So, original rate = ` 8 per kg.
+  15Reduced rate 8 per kg 7.50 per kg.16
+=× = 
+
+``
+================ PAGE 325 ================
+PERCENTAGE 317
+ Ex. 45. In an examination , 35% of total students failed in Hindi , 45% failed in English and 20% in both. Find the 
+percentage of those who passed in both the subjects.
+ Sol. Let A and B be the sets of students who failed in Hindi and English respectively.
+  Then, n (A) = 35, n (B) = 45, n (A ∩ B) = 20.
+  So, n (A ∪ B) = n (A) + n (B) – n (A ∩ B) = (35 + 45 – 20) = 60.
+	∴  Percentage failed in Hindi or English or both = 60%.
+  Hence, percentage passed = (100 – 60)% = 40%.
+ Ex. 46. In an examination , 80% of the students passed in English , 85% in Mathematics and 75% in both English 
+and Mathematics. If 40 students failed in both the subjects , find the total number of students.
+ Sol. Let the total number of students be x.
+  Let A and B represent the sets of students who passed in English and 
+  Mathematics respectively.
+  Then, number of students passed in one or both the subjects 
+  = n (A ∪ B) = n (A) + n (B) – n (A ∩ B) = 80% of x + 85% of x – 75% of x 
+  80 85 75 90 9 .100 100 100 100 10xxx x x= +− ==
+	 	∴  Students who failed in both the subjects = 9 .10 10
+xxx −=
+  So, 40 or 400.10
+x x==  Hence, total number of students = 400.
+ Ex. 47. Ajay ordered 4 pairs of black socks and some additional pairs of blue socks. The price of the black socks 
+per pair was twice that of the blue ones. When the order was filled, it was found that the number of pairs 
+of the two colours had been interchanged. This increased the bill by 50%. Find the ratio of the number of 
+pairs of black socks to the number of pairs of blue socks in the original order.    (M.B.A., 2011)
+ Sol. Suppose he ordered n pairs of blue socks. 
+  Let the price of each pair of blue socks be ` x.
+  Then, price of each pair of black socks = ` 2 x.
+  Actual bill = ` (4 × 2 x + nx) = ` (8x + nx).
+  Bill made on interchange = ` (2nx + 4 x).
+	 	\  2 nx + 4 x = 150% of (8 x + nx) ⇒ 2 nx + 4 x = 3 (8 )2 x nx+
+  ⇒ 2(2nx + 4 x) = 3(8 x + nx)
+	 	⇒  4 nx + 8 x = 24 x + 3 nx ⇒ nx = 16 x ⇒ n = 16.
+  Hence, required ratio = 4: 16 = 1: 4.
+EXERCISE 
+(OBJECTIVE TYPE QUESTIONS)
+Directions: Mark ( ) against the correct answer:   
+ 1. How is 3
+4  expressed as percentage? (R.R.B., 2006)
+  ( a) 0.75% (b) 7.5%
+  ( c) 75% (d) 60%
+ 2. The ratio 5: 4 expressed as a percent equals  
+  ( a) 12.5% (b) 40%
+  ( c) 80% (d) 125% 
+ 3. 3.5 can be expressed in terms of percentage as  
+  ( a) 0.35% (b) 3.5% 
+  ( c) 35% (d) 350% 
+ 4. When expressed as a fraction 64% would mean
+  ( a) 16
+25  ( b) 9
+64
+  ( c) 8
+81  ( d) 12
+121  
+ 5. Half of 1 percent written as a decimal is
+(L.I.C.A.D.O., 2008) 
+  ( a) 0.005 (b) 0.05
+  ( c) 0.02 (d) 0.2 
+ 6. 12% of 5000 =?  (CLAT, 2010)
+  ( a) 600 (b) 620
+  ( c) 680 (d) 720 
+================ PAGE 326 ================
+318 QUANTITATIVE APTITUDE
+ 7. 38% of 341 =?  (Bank Recruitment, 2009)
+  ( a) 120.68 (b) 129.58
+  ( c) 135.78 (d) 136.28
+  ( e) None of these
+ 8. (550% of 250) ÷  275 =?  (Bank P.O., 2009)
+  ( a) 15 (b) 0.5
+  ( c) 1.5 (d) 25
+  ( e) None of these
+ 9. 280% of 3940 =?  (L.I.C.A.D.O., 2007)
+  ( a) 10132 (b) 11032
+  ( c) 11230 (d) 11320
+  ( e) None of these
+ 10. 92.5% of 550 =?  (Bank Recruitment, 2008)
+  ( a) 506.45 (b) 508.75
+  ( c) 518.55 (d) 521.65
+  ( e) None of these 
+ 11. 2% of 2 =?
+  ( a) 0.04 (b) 0.4
+  ( c) 0.02 (d) 0.004 
+ 12. 10% of 5 and 5% of 10 add up to  (P.C.S., 2008)
+  ( a) 0.10 (b) 0.25
+  ( c) 1.0 (d) 2.5 
+ 13. 36% of 245 – 40% of 210 = 10 –? (Bank P.O., 2010)
+  ( a) 4.2 (b) 4.9
+  ( c) 5.6 (d) 6.8
+  ( e) None of these 
+ 14. 45% of 300 + ?  = 56% of 750 – 10% of 250
+    (R.R.B., 2009)
+  ( a) 60 (b) 130
+  ( c) 260 (d) 67600 
+ 15. 15% of 578 + 22.5% of 644 =? (Bank P.O., 2010)
+  ( a) 231.4 (b) 231.6
+  ( c) 231.8 (d) 233.6
+  ( e) None of these
+ 16. 140% of 56 + 56% of 140 =? (Bank P.O., 2009)
+  ( a) 78.4 (b) 87.4
+  ( c) 156.6 (d) 158.6
+  ( e) None of these 
+ 17. (7.9% of 134) – (3.4% of 79) =? (Bank P.O., 2009)
+   (a) 7.3 (b) 7.8
+  ( c) 8.1 (d) 8.6
+  ( e) None of these 
+ 18. (23.6% of 1254) – (16.6% of 834) =?  (S.B.I.P.O., 2008)
+  ( a) 153.5 (b) 155.5
+  ( c) 157.5 (d) 159.5
+  ( e) None of these
+ 19. (0.85% of 405) + (2.25% of 550) =? (Bank P.O., 2007)
+  ( a) 13.8175 (b) 14.7125
+  ( c) 15.7150 (d) 16.7175
+  ( e) None of these
+ 20. What is 45% of 25% of 4 th of 850?5  (Bank P.O., 2009)
+  ( a) 67.5 (b) 69.5
+  ( c) 76.5 (d) 83.5 
+  ( e) None of these 
+ 21. What is 28% of 36% of 5 th of 5000 ?7  (Bank P.O., 2008)
+  ( a) 360 (b) 375
+  ( c) 420 (d) 480 
+  ( e) None of these 
+ 22. (0.56% of 225) × (3.25% of 430) =? (Bank P.O., 2006)
+  ( a) 15.3195 (b) 15.6175
+  ( c) 17.3075 (d) 17.6085
+  ( e) None of these 
+ 23. An agent sells goods of value of ` 15000. The 
+commission which he receives at the rate of 112 %2  
+is   (SNAP, 2010)
+  ( a) ` 1875 (b) ` 2000
+  ( c) ` 2125 ( d) ` 2700 
+ 24. One-eighth of a number is 41.5. What will 69% of 
+that number be?
+  ( a) 219.12 (b) 225.76
+  ( c) 229.08 (d) 232.4
+  ( e) None of these 
+ 25. Ten percent of twenty plus twenty percent of ten 
+equals 
+  ( a) 10 percent of 20 (b) 20 percent of 10
+  ( c) 1 percent of 200 (d) 2 percent of 200 
+ 26. 60% of 264 is the same as
+  ( a) 10% of 44 (b) 15% of 1056
+  ( c) 30% of 132 (d) None of these 
+ 27. 270 candidates appeared for an examination, of 
+which 252 passed. The pass percentage is: 
+  ( a) 80% (b) 183 %2
+  ( c) 90 %3
+1  ( d) 193 %3
+ 28. 5 out of 2250 parts of earth is sulphur. What is the 
+percentage of sulphur in earth?
+  ( a) 11
+50  ( b) 2
+9
+  ( c) 1
+45  ( d) 2
+45
+================ PAGE 327 ================
+PERCENTAGE 319
+ 29. In an examination Sumit scores a total of 626 marks 
+out of 850. What is his approximate percentage in 
+the examination?  (Bank Recruitment, 2009)
+  ( a) 64 (b) 67
+  ( c) 74 (d) 79
+  ( e) 83
+ 30. The marks obtained by a student are given below. 
+What is his total percentage in all the subjects?
+Subjects Total Marks  Marks
+Obtained
+Mathematics 100 100
+Science 100 84
+Social Studies 100 67
+English 50 25
+Hindi 50 24
+  ( a) 56% (b) 68%
+  ( c) 75% (d) 80%
+ 31. The following table gives the marks obtained by a 
+student	in	the	first	and	second	semester	examinations	
+in four subjects in a given year.
+Subjects 1st
+Semester
+2nd
+Semester
+Maximum 
+Marks
+Physics 35 30 50
+Chemistry 30 25 50
+Mathematics 65 45 100
+Social Science 80 85 100
+  The aggregate percentage of marks obtained by the 
+student in the given year is nearly
+  ( a) 56 (b) 61
+  ( c) 64 (d) 66
+ 32. I paid ` 27.20 as sales tax on a watch worth ` 340. 
+Find the rate of sales tax.
+  ( a) 8% (b) 9%
+  ( c) 10% (d) 12%
+ 33. What percent of 88 is 33?
+  ( a) 34.5% (b) 35.5%
+  ( c) 36.5% (d) 37.5%
+ 34. 0.01 is what percent of 0.1? (S.S.C., 2005)
+  ( a) 1
+100  ( b) 1
+10
+  ( c) 10 (d) 100
+ 35. What percent is 1 minute and 12 seconds of an 
+hour?
+  ( a) 2%  (b) 10%
+  ( c) 12% (d) 20%
+ 36. The enrolment of students in a school increases 
+from 560 to 581. What is the percent increase in the 
+enrolment?
+  ( a) 2.75%  (b) 3.25%
+  ( c) 3.72% (d) 3.75%
+ 37. What percent of 7.2 kg is 18 gms?
+  ( a) .025%  (b) .25%
+  ( c) 2.5% (d) 25%
+ 38. What percent of ` 2650 is ` 1987.50?
+  ( a) 60%  (b) 75%
+  ( c) 80% (d) 90%
+ 39. What percent of a day is 3 hours?
+  ( a) 112 %2   (b) 216 %3
+  ( c) 218 %3  ( d) 122 %2
+ 40. The price for a pair of cuff links is ` 1.00. The price 
+for a 5-pair package of cuff links is ` 3.40. The 5-pair 
+package is what percent cheaper per pair than 5 
+pairs purchased separately? (M.A.T., 2004)
+  ( a) 32% (b) 47%
+  ( c) 62% (d) 63%
+ 41. A bakery opened with its daily supply of 40 dozen 
+rolls. Half of the rolls were sold by noon and 60% 
+of the remaining rolls were sold between noon 
+and closing time. How many dozen rolls were left 
+unsold?  (SNAP, 2010)
+  ( a) 6  (b) 8
+  ( c) 10 (d) 12
+ 42. 5 kg of metal A and 20 kg of metal B are mixed 
+to form an alloy. The percentage of metal A in the 
+alloy is 
+  ( a) 20%  (b) 25%
+  ( c) 40% (d) None of these
+ 43. 30% apples out of 450 are rotten. How many apples 
+are in good condition?  (R.R.B., 2006)
+  ( a) 125  (b) 180
+  ( c) 240 (d) 315  
+ 44. A company pays rent of ` 25000 per month for 
+office	space	to	its	owner.	But	if	the	company	pays	
+the annual rent at the beginning of the year the 
+owner gives a discount of 5% on the total annual 
+rent. What is the annual amount the company pays 
+to the owner after the discount?
+(Bank Recruitment, 2008)
+  ( a) ` 2,75,000 (b) ` 2,85,000
+  ( c) ` 2,95,000 (d) ` 3,00,000
+  ( e) None of these
+ 45. An interval of 3 hours 40 minutes is wrongly 
+estimated as 3 hours 45.5 minutes. The error 
+percentage is  (S.S.C., 2006)
+  ( a) 2.5  (b) 5
+  ( c) 5.2 (d) 5.5 
+================ PAGE 328 ================
+320 QUANTITATIVE APTITUDE
+ 46. The following table gives the income distribution 
+of 200 households of a village:
+Monthly Income (in ` ) Number of Households
+< 1000
+< 2000
+< 5000
+< 10000
+25
+80
+170
+200
+  What is the percentage of households whose monthly 
+income is above ` 2000 but below ` 5000?  
+          (P.C.S., 2006)
+  ( a) 32.5  (b) 45
+  ( c) 85 (d) 90
+ 47. In two successive years 100 and 75 students of a 
+school	appeared	at	the	final	examination.	Respectively	
+75% and 60% of them passed. The average rate of 
+pass is
+  ( a) 468 %7  ( b) 78%
+  ( c) 80% (d) 180 %2
+ 48. A toy merchant announces 25% rebate in prices 
+of balls. If one needs to have a rebate of ` 40, 
+then how many balls each costing ` 32, he should 
+purchase?   (M.B.A., 2007)
+  ( a) 5 (b) 6
+  ( c) 7 (d) 10
+ 49. 1.14 expressed as a percent of 1.9 is  (S.S.C., 2010)
+  ( a) 6%  (b) 10%
+  ( c) 60% (d) 90%
+ 50. Kamal has 160 toffees. He gave 5% toffees to Ravi, 
+15% toffees to Anita and one-fourth of the toffees 
+to Gagan. How many toffees are left with Kamal 
+after the distribution?  (Bank Recruitment, 2010)
+  ( a) 78  (b) 69
+  ( c) 88 (d) 79
+  ( e) None of these
+ 51. A shopkeeper sells note-books at the rate of ` 45 each 
+and earns a commission of 4%. He also sells pencil 
+boxes at the rate of ` 80 each and earns a commission 
+of 20%. How much amount of commission will he 
+earn in two weeks if he sells 10 note-books and 6 
+pencil boxes a day?
+  ( a) ` 1496  (b) ` 1586
+  ( c) ` 1596 ( d) ` 1956
+  ( e) None of these
+ 52. It costs ` 1 to photocopy a sheet of paper. However, 
+2% discount is allowed on all photocopies done after 
+first	1000	sheets.	How	much	will	it	cost	to	copy	5000	
+sheets of paper?  (IGNOU, 2003)
+  ( a) ` 3920 (b) ` 3980
+  ( c) ` 4900 (d) ` 4920
+ 53. A housewife saved ` 2.50 in buying an item on sale. 
+If she spent ` 25 for the item, approximately how 
+much percent she saved in the transaction?
+(Section Officers’, 2003)
+  ( a) 8% (b) 9%
+  ( c) 10% (d) 11%
+ 54. How many litres of pure acid are there in 8 litres 
+of a 20% solution?
+  ( a) 1.4 (b) 1.5
+  ( c) 1.6 (d) 2.4
+ 55. Rajeev buys goods worth ` 6650. He gets a rebate 
+of 6% on it. After getting the rebate, he pays sales 
+tax @ 10%. Find the amount he will have to pay for 
+the goods.  (M.A.T., 2002)
+  ( a) ` 6876.10 (b) ` 6999.20
+  ( c) ` 6654 (d) ` 7000
+ 56.  Which one of the following shows the best percent -
+age? 
+  ( a) 384
+540  ( b) 425
+500
+  ( c) 570
+700  ( d) 480
+660
+ 57. In a class of 65 students and 4 teachers, each  
+student got sweets that are 20% of the total number 
+of students and each teacher got sweets that are 40% 
+of the total number of students. How many sweets 
+are there?  (Bank P.O., 2009)
+  ( a) 104  (b) 845
+  ( c) 949 (d) 897
+  ( e) None of these
+ 58. A student scores 55% marks in 8 papers of 100 marks 
+each. He scores 15% of his total marks in English. 
+How much does he score in English?
+(Bank Recruitment, 2008)
+  ( a) 44  (b) 45
+  ( c) 66 (d) 77
+  ( e) None of these
+ 59. A, B, C and D have ` 40, 50, 60 and 70 respectively 
+when they go to visit a fair. A spends ` 18, B spends 
+` 21, C spends ` 24 and D spends ` 27. Who has 
+done the highest expenditure proportionate to his 
+resources?
+  ( a) A  (b) B
+  ( c) C (d) D
+ 60. A country follows a progressive taxation system 
+under which the income tax rate applicable varies 
+for different slabs of income. Total tax is computed 
+by calculating the tax for each slab and adding them 
+up. The rates applicable are as follows:  
+   (M.A.T., 2005, 2006)
+================ PAGE 329 ================
+PERCENTAGE 321
+Annual Income Slab 
+(in ` ) Tax Rate Applicable
+ 0 – 50,000 0%
+ 50,001 – 60,000 10%
+ 60,001 – 1,50,000 20%
+ > 1,50,000 30%
+  If my annual income is ` 1,70,000, then what is the 
+tax payable by me?
+  ( a) ` 17000  (b) ` 25000
+  ( c) ` 34000 (d) ` 51000
+ 61. 40% of 60% of 3 th5  of a number is 504. What is 
+25% of 2 th5  of that number? (NABARD, 2009)
+  ( a) 175  (b) 180
+  ( c) 350 (d) 360 
+  ( e) None of these
+ 62. 125% of 3060 – 85% of? = 408 (Bank P.O., 2010)
+  ( a) 3890  (b) 3940
+  ( c) 4015 (d) 4020
+  ( e) None of these
+ 63. 40% of 265 + 35% of 180 = 50% of? (Bank P.O., 2010)
+  ( a) 84.5 (b) 169
+  ( c) 253.5 (d) 338 
+  ( e) None of these
+ 64. ? % of 450 + 46% of 285 = 257.1 (Bank P.O., 2009)
+  ( a) 21  (b) 28
+  ( c) 32 (d) 34
+  ( e) None of these
+ 65. 36% of 365 +? % of 56.2 = 156.69 (Bank P.O., 2010)
+  ( a) 30  (b) 35
+  ( c) 40 (d) 45
+  ( e) None of these
+ 66. 35568 ÷? % of 650 = 456  
+  ( a) 12 (b) 14
+  ( c) 16 (d) 18
+  ( e) None of these
+ 67. 23% of 8040 + 42% of 545 =? % of 3000
+(Bank P.O., 2006)
+  ( a) 56.17 (b) 63.54
+  ( c) 69.27 (d) 71.04
+  ( e) None of these
+ 68. 3.2% of 500 × 2.4% of? = 288        (S.B.I.P.O., 2008) 
+  ( a) 600 (b) 650
+  ( c) 700 (d) 750
+ 69. 85% of 485.5 = 50% of?  (Bank P.O., 2006)
+  ( a) 675.75 (b) 735.65
+  ( c) 825.35 (d) 915.5
+  ( e) None of these
+ 70. 40% of 4.5 +? % of 2
+3  = 20% of 10
+  ( a) 20 (b) 25
+  ( c) 30 (d) 35
+  ( e) None of these
+ 71. 30% of 28% of 480 is the same as  
+  ( a) 15% of 56% of 240 (b) 60% of 28% of 240
+  ( c) 60% of 56% of 240 (d) None of these
+ 72. What is 25% of 25% equal to?
+  ( a) 0.00625 (b) 0.0625
+  ( c) 0.625 (d) 6.25
+ 73. What percent is 3% of 5%?
+  ( a) 15% (b) 30%
+  ( c) 50% (d) 60%
+ 74. 64% of a number is 2592. What is 88% of that 
+number?    (Bank Recruitment, 2009)  
+  ( a) 3202 (b) 3458
+  ( c) 3564 (d) 3826
+  ( e) None of these
+ 75. 42% of a number is 892.5. What is 73% of that 
+number?   (Bank Recruitment, 2009)
+  ( a) 1466.25 (b) 1508.75
+  ( c) 1551.25 (d) 1636.25
+  ( e) None of these
+ 76. 15% of 45% of a number is 105.3. What is 24% of 
+that number?  (Bank P.O., 2009)
+  ( a) 374.4 (b) 375
+  ( c) 385.5 (d) 390 
+  ( e) None of these
+ 77. If 0.03 is X % of 0.3, then the value of X is
+(I.A.M., 2007)
+  ( a) 3 (b) 10
+  ( c) 30 (d) Cannot be determined
+ 78. 40% of 60% of 32% of an amount is ` 432. What is 
+the amount?  (Bank Recruitment, 2007)
+  ( a) ` 5000 (b) ` 5600
+  ( c) ` 6400 ( d) None of these
+ 79. Find the greatest possible number for which 30% 
+of that number is less than 100.
+  ( a) 325 (b) 328
+  ( c) 331 (d) 333
+  ( e) 335
+ 80. If ` 2800 is 2
+7  percent of the value of a house, the 
+worth of the house (in `) is 
+  ( a) 8,00,000 (b) 9,80,000
+  ( c) 10,00,000 (d) 12,00,000
+================ PAGE 330 ================
+322 QUANTITATIVE APTITUDE
+ 81. 15% of? % of 582 = 17.46  
+  ( a) 2 (b) 10
+  ( c) 20 (d) None of these
+ 82. In a year, a man manages to sell only 65% of the 
+chicken he owns. How many chicken should the 
+man own to sell 47775 chicken in a year?
+(M.B.A., 2005)
+  ( a) 55000 (b) 68500
+  ( c) 73000 (d) 82500
+  ( e) None of these
+ 83. If 35% of a number is 175, then what percent of 175 
+is that number?  
+  ( a) 35% (b) 65%
+  ( c) 280% (d) None of these
+ 84. If an electricity bill is paid before due date, one 
+gets a reduction of 4% on the amount of the bill. 
+By paying the bill before due date a person got a 
+reduction of ` 13. The amount of his electricity bill 
+was                  (S.S.C., 2010) 
+  ( a) ` 125 (b) ` 225
+  ( c) ` 325 (d) ` 425
+ 85. In an examination X secures 58% marks and Y 
+secures 105 marks less than X. If the maximum 
+marks were 700, then what percent of marks did Y 
+secure?   
+  ( a) 42 percent  (b) 43 percent
+  ( c) 52 percent  (d) None of these
+ 86. Ms. Pooja invests 13% of her monthly salary, i.e.  
+` 8554 in Mediclaim Policies. Later she invests 23% 
+of her monthly salary on Child Education Policies ; 
+also she invests another 8% of her monthly salary 
+on Mutual Funds. What is the total annual amount 
+invested by Ms. Pooja?  (S.B.I.P.O., 2008)
+  ( a) ` 28952 (b) ` 43428
+  ( c) ` 173712 ( d) ` 347424 
+  ( e) None of these
+ 87. Nupur invests ` 89856, which is 26% of her annual 
+income, in mutual funds. What is her monthly 
+income?  (Bank Recruitment, 2008)
+  ( a) ` 23980.50 (b) ` 28800
+  ( c) ` 28990 ( d) ` 33606.25
+  ( e) None of these
+ 88. David and his wife each receives an 8 percent annual 
+rise. If David receives a raise of ` 800 and his wife 
+receives a raise of ` 840, what is the difference 
+between their annual incomes after their raises? 
+(Campus Recruitment, 2008)
+  ( a) ` 40 (b) ` 460
+  ( c) ` 500 (d) ` 540
+ 89. If the average of a number, its 75% and its 25% is 
+240, then the number is  (P.C.S., 2006)
+  ( a) 280 (b) 320
+  ( c) 360 (d) 400  
+ 90. A company bought a total of 60 computers and 20 
+printers to modernise billing operations. If the price 
+of each computer was three times the price of each 
+printer, what percent of the total cost of the purchase 
+was the total cost of the printers?
+  ( a) 10% (b) 11%
+  ( c) 15% (d) 20%
+ 91. An individual pays 30% income tax. On this tax 
+he has to pay a surcharge of 10%. Thus the net tax 
+rate, he has to pay, is  
+  ( a) 27% (b) 33%
+  ( c) 40% (d) 45%
+ 92. Anand has drawn an angle of measure 45° 27 ′ 
+when he was asked to draw an angle of 45°. The 
+percentage error in his drawing is 
+  ( a) 0.5 (b) 1.0
+  ( c) 1.5 (d) 2.0
+ 93. The value of which of the following fractions is less 
+than twenty percent?  (Bank P.O., 2010)
+  ( a) 5
+6  ( b) 2
+3
+  ( c) 2
+5
+ ( d) 1
+4
+  ( e) 2
+11
+ 94. The difference between 54% of a number and 26% 
+of the same number is 22526. What is 66% of that 
+number?    (Bank Recruitment, 2009)  
+  ( a) 48372 (b) 49124
+  ( c) 51218 (d) 53097
+  ( e) None of these
+ 95. The difference between 38% of a number and 24% 
+of the same number is ` 135.10. What is 40% of that 
+number?       (M.A.T., 2009) 
+  ( a) 370 (b) 378
+  ( c) 386 (d) 394
+ 96. 76% of the students in a school are boys. If the 
+number of girls is 204, then the total number of 
+students is   (R.R.B., 2010)
+  ( a) 760 (b) 800
+  ( c) 850 (d) 900
+ 97. In an examination, 65% of the total examinees passed. 
+If the number of failures is 420, the total number of 
+examinees is   
+  ( a) 1000 (b) 1200
+  ( c) 1500 (d) 1625

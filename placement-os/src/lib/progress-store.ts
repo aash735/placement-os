@@ -25,6 +25,7 @@ import type {
   MCQAttempt,
   MCQSession,
   MCQQuestion,
+  AptitudePracticeAttempt,
 } from "@/types";
 import { useDataStore } from "@/store/data-store";
 import * as db from "./supabase-db";
@@ -56,6 +57,9 @@ interface ProgressState {
   
   // New States
   aptitudeAttempts: AptitudeAttempt[];
+  aptitudePracticeAttempts: AptitudePracticeAttempt[];
+  aptitudeBookmarks: string[];
+  aptitudeRevision: string[];
   projects: ProjectTask[];
   csSubjects: Record<string, CsSubjectState>;
   llmApiKey: string;
@@ -141,6 +145,9 @@ interface ProgressState {
   
   // New Actions
   completeAptitudeAttempt: (attempt: AptitudeAttempt) => void;
+  logAptitudePracticeAttempt: (attempt: AptitudePracticeAttempt) => void;
+  toggleAptitudeBookmark: (id: string) => void;
+  toggleAptitudeRevision: (id: string) => void;
   addProjectTask: (task: Omit<ProjectTask, "id">) => void;
   updateProjectTaskStatus: (id: string, status: ProjectTask["status"]) => void;
   updateProjectTaskReadiness: (id: string, readiness: number) => void;
@@ -246,6 +253,9 @@ export const useProgressStore = create<ProgressState>()(
 
       // New default states
       aptitudeAttempts: [],
+      aptitudePracticeAttempts: [],
+      aptitudeBookmarks: [],
+      aptitudeRevision: [],
       projects: [
         { id: "proj-1", name: "Anony Talk", description: "Anonymous chat with 3D elements and wellness UX", stack: "React, 3D, CSS", status: "todo", readiness: 75, tags: ["Frontend", "Socket.io"] },
         { id: "proj-2", name: "HireLens", description: "ATS analyzer, privacy-first resume evaluator", stack: "Next.js, Python", status: "in-progress", readiness: 80, tags: ["AI/ML", "Next.js"] },
@@ -315,6 +325,9 @@ export const useProgressStore = create<ProgressState>()(
             bookmarks: data.bookmarks,
             mockTests: data.mockTests,
             aptitudeAttempts: data.aptitudeAttempts,
+            aptitudePracticeAttempts: get().aptitudePracticeAttempts || [],
+            aptitudeBookmarks: get().aptitudeBookmarks || [],
+            aptitudeRevision: get().aptitudeRevision || [],
             projects: data.projects,
             csSubjects: data.csSubjects,
             companyTargets: data.companyTargets,
@@ -374,6 +387,9 @@ export const useProgressStore = create<ProgressState>()(
           bookmarks: [],
           resourceProgress: {},
           aptitudeAttempts: [],
+          aptitudePracticeAttempts: [],
+          aptitudeBookmarks: [],
+          aptitudeRevision: [],
           projects: [
             { id: "proj-1", name: "Anony Talk", description: "Anonymous chat with 3D elements and wellness UX", stack: "React, 3D, CSS", status: "todo", readiness: 75, tags: ["Frontend", "Socket.io"] },
             { id: "proj-2", name: "HireLens", description: "ATS analyzer, privacy-first resume evaluator", stack: "Next.js, Python", status: "in-progress", readiness: 80, tags: ["AI/ML", "Next.js"] },
@@ -814,6 +830,60 @@ export const useProgressStore = create<ProgressState>()(
         state.checkAchievements();
         get().refreshScores();
       },
+
+      logAptitudePracticeAttempt: (attempt) => {
+        const state = get();
+        const attempts = [...(state.aptitudePracticeAttempts || []), attempt];
+        const xpGain = attempt.isCorrect ? 5 : 1;
+        const newXp = state.xp + xpGain;
+        const logs = ensureDailyLog(state.dailyLogs).map((l) =>
+          l.date === today()
+            ? { ...l, xpEarned: l.xpEarned + xpGain, questionsSolved: l.questionsSolved + (attempt.isCorrect ? 1 : 0) }
+            : l
+        );
+
+        set({
+          aptitudePracticeAttempts: attempts,
+          dailyLogs: logs,
+          ...syncLevelFromXp(newXp),
+          ...updateStreak(state.lastActiveDate, state.streak),
+        });
+
+        if (state.userId) {
+          db.saveUserProfile(state.userId, {
+            xp: newXp,
+            level: syncLevelFromXp(newXp).level,
+            streak: state.streak,
+            lastActiveDate: state.lastActiveDate,
+            energyMode: state.energyMode,
+          });
+          const activeLog = logs.find((l) => l.date === today());
+          if (activeLog) db.saveDailyLog(state.userId, activeLog);
+        }
+
+        get().checkAchievements();
+        get().refreshScores();
+      },
+
+      toggleAptitudeBookmark: (id) =>
+        set((s) => {
+          const isBookmarked = !(s.aptitudeBookmarks || []).includes(id);
+          return {
+            aptitudeBookmarks: isBookmarked
+              ? [...(s.aptitudeBookmarks || []), id]
+              : (s.aptitudeBookmarks || []).filter((x) => x !== id),
+          };
+        }),
+
+      toggleAptitudeRevision: (id) =>
+        set((s) => {
+          const inRevision = !(s.aptitudeRevision || []).includes(id);
+          return {
+            aptitudeRevision: inRevision
+              ? [...(s.aptitudeRevision || []), id]
+              : (s.aptitudeRevision || []).filter((x) => x !== id),
+          };
+        }),
 
       addMcqAttempt: (partialAttempt) => {
         const state = get();

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "puzzles-logic-2",
+    "question": "There are three boxes: one contains only apples, one contains only oranges, and one contains both. All three boxes are labeled incorrectly. You are allowed to pick one fruit from one box without looking inside. Which box should you choose to determine the correct labels of all boxes?",
+    "options": [
+      "The box labeled 'Apples and Oranges",
+      "The box labeled 'Apples",
+      "The box labeled 'Oranges",
+      "Any box will work"
+    ],
+    "answer": "The box labeled 'Apples and Oranges'",
+    "explanation": "Since all boxes are labeled incorrectly: \n- The box labeled 'Apples and Oranges' must contain either ONLY apples or ONLY oranges. \n- If you pick a fruit from this box, say an apple, then you know this box contains ONLY apples. \n- Now, the box labeled 'Oranges' cannot contain only oranges (incorrect label) and cannot contain only apples (since we found that box). Thus, it must contain 'Apples and Oranges'. \n- Finally, the box labeled 'Apples' must contain 'Oranges'.",
+    "shortcuts": [
+      "Key clue: All labels are INCORRECT.",
+      "Always choose the mixed label box first because its contents are binary (either all apples or all oranges)."
+    ],
+    "difficulty": 2,
+    "topic": "puzzles",
+    "category": "puzzles",
+    "estimatedTime": 90,
+    "companyRelevance": [
+      "Product Startups",
+      "Google"
+    ],
+    "subtopic": "Seating & Arrangement",
+    "tags": [
+      "puzzles",
+      "seating & arrangement"
+    ],
+    "companyTags": [
+      "Product Startups",
+      "Google"
+    ]
+  },
+  {
+    "id": "puzzles-logic-3",
+    "question": "A, B, C, D, E are sitting in a circle facing the center. A is between E and C. D is to the immediate right of E. Who is sitting to the immediate left of C?",
+    "options": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "answer": "B",
+    "explanation": "Let's arrange them in a circle:\n- A is between E and C. So we have E - A - C or C - A - E.\n- D is to the immediate right of E. If we look at the circle facing the center, this means D is adjacent to E. Let's test the order clockwise: E, D, B, C, A. E's right is D. E's left is A. So the clockwise order is: E -> D -> B -> C -> A. A is between E and C (correct). D is to the immediate right of E (correct, going counter-clockwise/clockwise depending on perspective, but let's confirm: D is right of E, A is left of E). The remaining person is B, who must be between D and C. Therefore, B is sitting to the immediate left of C (since A is to the immediate right of C).",
+    "shortcuts": [
+      "Draw circle: D - E - A - C - B. Left of C is B."
+    ],
+    "difficulty": 2,
+    "topic": "puzzles",
+    "category": "puzzles",
+    "estimatedTime": 90,
+    "companyRelevance": [
+      "Infosys",
+      "Deloitte"
+    ],
+    "subtopic": "Seating & Arrangement",
+    "tags": [
+      "circular-seating",
+      "puzzles"
+    ],
+    "companyTags": [
+      "Infosys",
+      "Deloitte"
+    ]
+  }
+]

@@ -1,0 +1,595 @@
+
+================ PAGE INDEX 21 (PAGE 22) ================
+NUMBER SYSTEM 13
+ Ex. 44. In a division sum, the divisor is ten times the quotient and five times the remainder. If the remainder is 46, 
+determine the dividend.
+ Sol. Remainder = 46 ; Divisor = 5 × 46 = 230 ; Quotient = =230 23.10
+  ∴ Dividend = Divisor × Quotient + Remainder = 230 × 23 + 46 = 5336.
+ Ex. 45. If three times the larger of the two numbers is divided by the smaller one, we get 4 as quotient and 3 as 
+remainder. Also, if seven times the smaller number is divided by the larger one, we get 5 as quotient and 1 
+as remainder. Find the numbers.
+ Sol. Let the larger number be x and the smaller number be y.
+  Then, 3x = 4 y + 3 ⇒ 3 x – 4 y = 3 ...(i)
+  And, 7y = 5 x + 1 ⇒ – 5 x + 7 y = 1 ...(ii)
+  Multiplying ( i) by 5 and ( ii) by 3, we get: 
+  15 x – 20 y = 15                   ...( iii)    and      – 15 x + 21 y = 3        ...( iv)
+  Adding (iii) and ( iv), we get: y = 18.
+  Putting y = 18 in ( i), we get: x = 25.
+  Hence, the numbers are 25 and 18.
+ Ex. 46. A number when divided by 6 leaves remainder 3. When the square of the same number is divided by 6, find 
+the remainder.
+ Sol. On dividing the given number by 6, let k be the quotient and 3 the remainder.
+  Then, number = 6 k + 3.
+  Square of the number = (6k + 3) 2 = 36 k2 + 9 + 36 k = 36 k2 + 36 k + 6 + 3
+   = 6 (6 k2 + 6 k + 1) + 3, which gives a remainder 3 when divided by 6.
+ Ex. 47. Find the remainder when 9 6 + 7 is divided by 8. 
+ Sol. (xn – an) is divisible by ( x – a) for all values of n.
+  So, (96 – 1) is divisible by (9 – 1), i.e. 8 ⇒ (96 – 1) + 8 is divisible by 8 ⇒ (96 + 7) is divisible by 8.
+  Hence, required remainder = 0.
+ Ex. 48. Find the remainder when (397) 3589 + 5 is divided by 398.
+ Sol. (xn + an) is divisible by ( x + a) for all odd values of n.
+  So, [(397)3589 + 1] is divisible by (397 + 1), i.e. 398
+  ⇒ [{(397) 3589 + 1} + 4] gives remainder 4 when divided by 398
+  ⇒ [(397)3589 + 5] gives remainder 4 when divided by 398.
+ Ex. 49. If 7 126 is divided by 48, find the remainder.
+ Sol. 7126 = (7 2)63 = (49) 63.
+  Now, since ( xn – an) is divisible by ( x – a) for all values of n,
+  so [(49)63 – 1] or (7 126 – 1) is divisible by (49 – 1) i.e. 48.
+  ∴  Remainder obtained when (7) 126 is divided by 48 = 1.  
+ Ex. 50. Find the remainder when (257 166 – 243 166) is divided by 500.
+ Sol. (xn – an) is divisible by ( x + a) for all even values of n.
+  ∴ (257 166 – 243 166) is divisible by (257 + 243), i.e. 500.
+  Hence, required remainder = 0.
+ Ex. 51. Find a common factor of (127 127 + 97 127) and (127 97 + 97 97).
+ Sol. (xn + an) is divisible by ( x + a) for all odd values of n.
+  ∴  (127127 + 97 127) as well as (127 97 + 97 97) is divisible by (127 + 97), i.e. 224.
+  Hence, required common factor = 224.
+ Ex. 52. A 99–digit number is formed by writing the first 59 natural numbers one after the other as:
+  1234567891011121314...........5859
+  Find the remainder obtained when the above number is divided by 16.
+ Sol. The required remainder is the same as that obtained on dividing the number formed by the last four digits 
+i.e. 5859 by 16, which is 3.
+================ PAGE INDEX 37 (PAGE 38) ================
+NUMBER SYSTEM 29
+ 331. 25 25 is divided by 26, the remainder is
+  ( a) 1 (b) 2 
+  ( c) 24 (d) 25
+ 332. If (6767 + 67) is divided by 68, the remainder is
+  ( a) 1 (b) 63 
+  ( c) 66 (d) 67 
+ 333. One less than (49) 15 is exactly divisible by
+  ( a) 8 (b) 14 
+  ( c) 50 (d) 51 
+ 334. The remainder when 7 84 is divided by 342 is
+  ( a) 0 (b) 1 
+  ( c) 49 (d) 341 
+ 335. The remainder when 2 60 is divided by 5 equals
+  ( a) 0 (b) 1 
+  ( c) 2 (d) 3 
+ 336. By how many of the following numbers is 2 12 – 1 
+divisible?
+  2, 3, 5, 7, 10, 11, 13, 14
+  ( a) 4 (b) 5 
+  ( c) 6 (d) 7
+ 337. The remainder when (15 23 + 23 23) is divided by 19, 
+is
+  ( a) 0 (b) 4 
+  ( c) 15 (d) 18
+ 338. When 2 256 is divided by 17, the remainder would 
+be
+  ( a) 1 (b) 14 
+  ( c) 16 (d) None of these 
+ 339. 7 6n – 6 6n, where n is an integer > 0, is divisible by
+  ( a) 13 (b) 127 
+  ( c) 559 (d) All of these 
+ 340. It is given that (2 32 + 1) is exactly divisible by a 
+certain number. Which of the following is also 
+definitely	divisible	by	the	same	number?		
+  (S.S.C., 2007)
+  ( a) 216 + 1 (b) 216 – 1 
+  ( c) 7 × 2 33  (d) 296 + 1
+ 341. The number (2 48 – 1) is exactly divisible by two 
+numbers between 60 and 70. The numbers are   
+  (A.A.O. Exam, 2010)
+  ( a) 63 and 65 (b) 63 and 67
+  ( c) 61 and 65 (d) 65 and 67 
+ 342. n being any odd number greater than 1, n65 – n is 
+always divisible by
+  ( a) 5 (b) 13 
+  ( c) 24 (d) None of these 
+ 343. Let N = 55 3 + 17 3 – 72 3. Then, N is divisible by
+  ( a) both 7 and 13 (b) both 3 and 13
+  ( c) both 17 and 7 (d) both 3 and 17 
+ Directions (Questions 344–345): These questions are based 
+on the following information:
+Given N = +++ + +1 2 3 ........ 99 100.
+ 344. Find the last two digits of N.
+  ( a) 00 (b) 13 
+  ( c) 19 (d) 23 
+ 345. Find the remainder when N is divided by 168.
+  ( a) 33 (b) 67 
+  ( c) 129 (d) 153
+ 346. What is the remainder when 4 61 is divided by 51?
+  ( a) 20 (b) 41 
+  ( c) 50 (d) None of these 
+ 347. What is the remainder when 17 36 is divided by 36?
+  ( a) 1 (b) 7 
+  ( c) 19 (d) 29
+ 348. Which one of the following is the common factor 
+of (4743 + 43 43) and (47 47 + 43 47)?
+  ( a) (47 – 43) (b) (47 + 43)
+  ( c) (47 43 + 43 43) ( d) None of these
+ 349. Find the product of all odd natural numbers less 
+than 5000.
+  ( a) ×
+5000 !
+2500 2501  ( b) 2500
+5000 !
+2 2500 !×
+  ( c) 5000
+5000 !
+2
+ ( d) None of these
+ 350. How many zeros will be required to number the 
+pages of a book containing 1000 pages?
+  ( a) 168 (b) 184
+  ( c) 192 (d) 216 
+ 351. If a2 + b2 + c2 = 1, what is the maximum value of 
+abc?
+  ( a) 1
+3  ( b) 1
+33
+  ( c) 2
+3
+ ( d) 1
+ 352.	 Find	the	unit's	digit	in	the	sum	of	the	fifth	powers	
+of	the	first	100	natural	numbers.
+  ( a) 0 (b) 2
+  ( c) 5 (d) 8
+ 353. If the symbol [ x] denotes the greatest integer less 
+than or equal to x, then the value  of
+      ++ ++ + ++       
+1 1 1 1 2 1 49......... is4 4 50 4 50 4 50
+  ( a) 0 (b) 9
+  ( c) 12 (d) 49
+ 354. When 10025 – 25 is written in decimal notation, the 
+sum of its digits is
+  ( a) 444 (b) 445
+  ( c) 446 (d) 448 
+ 355. What is the number of digits in the number (1024) 4 
+× (125) 11?
+  ( a) 35 (b) 36
+  ( c) 37 (d) 38
+================ PAGE INDEX 59 (PAGE 60) ================
+51
+2 H.C.F. and L.C.M. of Numbers
+IMPORTANT FACTS AND FORMULAE
+ I. Factors and Multiples: If a number a divides another number b exactly, we say that a is a factor of b. In 
+this case, b is called a multiple of a.
+ II. Highest Common Factor (H.C.F.) or Greatest Common Measure (G.C.M.) or Greatest Common Divisor (G.C.D.): 
+The H.C.F. of two or more than two numbers is the greatest number that divides each of them exactly.
+	 	There	 are	two	methods	of	finding	the	H.C.F.	of	a	given	set	of	numbers:
+  1. Factorization Method:  Express each one of the given numbers as the product of prime factors. The 
+product of least powers of common prime factors gives H.C.F.
+  2. Division Method: Suppose	we	have	to	find	the	H.C.F.	of	two	given	numbers.	Divide	the	larger	number	
+by the smaller one. Now, divide the divisor by the remainder. Repeat the process of dividing the 
+preceding number by the remainder last obtained till zero is obtained as remainder. The last divisor is 
+the required H.C.F.
+   Finding the H.C.F. of more than two numbers:  Suppose	we	have	to	find	the	H.C.F.	of	three	numbers.	
+Then, H.C.F. of [(H.C.F. of any two) and (the third number)] gives the H.C.F. of three given numbers.
+   Similarly, the H.C.F. of more than three numbers may be obtained.
+ III. Least Common Multiple (L.C.M.): The least number which is exactly divisible by each one of the given 
+numbers is called their L.C.M.
+  1. Factorization Method of Finding L.C.M. : Resolve each one of the given numbers into a product of prime 
+factors. Then, L.C.M. is the product of highest powers of all the factors.
+  2. Common Division Method (Short-cut Method) of Finding L.C.M. : Arrange the given numbers in a row 
+in	any	order.	Divide	by	a	number	which	divides	exactly	at	least	two	of	the	given	numbers	and	carry	
+forward the numbers which are not divisible. Repeat the above process till no two of the numbers are 
+divisible by the same number except 1. The product of the divisors and the undivided numbers is the 
+required L.C.M. of the given numbers.
+ IV. Product of two numbers = Product of their H.C.F. and L.C.M.
+ V. Co-primes: Two numbers are said to be co-primes if their H.C.F. is 1.
+ VI. H.C.F. and L.C.M. of Fractions:
+  1. H.C.F. = H.C.F. of Numerators
+L.C.M. of Denominators  2. L.C.M. = L.C.M. of Numerators
+H.C.F. of Denominators
+ VII. H.C.F. and L.C.M. of Decimal Fractions: In given numbers, make the same number of decimal places by 
+annexing	zeros	in	some	numbers,	if	necessary.	Considering	these	numbers	without	decimal	point,	find	
+H.C.F. or L.C.M. as the case may be. Now, in the result, mark off as many decimal places as are there in 
+each of the given numbers.
+ VIII. Comparison of Fractions: Find the L.C.M. of the denominators of the given fractions. Convert each of the 
+fractions into an equivalent fraction with L.C.M. as the denominator, by multiplying both the numerator 
+and denominator by the same number. The resultant fraction with the greatest numerator is the greatest.
+SOLVED EXAMPLES
+ Ex. 1. Find the H.C.F. of 2 3 × 32 × 5 × 74, 22 × 35 × 52 × 73, 23 × 53 × 72.
+ Sol. The prime numbers common to given numbers are 2, 5 and 7.
+	 	∴  H.C.F. = 2 2 × 5 × 7 2 = 980.
+ Ex. 2. Find the H.C.F. of:
+  (a) 42, 63 and 140                     (b)  108, 288 and 360        (L.I.C.A.D.O., 2008)
+ Sol. (a) 42 =  2 × 3 × 7, 63 = 3 2 × 7 and 140 = 2 2 × 5 × 7. 
+	 	∴  H.C.F. = 7. 
+================ PAGE INDEX 61 (PAGE 62) ================
+H.C.F. AND L.C.M. OF NUMBERS 53
+  Then, their H.C.F. is x. So, x = 13.
+	 	∴  The numbers are (15 × 13 and 11 × 13), i.e., 195 and 143.
+Ex. 11. Two numbers are in the ratio of 3: 4. Their L.C.M. is 84 . Find the numbers. (S.S.C., 2010)
+ Sol. Let the numbers be 3 x and 4 x. Then, their L.C.M. = 12 x.
+  So, 12x = 84 or x = 7.
+  ∴ The numbers are 21 and 28.
+ Ex. 12. The H.C.F. of two numbers is 11 and their L.C.M. is 693. If one of the numbers is 77 , find the other.
+(P.C.S., 2009)
+ Sol. Other number = 11 693 99.77
+× =
+ Ex. 13. The sum of two numbers is 462 and their highest common factor is 22. What is the minimum number of 
+pairs that satisfy these conditions?  (M.A.T., 2004)
+ Sol. Let the required numbers be 22 a and 22 b.
+  Then, 22a + 22 b = 462 ⇒ a + b = 21.
+  Now, co-primes with sum 21 are (1, 20), (2, 19), (4, 17), (5, 16), (8, 13) and (10, 11).
+  ∴ Required numbers are (22 × 1, 22 × 20), (22 × 2, 22 × 19),
+  (22 × 4, 22 × 17), (22 × 5, 22 × 16), (22 × 8, 22 × 13) and (22 × 10, 22 ×  11).
+  Clearly, the number of such pairs is 6.
+ Ex. 14. The sum and difference of the L.C.M and H.C.F. of two numbers are 592 and 518 respectively. If the sum of 
+the numbers be 296, find the numbers.  (Section Officer’s, 2006)
+ Sol. Let L and H denote the L.C.M and H.C.F of the two numbers.
+  Then, L + H = 592                ...( i)  And, L – H = 518  ....(ii)
+  Adding (i) and ( ii),	we	get:	2L	=	1110	or	L	=	555.
+  ∴ H = 592 – 555 = 37.
+  So, H.C.F. = 37 and L.C.M. = 555.
+  Let the numbers be x and (296 – x).
+  Then, x (296 – x) = 555 × 37 ⇒ x2 – 296 x + 20535 = 0
+  ⇒ x2 – 185 x – 111 x + 20535 = 0 ⇒ x ( x – 185) – 111 ( x – 185) = 0
+  ⇒ (x – 185) ( x – 111) = 0 ⇒ x = 185 or x = 111. 
+  Hence the numbers are 111 and 185.
+Ex. 15. Find the greatest possible length which can be used to measure exactly the lengths 4 m 95 cm, 9 m and 16 m 65 cm.
+ Sol. Required length = H.C.F. of 495 cm, 900 cm and 1665 cm.
+  495 = 3 2 × 5 × 11, 900 = 2 2 × 3 2 × 5 2, 1665 = 3 2 × 5 × 37.
+	 	∴  H.C.F. = 3 2 × 5 = 45.
+    Hence, required length = 45 cm.
+Ex. 16. Find the greatest number which on dividing 1657 and 2037 leaves remainders 6 and 5 respectively.
+(Section Officer’s, 2006)
+ Sol. Required number = H.C.F. of (1657 – 6) and (2037 – 5) = H.C.F. of 1651 and 2032
+    1651 ) 2032 ( 1
+ 1651
+              381 ) 1651 ( 4
+ 1524
+ 127 ) 381 ( 3
+  381
+   ×
+∴ Required number = 127.
+Ex. 17. Find the largest number which divides 62 , 132 and 237 to leave the same remainder in each case.
+ Sol. Required number = H.C.F. of (132 – 62), (237 – 132) and (237 – 62)
+                     =  H.C.F. of 70, 105 and 175 = 35.
+Ex. 18. The H.C.F. of two numbers, each having three digits is 17 and their L.C.M. is 714. Find the sum of the  
+numbers.  (C.P.O., 2007)
+================ PAGE INDEX 64 (PAGE 65) ================
+56 QUANTITATIVE APTITUDE
+  ( a) 13
+16  ( b) 15
+16
+  ( c) 17
+26  ( d) 25
+26
+ 7. Reduce 128352
+238368  to its lowest terms.  (IGNOU, 2003)
+  ( a) 3
+4  ( b) 5
+13
+  ( c) 7
+13  ( d) 9
+13
+ 8. The simplest reduction to the lowest terms of 
+116, 690,151
+427, 863, 887 is  (SNAP, 2004)
+  ( a) 3
+11  ( b) 7
+11
+  ( c) 11
+3  ( d) None of these
+ 9. The highest common factor of 0 and 6 is
+(P.C.S., 2008)
+  ( a) 0 (b) 3
+  ( c) 6 (d)	Undefined
+ 10. The H.C.F. of 2 2 × 3 3 × 5 5, 2 3 × 3 2 × 5 2 × 7 and  
+24 × 3 4 × 5 × 7 2 × 11 is
+  ( a) 2 2 × 3 2 × 5 (b) 22 × 3 2 × 5 × 7 × 11
+  ( c) 2 4 × 3 4 × 5 5 ( d)  24 × 3 4 × 5 5 × 7 × 11
+ 11. The H.C.F. of 2 4 × 3 2 × 5 3 × 7, 2 3 × 3 3 × 5 2 × 7 2 and 
+3 × 5 × 7 × 11 is
+  ( a) 105 (b) 1155
+  ( c) 2310 (d) 27720
+ 12. H.C.F. of 4 × 27 × 3125, 8 × 9 × 25 × 7 & 16 × 81 
+× 5 × 11 × 49 is 
+  ( a) 180 (b) 360
+  ( c) 540 (d) 1260
+ 13. Find the highest common factor of 36 and 84.
+(R.R.B., 2003)
+  ( a) 4 (b) 6
+  ( c) 12 (d) 18
+ 14. Even numbers are formed by taking at 
+least two at a time from the numbers   
+0, 4, 8, 9. Their H.C.F. is  (Hotel Management, 2007)
+  ( a) 2 (b) 4
+  ( c) 10 (d) None of these
+ 15. The H.C.F. of 204, 1190 and 1445 is
+  ( a) 17 (b) 18
+  ( c) 19 (d) 21
+ 16. Which of the following is a pair of co-primes?
+  ( a) (16, 62) (b) (18, 25)
+  ( c) (21, 35) (d) (23, 92)
+ 17. The H.C.F. of 2923 and 3239 is
+  ( a) 37 (b) 47
+  ( c) 73 (d) 79
+ 18. The H.C.F. of 3556 and 3444 is 
+  ( a) 23 (b) 25
+  ( c) 26 (d) 28
+ 19. The L.C.M. of 2 3 × 3 2 × 5 × 11, 2 4 × 3 4 × 5 2 × 7 and 
+25 × 3 3 × 5 3 × 7 2 × 11 is 
+  ( a) 23 × 3 2 × 5 (b) 25 × 3 4 × 5 3
+  ( c) 2 3 × 3 2 × 5 × 7 × 11 (d) 25 × 3 4 × 5 3 × 7 2 × 11
+ 20. Find the lowest common multiple of 24, 36 and 40.
+  ( a) 120 (b) 240
+  ( c) 360 (d) 480
+ 21. The L.C.M. of 22, 54, 108, 135 and 198 is
+  ( a) 330 (b) 1980
+  ( c) 5940 (d) 11880
+ 22. The L.C.M. of 148 and 185 is 
+  ( a) 680 (b) 740
+  ( c) 2960 (d) 3700
+ 23. The H.C.F. of ,,ac e
+bd f  is equal to (I.A.M. 2007)
+  ( a) L.C.M. of ,  ,  
+H.C.F. of ,  ,  
+ace
+bdf  ( b) H.C.F. of ,  , 
+L.C.M. of ,  ,  
+a ce
+bdf
+  ( c) H.C.F. of ,  ,  
+H.C.F. of ,  ,  
+ace
+bdf  ( d) ace
+bdf
+ 24. The H.C.F. of 2 8 64 10, , and is :3 9 81 27
+  ( a) 2
+3
+ ( b) 2
+81
+  ( c) 160
+3  ( d) 160
+81
+ 25. The H.C.F. of 9 12 18 21, , and is10 25 35 40
+  (a) 3
+5
+ ( b) 252
+5
+  ( c) 3
+1400  ( d) 63
+700
+ 26. The L.C.M. of 152 4,,, i s3 6 9 27
+  ( a) 1
+54  ( b) 10
+27
+  ( c) 20
+3  ( d) None of these
+ 27. The L.C.M. of 234 9, , , is3 5 7 13
+  ( a) 36 (b) 1
+36
+  ( c) 1
+1365
+ ( d) 12
+455
+================ PAGE INDEX 71 (PAGE 72) ================
+H.C.F. AND L.C.M. OF NUMBERS 63
+  So, H.C.F. of 116,690,151 and 427,863,887 = 38896717.
+  116, 690, 151 116690151 38896717 3 .427, 863, 887 427863887 38896717 11
+÷== ÷
+ 9.	Since	 division	by	0	is	undefined,	so	0	cannot	be	a	factor	
+of any natural number.
+	 	Hence,	 H.C.F.	of	0	and	6	is	undefined.
+ 10. H.C.F. = Product of lowest powers of common factors
+   = 2 2 × 3 2 × 5.
+ 11. H.C.F. = Product of lowest powers of common factors
+   = 3 × 5 × 7 = 105.
+ 12. 4 × 27 × 3125 = 2 2 × 3 3 × 5 5;
+  8 × 9 × 25 × 7 = 2 3 × 3 2 × 5 2 × 7;
+  16 × 81 × 5 × 11 × 49 = 2 4 × 3 4 × 5 × 7 2 × 11.
+  ∴ H.C.F. = 2 2 × 3 2 × 5 = 180.
+ 13. 36 = 2 2 × 3 2; 84 = 2 2 × 3 × 7. 
+  ∴	 H.C.F. = 2 2 × 3 = 12.
+ 14. Since all the numbers formed are even, 2 is a common 
+factor.
+  Also, H.C.F. of two of the numbers i.e., 48 and 490, is 2.
+  So, the H.C.F. of all the numbers formed is 2.
+ 15. 204 = 2 2 × 3 × 17;
+  1190 = 2 × 5 × 7 × 17; 1445 = 5 × 17 2.
+  ∴ H.C.F. = 17.
+ 16. H.C.F. of 18 and 25 is 1. So, they are co-primes.
+ 17. 2923 ) 3239 ( 1
+    2923
+    316 ) 2923 ( 9
+        2844
+        79) 316 ( 4
+          316
+           ×
+  ∴ H.C.F. = 79.
+ 18. 3444 ) 3556 ( 1
+    3444
+    112 ) 3444 ( 30
+          3360
+        84 ) 112 ( 1
+           84
+           28 
+) 84 ( 3
+               84
+             ×
+  ∴ H.C.F. = 28.
+ 19. L.C.M. = Product of highest powers of prime factors =  
+25 × 3 4 × 5 3 × 7 2 × 11.
+ 20. 2 24 36 40
+2 12 18 20
+2 6 9 10
+33 9 5
+135
+−−
+−−
+−−
+−−
+−−
+  L.C.M. = 2 × 2 × 2 × 3 × 3 × 5 = 360.
+ 21. 2 22 54 108 135 198
+3 11 27 54 135 99
+3 11 9 18 45 33
+3 11 3 6 15 11
+11 11 1 2 5 11
+11 2 5 1
+−− − −
+−− − −
+−− − −
+−− − −
+−− − −
+−− − −
+  L.C.M. = 2 × 3 × 3 × 3 × 11 × 2 × 5 = 5940.
+ 22. H.C.F. of 148 and 185 is 37. ∴ L.C.M. = × =
+148 185 740.37
+ 23. H.C.F. of fractions = H.C.F. of Numerators .L.C.M. of Denominators
+  H.C.F. of = H.C.F. of ,  ,  ,, .L.C.M. of ,  ,  
+a c e ace
+b d f bdf
+ 24. Required H.C.F. = H.C.F. of 2, 8, 64, 10 2 .L.C.M. of 3, 9, 81, 27 81=
+ 25. Required H.C.F.  = =H.C.F. of 9, 12, 18, 21 3 .L.C.M. of 10, 25, 35, 40 1400
+ 26. Required L.C.M. = L.C.M. of 1, 5, 2, 4 20 .H.C.F. of 3, 6, 9, 27 3=
+ 27. Required L.C.M. = L.C.M. of 2, 3, 4, 9 36 = 36.H.C.F. of 3, 5, 7, 13 1=
+ 28. Required L.C.M. = ==L.C.M. of 3, 6, 9 18 18.H.C.F. of 4, 7, 8 1
+ 29. Given	numbers	with	two	decimal	places	are:	1.75,	5.60	
+and	7.00.	Without	decimal	places,	these	numbers	are:	175,	
+560 and 700, whose H.C.F. is 35.
+  ∴ H.C.F. of given numbers = 0.35.
+ 30. Given numbers are 1.08, 0.36 and 0.90. H.C.F. of 108, 36 
+and 90 is 18.
+  ∴ H.C.F. of given numbers = 0.18.
+ 31. Given numbers are 0.54, 1.80 and 7.20. H.C.F. of 54, 180 
+and 720 is 18.
+  ∴ H.C.F. of given numbers = 0.18.
+ 32.  Given numbers are 3.00, 2.70 and 0.09. L.C.M. of 300, 270 
+and 9 is 2700.
+  ∴ L.C.M. of given numbers = 27.00 = 27.
+ 33. L.C.M. of A and B is B; L.C.M. of B and C is C ⇒ L.C.M. 
+of A, B and C is C.
+ 34.  3240 = 2 3 × 3 4 × 5; 3600 = 2 4 × 3 2 × 5 2;
+  H.C.F. = 36 = 2 2 × 3 2.
+  Since H.C.F. is the product of lowest powers of common 
+factors, so the third number must have (2 2 × 3 2) as its 
+factor.
+  Since L.C.M. is the product of highest powers of common 
+prime factors, so the third number must have 3 5 and 7 2 
+as its factors.
+  ∴ Third number = 2 2 × 3 5 × 7 2.
+ 35.  Let the required numbers be x, 2 x and 3 x. Then, their 
+H.C.F. = x. So, x = 12.
+  ∴ The numbers are 12, 24 and 36.
+================ PAGE INDEX 72 (PAGE 73) ================
+64 QUANTITATIVE APTITUDE
+ 36.  Let the numbers be 3 x and 4 x. Then, their H.C.F. = x. So, 
+x = 4.
+  So, the numbers are 12 and 16.
+  L.C.M. of 12 and 16 = 48.
+ 37.  Let the required numbers be 27 a and 27 b.
+  Then, 27a + 27 b = 216  ⇒  a + b = 8.
+  Now, co-primes with sum 8 are (1, 7) and (3, 5).
+  ∴ Required numbers are (27 × 1, 27 × 7) and (27 × 3, 
+27 × 5) i.e., (27, 189) and (81, 135).
+  Out of these, the one available in the given alternatives 
+is the pair (27, 189).
+ 38.  Let the required numbers be 33 a and 33 b.
+  Then, 33a + 33 b = 528  ⇒  a + b = 16.
+  Now, co-primes with sum 16 are (1, 15), (3, 13), (5, 11) 
+and (7, 9).
+  ∴ Required numbers are (33 × 1, 33 × 15), (33 × 3, 33 
+× 13), (33 × 5, 33 × 11), (33 × 7, 33 × 9).
+  The number of such pairs is 4.
+ 39.  Numbers with H.C.F. 15 must contain 15 as a factor.
+  Now, multiples of 15 between 40 and 100 are 45, 60, 75 
+and 90.
+  ∴ Number-pairs with H.C.F. 15 are (45, 60), (45, 75), 
+(60, 75) and (75, 90).
+  [ Q  H.C.F. of (60, 90) is 30 and that of (45, 90) is 45]
+  Clearly, there are 4 such pairs.
+ 40.  Out of the given numbers, the two with H.C.F. 12 and 
+difference 12 are 84 and 96.
+ 41.  Let the numbers be 37 a and 37 b.
+  Then, 37a × 37 b = 4107  ⇒ ab = 3.
+  Now, co-primes with product 3 are (1, 3).
+  So, the required numbers are (37 × 1, 37 × 3) i.e., (1, 111).
+  ∴ Greater number = 111.
+ 42.  Let the numbers be 13 a and 13 b.
+  Then, 13a × 13 b = 2028 ⇒  ab = 12.
+  Now, co-primes with product 12 are (1, 12) and (3, 4).
+  So, the required numbers are (13 × 1, 13 × 12) and (13 × 
+3, 13 × 4).
+  Clearly, there are 2 such pairs.
+ 43.  Since the numbers are co-prime, they contain only 1 as 
+the common factor.
+  Also, the given two products have the middle number in 
+common.
+  So, middle number = H.C.F. of 551 and 1073 = 29;
+  First number = 551 19;29
+ =
+ 
+Third number = 1073 37.29
+ =
+  ∴ Required sum = (19 + 29 + 37) = 85.
+ 44. Let the numbers be 13 x and 15 x.
+  Then, their L.C.M. = 195 x.
+  So, 195 x = 39780 or x = 204.
+  ∴ The numbers are 2652 and 3060.
+ 45. Let the numbers be 3 x, 4 x and 5 x.
+  Then, their L.C.M. = 60 x.
+  So, 60x = 2400 or x = 40.
+  ∴ The numbers are (3 × 40), (4 × 40) and (5 × 40).
+  Hence, required H.C.F. = 40.
+ 46. Let the numbers be 2 x, 3 x, 5 x and 7 x respectively.
+  Then, their L.C.M. = (2 × 3 × 5 × 7) x = 210x. 
+                   [ Q 2, 3, 5, 7 are prime numbers]
+  So, 210x = 630 or x = 3.
+  ∴ The numbers are 6, 9, 15 and 21.
+  Required difference = 21 – 6 = 15.
+ 47. Other number = × =
+12 336 48.84
+ 48. L.C.M. = =324 108.3
+ 49. Product of numbers = H.C.F. × L.C.M.
+  ⇒ pq = x × L.C.M.
+  ⇒ L.C.M. = == () .pq p xy pyxx
+ 50.  Let the numbers be x and (2000 – x).
+  Then, their L.C.M. = x (2000 – x).
+  So, x (2000 – x) = 21879
+   ⇔ x2 – 2000 x + 21879 = 0
+   ⇔ ( x – 1989) ( x – 11) = 0
+   ⇔ x = 1989 or x = 11.
+  Hence, the numbers are 1989 and 11.
+ 51.  Let the numbers be x and 4 x.
+  Then, x × 4 x = 84 × 21 ⇔ x2 = 84 21 21.4 x× ⇔=
+  Hence, larger number = 4 x = 84.
+ 52.  Let the numbers be x and (100 – x).
+  Then, x (100 – x) = 5 × 495
+   ⇔ x2 – 100 x + 2475 = 0
+   ⇔ ( x – 55) ( x – 45) = 0
+   ⇔ x = 55 or x = 45.
+  ∴ The numbers are 45 and 55.
+  Required difference = (55 – 45) = 10.
+ 53.  Let the numbers be x and ( x + 2).
+  Then, x ( x + 2) = 24
+   ⇔ x2 + 2 x – 24 = 0
+   ⇔ ( x – 4) ( x + 6) = 0 ⇔ x = 4.
+  So, the numbers are 4 and 6.
+ 54.  Let the numbers be a and b.
+  Then, a + b = 36 and ab = 3 × 105 = 315.
+  ∴ Required sum = ++= = =1 1 36 4 .315 35
+ab
+a b ab
+ 55.  Let H.C.F be h and L.C.M. be l.
+  Then, l = 12 h and l + h = 403.
+  ∴ 12 h + h = 403 or h = 31.
+  So l = (403 – 31) = 372.
+  Hence, other number = × =
+
+31 372 124.93

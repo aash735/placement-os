@@ -7,6 +7,7 @@ import { PageHeader } from "@/components/layout/page-header";
 import { GlassCard } from "@/components/ui/glass-card";
 import { useProgressStore } from "@/lib/progress-store";
 import { aptitudeQuestions } from "@/data/aptitude-questions";
+import { validateQuestion } from "@/lib/aptitude-validator";
 import { 
   ChevronLeft, 
   ChevronRight, 
@@ -92,8 +93,8 @@ export default function PracticeRoomPage() {
     logAptitudePracticeAttempt
   } = useProgressStore();
 
-  // Filter questions for this topic
-  const questions = aptitudeQuestions.filter((q) => q.topic === topicId);
+  // Filter questions for this topic and ensure they pass the strict validation
+  const questions = aptitudeQuestions.filter((q) => q.topic === topicId && validateQuestion(q).valid);
   const topicName = TOPIC_NAMES[topicId] || topicId.replace(/-/g, " ");
 
   // Room states
@@ -499,43 +500,79 @@ export default function PracticeRoomPage() {
                 </button>
               </div>
             </div>
+
+            {/* Diagnostic Source IDs Debug Panel */}
+            <div className="mt-6 pt-4 border-t border-white/5 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 text-[10px] text-zinc-500 font-mono">
+              <div className="flex flex-wrap gap-x-4">
+                <span>Question ID: {currentQuestion.id}</span>
+                <span>Options ID: {currentQuestion.optionsSourceId || currentQuestion.id}</span>
+                <span>Answer ID: {currentQuestion.answerSourceId || currentQuestion.id}</span>
+                <span>Explanation ID: {currentQuestion.explanationSourceId || currentQuestion.id}</span>
+              </div>
+              {((currentQuestion.optionsSourceId && currentQuestion.optionsSourceId !== currentQuestion.id) ||
+                (currentQuestion.answerSourceId && currentQuestion.answerSourceId !== currentQuestion.id) ||
+                (currentQuestion.explanationSourceId && currentQuestion.explanationSourceId !== currentQuestion.id)) && (
+                <span className="text-rose-400 font-semibold animate-pulse">⚠️ Mismatched Component Source Detected!</span>
+              )}
+            </div>
           </GlassCard>
 
           {/* EXPLANATION & SHORTCUTS */}
-          {isExplanationRevealed && (
-            <div className="space-y-6 animate-in fade-in slide-in-from-bottom-3 duration-300">
-              <GlassCard className="p-6 border-emerald-500/10 relative overflow-hidden" hover={false}>
-                <div className="absolute top-0 right-0 h-32 w-32 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-                <h3 className="text-base font-bold text-white flex items-center mb-4">
-                  <Lightbulb className="h-5 w-5 mr-2 text-emerald-400" />
-                  Step-by-Step Explanation
-                </h3>
-                <p className="text-sm text-zinc-300 leading-relaxed whitespace-pre-line font-mono text-[13px]">
-                  <MathRenderer text={currentQuestion.explanation} />
-                </p>
-              </GlassCard>
+          {isExplanationRevealed && (() => {
+            const P0_MSG = 'Detailed explanation will be available in a future update.';
+            const isP0 = !currentQuestion.explanation || currentQuestion.explanation.trim() === P0_MSG;
+            return (
+              <div className="space-y-6 animate-in fade-in slide-in-from-bottom-3 duration-300">
+                {isP0 ? (
+                  <GlassCard className="p-6 border-amber-500/15 relative overflow-hidden" hover={false}>
+                    <div className="absolute top-0 right-0 h-32 w-32 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
+                    <h3 className="text-base font-bold text-white flex items-center mb-3">
+                      <Lightbulb className="h-5 w-5 mr-2 text-amber-400" />
+                      Explanation
+                    </h3>
+                    <p className="text-sm text-amber-300/80 leading-relaxed">
+                      Detailed explanation will be available in a future update.
+                    </p>
+                    <p className="text-xs text-zinc-500 mt-2">
+                      The correct answer is highlighted above.
+                    </p>
+                  </GlassCard>
+                ) : (
+                  <GlassCard className="p-6 border-emerald-500/10 relative overflow-hidden" hover={false}>
+                    <div className="absolute top-0 right-0 h-32 w-32 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+                    <h3 className="text-base font-bold text-white flex items-center mb-4">
+                      <Lightbulb className="h-5 w-5 mr-2 text-emerald-400" />
+                      Step-by-Step Explanation
+                    </h3>
+                    <p className="text-sm text-zinc-300 leading-relaxed whitespace-pre-line font-mono text-[13px]">
+                      <MathRenderer text={currentQuestion.explanation} />
+                    </p>
+                  </GlassCard>
+                )}
 
-              {currentQuestion.shortcuts && currentQuestion.shortcuts.length > 0 && (
-                <GlassCard className="p-6 border-violet-500/10 relative overflow-hidden" hover={false}>
-                  <div className="absolute top-0 right-0 h-32 w-32 bg-violet-500/5 rounded-full blur-3xl pointer-events-none" />
-                  <h3 className="text-base font-bold text-white flex items-center mb-4">
-                    <Sparkles className="h-5 w-5 mr-2 text-violet-400" />
-                    Antigravity Shortcuts & Formulas
-                  </h3>
-                  <ul className="space-y-2.5">
-                    {currentQuestion.shortcuts.map((shortcut, i) => (
-                      <li key={i} className="flex items-start text-sm text-zinc-300 leading-relaxed">
-                        <span className="h-5 w-5 rounded-md bg-violet-500/15 border border-violet-500/20 text-violet-400 flex items-center justify-center text-[10px] font-bold shrink-0 mr-3 mt-0.5 font-mono">
-                          {i + 1}
-                        </span>
-                        <span>{shortcut}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </GlassCard>
-              )}
-            </div>
-          )}
+                {currentQuestion.shortcuts && currentQuestion.shortcuts.length > 0 && (
+                  <GlassCard className="p-6 border-violet-500/10 relative overflow-hidden" hover={false}>
+                    <div className="absolute top-0 right-0 h-32 w-32 bg-violet-500/5 rounded-full blur-3xl pointer-events-none" />
+                    <h3 className="text-base font-bold text-white flex items-center mb-4">
+                      <Sparkles className="h-5 w-5 mr-2 text-violet-400" />
+                      Antigravity Shortcuts &amp; Formulas
+                    </h3>
+                    <ul className="space-y-2.5">
+                      {currentQuestion.shortcuts.map((shortcut, i) => (
+                        <li key={i} className="flex items-start text-sm text-zinc-300 leading-relaxed">
+                          <span className="h-5 w-5 rounded-md bg-violet-500/15 border border-violet-500/20 text-violet-400 flex items-center justify-center text-[10px] font-bold shrink-0 mr-3 mt-0.5 font-mono">
+                            {i + 1}
+                          </span>
+                          <span>{shortcut}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </GlassCard>
+                )}
+              </div>
+            );
+          })()}
+
         </div>
 
         {/* SIDE BAR QUESTION MAP */}

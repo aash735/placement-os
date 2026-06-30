@@ -6,6 +6,7 @@ import { AppShell } from "@/components/layout/app-shell";
 import { GlassCard } from "@/components/ui/glass-card";
 import { useProgressStore } from "@/lib/progress-store";
 import { aptitudeQuestions, AptitudeQuestion } from "@/data/aptitude-questions";
+import { validateQuestion } from "@/lib/aptitude-validator";
 import { motion } from "framer-motion";
 import {
   TrendingUp,
@@ -60,7 +61,7 @@ export default function ReviewPage() {
       
       // Load questions that were in this attempt
       const attemptQuestionIds = Object.keys(foundAttempt.answers);
-      const attemptQs = aptitudeQuestions.filter((q) => attemptQuestionIds.includes(q.id));
+      const attemptQs = aptitudeQuestions.filter((q) => attemptQuestionIds.includes(q.id) && validateQuestion(q).valid);
       setQuestions(attemptQs);
 
       // Generate simulated leaderboard

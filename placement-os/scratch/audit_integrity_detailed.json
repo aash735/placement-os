@@ -1,0 +1,234 @@
+{
+  "summary": {
+    "total": 1568,
+    "clean": 1543,
+    "corrupted": 25
+  },
+  "flaggedQuestions": [
+    {
+      "id": "quant-pct-1",
+      "question": "A shopkeeper sells an article at a loss of 12.5%. If he had sold it for $22.50 more, he would have gained 6%. Find the cost price of the article.",
+      "category": "quant",
+      "topic": "percentages",
+      "issues": [
+        "Explanation contains unbalanced parentheses, square brackets, or curly braces"
+      ]
+    },
+    {
+      "id": "quant-ratio-2",
+      "question": "The ages of A and B are in the ratio 5:7. Eight years ago, their ages were in the ratio 7:11. What are their present ages?",
+      "category": "quant",
+      "topic": "ratios",
+      "issues": [
+        "Explanation contains unbalanced parentheses, square brackets, or curly braces"
+      ]
+    },
+    {
+      "id": "quant-square-roots-and-cube-roots-50",
+      "question": "Which number should replace both the question marks in the following equation? (Bank P.O., 2008) ? 11 1/1776 ?=",
+      "category": "quant",
+      "topic": "simplification",
+      "issues": [
+        "Explanation contains OCR page/line number leak (word stuck to numbers with dot)"
+      ]
+    },
+    {
+      "id": "tcs-ninja-quantitative-aptitude-3-r-1-q16",
+      "question": "An intelligence agency forms a code of two distinct digits selected from 0, 1, 2 … 9 such that the first digit of the code is nonzero. The code, handwritten on a slip, can however potentially create confusion, when read upside down-for examp le, the code 91 may appear as 16. How many codes are there for which no such confusion can arise?",
+      "category": "quant",
+      "topic": "general",
+      "issues": [
+        "Explanation contains corrupted fraction layout (e.g. space before dot or comma)"
+      ]
+    },
+    {
+      "id": "tcs-ninja-quantitative-aptitude-4-1-q14",
+      "question": "Alice and Bob play the following coins-on-a-stack game. 20 coins are stacked one above the other. One of them is a special (gold) coin and the rest are ordinary coins. The goal is to bring the gold c oin to the top by repeatedly mo ving the topmost coin to another position in the stack. Alice starts and the players take turns. A turn consists of moving the coin on the top to a position i below the top coin (0 ≤ i ≤ 20). We will call this an i-move (thus a 0-move implies doing nothing). The proviso is that an i-move cannot be repeated; for example once a player makes a 2-move, on subsequent turns neither player can make a 2-move. If the gold coin happens to be on top when it’s a player’s turn then the player wins the game. Initially, the gold coin i s the third coin from the top. Then",
+      "category": "quant",
+      "topic": "general",
+      "issues": [
+        "Question text appears truncated at the end"
+      ]
+    },
+    {
+      "id": "tcs-ninja-quantitative-aptitude-5-1-q8",
+      "question": "One the Planet, Oz, there are 8 days in a week – Sunday to Saturday and another day called Oz day. There are 36 hours in a day and each hours has 90 min while each minute has 60 sec. As on earth, hour hand covers the dial twice every day. Find the approximate angle between the hands of clock on Oz when time is 14.40 am",
+      "category": "quant",
+      "topic": "general",
+      "issues": [
+        "Explanation contains unbalanced parentheses, square brackets, or curly braces"
+      ]
+    },
+    {
+      "id": "tcs-ninja-quantitative-aptitude-5-1-q20",
+      "question": "Let n! = 1/2 x x 3 x……….x n for integer n> 1. If p = 1! + (2/2 x!) + (3/3 x!) + … … ( 0 1/10 x!) , then p+2 when divided by 11! Leaves remainder of",
+      "category": "quant",
+      "topic": "general",
+      "issues": [
+        "Question text appears truncated at the end"
+      ]
+    },
+    {
+      "id": "tcs-ninja-verbal-ability-2-1-q6",
+      "question": "Bairn",
+      "category": "verbal",
+      "topic": "vocab",
+      "issues": [
+        "Question text too short (< 15 chars)"
+      ]
+    },
+    {
+      "id": "tcs-ninja-verbal-ability-2-1-q7",
+      "question": "Culpable",
+      "category": "verbal",
+      "topic": "vocab",
+      "issues": [
+        "Question text too short (< 15 chars)"
+      ]
+    },
+    {
+      "id": "tcs-ninja-verbal-ability-3-1-q6",
+      "question": "Infirm",
+      "category": "verbal",
+      "topic": "vocab",
+      "issues": [
+        "Question text too short (< 15 chars)"
+      ]
+    },
+    {
+      "id": "tcs-ninja-verbal-ability-3-1-q8",
+      "question": "Prosaic",
+      "category": "verbal",
+      "topic": "vocab",
+      "issues": [
+        "Question text too short (< 15 chars)"
+      ]
+    },
+    {
+      "id": "tcs-ninja-verbal-ability-4-1-q7",
+      "question": "Yoke",
+      "category": "verbal",
+      "topic": "vocab",
+      "issues": [
+        "Question text too short (< 15 chars)"
+      ]
+    },
+    {
+      "id": "tcs-ninja-verbal-ability-4-1-q9",
+      "question": "Egregious",
+      "category": "verbal",
+      "topic": "vocab",
+      "issues": [
+        "Question text too short (< 15 chars)"
+      ]
+    },
+    {
+      "id": "tcs-ninja-verbal-ability-5-r-1-q6",
+      "question": "Indulge",
+      "category": "verbal",
+      "topic": "vocab",
+      "issues": [
+        "Question text too short (< 15 chars)"
+      ]
+    },
+    {
+      "id": "tcs17-03t-q2",
+      "question": "Continue statement used for",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Question text appears truncated at the end"
+      ]
+    },
+    {
+      "id": "tcs17-03t-q5",
+      "question": "In the context of the following printf() in C, pick the best statement.\ni) printf(\"%d\",8);\nii) printf(\"%d\",090);\niii) printf(\"%d\",00200);\niv) printf(\"%d\",0007000);",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Explanation contains unbalanced parentheses, square brackets, or curly braces"
+      ]
+    },
+    {
+      "id": "tcs17-03t-q8",
+      "question": "UML Meaning is",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Question text too short (< 15 chars)"
+      ]
+    },
+    {
+      "id": "tcs17-04t-r-q1",
+      "question": "What is the purpose of ftell?",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Explanation contains empty formula brackets/placeholders"
+      ]
+    },
+    {
+      "id": "tcs17-04t-r-q4",
+      "question": "For passing command line argument the main function should be like",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Explanation contains empty formula brackets/placeholders"
+      ]
+    },
+    {
+      "id": "tcs17-05t-q2",
+      "question": "What is the output?",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Explanation contains OCR text leak (word immediately followed by digit)"
+      ]
+    },
+    {
+      "id": "tcs17-05t-q3",
+      "question": "How many times main() will get called?",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Explanation contains empty formula brackets/placeholders"
+      ]
+    },
+    {
+      "id": "tcs17-06t-q4",
+      "question": "The best data structure to check whether an arithmetic expression has balanced parenthesis is a",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Question text appears truncated at the end"
+      ]
+    },
+    {
+      "id": "tcs17-06t-q5",
+      "question": "Which of the below functions is Not declared in math.h?",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Explanation contains empty formula brackets/placeholders"
+      ]
+    },
+    {
+      "id": "tcs17-06t-q8",
+      "question": "If malloc() fails to allocate the requested memory, it returns",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Explanation contains empty formula brackets/placeholders"
+      ]
+    },
+    {
+      "id": "tcs17-06t-q9",
+      "question": "Which of the following is the correct order of evaluation for the below expression? z = x + y * z / 4% 2 - 1",
+      "category": "logical",
+      "topic": "coding-decoding",
+      "issues": [
+        "Explanation contains disconnected mixed arithmetic operators: \"+ - =\""
+      ]
+    }
+  ]
+}

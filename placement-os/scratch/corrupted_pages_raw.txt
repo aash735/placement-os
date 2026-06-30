@@ -1,0 +1,213 @@
+
+================ PAGE INDEX 253 (PAGE 254) ================
+PROBLEMS ON NUMBERS 245
+ 32. The sum and product of two numbers are 12 and 
+35 respectively. The sum of their reciprocals will be
+(S.S.C., 2007)  
+  ( a) 12
+35  ( b) 1
+35
+  ( c) 35
+8  ( d) 7
+32
+ 33. The sum of a positive number and its reciprocal is 
+thrice the difference of the number and its reciprocal. 
+The number is  
+  ( a) 2  ( b) 1
+2
+  ( c) 3  ( d) 1
+3
+ 34. The product of two whole numbers is 37. The square 
+root of the difference of the numbers is  (C.P.O., 2007)
+  ( a) 4.5 (b) 6
+  ( c) 7.5 (d) 8
+ 35. The product of two natural numbers is 17. Then, 
+the sum of the reciprocals of their squares is
+  ( a) 1
+289  ( b) 289
+290
+  ( c) 290
+289  ( d) 289
+ 36. If 12 2  is added to a number and the sum multiplied 
+by 14 2  and 3 is added to the product and the sum 
+is divided by 11,5 the quotient becomes 25. What is 
+the number?
+  ( a) 12 2  ( b) 13 2
+  ( c) 14 2  ( d) 15 2
+ 37. Three numbers are in the ratio 4 : 5 : 6 and their 
+average is 25. The largest number is 
+  ( a) 30 (b) 32
+  ( c) 36 (d) 42
+ 38. Three numbers are in the ratio of 3 : 4 : 6 and their 
+product is 1944. The largest of these numbers is
+(M.B.A., 2006)
+  ( a) 6 (b) 12
+  ( c) 18 (d) None of these
+ 39. The ratio between a two-digit number and the sum 
+of the digits of that number is 4 : 1. If the digit in 
+the unit’s place is 3 more than the digit in the ten’s 
+place, then the number is                   (M.B.A., 2004)
+  ( a) 24 (b) 36
+  ( c) 63 (d) 96
+ 40. Two numbers are such that the square of one is 
+224 less than 8 times the square of the other. If the 
+numbers be in the ratio of 3 : 4, the numbers are 
+  ( a) 6, 8 (b) 9, 12
+  ( c) 12, 16 (d) None of these
+ 41. Two numbers are such that the ratio between them 
+is 4 : 7. If each is increased by 4, the ratio becomes 
+3 : 5. The larger number is 
+  ( a) 36 (b) 48
+  ( c) 56 (d) 64
+ 42. The sum of three numbers is 264. If the first number 
+be twice the second and third number be one-third 
+of the first, then the second number is:  (R.R.B., 2004)
+  ( a) 48 (b) 54
+  ( c) 72 (d) 84
+ 43. The sum of two numbers is 22. Five times one 
+number is equal to 6 times the other. The bigger of 
+the two numbers is 
+  ( a) 10 (b) 12
+  ( c) 15 (d) 16
+ 44. One-fifth of a number is equal to 5
+8  of another 
+number. If 35 is added to the first number, it becomes 
+four times of the second number. The second number 
+is 
+  ( a) 25 (b) 40
+  ( c) 70 (d) 125
+ 45. The sum of two numbers is 25 and their difference 
+is 13. Find their product.
+  ( a) 104 (b) 114
+  ( c) 315 (d) 325
+ 46. If the sum of two numbers is 33 and their difference 
+is 15, the smaller number is
+  ( a) 9 (b) 12
+  ( c) 15 (d) 18
+ 47. The sum of two numbers is 40 and their difference 
+is 4. The ratio of the numbers is
+  ( a) 11 : 9 (b) 11 : 18
+  ( c) 21 : 19 (d) 22 : 9
+ 48. The product of two numbers is 192 and the sum 
+of these two numbers is 28. What is the smaller of 
+these two numbers?
+  ( a) 12 (b) 14
+  ( c) 16 (d) 18
+  ( e) None of these
+ 49. There are two numbers such that the sum of twice 
+the first number and thrice the second number is 100 
+and the sum of thrice the first number and twice the 
+second number is 120. Which is the larger number? 
+(Bank P.O., 2010)
+================ PAGE INDEX 257 (PAGE 258) ================
+PROBLEMS ON NUMBERS 249
+ 98. A number consists of 3 digits whose sum is 10. The 
+middle digit is equal to the sum of the other two 
+and the number will be increased by 99 if its digits 
+are reversed. The number is  (Hotel Management, 2003)
+  ( a) 145 (b) 253
+  ( c) 370 (d) 352 
+ 99. A two-digit number becomes five-sixth of itself when 
+its digits are reversed. The two digits differ by one. 
+The number is 
+  ( a) 45 (b) 54
+  ( c) 56 (d) 65
+ 100. If the square of a two-digit number is reduced by 
+the square of the number formed by reversing the 
+digits of the number, the final result is   (N.M.A.T., 2008)
+  ( a) divisible by 11 (b) divisible by 9 
+  ( c) necessarily irrational (d) Both ( a) and ( b)
+ 101. A number consists of two digits such that the digit 
+in the ten’s place is less by 2 than the digit in the 
+unit’s place. Three times the number added to 6
+7  
+times the number obtained by reversing the digits 
+equals 108. The sum of the digits in the number is 
+(S.S.C., 2003)
+  ( a) 6 (b) 7
+  ( c) 8 (d) 9
+ 102. The digit in the unit’s place of a number is equal 
+to the digit in the ten’s place of half of that number 
+and the digit in the ten’s place of that number is less 
+than the digit in unit’s place of half of the number 
+by 1. If the sum of the digits of the number is 7, 
+then what is the number?               (S.B.I.P.O., 2001)
+  ( a) 34 (b) 52
+  ( c) 162 (d) Data inadequate
+  ( e) None of these
+ 103. In a two-digit number, the digit in the unit’s place 
+is more than twice the digit in ten’s place by 1. If 
+the digits in the unit’s place and the ten’s place are 
+interchanged, difference between the newly formed 
+number and the original number is less than the 
+original number by 1. What is the original number?
+  ( a) 25 (b) 37
+  ( c) 49 (d) 52
+  ( e) 73
+ 104. A certain number of two digits is three times the 
+sum of its digits and if 45 be added to it, the digits 
+are reversed. The number is 
+(N.M.A.T. 2006; L.I.C.A.A.O., 2003)
+  ( a) 23 (b) 27
+  ( c) 32 (d) 72
+ 105. A two-digit number is such that the product of the 
+digits is 8. When 18 is added to the number, then 
+the digits are reversed. The number is (M.B.A., 2003)
+  ( a) 18 (b) 24
+  ( c) 42 (d) 81
+ 106. In a number of three digits, the digits in the unit’s 
+place and in the hundred’s place are equal and 
+the sum of all the digits is 8. The number of such 
+numbers is 
+  ( a) 3 (b) 4
+  ( c) 5 (d) 6
+ 107. In a three-digit number, the digit in the unit’s place 
+is 75% of the digit in the ten’s place. The digit in the 
+ten’s place is greater than the digit in the hundred’s 
+place by 1. If the sum of the digits in the ten’s place 
+and the hundred’s place is 15, what is the number?
+ (Bank P.O., 2006)
+  ( a) 687
+  ( b) 786
+  ( c) 795
+  ( d) Cannot be determined
+  ( e) None of these
+ 108. The product of two fractions is 14
+15  and their quotient 
+is 35 .24  The greater fraction is  (S.S.C., 2005)
+  ( a) 4
+5  ( b) 7
+6
+  ( c) 7
+4  ( d) 7
+3
+ 109. In a pair of fractions, fraction A is twice the fraction 
+B and the product of two fractions is 2 .25  What is 
+the value of fraction A?
+  ( a) 1
+5  ( b) 1
+25
+  ( c) 2
+5
+ ( d) Data inadequate
+ 110. If the difference between the reciprocal of a positive 
+proper fraction and the fraction itself be 9
+20 , then 
+the fraction is               (C.P.O., 2006)
+  ( a) 3
+5
+ ( b) 4
+5
+  ( c) 5
+4  ( d) 3
+10
+ 111. The sum of the numerator and denominator of a 
+fraction is 11. If 1 is added to the numerator and 2 
+is subtracted from the denominator, it becomes 2 .3  
+The fraction is 
+  ( a) 5
+6  ( b) 6
+5
+  ( c) 3
+8  ( d) 8
+3

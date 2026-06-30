@@ -9,7 +9,7 @@
       "apathetic"
     ],
     "answer": "optimistic",
-    "explanation": "Step 1\nThe word 'but' signals a contrast.\n\nStep 2\nCaution contrasts with confidence or hope.\n\nFinal Calculation\nTherefore, the manager was hopeful/confident ('optimistic'), yet cautious.\n\nAnswer: optimistic",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "Look for contrast clues: 'but remained cautious' => opposite of caution/doubt is optimism"
     ],
@@ -29,7 +29,18 @@
     "companyTags": [
       "TCS",
       "Accenture"
-    ]
+    ],
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "verbal-grammar-2",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "optionsSourceId": "verbal-grammar-2",
+    "answerSourceId": "verbal-grammar-2",
+    "explanationSourceId": "verbal-grammar-2",
+    "correctAnswer": "optimistic",
+    "sourceReference": "manual_seed"
   },
   {
     "id": "verbal-grammar-3",
@@ -41,7 +52,7 @@
       "The group of students is plan a study trip."
     ],
     "answer": "The group of students is planning a study trip.",
-    "explanation": "Step 1\nThe subject of the sentence is the collective noun 'group' (singular), not 'students'.\n\nFinal Calculation\nTherefore, the singular verb 'is' is required.\n\nAnswer: The group of students is planning a study trip.",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "Collective noun (group) is singular => takes singular verb (is)"
     ],
@@ -63,11 +74,22 @@
       "TCS",
       "Cognizant",
       "Wipro"
-    ]
+    ],
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "verbal-grammar-3",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "optionsSourceId": "verbal-grammar-3",
+    "answerSourceId": "verbal-grammar-3",
+    "explanationSourceId": "verbal-grammar-3",
+    "correctAnswer": "The group of students is planning a study trip.",
+    "sourceReference": "manual_seed"
   },
   {
     "id": "verbal-rc-2",
-    "question": "Passage: The rise of autonomous vehicles promises to reshape urban landscapes by reducing traffic congestion and emissions. However, the transition presents complex ethical challenges, particularly regarding decision-making algorithms in unavoidable accident scenarios. Who should be prioritized in a crash\u2014pedestrians, passengers, or other drivers? \n\nAccording to the passage, what is the primary ethical issue associated with autonomous vehicles?",
+    "question": "Passage: The rise of autonomous vehicles promises to reshape urban landscapes by reducing traffic congestion and emissions. However, the transition presents complex ethical challenges, particularly regarding decision-making algorithms in unavoidable accident scenarios. Who should be prioritized in a crash—pedestrians, passengers, or other drivers? \n\nAccording to the passage, what is the primary ethical issue associated with autonomous vehicles?",
     "options": [
       "The high cost of manufacturing autonomous cars.",
       "Algorithm-driven prioritizations in crash scenarios.",
@@ -75,7 +97,7 @@
       "Job losses in the public transportation sector."
     ],
     "answer": "Algorithm-driven prioritizations in crash scenarios.",
-    "explanation": "Step 1\nSet up the equation based on given constraints.\n\nFinal Calculation\nThe passage explicitly states that the transition presents complex ethical challenges regarding decision-making algorithms in unavoidable accident scenarios, such as prioritizing pedestrians, passengers, or other drivers.\n\nAnswer: Algorithm-driven prioritizations in crash scenarios.",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "Match keywords: 'ethical challenges' maps to 'decision-making algorithms in unavoidable accident scenarios'"
     ],
@@ -95,7 +117,18 @@
     "companyTags": [
       "Deloitte",
       "Infosys"
-    ]
+    ],
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "verbal-rc-2",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "optionsSourceId": "verbal-rc-2",
+    "answerSourceId": "verbal-rc-2",
+    "explanationSourceId": "verbal-rc-2",
+    "correctAnswer": "Algorithm-driven prioritizations in crash scenarios.",
+    "sourceReference": "manual_seed"
   },
   {
     "id": "verbal-vocab-2",
@@ -107,7 +140,7 @@
       "Impatient"
     ],
     "answer": "Cautious",
-    "explanation": "Step 1\nPrudent means showing care and thought for the future.\n\nStep 2\nwise or cautious.\n\nFinal Calculation\nTherefore, 'Cautious' is the correct synonym.\n\nAnswer: Cautious",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "Prudent = Wise, careful, cautious"
     ],
@@ -127,7 +160,18 @@
     "companyTags": [
       "Accenture",
       "TCS Ninja"
-    ]
+    ],
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "verbal-vocab-2",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "optionsSourceId": "verbal-vocab-2",
+    "answerSourceId": "verbal-vocab-2",
+    "explanationSourceId": "verbal-vocab-2",
+    "correctAnswer": "Cautious",
+    "sourceReference": "manual_seed"
   },
   {
     "id": "verbal-syn-1",
@@ -139,7 +183,7 @@
       "Ambiguous"
     ],
     "answer": "Frank",
-    "explanation": "Step 1\nCandid means truthful, straightforward, or frank.\n\nFinal Calculation\nTherefore, 'Frank' is the correct synonym.\n\nAnswer: Frank",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "Candid = honest, open, frank"
     ],
@@ -157,7 +201,18 @@
     ],
     "companyTags": [
       "All MNCs"
-    ]
+    ],
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "verbal-syn-1",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "optionsSourceId": "verbal-syn-1",
+    "answerSourceId": "verbal-syn-1",
+    "explanationSourceId": "verbal-syn-1",
+    "correctAnswer": "Frank",
+    "sourceReference": "manual_seed"
   },
   {
     "id": "verbal-ant-1",
@@ -169,7 +224,7 @@
       "Merciful"
     ],
     "answer": "Cruel",
-    "explanation": "Step 1\nCompassionate means feeling or showing sympathy and concern for others.\n\nFinal Calculation\nThe antonym is 'Cruel' (showing a lack of sympathy).\n\nAnswer: Cruel",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "Compassionate (positive) <=> Cruel (negative)"
     ],
@@ -187,7 +242,18 @@
     ],
     "companyTags": [
       "All MNCs"
-    ]
+    ],
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "verbal-ant-1",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "optionsSourceId": "verbal-ant-1",
+    "answerSourceId": "verbal-ant-1",
+    "explanationSourceId": "verbal-ant-1",
+    "correctAnswer": "Cruel",
+    "sourceReference": "manual_seed"
   },
   {
     "id": "verbal-imp-1",
@@ -199,7 +265,7 @@
       "No improvement"
     ],
     "answer": "has",
-    "explanation": "Step 1\nDynamic verbs (like 'is having') should not be used in continuous tense to express possession.\n\nFinal Calculation\nThe simple present tense 'has' should be used instead.\n\nAnswer: has",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "State of possession = use simple present (has/have)"
     ],
@@ -219,7 +285,18 @@
     "companyTags": [
       "TCS Ninja",
       "Cognizant"
-    ]
+    ],
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "verbal-imp-1",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "optionsSourceId": "verbal-imp-1",
+    "answerSourceId": "verbal-imp-1",
+    "explanationSourceId": "verbal-imp-1",
+    "correctAnswer": "has",
+    "sourceReference": "manual_seed"
   },
   {
     "id": "verbal-err-1",
@@ -231,7 +308,7 @@
       "D"
     ],
     "answer": "B",
-    "explanation": "Step 1\nThe phrase 'One of the...' takes a singular verb because the subject is 'One', not 'players'.\n\nFinal Calculation\nTherefore, 'are injured' should be corrected to 'is injured' or 'was injured' depending on the tense.\n\nAnswer: B",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "One of + Plural Noun + Singular Verb"
     ],
@@ -251,6 +328,17 @@
     "companyTags": [
       "Accenture",
       "Wipro"
-    ]
+    ],
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "verbal-err-1",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "optionsSourceId": "verbal-err-1",
+    "answerSourceId": "verbal-err-1",
+    "explanationSourceId": "verbal-err-1",
+    "correctAnswer": "B",
+    "sourceReference": "manual_seed"
   }
 ]

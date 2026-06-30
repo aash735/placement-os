@@ -16,9 +16,21 @@ export interface AptitudeQuestion {
   tableData?: { headers: string[]; rows: string[][] };
   chartData?: { name: string; value: number }[];
   chartType?: "pie" | "bar" | "line";
+  optionsSourceId?: string;
+  answerSourceId?: string;
+  explanationSourceId?: string;
+  sourceId?: string;
+  importBatch?: string;
+  validationStatus?: 'PASS' | 'WARNING' | 'FAIL';
+  confidenceScore?: number;
+  lastVerificationTime?: string;
+  sourceFile?: string;
+  correctAnswer?: string;
+  sourceReference?: string;
 }
 
 import { tcsAptitudeQuestions } from "./tcs-questions";
+import { validateQuestion } from "../lib/aptitude-validator";
 import quantQs from "./aptitude/quantitative/questions.json";
 import logicalQs from "./aptitude/logical/questions.json";
 import verbalQs from "./aptitude/verbal/questions.json";
@@ -463,7 +475,38 @@ allJsonQs.forEach(q => {
   }
 });
 
-export const aptitudeQuestions: AptitudeQuestion[] = [
+const rawAptitudeQuestions: AptitudeQuestion[] = [
   ...mergedBase,
   ...tcsAptitudeQuestions
 ];
+
+const validQuestions: AptitudeQuestion[] = [];
+export const rejectedAptitudeQuestions: { id: string; category: string; topic: string; score: number; issues: string[]; question: AptitudeQuestion }[] = [];
+
+rawAptitudeQuestions.forEach(q => {
+  const result = validateQuestion(q);
+  if (result.valid) {
+    validQuestions.push(result.question);
+  } else {
+    rejectedAptitudeQuestions.push({
+      id: result.question.id,
+      category: result.question.category,
+      topic: result.question.topic,
+      score: result.score,
+      issues: result.issues,
+      question: result.question
+    });
+  }
+});
+
+// Runtime logging for transparency and diagnostics
+if (typeof window !== 'undefined') {
+  console.log(`📊 [Placement OS] Aptitude Arena Dataset loaded: ${rawAptitudeQuestions.length} scanned, ${validQuestions.length} valid, ${rejectedAptitudeQuestions.length} excluded.`);
+  if (rejectedAptitudeQuestions.length > 0) {
+    console.warn(`⚠️ Excluded ${rejectedAptitudeQuestions.length} corrupted questions. Diagnostics:`, rejectedAptitudeQuestions.slice(0, 10));
+  }
+} else {
+  console.log(`[Aptitude Load] Scanned: ${rawAptitudeQuestions.length} | Valid: ${validQuestions.length} | Rejected: ${rejectedAptitudeQuestions.length}`);
+}
+
+export const aptitudeQuestions: AptitudeQuestion[] = validQuestions;

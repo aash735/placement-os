@@ -1,5 +1,6 @@
 import os
 import json
+import re
 
 base_dir = r"C:\Users\AASHISH\OneDrive\Desktop\placement-os\placement-os\src\data\aptitude"
 report_path = r"C:\Users\AASHISH\OneDrive\Desktop\placement-os\placement-os\aptitude-audit-report.json"
@@ -58,6 +59,12 @@ def verify():
         "invalid_questions": 0,
         "duplicates": 0,
         "broken_assets": 0,
+        "option_mismatches": 0,
+        "answer_mismatches": 0,
+        "explanation_mismatches": 0,
+        "missing_options": 0,
+        "invalid_answers": 0,
+        "invalid_explanations": 0,
         "coverage_by_topic": {}
     }
     
@@ -101,27 +108,132 @@ def verify():
                 
             # Verify options
             opts = q.get("options")
-            if not isinstance(opts, list) or len(opts) < 2:
+            if not isinstance(opts, list) or len(opts) != 4:
                 stats["invalid_questions"] += 1
-                errors.append(f"Question {q_id} has invalid options list.")
+                stats["missing_options"] += 1
+                errors.append(f"Question {q_id} has invalid options list length.")
+                continue
+                
+            empty_opts = [o for o in opts if not o or not str(o).strip()]
+            if empty_opts:
+                stats["invalid_questions"] += 1
+                stats["missing_options"] += 1
+                errors.append(f"Question {q_id} has empty options.")
+                continue
+
+            # Duplicate options
+            unique_opts = set([str(o).strip().lower() for o in opts])
+            if len(unique_opts) < len(opts):
+                stats["invalid_questions"] += 1
+                stats["missing_options"] += 1
+                errors.append(f"Question {q_id} has duplicate options.")
+                continue
+
+            # Merged options
+            has_merged = False
+            for opt_idx, opt in enumerate(opts):
+                if opt and re.search(r'\(\s*[b-e]\s*\)', str(opt), re.IGNORECASE):
+                    stats["invalid_questions"] += 1
+                    stats["missing_options"] += 1
+                    errors.append(f"Question {q_id} has merged options at index {opt_idx}: {opt}")
+                    has_merged = True
+                    break
+            if has_merged:
                 continue
                 
             # Verify answer is in options
             ans = q.get("answer")
             if ans not in opts:
-                # Sometimes option cleaning has spacing differences, let's flag as warning/error
                 stats["invalid_questions"] += 1
+                stats["invalid_answers"] += 1
                 errors.append(f"Question {q_id} has answer '{ans}' which is not in options: {opts}")
                 continue
                 
+            # ID mappings check
+            opts_src = q.get("optionsSourceId", q_id)
+            ans_src = q.get("answerSourceId", q_id)
+            exp_src = q.get("explanationSourceId", q_id)
+            if opts_src != q_id:
+                stats["invalid_questions"] += 1
+                stats["option_mismatches"] += 1
+                errors.append(f"Question {q_id} has optionsSourceId mismatch: expected {q_id}, got {opts_src}")
+                continue
+            if ans_src != q_id:
+                stats["invalid_questions"] += 1
+                stats["answer_mismatches"] += 1
+                errors.append(f"Question {q_id} has answerSourceId mismatch: expected {q_id}, got {ans_src}")
+                continue
+            if exp_src != q_id:
+                stats["invalid_questions"] += 1
+                stats["explanation_mismatches"] += 1
+                errors.append(f"Question {q_id} has explanationSourceId mismatch: expected {q_id}, got {exp_src}")
+                continue
+
+            # Schema structure fields verify
+            corr_ans = q.get("correctAnswer")
+            if corr_ans != ans:
+                stats["invalid_questions"] += 1
+                errors.append(f"Question {q_id} has correctAnswer mismatch: expected '{ans}', got '{corr_ans}'")
+                continue
+                
+            src_ref = q.get("sourceReference")
+            expected_ref = q.get("sourceFile", q_id)
+            if src_ref != expected_ref:
+                stats["invalid_questions"] += 1
+                errors.append(f"Question {q_id} has sourceReference mismatch: expected '{expected_ref}', got '{src_ref}'")
+                continue
+
+            # Banned placeholder explanation check
+            exp = str(q.get("explanation", "")).strip()
+            exp_lower = exp.lower()
+            if not exp:
+                stats["invalid_questions"] += 1
+                stats["invalid_explanations"] += 1
+                errors.append(f"Question {q_id} has empty explanation.")
+                continue
+            
+            is_unavailable = (exp_lower == "detailed explanation unavailable" or 
+                              exp_lower == "detailed explanation unavailable." or
+                              exp_lower == "verified detailed explanation unavailable" or
+                              exp_lower == "verified detailed explanation unavailable.")
+            if not is_unavailable:
+                banned_phrases = [
+                    "analyze the question",
+                    "apply the formula",
+                    "compute the value",
+                    "calculate directly",
+                    "use the given information",
+                    "no explanation available",
+                    "refer to standard solutions",
+                    "calculate the result",
+                    "calculate the answer",
+                    "compute final answer"
+                ]
+                clean_exp = re.sub(r'[.\s]+', ' ', exp_lower)
+                has_banned = False
+                for phrase in banned_phrases:
+                    clean_phrase = re.sub(r'[.\s]+', ' ', phrase)
+                    if clean_exp == clean_phrase or clean_exp.startswith(clean_phrase + " ") or clean_exp.endswith(" " + clean_phrase) or (" " + clean_phrase + " ") in clean_exp:
+                        stats["invalid_questions"] += 1
+                        stats["invalid_explanations"] += 1
+                        errors.append(f"Question {q_id} has banned placeholder explanation: {exp}")
+                        has_banned = True
+                        break
+                if has_banned:
+                    continue
+            
             # Check DI asset structure
             if q.get("category") == "di":
                 if q.get("chartType") and not q.get("chartData"):
                     stats["broken_assets"] += 1
+                    stats["invalid_questions"] += 1
                     errors.append(f"Question {q_id} has chartType but no chartData.")
+                    continue
                 if q.get("topic") == "tables" and not q.get("tableData"):
                     stats["broken_assets"] += 1
+                    stats["invalid_questions"] += 1
                     errors.append(f"Question {q_id} is in tables topic but has no tableData.")
+                    continue
                     
             stats["valid_questions"] += 1
             all_questions.append(q)
@@ -148,7 +260,14 @@ def verify():
         "summary": {
             "total_questions_scanned": stats["total_questions"],
             "valid_questions_imported": stats["valid_questions"],
-            "invalid_questions_skipped": stats["invalid_questions"],
+            "questions_with_option_mismatch": stats["option_mismatches"],
+            "questions_with_answer_mismatch": stats["answer_mismatches"],
+            "questions_with_explanation_mismatch": stats["explanation_mismatches"],
+            "questions_with_missing_options": stats["missing_options"],
+            "questions_with_invalid_answers": stats["invalid_answers"],
+            "questions_with_invalid_explanations": stats["invalid_explanations"],
+            "questions_removed_from_production": stats["invalid_questions"] + stats["duplicates"],
+            "questions_requiring_review": stats["invalid_questions"] + stats["duplicates"],
             "duplicate_question_count": stats["duplicates"],
             "broken_asset_count": stats["broken_assets"]
         },

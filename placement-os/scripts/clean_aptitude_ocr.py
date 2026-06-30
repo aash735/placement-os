@@ -46,6 +46,34 @@ def clean_ocr_text(text):
     # Strip uppercase chapter name leaks followed by page numbers
     text = re.sub(r'\b[A-Z]{3,}\s+\d{2,4}\b', '', text)
     
+    # Rebuild corrupted fractions from OCR layout displacement
+    # Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days"
+    def replace_fraction_with_unit(match):
+        num = match.group(1)
+        whole = match.group(2)
+        unit = match.group(3)
+        den = match.group(4)
+        if int(num) < int(den):
+            return f"{whole} {num}/{den} {unit}"
+        return match.group(0)
+    text = re.sub(r'\b(\d)(\d+)\s*([a-zA-Z]+)\s*(\d+)\b', replace_fraction_with_unit, text)
+
+    # Pattern 2: e.g. "31 4 times" or "17 2" -> "1 3/4 times", "7 1/2"
+    def replace_fraction_pure(match):
+        num = match.group(1)
+        whole = match.group(2)
+        den = match.group(3)
+        if int(num) < int(den):
+            return f"{whole} {num}/{den}"
+        return match.group(0)
+    text = re.sub(r'\b(\d)(\d+)\s+(\d+)\b', replace_fraction_pure, text)
+
+    # Pattern 3: e.g. "7 th8" -> "7/8 th"
+    text = re.sub(r'\b(\d+)\s*([a-zA-Z]+)\s*(\d+)\b', r'\1/\3 \2', text)
+    
+    # Pattern 4: e.g. "3 4 th" -> "3/4th"
+    text = re.sub(r'\b(\d+)\s+(\d+)\s*([a-zA-Z]+)\b', r'\1/\2\3', text)
+
     # 3. Math expression normalization
     # Convert: 75 108 100 * to $(\frac{108}{100}) \times 75$
     text = re.sub(
@@ -75,35 +103,85 @@ def clean_ocr_text(text):
     text = re.sub(r'[ \t]+', ' ', text)
     text = text.strip()
     return text
+BOILERPLATE_PATTERNS = [
+    re.compile(r'^\s*step\s+\d+\s*$', re.IGNORECASE),
+    re.compile(r'^\s*final\s+calculation\s*$', re.IGNORECASE),
+    re.compile(r'^\s*answer:\s*.*$', re.IGNORECASE),
+    re.compile(r'analyze the question details', re.IGNORECASE),
+    re.compile(r'compute the final value', re.IGNORECASE),
+    re.compile(r'apply the formula', re.IGNORECASE),
+    re.compile(r'calculate the result', re.IGNORECASE),
+    re.compile(r'compute final answer', re.IGNORECASE),
+    re.compile(r'set up the equation based on given constraints', re.IGNORECASE),
+    re.compile(r'use the given information', re.IGNORECASE),
+    re.compile(r'analyze the question', re.IGNORECASE),
+    re.compile(r'no explanation available', re.IGNORECASE),
+    re.compile(r'refer to standard solutions', re.IGNORECASE),
+    re.compile(r'detailed explanation unavailable', re.IGNORECASE),
+    re.compile(r'verified detailed explanation unavailable', re.IGNORECASE),
+    re.compile(r'compute the value', re.IGNORECASE),
+    re.compile(r'calculate the answer', re.IGNORECASE)
+]
+
+def split_sentences(text):
+    sentences = []
+    current = ""
+    bracket_depth = 0
+    square_depth = 0
+    curly_depth = 0
+    
+    for i in range(len(text)):
+        char = text[i]
+        if char == '(': bracket_depth += 1
+        elif char == ')': bracket_depth -= 1
+        elif char == '[': square_depth += 1
+        elif char == ']': square_depth -= 1
+        elif char == '{': curly_depth += 1
+        elif char == '}': curly_depth -= 1
+        
+        current += char
+        
+        if bracket_depth <= 0 and square_depth <= 0 and curly_depth <= 0:
+            if (char == '.' or char == ';') and (i == len(text) - 1 or text[i+1].isspace()):
+                sentences.append(current.strip())
+                current = ""
+            elif char == '\n':
+                sentences.append(current.strip())
+                current = ""
+                
+    if current.strip():
+        sentences.append(current.strip())
+    return [s for s in sentences if s]
 
 def standardize_explanation(explanation, answer):
-    # Already structured
-    if explanation.startswith("Step 1"):
-        return explanation
+    if not explanation:
+        return "Verified detailed explanation unavailable."
         
     explanation = clean_ocr_text(explanation)
-    if not explanation or explanation.strip() == "No explanation available.":
-        return f"Step 1\nAnalyze the question details and parameters.\n\nFinal Calculation\nCompute the final value directly.\n\nAnswer: {answer}"
-        
+    
     # Split sentences by period/semicolon/newline
     # Avoid splitting on decimals like 1.5
-    raw_parts = re.split(r'\.\s+|\;\s+|\n+', explanation)
+    raw_parts = split_sentences(explanation)
     parts = []
     for p in raw_parts:
         p = p.strip()
         if p:
+            # Check if any boilerplate pattern matches
+            if any(pattern.search(p) for pattern in BOILERPLATE_PATTERNS):
+                continue
             # Re-append dot if it looks like a sentence
             if not p.endswith('.') and not p.endswith('?') and not p.endswith('!'):
                 p += '.'
             parts.append(p)
             
-    if not parts:
-        return f"Step 1\nAnalyze the question details.\n\nFinal Calculation\nCompute final answer.\n\nAnswer: {answer}"
+    # Re-join to assess length
+    remaining_text = " ".join(parts).strip()
+    if len(remaining_text) < 25:
+        return "Verified detailed explanation unavailable."
         
     steps = []
     if len(parts) == 1:
-        steps.append(f"Step 1\nSet up the equation based on given constraints.")
-        steps.append(f"Final Calculation\n{parts[0]}")
+        steps.append(f"Step 1\n{parts[0]}")
     elif len(parts) == 2:
         steps.append(f"Step 1\n{parts[0]}")
         steps.append(f"Final Calculation\n{parts[1]}")
@@ -122,6 +200,7 @@ def standardize_explanation(explanation, answer):
     cleaned_ans = clean_ocr_text(answer)
     steps_str += f"\n\nAnswer: {cleaned_ans}"
     return steps_str
+
 
 def main():
     print("Starting OCR Cleanup and Solution Normalization...")

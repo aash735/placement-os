@@ -8,6 +8,7 @@ import { useProgressStore } from "@/lib/progress-store";
 import { useDataStore } from "@/store/data-store";
 import { getTcsSlugFromResourceId } from "@/lib/tcs-utils";
 import { aptitudeQuestions, AptitudeQuestion } from "@/data/aptitude-questions";
+import { validateQuestion } from "@/lib/aptitude-validator";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ResponsiveContainer,
@@ -215,7 +216,7 @@ function TestPageContent() {
   // Initialize questions
   useEffect(() => {
     if (testId && testId.startsWith("tcs-")) {
-      const selected = aptitudeQuestions.filter((q) => q.id.startsWith(`${testId}-q`));
+      const selected = aptitudeQuestions.filter((q) => q.id.startsWith(`${testId}-q`) && validateQuestion(q).valid);
       const sorted = [...selected].sort((a, b) => {
         const aNum = parseInt(a.id.split("-q")[1] || "0", 10);
         const bNum = parseInt(b.id.split("-q")[1] || "0", 10);
@@ -230,8 +231,8 @@ function TestPageContent() {
 
     const reqCategories = searchParams.get("categories")?.split(",") || ["quant", "logical"];
 
-    // Filter questions by categories
-    let pool = aptitudeQuestions.filter((q) => reqCategories.includes(q.category));
+    // Filter questions by categories and ensure they are valid
+    let pool = aptitudeQuestions.filter((q) => reqCategories.includes(q.category) && validateQuestion(q).valid);
     
     // Support filtering by topic if provided
     const reqTopics = searchParams.get("topics")?.split(",") || [];

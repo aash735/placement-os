@@ -8,8 +8,8 @@
       "The box labeled 'Oranges",
       "Any box will work"
     ],
-    "answer": "The box labeled 'Apples and Oranges'",
-    "explanation": "Step 1\nSince all boxes are labeled incorrectly:.\n\nStep 2\n- The box labeled 'Apples and Oranges' must contain either ONLY apples or ONLY oranges.\n\nStep 3\n- If you pick a fruit from this box, say an apple, then you know this box contains ONLY apples. - Now, the box labeled 'Oranges' cannot contain only oranges (incorrect label) and cannot contain only apples (since we found that box). Thus, it must contain 'Apples and Oranges'.\n\nFinal Calculation\n- Finally, the box labeled 'Apples' must contain 'Oranges'.\n\nAnswer: The box labeled 'Apples and Oranges'",
+    "answer": "The box labeled 'Apples and Oranges",
+    "explanation": "Detailed explanation will be available in a future update.",
     "shortcuts": [
       "Key clue: All labels are INCORRECT.",
       "Always choose the mixed label box first because its contents are binary (either all apples or all oranges)."
@@ -30,38 +30,17 @@
     "companyTags": [
       "Product Startups",
       "Google"
-    ]
-  },
-  {
-    "id": "puzzles-logic-3",
-    "question": "A, B, C, D, E are sitting in a circle facing the center. A is between E and C. D is to the immediate right of E. Who is sitting to the immediate left of C?",
-    "options": [
-      "A",
-      "B",
-      "D",
-      "E"
     ],
-    "answer": "B",
-    "explanation": "Step 1\nLet's arrange them in a circle:.\n\nStep 2\n- A is between E and C.\n\nStep 3\nSo we have E - A - C or C - A - E. - D is to the immediate right of E. If we look at the circle facing the center, this means D is adjacent to E. Let's test the order clockwise: E, D, B, C, A. E's right is D. E's left is A. So the clockwise order is: E -> D -> B -> C -> A. A is between E and C (correct). D is to the immediate right of E (correct, going counter-clockwise/clockwise depending on perspective, but let's confirm: D is right of E, A is left of E). The remaining person is B, who must be between D and C.\n\nFinal Calculation\nTherefore, B is sitting to the immediate left of C (since A is to the immediate right of C).\n\nAnswer: B",
-    "shortcuts": [
-      "Draw circle: D - E - A - C - B. Left of C is B."
-    ],
-    "difficulty": 2,
-    "topic": "puzzles",
-    "category": "puzzles",
-    "estimatedTime": 90,
-    "companyRelevance": [
-      "Infosys",
-      "Deloitte"
-    ],
-    "subtopic": "Seating & Arrangement",
-    "tags": [
-      "circular-seating",
-      "puzzles"
-    ],
-    "companyTags": [
-      "Infosys",
-      "Deloitte"
-    ]
+    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "sourceFile": "manual_seed",
+    "sourceId": "puzzles-logic-2",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "lastVerificationTime": "2026-06-30T15:58:05.424Z",
+    "optionsSourceId": "puzzles-logic-2",
+    "answerSourceId": "puzzles-logic-2",
+    "explanationSourceId": "puzzles-logic-2",
+    "correctAnswer": "The box labeled 'Apples and Oranges",
+    "sourceReference": "manual_seed"
   }
 ]

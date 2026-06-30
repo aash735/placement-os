@@ -1,0 +1,80 @@
+TIME AND WORK 541
+(a) 7 2
+3 days  (b) 6 1
+5 days 
+(c) 8 1
+4  days  (d) 6 2
+3
+days 
+ 128. 12 men can do a piece of work in 24 days. How 
+many days are needed to complete the work, if 8 
+men do this work? [Indian Railway Gr. ‘D’ Exam, 2014]
+(a) 28 (b) 36
+(c) 48 (d) 52
+ 129. A can do in one day three times the work done by 
+B in one day. They together finish 2
+5 of the work in 
+9 days. The number of days by which B can do the 
+work alone is [SSC—CHSL (10+2) Exam , 2015]
+(a) 90 days (b) 120 days
+(c) 100 days (d) 30 days
+ 130. A, B and C can complete a piece of work in 24, 5 
+and 12 days respectively. Working together, they 
+will complete the same work in
+   [SSC—CHSL (10+2) Exam, 2015]
+(a) 7
+24  days (b) 3 3
+7  days
+(c) 4 days (d) 313
+1 days
+ 131. X can do a piece of work in 24 days. When he had 
+worked for 4 days, Y joined him. If complete work 
+was finished in 16 days, Y can alone finish that 
+work in [SSC—CHSL (10+2) Exam, 2015]
+(a) 18 days  (b) 27 days
+(c) 36 days  (d) 42 days 
+ 132. 6 men can complete a piece of work in 12 days, 8 
+women can complete the same piece of work in 18 
+days and 18 children can do it in 10 days. 4 men, 
+12 women and 20 children do the work for 2 days. 
+If the remaining work be completed by men only 
+in 1 day, how many men will be required? 
+[RBI Officer Gr. ‘B’ (Phase-1) Online Exam, 2015]
+(a) 36 (b) 24
+(c) 18 (d) Cannot be determined 
+ 133. 16 men can finish a piece of work in 49 days. 14 
+men started working and in 8 days they could finish 
+certain amount of work. If it is required to finish 
+the remaining work in 24 days. How many more 
+men should be added to the existing workforce?
+   [IBPS—RRB Office Assistant (Online) Exam, 2015]
+(a) 21 (b) 28
+(c) 16 (d) 14
+  ANSWERS
+ 1. (b) 2. (a) 3. (a) 4. (c) 5. (c) 6. (d) 7. (b) 8. (a) 9. (e) 10. (a)
+ 11. (c) 12. (b) 13. (b) 14. (c) 15. (c) 16. (c) 17. (c) 18. (d) 19. (b) 20. (a)
+ 21. (a) 22. (b) 23. (b) 24. (b) 25. (a) 26. (c) 27. (c) 28. (d) 29. (c) 30. (c)
+ 31. (a) 32. (a) 33. (d) 34. (c) 35. (c) 36. (b) 37. (a) 38. (d) 39. (c) 40. (c)
+ 41. (c) 42. (a) 43. (a) 44. (a) 45. (a) 46. (b) 47. (b) 48. (c) 49. (b) 50. (d)
+ 51. (b) 52. (a) 53. (b) 54. (d) 55. (b) 56. (c) 57. (a) 58. (c) 59. (b) 60. (d)
+ 61. (a) 62. (b) 63. (d) 64. (d) 65. (d) 66. (a) 67. (c) 68. (c) 69. (c) 70. (b)
+ 71. (b) 72. (c) 73. (a) 74. (c) 75. (c) 76. (c) 77. (a) 78. (c) 79. (a) 80. (b)
+ 81. (b) 82. (d) 83. (a) 84. (b) 85. (a) 86. (b) 87. (a) 88. (c) 89. (a) 90. (a)
+ 91. (b) 92. (b) 93. (a) 94. (a) 95. (c) 96. (d) 97. (b) 98. (c) 99. (d) 100. (c)
+ 101. (a) 102. (e) 103. (a) 104. (a) 105. (d) 106. (e) 107. (a) 108. (c) 109. (d) 110. (e)
+ 111. (e) 112. (d) 113. (d) 114. (d) 115. (a) 116. (c) 117. (b) 118. (b) 119. (b) 120. (a)
+ 121. (b) 122. (a) 123. (c) 124. (a) 125. (a) 126. (b) 127. (d) 128. (b) 129. (a) 130. (d)
+131. (c) 132. (a) 133. (d)
+SOLUTIONS
+ 1. Ayesha’s 1 day’s work = 1 .16  Amita’s 1 day’s work = 1 .8
+  (Ayesha + Amita)’s 1 day’s work = 13 .16 8 16
+1 +=
+  \ Both together can complete the work in =16 1 5 days.33
+ 2. Required average
+   = 
+ +++ + = ×==
+
+111 1 1
+48 1 44 5 6 10 12 0.16.5 60 5 25
+ 3. A’s 1 day’s work = 1
+18  and B’s 1 day’s work = 1 .9

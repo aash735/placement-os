@@ -1,0 +1,56 @@
+TIME AND WORK 531
+ Sol. 1 man’s 1 day’s work = =×
+11 .72 18 1296
+  1 woman’s 1 day’s work = =×
+11 .162 12 1944
+  1 child’s 1 day’s work = =×
+11 .360 9 3240
+  (4 men + 12 women + 10 children)’s 1 day’s work
+    =  ×+ ×+ ×
+1114 12 101296 1944 3240  =  ++ ==
+111 4 1 .324 162 324 324 81
+  Hence, 4 men, 12 women and 10 children can complete the work in 81 days.
+ Ex. 21. 2 men and 3 boys can do a piece of work in 10 days while 3 men and 2 boys can do the same work in 8 
+days. In how many days can 2 men and 1 boy do the work ?
+ Sol. Let 1 man’s 1 day’s work = x and 1 boy’s 1 day’s work = y.
+  Then, 2x + 3 y = +=11and 3 2 .10 8xy
+  Solving, we get : x = =71 and .200 100 y
+	 	\  (2 men + 1 boy)’s 1 day’s work =  × +× = =
+7 1 16 221 . 200 100 200 25
+  So, 2 men and 1 boy together can finish the work in 25 1 12 days.22=
+ Ex. 22. 3 men and 4 women can earn ` 3780 in 7 days. 11 men and 13 women can earn ` 15040 in 8 days. In what time 
+will 7 men and 9 women earn ` 12400?
+ Sol. Let 1 man’s 1 day’s earning be ` x and 1 woman’s 1 day’s earning be ` y.
+  Then, 3x + 4 y = =3780 5407  ... ( i)
+  And, 11x + 13 y = =15040 18808  ...( ii)
+  Solving ( i) and ( ii), we get: x = 100, y = 60.
+  (7 men + 9 women)’s 1 day’s earning = ` (7 × 100 + 9 × 60) = ` 1240.
+  Hence, required time = 
+12400 days = 10 days.1240
+EXERCISE 
+(OBJECTIVE TYPE QUESTIONS)
+Directions: Mark (3) against the correct answer :
+ 1. Ayesha can complete a piece of work in 16 days. 
+Amita can complete the same piece of work in 8 
+days. If both of them work together in how many 
+days can they complete the same piece of work?  
+(Bank P.O., 2010)
+  (a) 24 days5  ( b) 15 days3
+  ( c) 6 days (d) 12 days
+  ( e) None of these
+ 2. A can complete a certain work in 4 minutes, B in  
+5 minutes, C in 6 minutes, D in 10 minutes and E 
+in 12 minutes. The average number of units of work 
+completed by them per minute will be (P.C.S., 2009)
+  (a) 0.16 (b) 0.40
+  ( c) 0.80 (d) None of these
+ 3. A can finish a work in 18 days and B can do the 
+same work in half the time taken by A. Then, 
+working together, what part of the same work they 
+can finish in a day ?  (S.S.C., 2002)
+  ( a) 1
+6  ( b) 1
+9
+  ( c) 2
+5  ( d) 2
+7

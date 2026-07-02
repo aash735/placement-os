@@ -47,16 +47,16 @@ def clean_ocr_text(text):
     text = re.sub(r'\b[A-Z]{3,}\s+\d{2,4}\b', '', text)
     
     # Rebuild corrupted fractions from OCR layout displacement
-    # Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days"
+    # Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days" or "214% gain7" -> "14 2/7 % gain"
     def replace_fraction_with_unit(match):
-        num = match.group(1)
+        num = int(match.group(1))
         whole = match.group(2)
         unit = match.group(3)
-        den = match.group(4)
-        if int(num) < int(den):
+        den = int(match.group(4))
+        if num < den:
             return f"{whole} {num}/{den} {unit}"
         return match.group(0)
-    text = re.sub(r'\b(\d)(\d+)\s*([a-zA-Z]+)\s*(\d+)\b', replace_fraction_with_unit, text)
+    text = re.sub(r'\b(\d)(\d+)\s*([a-zA-Z%\s/]+[a-zA-Z%])(\d+)\b', replace_fraction_with_unit, text)
 
     # Pattern 2: e.g. "31 4 times" or "17 2" -> "1 3/4 times", "7 1/2"
     def replace_fraction_pure(match):
@@ -98,6 +98,17 @@ def clean_ocr_text(text):
     text = text.replace("Rs. ", "₹")
     text = text.replace("Rs.", "₹")
     text = text.replace("Rs ", "₹")
+    
+    # Math symbol / notation fixes
+    text = re.sub(r'([^a-zA-Z]|^)pa2\b', r'\1πa²', text)
+    text = re.sub(r'([^a-zA-Z]|^)pr2\b', r'\1πr²', text)
+    text = re.sub(r'([^a-zA-Z]|^)pR2\b', r'\1πR²', text)
+    text = re.sub(r'\bcm2\b', 'cm²', text)
+    text = re.sub(r'\bcm3\b', 'cm³', text)
+    text = re.sub(r'\bm2\b', 'm²', text)
+    text = re.sub(r'\bm3\b', 'm³', text)
+    text = re.sub(r'\bunits2\b', 'units²', text)
+    text = re.sub(r'\bunits3\b', 'units³', text)
     
     # Clean up double/multiple spaces and trailing spaces
     text = re.sub(r'[ \t]+', ' ', text)
@@ -154,8 +165,9 @@ def split_sentences(text):
     return [s for s in sentences if s]
 
 def standardize_explanation(explanation, answer):
+    FALLBACK_MSG = "Detailed explanation is currently being prepared and will be available in a future update."
     if not explanation:
-        return "Verified detailed explanation unavailable."
+        return FALLBACK_MSG
         
     explanation = clean_ocr_text(explanation)
     
@@ -177,7 +189,7 @@ def standardize_explanation(explanation, answer):
     # Re-join to assess length
     remaining_text = " ".join(parts).strip()
     if len(remaining_text) < 25:
-        return "Verified detailed explanation unavailable."
+        return FALLBACK_MSG
         
     steps = []
     if len(parts) == 1:

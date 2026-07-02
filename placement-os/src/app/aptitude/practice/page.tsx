@@ -15,21 +15,38 @@ const PRACTICE_CATEGORIES = [
     name: "Quantitative Aptitude",
     description: "Numerical ability, arithmetic, and mathematical reasoning.",
     topics: [
-      { id: "number-system", name: "Number System", count: 180 },
-      { id: "percentages", name: "Percentage", count: 220 },
-      { id: "profit-loss", name: "Profit and Loss", count: 180 },
-      { id: "ratios", name: "Ratio and Proportion", count: 160 },
-      { id: "time-work", name: "Time and Work", count: 165 },
-      { id: "speed", name: "Time and Distance", count: 115 },
-      { id: "probability", name: "Probability", count: 50 },
-      { id: "permutation-combination", name: "Permutation and Combination", count: 45 },
-      { id: "average", name: "Average", count: 130 },
-      { id: "simple-interest", name: "Simple Interest", count: 80 },
-      { id: "compound-interest", name: "Compound Interest", count: 90 },
-      { id: "hcf-lcm", name: "H.C.F. and L.C.M.", count: 85 },
-      { id: "simplification", name: "Simplification", count: 240 },
-      { id: "ages", name: "Problems on Ages", count: 65 },
-      { id: "pipes-cisterns", name: "Pipes and Cisterns", count: 60 }
+      { id: "number-system", name: "Number System", count: 0 },
+      { id: "h-c-f-and-l-c-m-of-numbers", name: "H.C.F. and L.C.M. of Numbers", count: 0 },
+      { id: "decimal-fractions", name: "Decimal Fractions", count: 0 },
+      { id: "simplification", name: "Simplification", count: 0 },
+      { id: "square-roots-and-cube-roots", name: "Square Roots and Cube Roots", count: 0 },
+      { id: "average", name: "Average", count: 0 },
+      { id: "problems-on-numbers", name: "Problems on Numbers", count: 0 },
+      { id: "problems-on-ages", name: "Problems on Ages", count: 0 },
+      { id: "surds-and-indices", name: "Surds and Indices", count: 0 },
+      { id: "logarithms", name: "Logarithms", count: 0 },
+      { id: "percentage", name: "Percentage", count: 0 },
+      { id: "profit-and-loss", name: "Profit and Loss", count: 0 },
+      { id: "ratio-and-proportion", name: "Ratio and Proportion", count: 0 },
+      { id: "partnership", name: "Partnership", count: 0 },
+      { id: "chain-rule", name: "Chain Rule", count: 0 },
+      { id: "pipes-and-cisterns", name: "Pipes and Cisterns", count: 0 },
+      { id: "time-and-work", name: "Time and Work", count: 0 },
+      { id: "time-distance", name: "Time and Distance", count: 0 },
+      { id: "boats-and-streams", name: "Boats and Streams", count: 0 },
+      { id: "problems-on-trains", name: "Problems on Trains", count: 0 },
+      { id: "alligation-or-mixture", name: "Alligation or Mixture", count: 0 },
+      { id: "simple-interest", name: "Simple Interest", count: 0 },
+      { id: "compound-interest", name: "Compound Interest", count: 0 },
+      { id: "area", name: "Area", count: 0 },
+      { id: "volume-and-surface-areas", name: "Volume and Surface Areas", count: 0 },
+      { id: "races-and-games-of-skill", name: "Races and Games of Skill", count: 0 },
+      { id: "stocks-and-shares", name: "Stocks and Shares", count: 0 },
+      { id: "permutation-and-combination", name: "Permutations & Combinations", count: 0 },
+      { id: "probability", name: "Probability", count: 0 },
+      { id: "true-discount", name: "True Discount", count: 0 },
+      { id: "banker-s-discount", name: "Banker's Discount", count: 0 },
+      { id: "heights-and-distances", name: "Heights and Distances", count: 0 }
     ]
   },
   {
@@ -37,16 +54,17 @@ const PRACTICE_CATEGORIES = [
     name: "Logical Reasoning",
     description: "Logical deduction, patterns, and arrangements.",
     topics: [
-      { id: "direction-sense", name: "Direction Sense", count: 125 },
-      { id: "blood-relations", name: "Blood Relations", count: 87 },
-      { id: "coding-decoding", name: "Coding Decoding", count: 104 },
-      { id: "syllogism", name: "Syllogism", count: 60 },
-      { id: "seating-arrangement", name: "Seating Arrangement", count: 70 },
-      { id: "statement-conclusion", name: "Statement Conclusion", count: 55 },
-      { id: "series", name: "Series", count: 110 },
-      { id: "analogy", name: "Analogy", count: 45 },
-      { id: "clocks", name: "Clocks", count: 30 },
-      { id: "calendar", name: "Calendar", count: 25 }
+      { id: "calendar", name: "Calendar", count: 0 },
+      { id: "clocks", name: "Clocks", count: 0 },
+      { id: "odd-man-out-and-series", name: "Odd Man Out and Series", count: 0 },
+      { id: "direction-sense", name: "Direction Sense", count: 0 },
+      { id: "blood-relations", name: "Blood Relations", count: 0 },
+      { id: "coding-decoding", name: "Coding Decoding", count: 0 },
+      { id: "syllogism", name: "Syllogism", count: 0 },
+      { id: "seating-arrangement", name: "Seating Arrangement", count: 0 },
+      { id: "statement-conclusion", name: "Statement Conclusion", count: 0 },
+      { id: "series", name: "Series", count: 0 },
+      { id: "analogy", name: "Analogy", count: 0 }
     ]
   },
   {
@@ -54,12 +72,12 @@ const PRACTICE_CATEGORIES = [
     name: "Verbal Ability",
     description: "English grammar, reading comprehension, and vocabulary.",
     topics: [
-      { id: "synonyms", name: "Synonyms", count: 150 },
-      { id: "antonyms", name: "Antonyms", count: 150 },
-      { id: "sentence-improvement", name: "Sentence Improvement", count: 120 },
-      { id: "rc", name: "Reading Comprehension", count: 80 },
-      { id: "error-detection", name: "Error Detection", count: 100 },
-      { id: "vocab", name: "Vocabulary", count: 200 }
+      { id: "synonyms", name: "Synonyms", count: 0 },
+      { id: "antonyms", name: "Antonyms", count: 0 },
+      { id: "sentence-improvement", name: "Sentence Improvement", count: 0 },
+      { id: "rc", name: "Reading Comprehension", count: 0 },
+      { id: "error-detection", name: "Error Detection", count: 0 },
+      { id: "vocab", name: "Vocabulary", count: 0 }
     ]
   },
   {
@@ -67,11 +85,19 @@ const PRACTICE_CATEGORIES = [
     name: "Data Interpretation",
     description: "Analyzing charts, tables, and graphs.",
     topics: [
-      { id: "tables", name: "Tables", count: 100 },
-      { id: "pie-charts", name: "Pie Charts", count: 70 },
-      { id: "bar-graphs", name: "Bar Graphs", count: 80 },
-      { id: "line-graphs", name: "Line Graphs", count: 80 },
-      { id: "caselets", name: "Caselets", count: 40 }
+      { id: "tabulation", name: "Tabulation", count: 0 },
+      { id: "bar-graphs", name: "Bar Graphs", count: 0 },
+      { id: "pie-chart", name: "Pie Charts", count: 0 },
+      { id: "line-graphs", name: "Line Graphs", count: 0 },
+      { id: "caselets", name: "Caselets", count: 0 }
+    ]
+  },
+  {
+    id: "puzzles",
+    name: "Brain Teasers & Puzzles",
+    description: "Tricky puzzles, brain teasers, and lateral thinking problems.",
+    topics: [
+      { id: "puzzles", name: "Brain Teasers & Puzzles", count: 0 }
     ]
   }
 ];
@@ -79,6 +105,15 @@ const PRACTICE_CATEGORIES = [
 export default function PracticeLibraryPage() {
   const { aptitudePracticeAttempts = [] } = useProgressStore();
   const [searchQuery, setSearchQuery] = useState("");
+
+  // Dynamically calculate topic counts from the actual database
+  const practiceCategories = PRACTICE_CATEGORIES.map(cat => ({
+    ...cat,
+    topics: cat.topics.map(t => ({
+      ...t,
+      count: aptitudeQuestions.filter(q => q.category === cat.id && q.topic === t.id).length
+    }))
+  }));
 
   const getTopicSolvedCount = (topicId: string) => {
     const solved = new Set(
@@ -120,7 +155,7 @@ export default function PracticeLibraryPage() {
       </div>
 
       <div className="space-y-8">
-        {PRACTICE_CATEGORIES.map((category) => {
+        {practiceCategories.map((category) => {
           const filteredTopics = category.topics.filter((topic) =>
             topic.name.toLowerCase().includes(searchQuery.toLowerCase())
           );
@@ -163,7 +198,7 @@ export default function PracticeLibraryPage() {
                           </span>
                           <div className="flex items-center space-x-2 mt-1">
                             <span className="text-[10px] text-zinc-400">
-                              {dynamicCount > 0 ? dynamicCount : topic.count} Syllabus Qs
+                              {topic.count} Syllabus Qs
                             </span>
                             {isCompleted && (
                               <>

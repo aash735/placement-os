@@ -337,27 +337,10 @@ export default function ReviewPage() {
                       <BookOpen className="h-3.5 w-3.5 mr-1 text-cyan-400" />
                       Mathematical Derivation & Solution
                     </h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed bg-black/20 p-3 rounded-lg whitespace-pre-line">
-                      <MathRenderer text={q.explanation} />
+                    <p className="text-xs text-zinc-500 leading-relaxed bg-black/20 p-3 rounded-lg font-medium">
+                      Detailed explanations are temporarily unavailable.
                     </p>
                   </div>
-
-                  {/* Mentor Shortcuts */}
-                  {q.shortcuts && q.shortcuts.length > 0 && (
-                    <div className="mt-3 flex items-start space-x-2 bg-violet-500/5 border border-violet-500/10 p-3 rounded-lg">
-                      <Zap className="h-4 w-4 text-violet-400 shrink-0 mt-0.5 fill-violet-400/20" />
-                      <div>
-                        <span className="text-[10px] font-bold text-violet-300 uppercase tracking-wider">
-                          Mentor Shortcut Trick
-                        </span>
-                        <ul className="list-disc pl-4 text-[11px] text-zinc-400 space-y-1 mt-1">
-                          {q.shortcuts.map((s, sIdx) => (
-                            <li key={sIdx}>{s}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  )}
                 </GlassCard>
               );
             })}

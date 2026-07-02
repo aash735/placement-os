@@ -9,7 +9,7 @@
       "apathetic"
     ],
     "answer": "optimistic",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "Look for contrast clues: 'but remained cautious' => opposite of caution/doubt is optimism"
     ],
@@ -30,17 +30,18 @@
       "TCS",
       "Accenture"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "verbal-grammar-2",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.828Z",
     "optionsSourceId": "verbal-grammar-2",
     "answerSourceId": "verbal-grammar-2",
     "explanationSourceId": "verbal-grammar-2",
     "correctAnswer": "optimistic",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   },
   {
     "id": "verbal-grammar-3",
@@ -52,7 +53,7 @@
       "The group of students is plan a study trip."
     ],
     "answer": "The group of students is planning a study trip.",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "Collective noun (group) is singular => takes singular verb (is)"
     ],
@@ -75,17 +76,18 @@
       "Cognizant",
       "Wipro"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "verbal-grammar-3",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.829Z",
     "optionsSourceId": "verbal-grammar-3",
     "answerSourceId": "verbal-grammar-3",
     "explanationSourceId": "verbal-grammar-3",
     "correctAnswer": "The group of students is planning a study trip.",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   },
   {
     "id": "verbal-rc-2",
@@ -97,7 +99,7 @@
       "Job losses in the public transportation sector."
     ],
     "answer": "Algorithm-driven prioritizations in crash scenarios.",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "Match keywords: 'ethical challenges' maps to 'decision-making algorithms in unavoidable accident scenarios'"
     ],
@@ -118,17 +120,18 @@
       "Deloitte",
       "Infosys"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "verbal-rc-2",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.829Z",
     "optionsSourceId": "verbal-rc-2",
     "answerSourceId": "verbal-rc-2",
     "explanationSourceId": "verbal-rc-2",
     "correctAnswer": "Algorithm-driven prioritizations in crash scenarios.",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   },
   {
     "id": "verbal-vocab-2",
@@ -140,7 +143,7 @@
       "Impatient"
     ],
     "answer": "Cautious",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "Prudent = Wise, careful, cautious"
     ],
@@ -161,17 +164,18 @@
       "Accenture",
       "TCS Ninja"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "verbal-vocab-2",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.829Z",
     "optionsSourceId": "verbal-vocab-2",
     "answerSourceId": "verbal-vocab-2",
     "explanationSourceId": "verbal-vocab-2",
     "correctAnswer": "Cautious",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   },
   {
     "id": "verbal-syn-1",
@@ -183,7 +187,7 @@
       "Ambiguous"
     ],
     "answer": "Frank",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "Candid = honest, open, frank"
     ],
@@ -202,17 +206,18 @@
     "companyTags": [
       "All MNCs"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "verbal-syn-1",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.829Z",
     "optionsSourceId": "verbal-syn-1",
     "answerSourceId": "verbal-syn-1",
     "explanationSourceId": "verbal-syn-1",
     "correctAnswer": "Frank",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   },
   {
     "id": "verbal-ant-1",
@@ -224,7 +229,7 @@
       "Merciful"
     ],
     "answer": "Cruel",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "Compassionate (positive) <=> Cruel (negative)"
     ],
@@ -243,17 +248,18 @@
     "companyTags": [
       "All MNCs"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "verbal-ant-1",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.829Z",
     "optionsSourceId": "verbal-ant-1",
     "answerSourceId": "verbal-ant-1",
     "explanationSourceId": "verbal-ant-1",
     "correctAnswer": "Cruel",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   },
   {
     "id": "verbal-imp-1",
@@ -265,7 +271,7 @@
       "No improvement"
     ],
     "answer": "has",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "State of possession = use simple present (has/have)"
     ],
@@ -286,17 +292,18 @@
       "TCS Ninja",
       "Cognizant"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "verbal-imp-1",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.829Z",
     "optionsSourceId": "verbal-imp-1",
     "answerSourceId": "verbal-imp-1",
     "explanationSourceId": "verbal-imp-1",
     "correctAnswer": "has",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   },
   {
     "id": "verbal-err-1",
@@ -308,7 +315,7 @@
       "D"
     ],
     "answer": "B",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "One of + Plural Noun + Singular Verb"
     ],
@@ -329,16 +336,17 @@
       "Accenture",
       "Wipro"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "verbal-err-1",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.422Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.829Z",
     "optionsSourceId": "verbal-err-1",
     "answerSourceId": "verbal-err-1",
     "explanationSourceId": "verbal-err-1",
     "correctAnswer": "B",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   }
 ]

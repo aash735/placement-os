@@ -27,6 +27,9 @@ export interface AptitudeQuestion {
   sourceFile?: string;
   correctAnswer?: string;
   sourceReference?: string;
+  sourceBook?: string;
+  sourcePage?: number;
+  integrityStatus?: 'INTEGRATED' | 'QUARANTINED';
 }
 
 import { tcsAptitudeQuestions } from "./tcs-questions";

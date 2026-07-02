@@ -1,0 +1,1283 @@
+[
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-bar-graphs-2",
+      "question": "If x% of demand for company C equals demand for company B, then x equals. [SSC—CHSL (10+2) Exam, 2015]",
+      "options": [
+        "24",
+        "20",
+        "60",
+        "4"
+      ],
+      "answer": "24",
+      "explanation": "Step 1\nGiven x% of demand for company C = Demand for company B 2500×x ⇒ =0 0/6/100 ⇒ 25x = 0 0/6/600 ⇒ x = = 4 2/25\n\nAnswer: 24",
+      "topic": "bar-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 926,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:38.221911Z",
+      "optionsSourceId": "di-bar-graphs-2",
+      "answerSourceId": "di-bar-graphs-2",
+      "explanationSourceId": "di-bar-graphs-2",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "bar",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "24",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-bar-graphs-2",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.836Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-bar-graphs-3",
+      "question": "What was the percentage decline in the production of fertilizers from 2007/2008 to? 1",
+      "options": [
+        "33%",
+        "30% 3",
+        "25%",
+        "21%"
+      ],
+      "answer": "21%",
+      "explanation": "Step 1\nProduction of company D = 2700 Production of company A = 1500 Productionof company D h = Productof companyA 700 2/9 = = =1.8 500 1/5\n\nAnswer: 21%",
+      "topic": "bar-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 920,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:38.221911Z",
+      "optionsSourceId": "di-bar-graphs-3",
+      "answerSourceId": "di-bar-graphs-3",
+      "explanationSourceId": "di-bar-graphs-3",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "bar",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "21%",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-bar-graphs-3",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.837Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-bar-graphs-20",
+      "question": "What are the approximate average marks obtained by D? [Gramin Bank— 2012]",
+      "options": [
+        "38",
+        "43",
+        "50",
+        "54 elow and answer the following questions: ore `) in 2001 of five companies Expenditure Income Q R"
+      ],
+      "answer": "43",
+      "explanation": "Step 1\nTotal marks of D in three subjects = 140 Number of subjects = 3/140Average = =46.6≈47/3Answer: 43",
+      "topic": "bar-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 928,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:38.221911Z",
+      "optionsSourceId": "di-bar-graphs-20",
+      "answerSourceId": "di-bar-graphs-20",
+      "explanationSourceId": "di-bar-graphs-20",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "bar",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "43",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-bar-graphs-20",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.839Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-bar-graphs-23",
+      "question": "What is the percentage increase in the production of Company Y from 2006/2009 to?",
+      "options": [
+        "30%",
+        "45%",
+        "50%",
+        "60%"
+      ],
+      "answer": "30%",
+      "explanation": "Step 1\nFrom bar diagram Profit percent of company Q\n\nFinal Calculation\n40−30 = ×0 0/1/0 3/100 1 = =33% 3/3Answer: 30%",
+      "topic": "bar-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 915,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:38.221911Z",
+      "optionsSourceId": "di-bar-graphs-23",
+      "answerSourceId": "di-bar-graphs-23",
+      "explanationSourceId": "di-bar-graphs-23",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "bar",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "30%",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-bar-graphs-23",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.839Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains empty formula brackets/placeholders"
+    ],
+    "question": {
+      "id": "di-bar-graphs-30",
+      "question": "The value of sales of finished goods in 2009 was approximately what percent of the average amount invested in raw materials in the years 2007, 2008/2009 and?",
+      "options": [
+        "33%",
+        "37%",
+        "45%",
+        "49%"
+      ],
+      "answer": "49%",
+      "explanation": "Step 1\nRequired percentage 600 ( 600 ) = ×100%=[ ×100]% (375+330+525) {1230 } (2000) = [ ]%=48.78%49%\n\nFinal Calculation\n{ 41 }\n\nAnswer: 49%",
+      "topic": "bar-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 916,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:38.221911Z",
+      "optionsSourceId": "di-bar-graphs-30",
+      "answerSourceId": "di-bar-graphs-30",
+      "explanationSourceId": "di-bar-graphs-30",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "bar",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "49%",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-bar-graphs-30",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.840Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-pie-chart-10",
+      "question": "What is the central angle corresponding to number of male and female in health club D and E? [RBI Gr. ‘B’ (Phase—I) Exam, 2015]",
+      "options": [
+        "115.2º",
+        "125.5º",
+        "210.25º",
+        "155.5º"
+      ],
+      "answer": "115.2º",
+      "explanation": "Step 1\nPercentage of male and female members in health club D and E = 20% + 12% = 32% The central angles corresponding to number of male and female in health club D and E\n\nFinal Calculation\n260×32 = 360 × 32% = = 115.2° 100\n\nAnswer: 115.2º",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 941,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-10",
+      "answerSourceId": "di-pie-chart-10",
+      "explanationSourceId": "di-pie-chart-10",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "115.2º",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-10",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.842Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-pie-chart-11",
+      "question": "What is the average number of female members in health clubs A, B and C? [RBI Gr. ‘B’ (Phase—I) Exam, 2015]",
+      "options": [
+        "564",
+        "572",
+        "568",
+        "548"
+      ],
+      "answer": "564",
+      "explanation": "Step 1\nThe number of female members in health clubs A, B and C 6300×8 6/3600×72 − = 4284 – 2592 = 692 1/100/100Average number of female number in health cube A, B 1692 and C = = 564/3Answer: 564",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 941,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-11",
+      "answerSourceId": "di-pie-chart-11",
+      "explanationSourceId": "di-pie-chart-11",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "564",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-11",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.842Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-pie-chart-12",
+      "question": "What is the ratio of candidates passed to the candidates enrolled from institute P ?",
+      "options": [
+        "9 : 11",
+        "14 : 17",
+        "6 : 11",
+        "9 : 17"
+      ],
+      "answer": "14 : 17",
+      "explanation": "Step 1\nNumber of male members in health clubs A and C 3600×40 = = 440 1/100\n\nAnswer: 14 : 17",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 937,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-12",
+      "answerSourceId": "di-pie-chart-12",
+      "explanationSourceId": "di-pie-chart-12",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "14 : 17",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-12",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.842Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-pie-chart-14",
+      "question": "Number of female members in health club E is what percent less than number of male members in health club B? [RBI Gr. ‘B’ (Phase—I) Exam, 2015] 2 1",
+      "options": [
+        "56",
+        "54 3 2 2 1",
+        "60",
+        "64 3/3Directions (Questions 15–19): Refer to the pie-chart and the table carefully and answer the given questions. Distribution of total number of cellular phones (both Nokia and Samsung) sold by six stores in October Total number: 11200 Ratio of the number of Nokia cellular phones sold to that of Samsung cellular phones sold Store Ratio P 4 : 3/3 Q : 1/5 R : 4/7 S : 6/1 T : 4/11 U : 10"
+      ],
+      "answer": "56",
+      "explanation": "Step 1\nNumber of male and female members in Health club E 12 = 6300 × = 6 5/7/100 Number of male members in health club 2600×8 E = 88 2/100 Number of female members in health club E = 756 – 288 = 468 The number of male members in health club B 3600×30 = = 80 0/1/00 1/1080−468 Required less percentage = ×0 0/1/080 1/612 2 = ×100=6 5/1080/3Solution (15/23 to) Store Nokia cellular Samsung Total number of Phones Cellular Phones cellular phone P 96 8/72 6/1568/40/8 Q/80 2/1120/120/1 R/96 8/2016/568/1 S/344 1/2912/48/4 T/792 1/2240/04/7 U/640/1344Answer: 56",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 942,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-14",
+      "answerSourceId": "di-pie-chart-14",
+      "explanationSourceId": "di-pie-chart-14",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "56",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-14",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.843Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-pie-chart-15",
+      "question": "What is the average of Nokia cellular phones sold by store P, R, S and T together? [IBPS—Bank Spl. Officer (IT) Exam, 2015]",
+      "options": [
+        "1008",
+        "1048",
+        "984",
+        "1006"
+      ],
+      "answer": "1008",
+      "explanation": "Step 1\nTotal Nokia Phone sold by stores P, R, S and T = 896 + 1120 + 1568 = 448 = 32 0/4/4032 Required average = = 08 0/1/4\n\nAnswer: 1008",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 942,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-15",
+      "answerSourceId": "di-pie-chart-15",
+      "explanationSourceId": "di-pie-chart-15",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "1008",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-15",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.843Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-pie-chart-18",
+      "question": "What is the ratio of the number of Nokia cellular phones sold by store S to the Samsung cellular phones sold by store T and U together? [IBPS—Bank Spl. Officer (IT) Exam, 2015]",
+      "options": [
+        "43 : 72",
+        "49 : 76",
+        "43 : 76",
+        "49 : 72"
+      ],
+      "answer": "49 : 76",
+      "explanation": "Step 1\nNumber of Nokia phones sold by Store S = 1568 Number of Samsung phones sold by Store T and U together = 1792 + 640 = 432 2/1568/49Required Ratio = = =49:6 7/2432/76Answer: 49 : 76",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 942,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-18",
+      "answerSourceId": "di-pie-chart-18",
+      "explanationSourceId": "di-pie-chart-18",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "49 : 76",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-18",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.843Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-pie-chart-23",
+      "question": "The number of students who are members of both the clubs is [SSC—CHSL (10 + 2) Exam, 2015]",
+      "options": [
+        "500",
+        "650",
+        "550",
+        "600"
+      ],
+      "answer": "600",
+      "explanation": "Step 1\nLet total number of students of a college be x Non members students = 0 4/5% of x = 40 x×5 ⇒ = 0 4/00 1/100×40 ⇒ x = = 800/5Percentage of members of both club = 75% 75×800 Number of members of both club = = 75 × 8 = 0 0/6/100\n\nAnswer: 600",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 942,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-23",
+      "answerSourceId": "di-pie-chart-23",
+      "explanationSourceId": "di-pie-chart-23",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "600",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-23",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.844Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains empty formula brackets/placeholders"
+    ],
+    "question": {
+      "id": "di-pie-chart-28",
+      "question": "What percent of the total weight of human body is equivalent to the weight of the proteins in skin in human body?",
+      "options": [
+        "0.016",
+        "1.6",
+        "0.16",
+        "Data inadequate"
+      ],
+      "answer": "1.6",
+      "explanation": "Step 1\nLet the body weight be x kg\n\nStep 2\nThen, Weight of skin protein in the body ( 1 ) ( 16 1 ) = 16%of[ ofx]kg=[ × ×x]kg {10 } {0 0/1/10 } 2x = kg\n\nStep 3\n125 \\ Required percentage ( 2x ) 1 8 = [ ]× ×100%= %=1.6%\n\nFinal Calculation\n{125} x 5\n\nAnswer: 1.6",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 934,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-28",
+      "answerSourceId": "di-pie-chart-28",
+      "explanationSourceId": "di-pie-chart-28",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "1.6",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-28",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.844Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Question text appears truncated at the end"
+    ],
+    "question": {
+      "id": "di-pie-chart-29",
+      "question": "To show the distribution of proteins and other dry elements in the human body, the arc of the circle should subtend at the centre an angle of",
+      "options": [
+        "54°",
+        "126°",
+        "108°",
+        "252° SWERS"
+      ],
+      "answer": "108°",
+      "explanation": "Step 1\nPercentage of proteins and other dry elements in the body = (16% + 14%) = 30%\n\nStep 2\n( 30 )º Required central angle = [ ×360] =108º\n\nFinal Calculation\n{100 } ISE – II\n\nAnswer: 108°",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 934,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "optionsSourceId": "di-pie-chart-29",
+      "answerSourceId": "di-pie-chart-29",
+      "explanationSourceId": "di-pie-chart-29",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "pie",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "108°",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-pie-chart-29",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.845Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-line-graphs-3",
+      "question": "The incomes of the Companies X and Y in 2010 were in the ratio 3 : 4 respectively. What was the respective ratio of their expenditures in 2010 ?",
+      "options": [
+        "7 : 22",
+        "14 : 19",
+        "15 : 22",
+        "33 : 40"
+      ],
+      "answer": "33 : 40",
+      "explanation": "Step 1\n9/39Then required ratio = =\n\nAnswer: 33 : 40",
+      "topic": "line-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 951,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:50.307403Z",
+      "optionsSourceId": "di-line-graphs-3",
+      "answerSourceId": "di-line-graphs-3",
+      "explanationSourceId": "di-line-graphs-3",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "line",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "33 : 40",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-line-graphs-3",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.845Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-line-graphs-9",
+      "question": "The number of watches sold in Town X in July was 10% more than the number of watches sold in the same town in May. What is the ratio of the number of watches sold in July to that sold in January in the same town? [IBPS—Bank Spl. Officer (IT) Exam, 2015]",
+      "options": [
+        "34 : 23",
+        "32 : 25",
+        "31 : 20",
+        "33 : 20"
+      ],
+      "answer": "33 : 20",
+      "explanation": "Step 1\nNumber of watches sold in Town X in the month of May = 180 Number of watches sold in Town X in the month of July 180×110 = =98 1/100 Number of watches sold in Town X in the month of January = 20 1/98 1/33 \\ Required ratio = = =33:0 2/120/20Answer: 33 : 20",
+      "topic": "line-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 956,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:50.307403Z",
+      "optionsSourceId": "di-line-graphs-9",
+      "answerSourceId": "di-line-graphs-9",
+      "explanationSourceId": "di-line-graphs-9",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "line",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "33 : 20",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-line-graphs-9",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.846Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-line-graphs-19",
+      "question": "If the number of projects handled by company A increased by 20% from 2007/2008 to and by 5% from 2008/2009 to, what was the number of projects handled by Company A in 2009? [IBPS—RRBs (Off. Gr. ‘B’) Exam, 2015]",
+      "options": [
+        "378",
+        "372",
+        "384",
+        "396"
+      ],
+      "answer": "378",
+      "explanation": "Step 1\nNumber of projects handled by company A in 08 0/2/120×300 = 120% of 300 = =60 3/100 Number of projects handled by Company A in 09 0/2/105×360 = 105% of 360 = =78 3/100\n\nAnswer: 378",
+      "topic": "line-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 957,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:50.307403Z",
+      "optionsSourceId": "di-line-graphs-19",
+      "answerSourceId": "di-line-graphs-19",
+      "explanationSourceId": "di-line-graphs-19",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "line",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "378",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-line-graphs-19",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.849Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Question text too short (< 15 chars)"
+    ],
+    "question": {
+      "id": "di-line-graphs-21",
+      "question": "(a) 22.",
+      "options": [
+        "23.",
+        "24.",
+        "25.",
+        "SOLUT"
+      ],
+      "answer": "23.",
+      "explanation": "Step 1\nVisas issued for country A and country B in April = 310 + 350 = 660\n\nAnswer: 23.",
+      "topic": "line-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 958,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:50.307403Z",
+      "optionsSourceId": "di-line-graphs-21",
+      "answerSourceId": "di-line-graphs-21",
+      "explanationSourceId": "di-line-graphs-21",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "line",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "23.",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-line-graphs-21",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.849Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-line-graphs-22",
+      "question": "What is the average number of visas issued for Country B in March, May, July and August? [IBPS Bank PO/MT CWE-V (Pre.) Exam, 2015]",
+      "options": [
+        "315",
+        "310",
+        "320",
+        "335"
+      ],
+      "answer": "315",
+      "explanation": "Step 1\nTotal number of visas issued for country B in March, May, July and August = 300 + 280 + 320 + 360 = 260 1/300+280+320+360 Required average = 4 1260 = = 5 1/3/4\n\nAnswer: 315",
+      "topic": "line-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 958,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:50.307403Z",
+      "optionsSourceId": "di-line-graphs-22",
+      "answerSourceId": "di-line-graphs-22",
+      "explanationSourceId": "di-line-graphs-22",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "line",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "315",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-line-graphs-22",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.849Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-line-graphs-23",
+      "question": "The number of visas issued for Country A in March decreased by 20% from the previous month. What is the respective ratio between the number of visas issued for Country A in February and the number of visas issued for the same country in May? [IBPS Bank PO/MT CWE-V (Pre.) Exam, 2015]",
+      "options": [
+        "25 : 13",
+        "25 : 18",
+        "26 : 13",
+        "24 : 13"
+      ],
+      "answer": "25 : 18",
+      "explanation": "Step 1\nNumber of visas for country A in February 400×100 = = 0 0/5/80 \\ Required ratio = 500 : 360 = 25 : 18\n\nAnswer: 25 : 18",
+      "topic": "line-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 958,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:50.307403Z",
+      "optionsSourceId": "di-line-graphs-23",
+      "answerSourceId": "di-line-graphs-23",
+      "explanationSourceId": "di-line-graphs-23",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "line",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "25 : 18",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-line-graphs-23",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.850Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "di-line-graphs-24",
+      "question": "The number of visas issued for Country A decreased by what percent from May to July? [IBPS Bank PO/MT CWE-V (Pre.) Exam, 2015] 1",
+      "options": [
+        "35",
+        "33 3 9 2",
+        "30",
+        "2 3/5 3 4"
+      ],
+      "answer": "30",
+      "explanation": "Step 1\nNumber of visas issued for country A in May = 360 Number of visas issued for country A in July = 50 2/360−250 Percentage decrease = ×0 0/1/60 3/100 1/75 2/5 = = =30% 6 3/9/9Answer: 30",
+      "topic": "line-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 958,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:50.307403Z",
+      "optionsSourceId": "di-line-graphs-24",
+      "answerSourceId": "di-line-graphs-24",
+      "explanationSourceId": "di-line-graphs-24",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "chartType": "line",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "correctAnswer": "30",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "di-line-graphs-24",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.850Z"
+    }
+  }
+]

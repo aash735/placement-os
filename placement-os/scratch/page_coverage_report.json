@@ -1,0 +1,4759 @@
+{
+  "total_pdf_pages": 961,
+  "expected_pages": 950,
+  "processed_pages": 948,
+  "failed_pages": 0,
+  "skipped_pages": 13,
+  "inventory": {
+    "11": {
+      "page_num": 11,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "12": {
+      "page_num": 12,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "13": {
+      "page_num": 13,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "14": {
+      "page_num": 14,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "15": {
+      "page_num": 15,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "16": {
+      "page_num": 16,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "17": {
+      "page_num": 17,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "18": {
+      "page_num": 18,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "19": {
+      "page_num": 19,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "20": {
+      "page_num": 20,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "21": {
+      "page_num": 21,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "22": {
+      "page_num": 22,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "23": {
+      "page_num": 23,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "24": {
+      "page_num": 24,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "25": {
+      "page_num": 25,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "26": {
+      "page_num": 26,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "27": {
+      "page_num": 27,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "28": {
+      "page_num": 28,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "29": {
+      "page_num": 29,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "30": {
+      "page_num": 30,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "31": {
+      "page_num": 31,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "32": {
+      "page_num": 32,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "33": {
+      "page_num": 33,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "34": {
+      "page_num": 34,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "35": {
+      "page_num": 35,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "36": {
+      "page_num": 36,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "37": {
+      "page_num": 37,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "38": {
+      "page_num": 38,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "39": {
+      "page_num": 39,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "40": {
+      "page_num": 40,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "41": {
+      "page_num": 41,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "42": {
+      "page_num": 42,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "43": {
+      "page_num": 43,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "44": {
+      "page_num": 44,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "45": {
+      "page_num": 45,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "46": {
+      "page_num": 46,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "47": {
+      "page_num": 47,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "48": {
+      "page_num": 48,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "49": {
+      "page_num": 49,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "50": {
+      "page_num": 50,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "51": {
+      "page_num": 51,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "52": {
+      "page_num": 52,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "53": {
+      "page_num": 53,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "54": {
+      "page_num": 54,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "55": {
+      "page_num": 55,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "56": {
+      "page_num": 56,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "57": {
+      "page_num": 57,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "58": {
+      "page_num": 58,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "59": {
+      "page_num": 59,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "60": {
+      "page_num": 60,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "61": {
+      "page_num": 61,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "62": {
+      "page_num": 62,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "63": {
+      "page_num": 63,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "64": {
+      "page_num": 64,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "65": {
+      "page_num": 65,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "66": {
+      "page_num": 66,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "67": {
+      "page_num": 67,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "68": {
+      "page_num": 68,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "69": {
+      "page_num": 69,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "70": {
+      "page_num": 70,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "71": {
+      "page_num": 71,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "72": {
+      "page_num": 72,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "73": {
+      "page_num": 73,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "74": {
+      "page_num": 74,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "75": {
+      "page_num": 75,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "76": {
+      "page_num": 76,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "77": {
+      "page_num": 77,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "78": {
+      "page_num": 78,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "79": {
+      "page_num": 79,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "80": {
+      "page_num": 80,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "81": {
+      "page_num": 81,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "82": {
+      "page_num": 82,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "83": {
+      "page_num": 83,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "84": {
+      "page_num": 84,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "85": {
+      "page_num": 85,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "86": {
+      "page_num": 86,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "87": {
+      "page_num": 87,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "88": {
+      "page_num": 88,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "89": {
+      "page_num": 89,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "90": {
+      "page_num": 90,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "91": {
+      "page_num": 91,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "92": {
+      "page_num": 92,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "93": {
+      "page_num": 93,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "94": {
+      "page_num": 94,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "95": {
+      "page_num": 95,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "96": {
+      "page_num": 96,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "97": {
+      "page_num": 97,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "98": {
+      "page_num": 98,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "99": {
+      "page_num": 99,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "100": {
+      "page_num": 100,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "101": {
+      "page_num": 101,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "102": {
+      "page_num": 102,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "103": {
+      "page_num": 103,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "104": {
+      "page_num": 104,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "105": {
+      "page_num": 105,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "106": {
+      "page_num": 106,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "107": {
+      "page_num": 107,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "108": {
+      "page_num": 108,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "109": {
+      "page_num": 109,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "110": {
+      "page_num": 110,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "111": {
+      "page_num": 111,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "112": {
+      "page_num": 112,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "113": {
+      "page_num": 113,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "114": {
+      "page_num": 114,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "115": {
+      "page_num": 115,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "116": {
+      "page_num": 116,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "117": {
+      "page_num": 117,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "118": {
+      "page_num": 118,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "119": {
+      "page_num": 119,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "120": {
+      "page_num": 120,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "121": {
+      "page_num": 121,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "122": {
+      "page_num": 122,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "123": {
+      "page_num": 123,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "124": {
+      "page_num": 124,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "125": {
+      "page_num": 125,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "126": {
+      "page_num": 126,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "127": {
+      "page_num": 127,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "128": {
+      "page_num": 128,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "129": {
+      "page_num": 129,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "130": {
+      "page_num": 130,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "131": {
+      "page_num": 131,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "132": {
+      "page_num": 132,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "133": {
+      "page_num": 133,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "134": {
+      "page_num": 134,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "135": {
+      "page_num": 135,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "136": {
+      "page_num": 136,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "137": {
+      "page_num": 137,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "138": {
+      "page_num": 138,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "139": {
+      "page_num": 139,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "140": {
+      "page_num": 140,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "141": {
+      "page_num": 141,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "142": {
+      "page_num": 142,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "143": {
+      "page_num": 143,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "144": {
+      "page_num": 144,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "145": {
+      "page_num": 145,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "146": {
+      "page_num": 146,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "147": {
+      "page_num": 147,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "148": {
+      "page_num": 148,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "149": {
+      "page_num": 149,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "150": {
+      "page_num": 150,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "151": {
+      "page_num": 151,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "152": {
+      "page_num": 152,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "153": {
+      "page_num": 153,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "154": {
+      "page_num": 154,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "155": {
+      "page_num": 155,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "156": {
+      "page_num": 156,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "157": {
+      "page_num": 157,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "158": {
+      "page_num": 158,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "159": {
+      "page_num": 159,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "160": {
+      "page_num": 160,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "161": {
+      "page_num": 161,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "162": {
+      "page_num": 162,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "163": {
+      "page_num": 163,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "164": {
+      "page_num": 164,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "165": {
+      "page_num": 165,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "166": {
+      "page_num": 166,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "167": {
+      "page_num": 167,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "168": {
+      "page_num": 168,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "169": {
+      "page_num": 169,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "170": {
+      "page_num": 170,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "171": {
+      "page_num": 171,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "172": {
+      "page_num": 172,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "173": {
+      "page_num": 173,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "174": {
+      "page_num": 174,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "175": {
+      "page_num": 175,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "176": {
+      "page_num": 176,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "177": {
+      "page_num": 177,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "178": {
+      "page_num": 178,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "179": {
+      "page_num": 179,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "180": {
+      "page_num": 180,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "181": {
+      "page_num": 181,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "182": {
+      "page_num": 182,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "183": {
+      "page_num": 183,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "184": {
+      "page_num": 184,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "185": {
+      "page_num": 185,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "186": {
+      "page_num": 186,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "187": {
+      "page_num": 187,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "188": {
+      "page_num": 188,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "189": {
+      "page_num": 189,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "190": {
+      "page_num": 190,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "191": {
+      "page_num": 191,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "192": {
+      "page_num": 192,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "193": {
+      "page_num": 193,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "194": {
+      "page_num": 194,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "195": {
+      "page_num": 195,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "196": {
+      "page_num": 196,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "197": {
+      "page_num": 197,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "198": {
+      "page_num": 198,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "199": {
+      "page_num": 199,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "200": {
+      "page_num": 200,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "201": {
+      "page_num": 201,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "202": {
+      "page_num": 202,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "203": {
+      "page_num": 203,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "204": {
+      "page_num": 204,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "205": {
+      "page_num": 205,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "206": {
+      "page_num": 206,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "207": {
+      "page_num": 207,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "208": {
+      "page_num": 208,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "209": {
+      "page_num": 209,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "210": {
+      "page_num": 210,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "211": {
+      "page_num": 211,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "212": {
+      "page_num": 212,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "213": {
+      "page_num": 213,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "214": {
+      "page_num": 214,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "215": {
+      "page_num": 215,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "216": {
+      "page_num": 216,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "217": {
+      "page_num": 217,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "218": {
+      "page_num": 218,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "219": {
+      "page_num": 219,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "220": {
+      "page_num": 220,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "221": {
+      "page_num": 221,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "222": {
+      "page_num": 222,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "223": {
+      "page_num": 223,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "224": {
+      "page_num": 224,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "225": {
+      "page_num": 225,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "226": {
+      "page_num": 226,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "227": {
+      "page_num": 227,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "228": {
+      "page_num": 228,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "229": {
+      "page_num": 229,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "230": {
+      "page_num": 230,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "231": {
+      "page_num": 231,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "232": {
+      "page_num": 232,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "233": {
+      "page_num": 233,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "234": {
+      "page_num": 234,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "235": {
+      "page_num": 235,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "236": {
+      "page_num": 236,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "237": {
+      "page_num": 237,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "238": {
+      "page_num": 238,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "239": {
+      "page_num": 239,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "240": {
+      "page_num": 240,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "241": {
+      "page_num": 241,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "242": {
+      "page_num": 242,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "243": {
+      "page_num": 243,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "244": {
+      "page_num": 244,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "245": {
+      "page_num": 245,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "246": {
+      "page_num": 246,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "247": {
+      "page_num": 247,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "248": {
+      "page_num": 248,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "249": {
+      "page_num": 249,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "250": {
+      "page_num": 250,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "251": {
+      "page_num": 251,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "252": {
+      "page_num": 252,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "253": {
+      "page_num": 253,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "254": {
+      "page_num": 254,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "255": {
+      "page_num": 255,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "256": {
+      "page_num": 256,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "257": {
+      "page_num": 257,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "258": {
+      "page_num": 258,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "259": {
+      "page_num": 259,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "260": {
+      "page_num": 260,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "261": {
+      "page_num": 261,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "262": {
+      "page_num": 262,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "263": {
+      "page_num": 263,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "264": {
+      "page_num": 264,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "265": {
+      "page_num": 265,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "266": {
+      "page_num": 266,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "267": {
+      "page_num": 267,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "268": {
+      "page_num": 268,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "269": {
+      "page_num": 269,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "270": {
+      "page_num": 270,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "271": {
+      "page_num": 271,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "272": {
+      "page_num": 272,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "273": {
+      "page_num": 273,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "274": {
+      "page_num": 274,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "275": {
+      "page_num": 275,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "276": {
+      "page_num": 276,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "277": {
+      "page_num": 277,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "278": {
+      "page_num": 278,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "279": {
+      "page_num": 279,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "280": {
+      "page_num": 280,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "281": {
+      "page_num": 281,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "282": {
+      "page_num": 282,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "283": {
+      "page_num": 283,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "284": {
+      "page_num": 284,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "285": {
+      "page_num": 285,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "286": {
+      "page_num": 286,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "287": {
+      "page_num": 287,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "288": {
+      "page_num": 288,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "289": {
+      "page_num": 289,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "290": {
+      "page_num": 290,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "291": {
+      "page_num": 291,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "292": {
+      "page_num": 292,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "293": {
+      "page_num": 293,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "294": {
+      "page_num": 294,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "295": {
+      "page_num": 295,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "296": {
+      "page_num": 296,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "297": {
+      "page_num": 297,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "298": {
+      "page_num": 298,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "299": {
+      "page_num": 299,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "300": {
+      "page_num": 300,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "301": {
+      "page_num": 301,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "302": {
+      "page_num": 302,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "303": {
+      "page_num": 303,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "304": {
+      "page_num": 304,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "305": {
+      "page_num": 305,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "306": {
+      "page_num": 306,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "307": {
+      "page_num": 307,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "308": {
+      "page_num": 308,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "309": {
+      "page_num": 309,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "310": {
+      "page_num": 310,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "311": {
+      "page_num": 311,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "312": {
+      "page_num": 312,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "313": {
+      "page_num": 313,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "314": {
+      "page_num": 314,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "315": {
+      "page_num": 315,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "316": {
+      "page_num": 316,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "317": {
+      "page_num": 317,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "318": {
+      "page_num": 318,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "319": {
+      "page_num": 319,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "320": {
+      "page_num": 320,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "321": {
+      "page_num": 321,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "322": {
+      "page_num": 322,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "323": {
+      "page_num": 323,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "324": {
+      "page_num": 324,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "325": {
+      "page_num": 325,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "326": {
+      "page_num": 326,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "327": {
+      "page_num": 327,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "328": {
+      "page_num": 328,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "329": {
+      "page_num": 329,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "330": {
+      "page_num": 330,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "331": {
+      "page_num": 331,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "332": {
+      "page_num": 332,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "333": {
+      "page_num": 333,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "334": {
+      "page_num": 334,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "335": {
+      "page_num": 335,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "336": {
+      "page_num": 336,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "337": {
+      "page_num": 337,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "338": {
+      "page_num": 338,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "339": {
+      "page_num": 339,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "340": {
+      "page_num": 340,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "341": {
+      "page_num": 341,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "342": {
+      "page_num": 342,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "343": {
+      "page_num": 343,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "344": {
+      "page_num": 344,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "345": {
+      "page_num": 345,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "346": {
+      "page_num": 346,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "347": {
+      "page_num": 347,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "348": {
+      "page_num": 348,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "349": {
+      "page_num": 349,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "350": {
+      "page_num": 350,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "351": {
+      "page_num": 351,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "352": {
+      "page_num": 352,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "353": {
+      "page_num": 353,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "354": {
+      "page_num": 354,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "355": {
+      "page_num": 355,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "356": {
+      "page_num": 356,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "357": {
+      "page_num": 357,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "358": {
+      "page_num": 358,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "359": {
+      "page_num": 359,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "360": {
+      "page_num": 360,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "361": {
+      "page_num": 361,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "362": {
+      "page_num": 362,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "363": {
+      "page_num": 363,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "364": {
+      "page_num": 364,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "365": {
+      "page_num": 365,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "366": {
+      "page_num": 366,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "367": {
+      "page_num": 367,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "368": {
+      "page_num": 368,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "369": {
+      "page_num": 369,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "370": {
+      "page_num": 370,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "371": {
+      "page_num": 371,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "372": {
+      "page_num": 372,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "373": {
+      "page_num": 373,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "374": {
+      "page_num": 374,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "375": {
+      "page_num": 375,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "376": {
+      "page_num": 376,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "377": {
+      "page_num": 377,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "378": {
+      "page_num": 378,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "379": {
+      "page_num": 379,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "380": {
+      "page_num": 380,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "381": {
+      "page_num": 381,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "382": {
+      "page_num": 382,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "383": {
+      "page_num": 383,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "384": {
+      "page_num": 384,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "385": {
+      "page_num": 385,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "386": {
+      "page_num": 386,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "387": {
+      "page_num": 387,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "388": {
+      "page_num": 388,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "389": {
+      "page_num": 389,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "390": {
+      "page_num": 390,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "391": {
+      "page_num": 391,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "392": {
+      "page_num": 392,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "393": {
+      "page_num": 393,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "394": {
+      "page_num": 394,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "395": {
+      "page_num": 395,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "396": {
+      "page_num": 396,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "397": {
+      "page_num": 397,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "398": {
+      "page_num": 398,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "399": {
+      "page_num": 399,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "400": {
+      "page_num": 400,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "401": {
+      "page_num": 401,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "402": {
+      "page_num": 402,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "403": {
+      "page_num": 403,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "404": {
+      "page_num": 404,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "405": {
+      "page_num": 405,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "406": {
+      "page_num": 406,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "407": {
+      "page_num": 407,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "408": {
+      "page_num": 408,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "409": {
+      "page_num": 409,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "410": {
+      "page_num": 410,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "411": {
+      "page_num": 411,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "412": {
+      "page_num": 412,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "413": {
+      "page_num": 413,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "414": {
+      "page_num": 414,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "415": {
+      "page_num": 415,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "416": {
+      "page_num": 416,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "417": {
+      "page_num": 417,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "418": {
+      "page_num": 418,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "419": {
+      "page_num": 419,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "420": {
+      "page_num": 420,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "421": {
+      "page_num": 421,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "422": {
+      "page_num": 422,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "423": {
+      "page_num": 423,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "424": {
+      "page_num": 424,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "425": {
+      "page_num": 425,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "426": {
+      "page_num": 426,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "427": {
+      "page_num": 427,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "428": {
+      "page_num": 428,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "429": {
+      "page_num": 429,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "430": {
+      "page_num": 430,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "431": {
+      "page_num": 431,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "432": {
+      "page_num": 432,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "433": {
+      "page_num": 433,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "434": {
+      "page_num": 434,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "435": {
+      "page_num": 435,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "436": {
+      "page_num": 436,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "437": {
+      "page_num": 437,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "438": {
+      "page_num": 438,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "439": {
+      "page_num": 439,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "440": {
+      "page_num": 440,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "441": {
+      "page_num": 441,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "442": {
+      "page_num": 442,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "443": {
+      "page_num": 443,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "444": {
+      "page_num": 444,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "445": {
+      "page_num": 445,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "446": {
+      "page_num": 446,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "447": {
+      "page_num": 447,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "448": {
+      "page_num": 448,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "449": {
+      "page_num": 449,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "450": {
+      "page_num": 450,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "451": {
+      "page_num": 451,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "452": {
+      "page_num": 452,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "453": {
+      "page_num": 453,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "454": {
+      "page_num": 454,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "455": {
+      "page_num": 455,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "456": {
+      "page_num": 456,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "457": {
+      "page_num": 457,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "458": {
+      "page_num": 458,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "459": {
+      "page_num": 459,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "460": {
+      "page_num": 460,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "461": {
+      "page_num": 461,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "462": {
+      "page_num": 462,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "463": {
+      "page_num": 463,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "464": {
+      "page_num": 464,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "465": {
+      "page_num": 465,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "466": {
+      "page_num": 466,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "467": {
+      "page_num": 467,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "468": {
+      "page_num": 468,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "469": {
+      "page_num": 469,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "470": {
+      "page_num": 470,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "471": {
+      "page_num": 471,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "472": {
+      "page_num": 472,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "473": {
+      "page_num": 473,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "474": {
+      "page_num": 474,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "475": {
+      "page_num": 475,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "476": {
+      "page_num": 476,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "477": {
+      "page_num": 477,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "478": {
+      "page_num": 478,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "479": {
+      "page_num": 479,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "480": {
+      "page_num": 480,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "481": {
+      "page_num": 481,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "482": {
+      "page_num": 482,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "483": {
+      "page_num": 483,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "484": {
+      "page_num": 484,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "485": {
+      "page_num": 485,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "486": {
+      "page_num": 486,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "487": {
+      "page_num": 487,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "488": {
+      "page_num": 488,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "489": {
+      "page_num": 489,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "490": {
+      "page_num": 490,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "491": {
+      "page_num": 491,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "492": {
+      "page_num": 492,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "493": {
+      "page_num": 493,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "494": {
+      "page_num": 494,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "495": {
+      "page_num": 495,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "496": {
+      "page_num": 496,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "497": {
+      "page_num": 497,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "498": {
+      "page_num": 498,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "499": {
+      "page_num": 499,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "500": {
+      "page_num": 500,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "501": {
+      "page_num": 501,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "502": {
+      "page_num": 502,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "503": {
+      "page_num": 503,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "504": {
+      "page_num": 504,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "505": {
+      "page_num": 505,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "506": {
+      "page_num": 506,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "507": {
+      "page_num": 507,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "508": {
+      "page_num": 508,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "509": {
+      "page_num": 509,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "510": {
+      "page_num": 510,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "511": {
+      "page_num": 511,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "512": {
+      "page_num": 512,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "513": {
+      "page_num": 513,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "514": {
+      "page_num": 514,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "515": {
+      "page_num": 515,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "516": {
+      "page_num": 516,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "517": {
+      "page_num": 517,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "518": {
+      "page_num": 518,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "519": {
+      "page_num": 519,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "520": {
+      "page_num": 520,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "521": {
+      "page_num": 521,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "522": {
+      "page_num": 522,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "523": {
+      "page_num": 523,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "524": {
+      "page_num": 524,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "525": {
+      "page_num": 525,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "526": {
+      "page_num": 526,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "527": {
+      "page_num": 527,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "528": {
+      "page_num": 528,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "529": {
+      "page_num": 529,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "530": {
+      "page_num": 530,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "531": {
+      "page_num": 531,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "532": {
+      "page_num": 532,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "533": {
+      "page_num": 533,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "534": {
+      "page_num": 534,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "535": {
+      "page_num": 535,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "536": {
+      "page_num": 536,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "537": {
+      "page_num": 537,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "538": {
+      "page_num": 538,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "539": {
+      "page_num": 539,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "540": {
+      "page_num": 540,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "541": {
+      "page_num": 541,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "542": {
+      "page_num": 542,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "543": {
+      "page_num": 543,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "544": {
+      "page_num": 544,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "545": {
+      "page_num": 545,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "546": {
+      "page_num": 546,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "547": {
+      "page_num": 547,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "548": {
+      "page_num": 548,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "549": {
+      "page_num": 549,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "550": {
+      "page_num": 550,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "551": {
+      "page_num": 551,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "552": {
+      "page_num": 552,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "553": {
+      "page_num": 553,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "554": {
+      "page_num": 554,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "555": {
+      "page_num": 555,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "556": {
+      "page_num": 556,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "557": {
+      "page_num": 557,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "558": {
+      "page_num": 558,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "559": {
+      "page_num": 559,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "560": {
+      "page_num": 560,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "561": {
+      "page_num": 561,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "562": {
+      "page_num": 562,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "563": {
+      "page_num": 563,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "564": {
+      "page_num": 564,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "565": {
+      "page_num": 565,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "566": {
+      "page_num": 566,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "567": {
+      "page_num": 567,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "568": {
+      "page_num": 568,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "569": {
+      "page_num": 569,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "570": {
+      "page_num": 570,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "571": {
+      "page_num": 571,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "572": {
+      "page_num": 572,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "573": {
+      "page_num": 573,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "574": {
+      "page_num": 574,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "575": {
+      "page_num": 575,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "576": {
+      "page_num": 576,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "577": {
+      "page_num": 577,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "578": {
+      "page_num": 578,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "579": {
+      "page_num": 579,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "580": {
+      "page_num": 580,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "581": {
+      "page_num": 581,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "582": {
+      "page_num": 582,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "583": {
+      "page_num": 583,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "584": {
+      "page_num": 584,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "585": {
+      "page_num": 585,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "586": {
+      "page_num": 586,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "587": {
+      "page_num": 587,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "588": {
+      "page_num": 588,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "589": {
+      "page_num": 589,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "590": {
+      "page_num": 590,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "591": {
+      "page_num": 591,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "592": {
+      "page_num": 592,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "593": {
+      "page_num": 593,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "594": {
+      "page_num": 594,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "595": {
+      "page_num": 595,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "596": {
+      "page_num": 596,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "597": {
+      "page_num": 597,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "598": {
+      "page_num": 598,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "599": {
+      "page_num": 599,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "600": {
+      "page_num": 600,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "601": {
+      "page_num": 601,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "602": {
+      "page_num": 602,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "603": {
+      "page_num": 603,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "604": {
+      "page_num": 604,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "605": {
+      "page_num": 605,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "606": {
+      "page_num": 606,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "607": {
+      "page_num": 607,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "608": {
+      "page_num": 608,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "609": {
+      "page_num": 609,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "610": {
+      "page_num": 610,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "611": {
+      "page_num": 611,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "612": {
+      "page_num": 612,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "613": {
+      "page_num": 613,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "614": {
+      "page_num": 614,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "615": {
+      "page_num": 615,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "616": {
+      "page_num": 616,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "617": {
+      "page_num": 617,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "618": {
+      "page_num": 618,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "619": {
+      "page_num": 619,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "620": {
+      "page_num": 620,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "621": {
+      "page_num": 621,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "622": {
+      "page_num": 622,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "623": {
+      "page_num": 623,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "624": {
+      "page_num": 624,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "625": {
+      "page_num": 625,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "626": {
+      "page_num": 626,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "627": {
+      "page_num": 627,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "628": {
+      "page_num": 628,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "629": {
+      "page_num": 629,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "630": {
+      "page_num": 630,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "631": {
+      "page_num": 631,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "632": {
+      "page_num": 632,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "633": {
+      "page_num": 633,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "634": {
+      "page_num": 634,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "635": {
+      "page_num": 635,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "636": {
+      "page_num": 636,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "637": {
+      "page_num": 637,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "638": {
+      "page_num": 638,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "639": {
+      "page_num": 639,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "640": {
+      "page_num": 640,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "641": {
+      "page_num": 641,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "642": {
+      "page_num": 642,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "643": {
+      "page_num": 643,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "644": {
+      "page_num": 644,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "645": {
+      "page_num": 645,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "646": {
+      "page_num": 646,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "647": {
+      "page_num": 647,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "648": {
+      "page_num": 648,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "649": {
+      "page_num": 649,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "650": {
+      "page_num": 650,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "651": {
+      "page_num": 651,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "652": {
+      "page_num": 652,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "653": {
+      "page_num": 653,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "654": {
+      "page_num": 654,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "655": {
+      "page_num": 655,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "656": {
+      "page_num": 656,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "657": {
+      "page_num": 657,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "658": {
+      "page_num": 658,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "659": {
+      "page_num": 659,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "660": {
+      "page_num": 660,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "661": {
+      "page_num": 661,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "662": {
+      "page_num": 662,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "663": {
+      "page_num": 663,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "664": {
+      "page_num": 664,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "665": {
+      "page_num": 665,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "666": {
+      "page_num": 666,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "667": {
+      "page_num": 667,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "668": {
+      "page_num": 668,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "669": {
+      "page_num": 669,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "670": {
+      "page_num": 670,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "671": {
+      "page_num": 671,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "672": {
+      "page_num": 672,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "673": {
+      "page_num": 673,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "674": {
+      "page_num": 674,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "675": {
+      "page_num": 675,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "676": {
+      "page_num": 676,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "677": {
+      "page_num": 677,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "678": {
+      "page_num": 678,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "679": {
+      "page_num": 679,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "680": {
+      "page_num": 680,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "681": {
+      "page_num": 681,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "682": {
+      "page_num": 682,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "683": {
+      "page_num": 683,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "684": {
+      "page_num": 684,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "685": {
+      "page_num": 685,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "686": {
+      "page_num": 686,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "687": {
+      "page_num": 687,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "688": {
+      "page_num": 688,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "689": {
+      "page_num": 689,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "690": {
+      "page_num": 690,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "691": {
+      "page_num": 691,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "692": {
+      "page_num": 692,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "693": {
+      "page_num": 693,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "694": {
+      "page_num": 694,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "695": {
+      "page_num": 695,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "696": {
+      "page_num": 696,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "697": {
+      "page_num": 697,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "698": {
+      "page_num": 698,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "699": {
+      "page_num": 699,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "700": {
+      "page_num": 700,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "701": {
+      "page_num": 701,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "702": {
+      "page_num": 702,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "703": {
+      "page_num": 703,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "704": {
+      "page_num": 704,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "705": {
+      "page_num": 705,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "706": {
+      "page_num": 706,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "707": {
+      "page_num": 707,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "708": {
+      "page_num": 708,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "709": {
+      "page_num": 709,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "710": {
+      "page_num": 710,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "711": {
+      "page_num": 711,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "712": {
+      "page_num": 712,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "713": {
+      "page_num": 713,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "714": {
+      "page_num": 714,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "715": {
+      "page_num": 715,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "716": {
+      "page_num": 716,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "717": {
+      "page_num": 717,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "718": {
+      "page_num": 718,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "719": {
+      "page_num": 719,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "720": {
+      "page_num": 720,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "721": {
+      "page_num": 721,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "722": {
+      "page_num": 722,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "723": {
+      "page_num": 723,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "724": {
+      "page_num": 724,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "725": {
+      "page_num": 725,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "726": {
+      "page_num": 726,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "727": {
+      "page_num": 727,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "728": {
+      "page_num": 728,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "729": {
+      "page_num": 729,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "730": {
+      "page_num": 730,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "731": {
+      "page_num": 731,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "732": {
+      "page_num": 732,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "733": {
+      "page_num": 733,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "734": {
+      "page_num": 734,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "735": {
+      "page_num": 735,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "736": {
+      "page_num": 736,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "737": {
+      "page_num": 737,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "738": {
+      "page_num": 738,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "739": {
+      "page_num": 739,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "740": {
+      "page_num": 740,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "741": {
+      "page_num": 741,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "742": {
+      "page_num": 742,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "743": {
+      "page_num": 743,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "744": {
+      "page_num": 744,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "745": {
+      "page_num": 745,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "746": {
+      "page_num": 746,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "747": {
+      "page_num": 747,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "748": {
+      "page_num": 748,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "749": {
+      "page_num": 749,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "750": {
+      "page_num": 750,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "751": {
+      "page_num": 751,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "752": {
+      "page_num": 752,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "753": {
+      "page_num": 753,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "754": {
+      "page_num": 754,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "755": {
+      "page_num": 755,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "756": {
+      "page_num": 756,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "757": {
+      "page_num": 757,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "758": {
+      "page_num": 758,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "759": {
+      "page_num": 759,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "760": {
+      "page_num": 760,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "761": {
+      "page_num": 761,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "762": {
+      "page_num": 762,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "763": {
+      "page_num": 763,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "764": {
+      "page_num": 764,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "765": {
+      "page_num": 765,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "766": {
+      "page_num": 766,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "767": {
+      "page_num": 767,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "768": {
+      "page_num": 768,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "769": {
+      "page_num": 769,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "770": {
+      "page_num": 770,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "771": {
+      "page_num": 771,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "772": {
+      "page_num": 772,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "773": {
+      "page_num": 773,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "774": {
+      "page_num": 774,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "775": {
+      "page_num": 775,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "776": {
+      "page_num": 776,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "777": {
+      "page_num": 777,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "778": {
+      "page_num": 778,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "779": {
+      "page_num": 779,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "780": {
+      "page_num": 780,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "781": {
+      "page_num": 781,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "782": {
+      "page_num": 782,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "783": {
+      "page_num": 783,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "784": {
+      "page_num": 784,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "785": {
+      "page_num": 785,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "786": {
+      "page_num": 786,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "787": {
+      "page_num": 787,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "788": {
+      "page_num": 788,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "789": {
+      "page_num": 789,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "790": {
+      "page_num": 790,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "791": {
+      "page_num": 791,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "792": {
+      "page_num": 792,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "793": {
+      "page_num": 793,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "794": {
+      "page_num": 794,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "795": {
+      "page_num": 795,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "796": {
+      "page_num": 796,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "797": {
+      "page_num": 797,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "798": {
+      "page_num": 798,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "799": {
+      "page_num": 799,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "800": {
+      "page_num": 800,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "801": {
+      "page_num": 801,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "802": {
+      "page_num": 802,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "803": {
+      "page_num": 803,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "804": {
+      "page_num": 804,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "805": {
+      "page_num": 805,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "806": {
+      "page_num": 806,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "807": {
+      "page_num": 807,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "808": {
+      "page_num": 808,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "809": {
+      "page_num": 809,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "810": {
+      "page_num": 810,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "811": {
+      "page_num": 811,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "812": {
+      "page_num": 812,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "813": {
+      "page_num": 813,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "814": {
+      "page_num": 814,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "815": {
+      "page_num": 815,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "816": {
+      "page_num": 816,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "817": {
+      "page_num": 817,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "818": {
+      "page_num": 818,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "819": {
+      "page_num": 819,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "820": {
+      "page_num": 820,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "821": {
+      "page_num": 821,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "822": {
+      "page_num": 822,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "823": {
+      "page_num": 823,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "824": {
+      "page_num": 824,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "825": {
+      "page_num": 825,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "826": {
+      "page_num": 826,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "827": {
+      "page_num": 827,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "828": {
+      "page_num": 828,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "829": {
+      "page_num": 829,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "830": {
+      "page_num": 830,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "831": {
+      "page_num": 831,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "832": {
+      "page_num": 832,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "833": {
+      "page_num": 833,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "834": {
+      "page_num": 834,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "835": {
+      "page_num": 835,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "836": {
+      "page_num": 836,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "837": {
+      "page_num": 837,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "838": {
+      "page_num": 838,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "839": {
+      "page_num": 839,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "840": {
+      "page_num": 840,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "841": {
+      "page_num": 841,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "842": {
+      "page_num": 842,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "843": {
+      "page_num": 843,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "844": {
+      "page_num": 844,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "845": {
+      "page_num": 845,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "846": {
+      "page_num": 846,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "847": {
+      "page_num": 847,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "848": {
+      "page_num": 848,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "849": {
+      "page_num": 849,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "850": {
+      "page_num": 850,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "851": {
+      "page_num": 851,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "852": {
+      "page_num": 852,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "853": {
+      "page_num": 853,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "854": {
+      "page_num": 854,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "855": {
+      "page_num": 855,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "856": {
+      "page_num": 856,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "857": {
+      "page_num": 857,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "858": {
+      "page_num": 858,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "859": {
+      "page_num": 859,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "860": {
+      "page_num": 860,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "861": {
+      "page_num": 861,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "862": {
+      "page_num": 862,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "863": {
+      "page_num": 863,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "864": {
+      "page_num": 864,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "865": {
+      "page_num": 865,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "866": {
+      "page_num": 866,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "867": {
+      "page_num": 867,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "868": {
+      "page_num": 868,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "869": {
+      "page_num": 869,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "870": {
+      "page_num": 870,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "871": {
+      "page_num": 871,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "872": {
+      "page_num": 872,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "873": {
+      "page_num": 873,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "874": {
+      "page_num": 874,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "875": {
+      "page_num": 875,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "876": {
+      "page_num": 876,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "877": {
+      "page_num": 877,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "878": {
+      "page_num": 878,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "879": {
+      "page_num": 879,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "880": {
+      "page_num": 880,
+      "type": "INTRO",
+      "status": "PROCESSED"
+    },
+    "881": {
+      "page_num": 881,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "882": {
+      "page_num": 882,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "883": {
+      "page_num": 883,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "884": {
+      "page_num": 884,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "885": {
+      "page_num": 885,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "886": {
+      "page_num": 886,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "887": {
+      "page_num": 887,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "888": {
+      "page_num": 888,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "889": {
+      "page_num": 889,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "890": {
+      "page_num": 890,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "891": {
+      "page_num": 891,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "892": {
+      "page_num": 892,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "893": {
+      "page_num": 893,
+      "type": "UNSCANNED",
+      "status": "PENDING"
+    },
+    "894": {
+      "page_num": 894,
+      "type": "UNSCANNED",
+      "status": "PENDING"
+    },
+    "895": {
+      "page_num": 895,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "896": {
+      "page_num": 896,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "897": {
+      "page_num": 897,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "898": {
+      "page_num": 898,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "899": {
+      "page_num": 899,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "900": {
+      "page_num": 900,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "901": {
+      "page_num": 901,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "902": {
+      "page_num": 902,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "903": {
+      "page_num": 903,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "904": {
+      "page_num": 904,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "905": {
+      "page_num": 905,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "906": {
+      "page_num": 906,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "907": {
+      "page_num": 907,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "908": {
+      "page_num": 908,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "909": {
+      "page_num": 909,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "910": {
+      "page_num": 910,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "911": {
+      "page_num": 911,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "912": {
+      "page_num": 912,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "913": {
+      "page_num": 913,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "914": {
+      "page_num": 914,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "915": {
+      "page_num": 915,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "916": {
+      "page_num": 916,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "917": {
+      "page_num": 917,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "918": {
+      "page_num": 918,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "919": {
+      "page_num": 919,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "920": {
+      "page_num": 920,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "921": {
+      "page_num": 921,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "922": {
+      "page_num": 922,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "923": {
+      "page_num": 923,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "924": {
+      "page_num": 924,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "925": {
+      "page_num": 925,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "926": {
+      "page_num": 926,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "927": {
+      "page_num": 927,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "928": {
+      "page_num": 928,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "929": {
+      "page_num": 929,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "930": {
+      "page_num": 930,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "931": {
+      "page_num": 931,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "932": {
+      "page_num": 932,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "933": {
+      "page_num": 933,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "934": {
+      "page_num": 934,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "935": {
+      "page_num": 935,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "936": {
+      "page_num": 936,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "937": {
+      "page_num": 937,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "938": {
+      "page_num": 938,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "939": {
+      "page_num": 939,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "940": {
+      "page_num": 940,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "941": {
+      "page_num": 941,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "942": {
+      "page_num": 942,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "943": {
+      "page_num": 943,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "944": {
+      "page_num": 944,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "945": {
+      "page_num": 945,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "946": {
+      "page_num": 946,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "947": {
+      "page_num": 947,
+      "type": "EXERCISE",
+      "status": "PROCESSED"
+    },
+    "948": {
+      "page_num": 948,
+      "type": "EXERCISE/ANSWERS",
+      "status": "PROCESSED"
+    },
+    "949": {
+      "page_num": 949,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "950": {
+      "page_num": 950,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "951": {
+      "page_num": 951,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "952": {
+      "page_num": 952,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "953": {
+      "page_num": 953,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "954": {
+      "page_num": 954,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "955": {
+      "page_num": 955,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "956": {
+      "page_num": 956,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "957": {
+      "page_num": 957,
+      "type": "EXERCISE/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "958": {
+      "page_num": 958,
+      "type": "EXERCISE/ANSWERS/SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "959": {
+      "page_num": 959,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    },
+    "960": {
+      "page_num": 960,
+      "type": "SOLUTIONS",
+      "status": "PROCESSED"
+    }
+  }
+}

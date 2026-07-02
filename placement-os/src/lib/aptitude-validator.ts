@@ -41,10 +41,12 @@ export function cleanOcrText(text: string): string {
   cleaned = cleaned.replace(CHAPTER_LEAK_PATTERN, '');
 
   // Rebuild corrupted fractions from OCR layout displacement
-  // Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days"
-  cleaned = cleaned.replace(/\b(\d)(\d+)\s*([a-zA-Z]+)\s*(\d+)\b/g, (match, num, whole, unit, den) => {
-    if (parseInt(num, 10) < parseInt(den, 10)) {
-      return `${whole} ${num}/${den} ${unit}`;
+  // Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days" or "214% gain7" -> "14 2/7 % gain"
+  cleaned = cleaned.replace(/\b(\d)(\d+)\s*([a-zA-Z%\s/]+[a-zA-Z%])(\d+)\b/g, (match, numStr, wholeStr, unit, denStr) => {
+    const num = parseInt(numStr, 10);
+    const den = parseInt(denStr, 10);
+    if (num < den) {
+      return `${wholeStr} ${num}/${den} ${unit}`;
     }
     return match;
   });
@@ -71,20 +73,143 @@ export function cleanOcrText(text: string): string {
   cleaned = cleaned.replace(/Rs\.\s*/g, '₹');
   cleaned = cleaned.replace(/Rs\s+/g, '₹');
   cleaned = cleaned.replace(/Rs\./g, '₹');
+  
+  // 6. Math symbol / notation fixes
+  cleaned = cleaned.replace(/([^a-zA-Z]|^)pa2\b/g, '$1πa²');
+  cleaned = cleaned.replace(/([^a-zA-Z]|^)pr2\b/g, '$1πr²');
+  cleaned = cleaned.replace(/([^a-zA-Z]|^)pR2\b/g, '$1πR²');
+  cleaned = cleaned.replace(/\bcm2\b/g, 'cm²');
+  cleaned = cleaned.replace(/\bcm3\b/g, 'cm³');
+  cleaned = cleaned.replace(/\bm2\b/g, 'm²');
+  cleaned = cleaned.replace(/\bm3\b/g, 'm³');
+  cleaned = cleaned.replace(/\bunits2\b/g, 'units²');
+  cleaned = cleaned.replace(/\bunits3\b/g, 'units³');
 
-  // 6. Clean double/multiple spaces and trim
+  // 7. Clean double/multiple spaces and trim
   cleaned = cleaned.replace(/[ \t]+/g, ' ');
   return cleaned.trim();
 }
 
-/**
- * P0 RELEASE: Explanation generation is DISABLED.
- * All explanations are replaced with the production-safe static message.
- * This function is retained for API compatibility but always returns the
- * standard P0 replacement text.
- */
-export function standardizeExplanation(_explanation: string, _answer: string): string {
-  return 'Detailed explanation will be available in a future update.';
+export function isValidExplanation(explanation: string | undefined): boolean {
+  if (!explanation) return false;
+  const expLower = explanation.toLowerCase().trim();
+  if (expLower.length < 15) return false;
+  
+  const FALLBACK_EXPLANATION = 'detailed explanation is currently being prepared and will be available in a future update.';
+  const OLD_FALLBACK = 'detailed explanation will be available in a future update.';
+  const HISTORICAL_FALLBACK = 'verified detailed explanation unavailable.';
+  const HISTORICAL_FALLBACK_SHORT = 'detailed explanation unavailable.';
+  
+  if (expLower === FALLBACK_EXPLANATION || 
+      expLower === OLD_FALLBACK || 
+      expLower === HISTORICAL_FALLBACK || 
+      expLower === HISTORICAL_FALLBACK_SHORT) {
+    return false;
+  }
+  
+  const bannedPhrases = [
+    'analyze the question',
+    'apply the formula',
+    'compute the value',
+    'calculate directly',
+    'use the given information',
+    'refer to standard solutions',
+    'calculate the result',
+    'calculate the answer',
+    'compute final answer',
+    'no explanation available'
+  ];
+  
+  const cleanExp = expLower.replace(/[.\s]+/g, ' ');
+  for (const phrase of bannedPhrases) {
+    const cleanPhrase = phrase.replace(/[.\s]+/g, ' ');
+    if (cleanExp === cleanPhrase || 
+        cleanExp.startsWith(cleanPhrase + ' ') || 
+        cleanExp.endsWith(' ' + cleanPhrase) || 
+        cleanExp.includes(' ' + cleanPhrase + ' ')) {
+      return false;
+    }
+  }
+  
+  return true;
+}
+
+export function formatExplanationToSteps(explanation: string, answer: string): string {
+  const cleaned = cleanOcrText(explanation);
+  
+  if (!isValidExplanation(cleaned)) {
+    return 'Detailed explanation is currently being prepared and will be available in a future update.';
+  }
+  
+  if (cleaned.startsWith('Step 1')) {
+    return cleaned;
+  }
+  
+  const rawParts = cleaned.split(/(?<=[.?!;])\s+(?=[A-Z])/);
+  const parts: string[] = [];
+  
+  const bannedPhrases = [
+    'step',
+    'final calculation',
+    'answer:',
+    'analyze the question',
+    'compute the final value',
+    'apply the formula',
+    'calculate the result',
+    'compute final answer',
+    'set up the equation',
+    'use the given information',
+    'no explanation available',
+    'refer to standard solutions'
+  ];
+  
+  for (let p of rawParts) {
+    p = p.trim();
+    if (!p) continue;
+    
+    const pLower = p.toLowerCase();
+    const isBoilerplate = bannedPhrases.some(phrase => pLower.includes(phrase));
+    if (isBoilerplate) continue;
+    
+    if (!p.endsWith('.') && !p.endsWith('?') && !p.endsWith('!')) {
+      p += '.';
+    }
+    parts.push(p);
+  }
+  
+  const remainingText = parts.join(' ').trim();
+  if (remainingText.length < 25) {
+    return 'Detailed explanation is currently being prepared and will be available in a future update.';
+  }
+  
+  const steps: string[] = [];
+  if (parts.length === 1) {
+    steps.push(`Step 1\n${parts[0]}`);
+  } else if (parts.length === 2) {
+    steps.push(`Step 1\n${parts[0]}`);
+    steps.push(`Final Calculation\n${parts[1]}`);
+  } else if (parts.length === 3) {
+    steps.push(`Step 1\n${parts[0]}`);
+    steps.push(`Step 2\n${parts[1]}`);
+    steps.push(`Final Calculation\n${parts[2]}`);
+  } else {
+    steps.push(`Step 1\n${parts[0]}`);
+    steps.push(`Step 2\n${parts[1]}`);
+    const mid = parts.slice(2, -1).join(' ');
+    steps.push(`Step 3\n${mid}`);
+    steps.push(`Final Calculation\n${parts[parts.length - 1]}`);
+  }
+  
+  let stepsStr = steps.join('\n\n');
+  if (answer) {
+    const cleanAns = cleanOcrText(answer);
+    stepsStr += `\n\nAnswer: ${cleanAns}`;
+  }
+  return stepsStr;
+}
+
+export function standardizeExplanation(explanation: string, answer: string): string {
+  return formatExplanationToSteps(explanation, answer);
 }
 
 /**
@@ -92,7 +217,7 @@ export function standardizeExplanation(_explanation: string, _answer: string): s
  * - OCR cleanup on all text fields.
  * - Quote/spacing mismatches between answer and options.
  * - Normalizes 5-option layouts to exactly 4 options.
- * - P0: Replaces explanation with static production-safe message.
+ * - P0: Recovers and formats valid explanations, falls back to preparation message.
  */
 export function autoRepairQuestion(q: AptitudeQuestion): AptitudeQuestion {
   const repaired = { ...q };
@@ -118,8 +243,18 @@ export function autoRepairQuestion(q: AptitudeQuestion): AptitudeQuestion {
     repaired.shortcuts = repaired.shortcuts.map(s => cleanOcrText(s));
   }
 
-  // P0: Explanation generation is DISABLED. Always set the static replacement text.
-  repaired.explanation = 'Detailed explanation will be available in a future update.';
+  // Explanation recovery and validation
+  const FALLBACK_EXPLANATION = 'Detailed explanation is currently being prepared and will be available in a future update.';
+  if (q.explanation) {
+    const cleanedExp = cleanOcrText(q.explanation);
+    if (isValidExplanation(cleanedExp)) {
+      repaired.explanation = formatExplanationToSteps(cleanedExp, repaired.answer);
+    } else {
+      repaired.explanation = FALLBACK_EXPLANATION;
+    }
+  } else {
+    repaired.explanation = FALLBACK_EXPLANATION;
+  }
 
   if (!repaired.options || !Array.isArray(repaired.options) || repaired.options.length === 0) {
     return repaired;
@@ -284,38 +419,55 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
   }
 
   // --- 5. Explanation Integrity ---
-  // P0 NOTE: Explanation generation is DISABLED. autoRepairQuestion() always sets
-  // the static P0 replacement message. We validate that the field is non-empty
-  // (which it always will be after repair) and allow the static P0 message as VALID.
-  const P0_EXPLANATION = 'Detailed explanation will be available in a future update.';
+  const FALLBACK_EXPLANATION = 'Detailed explanation is currently being prepared and will be available in a future update.';
   if (!q.explanation || q.explanation.trim() === '') {
-    // This should never happen after autoRepairQuestion, but guard defensively.
     issues.push('CRITICAL: Missing explanation field');
     score = 0;
-  } else if (q.explanation.trim() === P0_EXPLANATION) {
-    // Static P0 message — always valid. No further checks needed.
+  } else if (q.explanation.trim() === FALLBACK_EXPLANATION) {
+    // Static fallback — always valid. No further checks needed.
   } else {
-    // Legacy explanation text present (e.g. from dataset records not yet through repair).
-    // Accept any non-empty, non-placeholder explanation rather than invalidating historical data.
-    const expLower = q.explanation.toLowerCase().trim();
-    const bannedPhrases = [
-      'analyze the question',
-      'apply the formula',
-      'compute the value',
-      'calculate directly',
-      'use the given information',
-      'refer to standard solutions',
-      'no explanation available',
-    ];
-    const cleanExp = expLower.replace(/[.\s]+/g, ' ');
-    const hasBannedPlaceholder = bannedPhrases.some(phrase => {
-      const cleanPhrase = phrase.replace(/[.\s]+/g, ' ');
-      return cleanExp === cleanPhrase || cleanExp.startsWith(cleanPhrase + ' ') || cleanExp.endsWith(' ' + cleanPhrase) || cleanExp.includes(' ' + cleanPhrase + ' ');
-    });
-    if (hasBannedPlaceholder) {
-      // Downgrade to REVIEW_REQUIRED — not INVALID — since Q/A may still be valid.
-      issues.push(`OCR: Banned placeholder explanation detected`);
-      score -= 10;
+    // Unbalanced brackets check
+    const stack: string[] = [];
+    const pairs: Record<string, string> = { ')': '(', ']': '[', '}': '{' };
+    let unbalanced = false;
+    for (const char of q.explanation) {
+      if (['(', '[', '{'].includes(char)) {
+        stack.push(char);
+      } else if ([')', ']', '}'].includes(char)) {
+        const open = stack.pop();
+        if (open !== pairs[char]) {
+          unbalanced = true;
+          break;
+        }
+      }
+    }
+    if (unbalanced || stack.length > 0) {
+      issues.push('Explanation contains unbalanced parentheses, square brackets, or curly braces');
+      score -= 20;
+    }
+
+    // Empty formula brackets
+    if (/\[\s*\]|\(\s*\)|\{\s*\}/.test(q.explanation)) {
+      issues.push('Explanation contains empty formula brackets/placeholders');
+      score -= 20;
+    }
+
+    // Corrupted fraction layout
+    if (/\s+[,.]\d+/.test(q.explanation)) {
+      issues.push('Explanation contains corrupted fraction layout (e.g. space before dot or comma)');
+      score -= 20;
+    }
+
+    // Disconnected mixed operators
+    if (/[+\-*/=]\s+[+\-*/=]/.test(q.explanation)) {
+      issues.push('Explanation contains disconnected mixed arithmetic operators');
+      score -= 20;
+    }
+
+    // OCR page/line number leak
+    if (/[a-zA-Z]+\.\d+/.test(q.explanation)) {
+      issues.push('Explanation contains OCR page/line number leak (word stuck to numbers with dot)');
+      score -= 20;
     }
   }
 
@@ -377,9 +529,6 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
   score = Math.max(0, score);
 
   // ─── P0 Status Trichotomy ────────────────────────────────────────────────────
-  // VALID          → score >= 95, zero issues. Safe for production.
-  // REVIEW_REQUIRED → score 70–94 or any non-critical issue. Quarantined pending review.
-  // INVALID        → critical structural failure or score < 70. Quarantined immediately.
   const hasCriticalIssue = issues.some(issue => issue.startsWith('CRITICAL:'));
 
   let status: 'VALID' | 'REVIEW_REQUIRED' | 'INVALID';
@@ -391,16 +540,16 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
     status = 'VALID';
   }
 
-  // Only VALID questions reach production users
   const valid = status === 'VALID';
 
   // Populate observability metadata on the question object
   q.sourceId = q.id;
   q.confidenceScore = score;
   q.validationStatus = valid ? 'PASS' : 'FAIL';
+  q.integrityStatus = status === 'VALID' ? 'INTEGRATED' : 'QUARANTINED';
   q.lastVerificationTime = new Date().toISOString();
   q.correctAnswer = q.answer;
-  q.sourceReference = q.sourceFile || q.id;
+  q.sourceReference = q.sourceFile || q.sourceBook || q.id;
 
   return {
     valid,

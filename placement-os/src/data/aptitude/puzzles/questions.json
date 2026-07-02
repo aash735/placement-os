@@ -9,7 +9,7 @@
       "Any box will work"
     ],
     "answer": "The box labeled 'Apples and Oranges",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
     "shortcuts": [
       "Key clue: All labels are INCORRECT.",
       "Always choose the mixed label box first because its contents are binary (either all apples or all oranges)."
@@ -31,16 +31,17 @@
       "Product Startups",
       "Google"
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
+    "importBatch": "2026-07-02T16:06:02.059551Z",
     "sourceFile": "manual_seed",
     "sourceId": "puzzles-logic-2",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.424Z",
+    "lastVerificationTime": "2026-07-02T16:56:10.856Z",
     "optionsSourceId": "puzzles-logic-2",
     "answerSourceId": "puzzles-logic-2",
     "explanationSourceId": "puzzles-logic-2",
     "correctAnswer": "The box labeled 'Apples and Oranges",
-    "sourceReference": "manual_seed"
+    "sourceReference": "manual_seed",
+    "integrityStatus": "INTEGRATED"
   }
 ]

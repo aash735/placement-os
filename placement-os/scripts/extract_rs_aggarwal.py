@@ -72,16 +72,16 @@ def clean_text(text):
     text = text.replace("\u20b9", "Rs. ")
     
     # Rebuild corrupted fractions from OCR layout displacement
-    # Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days"
+    # Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days" or "214% gain7" -> "14 2/7 % gain"
     def replace_fraction_with_unit(match):
-        num = match.group(1)
+        num = int(match.group(1))
         whole = match.group(2)
         unit = match.group(3)
-        den = match.group(4)
-        if int(num) < int(den):
+        den = int(match.group(4))
+        if num < den:
             return f"{whole} {num}/{den} {unit}"
         return match.group(0)
-    text = re.sub(r'\b(\d)(\d+)\s*([a-zA-Z]+)\s*(\d+)\b', replace_fraction_with_unit, text)
+    text = re.sub(r'\b(\d)(\d+)\s*([a-zA-Z%\s/]+[a-zA-Z%])(\d+)\b', replace_fraction_with_unit, text)
 
     # Pattern 2: e.g. "31 4 times" or "17 2" -> "1 3/4 times", "7 1/2"
     def replace_fraction_pure(match):
@@ -98,6 +98,19 @@ def clean_text(text):
     
     # Pattern 4: e.g. "3 4 th" -> "3/4th"
     text = re.sub(r'\b(\d+)\s+(\d+)\s*([a-zA-Z]+)\b', r'\1/\2\3', text)
+
+    # Math symbol / notation fixes
+    text = text.replace(" * ", " × ")
+    text = text.replace("Rs. ", "₹").replace("Rs.", "₹").replace("Rs ", "₹")
+    text = re.sub(r'([^a-zA-Z]|^)pa2\b', r'\1πa²', text)
+    text = re.sub(r'([^a-zA-Z]|^)pr2\b', r'\1πr²', text)
+    text = re.sub(r'([^a-zA-Z]|^)pR2\b', r'\1πR²', text)
+    text = re.sub(r'\bcm2\b', 'cm²', text)
+    text = re.sub(r'\bcm3\b', 'cm³', text)
+    text = re.sub(r'\bm2\b', 'm²', text)
+    text = re.sub(r'\bm3\b', 'm³', text)
+    text = re.sub(r'\bunits2\b', 'units²', text)
+    text = re.sub(r'\bunits3\b', 'units³', text)
 
     # Clean excessive spaces
     text = re.sub(r"[ \t]+", " ", text)
@@ -145,52 +158,48 @@ def parse_block_content(lines):
             options.append(val)
     return question_text, options
 
-def parse_chapter_questions(reader, topic, start_page, end_page):
+def parse_chapter_questions(reader, topic, start_page, end_page, existing_questions=None):
     topic_id = TOPIC_MAP.get(topic, "general")
     category = CATEGORY_MAP.get(topic, "quant")
     
-    # 1. Classify all pages
-    page_types = {}
-    pages = list(range(start_page, min(end_page + 1, len(reader.pages))))
+    # 1. Decoupled page classification
+    q_pages = []
+    ans_pages = []
+    sol_pages = []
     
+    pages = list(range(start_page, min(end_page + 1, len(reader.pages))))
     for p in pages:
         text = reader.pages[p].extract_text()
         ans_matches = len(re.findall(r"\d+\.\s*\([a-e]\)", text))
         opt_matches = len(re.findall(r"\(\s*[a-e]\s*\)", text))
+        is_sol = "SOLUTIONS" in text.upper() or "HINTS" in text.upper()
         
         if ans_matches > 8:
-            page_types[p] = "ans"
-        elif opt_matches > 5 and "SOLUTIONS" not in text.upper() and "HINTS" not in text.upper():
-            page_types[p] = "q"
-        else:
-            page_types[p] = "sol"
+            ans_pages.append(p)
+        if opt_matches > 5 and not is_sol:
+            q_pages.append(p)
+        if is_sol or (ans_matches <= 8 and opt_matches <= 5):
+            sol_pages.append(p)
             
-    # Clean classifications to remove out-of-place single pages
-    for i in range(1, len(pages) - 1):
-        p = pages[i]
-        prev_p = pages[i-1]
-        next_p = pages[i+1]
-        if page_types[p] in ["ans", "sol"] and page_types[prev_p] == "q" and page_types[next_p] == "q":
-            page_types[p] = "q"
-            
-    # 2. Group into runs of consecutive page types
-    runs = []
-    current_run = {"type": None, "pages": []}
-    for p in pages:
-        ptype = page_types[p]
-        if current_run["type"] is None:
-            current_run = {"type": ptype, "pages": [p]}
-        elif current_run["type"] == ptype:
-            current_run["pages"].append(p)
-        else:
-            runs.append(current_run)
-            current_run = {"type": ptype, "pages": [p]}
-    if current_run["pages"]:
-        runs.append(current_run)
-        
-    q_runs = [r for r in runs if r["type"] == "q"]
-    ans_runs = [r for r in runs if r["type"] == "ans"]
-    sol_runs = [r for r in runs if r["type"] == "sol"]
+    # Helper to group consecutive page numbers into runs
+    def group_pages_to_runs(page_list, rtype):
+        runs = []
+        if not page_list:
+            return runs
+        current_pages = [page_list[0]]
+        for p in page_list[1:]:
+            if p == current_pages[-1] + 1:
+                current_pages.append(p)
+            else:
+                runs.append({"type": rtype, "pages": current_pages})
+                current_pages = [p]
+        if current_pages:
+            runs.append({"type": rtype, "pages": current_pages})
+        return runs
+
+    q_runs = group_pages_to_runs(q_pages, "q")
+    ans_runs = group_pages_to_runs(ans_pages, "ans")
+    sol_runs = group_pages_to_runs(sol_pages, "sol")
     
     # Filter solved examples / intro pages
     if q_runs:
@@ -332,6 +341,26 @@ def parse_chapter_questions(reader, topic, start_page, end_page):
     
     print(f"    Reconciled {topic}: Q exercises={len(question_exercises)}, Ans={len(answer_exercises)}, Sol={len(solution_exercises)}")
     
+    # Fallback mapper for chapters missing separate answer key pages
+    if len(answer_exercises) == 0 and len(solution_exercises) > 0 and existing_questions:
+        print(f"      Running explanation recovery fallback for {topic}...")
+        sol_ex = solution_exercises[0] if solution_exercises else {}
+        for q in existing_questions:
+            if q.get("topic") == topic_id:
+                # Find trailing number from question ID
+                match = re.search(r'-(\d+)$', q.get("id", ""))
+                if match:
+                    num = int(match.group(1))
+                    sol = sol_ex.get(num)
+                    if sol:
+                        q["explanation"] = clean_text(sol)
+                        # Metadata
+                        q["sourceBook"] = "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+                        # Search page in question exercises if possible
+                        for q_ex in question_exercises:
+                            if num in q_ex:
+                                q["sourcePage"] = q_ex[num].get("page")
+    
     for idx, q_ex in enumerate(question_exercises):
         ans_ex = answer_exercises[idx] if idx < len(answer_exercises) else {}
         sol_ex = solution_exercises[idx] if idx < len(solution_exercises) else {}
@@ -373,7 +402,7 @@ def parse_chapter_questions(reader, topic, start_page, end_page):
                 "question": clean_text(q_text),
                 "options": [clean_text(o) for o in opts],
                 "answer": clean_text(correct_ans_text),
-                "explanation": clean_text(sol) if sol else "Detailed explanation unavailable for this question.",
+                "explanation": clean_text(sol) if sol else "Detailed explanation is currently being prepared and will be available in a future update.",
                 "topic": topic_id,
                 "category": category,
                 "difficulty": 2,
@@ -381,7 +410,9 @@ def parse_chapter_questions(reader, topic, start_page, end_page):
                 "companyRelevance": ["TCS", "Accenture", "Infosys"],
                 "optionsSourceId": q_id,
                 "answerSourceId": q_id,
-                "explanationSourceId": q_id
+                "explanationSourceId": q_id,
+                "sourcePage": q_block.get("page"),
+                "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
             }
             all_merged.append(q_obj)
             
@@ -432,7 +463,7 @@ def main():
             continue
             
         print(f"  Scanning chapter: {topic} (pages {page_range[0]}-{page_range[1]})...")
-        qs = parse_chapter_questions(reader, topic, page_range[0], page_range[1])
+        qs = parse_chapter_questions(reader, topic, page_range[0], page_range[1], all_extracted[cat_folder])
         print(f"    Extracted {len(qs)} questions.")
         
         # Merge questions by id (avoid duplicates)

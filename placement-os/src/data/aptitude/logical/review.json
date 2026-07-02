@@ -1,0 +1,338 @@
+[
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains disconnected mixed arithmetic operators"
+    ],
+    "question": {
+      "id": "logical-clocks-4",
+      "question": "How many rotations will the hour hand of a clock complete in 72 hours? (Bank Recruitment, 2006)",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "answer": "6",
+      "explanation": "Step 1\nNumber of rotations = =6\n\nFinal Calculation\n12\n\nAnswer: 6",
+      "topic": "clocks",
+      "category": "logical",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 834,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "optionsSourceId": "logical-clocks-4",
+      "answerSourceId": "logical-clocks-4",
+      "explanationSourceId": "logical-clocks-4",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "correctAnswer": "6",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "logical-clocks-4",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.799Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Question text too short (< 15 chars)"
+    ],
+    "question": {
+      "id": "logical-clocks-10",
+      "question": "25/1 is°",
+      "options": [
+        "180°",
+        "92 1/2 1°",
+        "195°",
+        "97 1/2"
+      ],
+      "answer": "92 1/2 1°",
+      "explanation": "Step 1\nAngle traced by hour hand in 17 (60 3/17)° hrs=[ × ] =255°\n\nStep 2\n2 { 2 1/2 } (360 ) ° Angle traced by min\n\nStep 3\nhand in 30 min. = [ ×30] =180°\n\nFinal Calculation\n{ 60 } \\ Required angle = (255 – 180)° = 75°.\n\nAnswer: 92 1/2 1°",
+      "topic": "clocks",
+      "category": "logical",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 834,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "optionsSourceId": "logical-clocks-10",
+      "answerSourceId": "logical-clocks-10",
+      "explanationSourceId": "logical-clocks-10",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "correctAnswer": "92 1/2 1°",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "logical-clocks-10",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.800Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Question text appears truncated at the end"
+    ],
+    "question": {
+      "id": "logical-clocks-18",
+      "question": "The minute arm of a clock is 10 cm long. The number of minutes taken by the tip of the arm to travel a length of 10 cm is nearly equal to",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "answer": "10",
+      "explanation": "Step 1\nDistance covered by the arm tip in 1 round ( 22 ) 440 = [2× ×10]cm= cm\n\nStep 2\n{ 7 } 7/440Now, cm is covered in 60 min\n\nFinal Calculation\n7 ( 7 ) \\ 10 cm is covered in [60× ×10]min { 440 } = 9.54 min ≈ 10 min.\n\nAnswer: 10",
+      "topic": "clocks",
+      "category": "logical",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 835,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "optionsSourceId": "logical-clocks-18",
+      "answerSourceId": "logical-clocks-18",
+      "explanationSourceId": "logical-clocks-18",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "correctAnswer": "10",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "logical-clocks-18",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.802Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains OCR page/line number leak (word stuck to numbers with dot)"
+    ],
+    "question": {
+      "id": "logical-clocks-24",
+      "question": "How many times are the hour hand and the minute hand of a clock at right angles during their motion from 1.00 p.m. to 10.00 p.m.? (I.A.S., 2009)",
+      "options": [
+        "9",
+        "10",
+        "18",
+        "20"
+      ],
+      "answer": "18",
+      "explanation": "Step 1\nThe duration from 1.00 p.m\n\nStep 2/10 to.00 p.m\n\nStep 3/9 is hours and during each of these 9 hours the hands of the clock are at right angles twice\n\nFinal Calculation\nSo, required number = 9 × 2 = 18.\n\nAnswer: 18",
+      "topic": "clocks",
+      "category": "logical",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 835,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "optionsSourceId": "logical-clocks-24",
+      "answerSourceId": "logical-clocks-24",
+      "explanationSourceId": "logical-clocks-24",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "correctAnswer": "18",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "logical-clocks-24",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.803Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains empty formula brackets/placeholders"
+    ],
+    "question": {
+      "id": "logical-clocks-45",
+      "question": "A watch is 1 minute slow at 1 p.m. on Tuesday and 2 minutes fast at 1 p.m. on Thursday. When did it show the correct time? (M.A.T. 2004)",
+      "options": [
+        "1.00 a.m. on Wednesday",
+        "5.00 a.m. on Wednesday",
+        "1.00 p.m. on Wednesday",
+        "5.00 p.m. on Wednesday"
+      ],
+      "answer": "5.00 a.m. on Wednesday",
+      "explanation": "Step 1\nTime from 1 p.m\n\nStep 2\non Tuesday to 1 p.m\n\nStep 3\non Thursday = 48 hours. So, the watch gains (1 + 2) min or 3 min in 48 hrs. Now, 3 min are gained in 48 hrs. (48) So, 1 min is gained in [ ] = 16 hrs. { 3 } Thus, the watch showed the correct time 16 hrs. after 1 p.m. on Tuesday, i.e. 5 a.m\n\nFinal Calculation\non Wednesday.\n\nAnswer: 5.00 a.m. on Wednesday",
+      "topic": "clocks",
+      "category": "logical",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 836,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "optionsSourceId": "logical-clocks-45",
+      "answerSourceId": "logical-clocks-45",
+      "explanationSourceId": "logical-clocks-45",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "correctAnswer": "5.00 a.m. on Wednesday",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "logical-clocks-45",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.808Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains unbalanced parentheses, square brackets, or curly braces"
+    ],
+    "question": {
+      "id": "logical-clocks-49",
+      "question": "How much does a watch losse per day if its hands coincide every 64 minutes? [IDBI Bank Executive Officers Exam, 2012] 8",
+      "options": [
+        "37 minutes",
+        "32/11 minutes",
+        "31 minutes",
+        "None of these"
+      ],
+      "answer": "32/11 minutes",
+      "explanation": "Step 1/55minutes spaces are covered in 60 minutes (60 ) 60 minutes spaces are covered in ×60 minutes [{55 ]} 5 = 65/1/1 minutes/5/16Loss in 64 minute = 65 −64= minutes 1 1/11 (16 1 ) Loss in 24 hours = [ × ×24×60]minutes {1 1/64 } 8 = 32/11 minutes\n\nAnswer: 32/11 minutes",
+      "topic": "clocks",
+      "category": "logical",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 837,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "optionsSourceId": "logical-clocks-49",
+      "answerSourceId": "logical-clocks-49",
+      "explanationSourceId": "logical-clocks-49",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "correctAnswer": "32/11 minutes",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "logical-clocks-49",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.809Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains empty formula brackets/placeholders"
+    ],
+    "question": {
+      "id": "logical-odd-man-out-and-series-85",
+      "question": "1050, 510, 242, 106, 46, 16, 3",
+      "options": [
+        "510",
+        "242",
+        "106",
+        "46"
+      ],
+      "answer": "106",
+      "explanation": "Step 1/2ndterm=(Istterm–30)÷2=[ ]=10/2 Step\n{ 2 } (510−26) 3rdterm=(2ndterm−26)÷2=[ ]=242; { 2 } (242−22) 4thterm=(3rdterm−22)÷[ ] =110\n\nFinal Calculation\n{ 2 } \\ 106 is wrong.\n\nAnswer: 106",
+      "topic": "odd-man-out-and-series",
+      "category": "logical",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 888,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:26.312023Z",
+      "optionsSourceId": "logical-odd-man-out-and-series-85",
+      "answerSourceId": "logical-odd-man-out-and-series-85",
+      "explanationSourceId": "logical-odd-man-out-and-series-85",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "correctAnswer": "106",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "logical-odd-man-out-and-series-85",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.820Z"
+    }
+  },
+  {
+    "status": "REVIEW_REQUIRED",
+    "score": 80,
+    "issues": [
+      "Explanation contains empty formula brackets/placeholders"
+    ],
+    "question": {
+      "id": "logical-odd-man-out-and-series-88",
+      "question": "888, 440, 216, 104, 48, 22, 6",
+      "options": [
+        "440",
+        "216",
+        "104",
+        "22"
+      ],
+      "answer": "22",
+      "explanation": "Step 1/2ndterm=[ ]=[ ]=440; { 2 } { 2 } (2ndterm−8) (440−8) 3rdterm=[ ]=[ ]=216; { 2 } { 2 } (3rdterm−8) (216−8) 4thterm=[ ]=[ ]=104; { 2 } { 2 } (4thterm−8) (104−8) 5thterm=[ ]=[ ]=48; { 2 } { 2 } (5thterm−8) (48−8) 6thterm=[ ]=[ ]=20\n\nFinal Calculation\n{ 2 } { 2 } \\ 22 is wrong.\n\nAnswer: 22",
+      "topic": "odd-man-out-and-series",
+      "category": "logical",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "sourcePage": 888,
+      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "importBatch": "2026-07-02T16:55:26.312023Z",
+      "optionsSourceId": "logical-odd-man-out-and-series-88",
+      "answerSourceId": "logical-odd-man-out-and-series-88",
+      "explanationSourceId": "logical-odd-man-out-and-series-88",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "correctAnswer": "22",
+      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+      "sourceId": "logical-odd-man-out-and-series-88",
+      "confidenceScore": 80,
+      "validationStatus": "FAIL",
+      "integrityStatus": "QUARANTINED",
+      "lastVerificationTime": "2026-07-02T16:56:10.821Z"
+    }
+  }
+]

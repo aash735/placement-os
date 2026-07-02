@@ -1,226 +1,1597 @@
 [
   {
-    "id": "di-charts-2",
-    "question": "Refer to the sales data: 2023: B1=80, B2=75, B3=95, B4=110. Which branch had the highest average sales over the 3 years if the sales are: \nB1: 80, 90, 95/2 B: 75, 85, 90/3 B: 95, 100, 10 1/4 B: 110, 105, 120",
+    "id": "di-bar-graphs-4",
+    "question": "The difference between average demand and average production of the five companies taken together is [SSC—CHSL (10+2) Exam, 2015]",
     "options": [
-      "B4",
-      "B3",
-      "B1",
-      "B2"
+      "400",
+      "280",
+      "130",
+      "620"
     ],
-    "answer": "B4",
-    "explanation": "Detailed explanation will be available in a future update.",
-    "shortcuts": [
-      "Compare base numbers: B4 started highest (110) and ended highest (120). No need to calculate sum for all."
-    ],
-    "difficulty": 2,
-    "topic": "di",
-    "category": "di",
-    "estimatedTime": 60,
-    "companyRelevance": [
-      "Accenture",
-      "Infosys"
-    ],
-    "subtopic": "Charts & Tables",
-    "tags": [
-      "di",
-      "charts & tables"
-    ],
-    "companyTags": [
-      "Accenture",
-      "Infosys"
-    ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
-    "sourceFile": "rs_aggarwal_tabulation_chapter",
-    "sourceId": "di-charts-2",
-    "confidenceScore": 100,
-    "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.423Z",
-    "optionsSourceId": "di-charts-2",
-    "answerSourceId": "di-charts-2",
-    "explanationSourceId": "di-charts-2",
-    "correctAnswer": "B4",
-    "sourceReference": "rs_aggarwal_tabulation_chapter"
-  },
-  {
-    "id": "di-case-1",
-    "question": "In a college class of 100 students, 60 study Java, 50 study Python, and 30 study both. How many students do not study either Java or Python?",
-    "options": [
-      "20 students",
-      "10 students",
-      "15 students",
-      "30 students"
-    ],
-    "answer": "20 students",
-    "explanation": "Detailed explanation will be available in a future update.",
-    "shortcuts": [
-      "Java only = 30, Python only = 20, both = 30. Total = 30 + 20 + 30 = 80. Neither = 100 - 80 = 20."
-    ],
-    "difficulty": 3,
-    "topic": "caselets",
-    "category": "di",
-    "estimatedTime": 60,
-    "companyRelevance": [
-      "TCS Digital",
-      "Google"
-    ],
-    "subtopic": "Caselets",
-    "tags": [
-      "data-interpretation",
-      "caselets",
-      "set-theory"
-    ],
-    "companyTags": [
-      "TCS Digital",
-      "Google"
-    ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
-    "sourceFile": "rs_aggarwal_tabulation_chapter",
-    "sourceId": "di-case-1",
-    "confidenceScore": 100,
-    "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.423Z",
-    "optionsSourceId": "di-case-1",
-    "answerSourceId": "di-case-1",
-    "explanationSourceId": "di-case-1",
-    "correctAnswer": "20 students",
-    "sourceReference": "rs_aggarwal_tabulation_chapter"
-  },
-  {
-    "id": "di-pie-charts-1",
-    "question": "The pie chart shows the percentage distribution of the expenditure incurred in publishing a book. Study the chart and answer:\n\nIf for a certain quantity of books, the publisher has to pay ₹30,600 as printing cost, then what will be amount of royalty to be paid for these books?",
-    "options": [
-      "₹19,450",
-      "₹21,200",
-      "₹22,950",
-      "₹26,150"
-    ],
-    "answer": "₹22,950",
-    "explanation": "Detailed explanation will be available in a future update.",
-    "topic": "pie-charts",
-    "category": "di",
-    "difficulty": 2,
-    "estimatedTime": 90,
-    "companyRelevance": [
-      "Infosys",
-      "Wipro"
-    ],
-    "chartType": "pie",
-    "chartData": [
-      {
-        "name": "Paper Cost",
-        "value": 25
-      },
-      {
-        "name": "Printing Cost",
-        "value": 20
-      },
-      {
-        "name": "Royalty",
-        "value": 15
-      },
-      {
-        "name": "Binding & Promotion",
-        "value": 20
-      },
-      {
-        "name": "Transportation",
-        "value": 10
-      },
-      {
-        "name": "Other Cost",
-        "value": 10
-      }
-    ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
-    "sourceFile": "manual_seed",
-    "sourceId": "di-pie-charts-1",
-    "confidenceScore": 100,
-    "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.423Z",
-    "optionsSourceId": "di-pie-charts-1",
-    "answerSourceId": "di-pie-charts-1",
-    "explanationSourceId": "di-pie-charts-1",
-    "correctAnswer": "₹22,950",
-    "sourceReference": "manual_seed"
-  },
-  {
-    "id": "di-bar-graphs-1",
-    "question": "The bar graph shows the production of fertilizers (in lakh tonnes) by a company over six years (2018-2023). Study the graph and answer:\n\nIn how many of the given years was the production of fertilizers more than the average production of the given years?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "answer": "3",
-    "explanation": "Detailed explanation will be available in a future update.",
+    "answer": "280",
+    "explanation": "Step 1\nTotal production of the five companies = 1500 + 1800 + 1000 + 2700 + 2200 = 9200 Total demand of the five companies = 3000 + 600 + 2500 + 1200 + 3300 = 10600 Required difference 1 = (10600–9200) 5 1 = ×1400=80 2/5\n\nAnswer: 280",
     "topic": "bar-graphs",
     "category": "di",
     "difficulty": 2,
-    "estimatedTime": 90,
+    "estimatedTime": 60,
     "companyRelevance": [
-      "Capgemini",
-      "Accenture"
+      "TCS",
+      "Accenture",
+      "Infosys"
     ],
+    "sourcePage": 926,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-4",
+    "answerSourceId": "di-bar-graphs-4",
+    "explanationSourceId": "di-bar-graphs-4",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
     "chartType": "bar",
     "chartData": [
       {
-        "name": "2018",
-        "value": 25
-      },
-      {
         "name": "2019",
-        "value": 40
+        "value": 30
       },
       {
         "name": "2020",
-        "value": 60
-      },
-      {
-        "name": "2021",
         "value": 45
       },
       {
-        "name": "2022",
-        "value": 65
+        "name": "2021",
+        "value": 60
       },
       {
-        "name": "2023",
-        "value": 50
+        "name": "2022",
+        "value": 55
       }
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
-    "sourceFile": "manual_seed",
-    "sourceId": "di-bar-graphs-1",
+    "correctAnswer": "280",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-4",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.423Z",
-    "optionsSourceId": "di-bar-graphs-1",
-    "answerSourceId": "di-bar-graphs-1",
-    "explanationSourceId": "di-bar-graphs-1",
-    "correctAnswer": "3",
-    "sourceReference": "manual_seed"
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.837Z"
   },
   {
-    "id": "di-line-graphs-1",
-    "question": "The line graph shows the percentage profit earned by a company over six years. Study the graph and answer:\n\nIf the income of the company in 2021 was ₹264 crores, what was its expenditure in that year?",
+    "id": "di-bar-graphs-5",
+    "question": "The ratio of the number of companies having more demand to those having more production than production than demand is [SSC—CHSL (10+2) Exam, 2015]",
     "options": [
-      "₹185 crores",
-      "₹200 crores",
-      "₹220 crores",
-      "₹240 crores"
+      "4 : 1",
+      "2 : 2",
+      "3 : 2",
+      "2 : 3 shows the sales of books (in thousand number from six years 2000/2001 and. Sales of books (in thousands numbers) hing company in 2000/2001 and. 2000 001 2/4 B B4 B6"
     ],
-    "answer": "₹220 crores",
-    "explanation": "Detailed explanation will be available in a future update.",
-    "topic": "line-graphs",
+    "answer": "3 : 2",
+    "explanation": "Step 1\nNumber of companies having more demand than production = 3\n\nAnswer: 3 : 2",
+    "topic": "bar-graphs",
     "category": "di",
-    "difficulty": 3,
-    "estimatedTime": 120,
+    "difficulty": 2,
+    "estimatedTime": 60,
     "companyRelevance": [
-      "TCS Digital",
+      "TCS",
+      "Accenture",
       "Infosys"
     ],
+    "sourcePage": 926,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-5",
+    "answerSourceId": "di-bar-graphs-5",
+    "explanationSourceId": "di-bar-graphs-5",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "3 : 2",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-5",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.837Z"
+  },
+  {
+    "id": "di-bar-graphs-7",
+    "question": "Total sales of branch B6 for both the years is what percent of the total sales of branch B3 for both the years? [RBI Gr. ‘B’ (Phase—I) Exam, 2015]",
+    "options": [
+      "73.17",
+      "80.23",
+      "75.3",
+      "85.7"
+    ],
+    "answer": "73.17",
+    "explanation": "Step 1\nTotal sales of branch B6 for both years = 70 + 80 = 50 1/3 Total sales of branch B for both years = 95 + 110 = 5 0/2/150 Required percentage ×100=73.7% 205\n\nAnswer: 73.17",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 927,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-7",
+    "answerSourceId": "di-bar-graphs-7",
+    "explanationSourceId": "di-bar-graphs-7",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "73.17",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-7",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.837Z"
+  },
+  {
+    "id": "di-bar-graphs-8",
+    "question": "If the expenditure on Advertisement is ` 2.10 crores, then the difference between the expenditures on Transport and Taxes is:",
+    "options": [
+      "` 1.25 crores",
+      "` 95 lakhs",
+      "` 65 lakhs",
+      "` 35 lakhs"
+    ],
+    "answer": "` 35 lakhs",
+    "explanation": "Step 1\nTotal sales (in thousands numbers) of branches B1, B3 and B6 in 200 = 80 + 95 + 70 = 245 Average sales (in thousands number) of branches B1, B3 45 2/6 and B in 2000 = 3 Total sales (in thousands number) of branches B1, B2 and B3 in 2001 = 105 + 65 + 110 = 280 Average sales (in thousands number) of branches B1, B2 80 2/3 and B in 2001 = 3 45 2/3 So, required percentage = ×100% 80 2/3 245 = ×100=87.5% 280\n\nAnswer: ` 35 lakhs",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 920,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-8",
+    "answerSourceId": "di-bar-graphs-8",
+    "explanationSourceId": "di-bar-graphs-8",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "` 35 lakhs",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-8",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.837Z"
+  },
+  {
+    "id": "di-bar-graphs-9",
+    "question": "What is the average sales of all the branches (in thousands numbers) for the years 2000? [RBI Gr. ‘B’ (Phase—I) Exam, 2015]",
+    "options": [
+      "73",
+      "80",
+      "83",
+      "85"
+    ],
+    "answer": "80",
+    "explanation": "Step 1\nTotal sales of all the six branches (in thousand numbers) for the year 2000 = 80 + 75 + 95 + 85 + 75 + 70 = 480\n\nAnswer: 80",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 927,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-9",
+    "answerSourceId": "di-bar-graphs-9",
+    "explanationSourceId": "di-bar-graphs-9",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "80",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-9",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.837Z"
+  },
+  {
+    "id": "di-bar-graphs-10",
+    "question": "Total sales branches B1, B3 and B5 together for both the years (in thousands numbers) is? [RBI Gr. ‘B’ (Phase—I) Exam, 2015] (a) 250 (b) 315 (c) 560 (d) 435 carefully to answer the questions that follow: ee different persons in six different years 8 1 2/24 7 2/27 9 2/26 5 2/27 5 3/2008 009 2/2010 YEAR Suman Jyoti",
+    "options": [
+      "2005",
+      "2006",
+      "2007",
+      "2009"
+    ],
+    "answer": "2007",
+    "explanation": "Step 1\nTotal safes of branches B1, B3 and B5 for both the years (in thousands numbers) = (80 + 105) + (95 + 110) + (75 + 95) = 560\n\nAnswer: 2007",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 927,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-10",
+    "answerSourceId": "di-bar-graphs-10",
+    "explanationSourceId": "di-bar-graphs-10",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "2007",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-10",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.838Z"
+  },
+  {
+    "id": "di-bar-graphs-12",
+    "question": "What is the respective ratio between Arun’s monthly income in the year 2006, Suman’s monthly income in the year 2007 and Jyoti’s monthly income in the year 2005? [IBPS—Bank Clerical Exam, 2012]",
+    "options": [
+      "6 : 3 : 5",
+      "5 : 6 : 4",
+      "5 : 4 : 7",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "Step 1\nIn year 2006 In year 2007 In year 2005 Arun’s salary Suman’s salary Jyoti’s salary 8000 1/15000 000 9/8 1/5 1/9 6 5/3Answer: None of these",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 927,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-12",
+    "answerSourceId": "di-bar-graphs-12",
+    "explanationSourceId": "di-bar-graphs-12",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "None of these",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-12",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.838Z"
+  },
+  {
+    "id": "di-bar-graphs-13",
+    "question": "In which district is the number of male teachers more than the number of female teachers?",
+    "options": [
+      "B only",
+      "D only",
+      "Both B and E",
+      "Both E and F"
+    ],
+    "answer": "D only",
+    "explanation": "Step 1\nYear Arun’s Income Jyoti’s Income Difference 05 0/2/14000 000 9/000 5/006 2/8000 1/1000 1/7000 007 2/3000 2/8000 1/000 5/008 2/1000 2/7000 2/000 6/009 2/7000 2/6000 2/000 1/010 2/5000 2/5000 3/10,000/2006 In difference between Jyoti’s monthly income and Arun’s monthly income second highest.\n\nAnswer: D only",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 921,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-13",
+    "answerSourceId": "di-bar-graphs-13",
+    "explanationSourceId": "di-bar-graphs-13",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "D only",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-13",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.838Z"
+  },
+  {
+    "id": "di-bar-graphs-14",
+    "question": "Monthly income of Suman in the year 2009 was approximately what percentage of the monthly income of Jyoti in the year 2010? [IBPS—Bank Clerical Exam, 2012]",
+    "options": [
+      "72",
+      "89",
+      "83",
+      "67"
+    ],
+    "answer": "83",
+    "explanation": "Step 1\nMonthly income of Suman in year 2009 = ₹29000 Monthly income of Jyoti in year 2010 = ₹5000 3/29000 = ×100=82.85≈83% 3500\n\nAnswer: 83",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 927,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-14",
+    "answerSourceId": "di-bar-graphs-14",
+    "explanationSourceId": "di-bar-graphs-14",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "83",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-14",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.838Z"
+  },
+  {
+    "id": "di-bar-graphs-15",
+    "question": "What was the percentage increase in the monthly income of Jyoti in the year 2008 as compared to previous year? [IBPS—Bank Clerical Exam, 2012]",
+    "options": [
+      "50",
+      "150",
+      "160",
+      "60"
+    ],
+    "answer": "50",
+    "explanation": "Step 1\nJoyti’s income in 2008 = ₹27000 Joyti’s income in 2007 = ₹8000 1/2700−1800 Increase percentage = ×0 0/1/8000 1/9000 = ×100=50% 18000\n\nAnswer: 50",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 927,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-15",
+    "answerSourceId": "di-bar-graphs-15",
+    "explanationSourceId": "di-bar-graphs-15",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "50",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-15",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.838Z"
+  },
+  {
+    "id": "di-bar-graphs-17",
+    "question": "What is C’s overall approximate percentage? [Gramin Bank— 2012]",
+    "options": [
+      "56",
+      "63",
+      "70",
+      "75"
+    ],
+    "answer": "63",
+    "explanation": "Step 1\nTotal marks of C = 190 Maximum marks = 0 0/3/190 Percentage = ×100=63.3≈63% 300\n\nAnswer: 63",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 928,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-17",
+    "answerSourceId": "di-bar-graphs-17",
+    "explanationSourceId": "di-bar-graphs-17",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "63",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-17",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.839Z"
+  },
+  {
+    "id": "di-bar-graphs-19",
+    "question": "What is the respective ratio of D’s marks in English to B’s marks in English? [Gramin Bank— 2012]",
+    "options": [
+      "8 : 13",
+      "5 : 14",
+      "7 : 12",
+      "6 : 13"
+    ],
+    "answer": "8 : 13",
+    "explanation": "Step 1\nD’s marks: B’s marks 40 : 5 6/8 : 13\n\nAnswer: 8 : 13",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 928,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-19",
+    "answerSourceId": "di-bar-graphs-19",
+    "explanationSourceId": "di-bar-graphs-19",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "8 : 13",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-19",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.839Z"
+  },
+  {
+    "id": "di-bar-graphs-24",
+    "question": "The companies M and N together had a percentage of profit/loss of [SSC—CHSL (10 + 2) Exam, 2015]",
+    "options": [
+      "No loss and no profit",
+      "12% loss",
+      "10% loss",
+      "10% profit"
+    ],
+    "answer": "No loss and no profit",
+    "explanation": "Step 1\nTotal income of companies M and N = ` (35 + 50) crores = ` 85 crores Total expenditure = ` (45 + 40) crores = ` 85 crores Hence, the companies M and N had no loss and no profit 45×100\n\nAnswer: No loss and no profit",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 929,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-24",
+    "answerSourceId": "di-bar-graphs-24",
+    "explanationSourceId": "di-bar-graphs-24",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "No loss and no profit",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-24",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.839Z"
+  },
+  {
+    "id": "di-bar-graphs-25",
+    "question": "For company R if the expenditure had increased by 20% in the year 2001 from the year 2000 and the company had earned profit of 10% in 2000, the company’s income in 2000 was (in crore `) [SSC—CHSL (10 + 2) Exam, 2015]",
+    "options": [
+      "41.67",
+      "35.75",
+      "37.25",
+      "38.5 SWERS"
+    ],
+    "answer": "41.67",
+    "explanation": "Step 1\nExpenditure of company R in 2000 = 120 = ` 37.5 crore Let the income of company in 2000 be ` x crores x−37.5 \\ 10 = ×100\n\nAnswer: 41.67",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 929,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-25",
+    "answerSourceId": "di-bar-graphs-25",
+    "explanationSourceId": "di-bar-graphs-25",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "41.67",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-25",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.840Z"
+  },
+  {
+    "id": "di-bar-graphs-31",
+    "question": "The maximum difference between the amount in- vested in raw materials and the value of sales of finished goods was during the year",
+    "options": [
+      "2005",
+      "2006",
+      "2007",
+      "2008"
+    ],
+    "answer": "2007",
+    "explanation": "Step 1\n(Amount spent on Raw Material) – (Value of sales of finished goods) for various years are : 2005 → ` (200 – 120) lakh = ` 80 lakh\n\nStep 2\n2006 → ` (300 – 225) lakh = ` 75 lakh\n\nStep 3\n2007 → ` (500 – 375) lakh = ` 125 lakh. 2008 → ` (400 – 330) lakh = ` 70 lakh. 2009 → ` (600 – 525) lakh = ` 75 lakh. 2010 → ` (460 – 420) lakh = ` 40 lakh\n\nFinal Calculation\nClearly, the maximum difference was during the year\n\nAnswer: 2007",
+    "topic": "bar-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 916,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:38.221911Z",
+    "optionsSourceId": "di-bar-graphs-31",
+    "answerSourceId": "di-bar-graphs-31",
+    "explanationSourceId": "di-bar-graphs-31",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "bar",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "2007",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-bar-graphs-31",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.840Z"
+  },
+  {
+    "id": "di-pie-chart-2",
+    "question": "What is the central angle corresponding to number of Dell laptops sold by store S? [IBPS—RRB (Officer’s Gr. ‘’B’ Exam, 2015]",
+    "options": [
+      "29.4º",
+      "38.6º",
+      "36.2º",
+      "32.4º"
+    ],
+    "answer": "32.4º",
+    "explanation": "Step 1\nDell laptops sold by store S = 9% Central angle corresponding to number of Dell Laptops sold by store S\n\nFinal Calculation\n9 = ×360=32.4% 100\n\nAnswer: 32.4º",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 941,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-2",
+    "answerSourceId": "di-pie-chart-2",
+    "explanationSourceId": "di-pie-chart-2",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "32.4º",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-2",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.841Z"
+  },
+  {
+    "id": "di-pie-chart-3",
+    "question": "Number of Dell laptops sold by store Q is approximately what percent of the number of the number of laptops (both Dell and Lenovo) sold by store R? [IBPS—RRB (Officer’s Gr. ‘’B’ Exam, 2015]",
+    "options": [
+      "28%",
+      "45%",
+      "50%",
+      "38%"
+    ],
+    "answer": "38%",
+    "explanation": "Step 1\nPercent of Dell Laptops sold by Store Q = 25% Total number of Dell laptops sold by store Q 25 = 2400 × =0 0/6/100 Percent of Dell Laptops Dell and Lenovo Sold by store R = 35 Number of laptops (Dell and Lenovo) sold by store R 35 = 4500× = 575 1/100/600Required percentage = × 100 = 38.095 ≈ 38% 1575\n\nAnswer: 38%",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 941,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-3",
+    "answerSourceId": "di-pie-chart-3",
+    "explanationSourceId": "di-pie-chart-3",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "38%",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-3",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.841Z"
+  },
+  {
+    "id": "di-pie-chart-4",
+    "question": "What is the difference between number of laptops (both Dell and Lenovo) sold by store Q and total number of Lenovo laptops sold by store R and S together? [IBPS—RRB (Officer’s Gr. ‘’B’ Exam, 2015]",
+    "options": [
+      "185",
+      "99",
+      "91",
+      "119"
+    ],
+    "answer": "99",
+    "explanation": "Step 1\nPercent of laptops (Dell and Lenovo) sold by store Q = 23% Number of laptops (Dell and Lenovo) sold by store Q\n\nFinal Calculation\n23 = 4500 × = 45 × 23 = 35 0/1/100 Percent of Laptops (Dell and Lenovo) sold by R and S together = 35% + 11% = 46% Now, total number of laptops (Lenovo and Dell) sold by 46 R and S together = 4500 × = 70 0/2/100 Percent of laptops sold by R and S together = 30% + 9% = 39% Number of Dell laptops sold by R and S together 39 = 2400 × = 6 3/9/100 Number of Lenovo laptops = 2070 – 936 = 1134 = 2070 – 850 = 1220 Required difference = 1134 – 1034 = 99\n\nAnswer: 99",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 941,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-4",
+    "answerSourceId": "di-pie-chart-4",
+    "explanationSourceId": "di-pie-chart-4",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "99",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-4",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.841Z"
+  },
+  {
+    "id": "di-pie-chart-5",
+    "question": "Number of Dell laptops sold by store T is what percent more than the number of laptops sold by store P? [IBPS—RRB (Officer’s Gr. ‘’B’ Exam, 2015]",
+    "options": [
+      "30%",
+      "45%",
+      "40%",
+      "42.5% Directions (Questions 6–9): Study the pie chart and an- swer the given questions. The total expenditure of a company for a particular month is ` 60000. The various heads of expenditure I to IV are indicated in a pie chart given below. These heads are: I. Raw materials II. Conveyance III. Electricity IV. Overhead expenses"
+    ],
+    "answer": "40%",
+    "explanation": "Step 1\nNumber of Dell laptops sold by store 21 T = 2400 × = 4 0/5/100/15Number of laptops sold by store P = 2400 × = 60 3/00 1/504−360 Required percentage = × 100 = 40% 360\n\nAnswer: 40%",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 941,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-5",
+    "answerSourceId": "di-pie-chart-5",
+    "explanationSourceId": "di-pie-chart-5",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "40%",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-5",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.841Z"
+  },
+  {
+    "id": "di-pie-chart-7",
+    "question": "What percentage of total expenditure is on electricity? [SSC—CHSL (10+2) Exam, 2015]",
+    "options": [
+      "23%",
+      "25%",
+      "30%",
+      "20%"
+    ],
+    "answer": "20%",
+    "explanation": "Step 1\nCorresponding angle for expenditure on electricity = 72º 360º ≡ 100% 72 \\ Total expenditure on electricity = × 100 = 20% 360\n\nAnswer: 20%",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 941,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-7",
+    "answerSourceId": "di-pie-chart-7",
+    "explanationSourceId": "di-pie-chart-7",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "20%",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-7",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.841Z"
+  },
+  {
+    "id": "di-pie-chart-8",
+    "question": "What is the amount spent on overhead expenses? [SSC—CHSL (10+2) Exam, 2015]",
+    "options": [
+      "` 12,000",
+      "` 15,000",
+      "` 18,000",
+      "` 10,000"
+    ],
+    "answer": "` 18,000",
+    "explanation": "Step 1\nCorresponding angle for overhead expenses = 108º 360º = ` 60000 Amount spent on Overhead expenses 108 = ×60000= ` 8000 1/360\n\nAnswer: ` 18,000",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 941,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-8",
+    "answerSourceId": "di-pie-chart-8",
+    "explanationSourceId": "di-pie-chart-8",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "` 18,000",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-8",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.842Z"
+  },
+  {
+    "id": "di-pie-chart-9",
+    "question": "What percentage of total expenditure is on raw materials? [SSC—CHSL (10+2) Exam, 2015]",
+    "options": [
+      "25%",
+      "30%",
+      "60%",
+      "23% Directions (Questions 10-14): Refer to the pie charts and answer the given questions. Distribution of total number of members (both male and female) in 5 health clubs in 2011 Total number : 6300 Distribution of total number of male members in 5 health clubs in 2011 Total number: 3600"
+    ],
+    "answer": "25%",
+    "explanation": "Step 1\nCorresponding angle for raw materials = 90º 360º ≡ 100% 90 Percentage of raw material = × 100 = 25% 360\n\nAnswer: 25%",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 941,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-9",
+    "answerSourceId": "di-pie-chart-9",
+    "explanationSourceId": "di-pie-chart-9",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "25%",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-9",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.842Z"
+  },
+  {
+    "id": "di-pie-chart-13",
+    "question": "What is the central angle corresponding to number of both male and female in health club B? [RBI Gr. ‘B’ (Phase—I) Exam, 2015]",
+    "options": [
+      "118.8º",
+      "112.6º",
+      "124.8º",
+      "116.4º"
+    ],
+    "answer": "118.8º",
+    "explanation": "Step 1\nPercentage of both male and female members in health club B = 33% The central angles corresponding to number of male and 360 female in health club B = × 33 = 118.8° 100\n\nAnswer: 118.8º",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 942,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-13",
+    "answerSourceId": "di-pie-chart-13",
+    "explanationSourceId": "di-pie-chart-13",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "118.8º",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-13",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.842Z"
+  },
+  {
+    "id": "di-pie-chart-17",
+    "question": "What is the central angles corresponding to the total number of cellular phones (both Nokia and Samsung) sold by store S? [IBPS—Bank Spl. Officer (IT) Exam, 2015]",
+    "options": [
+      "99.2º",
+      "93.6º",
+      "105.6º",
+      "97.4º"
+    ],
+    "answer": "93.6º",
+    "explanation": "Step 1\nPercentage of caller phones (both Nokia and Samsung) sold by Store S = 26% 26 Required central angle = ×360=93.6° 100\n\nAnswer: 93.6º",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 942,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-17",
+    "answerSourceId": "di-pie-chart-17",
+    "explanationSourceId": "di-pie-chart-17",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "93.6º",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-17",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.843Z"
+  },
+  {
+    "id": "di-pie-chart-19",
+    "question": "The total number of cellular phones (both Nokia and Samsung) sold by store Q increased by 15% from October to November and the same of cel- lular phones sold by store T increased by 5% from October to November. What was the total number of cellular phones sold by store Q and T together in November? [IBPS—Bank Spl. Officer (IT) Exam, 2015]",
+    "options": [
+      "3540",
+      "3720",
+      "3640",
+      "3420 Directions (Questions 20–23): Study the Pie chart care- fully and answer the questions. Student of a College NonMembers 40 Membersoffootball clubonly 5 1/5% Membersofcricket clubonly% Membersofbothclubs 75%"
+    ],
+    "answer": "3640",
+    "explanation": "Step 1\nNumber of cellular phones (both Nokia and Samsung) 10 sold by store Q in October = 11200 × = 120 1/100 Number of cellular phones (both Nokia and Samsung) 115 sold by store Q in November = 1120 × = 288 1/100 Number of cellular phones (both Nokia and Samsung) 20 sold by Store T in October = 11200 × = 240 2/100 Number of cellular phones (both Nokia and Samsung) 105 sold by Store T in Number = 2240 × = 352 2/100 Total number of cellular phones (both Nokia and Sam- sung) sold by Q and T Together in November = 1288 + 2352 = 3640\n\nAnswer: 3640",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 942,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-19",
+    "answerSourceId": "di-pie-chart-19",
+    "explanationSourceId": "di-pie-chart-19",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "3640",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-19",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.843Z"
+  },
+  {
+    "id": "di-pie-chart-20",
+    "question": "Percentage of students who are not members of any club is [SSC—CHSL (10 + 2) Exam, 2015]",
+    "options": [
+      "5%",
+      "8%",
+      "10%",
+      "6%"
+    ],
+    "answer": "5%",
+    "explanation": "Step 1\nPercentage of students who are members of any club = 75 + 15 + 5 = 95% Percentage of students who are not members of any club = 100 – 95% = 5%\n\nAnswer: 5%",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 942,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-20",
+    "answerSourceId": "di-pie-chart-20",
+    "explanationSourceId": "di-pie-chart-20",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "5%",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-20",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.843Z"
+  },
+  {
+    "id": "di-pie-chart-22",
+    "question": "Ratio of members of cricket club only and football club only respectively is [SSC—CHSL (10 + 2) Exam, 2015]",
+    "options": [
+      "1 : 3",
+      "2 : 1",
+      "1 : 2",
+      "3 : 1"
+    ],
+    "answer": "1 : 3",
+    "explanation": "Step 1\nPercentage of member of cricket club only = 5% Percentage of member of football club only = 15% Required ratio = 5 : 15 = 1 : 3\n\nAnswer: 1 : 3",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 942,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-22",
+    "answerSourceId": "di-pie-chart-22",
+    "explanationSourceId": "di-pie-chart-22",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "1 : 3",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-22",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.844Z"
+  },
+  {
+    "id": "di-pie-chart-24",
+    "question": "The total amount spent by the family on Groceries, Entertainment and Investments together forms approximately what percent of the amount spent on Commuting ?",
+    "options": [
+      "209",
+      "76",
+      "154",
+      "218 SWERS"
+    ],
+    "answer": "218 SWERS",
+    "explanation": "Step 1\nAmount spent on Groceries, Entertainment and Investments { (23+10+15)} ( 48 ) = ` 45800× =`[45800× ] 100 { 100} ( 22 ) Amount spent on Commuting = ` [45800× ]\n\nStep 2\n{ 100} 8 4/45800× 0 0/1/2400 Required % = ×100%= % 45800× 2 2/1 1/100 = 218.18%218%\n\nFinal Calculation\nISE – III Distribution of Number of Laptops (both Dell and Lenovo) Sold by 5 Stores in 2011 Total Number : 4500\n\nAnswer: 218 SWERS",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 938,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-24",
+    "answerSourceId": "di-pie-chart-24",
+    "explanationSourceId": "di-pie-chart-24",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "218 SWERS",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-24",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.844Z"
+  },
+  {
+    "id": "di-pie-chart-27",
+    "question": "What will be the quantity of water in the body of a person weighing 50 kg?",
+    "options": [
+      "20 kg",
+      "35 kg",
+      "41 kg",
+      "42.5 kg ANS"
+    ],
+    "answer": "35 kg",
+    "explanation": "Step 1\nQuantity of water in the body of a person weighing 50 kg = (70% of 50 kg) = 35 kg.\n\nAnswer: 35 kg",
+    "topic": "pie-chart",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 934,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:42.688079Z",
+    "optionsSourceId": "di-pie-chart-27",
+    "answerSourceId": "di-pie-chart-27",
+    "explanationSourceId": "di-pie-chart-27",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "pie",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "35 kg",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-pie-chart-27",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.844Z"
+  },
+  {
+    "id": "di-line-graphs-2",
+    "question": "If the incomes of the two companies were equal in 2009, what was the ratio of expenditure of Company X to that of Company Y in that year ?",
+    "options": [
+      "6 : 5",
+      "5 : 6",
+      "11 : 6",
+      "16 : 15"
+    ],
+    "answer": "5 : 6",
+    "explanation": "Step 1\nTotal number of calories burnt on Saturday 10 1/120 =180 × + 145 × 0 0/1/100 = 198 + 174 = 372\n\nAnswer: 5 : 6",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 951,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-2",
+    "answerSourceId": "di-line-graphs-2",
+    "explanationSourceId": "di-line-graphs-2",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
     "chartType": "line",
     "chartData": [
       {
@@ -229,100 +1600,833 @@
       },
       {
         "name": "2020",
-        "value": 40
-      },
-      {
-        "name": "2021",
-        "value": 20
-      },
-      {
-        "name": "2022",
-        "value": 50
-      },
-      {
-        "name": "2023",
         "value": 45
       },
       {
-        "name": "2024",
+        "name": "2021",
         "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
       }
     ],
-    "importBatch": "2026-06-29T16:35:59.361268Z",
-    "sourceFile": "manual_seed",
-    "sourceId": "di-line-graphs-1",
+    "correctAnswer": "5 : 6",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-2",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.423Z",
-    "optionsSourceId": "di-line-graphs-1",
-    "answerSourceId": "di-line-graphs-1",
-    "explanationSourceId": "di-line-graphs-1",
-    "correctAnswer": "₹220 crores",
-    "sourceReference": "manual_seed"
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.845Z"
   },
   {
-    "id": "di-tables-1",
-    "question": "The following table shows the sales of five branches (B1, B2, B3, B4, B5) of a publishing company during two consecutive years 23 0/2/2024 and. Study the table and answer:\n\nWhat is the ratio of the total sales of branch B2 for both years to the total sales of branch B4 for both years?",
+    "id": "di-line-graphs-4",
+    "question": "If the average number of calories burned by B on Thursday, Friday and Saturday together is 125, what was the number of calories burned by B on Saturday? [IBPS—RRB (Off. Gr. ‘B’) Exam, 2015]",
     "options": [
-      "7:9",
-      "4:5",
-      "7:8",
-      "3:4"
+      "110",
+      "95",
+      "115",
+      "90"
     ],
-    "answer": "7:8",
-    "explanation": "Detailed explanation will be available in a future update.",
-    "topic": "tables",
+    "answer": "95",
+    "explanation": "Step 1\nAverage calories = 125 Total calories = 3 × 125 = 375 Number of calories burnt on Saturday = 375 – 280 = 95\n\nAnswer: 95",
+    "topic": "line-graphs",
     "category": "di",
     "difficulty": 2,
-    "estimatedTime": 90,
+    "estimatedTime": 60,
     "companyRelevance": [
       "TCS",
-      "Deloitte"
+      "Accenture",
+      "Infosys"
     ],
-    "tableData": {
-      "headers": [
-        "Branch",
-        "Sales 2023 (in Thousands)",
-        "Sales 2024 (in Thousands)"
-      ],
-      "rows": [
-        [
-          "B1",
-          "80",
-          "105"
-        ],
-        [
-          "B2",
-          "75",
-          "65"
-        ],
-        [
-          "B3",
-          "95",
-          "110"
-        ],
-        [
-          "B4",
-          "85",
-          "75"
-        ],
-        [
-          "B5",
-          "75",
-          "95"
-        ]
-      ]
-    },
-    "importBatch": "2026-06-29T16:35:59.361268Z",
-    "sourceFile": "manual_seed",
-    "sourceId": "di-tables-1",
+    "sourcePage": 956,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-4",
+    "answerSourceId": "di-line-graphs-4",
+    "explanationSourceId": "di-line-graphs-4",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "95",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-4",
     "confidenceScore": 100,
     "validationStatus": "PASS",
-    "lastVerificationTime": "2026-06-30T15:58:05.423Z",
-    "optionsSourceId": "di-tables-1",
-    "answerSourceId": "di-tables-1",
-    "explanationSourceId": "di-tables-1",
-    "correctAnswer": "7:8",
-    "sourceReference": "manual_seed"
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.845Z"
+  },
+  {
+    "id": "di-line-graphs-5",
+    "question": "Number of calories burned by B increased by what percent from Monday to Thursday? [IBPS—RRB (Off. Gr. ‘B’) Exam, 2015]",
+    "options": [
+      "80%",
+      "60%",
+      "70%",
+      "75%"
+    ],
+    "answer": "80%",
+    "explanation": "Step 1\n7/145 x ⇒ = x 140 ⇒ 5.7 × 140 – 140x = 145x ⇒ 798 = 285x ⇒ x = 2.8 lakhs x = 1.4 E E = 2 lakhs Total expenditure of two companies = (2 + 2) = 4/2 lakhs−E 1\n\nAnswer: 80%",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 956,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-5",
+    "answerSourceId": "di-line-graphs-5",
+    "explanationSourceId": "di-line-graphs-5",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "80%",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-5",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.845Z"
+  },
+  {
+    "id": "di-line-graphs-7",
+    "question": "The number of watches sold in Town Y in April is what per cent more than the number of watches sold in Town X in the same month? [IBPS—Bank Spl. Officer (IT) Exam, 2015]",
+    "options": [
+      "42%",
+      "40%",
+      "30%",
+      "50%"
+    ],
+    "answer": "40%",
+    "explanation": "Step 1\nThe number of watches sold in Town Y in April = 210 The number of watches sold in Town X in April = 50 1/210−50 1/60 Required percentage = ×100= ×100=40% 50 1/150\n\nAnswer: 40%",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 956,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-7",
+    "answerSourceId": "di-line-graphs-7",
+    "explanationSourceId": "di-line-graphs-7",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "40%",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-7",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.846Z"
+  },
+  {
+    "id": "di-line-graphs-8",
+    "question": "The number of watches sold in Town Y increased by what per cent from February to May? [IBPS—Bank Spl. Officer (IT) Exam, 2015] 1",
+    "options": [
+      "96%",
+      "92% 3 2",
+      "97%",
+      "91% 3 2"
+    ],
+    "answer": "91% 3 2",
+    "explanation": "Step 1\nNumber of Watches sold in Town Y in February = 120 Number of Watches sold in Town Y in May = 230\n\nAnswer: 91% 3 2",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 956,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-8",
+    "answerSourceId": "di-line-graphs-8",
+    "explanationSourceId": "di-line-graphs-8",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "91% 3 2",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-8",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.846Z"
+  },
+  {
+    "id": "di-line-graphs-10",
+    "question": "What is the difference between the total number of watches sold in both the towns together in June and the total number of watches sold in both the towns together in March? [IBPS—Bank Spl. Officer (IT) Exam, 2015]",
+    "options": [
+      "50",
+      "90",
+      "60",
+      "70"
+    ],
+    "answer": "90",
+    "explanation": "Step 1\nTotal number of watches sold in both the towns together in the month of June = 240 + 180 = 420 Total number of watches sold in both the towns together in March = 180 + 150 = 330 Required difference = 420 – 330 = 90\n\nAnswer: 90",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 956,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-10",
+    "answerSourceId": "di-line-graphs-10",
+    "explanationSourceId": "di-line-graphs-10",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "90",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-10",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.847Z"
+  },
+  {
+    "id": "di-line-graphs-12",
+    "question": "Ratio of expenditures of company A and B in 2012/3 was : 4 respectively. What was the respective ratio of their incomes in 2012? [IDBI Bank (Executive Officer’s) Exam, 2015]",
+    "options": [
+      "21 : 26",
+      "13 : 14",
+      "14 : 13",
+      "None of these"
+    ],
+    "answer": "None of these",
+    "explanation": "Step 1\nFor company A, In 2012 I−E P% = × 100 E I−3 ⇒ 30 = × 0 0/1/3 ⇒ 90 = 100 I – 0 0/3/390 ⇒ = I 100 ⇒ I = 3.9 For company B, in 2012 I−E P% = ×100/40 E = v\n\nAnswer: None of these",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 957,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-12",
+    "answerSourceId": "di-line-graphs-12",
+    "explanationSourceId": "di-line-graphs-12",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "None of these",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-12",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.847Z"
+  },
+  {
+    "id": "di-line-graphs-13",
+    "question": "Total expenditure of company A in all the years together was 82.5 lakhs. What was the total income of the company A in all the years together? [IDBI Bank (Executive Officer’s) Exam, 2015]",
+    "options": [
+      "1.23 crores",
+      "98.75 crores",
+      "99.85 crores",
+      "Cannot be determined"
+    ],
+    "answer": "Cannot be determined",
+    "explanation": "Step 1\nSolution cannot be determined because profit percentage of company A in all the years are not given.\n\nAnswer: Cannot be determined",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 957,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-13",
+    "answerSourceId": "di-line-graphs-13",
+    "explanationSourceId": "di-line-graphs-13",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "Cannot be determined",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-13",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.848Z"
+  },
+  {
+    "id": "di-line-graphs-14",
+    "question": "If the expenditure of company A and B in 2013 were equal and the total incomes of the two companies was ` 5.7 lakhs. What was the total expenditure of the two companies in 2013? [IDBI Bank (Executive Officer’s) Exam, 2015]",
+    "options": [
+      "4 lakhs",
+      "2 lakhs",
+      "4.2 lakhs",
+      "Cannot be determined"
+    ],
+    "answer": "4 lakhs",
+    "explanation": "Step 1\nLet the income of company A in 2013 = x Let the income of company B in 2013 = (5.7 – x) Expenditure of company A = Expenditure of Company 40 x−E B = E − ×0 0/1/100 E x 45 (5.7−x)−E =1.4....(i)and = E 100 E\n\nAnswer: 4 lakhs",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 957,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-14",
+    "answerSourceId": "di-line-graphs-14",
+    "explanationSourceId": "di-line-graphs-14",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "4 lakhs",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-14",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.848Z"
+  },
+  {
+    "id": "di-line-graphs-15",
+    "question": "If the income of company B in 2010/2011 and were in the ratio of 2 : 3 respectively, what was the respective ratio of expenditures of that company in these two years? [IDBI Bank (Executive Officer’s) Exam, 2015]",
+    "options": [
+      "20 : 29",
+      "9 : 10",
+      "29 : 45",
+      "10 : 29"
+    ],
+    "answer": "29 : 45",
+    "explanation": "Step 1/2010 In, 50 = ×100/1 E ⇒ 50 E = 200 – 100/1/1 E ⇒ 150 E = 200 1 4 ⇒ E = 1 3 (3−E 2) In 2011, 45 = × 100/2 E ⇒ 45 E = 300 – 100/2/2 E ⇒ 145 E = 300 2 300 ⇒ E = 2/145Then, E 1 = 4 × 145/2/3 E 300 ⇒ E 1 = 29/2/35 E\n\nAnswer: 29 : 45",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 957,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-15",
+    "answerSourceId": "di-line-graphs-15",
+    "explanationSourceId": "di-line-graphs-15",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "29 : 45",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-15",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.848Z"
+  },
+  {
+    "id": "di-line-graphs-17",
+    "question": "The projects handled by a company can be broadly classified into two types: governmental projects and non-governmental projects. If the average number of non-governmental projects handled by the same company B in 2003/2004 and Is 127. What is the total number of governmental projects handled by the same company in 2003/2004 and together? [IBPS—RRBs (Off. Gr. ‘B’) Exam, 2015]",
+    "options": [
+      "204",
+      "188",
+      "192",
+      "196"
+    ],
+    "answer": "196",
+    "explanation": "Step 1\nAverage number of non-governmental projects handled by company B = 127 Number of Non-Governmental projects handled by Com- pany B in 2003/2004 and is = 127 × 2 = 254 Number of Governmental projects handled by Company B in 2003/2004 and together = 130 + 320 – 254 = 40 – 254 = 196\n\nAnswer: 196",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 957,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-17",
+    "answerSourceId": "di-line-graphs-17",
+    "explanationSourceId": "di-line-graphs-17",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "196",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-17",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.848Z"
+  },
+  {
+    "id": "di-line-graphs-18",
+    "question": "The number of projects handled by Company B decreased by what per cent from 2004/2006 to? [IBPS—RRBs (Off. Gr. ‘B’) Exam, 2015] 5 7",
+    "options": [
+      "35",
+      "0 3/8 8 3 3",
+      "50",
+      "0 4/8"
+    ],
+    "answer": "0 4/8",
+    "explanation": "Step 1\nNumber of projects handled by Company B in 2004 = 320 Number of projects handled by Company B in 2006 = 90 1/320−190 Required decrease percentage = ×0 0/1/20 3/30 1/300 1/325 = ×100= %= 0 2/3/2 3/8 5 = 40% decrease 8\n\nAnswer: 0 4/8",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 957,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-18",
+    "answerSourceId": "di-line-graphs-18",
+    "explanationSourceId": "di-line-graphs-18",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "0 4/8",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-18",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.849Z"
+  },
+  {
+    "id": "di-line-graphs-20",
+    "question": "What is the difference between the total number of projects handled by company A in 2003/2004 and together and the total number of projects handled by Company B in 2005/2007 and together? [IBPS—RRBs (Off. Gr. ‘B’) Exam, 2015]",
+    "options": [
+      "120",
+      "150",
+      "130",
+      "180"
+    ],
+    "answer": "150",
+    "explanation": "Step 1\nThe number of projects handled by company A in 2003/2004 and together = 180 + 230 = 410 The number of projects handled by company B in 2005/2007 and together = 210 + 350 = 560 Required difference = 560 – 410 = 150\n\nAnswer: 150",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 957,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-20",
+    "answerSourceId": "di-line-graphs-20",
+    "explanationSourceId": "di-line-graphs-20",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "150",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-20",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.849Z"
+  },
+  {
+    "id": "di-line-graphs-25",
+    "question": "The number of visas issued for Country B in March is what percent less than the number of visas issued for Country A in June? [IBPS Bank PO/MT CWE-V (Pre.) Exam, 2015]",
+    "options": [
+      "8.5",
+      "7.75",
+      "4.25",
+      "6.25"
+    ],
+    "answer": "6.25",
+    "explanation": "Step 1\nNumber of visas issued for country B in March = 300 Number of visas issued for country A in June = 0 2/3/320−300 Required percent = ×0 0/1/320\n\nAnswer: 6.25",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 958,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-25",
+    "answerSourceId": "di-line-graphs-25",
+    "explanationSourceId": "di-line-graphs-25",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "6.25",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-25",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.850Z"
+  },
+  {
+    "id": "di-line-graphs-27",
+    "question": "In which year was the difference between the exports from Companies X and Y the minimum ?",
+    "options": [
+      "2004",
+      "2005",
+      "2006",
+      "2007"
+    ],
+    "answer": "2006",
+    "explanation": "Step 1\nDifference between the exports of X and Y (In crore `): 2003 → (80 – 30) = 50 ; 2004 → (60 – 40) = 20 ; 2005 → (60 – 40) = 20 ; 2006 → (70 – 60) = 10 ; 2007 → (100 – 80) = 20 ;\n\nAnswer: 2006",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 948,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-27",
+    "answerSourceId": "di-line-graphs-27",
+    "explanationSourceId": "di-line-graphs-27",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "2006",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-27",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.850Z"
+  },
+  {
+    "id": "di-line-graphs-28",
+    "question": "For which of the following pairs of years the total exports from the three companies together are equal ?",
+    "options": [
+      "2005/2008 and",
+      "2006/2008 and",
+      "2007/2008 and",
+      "2005/2006 and"
+    ],
+    "answer": "2005/2006 and",
+    "explanation": "Step 1\nTotal exports of X, Y, Z (in crore `) are: 2003 → (30 + 80 + 60) = 170 ; 2004 → (60 + 40 + 90) = 190 ; 2005 → (40 + 60 + 120) = 220 ; EXERCI Directions (Questions 1–5): The following linegraph give during the period 2006 – 2011\n\nFinal Calculation\nStudy the line graph and a Percentage Profit Earned by Companies X and Y over Gi (Income)–(Expenditure) Profit or Loss % = ×100 (Expenditure) X, 0 8/70 0 6/55 0 5/5 4/5 4/50 nt e c er 40/40 P ofit 35/0/3 Pr/0 2/10 0 06 0/2/2007/2008Ye\n\nAnswer: 2005/2006 and",
+    "topic": "line-graphs",
+    "category": "di",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "sourcePage": 948,
+    "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "importBatch": "2026-07-02T16:55:50.307403Z",
+    "optionsSourceId": "di-line-graphs-28",
+    "answerSourceId": "di-line-graphs-28",
+    "explanationSourceId": "di-line-graphs-28",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "chartType": "line",
+    "chartData": [
+      {
+        "name": "2019",
+        "value": 30
+      },
+      {
+        "name": "2020",
+        "value": 45
+      },
+      {
+        "name": "2021",
+        "value": 60
+      },
+      {
+        "name": "2022",
+        "value": 55
+      }
+    ],
+    "correctAnswer": "2005/2006 and",
+    "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+    "sourceId": "di-line-graphs-28",
+    "confidenceScore": 100,
+    "validationStatus": "PASS",
+    "integrityStatus": "INTEGRATED",
+    "lastVerificationTime": "2026-07-02T16:56:10.851Z"
   }
 ]

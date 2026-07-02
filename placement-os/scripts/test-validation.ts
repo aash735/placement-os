@@ -260,7 +260,7 @@ const qMissingExplanation: AptitudeQuestion = {
   companyRelevance: ['TCS']
 };
 const repairedMissingExp = autoRepairQuestion(qMissingExplanation);
-assert(repairedMissingExp.explanation === 'Verified detailed explanation unavailable.', 'Empty explanation falls back to unavailable message');
+assert(repairedMissingExp.explanation === 'Detailed explanation is currently being prepared and will be available in a future update.', 'Empty explanation falls back to unavailable message');
 assert(repairedMissingExp.correctAnswer === '10', 'correctAnswer is mapped to answer key');
 assert(repairedMissingExp.sourceReference === 'quant-fallback-1', 'sourceReference is mapped to question id');
 const validationMissingExp = validateQuestion(repairedMissingExp);
@@ -280,7 +280,7 @@ const qPlaceholderExplanation: AptitudeQuestion = {
   companyRelevance: ['TCS']
 };
 const repairedPlaceholderExp = autoRepairQuestion(qPlaceholderExplanation);
-assert(repairedPlaceholderExp.explanation === 'Verified detailed explanation unavailable.', 'Generic placeholder explanation falls back to unavailable message');
+assert(repairedPlaceholderExp.explanation === 'Detailed explanation is currently being prepared and will be available in a future update.', 'Generic placeholder explanation falls back to unavailable message');
 const validationPlaceholderExp = validateQuestion(repairedPlaceholderExp);
 assert(validationPlaceholderExp.valid === true, 'Question with placeholder explanation repaired to fallback passes validation', validationPlaceholderExp);
 

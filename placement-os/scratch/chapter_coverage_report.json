@@ -1,0 +1,314 @@
+[
+  {
+    "chapter": "Number System",
+    "expected_pages": 48,
+    "pages_processed": 48,
+    "questions_extracted": 326,
+    "solutions_extracted": 379,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "H.C.F. and L.C.M. of Numbers",
+    "expected_pages": 18,
+    "pages_processed": 18,
+    "questions_extracted": 113,
+    "solutions_extracted": 131,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Decimal Fractions",
+    "expected_pages": 26,
+    "pages_processed": 26,
+    "questions_extracted": 142,
+    "solutions_extracted": 207,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Simplification",
+    "expected_pages": 85,
+    "pages_processed": 85,
+    "questions_extracted": 442,
+    "solutions_extracted": 545,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Square Roots and Cube Roots",
+    "expected_pages": 26,
+    "pages_processed": 26,
+    "questions_extracted": 161,
+    "solutions_extracted": 189,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Average",
+    "expected_pages": 34,
+    "pages_processed": 34,
+    "questions_extracted": 124,
+    "solutions_extracted": 180,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Problems on Numbers",
+    "expected_pages": 24,
+    "pages_processed": 24,
+    "questions_extracted": 108,
+    "solutions_extracted": 133,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Problems on Ages",
+    "expected_pages": 14,
+    "pages_processed": 14,
+    "questions_extracted": 50,
+    "solutions_extracted": 57,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Surds and Indices",
+    "expected_pages": 19,
+    "pages_processed": 19,
+    "questions_extracted": 101,
+    "solutions_extracted": 124,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Logarithms",
+    "expected_pages": 11,
+    "pages_processed": 11,
+    "questions_extracted": 80,
+    "solutions_extracted": 93,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Percentage",
+    "expected_pages": 66,
+    "pages_processed": 66,
+    "questions_extracted": 352,
+    "solutions_extracted": 392,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Profit and Loss",
+    "expected_pages": 52,
+    "pages_processed": 52,
+    "questions_extracted": 253,
+    "solutions_extracted": 294,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Ratio and Proportion",
+    "expected_pages": 50,
+    "pages_processed": 50,
+    "questions_extracted": 229,
+    "solutions_extracted": 266,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Partnership",
+    "expected_pages": 17,
+    "pages_processed": 17,
+    "questions_extracted": 57,
+    "solutions_extracted": 64,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Chain Rule",
+    "expected_pages": 17,
+    "pages_processed": 17,
+    "questions_extracted": 70,
+    "solutions_extracted": 83,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Pipes and Cisterns",
+    "expected_pages": 16,
+    "pages_processed": 16,
+    "questions_extracted": 48,
+    "solutions_extracted": 54,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Time and Work",
+    "expected_pages": 36,
+    "pages_processed": 36,
+    "questions_extracted": 110,
+    "solutions_extracted": 133,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Time & Distance",
+    "expected_pages": 38,
+    "pages_processed": 38,
+    "questions_extracted": 168,
+    "solutions_extracted": 192,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Boats and Streams",
+    "expected_pages": 12,
+    "pages_processed": 12,
+    "questions_extracted": 32,
+    "solutions_extracted": 37,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Problems on Trains",
+    "expected_pages": 21,
+    "pages_processed": 21,
+    "questions_extracted": 57,
+    "solutions_extracted": 76,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Alligation or Mixture",
+    "expected_pages": 8,
+    "pages_processed": 8,
+    "questions_extracted": 23,
+    "solutions_extracted": 26,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Simple Interest",
+    "expected_pages": 22,
+    "pages_processed": 22,
+    "questions_extracted": 93,
+    "solutions_extracted": 106,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Compound Interest",
+    "expected_pages": 25,
+    "pages_processed": 25,
+    "questions_extracted": 57,
+    "solutions_extracted": 72,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Area",
+    "expected_pages": 78,
+    "pages_processed": 78,
+    "questions_extracted": 351,
+    "solutions_extracted": 416,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Volume and Surface Areas",
+    "expected_pages": 48,
+    "pages_processed": 48,
+    "questions_extracted": 254,
+    "solutions_extracted": 305,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Races and Games of Skill",
+    "expected_pages": 5,
+    "pages_processed": 5,
+    "questions_extracted": 24,
+    "solutions_extracted": 25,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Calendar",
+    "expected_pages": 4,
+    "pages_processed": 4,
+    "questions_extracted": 17,
+    "solutions_extracted": 9,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Clocks",
+    "expected_pages": 11,
+    "pages_processed": 11,
+    "questions_extracted": 49,
+    "solutions_extracted": 54,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Stocks and Shares",
+    "expected_pages": 7,
+    "pages_processed": 7,
+    "questions_extracted": 28,
+    "solutions_extracted": 30,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Permutation and Combination",
+    "expected_pages": 9,
+    "pages_processed": 9,
+    "questions_extracted": 43,
+    "solutions_extracted": 48,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Probability",
+    "expected_pages": 11,
+    "pages_processed": 11,
+    "questions_extracted": 33,
+    "solutions_extracted": 50,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "True Discount",
+    "expected_pages": 5,
+    "pages_processed": 5,
+    "questions_extracted": 21,
+    "solutions_extracted": 21,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Banker's Discount",
+    "expected_pages": 4,
+    "pages_processed": 4,
+    "questions_extracted": 12,
+    "solutions_extracted": 13,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Heights and Distances",
+    "expected_pages": 7,
+    "pages_processed": 7,
+    "questions_extracted": 17,
+    "solutions_extracted": 18,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Odd Man Out and Series",
+    "expected_pages": 8,
+    "pages_processed": 8,
+    "questions_extracted": 91,
+    "solutions_extracted": 98,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Tabulation",
+    "expected_pages": 18,
+    "pages_processed": 18,
+    "questions_extracted": 22,
+    "solutions_extracted": 39,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Bar Graphs",
+    "expected_pages": 18,
+    "pages_processed": 18,
+    "questions_extracted": 26,
+    "solutions_extracted": 35,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Pie Chart",
+    "expected_pages": 14,
+    "pages_processed": 14,
+    "questions_extracted": 27,
+    "solutions_extracted": 33,
+    "status": "VERIFIED"
+  },
+  {
+    "chapter": "Line Graphs",
+    "expected_pages": 16,
+    "pages_processed": 16,
+    "questions_extracted": 25,
+    "solutions_extracted": 32,
+    "status": "VERIFIED"
+  }
+]

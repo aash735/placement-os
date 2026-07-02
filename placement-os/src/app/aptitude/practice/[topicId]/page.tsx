@@ -518,60 +518,23 @@ export default function PracticeRoomPage() {
           </GlassCard>
 
           {/* EXPLANATION & SHORTCUTS */}
-          {isExplanationRevealed && (() => {
-            const P0_MSG = 'Detailed explanation will be available in a future update.';
-            const isP0 = !currentQuestion.explanation || currentQuestion.explanation.trim() === P0_MSG;
-            return (
-              <div className="space-y-6 animate-in fade-in slide-in-from-bottom-3 duration-300">
-                {isP0 ? (
-                  <GlassCard className="p-6 border-amber-500/15 relative overflow-hidden" hover={false}>
-                    <div className="absolute top-0 right-0 h-32 w-32 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
-                    <h3 className="text-base font-bold text-white flex items-center mb-3">
-                      <Lightbulb className="h-5 w-5 mr-2 text-amber-400" />
-                      Explanation
-                    </h3>
-                    <p className="text-sm text-amber-300/80 leading-relaxed">
-                      Detailed explanation will be available in a future update.
-                    </p>
-                    <p className="text-xs text-zinc-500 mt-2">
-                      The correct answer is highlighted above.
-                    </p>
-                  </GlassCard>
-                ) : (
-                  <GlassCard className="p-6 border-emerald-500/10 relative overflow-hidden" hover={false}>
-                    <div className="absolute top-0 right-0 h-32 w-32 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
-                    <h3 className="text-base font-bold text-white flex items-center mb-4">
-                      <Lightbulb className="h-5 w-5 mr-2 text-emerald-400" />
-                      Step-by-Step Explanation
-                    </h3>
-                    <p className="text-sm text-zinc-300 leading-relaxed whitespace-pre-line font-mono text-[13px]">
-                      <MathRenderer text={currentQuestion.explanation} />
-                    </p>
-                  </GlassCard>
-                )}
-
-                {currentQuestion.shortcuts && currentQuestion.shortcuts.length > 0 && (
-                  <GlassCard className="p-6 border-violet-500/10 relative overflow-hidden" hover={false}>
-                    <div className="absolute top-0 right-0 h-32 w-32 bg-violet-500/5 rounded-full blur-3xl pointer-events-none" />
-                    <h3 className="text-base font-bold text-white flex items-center mb-4">
-                      <Sparkles className="h-5 w-5 mr-2 text-violet-400" />
-                      Antigravity Shortcuts &amp; Formulas
-                    </h3>
-                    <ul className="space-y-2.5">
-                      {currentQuestion.shortcuts.map((shortcut, i) => (
-                        <li key={i} className="flex items-start text-sm text-zinc-300 leading-relaxed">
-                          <span className="h-5 w-5 rounded-md bg-violet-500/15 border border-violet-500/20 text-violet-400 flex items-center justify-center text-[10px] font-bold shrink-0 mr-3 mt-0.5 font-mono">
-                            {i + 1}
-                          </span>
-                          <span>{shortcut}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </GlassCard>
-                )}
-              </div>
-            );
-          })()}
+          {isExplanationRevealed && (
+            <div className="space-y-6 animate-in fade-in slide-in-from-bottom-3 duration-300">
+              <GlassCard className="p-6 border-amber-500/15 relative overflow-hidden" hover={false}>
+                <div className="absolute top-0 right-0 h-32 w-32 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
+                <h3 className="text-base font-bold text-white flex items-center mb-3">
+                  <Lightbulb className="h-5 w-5 mr-2 text-amber-400" />
+                  Explanation
+                </h3>
+                <p className="text-sm text-amber-300/80 leading-relaxed">
+                  Detailed explanations are temporarily unavailable.
+                </p>
+                <p className="text-xs text-zinc-500 mt-2">
+                  The correct answer is highlighted above.
+                </p>
+              </GlassCard>
+            </div>
+          )}
 
         </div>
 

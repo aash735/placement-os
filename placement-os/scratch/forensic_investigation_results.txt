@@ -1,0 +1,700 @@
+Question ID: quant-number-system-11
+
+SOURCE BOOK:
+Question: (b) 12. (b) 13. (d) 14. (c) 15. (d) 16. (b) 17. (c) 18. (b) 19. (c) 20. (d)
+Options: []
+Answer: 15.
+
+OCR OUTPUT:
+Question: (b) 12.
+Options: ['13. (d) 14.', '15.']
+Answer: 15.
+
+DATABASE:
+Question: (b) 12.
+Options: ['13. (d) 14.', '15.']
+Answer: 15.
+
+API:
+Question: (b) 12.
+Options: ['13. (d) 14.', '15.']
+Answer: 15.
+
+UI:
+Question: (b) 12.
+Options: ['13. (d) 14.', '15.']
+Answer: 15.
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-373
+
+SOURCE BOOK:
+Question: Two consecutive even positive integers, sum of the 1 2 3 1 2 3 squares of which is 1060, are (c) (x + 1) (x + 1) (x + 1) (d) None of the above 1 2 3 [CLAT, 2016] 376. Consider the following statements for the sequence (a) 12 and 14 (b) 20 and 22 of numbers given below: (c) 22 and 24 (d) 15 and 18 11, 111, 1111, 11111, ….
+Options: []
+Answer: 22/24 and
+
+OCR OUTPUT:
+Question: Two consecutive even positive integers, sum of the squares of which is 1060, are [CLAT, 2016]
+Options: ['12/14 and', '20/22 and', '22/24 and', '15/18 and Directions (Question 374): The question below consists of a question and two statements numbered I and II given below it. You have to decide whether the data given in the statements are sufficient to answer the questions. Read both the statements and given answer. (A) If the data in statement I alone is sufficient to answer the question, while the data in statement II alone is not sufficient to answer the question. (B) If the data in statement II alone is sufficient to answer the question, while the data in statement I alone is not sufficient to answer the question. (C) If the data either in statement I alone or statement II alone is sufficient to answer the questions. (D) If the data given in both Statement I and II together are not sufficient to answer the question. (E) If the data in both Statement I and II together are necessary to answer the question.']
+Answer: 22/24 and
+
+DATABASE:
+Question: Two consecutive even positive integers, sum of the squares of which is 1060, are [CLAT, 2016]
+Options: ['12/14 and', '20/22 and', '22/24 and', '15/18 and Directions (Question 374): The question below consists of a question and two statements numbered I and II given below it. You have to decide whether the data given in the statements are sufficient to answer the questions. Read both the statements and given answer. (A) If the data in statement I alone is sufficient to answer the question, while the data in statement II alone is not sufficient to answer the question. (B) If the data in statement II alone is sufficient to answer the question, while the data in statement I alone is not sufficient to answer the question. (C) If the data either in statement I alone or statement II alone is sufficient to answer the questions. (D) If the data given in both Statement I and II together are not sufficient to answer the question. (E) If the data in both Statement I and II together are necessary to answer the question.']
+Answer: 22/24 and
+
+API:
+Question: Two consecutive even positive integers, sum of the squares of which is 1060, are [CLAT, 2016]
+Options: ['12/14 and', '20/22 and', '22/24 and', '15/18 and Directions (Question 374): The question below consists of a question and two statements numbered I and II given below it. You have to decide whether the data given in the statements are sufficient to answer the questions. Read both the statements and given answer. (A) If the data in statement I alone is sufficient to answer the question, while the data in statement II alone is not sufficient to answer the question. (B) If the data in statement II alone is sufficient to answer the question, while the data in statement I alone is not sufficient to answer the question. (C) If the data either in statement I alone or statement II alone is sufficient to answer the questions. (D) If the data given in both Statement I and II together are not sufficient to answer the question. (E) If the data in both Statement I and II together are necessary to answer the question.']
+Answer: 22/24 and
+
+UI:
+Question: Two consecutive even positive integers, sum of the squares of which is 1060, are [CLAT, 2016]
+Options: ['12/14 and', '20/22 and', '22/24 and', '15/18 and Directions (Question 374): The question below consists of a question and two statements numbered I and II given below it. You have to decide whether the data given in the statements are sufficient to answer the questions. Read both the statements and given answer. (A) If the data in statement I alone is sufficient to answer the question, while the data in statement II alone is not sufficient to answer the question. (B) If the data in statement II alone is sufficient to answer the question, while the data in statement I alone is not sufficient to answer the question. (C) If the data either in statement I alone or statement II alone is sufficient to answer the questions. (D) If the data given in both Statement I and II together are not sufficient to answer the question. (E) If the data in both Statement I and II together are necessary to answer the question.']
+Answer: 22/24 and
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-14
+
+SOURCE BOOK:
+Question: 2 is a/an
+Options: []
+Answer: irrational number
+
+OCR OUTPUT:
+Question: 2 is a/an
+Options: ['rational number', 'natural number', 'irrational number', 'integer']
+Answer: irrational number
+
+DATABASE:
+Question: 2 is a/an
+Options: ['rational number', 'natural number', 'irrational number', 'integer']
+Answer: irrational number
+
+API:
+Question: 2 is a/an
+Options: ['rational number', 'natural number', 'irrational number', 'integer']
+Answer: irrational number
+
+UI:
+Question: 2 is a/an
+Options: ['rational number', 'natural number', 'irrational number', 'integer']
+Answer: irrational number
+--------------------------------------------------------------------------------
+
+Question ID: quant-h-c-f-and-l-c-m-of-numbers-126
+
+SOURCE BOOK:
+Question: Could not isolate question 126 on page 70
+Options: []
+Answer: 127. (a) 128.
+
+OCR OUTPUT:
+Question: 
+Options: ['129.', 'TIONS', '130.', '127. (a) 128.']
+Answer: 127. (a) 128.
+
+DATABASE:
+Question: 
+Options: ['129.', 'TIONS', '130.', '127. (a) 128.']
+Answer: 127. (a) 128.
+
+API:
+Question: 
+Options: ['129.', 'TIONS', '130.', '127. (a) 128.']
+Answer: 127. (a) 128.
+
+UI:
+Question: 
+Options: ['129.', 'TIONS', '130.', '127. (a) 128.']
+Answer: 127. (a) 128.
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-161
+
+SOURCE BOOK:
+Question: The highest power of 9 dividing 99! completely is (a) thumb (b) index finger (a) 11 (b) 20 (c) middle finger (d) ring finger (c) 22 (d) 24 171. Given n = 1 + x and x is the product of four
+Options: []
+Answer: 24
+
+OCR OUTPUT:
+Question: The highest power of 9/99 dividing! completely is
+Options: ['11', '20', '22', '24']
+Answer: 24
+
+DATABASE:
+Question: The highest power of 9/99 dividing! completely is
+Options: ['11', '20', '22', '24']
+Answer: 24
+
+API:
+Question: The highest power of 9/99 dividing! completely is
+Options: ['11', '20', '22', '24']
+Answer: 24
+
+UI:
+Question: The highest power of 9/99 dividing! completely is
+Options: ['11', '20', '22', '24']
+Answer: 24
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-39
+
+SOURCE BOOK:
+Question: If x = y+3,how does y change when x increases odd numbers nearest to it? 5 (a) n, n – 1 (b) n, n – 2 from 1 to 2? 5 (a) y increases from – 5 to – (c) n – 3, n + 1 (d) n – 3, n + 5 2 2
+Options: []
+Answer: y increases from – 5 to – 2 2
+
+OCR OUTPUT:
+Question: If x = y+3,how does y change when x increases 5/1 from to 2? 5
+Options: ['y increases from – 5 to – 2 2', 'y increases from to5 5 5', 'y increases from to5 2 5', 'y decreases from – 5 to – 2']
+Answer: y increases from – 5 to – 2 2
+
+DATABASE:
+Question: If x = y+3,how does y change when x increases 5/1 from to 2? 5
+Options: ['y increases from – 5 to – 2 2', 'y increases from to5 5 5', 'y increases from to5 2 5', 'y decreases from – 5 to – 2']
+Answer: y increases from – 5 to – 2 2
+
+API:
+Question: If x = y+3,how does y change when x increases 5/1 from to 2? 5
+Options: ['y increases from – 5 to – 2 2', 'y increases from to5 5 5', 'y increases from to5 2 5', 'y decreases from – 5 to – 2']
+Answer: y increases from – 5 to – 2 2
+
+UI:
+Question: If x = y+3,how does y change when x increases 5/1 from to 2? 5
+Options: ['y increases from – 5 to – 2 2', 'y increases from to5 5 5', 'y increases from to5 2 5', 'y decreases from – 5 to – 2']
+Answer: y increases from – 5 to – 2 2
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-16
+
+SOURCE BOOK:
+Question: Could not isolate question 16 on page 39
+Options: []
+Answer: 20.
+
+OCR OUTPUT:
+Question: (b) 17. (c) 18.
+Options: ['19.', '20.']
+Answer: 20.
+
+DATABASE:
+Question: (b) 17. (c) 18.
+Options: ['19.', '20.']
+Answer: 20.
+
+API:
+Question: (b) 17. (c) 18.
+Options: ['19.', '20.']
+Answer: 20.
+
+UI:
+Question: (b) 17. (c) 18.
+Options: ['19.', '20.']
+Answer: 20.
+--------------------------------------------------------------------------------
+
+Question ID: quant-average-163
+
+SOURCE BOOK:
+Question: Could not isolate question 163 on page 228
+Options: []
+Answer: 38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.
+
+OCR OUTPUT:
+Question: The average weight of A, B and C is 40 kgs. Weight of C is 24 kgs more than A’s weight and 3 kgs less than B’s weight. What will be the average weight of A, B, C and D, if D weights 15 kgs less than C? [United India Insurance (UIICL) Assistant (Online) Exam, 2015]
+Options: ['42 kgs', '40 kgs', '36 kgs', '38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.']
+Answer: 38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.
+
+DATABASE:
+Question: The average weight of A, B and C is 40 kgs. Weight of C is 24 kgs more than A’s weight and 3 kgs less than B’s weight. What will be the average weight of A, B, C and D, if D weights 15 kgs less than C? [United India Insurance (UIICL) Assistant (Online) Exam, 2015]
+Options: ['42 kgs', '40 kgs', '36 kgs', '38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.']
+Answer: 38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.
+
+API:
+Question: The average weight of A, B and C is 40 kgs. Weight of C is 24 kgs more than A’s weight and 3 kgs less than B’s weight. What will be the average weight of A, B, C and D, if D weights 15 kgs less than C? [United India Insurance (UIICL) Assistant (Online) Exam, 2015]
+Options: ['42 kgs', '40 kgs', '36 kgs', '38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.']
+Answer: 38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.
+
+UI:
+Question: The average weight of A, B and C is 40 kgs. Weight of C is 24 kgs more than A’s weight and 3 kgs less than B’s weight. What will be the average weight of A, B, C and D, if D weights 15 kgs less than C? [United India Insurance (UIICL) Assistant (Online) Exam, 2015]
+Options: ['42 kgs', '40 kgs', '36 kgs', '38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.']
+Answer: 38 kgs Direction (Question No. 164–165): Each of the questions below consists of a question-statement and two statements I and II are given below it. You have to decide whether the data provided in the statements are sufficient to answer the question. Give answer. (A) The data in statement I alone was sufficient to answer the question while II alone are not sufficient to answer the question. (B) Data in statement II alone are sufficient to answer the question while data in statement I alone are not sufficient to answer the question. (C) The data in statement I alone or in statement II alone are sufficient to answer the question. (D) The data in both Statement I and II are not sufficient to answer the question. (E) The data in both Statements I and II are sufficient to answer the question.
+--------------------------------------------------------------------------------
+
+Question ID: quant-h-c-f-and-l-c-m-of-numbers-119
+
+SOURCE BOOK:
+Question: Three persons walking around a circular track [SSC—CHSL (10 + 2) Exam, 2015] 1 (a) 5 (b) 4 complete their respective single revolutions in 15 6 (c) 3 (d) 2 1 2 seconds, 16 seconds and 18 seconds respectively. 128. The ratio of two numbers is 3 : 4 and their LCM is 4 3
+Options: []
+Answer: 40 seconds
+
+OCR OUTPUT:
+Question: Three persons walking around a circular track 1 complete their respective single revolutions in 5 1/6 1/2seconds, 16 seconds and 18 seconds respectively. 4/3They will be again together at the common starting point after an hour and
+Options: ['10 seconds', '20 seconds', '30 seconds', '40 seconds']
+Answer: 40 seconds
+
+DATABASE:
+Question: Three persons walking around a circular track 1 complete their respective single revolutions in 5 1/6 1/2seconds, 16 seconds and 18 seconds respectively. 4/3They will be again together at the common starting point after an hour and
+Options: ['10 seconds', '20 seconds', '30 seconds', '40 seconds']
+Answer: 40 seconds
+
+API:
+Question: Three persons walking around a circular track 1 complete their respective single revolutions in 5 1/6 1/2seconds, 16 seconds and 18 seconds respectively. 4/3They will be again together at the common starting point after an hour and
+Options: ['10 seconds', '20 seconds', '30 seconds', '40 seconds']
+Answer: 40 seconds
+
+UI:
+Question: Three persons walking around a circular track 1 complete their respective single revolutions in 5 1/6 1/2seconds, 16 seconds and 18 seconds respectively. 4/3They will be again together at the common starting point after an hour and
+Options: ['10 seconds', '20 seconds', '30 seconds', '40 seconds']
+Answer: 40 seconds
+--------------------------------------------------------------------------------
+
+Question ID: quant-average-5
+
+SOURCE BOOK:
+Question: 26. The average age of teacher and students in a class (a) Only I and II (b) Only I and III is 3 years more than the average age of students. (c) All I, II and III (d) I and either II or III What is the age of the class teacher? (e) None of these I. There are 11 students in the class.
+Options: []
+Answer: I and either II or III
+
+OCR OUTPUT:
+Question: 
+Options: ['Only I and II', 'Only I and III', 'All I, II and III', 'I and either II or III']
+Answer: I and either II or III
+
+DATABASE:
+Question: 
+Options: ['Only I and II', 'Only I and III', 'All I, II and III', 'I and either II or III']
+Answer: I and either II or III
+
+API:
+Question: 
+Options: ['Only I and II', 'Only I and III', 'All I, II and III', 'I and either II or III']
+Answer: I and either II or III
+
+UI:
+Question: 
+Options: ['Only I and II', 'Only I and III', 'All I, II and III', 'I and either II or III']
+Answer: I and either II or III
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-183
+
+SOURCE BOOK:
+Question: The number of zeros at the end of the product (c) 4 (d) 5 5 × 10 × 15 × 20 × 25 × 30 × 35 × 40 × 45 × 50 is 194. In the product 459 × 46 × 28* × 484, the digit in the (a) 5 (b) 7 unit place is 8. The digit to come in place of * is (c) 8 (d) 10 (a) 3 (b) 5
+Options: []
+Answer: 8
+
+OCR OUTPUT:
+Question: The number of zeros at the end of the product 5 × 10 × 15 × 20 × 25 × 30 × 35 × 40 × 45 × 50 is
+Options: ['5', '7', '8', '10']
+Answer: 8
+
+DATABASE:
+Question: The number of zeros at the end of the product 5 × 10 × 15 × 20 × 25 × 30 × 35 × 40 × 45 × 50 is
+Options: ['5', '7', '8', '10']
+Answer: 8
+
+API:
+Question: The number of zeros at the end of the product 5 × 10 × 15 × 20 × 25 × 30 × 35 × 40 × 45 × 50 is
+Options: ['5', '7', '8', '10']
+Answer: 8
+
+UI:
+Question: The number of zeros at the end of the product 5 × 10 × 15 × 20 × 25 × 30 × 35 × 40 × 45 × 50 is
+Options: ['5', '7', '8', '10']
+Answer: 8
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-98
+
+SOURCE BOOK:
+Question: 60840 ÷ 234 =?
+Options: []
+Answer: 260
+
+OCR OUTPUT:
+Question: 60840 ÷ 234 =?
+Options: ['225', '255', '260', '310']
+Answer: 260
+
+DATABASE:
+Question: 60840 ÷ 234 =?
+Options: ['225', '255', '260', '310']
+Answer: 260
+
+API:
+Question: 60840 ÷ 234 =?
+Options: ['225', '255', '260', '310']
+Answer: 260
+
+UI:
+Question: 60840 ÷ 234 =?
+Options: ['225', '255', '260', '310']
+Answer: 260
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-31
+
+SOURCE BOOK:
+Question: (b) 32. (b) 33. (d) 34.
+Options: ['35. (c) 36. (d) 37.', '38.', '39. (a) 40.']
+Answer: 33.
+
+OCR OUTPUT:
+Question: (b) 32.
+Options: ['35.', '33.', '34.']
+Answer: 33.
+
+DATABASE:
+Question: (b) 32.
+Options: ['35.', '33.', '34.']
+Answer: 33.
+
+API:
+Question: (b) 32.
+Options: ['35.', '33.', '34.']
+Answer: 33.
+
+UI:
+Question: (b) 32.
+Options: ['35.', '33.', '34.']
+Answer: 33.
+--------------------------------------------------------------------------------
+
+Question ID: quant-boats-and-streams-31
+
+SOURCE BOOK:
+Question: (b) 32. (a) 33. (c) 34. (d) 35. (c) 36. (b) SOLUTIONS 1
+Options: []
+Answer: 32.
+
+OCR OUTPUT:
+Question: 
+Options: ['33. (c) 34.', '32.', 'SOLUT 1', '35.']
+Answer: 32.
+
+DATABASE:
+Question: 
+Options: ['33. (c) 34.', '32.', 'SOLUT 1', '35.']
+Answer: 32.
+
+API:
+Question: 
+Options: ['33. (c) 34.', '32.', 'SOLUT 1', '35.']
+Answer: 32.
+
+UI:
+Question: 
+Options: ['33. (c) 34.', '32.', 'SOLUT 1', '35.']
+Answer: 32.
+--------------------------------------------------------------------------------
+
+Question ID: quant-decimal-fractions-84
+
+SOURCE BOOK:
+Question: 5.5 – [6.5 – {3.5 ÷ (6.5 – 5.5 – 2.5)}] is equal to (e) None of these (a) – 1 (b) 0
+Options: []
+Answer: 0
+
+OCR OUTPUT:
+Question: 5.5 – [6.5 – {3.5 ÷ (6.5 – 5.5 – 2.5)}] is equal to
+Options: ['– 1', '0', '0.1', '1']
+Answer: 0
+
+DATABASE:
+Question: 5.5 – [6.5 – {3.5 ÷ (6.5 – 5.5 – 2.5)}] is equal to
+Options: ['– 1', '0', '0.1', '1']
+Answer: 0
+
+API:
+Question: 5.5 – [6.5 – {3.5 ÷ (6.5 – 5.5 – 2.5)}] is equal to
+Options: ['– 1', '0', '0.1', '1']
+Answer: 0
+
+UI:
+Question: 5.5 – [6.5 – {3.5 ÷ (6.5 – 5.5 – 2.5)}] is equal to
+Options: ['– 1', '0', '0.1', '1']
+Answer: 0
+--------------------------------------------------------------------------------
+
+Question ID: quant-profit-and-loss-97
+
+SOURCE BOOK:
+Question: Could not isolate question 97 on page 413
+Options: []
+Answer: .
+
+OCR OUTPUT:
+Question: 
+Options: ['Profit = ` [{(42 – 32.40) × 25} + {(38 – 34.50) × 30}] = ` [(9.6 × 25) + (3.5 × 30)] = ` (240 + 105) = ` 345.', 'Profit = ` [{(37 – 28.60) × 40} + {(40 – 34.50) × 20}] = ` [(8.4 × 40) + (5.5 × 20)] = ` (336 + 110) = ` 446.', 'Profit = ` [{(38 – 34.50) × 20} + {(36 – 32.40) × 20}] = ` [(3.5 × 20) + (3.6 × 20)] = ` (70 + 72) = ` 142.', '.']
+Answer: .
+
+DATABASE:
+Question: 
+Options: ['Profit = ` [{(42 – 32.40) × 25} + {(38 – 34.50) × 30}] = ` [(9.6 × 25) + (3.5 × 30)] = ` (240 + 105) = ` 345.', 'Profit = ` [{(37 – 28.60) × 40} + {(40 – 34.50) × 20}] = ` [(8.4 × 40) + (5.5 × 20)] = ` (336 + 110) = ` 446.', 'Profit = ` [{(38 – 34.50) × 20} + {(36 – 32.40) × 20}] = ` [(3.5 × 20) + (3.6 × 20)] = ` (70 + 72) = ` 142.', '.']
+Answer: .
+
+API:
+Question: 
+Options: ['Profit = ` [{(42 – 32.40) × 25} + {(38 – 34.50) × 30}] = ` [(9.6 × 25) + (3.5 × 30)] = ` (240 + 105) = ` 345.', 'Profit = ` [{(37 – 28.60) × 40} + {(40 – 34.50) × 20}] = ` [(8.4 × 40) + (5.5 × 20)] = ` (336 + 110) = ` 446.', 'Profit = ` [{(38 – 34.50) × 20} + {(36 – 32.40) × 20}] = ` [(3.5 × 20) + (3.6 × 20)] = ` (70 + 72) = ` 142.', '.']
+Answer: .
+
+UI:
+Question: 
+Options: ['Profit = ` [{(42 – 32.40) × 25} + {(38 – 34.50) × 30}] = ` [(9.6 × 25) + (3.5 × 30)] = ` (240 + 105) = ` 345.', 'Profit = ` [{(37 – 28.60) × 40} + {(40 – 34.50) × 20}] = ` [(8.4 × 40) + (5.5 × 20)] = ` (336 + 110) = ` 446.', 'Profit = ` [{(38 – 34.50) × 20} + {(36 – 32.40) × 20}] = ` [(3.5 × 20) + (3.6 × 20)] = ` (70 + 72) = ` 142.', '.']
+Answer: .
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-186
+
+SOURCE BOOK:
+Question: Could not isolate question 186 on page 30
+Options: []
+Answer: 12
+
+OCR OUTPUT:
+Question: The numbers 2, 4, 6, 8, ............, 98, 100 are multiplied together. The number of zeros at the end of the product must be
+Options: ['10', '11', '12', '13']
+Answer: 12
+
+DATABASE:
+Question: The numbers 2, 4, 6, 8, ............, 98, 100 are multiplied together. The number of zeros at the end of the product must be
+Options: ['10', '11', '12', '13']
+Answer: 12
+
+API:
+Question: The numbers 2, 4, 6, 8, ............, 98, 100 are multiplied together. The number of zeros at the end of the product must be
+Options: ['10', '11', '12', '13']
+Answer: 12
+
+UI:
+Question: The numbers 2, 4, 6, 8, ............, 98, 100 are multiplied together. The number of zeros at the end of the product must be
+Options: ['10', '11', '12', '13']
+Answer: 12
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-100
+
+SOURCE BOOK:
+Question: Could not isolate question 100 on page 26
+Options: []
+Answer: – 5
+
+OCR OUTPUT:
+Question: – 95 ÷ 19 =?
+Options: ['– 5', '– 4', '0', '5']
+Answer: – 5
+
+DATABASE:
+Question: – 95 ÷ 19 =?
+Options: ['– 5', '– 4', '0', '5']
+Answer: – 5
+
+API:
+Question: – 95 ÷ 19 =?
+Options: ['– 5', '– 4', '0', '5']
+Answer: – 5
+
+UI:
+Question: – 95 ÷ 19 =?
+Options: ['– 5', '– 4', '0', '5']
+Answer: – 5
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-51
+
+SOURCE BOOK:
+Question: (b) 52. (b) 53. (c) 54. (d) 55. (b) 56. (d) 57. (b) 58. (c) 59. (d) 60. (b)
+Options: []
+Answer: 55.
+
+OCR OUTPUT:
+Question: (b) 52. (b) 53.
+Options: ['54.', '55.']
+Answer: 55.
+
+DATABASE:
+Question: (b) 52. (b) 53.
+Options: ['54.', '55.']
+Answer: 55.
+
+API:
+Question: (b) 52. (b) 53.
+Options: ['54.', '55.']
+Answer: 55.
+
+UI:
+Question: (b) 52. (b) 53.
+Options: ['54.', '55.']
+Answer: 55.
+--------------------------------------------------------------------------------
+
+Question ID: quant-problems-on-trains-26
+
+SOURCE BOOK:
+Question: At what time will the train reach city X from city (c) III only (d) I or II only Y? (e) Question cannot be answered even with the I. The train crosses another train of equal length information in all the three statements. of 200 metres and running in opposite direction
+Options: []
+Answer: TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \ The correct answer is
+
+OCR OUTPUT:
+Question: At what time will the train reach city X from city Y? I. The train crosses another train of equal length of 200 metres and running in opposite direction in 15 seconds. II. The train leaves city Y at 7.15 a.m. for city X situated at a distance of 558 km. III. The 200 metre long train crosses a signal pole in 10 seconds. (a) I only (b) II only (c) III only (d) I or III only (e) All I, II and III are required WERS . (a) 6. (e) 7. (e) 8. (a) 9. (d) 10. (e) . (b) 16. (e) 17. (a) 18.
+Options: ['TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \\ The correct answer is', '19.', '.', '20. (e) .']
+Answer: TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \ The correct answer is
+
+DATABASE:
+Question: At what time will the train reach city X from city Y? I. The train crosses another train of equal length of 200 metres and running in opposite direction in 15 seconds. II. The train leaves city Y at 7.15 a.m. for city X situated at a distance of 558 km. III. The 200 metre long train crosses a signal pole in 10 seconds. (a) I only (b) II only (c) III only (d) I or III only (e) All I, II and III are required WERS . (a) 6. (e) 7. (e) 8. (a) 9. (d) 10. (e) . (b) 16. (e) 17. (a) 18.
+Options: ['TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \\ The correct answer is', '19.', '.', '20. (e) .']
+Answer: TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \ The correct answer is
+
+API:
+Question: At what time will the train reach city X from city Y? I. The train crosses another train of equal length of 200 metres and running in opposite direction in 15 seconds. II. The train leaves city Y at 7.15 a.m. for city X situated at a distance of 558 km. III. The 200 metre long train crosses a signal pole in 10 seconds. (a) I only (b) II only (c) III only (d) I or III only (e) All I, II and III are required WERS . (a) 6. (e) 7. (e) 8. (a) 9. (d) 10. (e) . (b) 16. (e) 17. (a) 18.
+Options: ['TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \\ The correct answer is', '19.', '.', '20. (e) .']
+Answer: TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \ The correct answer is
+
+UI:
+Question: At what time will the train reach city X from city Y? I. The train crosses another train of equal length of 200 metres and running in opposite direction in 15 seconds. II. The train leaves city Y at 7.15 a.m. for city X situated at a distance of 558 km. III. The 200 metre long train crosses a signal pole in 10 seconds. (a) I only (b) II only (c) III only (d) I or III only (e) All I, II and III are required WERS . (a) 6. (e) 7. (e) 8. (a) 9. (d) 10. (e) . (b) 16. (e) 17. (a) 18.
+Options: ['TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \\ The correct answer is', '19.', '.', '20. (e) .']
+Answer: TIONS ( 5 ) 200 Also, II gives, speed = [80× ]m/s= m/s. { 18} 9 Thus, the data in I or II alone are sufficient to answer the question. \ The correct answer is
+--------------------------------------------------------------------------------
+
+Question ID: quant-decimal-fractions-107
+
+SOURCE BOOK:
+Question: Could not isolate question 107 on page 87
+Options: []
+Answer: 87
+
+OCR OUTPUT:
+Question: Let F = 0.84181. When F is written as a fraction in lowest terms, the denominator exceeds the numerator by
+Options: ['13', '14', '29', '87']
+Answer: 87
+
+DATABASE:
+Question: Let F = 0.84181. When F is written as a fraction in lowest terms, the denominator exceeds the numerator by
+Options: ['13', '14', '29', '87']
+Answer: 87
+
+API:
+Question: Let F = 0.84181. When F is written as a fraction in lowest terms, the denominator exceeds the numerator by
+Options: ['13', '14', '29', '87']
+Answer: 87
+
+UI:
+Question: Let F = 0.84181. When F is written as a fraction in lowest terms, the denominator exceeds the numerator by
+Options: ['13', '14', '29', '87']
+Answer: 87
+--------------------------------------------------------------------------------
+
+Question ID: quant-profit-and-loss-101
+
+SOURCE BOOK:
+Question: (d) 102. (b) 103. (a) 104. (c) 105. (e) 106. (c) 107. (a) 108. (b) 109. (d) 110. (a)
+Options: []
+Answer: 102.
+
+OCR OUTPUT:
+Question: 
+Options: ['104.', '103.', '105.', '102.']
+Answer: 102.
+
+DATABASE:
+Question: 
+Options: ['104.', '103.', '105.', '102.']
+Answer: 102.
+
+API:
+Question: 
+Options: ['104.', '103.', '105.', '102.']
+Answer: 102.
+
+UI:
+Question: 
+Options: ['104.', '103.', '105.', '102.']
+Answer: 102.
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-188
+
+SOURCE BOOK:
+Question: Could not isolate question 188 on page 30
+Options: []
+Answer: 7
+
+OCR OUTPUT:
+Question: Find the number of zeros at the end of the result 3 × 6 × 9 × 12 × 15 × ......... × 99 × 102.
+Options: ['4', '6', '7', '10']
+Answer: 7
+
+DATABASE:
+Question: Find the number of zeros at the end of the result 3 × 6 × 9 × 12 × 15 × ......... × 99 × 102.
+Options: ['4', '6', '7', '10']
+Answer: 7
+
+API:
+Question: Find the number of zeros at the end of the result 3 × 6 × 9 × 12 × 15 × ......... × 99 × 102.
+Options: ['4', '6', '7', '10']
+Answer: 7
+
+UI:
+Question: Find the number of zeros at the end of the result 3 × 6 × 9 × 12 × 15 × ......... × 99 × 102.
+Options: ['4', '6', '7', '10']
+Answer: 7
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-111
+
+SOURCE BOOK:
+Question: 5358 × 51 =? (c) 2704 (d) 2904 (a) 273258 (b) 273268 (e) None of these (c) 273348 (d) 273358 124. The value of 112 × 54 is
+Options: []
+Answer: 273258
+
+OCR OUTPUT:
+Question: 5358 × 51 =?
+Options: ['273258', '273268', '273348', '273358']
+Answer: 273258
+
+DATABASE:
+Question: 5358 × 51 =?
+Options: ['273258', '273268', '273348', '273358']
+Answer: 273258
+
+API:
+Question: 5358 × 51 =?
+Options: ['273258', '273268', '273348', '273358']
+Answer: 273258
+
+UI:
+Question: 5358 × 51 =?
+Options: ['273258', '273268', '273348', '273358']
+Answer: 273258
+--------------------------------------------------------------------------------
+
+Question ID: quant-number-system-53
+
+SOURCE BOOK:
+Question: Could not isolate question 53 on page 24
+Options: []
+Answer: 2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.
+
+OCR OUTPUT:
+Question: If 13 = ,then(2w)2 =? (1–w) (Campus Recruitment, 2009) 1 1
+Options: ['4 2', '1', '2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.']
+Answer: 2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.
+
+DATABASE:
+Question: If 13 = ,then(2w)2 =? (1–w) (Campus Recruitment, 2009) 1 1
+Options: ['4 2', '1', '2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.']
+Answer: 2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.
+
+API:
+Question: If 13 = ,then(2w)2 =? (1–w) (Campus Recruitment, 2009) 1 1
+Options: ['4 2', '1', '2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.']
+Answer: 2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.
+
+UI:
+Question: If 13 = ,then(2w)2 =? (1–w) (Campus Recruitment, 2009) 1 1
+Options: ['4 2', '1', '2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.']
+Answer: 2 Directions (Questions 54–57): For a 5–digit number, without repetition of digits, the following information is available. (B.B.A., 2006) (i) The first digit is more than 5 times the last digit. (ii) The two-digit number formed by the last two digits is the product of two prime numbers. (iii) The first three digits are all odd. (iv) The number does not contain the digits 3/0 or and the first digit is also the largest.
+--------------------------------------------------------------------------------
+

@@ -9,6 +9,7 @@ import { useDataStore } from "@/store/data-store";
 import { getTcsSlugFromResourceId } from "@/lib/tcs-utils";
 import { aptitudeQuestions, AptitudeQuestion } from "@/data/aptitude-questions";
 import { validateQuestion } from "@/lib/aptitude-validator";
+import { MathRenderer } from "@/components/ui/math-renderer";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ResponsiveContainer,
@@ -458,12 +459,36 @@ function TestPageContent() {
                 </span>
               </div>
 
-              {/* Question statement */}
-              <div className="mb-6">
-                <h3 className="text-base md:text-lg text-white font-medium whitespace-pre-line leading-relaxed">
-                  {currentQuestion.question}
-                </h3>
-              </div>
+              {/* Question Text & Image (Hybrid Rendering Engine) */}
+              {(!currentQuestion.renderMode || currentQuestion.renderMode === 'TEXT' || currentQuestion.renderMode === 'HYBRID') && (
+                <div className="text-zinc-100 text-base md:text-lg leading-relaxed mb-6 whitespace-pre-line font-medium">
+                  <MathRenderer text={currentQuestion.questionText || currentQuestion.question} />
+                </div>
+              )}
+              
+              {(currentQuestion.renderMode === 'IMAGE' || currentQuestion.renderMode === 'HYBRID') && (
+                <div className="space-y-4 mb-6">
+                  {currentQuestion.questionImage ? (
+                    <img 
+                      src={currentQuestion.questionImage} 
+                      alt="Question visual" 
+                      className="max-w-full rounded-xl border border-white/10"
+                    />
+                  ) : (
+                    <div className="p-8 border border-dashed border-rose-500/30 bg-rose-500/5 rounded-xl flex flex-col items-center justify-center text-center">
+                      <span className="text-rose-400 font-bold mb-2">Original Image Unavailable</span>
+                      <span className="text-zinc-400 text-sm">The visual content for this question is currently being processed.</span>
+                    </div>
+                  )}
+                  {currentQuestion.optionsImage && (
+                    <img 
+                      src={currentQuestion.optionsImage} 
+                      alt="Options visual" 
+                      className="max-w-full rounded-xl border border-white/10"
+                    />
+                  )}
+                </div>
+              )}
 
               {/* Visual Assets Reconstruction Rendering */}
               {currentQuestion.tableData && (
@@ -580,7 +605,17 @@ function TestPageContent() {
                       }`}>
                         {letter}
                       </span>
-                      <span className="text-sm font-medium">{option}</span>
+                      {currentQuestion.optionImages ? (
+                        <img 
+                          src={currentQuestion.optionImages[letter as keyof typeof currentQuestion.optionImages]} 
+                          className="max-h-8 rounded object-contain border border-white/5 bg-white/5" 
+                          alt={`Option ${letter}`} 
+                        />
+                      ) : currentQuestion.optionsImage ? (
+                        <span className="text-sm font-medium">Option {letter}</span>
+                      ) : (
+                        <span className="text-sm font-medium">{option}</span>
+                      )}
                     </button>
                   );
                 })}

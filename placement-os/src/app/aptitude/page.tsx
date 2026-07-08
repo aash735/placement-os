@@ -18,7 +18,8 @@ import {
   CheckCircle,
   HelpCircle,
   TrendingUp,
-  BookOpen
+  BookOpen,
+  Download
 } from "lucide-react";
 import Link from "next/link";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -244,11 +245,6 @@ export default function AptitudePage() {
     return solved.size;
   };
 
-  const getCategoryTotalSyllabus = (catId: string) => {
-    const cat = practiceCategories.find((c) => c.id === catId);
-    if (!cat) return 0;
-    return cat.topics.reduce((acc, t) => acc + t.count, 0);
-  };
 
   // Calculate statistics (Mock Mode)
   const totalTests = aptitudeAttempts.length;
@@ -444,69 +440,40 @@ export default function AptitudePage() {
         <div className="lg:col-span-2 space-y-8">
           {flowMode === "practice" ? (
             <div className="space-y-6">
-              <div>
-                <h2 className="text-xl font-bold text-white mb-2">Topic-wise Syllabus Library</h2>
-                <p className="text-sm text-zinc-400">
-                  Select a topic to start untimed practice. Answer reveals and explanations are available on-demand.
-                </p>
-              </div>
-
-              {practiceCategories.map((category) => {
-                const categorySolved = getCategorySolvedCount(category.id);
+              <GlassCard className="p-6 sm:p-8 relative overflow-hidden border-white/5 shadow-2xl max-w-xl mx-auto text-center" hover={false}>
+                {/* Background ambient light */}
+                <div className="absolute top-0 right-0 h-40 w-40 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none" />
+                <div className="absolute bottom-0 left-0 h-40 w-40 bg-violet-600/10 rounded-full blur-[100px] pointer-events-none" />
                 
-                return (
-                  <GlassCard key={category.id} className="p-6 border-white/5" hover={false}>
-                    <div className="flex justify-between items-center mb-4 pb-3 border-b border-white/5">
-                      <div>
-                        <h3 className="text-lg font-bold text-white">{category.name}</h3>
-                        <p className="text-xs text-zinc-400 mt-0.5">{category.description}</p>
-                      </div>
-                      <div className="text-right">
-                        <span className="text-xs font-bold text-cyan-400 bg-cyan-400/10 border border-cyan-400/20 px-2.5 py-1 rounded-lg">
-                          {categorySolved} Solved
-                        </span>
-                      </div>
-                    </div>
+                <div className="relative z-10 flex flex-col items-center justify-center">
+                  {/* Icon or visual tag */}
+                  <div className="flex items-center justify-center space-x-2 text-cyan-400 font-semibold mb-2">
+                    <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
+                    <span className="text-xs uppercase tracking-widest font-mono">Book Download</span>
+                  </div>
 
-                    <div className="grid gap-3 grid-cols-1 sm:grid-cols-2">
-                      {category.topics.map((topic) => {
-                        const solved = getTopicSolvedCount(topic.id);
-                        const isCompleted = solved > 0;
-                        
-                        return (
-                          <Link 
-                            key={topic.id}
-                            href={`/aptitude/practice/${topic.id}`}
-                            className="block"
-                          >
-                            <div className="flex items-center justify-between p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-cyan-500/30 hover:bg-cyan-500/5 transition-all group">
-                              <div>
-                                <span className="text-sm font-semibold text-zinc-200 group-hover:text-white transition-colors">
-                                  {topic.name}
-                                </span>
-                                <div className="flex items-center space-x-2 mt-1">
-                                  <span className="text-[10px] text-zinc-400">
-                                    {topic.count} Syllabus Qs
-                                  </span>
-                                  {isCompleted && (
-                                    <>
-                                      <span className="h-1 w-1 rounded-full bg-zinc-600" />
-                                      <span className="text-[10px] text-emerald-400 font-medium">
-                                        {solved} Solved
-                                      </span>
-                                    </>
-                                  )}
-                                </div>
-                              </div>
-                              <ChevronRight className="h-4 w-4 text-zinc-500 group-hover:text-cyan-400 group-hover:translate-x-0.5 transition-all" />
-                            </div>
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  </GlassCard>
-                );
-              })}
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3 flex items-center justify-center gap-2">
+                    <span>📘</span> Aptitude Arena
+                  </h2>
+
+                  <p className="text-sm sm:text-base text-zinc-300 leading-relaxed mb-6 max-w-md mx-auto">
+                    Master Quantitative Aptitude with hundreds of placement questions from a comprehensive aptitude question bank.
+                  </p>
+
+                  <div className="w-full flex justify-center">
+                    <a 
+                      href="/aptitude-book.pdf" 
+                      download="dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+                      className="w-full sm:w-auto"
+                    >
+                      <button className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 to-violet-600 hover:from-cyan-400 hover:to-violet-500 text-white shadow-[0_4px_20px_rgba(6,182,212,0.25)] hover:shadow-[0_4px_25px_rgba(6,182,212,0.45)] transition-all duration-300 flex items-center justify-center space-x-2 group">
+                        <Download className="h-5 w-5 text-white group-hover:translate-y-[1px] transition-transform" />
+                        <span>Download Aptitude Book (PDF)</span>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </GlassCard>
             </div>
           ) : (
             <>

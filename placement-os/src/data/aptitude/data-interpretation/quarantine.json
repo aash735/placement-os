@@ -3,18 +3,21 @@
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
-      "id": "di-tabulation-4",
-      "question": "What is the difference between Net revenue of the m",
-      "options": [
-        "` 132000",
-        "` 126000",
-        "`"
-      ],
-      "answer": "` 126000",
-      "explanation": "Step 1\nNet revenue in April = 320000 – 44000 = ` 276000 Gross revenue in June = 330000 + 72000 = ` 402000 Required difference = 402000 – 276000 = ` 126000\n\nAnswer: ` 126000",
+      "questionId": "di-tabulation-1",
+      "chapter": "tabulation",
+      "question": "(d) 2. (d) 3. (e) 4. (b) 5. (d)",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "D",
+      "page": 911,
+      "id": "di-tabulation-1",
       "topic": "tabulation",
       "category": "di",
       "difficulty": 2,
@@ -24,141 +27,229 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 908,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option D",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-1_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
+      "optionsSourceId": "di-tabulation-1",
+      "answerSourceId": "di-tabulation-1",
+      "explanationSourceId": "di-tabulation-1",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-tabulation-2",
+      "chapter": "tabulation",
+      "question": "In March, if Net revenue of the magazine was 85% discount and others? (a) ` 23200 (b) ` 24200 (c) `",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "D",
+      "page": 908,
+      "id": "di-tabulation-2",
+      "topic": "tabulation",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option D",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-2_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
+      "optionsSourceId": "di-tabulation-2",
+      "answerSourceId": "di-tabulation-2",
+      "explanationSourceId": "di-tabulation-2",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-tabulation-3",
+      "chapter": "tabulation",
+      "question": "Amount allocated for commission in March is what July? (a) 24% (b) 18% (c) 2",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "A",
+      "page": 908,
+      "id": "di-tabulation-3",
+      "topic": "tabulation",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option A",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-3_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
+      "optionsSourceId": "di-tabulation-3",
+      "answerSourceId": "di-tabulation-3",
+      "explanationSourceId": "di-tabulation-3",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-tabulation-4",
+      "chapter": "tabulation",
+      "question": "What is the difference between Net revenue of the m (a) ` 132000 (b) ` 126000 (c) `",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 908,
+      "id": "di-tabulation-4",
+      "topic": "tabulation",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-4_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
       "optionsSourceId": "di-tabulation-4",
       "answerSourceId": "di-tabulation-4",
       "explanationSourceId": "di-tabulation-4",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "` 126000",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-4",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.833Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Question text too short (< 15 chars)"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
-      "id": "di-tabulation-6",
-      "question": "(a) 7.",
-      "options": [
-        "10.",
-        "8.",
-        "9."
-      ],
-      "answer": "10.",
-      "explanation": "Step 1\n(a) 7/2 Step\n(d) 8/3 Step\n(e) 9. (a) 10\n\nFinal Calculation\n(c)\n\nAnswer: 10.",
+      "questionId": "di-tabulation-5",
+      "chapter": "tabulation",
+      "question": "In May, the respective ratio of amount allocated for c was 4 : 3. What was the Gross revenue of the magaz (a) ` 424000 (b) ` 440000 (c) ` Directions (Questions 6 to 10): Refer to the table and answ Data related to performan Name of the Number of matches Average r batsman played in the tournament in the to A 8 B 20 C — D — E 28 F — Note: (i) Strike rate = (Total runs scored/Total balls fa (ii) All the given batsmen could bat in all the giv (iii) Few values are missing in the table (indicate value, if it is required to answer the given questio",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "D",
+      "page": 908,
+      "id": "di-tabulation-5",
       "topic": "tabulation",
       "category": "di",
       "difficulty": 2,
@@ -168,140 +259,55 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 911,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-6",
-      "answerSourceId": "di-tabulation-6",
-      "explanationSourceId": "di-tabulation-6",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "10.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-6",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.833Z"
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option D",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-5_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
+      "optionsSourceId": "di-tabulation-5",
+      "answerSourceId": "di-tabulation-5",
+      "explanationSourceId": "di-tabulation-5",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
-      "id": "di-tabulation-9",
-      "question": "Batsman B faced equal number of balls in first 10 m he played in the tournament. If his strike rate in fir 120/158 and respectively, what is the total number o",
-      "options": [
-        "1150",
-        "1400",
-        "1"
-      ],
-      "answer": "1150",
-      "explanation": "Step 1\nBatsman B faced equal number of balls in first 10 m he played in the tournament\n\nFinal Calculation\nIf his strike rate in fir 120/158 and respectively, what is the total number o (a) 1150 (b) 1400 (c) 1\n\nAnswer: 1150",
+      "questionId": "di-tabulation-27",
+      "chapter": "tabulation",
+      "question": "What was the aggregate of marks obtained by Sajal (a) 409 (b) 419 (c) 42",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "A",
+      "page": 903,
+      "id": "di-tabulation-27",
       "topic": "tabulation",
       "category": "di",
       "difficulty": 2,
@@ -311,2008 +317,55 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 908,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-9",
-      "answerSourceId": "di-tabulation-9",
-      "explanationSourceId": "di-tabulation-9",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "1150",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-9",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.833Z"
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option A",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-27_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
+      "optionsSourceId": "di-tabulation-27",
+      "answerSourceId": "di-tabulation-27",
+      "explanationSourceId": "di-tabulation-27",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Explanation contains disconnected mixed arithmetic operators"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
-      "id": "di-tabulation-10",
-      "question": "What is the number of matches played by batsman",
-      "options": [
-        "10",
-        "16",
-        "1 Directions (Questions 11/15 to): Study the table carefully a Total exports of six coun Years → 998 1/1999 Country ↓ P 0 2/40/0 Q 3/25/0 R 5/55/5 S 4/60/0 T 6/50/4 U 2/40 Note: Profit = Exports – Imports"
-      ],
-      "answer": "1 Directions (Questions 11/15 to): Study the table carefully a Total exports of six coun Years → 998 1/1999 Country ↓ P 0 2/40/0 Q 3/25/0 R 5/55/5 S 4/60/0 T 6/50/4 U 2/40 Note: Profit = Exports – Imports",
-      "explanation": "Step 1\nThe number of matches played by batsman C The total runs scored Totalrunsmade by C Average runs scored Strikerate ×total ball faced The total runs scored = 0 0/1/114×400 = =56 4/100 So, the number of matches played by batsman C 456 = =2 1/38\n\nAnswer: 1 Directions (Questions 11/15 to): Study the table carefully a Total exports of six coun Years → 998 1/1999 Country ↓ P 0 2/40/0/3 Q/25/0/5 R/55/5/4 S/60/0/6 T/50/4/2 U/40 Note: Profit = Exports – Imports",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 909,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-10",
-      "answerSourceId": "di-tabulation-10",
-      "explanationSourceId": "di-tabulation-10",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
+      "questionId": "di-tabulation-28",
+      "chapter": "tabulation",
+      "question": "What is the overall percentage of Tarun ? (a) 52.5% (b) 55% (c) 60",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
       },
-      "correctAnswer": "1 Directions (Questions 11/15 to): Study the table carefully a Total exports of six coun Years → 998 1/1999 Country ↓ P 0 2/40/0 Q 3/25/0 R 5/55/5 S 4/60/0 T 6/50/4 U 2/40 Note: Profit = Exports – Imports",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-10",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.833Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 2 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "di-tabulation-11",
-      "question": "(a) 12. (c) 13.",
-      "options": [
-        "15.",
-        "14."
-      ],
-      "answer": "15.",
-      "explanation": "Step 1\nTotal import of all countries together in 2002 = ` 385 crore Now, in 2002 total export of all companies together = 90 + 100 + 65 + 25 + 110 + 120 = 510 crore Total profit in 2002 = 510 – 385 = 125 crore\n\nAnswer: 15.",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 911,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-11",
-      "answerSourceId": "di-tabulation-11",
-      "explanationSourceId": "di-tabulation-11",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "15.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-11",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.833Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Explanation contains disconnected mixed arithmetic operators"
-    ],
-    "question": {
-      "id": "di-tabulation-12",
-      "question": "If the ratio of export to import in country S and coun total import of country U and S together in that par",
-      "options": [
-        "52",
-        "92",
-        "9"
-      ],
-      "answer": "9",
-      "explanation": "Step 1\nImport of company S in the year 45×2 1998 = = ` 90/1 crore Import of company U in the year 1998 1 = 24 × ` 6/4 crore Total import of company U and S together in 1998 = ` (90 + 6) = ` 96 crore\n\nAnswer: 9",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 909,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-12",
-      "answerSourceId": "di-tabulation-12",
-      "explanationSourceId": "di-tabulation-12",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "9",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-12",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.833Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Explanation contains disconnected mixed arithmetic operators"
-    ],
-    "question": {
-      "id": "di-tabulation-14",
-      "question": "By what per cent is the average export of country T country R over all the given years? 7 1",
-      "options": [
-        "13%",
-        "9%",
-        "1 1 1/11"
-      ],
-      "answer": "13%",
-      "explanation": "Step 1\nTotal export of country T = 60 + 50 + 55 + 110 + 110 = 76 3/375 Average export of Country T = = ` 75/5 crore Total export of country R = 50 + 55 + 70 + 90 + 65 = 30 3/330 Average export of Country R = = ` 66/5/75 crore−6 6/9 50 1/7 Required% ×100= ×100= %=13% 6 6/66 1 1/11\n\nAnswer: 13%",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 909,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-14",
-      "answerSourceId": "di-tabulation-14",
-      "explanationSourceId": "di-tabulation-14",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "13%",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-14",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.833Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "di-tabulation-15",
-      "question": "What is the percentage increase in the export of all the off to two digits after decimal)",
-      "options": [
-        "88.99%",
-        "72.39%",
-        "3 Directions (Questions 16/20 to): Study the table carefully a Number of pages print Printers A B Days Monday 39 1/147/41 Tuesday 1/189/15 Wednesday 1/141/9 Thursday 8/223/87 Friday 1/93"
-      ],
-      "answer": "3 Directions (Questions 16/20 to): Study the table carefully a Number of pages print Printers A B Days Monday 39 1/147/41 Tuesday 1/189/15 Wednesday 1/141/9 Thursday 8/223/87 Friday 1/93",
-      "explanation": "Step 1\nTotal export of all countries together in 1999 = 40 + 25 + 55 + 60 + 50 + 40 = ` 270 crore Total export of all countries together in 2001 = 45 + 50 + 90 + 15 + 100 + 75 = ` 375 crore Required % increase 375−70 2/05 1/350 = ×100= ×100= %=38.88%≈38.89% 70 2/11/9Answer: 3 Directions (Questions 16/20 to): Study the table carefully a Number of pages print Printers A B Days Monday 39 1/147/41/1 Tuesday/189/15/1 Wednesday/141/9/8 Thursday/223/87/1 Friday/93",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 909,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-15",
-      "answerSourceId": "di-tabulation-15",
-      "explanationSourceId": "di-tabulation-15",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "3 Directions (Questions 16/20 to): Study the table carefully a Number of pages print Printers A B Days Monday 39 1/147/41 Tuesday 1/189/15 Wednesday 1/141/9 Thursday 8/223/87 Friday 1/93",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-15",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.834Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Empty question text",
-      "Merged options detected: option at index 0 contains another option label \"(d)\""
-    ],
-    "question": {
-      "id": "di-tabulation-16",
-      "question": "",
-      "options": [
-        "17. (d) 18.",
-        "20.",
-        "19.",
-        "×55 = ×100=120.125 3/1280"
-      ],
-      "answer": "17. (d) 18.",
-      "explanation": "Step 1\nTotal number of pages printed by printer B on Wednesday and Thursday = 141 + 223 = 364 Total number of pages printed by printer C on Monday and Friday = 211 + 257 = 468 Required Ratio = 364 : 468 = 7 : 9\n\nAnswer: 17. (d) 18.",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 911,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-16",
-      "answerSourceId": "di-tabulation-16",
-      "explanationSourceId": "di-tabulation-16",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "17. (d) 18.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-16",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.834Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Explanation contains disconnected mixed arithmetic operators"
-    ],
-    "question": {
-      "id": "di-tabulation-18",
-      "question": "The number of pages printed by printer A on Wedn printer D on Friday? 1 1",
-      "options": [
-        "65",
-        "69",
-        "7 8 4"
-      ],
-      "answer": "7 8 4",
-      "explanation": "Step 1\nNumber of pages printed by printer A on Wednesday = 115 Number of pages printed by printer D on Friday = 60 1/15 1/75 5/7 Required percent = ×100 = =1 7/60 1/8/8Answer: 7 8 4",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 910,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-18",
-      "answerSourceId": "di-tabulation-18",
-      "explanationSourceId": "di-tabulation-18",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "7 8 4",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-18",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.834Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Explanation contains disconnected mixed arithmetic operators"
-    ],
-    "question": {
-      "id": "di-tabulation-19",
-      "question": "What is the average number of pages printed by pri",
-      "options": [
-        "138",
-        "143",
-        "1"
-      ],
-      "answer": "143",
-      "explanation": "Step 1\nTotal number of pages printed by printer B on Monday, Tuesday and Friday = 147 + 189 + 93 = 9 2/4/429 Required average = =43 1/3\n\nAnswer: 143",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 910,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-19",
-      "answerSourceId": "di-tabulation-19",
-      "explanationSourceId": "di-tabulation-19",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "143",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-19",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.834Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "di-tabulation-21",
-      "question": "(c) 22. (b) 23.",
-      "options": [
-        "25.",
-        "24.",
-        "SOLUT"
-      ],
-      "answer": "SOLUT",
-      "explanation": "Step 1\nDifference between numbers of books published by pub- lishing house M and P\n\nFinal Calculation\n7 8 ×28200− ×200 1/3/0 1/12 = 19740 – 19200 = 540\n\nAnswer: SOLUT",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 911,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-21",
-      "answerSourceId": "di-tabulation-21",
-      "explanationSourceId": "di-tabulation-21",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "SOLUT",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-21",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.834Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "di-tabulation-22",
-      "question": "How many books were given to each distributor by p",
-      "options": [
-        "1806",
-        "1068",
-        "1"
-      ],
-      "answer": "1068",
-      "explanation": "Step 1\nEach publisher get equal number books 9 7/33800 = × =68 0/1/100/25Answer: 1068",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 910,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-22",
-      "answerSourceId": "di-tabulation-22",
-      "explanationSourceId": "di-tabulation-22",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "1068",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-22",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.835Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Explanation contains disconnected mixed arithmetic operators"
-    ],
-    "question": {
-      "id": "di-tabulation-23",
-      "question": "What is the average number of non-academic books",
-      "options": [
-        "18750",
-        "18850",
-        "1"
-      ],
-      "answer": "1",
-      "explanation": "Step 1\nThe number of non-academic books published by publisher R and S\n\nFinal Calculation\n6 13 ×35700+ ×7800 3/7 1/18 = 12600 + 27300 = 39900 The average number of nonacademic books published by 39900 Published R and S = = 9950 1/2 30 1/0 8/100700× +127900× 0 0/1/100/233230Answer: 1",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 910,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-23",
-      "answerSourceId": "di-tabulation-23",
-      "explanationSourceId": "di-tabulation-23",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "1",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-23",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.835Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "di-tabulation-24",
-      "question": "If the total number of books published by publisher of books published by remaining publishers be dec published by all the publishers?",
-      "options": [
-        "33418",
-        "33318",
-        "3"
-      ],
-      "answer": "33318",
-      "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 910,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-24",
-      "answerSourceId": "di-tabulation-24",
-      "explanationSourceId": "di-tabulation-24",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "33318",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-24",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.835Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Empty question text",
-      "Merged options detected: option at index 1 contains another option label \"(b)\""
-    ],
-    "question": {
-      "id": "di-tabulation-26",
-      "question": "",
-      "options": [
-        "→ (6.8 + 6.5) × 100 = 1330, 2010 → (10.8 + 12.7) × 100 = 2350. It is highest in 2010, 2nd highest in 2009 and third highest in 2005.",
-        "29. (b) 30.",
-        "27.",
-        "28."
-      ],
-      "answer": "28.",
-      "explanation": "Step 1\nRequired percentage (82+70+48+65+55) = ×100% (640+560+400+525+350) ( 320 ) 1280 = [ ×100]% = %=12.92% 13%\n\nFinal Calculation\n{2475 } 99\n\nAnswer: 28.",
-      "topic": "tabulation",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 904,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-26",
-      "answerSourceId": "di-tabulation-26",
-      "explanationSourceId": "di-tabulation-26",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "28.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-26",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.835Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4"
-    ],
-    "question": {
+      "answer": "C",
+      "page": 903,
       "id": "di-tabulation-28",
-      "question": "What is the overall percentage of Tarun ?",
-      "options": [
-        "52.5%",
-        "55%",
-        "60"
-      ],
-      "answer": "60",
-      "explanation": "Step 1\nAggregate marks obtained by Tarun = (65% of 150) + (35% of 130) + (50% of 120) + (77% of 100) + (80% of 60) + (80% of 40)\n\nAnswer: 60",
       "topic": "tabulation",
       "category": "di",
       "difficulty": 2,
@@ -2322,141 +375,55 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 903,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option C",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-28_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
       "optionsSourceId": "di-tabulation-28",
       "answerSourceId": "di-tabulation-28",
       "explanationSourceId": "di-tabulation-28",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "60",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-28",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.835Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Explanation contains disconnected mixed arithmetic operators"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
+      "questionId": "di-tabulation-29",
+      "chapter": "tabulation",
+      "question": "What are the average marks obtained by all the sev decimal) (a) 77.26 (b) 89.14 (c) 91",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 903,
       "id": "di-tabulation-29",
-      "question": "What are the average marks obtained by all the sev decimal)",
-      "options": [
-        "77.26",
-        "89.14",
-        "91"
-      ],
-      "answer": "89.14",
-      "explanation": "Step 1/6So, the average run scored by the batsman A 324 = =40.5 8 120+58 1/9 Combined Strike rate of 20 matches = =39 1/2 Total balls faced Totalrunsscored 20×81 = ×100= ×100= 1165.43 ≈ 1150 Strike rate 139\n\nAnswer: 89.14",
       "topic": "tabulation",
       "category": "di",
       "difficulty": 2,
@@ -2466,140 +433,55 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 903,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-29_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
       "optionsSourceId": "di-tabulation-29",
       "answerSourceId": "di-tabulation-29",
       "explanationSourceId": "di-tabulation-29",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "89.14",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-29",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.835Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
+      "questionId": "di-tabulation-30",
+      "chapter": "tabulation",
+      "question": "The number of students who obtained 60% and abo (a) 1 (b) 2 (c) 3",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 903,
       "id": "di-tabulation-30",
-      "question": "The number of students who obtained 60% and abo",
-      "options": [
-        "1",
-        "2",
-        "3"
-      ],
-      "answer": "2",
-      "explanation": "Step 1\nFrom the given table it is clear that Sajal and Rohit ob- tained 60% or more marks in each of the 6 subjects.\n\nAnswer: 2",
       "topic": "tabulation",
       "category": "di",
       "difficulty": 2,
@@ -2609,139 +491,55 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 903,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-30_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
       "optionsSourceId": "di-tabulation-30",
       "answerSourceId": "di-tabulation-30",
       "explanationSourceId": "di-tabulation-30",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
-      },
-      "correctAnswer": "2",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-30",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.835Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 2 options instead of exactly 4"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
+      "questionId": "di-tabulation-31",
+      "chapter": "tabulation",
+      "question": "In which subject is the overall percentage the best ? (a) History (b) Maths (c) P Directions (Questions 32 to 35): The following table give P, Q, R, S and T on the basis of poverty line and also on t based on it. Percentage of Population State below Poverty line Bel P 35 Q 25 R 24 S 19 T 15",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 903,
       "id": "di-tabulation-31",
-      "question": "(b) 32. (b) 33. (d) 34.",
-      "options": [
-        "SOLUT",
-        "35."
-      ],
-      "answer": "35.",
-      "explanation": "Step 1\nFor each subject, we find the overall percentage as under: (1 ) (i) Maths = [ ×(90+100+90+80+80+70+65) ] % {7 } (1 ) = [ ×(575) ] %=82.14%\n\nStep 2\n{7 } (ii) Chemistry (1 ) = [ ×(50+80+60+65+65+75+35) ] % {7 } (1 ) = [ ×(430) ] %=61.43%\n\nStep 3\n{7 } (iii) Physics (1 ) = [ ×(90+80+70+80+85+65+50) ] % {7 } (1 ) = [ ×(520) ] %=74.29%. {7 } (iv) Geography (1 ) = [ ×(60+40+70+80+95+85+77) ] % {7 } (1 ) = [ ×(507) ] %=72.43%. {7 } (1 ) (v) History = [ ×(70+80+90+60+50+40+80) ] % {7 } (1 ) = [ ×(470) ] %=67.14%. {7 } (vi) Computer Science (1 ) = [ ×(80+70+70+60+90+60+80) ] % {7 } (1 ) = [ ×(510) ] %=72.86%\n\nFinal Calculation\n{7 } Clearly, this percentage is highest for Maths.\n\nAnswer: 35.",
       "topic": "tabulation",
       "category": "di",
       "difficulty": 2,
@@ -2751,141 +549,56 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 904,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-tabulation-31_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:37.295771Z",
       "optionsSourceId": "di-tabulation-31",
       "answerSourceId": "di-tabulation-31",
       "explanationSourceId": "di-tabulation-31",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-bar-graphs-3",
+      "chapter": "bar-graphs",
+      "question": "If the production of company D is h times of the production of company A. Then h equals: [SSC—CHSL (10+2) Exam, 2015] Directions (Questions 6–10): The bar graph given below s branches of a publishing company during two consecutive y from six branches B1, B2, B3, B4, B5 and B6 of a publish 120 )srebmun ,sdnasuoht ni( selaS 100 80 60 40 20 0 B1 B2 B3",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
       },
-      "correctAnswer": "35.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-31",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.836Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "di-tabulation-32",
-      "question": "What will be the number of females above poverty State S is 7 million ?",
-      "options": [
-        "3 million",
-        "2.43 million",
-        "1."
-      ],
-      "answer": "2.43 million",
-      "explanation": "Step 1\nTotal population of State S = 7 million\n\nFinal Calculation\n\\ Population above poverty line = [(100 – 19)% of 7] million = (81% of 7) million = 5.67 million.\n\nAnswer: 2.43 million",
-      "topic": "tabulation",
+      "answer": "D",
+      "page": 926,
+      "id": "di-bar-graphs-3",
+      "topic": "bar-graphs",
       "category": "di",
       "difficulty": 2,
       "estimatedTime": 60,
@@ -2894,142 +607,56 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 904,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-32",
-      "answerSourceId": "di-tabulation-32",
-      "explanationSourceId": "di-tabulation-32",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option D",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-bar-graphs-3_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "bar",
+      "importBatch": "2026-07-07T17:27:42.321127Z",
+      "optionsSourceId": "di-bar-graphs-3",
+      "answerSourceId": "di-bar-graphs-3",
+      "explanationSourceId": "di-bar-graphs-3",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-bar-graphs-8",
+      "chapter": "bar-graphs",
+      "question": "What percent of the average sales of branches B1, B2 and B3 in 2001 is the average sales of branches B1, B3 and B6 in 2000? [RBI Gr. ‘B’ (Phase—I) Exam, 2015] Directions (Questions 11–15): Study the following graph c Monthly income (` in thousands) of thre 40 35 30 25 20 15 10 5 0 2005 2006 2007 Arun )sdnasuoht ` ni( emocni ylhtnoM 14 11 9 18 17 11 25 15 18",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
       },
-      "correctAnswer": "2.43 million",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-32",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.836Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 2 options instead of exactly 4",
-      "Explanation contains unbalanced parentheses, square brackets, or curly braces",
-      "Explanation contains disconnected mixed arithmetic operators"
-    ],
-    "question": {
-      "id": "di-tabulation-35",
-      "question": "For State Q: Male population below poverty line = 2.4 million. Let the female population below poverty line be x million. Then, 3 : 5 = 2.4 : x 5×2.4 ⇒x= =4. 3 \\ Total population below poverty line = (2.4 + 4) = 6.4 million. Let the total population of Q be p. Then, 25% of p = 6.4/25 million ⇒ ×p=6.4⇒p=(6.4×4)=25.6million. 100 For State T: Male population below poverty line = 6 million. Let the female population below poverty line be y million. 3×6 Then, 5 : 3 = 6 : y ⇒ y = = 3.6. 5 \\ Total population below poverty line = (6 + 3.6) = 9.6 million. Let the total population of State T be q. Then, 15% of q = 9.6/15 million ( 20) ⇒ ×q=9.6⇒q=[9.6× ]=64million. 100 { 3 } p 25.6 4 2 \\ Required ratio = = =0.4= = =2:5. q 4 6/10/5ISE – III the given questions. Amount Allocated ated for discount and Net Revenue ion offer — — ` 16000 — ` 36000 ` 336000 ` 30200 ` 330000 ` 28000 ` 362000 ted for commission – amount allocated for discount and –). A candidate is expected to calculate the missing value, e basis of the given data and the information. e was collected from advertisement, what was the amount hat particular month? [IBPS—RRB (Off. Gr. ‘B’) Exam, 2015] ` 144000",
-      "options": [
-        "` 172000",
-        "` 156000"
-      ],
-      "answer": "` 156000",
-      "explanation": "Step 1\nFor State Q: Male population below poverty line = 2.4 million\n\nStep 2\nLet the female population below poverty line be x million\n\nStep 3\nThen, 3 : 5 = 2.4 : x 5×2.4 ⇒x= =4. 3 \\ Total population below poverty line = (2.4 + 4) = 6.4 million. Let the total population of Q be p. Then, 25% of p = 6.4/25 million ⇒ ×p=6.4⇒p=(6.4×4)=25.6million. 100 For State T: Male population below poverty line = 6 million. Let the female population below poverty line be y million. 3×6 Then, 5 : 3 = 6 : y ⇒ y = = 3.6. 5 \\ Total population below poverty line = (6 + 3.6) = 9.6 million. Let the total population of State T be q. Then, 15% of q = 9.6/15 million ( 20) ⇒ ×q=9.6⇒q=[9.6× ]=64million. 100 { 3 } p 25.6 4 2 \\ Required ratio = = =0.4= = =2:5. q 4 6/10/5ISE – III the given questions. Amount Allocated ated for discount and Net Revenue ion offer — — ` 16000 — ` 36000 ` 336000 ` 30200 ` 330000 ` 28000 ` 362000 ted for commission – amount allocated for discount and –). A candidate is expected to calculate the missing value, e basis of the given data and the information. e was collected from advertisement, what was the amount hat particular month? [IBPS—RRB (Off. Gr\n\nFinal Calculation\n‘B’) Exam, 2015] ` 144000 (d) ` 172000 (e) ` 156000\n\nAnswer: ` 156000",
-      "topic": "tabulation",
+      "answer": "D",
+      "page": 927,
+      "id": "di-bar-graphs-8",
+      "topic": "bar-graphs",
       "category": "di",
       "difficulty": 2,
       "estimatedTime": 60,
@@ -3038,142 +665,55 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 907,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:31.896389Z",
-      "optionsSourceId": "di-tabulation-35",
-      "answerSourceId": "di-tabulation-35",
-      "explanationSourceId": "di-tabulation-35",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "tableData": {
-        "headers": [
-          "Year",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T"
-        ],
-        "rows": [
-          [
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual.",
-            "App.",
-            "Qual."
-          ],
-          [
-            "2005",
-            "3.2",
-            "2.5",
-            "3.5",
-            "1.4",
-            "3.8",
-            "2.2",
-            "4.2",
-            "2.4",
-            "6.2",
-            "2.6"
-          ],
-          [
-            "2006",
-            "4.6",
-            "3.4",
-            "6.9",
-            "4.2",
-            "6.9",
-            "4.4",
-            "7.4",
-            "3.3",
-            "6.2",
-            "4.8"
-          ],
-          [
-            "2007",
-            "6.5",
-            "4.9",
-            "7.7",
-            "4.5",
-            "5.9",
-            "4.8",
-            "8.3",
-            "5.6",
-            "6.4",
-            "4.2"
-          ],
-          [
-            "2008",
-            "7.4",
-            "5.7",
-            "5.4",
-            "3.4",
-            "7.2",
-            "3.2",
-            "9.3",
-            "6.4",
-            "7.8",
-            "6.2"
-          ],
-          [
-            "2009",
-            "8.8",
-            "4.8",
-            "6.6",
-            "5.2",
-            "8.6",
-            "6.8",
-            "11.4",
-            "5.2",
-            "9.9",
-            "6.9"
-          ],
-          [
-            "2010",
-            "9.2",
-            "5.6",
-            "10.6",
-            "6.4",
-            "10.3",
-            "7.4",
-            "14.2",
-            "11.4",
-            "11.8",
-            "9.4"
-          ]
-        ]
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option D",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-bar-graphs-8_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "bar",
+      "importBatch": "2026-07-07T17:27:42.321127Z",
+      "optionsSourceId": "di-bar-graphs-8",
+      "answerSourceId": "di-bar-graphs-8",
+      "explanationSourceId": "di-bar-graphs-8",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-bar-graphs-13",
+      "chapter": "bar-graphs",
+      "question": "In which year was the difference between Jyoti’s monthly income and Arun’s monthly income second highest? [IBPS—Bank Clerical Exam, 2012]",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
       },
-      "correctAnswer": "` 156000",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-tabulation-35",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.836Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Question text too short (< 15 chars)",
-      "Explanation contains disconnected mixed arithmetic operators"
-    ],
-    "question": {
-      "id": "di-bar-graphs-6",
-      "question": "(c) 7.",
-      "options": [
-        "8.",
-        "10.",
-        "9."
-      ],
-      "answer": "9.",
-      "explanation": "Step 1\nRequired ratio = Total Sales of branch B4 for both years 75+5 6/40 1/7 = = = 85+5 9/180/9Answer: 9.",
+      "answer": "B",
+      "page": 927,
+      "id": "di-bar-graphs-13",
       "topic": "bar-graphs",
       "category": "di",
       "difficulty": 2,
@@ -3183,14 +723,10 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 929,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:38.221911Z",
-      "optionsSourceId": "di-bar-graphs-6",
-      "answerSourceId": "di-bar-graphs-6",
-      "explanationSourceId": "di-bar-graphs-6",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "bar",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-bar-graphs-13_opts.png",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3209,32 +745,33 @@
           "value": 55
         }
       ],
-      "correctAnswer": "9.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-bar-graphs-6",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.837Z"
+      "chartType": "bar",
+      "importBatch": "2026-07-07T17:27:42.321127Z",
+      "optionsSourceId": "di-bar-graphs-13",
+      "answerSourceId": "di-bar-graphs-13",
+      "explanationSourceId": "di-bar-graphs-13",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Question text too short (< 15 chars)"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
-      "id": "di-bar-graphs-11",
-      "question": "(b) 12.",
-      "options": [
-        "14.",
-        "15.",
-        "13."
-      ],
-      "answer": "15.",
-      "explanation": "Step 1\nTotal monthly salary of Arun in all the years = 14000 + 18000 + 23000 + 21000 + 27000 + 25000 = ` 1,28,000 Monthly salary of Suman in the year 2007 = ₹15000 Difference between their Salary = 128000 – 15000 = ₹1.13 Lakh\n\nAnswer: 15.",
+      "questionId": "di-bar-graphs-18",
+      "chapter": "bar-graphs",
+      "question": "Which of the following statements is true? [Gramin Bank— 2012] (a) ‘E’ scored the highest total marks (b) ‘B’ and ‘D’ had the same score in Hindi Directions (Questions 21–25): Study the bar chart given be Income and Expenditure (in cro 60 50 40 30 20 10 0 M N P",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "C",
+      "page": 928,
+      "id": "di-bar-graphs-18",
       "topic": "bar-graphs",
       "category": "di",
       "difficulty": 2,
@@ -3244,14 +781,10 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 929,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:38.221911Z",
-      "optionsSourceId": "di-bar-graphs-11",
-      "answerSourceId": "di-bar-graphs-11",
-      "explanationSourceId": "di-bar-graphs-11",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "bar",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option C",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-bar-graphs-18_opts.png",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3270,31 +803,35 @@
           "value": 55
         }
       ],
-      "correctAnswer": "15.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-bar-graphs-11",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.838Z"
+      "chartType": "bar",
+      "importBatch": "2026-07-07T17:27:42.321127Z",
+      "optionsSourceId": "di-bar-graphs-18",
+      "answerSourceId": "di-bar-graphs-18",
+      "explanationSourceId": "di-bar-graphs-18",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4"
+      "CRITICAL: Merged options detected: option at index 0 contains another option label \"(d)\"",
+      "CRITICAL: Merged options detected: option at index 2 contains another option label \"(b)\"",
+      "CRITICAL: Merged options detected: option at index 3 contains another option label \"(b)\""
     ],
     "question": {
-      "id": "di-bar-graphs-16",
-      "question": "(a) 17. (b) 18.",
-      "options": [
-        "20.",
-        "TIONS Number of companies having more production than demand = 2 Required ratio = 3 : 2 TotalSales of branch B2 for both years",
-        "19."
-      ],
-      "answer": "20.",
-      "explanation": "Step 1\nTotal marks obtain by C = 75 + 60 + 55 = 190 Total marks obtain by B = 65 + 50 +70 = 185 Difference = 190 – 185 = 5 marks\n\nAnswer: 20.",
+      "questionId": "di-bar-graphs-23",
+      "chapter": "bar-graphs",
+      "question": "The company earning the maximum percentage of profit in the year 2001 is [SSC—CHSL (10 + 2) Exam, 2015] ANS 1. (d) 2.",
+      "options": {
+        "A": "3. (d) 4.",
+        "B": "5.",
+        "C": "11. (b) 12.",
+        "D": "13. (b) 14. (c) 15. (a) 21. (c) 22. (d) 23. (a) 24. (a) 25. (a) SOLUT 1. Difference between demand and production of company A = 3000 – 1500 = 1500 Difference between production and demand of company D = 2700 – 1200 = 1500 2. Given x% of demand for company C = Demand for company B 2500×x ⇒ =600 100 ⇒ 25x = 600 600 ⇒ x = = 24 25 3. Production of company D = 2700 Production of company A = 1500 Productionof company D h = Productof companyA 2700 9 = = =1.8 1500 5 4. Total production of the five companies = 1500 + 1800 + 1000 + 2700 + 2200 = 9200 Total demand of the five companies = 3000 + 600 + 2500 + 1200 + 3300 = 10600 Required difference 1 = (10600–9200) 5 1 = ×1400=280 5 5. Number of companies having more demand than production = 3"
+      },
+      "answer": "A",
+      "page": 929,
+      "id": "di-bar-graphs-23",
       "topic": "bar-graphs",
       "category": "di",
       "difficulty": 2,
@@ -3304,14 +841,10 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 929,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:38.221911Z",
-      "optionsSourceId": "di-bar-graphs-16",
-      "answerSourceId": "di-bar-graphs-16",
-      "explanationSourceId": "di-bar-graphs-16",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "bar",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: 3. (d) 4.",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-bar-graphs-23_opts.png",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3330,34 +863,33 @@
           "value": 55
         }
       ],
-      "correctAnswer": "20.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-bar-graphs-16",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.839Z"
+      "chartType": "bar",
+      "importBatch": "2026-07-07T17:27:42.321127Z",
+      "optionsSourceId": "di-bar-graphs-23",
+      "answerSourceId": "di-bar-graphs-23",
+      "explanationSourceId": "di-bar-graphs-23",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Empty question text",
-      "Explanation contains empty formula brackets/placeholders",
-      "Explanation contains disconnected mixed arithmetic operators"
+      "CRITICAL: Merged options detected: option at index 3 contains another option label \"(c)\""
     ],
     "question": {
-      "id": "di-bar-graphs-21",
-      "question": "",
-      "options": [
-        "SOLUT",
-        "22.",
-        "23. (a) 24. (a) 25."
-      ],
-      "answer": "23. (a) 24. (a) 25.",
-      "explanation": "Step 1\nTotal income of all the five companies = ` (35 + 50 + 40 + 40 + 50) crores = ` 215 crores Total expenditure of all the five companies = ` (45 + 40 + 45 + 30 + 45) crores = ` 205 crores \\ Profit percent (Income−Expenditure ) = [ ]×100 { Expenditure } 215−205 = ×0 0/1/05 2/1000 = =4.88% 5 0/2/100/400Answer: 23. (a) 24. (a) 25.",
+      "questionId": "di-bar-graphs-25",
+      "chapter": "bar-graphs",
+      "question": "For company R if the expenditure had increased by 20% in the year 2001 from the year 2000 and the company had earned profit of 10% in 2000, the company’s income in 2000 was (in crore `) [SSC—CHSL (10 + 2) Exam, 2015]",
+      "options": {
+        "A": "41.67",
+        "B": "35.75",
+        "C": "37.25",
+        "D": "38.5 SWERS 6. (c) 7. (a) 8. (d) 9. (b) 10. (c) 16. (a) 17. (b) 18. (c) 19. (a) 20. (b) TIONS Number of companies having more production than demand = 2 Required ratio = 3 : 2 TotalSales of branch B2 for both years 6. Required ratio = Total Sales of branch B4 for both years 75+65 140 7 = = = 85+95 180 9 7. Total sales of branch B6 for both years = 70 + 80 = 150 Total sales of branch B3 for both years = 95 + 110 = 205 150 Required percentage ×100=73.7% 205 8. Total sales (in thousands numbers) of branches B1, B3 and B6 in 200 = 80 + 95 + 70 = 245 Average sales (in thousands number) of branches B1, B3 245 and B6 in 2000 = 3 Total sales (in thousands number) of branches B1, B2 and B3 in 2001 = 105 + 65 + 110 = 280 Average sales (in thousands number) of branches B1, B2 280 and B3 in 2001 = 3 245 3 So, required percentage = ×100% 280 3 245 = ×100=87.5% 280 9. Total sales of all the six branches (in thousand numbers) for the year 2000 = 80 + 75 + 95 + 85 + 75 + 70 = 480"
+      },
+      "answer": "A",
+      "page": 929,
+      "id": "di-bar-graphs-25",
       "topic": "bar-graphs",
       "category": "di",
       "difficulty": 2,
@@ -3367,14 +899,10 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 929,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:38.221911Z",
-      "optionsSourceId": "di-bar-graphs-21",
-      "answerSourceId": "di-bar-graphs-21",
-      "explanationSourceId": "di-bar-graphs-21",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "bar",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: 41.67",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-bar-graphs-25_opts.png",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3393,33 +921,33 @@
           "value": 55
         }
       ],
-      "correctAnswer": "23. (a) 24. (a) 25.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-bar-graphs-21",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.839Z"
+      "chartType": "bar",
+      "importBatch": "2026-07-07T17:27:42.321127Z",
+      "optionsSourceId": "di-bar-graphs-25",
+      "answerSourceId": "di-bar-graphs-25",
+      "explanationSourceId": "di-bar-graphs-25",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
-    "score": 60,
+    "score": 0,
     "issues": [
-      "Explanation contains empty formula brackets/placeholders",
-      "Explanation contains disconnected mixed arithmetic operators"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
-      "id": "di-bar-graphs-22",
-      "question": "If the income of company Q in 2001/10 was% more than that in 2000 and the company had earned a profit of 20% in 2000, then its expenditure in 2000 (in crore `) was [SSC—CHSL (10 + 2) Exam, 2015]",
-      "options": [
-        "34.34",
-        "28.28",
-        "29.09",
-        "32.32"
-      ],
-      "answer": "32.32",
-      "explanation": "Step 1\nIncome of company Q in 2000 = ×140=` crores 10 1/11 If expenditure in 2000 be ` x crores\n\nFinal Calculation\n(Income− Expenditure) Profit % = [ ]×100 { Expenditure } 400 −x 11 = x 20 1 400−11x ⇒ = = 0 0/1/5/11x ⇒ 5 × 400 – 55x = 11x ⇒ 66x = 00 0/2/2000 ⇒ x = 66 = ` 30.30 crores\n\nAnswer: 32.32",
+      "questionId": "di-bar-graphs-29",
+      "chapter": "bar-graphs",
+      "question": "What was the difference between the average amount invested in raw materials during the given period and the average value of sales of finished goods during this period?",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "D",
+      "page": 916,
+      "id": "di-bar-graphs-29",
       "topic": "bar-graphs",
       "category": "di",
       "difficulty": 2,
@@ -3429,14 +957,10 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 929,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:38.221911Z",
-      "optionsSourceId": "di-bar-graphs-22",
-      "answerSourceId": "di-bar-graphs-22",
-      "explanationSourceId": "di-bar-graphs-22",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "bar",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option D",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-bar-graphs-29_opts.png",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3455,95 +979,33 @@
           "value": 55
         }
       ],
-      "correctAnswer": "32.32",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-bar-graphs-22",
-      "confidenceScore": 60,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.839Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Empty question text",
-      "Merged options detected: option at index 0 contains another option label \"(d)\"",
-      "Explanation contains empty formula brackets/placeholders"
-    ],
-    "question": {
-      "id": "di-bar-graphs-28",
-      "question": "",
-      "options": [
-        "29. (d) 30.",
-        "UTIONS Questions (6–10): Number of students in: ( 12 ) ( 9 ) A → [ ×6000] =720; B→[ ×6000] =540; {100 } {100 } ( 26 ) ( 18 ) C→[ ×6000]=1560; D → [ ×6000] =1080; {100 } {100 } ( 29 ) E→[ ×6000]=1740; {100 } ( 6 ) F→[ ×6000]=360. {100 } Number of boys in : A → 500, B → 400, C → 900, D → 600, E → 1200, F → 100. Number of girls in: A → (720 – 500) = 220; B → (540 – 400) = 140; C → (1560 – 900) = 660; D → (1080 – 600) = 480; E → (1740 – 1200) = 540; F → (360 – 100) = 260.",
-        "31."
-      ],
-      "answer": "UTIONS Questions (6–10): Number of students in: ( 12 ) ( 9 ) A → [ ×6000] =720; B→[ ×6000] =540; {100 } {100 } ( 26 ) ( 18 ) C→[ ×6000]=1560; D → [ ×6000] =1080; {100 } {100 } ( 29 ) E→[ ×6000]=1740; {100 } ( 6 ) F→[ ×6000]=360. {100 } Number of boys in : A → 500, B → 400, C → 900, D → 600, E → 1200, F → 100. Number of girls in: A → (720 – 500) = 220; B → (540 – 400) = 140; C → (1560 – 900) = 660; D → (1080 – 600) = 480; E → (1740 – 1200) = 540; F → (360 – 100) = 260.",
-      "explanation": "Step 1\nThe percentage change in the amount invested in raw- materials and in the value of sales of finished goods for different years are: ount Percentage change in value of sales al of finished goods ((300–200) ) % ×100%=50% [ ] { 200 } ((500–300) ) 7% ×100%=66.67% [ ] { 300 } ((400–500) ) ×100%=–20% [ ] { 500 } ((600–400) ) 9% ×100%=50% [ ] { 400 } ((460–600) ) % ×100%=–23.33%\n\nFinal Calculation\n[ ] { 600 } during the year 2007.\n\nAnswer: UTIONS Questions (6–10): Number of students in: ( 12 ) ( 9 ) A → [ ×6000] =720; B→[ ×6000] =540; {100 } {100 } ( 26 ) ( 18 ) C→[ ×6000]=1560; D → [ ×6000] =1080; {100 } {100 } ( 29 ) E→[ ×6000]=1740; {100 } ( 6 ) F→[ ×6000]=360. {100 } Number of boys in : A → 500, B → 400, C → 900, D → 600, E → 1200, F → 100. Number of girls in: A → (720 – 500) = 220; B → (540 – 400) = 140; C → (1560 – 900) = 660; D → (1080 – 600) = 480; E → (1740 – 1200) = 540; F → (360 – 100) = 260.",
-      "topic": "bar-graphs",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 917,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:38.221911Z",
-      "optionsSourceId": "di-bar-graphs-28",
-      "answerSourceId": "di-bar-graphs-28",
-      "explanationSourceId": "di-bar-graphs-28",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
       "chartType": "bar",
-      "chartData": [
-        {
-          "name": "2019",
-          "value": 30
-        },
-        {
-          "name": "2020",
-          "value": 45
-        },
-        {
-          "name": "2021",
-          "value": 60
-        },
-        {
-          "name": "2022",
-          "value": 55
-        }
-      ],
-      "correctAnswer": "UTIONS Questions (6–10): Number of students in: ( 12 ) ( 9 ) A → [ ×6000] =720; B→[ ×6000] =540; {100 } {100 } ( 26 ) ( 18 ) C→[ ×6000]=1560; D → [ ×6000] =1080; {100 } {100 } ( 29 ) E→[ ×6000]=1740; {100 } ( 6 ) F→[ ×6000]=360. {100 } Number of boys in : A → 500, B → 400, C → 900, D → 600, E → 1200, F → 100. Number of girls in: A → (720 – 500) = 220; B → (540 – 400) = 140; C → (1560 – 900) = 660; D → (1080 – 600) = 480; E → (1740 – 1200) = 540; F → (360 – 100) = 260.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-bar-graphs-28",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.840Z"
+      "importBatch": "2026-07-07T17:27:42.321127Z",
+      "optionsSourceId": "di-bar-graphs-29",
+      "answerSourceId": "di-bar-graphs-29",
+      "explanationSourceId": "di-bar-graphs-29",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 2 options instead of exactly 4",
-      "Question text too short (< 15 chars)",
-      "Explanation contains disconnected mixed arithmetic operators"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
+      "questionId": "di-pie-chart-1",
+      "chapter": "pie-chart",
+      "question": "(b) 2. (d) 3. (d) 4. (b) 5. (c)",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 943,
       "id": "di-pie-chart-1",
-      "question": "(b) 2. (d) 3.",
-      "options": [
-        "5.",
-        "4."
-      ],
-      "answer": "4.",
-      "explanation": "Step 1\nPercent of Dell Laptops sold by P, R and S together = 15% + 30% + 9% = 54% Total Dell Laptops sold by, P, R and S together 54 = 2400 × = 296 1/00 1/1296 \\ Average = = 432/3Answer: 4.",
       "topic": "pie-chart",
       "category": "di",
       "difficulty": 2,
@@ -3553,14 +1015,68 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 943,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-pie-chart-1_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "pie",
+      "importBatch": "2026-07-07T17:27:46.150478Z",
       "optionsSourceId": "di-pie-chart-1",
       "answerSourceId": "di-pie-chart-1",
       "explanationSourceId": "di-pie-chart-1",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "pie",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-pie-chart-6",
+      "chapter": "pie-chart",
+      "question": "(b) 7. (d) 8. (c) 9. (a) 10. (a)",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 943,
+      "id": "di-pie-chart-6",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-pie-chart-6_opts.png",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3579,49 +1095,46 @@
           "value": 55
         }
       ],
-      "correctAnswer": "4.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-pie-chart-1",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.841Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Empty question text"
-    ],
-    "question": {
-      "id": "di-pie-chart-6",
-      "question": "",
-      "options": [
-        "7.",
-        "9. (a) 10.",
-        "8."
-      ],
-      "answer": "9. (a) 10.",
-      "explanation": "Step 1\nCorresponding angle for conveyance = 90º 360º ≡ ` 000 0/6/90 \\ Total expenditure on conveyance = × 00 0/6/360 = ` 15000\n\nAnswer: 9. (a) 10.",
-      "topic": "pie-chart",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 943,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "chartType": "pie",
+      "importBatch": "2026-07-07T17:27:46.150478Z",
       "optionsSourceId": "di-pie-chart-6",
       "answerSourceId": "di-pie-chart-6",
       "explanationSourceId": "di-pie-chart-6",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "pie",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-pie-chart-16",
+      "chapter": "pie-chart",
+      "question": "(d) 17. (b) 18. (b) 19. (c) 20. (a) TIONS 5. Number of Dell laptops sold by store 21 T = 2400 × = 504 100 15 Number of laptops sold by store P = 2400 × = 360 100 504−360 Required percentage = × 100 = 40% 360 6. Corresponding angle for conveyance = 90º 360º ≡ ` 60000 90 \\ Total expenditure on conveyance = × 6000 360 = ` 15000 7. Corresponding angle for expenditure on electricity = 72º 360º ≡ 100% 72 \\ Total expenditure on electricity = × 100 = 20% 360 8. Corresponding angle for overhead expenses = 108º 360º = ` 60000 Amount spent on Overhead expenses 108 = ×60000= ` 18000 360 9. Corresponding angle for raw materials = 90º 360º ≡ 100% 90 Percentage of raw material = × 100 = 25% 360 10. Percentage of male and female members in health club D and E = 20% + 12% = 32% The central angles corresponding to number of male and female in health club D and E. 260×32 = 360 × 32% = = 115.2° 100 11. The number of female members in health clubs A, B and C 6300×68 3600×72 − = 4284 – 2592 = 1692 100 100 Average number of female number in health cube A, B 1692 and C = = 564 3 12. Number of male members in health clubs A and C 3600×40 = = 1440 100",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "D",
+      "page": 943,
+      "id": "di-pie-chart-16",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option D",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-pie-chart-16_opts.png",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3640,94 +1153,33 @@
           "value": 55
         }
       ],
-      "correctAnswer": "9. (a) 10.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-pie-chart-6",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.841Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Empty question text",
-      "Merged options detected: option at index 3 contains another option label \"(b)\""
-    ],
-    "question": {
-      "id": "di-pie-chart-16",
-      "question": "",
-      "options": [
-        "TIONS",
-        "19.",
-        "20.",
-        "17. (b) 18."
-      ],
-      "answer": "17. (b) 18.",
-      "explanation": "Step 1\nNumber of Nokia phones sold by Store R = 1120 Number of Samsung phones sold by store P and Q together = 672 + 280 = 2 5/9/1120−952 Required percentage = ×0 0/1/52 9/6800 1/00 3/11 = %= %=17%more 2 5/9/17/17Answer: 17. (b) 18.",
-      "topic": "pie-chart",
-      "category": "di",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 943,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "chartType": "pie",
+      "importBatch": "2026-07-07T17:27:46.150478Z",
       "optionsSourceId": "di-pie-chart-16",
       "answerSourceId": "di-pie-chart-16",
       "explanationSourceId": "di-pie-chart-16",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "pie",
-      "chartData": [
-        {
-          "name": "2019",
-          "value": 30
-        },
-        {
-          "name": "2020",
-          "value": 45
-        },
-        {
-          "name": "2021",
-          "value": 60
-        },
-        {
-          "name": "2022",
-          "value": 55
-        }
-      ],
-      "correctAnswer": "17. (b) 18.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-pie-chart-16",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.843Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Empty question text"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
+      "questionId": "di-pie-chart-21",
+      "chapter": "pie-chart",
+      "question": "(b) 22. (a) 23. (d) SOLUT 1. Percent of Dell Laptops sold by P, R and S together = 15% + 30% + 9% = 54% Total Dell Laptops sold by, P, R and S together 54 = 2400 × = 1296 100 1296 \\ Average = = 432 3 2. Dell laptops sold by store S = 9% Central angle corresponding to number of Dell Laptops sold by store S. 9 = ×360=32.4% 100 3. Percent of Dell Laptops sold by Store Q = 25% Total number of Dell laptops sold by store Q 25 = 2400 × =600 100 Percent of Dell Laptops Dell and Lenovo Sold by store R = 35 Number of laptops (Dell and Lenovo) sold by store R 35 = 4500× = 1575 100 600 Required percentage = × 100 = 38.095 ≈ 38% 1575 4. Percent of laptops (Dell and Lenovo) sold by store Q = 23% Number of laptops (Dell and Lenovo) sold by store Q. 23 = 4500 × = 45 × 23 = 1035 100 Percent of Laptops (Dell and Lenovo) sold by R and S together = 35% + 11% = 46% Now, total number of laptops (Lenovo and Dell) sold by 46 R and S together = 4500 × = 2070 100 Percent of laptops sold by R and S together = 30% + 9% = 39% Number of Dell laptops sold by R and S together 39 = 2400 × = 936 100 Number of Lenovo laptops = 2070 – 936 = 1134 = 2070 – 850 = 1220 Required difference = 1134 – 1034 = 99",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 943,
       "id": "di-pie-chart-21",
-      "question": "",
-      "options": [
-        "23.",
-        "22.",
-        "SOLUT"
-      ],
-      "answer": "22.",
-      "explanation": "Step 1\nNumber of students who are not members of any club = 40 = 5% Percentage of members of cricket club only = 5% Number of members of cricket club only = 40\n\nAnswer: 22.",
       "topic": "pie-chart",
       "category": "di",
       "difficulty": 2,
@@ -3737,58 +1189,56 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 943,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:42.688079Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-pie-chart-21_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "pie",
+      "importBatch": "2026-07-07T17:27:46.150478Z",
       "optionsSourceId": "di-pie-chart-21",
       "answerSourceId": "di-pie-chart-21",
       "explanationSourceId": "di-pie-chart-21",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "pie",
-      "chartData": [
-        {
-          "name": "2019",
-          "value": 30
-        },
-        {
-          "name": "2020",
-          "value": 45
-        },
-        {
-          "name": "2021",
-          "value": 60
-        },
-        {
-          "name": "2022",
-          "value": 55
-        }
-      ],
-      "correctAnswer": "22.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-pie-chart-21",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.843Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 2 options instead of exactly 4",
-      "Question text too short (< 15 chars)"
+      "CRITICAL: Truncated option detected at index 0"
     ],
     "question": {
-      "id": "di-line-graphs-1",
-      "question": "(b) 2. (b) 3.",
-      "options": [
-        "5.",
-        "4."
-      ],
-      "answer": "4.",
-      "explanation": "Step 1\nTotal number of calories burnt by A and B together on Wednesday = 90 + 125 = 215 Total number of calories burnt by A and B together on Tuesday = 185 + 100 = 285 Required ratio = 215 : 285 = 43 : 57\n\nAnswer: 4.",
-      "topic": "line-graphs",
+      "questionId": "di-pie-chart-26",
+      "chapter": "pie-chart",
+      "question": "Required ratio = = = =2:1. 1 3 1 16%of 6",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "C",
+      "page": 936,
+      "id": "di-pie-chart-26",
+      "topic": "pie-chart",
       "category": "di",
       "difficulty": 2,
       "estimatedTime": 60,
@@ -3797,14 +1247,10 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 958,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:50.307403Z",
-      "optionsSourceId": "di-line-graphs-1",
-      "answerSourceId": "di-line-graphs-1",
-      "explanationSourceId": "di-line-graphs-1",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "line",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option C",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-pie-chart-26_opts.png",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3823,33 +1269,151 @@
           "value": 55
         }
       ],
-      "correctAnswer": "4.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-line-graphs-1",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.845Z"
+      "chartType": "pie",
+      "importBatch": "2026-07-07T17:27:46.150478Z",
+      "optionsSourceId": "di-pie-chart-26",
+      "answerSourceId": "di-pie-chart-26",
+      "explanationSourceId": "di-pie-chart-26",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-pie-chart-27",
+      "chapter": "pie-chart",
+      "question": "Quantity of water in the body of a person weighing 50 kg = (70% of 50 kg) = 35 kg.",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 936,
+      "id": "di-pie-chart-27",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-pie-chart-27_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "pie",
+      "importBatch": "2026-07-07T17:27:46.150478Z",
+      "optionsSourceId": "di-pie-chart-27",
+      "answerSourceId": "di-pie-chart-27",
+      "explanationSourceId": "di-pie-chart-27",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-pie-chart-28",
+      "chapter": "pie-chart",
+      "question": "Let the body weight be x kg. Then, Weight of skin protein in the body ( 1 ) ( 16 1 ) = 16%of[ ofx]kg=[ × ×x]kg {10 } {100 10 } 2x = kg. 125 \\ Required percentage ( 2x ) 1 8 = [ ]× ×100%= %=1.6%. {125} x 5",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 936,
+      "id": "di-pie-chart-28",
+      "topic": "pie-chart",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-pie-chart-28_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "pie",
+      "importBatch": "2026-07-07T17:27:46.150478Z",
+      "optionsSourceId": "di-pie-chart-28",
+      "answerSourceId": "di-pie-chart-28",
+      "explanationSourceId": "di-pie-chart-28",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "Has 0 options instead of exactly 4",
       "Empty question text"
     ],
     "question": {
-      "id": "di-line-graphs-11",
+      "questionId": "di-pie-chart-45800",
+      "chapter": "pie-chart",
       "question": "",
-      "options": [
-        "15.",
-        "12.",
-        "14.",
-        "13."
-      ],
-      "answer": "12.",
-      "explanation": "Step 1\nProfit percent earned by company B in 2009 = 35% Profit percent earned by company B in 2010 = 50% Expenditure of company B in 2009 = 12 lakhs Expenditure of company B in 2010 = 14.5 lakhs I−E Income of company B in 2009 = 35% = ×100 E (I−12lakh) ⇒ 35 = × 100/12lakh ⇒ (35 × 12) Lakh = 100I – 1200 lakh ⇒ 420 lakh = 100I – 1200 lakh ⇒ I = 16.20 lakh I–E Income of company B in 2009 = 50% = × 100 E I–14.5lakh ⇒ 50 = ×100\n\nAnswer: 12.",
-      "topic": "line-graphs",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "A",
+      "page": 931,
+      "id": "di-pie-chart-45800",
+      "topic": "pie-chart",
       "category": "di",
       "difficulty": 2,
       "estimatedTime": 60,
@@ -3858,14 +1422,8 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 958,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:50.307403Z",
-      "optionsSourceId": "di-line-graphs-11",
-      "answerSourceId": "di-line-graphs-11",
-      "explanationSourceId": "di-line-graphs-11",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "chartType": "line",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: A",
+      "renderMode": "TEXT",
       "chartData": [
         {
           "name": "2019",
@@ -3884,13 +1442,70 @@
           "value": 55
         }
       ],
-      "correctAnswer": "12.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "di-line-graphs-11",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.847Z"
+      "chartType": "pie",
+      "importBatch": "2026-07-07T17:27:46.150478Z",
+      "optionsSourceId": "di-pie-chart-45800",
+      "answerSourceId": "di-pie-chart-45800",
+      "explanationSourceId": "di-pie-chart-45800",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+    }
+  },
+  {
+    "status": "INVALID",
+    "score": 0,
+    "issues": [
+      "CRITICAL: Truncated option detected at index 0"
+    ],
+    "question": {
+      "questionId": "di-line-graphs-11",
+      "chapter": "line-graphs",
+      "question": "Expenditure of company B in 2009 and 2010 are ` 12 lakhs and ` 14.5 lakhs respectively. What was the total income of company B in 2009 and 2010 together (in lakh rupees)? [IDBI Bank (Executive Officer’s) Exam, 2015]",
+      "options": {
+        "A": "Option A",
+        "B": "Option B",
+        "C": "Option C",
+        "D": "Option D"
+      },
+      "answer": "B",
+      "page": 956,
+      "id": "di-line-graphs-11",
+      "topic": "line-graphs",
+      "category": "di",
+      "difficulty": 2,
+      "estimatedTime": 60,
+      "companyRelevance": [
+        "TCS",
+        "Accenture",
+        "Infosys"
+      ],
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Option B",
+      "questionImage": null,
+      "optionsImage": "/resources/aptitude/di-line-graphs-11_opts.png",
+      "renderMode": "TEXT",
+      "chartData": [
+        {
+          "name": "2019",
+          "value": 30
+        },
+        {
+          "name": "2020",
+          "value": 45
+        },
+        {
+          "name": "2021",
+          "value": 60
+        },
+        {
+          "name": "2022",
+          "value": 55
+        }
+      ],
+      "chartType": "line",
+      "importBatch": "2026-07-07T17:27:53.629906Z",
+      "optionsSourceId": "di-line-graphs-11",
+      "answerSourceId": "di-line-graphs-11",
+      "explanationSourceId": "di-line-graphs-11",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   }
 ]

@@ -169,21 +169,22 @@ function getRowValue(row: SheetRow, keys: string[]): string {
 }
 
 const KNOWN_TOPIC_STRINGS = new Set([
-  "arrays", "array", "2d arrays", "2d array", "matrix", "matrices",
+  "arrays", "array", "2d arrays", "2d array", "matrix", "matrices", "matrix problems",
   "strings", "string",
-  "heaps & hashing", "heaps and hashing", "heap", "heaps", "hashmaps", "hashmap", "hash", "hashing",
+  "heaps & hashing", "heaps and hashing", "heap", "heaps", "hashmaps", "hashmap", "hash", "hashing", "heaps / pqs", "heaps/pqs", "heaps / pq", "heaps/pq", "heap / pq", "heap/pq",
   "stacks & queues", "stacks and queues", "stack", "queue", "queues",
-  "searching & sorting", "searching and sorting", "sorting", "binary-search", "binary search", "bs",
+  "searching & sorting", "searching and sorting", "sorting and searching", "sorting", "binary-search", "binary search", "bs",
   "linked list", "linked-list",
   "binary search trees", "bst", "binary search tree",
   "binary trees", "trees", "tree", "binary tree", "segment trees", "segment tree", "tries", "trie",
   "graphs", "graph", "graph basics",
   "dp", "dynamic programming", "dp basics",
-  "greedy",
+  "greedy", "greedy algorithms",
   "backtracking", "recursion", "divide and conquer", "bfs-dfs",
   "sliding window", "sliding-window",
-  "two pointers", "two pointer", "two-pointer",
-  "bit manipulation", "bit-manipulation", "bitmanipulation"
+  "two pointers", "two pointer", "two-pointer", "two pointer approach",
+  "bit manipulation", "bit-manipulation", "bitmanipulation",
+  "mathematical problems", "maths", "math"
 ]);
 
 const CANONICAL_TOPICS = [
@@ -245,8 +246,8 @@ function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string
   const hasWord = (str: string, words: string[]) => words.some(w => str.includes(w));
 
   // Determine if heap vs hashmap for "heaps & hashing"
-  if (t === "heaps & hashing" || t === "heaps and hashing" || t === "heap" || t === "heaps" || t === "hashmaps" || t === "hashmap" || t === "hash" || t === "hashing") {
-    if (hasWord(titleLower, ["heap", "priority queue", "kth", "k largest", "k most", "median", "merge k"]) || hasWord(c, ["heap", "priority"])) {
+  if (t === "heaps & hashing" || t === "heaps and hashing" || t === "heap" || t === "heaps" || t === "hashmaps" || t === "hashmap" || t === "hash" || t === "hashing" || t.startsWith("heaps / pqs") || t.startsWith("heaps/pqs") || t.includes("pq") || t.includes("heap")) {
+    if (hasWord(titleLower, ["heap", "priority queue", "kth", "k largest", "k most", "median", "merge k"]) || hasWord(c, ["heap", "priority"]) || t.includes("pq") || t.includes("heap")) {
       return "heap";
     }
     return "hashmaps";
@@ -265,7 +266,7 @@ function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string
   }
 
   // Determine if sorting vs binary search for "searching & sorting"
-  if (t === "searching & sorting" || t === "searching and sorting" || t === "sorting" || t === "bs") {
+  if (t === "searching & sorting" || t === "searching and sorting" || t === "sorting and searching" || t === "sorting" || t === "bs") {
     if (hasWord(titleLower, ["binary search", "search in", "search a", "first and last", "search insert", "median of", "find minimum in rotated", "search a 2d"]) || hasWord(c, ["binary search", "binary-search", "lower bound", "upper bound"])) {
       return "binary-search";
     }
@@ -273,7 +274,7 @@ function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string
   }
 
   // Basic mappings
-  if (t === "arrays" || t === "array" || t === "2d arrays" || t === "2d array" || t === "matrix" || t === "matrices") {
+  if (t === "arrays" || t === "array" || t === "2d arrays" || t === "2d array" || t === "matrix" || t === "matrices" || t === "matrix problems") {
     if (hasWord(c, ["sliding window", "sliding-window"]) || hasWord(titleLower, ["sliding window", "longest substring without"])) {
       return "sliding-window";
     }
@@ -299,13 +300,13 @@ function getCanonicalTopicId(rawTopic: string, rawConcept: string, title: string
 
   if (t === "graphs" || t === "graph" || t === "graph basics") return "graphs";
   if (t === "dp" || t === "dynamic programming" || t === "dp basics") return "dp";
-  if (t === "greedy") return "greedy";
+  if (t === "greedy" || t === "greedy algorithms") return "greedy";
   if (t === "backtracking" || t === "recursion") return "recursion";
   if (t === "divide and conquer" || t === "bfs-dfs") return "bfs-dfs";
-  if (t === "bit manipulation" || t === "bit-manipulation" || t === "bitmanipulation") return "bit-manipulation";
+  if (t === "bit manipulation" || t === "bit-manipulation" || t === "bitmanipulation" || t === "mathematical problems" || t === "maths" || t === "math") return "bit-manipulation";
 
   if (t === "sliding window" || t === "sliding-window") return "sliding-window";
-  if (t === "two pointers" || t === "two pointer" || t === "two-pointer") return "two-pointer";
+  if (t === "two pointers" || t === "two pointer" || t === "two-pointer" || t === "two pointer approach") return "two-pointer";
 
   // Fallbacks based on concepts
   if (hasWord(c, ["two pointer", "two-pointer", "two pointers"])) return "two-pointer";

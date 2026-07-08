@@ -14,10 +14,14 @@ export function filterQuestions(
     status?: string;
     revisionDueIds?: Set<string>;
     bookmarked?: Set<string>;
+    source?: string;
   }
 ): DSAQuestion[] {
   let result = [...questions];
 
+  if (filters.source && filters.source !== "all") {
+    result = result.filter((q) => q.sources?.includes(filters.source!) || (filters.source === "DSA Sheet" && !q.sources));
+  }
   if (filters.topic && filters.topic !== "all") {
     const topicId = filters.topic!;
     result = result.filter((q) => q.topicId === topicId || q.additionalTopicIds?.includes(topicId));
@@ -56,7 +60,8 @@ export function filterQuestions(
         q.pattern.toLowerCase().includes(s) ||
         q.topicId.toLowerCase().includes(s) ||
         q.companies.some((c) => c.toLowerCase().includes(s)) ||
-        (q.tags?.some((t) => t.toLowerCase().includes(s)) ?? false)
+        (q.tags?.some((t) => t.toLowerCase().includes(s)) ?? false) ||
+        (q.sources?.some((src) => src.toLowerCase().includes(s)) ?? false)
     );
   }
 

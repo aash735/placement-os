@@ -56,6 +56,7 @@ export interface DSAQuestion {
   createdAt?: string;
   updatedAt?: string;
   additionalTopicIds?: string[];
+  sources?: string[];
   sq1?: string;
   sq1Url?: string;
   sq2?: string;

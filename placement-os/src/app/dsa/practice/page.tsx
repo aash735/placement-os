@@ -38,6 +38,7 @@ export default function PracticePage() {
   const [company, setCompany] = useState("all");
   const [pattern, setPattern] = useState("all");
   const [frequency, setFrequency] = useState("all");
+  const [source, setSource] = useState("all");
   const [search, setSearch] = useState("");
   const [bookmarksOnly, setBookmarksOnly] = useState(false);
   const [revisionOnly, setRevisionOnly] = useState(false);
@@ -70,6 +71,21 @@ export default function PracticePage() {
     return Array.from(set).sort();
   }, [questions]);
 
+  // Dynamic Sources extraction from sheet questions
+  const dynamicSources = useMemo(() => {
+    const set = new Set<string>();
+    questions.forEach((q) => {
+      if (q.sources) {
+        q.sources.forEach((s) => {
+          if (s.trim()) set.add(s.trim());
+        });
+      } else {
+        set.add("DSA Sheet");
+      }
+    });
+    return Array.from(set).sort();
+  }, [questions]);
+
   // Count active filters
   const activeFiltersCount = useMemo(() => {
     let count = 0;
@@ -79,11 +95,12 @@ export default function PracticePage() {
     if (company !== "all") count++;
     if (pattern !== "all") count++;
     if (frequency !== "all") count++;
+    if (source !== "all") count++;
     if (search.trim() !== "") count++;
     if (bookmarksOnly) count++;
     if (revisionOnly) count++;
     return count;
-  }, [topic, difficulty, statusFilter, company, pattern, frequency, search, bookmarksOnly, revisionOnly]);
+  }, [topic, difficulty, statusFilter, company, pattern, frequency, source, search, bookmarksOnly, revisionOnly]);
 
   // Reset all filters function
   const handleResetFilters = () => {
@@ -93,6 +110,7 @@ export default function PracticePage() {
     setCompany("all");
     setPattern("all");
     setFrequency("all");
+    setSource("all");
     setSearch("");
     setBookmarksOnly(false);
     setRevisionOnly(false);
@@ -135,6 +153,7 @@ export default function PracticePage() {
       statusMap,
       revisionDueIds: revisionOnly ? revisionDueIds : undefined,
       bookmarked: bookmarksOnly ? new Set(bookmarks) : undefined,
+      source,
     });
 
     list = [...list].sort((a, b) => {
@@ -144,7 +163,7 @@ export default function PracticePage() {
     });
 
     return list;
-  }, [questions, topic, difficulty, company, pattern, frequency, search, statusFilter, statusMap, revisionOnly, revisionDueIds, bookmarksOnly, bookmarks, sort]);
+  }, [questions, topic, difficulty, company, pattern, frequency, search, statusFilter, statusMap, revisionOnly, revisionDueIds, bookmarksOnly, bookmarks, sort, source]);
 
   return (
     <AppShell title="DSA Bank" subtitle={`${filtered.length} matching questions found`}>
@@ -204,6 +223,22 @@ export default function PracticePage() {
                 <SelectItem value="all">All Topics</SelectItem>
                 {topics.map((t) => (
                   <SelectItem key={t.id} value={t.id}>{t.name}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          {/* Sheet Source Select */}
+          <div className="space-y-1">
+            <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Sheet Source</label>
+            <Select value={source} onValueChange={(val) => setSource(val)}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="All Sources" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Sources</SelectItem>
+                {dynamicSources.map((s) => (
+                  <SelectItem key={s} value={s}>{s}</SelectItem>
                 ))}
               </SelectContent>
             </Select>

@@ -47,7 +47,8 @@ def clean_ocr_text(text):
     text = re.sub(r'\b[A-Z]{3,}\s+\d{2,4}\b', '', text)
     
     # Rebuild corrupted fractions from OCR layout displacement
-    # Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days" or "214% gain7" -> "14 2/7 % gain"
+    # Pattern 1: e.g. "15days3" -> "5 1/3 days" or "24days5" -> "4 2/5 days" or "14%gain7" -> "14 2/7 % gain"
+    # Unit must not contain spaces, and denominator must be a single digit stuck to the unit.
     def replace_fraction_with_unit(match):
         num = int(match.group(1))
         whole = match.group(2)
@@ -56,23 +57,14 @@ def clean_ocr_text(text):
         if num < den:
             return f"{whole} {num}/{den} {unit}"
         return match.group(0)
-    text = re.sub(r'\b(\d)(\d+)\s*([a-zA-Z%\s/]+[a-zA-Z%])(\d+)\b', replace_fraction_with_unit, text)
+    text = re.sub(r'\b(\d)(\d+)\s*([a-zA-Z%]+)(\d)\b', replace_fraction_with_unit, text)
 
-    # Pattern 2: e.g. "31 4 times" or "17 2" -> "1 3/4 times", "7 1/2"
-    def replace_fraction_pure(match):
-        num = match.group(1)
-        whole = match.group(2)
-        den = match.group(3)
-        if int(num) < int(den):
-            return f"{whole} {num}/{den}"
-        return match.group(0)
-    text = re.sub(r'\b(\d)(\d+)\s+(\d+)\b', replace_fraction_pure, text)
-
-    # Pattern 3: e.g. "7 th8" -> "7/8 th"
-    text = re.sub(r'\b(\d+)\s*([a-zA-Z]+)\s*(\d+)\b', r'\1/\3 \2', text)
+    # Pattern 2: e.g. "7 th8" -> "7/8 th"
+    # Restrict Group 2 to ordinal indicators to avoid corrupting text like "9 dividing 99"
+    text = re.sub(r'\b(\d+)\s*(th|rd|nd|st|h)\s*(\d+)\b', r'\1/\3 \2', text)
     
-    # Pattern 4: e.g. "3 4 th" -> "3/4th"
-    text = re.sub(r'\b(\d+)\s+(\d+)\s*([a-zA-Z]+)\b', r'\1/\2\3', text)
+    # Pattern 3: e.g. "3 4 th" -> "3/4th"
+    text = re.sub(r'\b(\d+)\s+(\d+)\s*(th|rd|nd|st|h)\b', r'\1/\2\3', text)
 
     # 3. Math expression normalization
     # Convert: 75 108 100 * to $(\frac{108}{100}) \times 75$
@@ -83,8 +75,8 @@ def clean_ocr_text(text):
     )
     
     # Convert simple fraction spaces: e.g. "3 5 of" or "1 3 of" to "3/5 of" and "1/3 of"
-    text = re.sub(r'\b(\d+)\s+(\d+)\s+of\b', r'\1/\2 of', text)
-    text = re.sub(r'\b(\d+)\s+(\d+)\s+remainder\b', r'\1/\2 remainder', text)
+    text = re.sub(r'\b(\d+)\s+([234568])\s+of\b', r'\1/\2 of', text)
+    text = re.sub(r'\b(\d+)\s+([234568])\s+remainder\b', r'\1/\2 remainder', text)
     
     # Normalize percent sign spacing
     text = re.sub(r'(\d+)\s*%\s*of\s*(\d+)', r'$\1\\% \\text{ of } \2$', text)

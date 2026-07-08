@@ -119,44 +119,84 @@ def clean_text(text):
     return text.strip()
 
 def parse_block_content(lines):
-    question_lines = []
-    option_lines = { 'a': [], 'b': [], 'c': [], 'd': [], 'e': [] }
-    current_option = None
+    """
+    Robust inline option parser.
+    Identifies sequential chains of options: (a)->(b)->(c)->(d) or (a)->(b)->(c)->(d)->(e)
+    which are furthest to the right to avoid matching variables inside the question body.
+    """
+    joined_text = " ".join(lines)
     
-    option_sequence = ['a', 'b', 'c', 'd', 'e']
-    next_seq_idx = 0
+    # Find all start positions of each option label
+    patterns = {
+        'a': [m.start() for m in re.finditer(r'\(\s*[aA]\s*\)|\[\s*[aA]\s*\]', joined_text)],
+        'b': [m.start() for m in re.finditer(r'\(\s*[bB]\s*\)|\[\s*[bB]\s*\]', joined_text)],
+        'c': [m.start() for m in re.finditer(r'\(\s*[cC]\s*\)|\[\s*[cC]\s*\]', joined_text)],
+        'd': [m.start() for m in re.finditer(r'\(\s*[dD]\s*\)|\[\s*[dD]\s*\]', joined_text)],
+        'e': [m.start() for m in re.finditer(r'\(\s*[eE]\s*\)|\[\s*[eE]\s*\]', joined_text)],
+    }
     
-    for line in lines:
-        remaining_text = line
-        while next_seq_idx < len(option_sequence):
-            next_letter = option_sequence[next_seq_idx]
-            pattern = r'\(\s*' + next_letter + r'\s*\)'
-            match = re.search(pattern, remaining_text)
-            if match:
-                text_before = remaining_text[:match.start()]
-                if text_before.strip():
-                    if current_option is None:
-                        question_lines.append(text_before)
-                    else:
-                        option_lines[current_option].append(text_before)
-                current_option = next_letter
-                next_seq_idx += 1
-                remaining_text = remaining_text[match.end():]
-            else:
-                break
-        if remaining_text.strip():
-            if current_option is None:
-                question_lines.append(remaining_text)
-            else:
-                option_lines[current_option].append(remaining_text)
-                
-    question_text = " ".join(question_lines).strip()
-    options = []
-    for letter in ['a', 'b', 'c', 'd', 'e']:
-        val = " ".join(option_lines[letter]).strip()
-        if val:
-            options.append(val)
-    return question_text, options
+    # Try 5-option chain first
+    best_chain_5 = None
+    for a in sorted(patterns['a'], reverse=True):
+        b = next((x for x in sorted(patterns['b']) if x > a), None)
+        if b is None: continue
+        c = next((x for x in sorted(patterns['c']) if x > b), None)
+        if c is None: continue
+        d = next((x for x in sorted(patterns['d']) if x > c), None)
+        if d is None: continue
+        e = next((x for x in sorted(patterns['e']) if x > d), None)
+        if e is None: continue
+        best_chain_5 = (a, b, c, d, e)
+        break
+        
+    if best_chain_5:
+        a, b, c, d, e = best_chain_5
+        q_text = joined_text[:a].strip()
+        
+        # Get start indices of option text (after the labels)
+        match_a = re.match(r'\(\s*[aA]\s*\)|\[\s*[aA]\s*\]', joined_text[a:])
+        match_b = re.match(r'\(\s*[bB]\s*\)|\[\s*[bB]\s*\]', joined_text[b:])
+        match_c = re.match(r'\(\s*[cC]\s*\)|\[\s*[cC]\s*\]', joined_text[c:])
+        match_d = re.match(r'\(\s*[dD]\s*\)|\[\s*[dD]\s*\]', joined_text[d:])
+        match_e = re.match(r'\(\s*[eE]\s*\)|\[\s*[eE]\s*\]', joined_text[e:])
+        
+        opt_a = joined_text[a + match_a.end():b].strip() if match_a else joined_text[a:b].strip()
+        opt_b = joined_text[b + match_b.end():c].strip() if match_b else joined_text[b:c].strip()
+        opt_c = joined_text[c + match_c.end():d].strip() if match_c else joined_text[c:d].strip()
+        opt_d = joined_text[d + match_d.end():e].strip() if match_d else joined_text[d:e].strip()
+        opt_e = joined_text[e + match_e.end():].strip() if match_e else joined_text[e:].strip()
+        
+        return q_text, [opt_a, opt_b, opt_c, opt_d, opt_e]
+        
+    # Try 4-option chain
+    best_chain_4 = None
+    for a in sorted(patterns['a'], reverse=True):
+        b = next((x for x in sorted(patterns['b']) if x > a), None)
+        if b is None: continue
+        c = next((x for x in sorted(patterns['c']) if x > b), None)
+        if c is None: continue
+        d = next((x for x in sorted(patterns['d']) if x > c), None)
+        if d is None: continue
+        best_chain_4 = (a, b, c, d)
+        break
+        
+    if best_chain_4:
+        a, b, c, d = best_chain_4
+        q_text = joined_text[:a].strip()
+        
+        match_a = re.match(r'\(\s*[aA]\s*\)|\[\s*[aA]\s*\]', joined_text[a:])
+        match_b = re.match(r'\(\s*[bB]\s*\)|\[\s*[bB]\s*\]', joined_text[b:])
+        match_c = re.match(r'\(\s*[cC]\s*\)|\[\s*[cC]\s*\]', joined_text[c:])
+        match_d = re.match(r'\(\s*[dD]\s*\)|\[\s*[dD]\s*\]', joined_text[d:])
+        
+        opt_a = joined_text[a + match_a.end():b].strip() if match_a else joined_text[a:b].strip()
+        opt_b = joined_text[b + match_b.end():c].strip() if match_b else joined_text[b:c].strip()
+        opt_c = joined_text[c + match_c.end():d].strip() if match_c else joined_text[c:d].strip()
+        opt_d = joined_text[d + match_d.end():].strip() if match_d else joined_text[d:].strip()
+        
+        return q_text, [opt_a, opt_b, opt_c, opt_d]
+        
+    return joined_text.strip(), []
 
 def parse_chapter_questions(reader, topic, start_page, end_page, existing_questions=None):
     topic_id = TOPIC_MAP.get(topic, "general")
@@ -218,16 +258,29 @@ def parse_chapter_questions(reader, topic, start_page, end_page, existing_questi
     def extract_question_blocks_from_page(lines, p):
         blocks = []
         current_block = None
+        last_q_num = 0
         for line in lines:
             match = re.match(r"^\s*(\d+)\.\s*(.*)", line)
             if match:
-                if current_block:
-                    blocks.append(current_block)
-                current_block = {
-                    "num": int(match.group(1)),
-                    "lines": [match.group(2)],
-                    "page": p
-                }
+                num = int(match.group(1))
+                is_valid_next = False
+                if last_q_num == 0:
+                    is_valid_next = True
+                elif last_q_num < num <= last_q_num + 10:
+                    is_valid_next = True
+                    
+                if is_valid_next:
+                    if current_block:
+                        blocks.append(current_block)
+                    current_block = {
+                        "num": num,
+                        "lines": [match.group(2)],
+                        "page": p
+                    }
+                    last_q_num = num
+                else:
+                    if current_block:
+                        current_block["lines"].append(line)
             else:
                 if current_block:
                     current_block["lines"].append(line)

@@ -93,9 +93,25 @@ export default function PracticeRoomPage() {
     logAptitudePracticeAttempt
   } = useProgressStore();
 
-  // Filter questions for this topic and ensure they pass the strict validation
-  const questions = aptitudeQuestions.filter((q) => q.topic === topicId && validateQuestion(q).valid);
-  const topicName = TOPIC_NAMES[topicId] || topicId.replace(/-/g, " ");
+  const [questions, setQuestions] = useState<typeof aptitudeQuestions>([]);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    let filtered = topicId === "all"
+      ? aptitudeQuestions.filter((q) => validateQuestion(q).valid)
+      : aptitudeQuestions.filter((q) => q.topic === topicId && validateQuestion(q).valid);
+
+    if (topicId === "all") {
+      // Randomize the order of questions
+      filtered = [...filtered].sort(() => Math.random() - 0.5);
+    }
+    setQuestions(filtered);
+  }, [topicId]);
+
+  const topicName = topicId === "all" 
+    ? "Full Aptitude" 
+    : (TOPIC_NAMES[topicId] || topicId.replace(/-/g, " "));
 
   // Room states
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -108,6 +124,22 @@ export default function PracticeRoomPage() {
   useEffect(() => {
     setQuestionStartTime(Date.now());
   }, [currentIdx]);
+
+  if (!mounted) {
+    return (
+      <AppShell title={topicId === "all" ? "Practice: Full Aptitude" : `Practice: ${topicName}`} subtitle="Untimed practice room">
+        <div className="max-w-md mx-auto mt-12 text-center">
+          <GlassCard className="p-8 border-white/5" hover={false}>
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-cyan-500 mx-auto mb-4" />
+            <h3 className="text-lg font-bold text-white mb-2">Loading Questions...</h3>
+            <p className="text-sm text-zinc-400 mb-6">
+              Preparing your practice room. Please wait.
+            </p>
+          </GlassCard>
+        </div>
+      </AppShell>
+    );
+  }
 
   if (questions.length === 0) {
     return (
@@ -148,7 +180,7 @@ export default function PracticeRoomPage() {
 
     logAptitudePracticeAttempt({
       id: `prac-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
-      topicId,
+      topicId: currentQuestion.topic,
       questionId: currentQuestion.id,
       isCorrect,
       timeSpentSec,
@@ -166,7 +198,7 @@ export default function PracticeRoomPage() {
     const timeSpentSec = Math.max(1, Math.round((Date.now() - questionStartTime) / 1000));
     logAptitudePracticeAttempt({
       id: `prac-reveal-${Date.now()}`,
-      topicId,
+      topicId: currentQuestion.topic,
       questionId: currentQuestion.id,
       isCorrect: false,
       timeSpentSec,
@@ -221,16 +253,19 @@ export default function PracticeRoomPage() {
             </button>
           </Link>
           <div>
-            <h1 className="text-xl font-bold text-white">{topicName} Practice Room</h1>
+            <h1 className="text-xl font-bold text-white">{topicId === "all" ? "Full Aptitude" : topicName} Practice Room</h1>
             <p className="text-xs text-zinc-400 mt-0.5">Untimed learning mode · Instant feedback</p>
           </div>
         </div>
 
         {/* PROGRESS METRIC */}
         <div className="flex items-center space-x-3 bg-white/5 border border-white/5 rounded-xl px-4 py-2 self-start md:self-auto">
-          <span className="text-xs text-zinc-400">Solved in Topic:</span>
+          <span className="text-xs text-zinc-400">{topicId === "all" ? "Overall Solved:" : "Solved in Topic:"}</span>
           <span className="text-sm font-bold text-cyan-400 font-mono">
-            {new Set(aptitudePracticeAttempts.filter(a => a.topicId === topicId && a.isCorrect).map(a => a.questionId)).size} / {questions.length}
+            {topicId === "all"
+              ? `${new Set(aptitudePracticeAttempts.filter(a => a.isCorrect).map(a => a.questionId)).size} / ${questions.length}`
+              : `${new Set(aptitudePracticeAttempts.filter(a => a.topicId === topicId && a.isCorrect).map(a => a.questionId)).size} / ${questions.length}`
+            }
           </span>
         </div>
       </div>
@@ -284,10 +319,36 @@ export default function PracticeRoomPage() {
               </div>
             </div>
 
-            {/* Question Text */}
-            <div className="text-zinc-100 text-base leading-relaxed mb-8 whitespace-pre-line font-medium">
-              <MathRenderer text={currentQuestion.question} />
-            </div>
+            {/* Question Text & Image (Hybrid Rendering Engine) */}
+            {(!currentQuestion.renderMode || currentQuestion.renderMode === 'TEXT' || currentQuestion.renderMode === 'HYBRID') && (
+              <div className="text-zinc-100 text-base leading-relaxed mb-8 whitespace-pre-line font-medium">
+                <MathRenderer text={currentQuestion.questionText || currentQuestion.question} />
+              </div>
+            )}
+            
+            {(currentQuestion.renderMode === 'IMAGE' || currentQuestion.renderMode === 'HYBRID') && (
+              <div className="space-y-4 mb-8">
+                {currentQuestion.questionImage ? (
+                  <img 
+                    src={currentQuestion.questionImage} 
+                    alt="Question visual" 
+                    className="max-w-full rounded-xl border border-white/10"
+                  />
+                ) : (
+                  <div className="p-8 border border-dashed border-rose-500/30 bg-rose-500/5 rounded-xl flex flex-col items-center justify-center text-center">
+                    <span className="text-rose-400 font-bold mb-2">Original Image Unavailable</span>
+                    <span className="text-zinc-400 text-sm">The visual content for this question is currently being processed.</span>
+                  </div>
+                )}
+                {currentQuestion.optionsImage && (
+                  <img 
+                    src={currentQuestion.optionsImage} 
+                    alt="Options visual" 
+                    className="max-w-full rounded-xl border border-white/10"
+                  />
+                )}
+              </div>
+            )}
 
             {/* Visual Assets Reconstruction Rendering */}
             {currentQuestion.tableData && (
@@ -420,7 +481,17 @@ export default function PracticeRoomPage() {
                       }`}>
                         {letter}
                       </span>
-                      <span className="text-sm font-medium">{option}</span>
+                      {currentQuestion.optionImages ? (
+                        <img 
+                          src={currentQuestion.optionImages[letter as keyof typeof currentQuestion.optionImages]} 
+                          className="max-h-8 rounded object-contain border border-white/5 bg-white/5" 
+                          alt={`Option ${letter}`} 
+                        />
+                      ) : currentQuestion.optionsImage ? (
+                        <span className="text-sm font-medium">Option {letter}</span>
+                      ) : (
+                        <span className="text-sm font-medium">{option}</span>
+                      )}
                     </span>
                     {isAnswerChecked && option === currentQuestion.answer && (
                       <CheckCircle className="h-5 w-5 text-emerald-400 shrink-0" />

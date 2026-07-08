@@ -210,6 +210,104 @@ function parseShradhaFormat(
   return allRows;
 }
 
+// ─── Arsh-format detection ───────────────────────────────────────────────────
+
+function isArshFormat(workbook: XLSX.WorkBook): boolean {
+  const firstSheetName = workbook.SheetNames[0];
+  if (!firstSheetName) return false;
+  const sheet = workbook.Sheets[firstSheetName];
+  const cellA1 = sheet["A1"]?.v || "";
+  const cellB1 = sheet["B1"]?.v || "";
+  const strA1 = String(cellA1).toLowerCase();
+  const strB1 = String(cellB1).toLowerCase();
+  return strA1.includes("crackyourinternship") || strB1.includes("arsh") || strB1.includes("arshgoyal");
+}
+
+function parseArshFormat(workbook: XLSX.WorkBook, filePath: string): SheetRow[] {
+  const allRows: SheetRow[] = [];
+  const baseName = path.basename(filePath);
+
+  for (const sheetName of workbook.SheetNames) {
+    const sheet = workbook.Sheets[sheetName];
+    if (!sheet) continue;
+
+    const rawRows = XLSX.utils.sheet_to_json<any[]>(sheet, { header: 1, defval: "" });
+    if (rawRows.length === 0) continue;
+
+    const companiesMap: Record<number, string> = {};
+    let headerRowIdx = -1;
+    for (let i = 0; i < Math.min(20, rawRows.length); i++) {
+      const row = rawRows[i];
+      if (row && row.includes("Status")) {
+        headerRowIdx = i;
+        row.forEach((cell, cIdx) => {
+          const sCell = String(cell || "").trim();
+          if (sCell && sCell !== "Status" && sCell !== "Problem Link" && sCell !== "Difficulty") {
+            companiesMap[cIdx] = sCell;
+          }
+        });
+        break;
+      }
+    }
+
+    if (headerRowIdx === -1) {
+      continue;
+    }
+
+    let currentTopic = "General";
+
+    for (let rowIdx = headerRowIdx + 1; rowIdx < rawRows.length; rowIdx++) {
+      const row = rawRows[rowIdx];
+      if (!row || !Array.isArray(row)) continue;
+
+      const colA = String(row[0] || "").trim();
+      const colB = String(row[1] || "").trim();
+
+      if (!colA && colB) {
+        if (!colB.startsWith("http") && !colB.includes("Follow on") && !colB.includes("Challenge")) {
+          currentTopic = colB;
+        }
+        continue;
+      }
+
+      if (colA && colB.startsWith("http")) {
+        const companies: string[] = [];
+        Object.keys(companiesMap).forEach((cIdxStr) => {
+          const cIdx = parseInt(cIdxStr, 10);
+          const cellVal = String(row[cIdx] || "").trim();
+          if (cellVal) {
+            companies.push(companiesMap[cIdx]);
+          }
+        });
+
+        let title = "";
+        const segments = colB.split("/").filter(Boolean);
+        const slug = segments[segments.length - 1] || "";
+        title = slug
+          .replace(/-/g, " ")
+          .split(" ")
+          .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+          .join(" ");
+
+        const normalized: SheetRow = {
+          topic: currentTopic,
+          difficulty: colA,
+          url: colB,
+          title: title,
+          companies: companies.join("|"),
+          _sheet_name: sheetName,
+          _file_name: baseName,
+        };
+
+        allRows.push(normalized);
+      }
+    }
+  }
+
+  return allRows;
+}
+
+
 // ─── Header-based parser (for structured CSV/XLSX with column headers) ────────
 
 function cleanGoogleRedirectUrl(url: string | undefined): string | undefined {
@@ -374,8 +472,13 @@ export function parseSheetFile(filePath: string | null): SheetRow[] {
         });
 
   // Auto-detect format
-  if (ext !== ".csv" && isShradhaFormat(workbook)) {
-    return parseShradhaFormat(workbook, filePath);
+  if (ext !== ".csv") {
+    if (isArshFormat(workbook)) {
+      return parseArshFormat(workbook, filePath);
+    }
+    if (isShradhaFormat(workbook)) {
+      return parseShradhaFormat(workbook, filePath);
+    }
   }
 
   return parseHeaderFormat(workbook, filePath);
@@ -461,6 +564,8 @@ export function loadAllQuestions(): SheetRow[] {
     "dsa-sheet.xlsx",
     "striver sheet.xlsx",
     "striver-sheet.xlsx",
+    "dsa sheet by arsh (45-60 days plan).xlsx",
+    "dsa-sheet-by-arsh.xlsx",
   ]);
 
   for (const root of roots) {

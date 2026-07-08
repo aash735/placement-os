@@ -1,0 +1,998 @@
+{
+  "generatedAt": "2026-07-04T08:21:04.697Z",
+  "pdfFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
+  "pdfSizeMB": 12.41,
+  "summary": {
+    "totalPages": 961,
+    "machineReadablePages": 957,
+    "highReadabilityPages": 634,
+    "mediumReadabilityPages": 323,
+    "lowReadabilityPages": 4,
+    "blankOrMinimalPages": 6,
+    "estimatedImageOnlyPages": 4,
+    "totalPUACharacters": 46630
+  },
+  "pageTypeDistribution": {
+    "THEORY": 6,
+    "CHAPTER_HEADER": 3,
+    "DATA_INTERPRETATION": 133,
+    "QUESTION": 542,
+    "BLANK": 4,
+    "MINIMAL_TEXT": 2,
+    "SOLUTION": 237,
+    "ANSWER_KEY": 34
+  },
+  "readabilityDistribution": {
+    "HIGH": 634,
+    "MEDIUM": 323,
+    "LOW": 4
+  },
+  "contentBreakdown": {
+    "questionPages": 542,
+    "solutionPages": 237,
+    "theoryPages": 6,
+    "dataInterpretationPages": 133,
+    "answerKeyPages": 34,
+    "chapterHeaderPages": 3,
+    "mixedPages": 0,
+    "unknownPages": 0
+  },
+  "estimatedCounts": {
+    "totalEstimatedQuestions": 8885,
+    "estimatedDIQuestions": 324,
+    "estimatedArithmeticQuestions": 8561
+  },
+  "chapterCoverage": {
+    "totalChaptersInIndex": 39,
+    "chaptersWithContent": 39,
+    "chaptersMissing": []
+  },
+  "unmappedPages": {
+    "count": 14,
+    "description": "Pages in the PDF not covered by any chapter in the book index (e.g., preface, TOC, section dividers)",
+    "gapRanges": [
+      {
+        "start": 1,
+        "end": 2,
+        "count": 2
+      },
+      {
+        "start": 884,
+        "end": 886,
+        "count": 3
+      },
+      {
+        "start": 953,
+        "end": 961,
+        "count": 9
+      }
+    ]
+  },
+  "chapterDetails": [
+    {
+      "index": 1,
+      "name": "Number System",
+      "section": "Arithmetical Ability",
+      "pageRange": "3-50",
+      "expectedPages": 48,
+      "processedPages": 48,
+      "questionPages": 24,
+      "solutionPages": 12,
+      "readabilityBreakdown": {
+        "high": 44,
+        "medium": 4,
+        "low": 0
+      },
+      "estimatedQuestions": 552,
+      "averageCharsPerPage": 2891,
+      "puaCharacters": 373,
+      "status": "OK"
+    },
+    {
+      "index": 2,
+      "name": "H.C.F. and L.C.M. of Numbers",
+      "section": "Arithmetical Ability",
+      "pageRange": "51-68",
+      "expectedPages": 18,
+      "processedPages": 18,
+      "questionPages": 13,
+      "solutionPages": 5,
+      "readabilityBreakdown": {
+        "high": 17,
+        "medium": 1,
+        "low": 0
+      },
+      "estimatedQuestions": 236,
+      "averageCharsPerPage": 3250,
+      "puaCharacters": 92,
+      "status": "OK"
+    },
+    {
+      "index": 3,
+      "name": "Decimal Fractions",
+      "section": "Arithmetical Ability",
+      "pageRange": "69-94",
+      "expectedPages": 26,
+      "processedPages": 26,
+      "questionPages": 15,
+      "solutionPages": 5,
+      "readabilityBreakdown": {
+        "high": 26,
+        "medium": 0,
+        "low": 0
+      },
+      "estimatedQuestions": 355,
+      "averageCharsPerPage": 2728,
+      "puaCharacters": 359,
+      "status": "OK"
+    },
+    {
+      "index": 4,
+      "name": "Simplification",
+      "section": "Arithmetical Ability",
+      "pageRange": "95-179",
+      "expectedPages": 85,
+      "processedPages": 85,
+      "questionPages": 55,
+      "solutionPages": 16,
+      "readabilityBreakdown": {
+        "high": 50,
+        "medium": 35,
+        "low": 0
+      },
+      "estimatedQuestions": 1036,
+      "averageCharsPerPage": 3090,
+      "puaCharacters": 5242,
+      "status": "OK"
+    },
+    {
+      "index": 5,
+      "name": "Square Roots and Cube Roots",
+      "section": "Arithmetical Ability",
+      "pageRange": "180-205",
+      "expectedPages": 26,
+      "processedPages": 26,
+      "questionPages": 17,
+      "solutionPages": 7,
+      "readabilityBreakdown": {
+        "high": 24,
+        "medium": 2,
+        "low": 0
+      },
+      "estimatedQuestions": 286,
+      "averageCharsPerPage": 2527,
+      "puaCharacters": 535,
+      "status": "OK"
+    },
+    {
+      "index": 6,
+      "name": "Average",
+      "section": "Arithmetical Ability",
+      "pageRange": "206-239",
+      "expectedPages": 34,
+      "processedPages": 34,
+      "questionPages": 25,
+      "solutionPages": 6,
+      "readabilityBreakdown": {
+        "high": 28,
+        "medium": 6,
+        "low": 0
+      },
+      "estimatedQuestions": 448,
+      "averageCharsPerPage": 3216,
+      "puaCharacters": 1045,
+      "status": "OK"
+    },
+    {
+      "index": 7,
+      "name": "Problems on Numbers",
+      "section": "Arithmetical Ability",
+      "pageRange": "240-263",
+      "expectedPages": 24,
+      "processedPages": 24,
+      "questionPages": 14,
+      "solutionPages": 8,
+      "readabilityBreakdown": {
+        "high": 23,
+        "medium": 1,
+        "low": 0
+      },
+      "estimatedQuestions": 222,
+      "averageCharsPerPage": 3080,
+      "puaCharacters": 222,
+      "status": "OK"
+    },
+    {
+      "index": 8,
+      "name": "Problems on Ages",
+      "section": "Arithmetical Ability",
+      "pageRange": "264-277",
+      "expectedPages": 14,
+      "processedPages": 14,
+      "questionPages": 9,
+      "solutionPages": 5,
+      "readabilityBreakdown": {
+        "high": 14,
+        "medium": 0,
+        "low": 0
+      },
+      "estimatedQuestions": 136,
+      "averageCharsPerPage": 3429,
+      "puaCharacters": 78,
+      "status": "OK"
+    },
+    {
+      "index": 9,
+      "name": "Surds and Indices",
+      "section": "Arithmetical Ability",
+      "pageRange": "278-296",
+      "expectedPages": 19,
+      "processedPages": 19,
+      "questionPages": 11,
+      "solutionPages": 7,
+      "readabilityBreakdown": {
+        "high": 11,
+        "medium": 8,
+        "low": 0
+      },
+      "estimatedQuestions": 165,
+      "averageCharsPerPage": 2597,
+      "puaCharacters": 856,
+      "status": "OK"
+    },
+    {
+      "index": 10,
+      "name": "Logarithms",
+      "section": "Arithmetical Ability",
+      "pageRange": "297-307",
+      "expectedPages": 11,
+      "processedPages": 11,
+      "questionPages": 8,
+      "solutionPages": 2,
+      "readabilityBreakdown": {
+        "high": 3,
+        "medium": 8,
+        "low": 0
+      },
+      "estimatedQuestions": 143,
+      "averageCharsPerPage": 3116,
+      "puaCharacters": 1311,
+      "status": "OK"
+    },
+    {
+      "index": 11,
+      "name": "Percentage",
+      "section": "Arithmetical Ability",
+      "pageRange": "308-373",
+      "expectedPages": 66,
+      "processedPages": 66,
+      "questionPages": 47,
+      "solutionPages": 13,
+      "readabilityBreakdown": {
+        "high": 32,
+        "medium": 33,
+        "low": 1
+      },
+      "estimatedQuestions": 819,
+      "averageCharsPerPage": 3205,
+      "puaCharacters": 4980,
+      "status": "OK"
+    },
+    {
+      "index": 12,
+      "name": "Profit and Loss",
+      "section": "Arithmetical Ability",
+      "pageRange": "374-425",
+      "expectedPages": 52,
+      "processedPages": 52,
+      "questionPages": 31,
+      "solutionPages": 9,
+      "readabilityBreakdown": {
+        "high": 27,
+        "medium": 25,
+        "low": 0
+      },
+      "estimatedQuestions": 478,
+      "averageCharsPerPage": 3369,
+      "puaCharacters": 3531,
+      "status": "OK"
+    },
+    {
+      "index": 13,
+      "name": "Ratio and Proportion",
+      "section": "Arithmetical Ability",
+      "pageRange": "426-475",
+      "expectedPages": 50,
+      "processedPages": 50,
+      "questionPages": 25,
+      "solutionPages": 16,
+      "readabilityBreakdown": {
+        "high": 36,
+        "medium": 14,
+        "low": 0
+      },
+      "estimatedQuestions": 426,
+      "averageCharsPerPage": 3071,
+      "puaCharacters": 2102,
+      "status": "OK"
+    },
+    {
+      "index": 14,
+      "name": "Partnership",
+      "section": "Arithmetical Ability",
+      "pageRange": "476-492",
+      "expectedPages": 17,
+      "processedPages": 17,
+      "questionPages": 8,
+      "solutionPages": 7,
+      "readabilityBreakdown": {
+        "high": 10,
+        "medium": 7,
+        "low": 0
+      },
+      "estimatedQuestions": 93,
+      "averageCharsPerPage": 3265,
+      "puaCharacters": 913,
+      "status": "OK"
+    },
+    {
+      "index": 15,
+      "name": "Chain Rule",
+      "section": "Arithmetical Ability",
+      "pageRange": "493-509",
+      "expectedPages": 17,
+      "processedPages": 17,
+      "questionPages": 6,
+      "solutionPages": 7,
+      "readabilityBreakdown": {
+        "high": 12,
+        "medium": 5,
+        "low": 0
+      },
+      "estimatedQuestions": 71,
+      "averageCharsPerPage": 3158,
+      "puaCharacters": 832,
+      "status": "OK"
+    },
+    {
+      "index": 16,
+      "name": "Pipes and Cisterns",
+      "section": "Arithmetical Ability",
+      "pageRange": "510-525",
+      "expectedPages": 16,
+      "processedPages": 16,
+      "questionPages": 7,
+      "solutionPages": 5,
+      "readabilityBreakdown": {
+        "high": 10,
+        "medium": 6,
+        "low": 0
+      },
+      "estimatedQuestions": 85,
+      "averageCharsPerPage": 3313,
+      "puaCharacters": 778,
+      "status": "OK"
+    },
+    {
+      "index": 17,
+      "name": "Time and Work",
+      "section": "Arithmetical Ability",
+      "pageRange": "526-561",
+      "expectedPages": 36,
+      "processedPages": 36,
+      "questionPages": 19,
+      "solutionPages": 7,
+      "readabilityBreakdown": {
+        "high": 17,
+        "medium": 19,
+        "low": 0
+      },
+      "estimatedQuestions": 233,
+      "averageCharsPerPage": 3100,
+      "puaCharacters": 2383,
+      "status": "OK"
+    },
+    {
+      "index": 18,
+      "name": "Time and Distance",
+      "section": "Arithmetical Ability",
+      "pageRange": "562-599",
+      "expectedPages": 38,
+      "processedPages": 38,
+      "questionPages": 25,
+      "solutionPages": 10,
+      "readabilityBreakdown": {
+        "high": 24,
+        "medium": 14,
+        "low": 0
+      },
+      "estimatedQuestions": 347,
+      "averageCharsPerPage": 3334,
+      "puaCharacters": 1829,
+      "status": "OK"
+    },
+    {
+      "index": 19,
+      "name": "Boats and Streams",
+      "section": "Arithmetical Ability",
+      "pageRange": "600-611",
+      "expectedPages": 12,
+      "processedPages": 12,
+      "questionPages": 7,
+      "solutionPages": 5,
+      "readabilityBreakdown": {
+        "high": 8,
+        "medium": 4,
+        "low": 0
+      },
+      "estimatedQuestions": 70,
+      "averageCharsPerPage": 2998,
+      "puaCharacters": 582,
+      "status": "OK"
+    },
+    {
+      "index": 20,
+      "name": "Problems on Trains",
+      "section": "Arithmetical Ability",
+      "pageRange": "612-632",
+      "expectedPages": 21,
+      "processedPages": 21,
+      "questionPages": 11,
+      "solutionPages": 8,
+      "readabilityBreakdown": {
+        "high": 11,
+        "medium": 10,
+        "low": 0
+      },
+      "estimatedQuestions": 154,
+      "averageCharsPerPage": 3162,
+      "puaCharacters": 1251,
+      "status": "OK"
+    },
+    {
+      "index": 21,
+      "name": "Alligation or Mixture",
+      "section": "Arithmetical Ability",
+      "pageRange": "633-640",
+      "expectedPages": 8,
+      "processedPages": 8,
+      "questionPages": 5,
+      "solutionPages": 3,
+      "readabilityBreakdown": {
+        "high": 6,
+        "medium": 2,
+        "low": 0
+      },
+      "estimatedQuestions": 56,
+      "averageCharsPerPage": 3310,
+      "puaCharacters": 409,
+      "status": "OK"
+    },
+    {
+      "index": 22,
+      "name": "Simple Interest",
+      "section": "Arithmetical Ability",
+      "pageRange": "641-662",
+      "expectedPages": 22,
+      "processedPages": 22,
+      "questionPages": 12,
+      "solutionPages": 9,
+      "readabilityBreakdown": {
+        "high": 16,
+        "medium": 6,
+        "low": 0
+      },
+      "estimatedQuestions": 154,
+      "averageCharsPerPage": 2712,
+      "puaCharacters": 774,
+      "status": "OK"
+    },
+    {
+      "index": 23,
+      "name": "Compound Interest",
+      "section": "Arithmetical Ability",
+      "pageRange": "663-687",
+      "expectedPages": 25,
+      "processedPages": 25,
+      "questionPages": 16,
+      "solutionPages": 8,
+      "readabilityBreakdown": {
+        "high": 7,
+        "medium": 16,
+        "low": 2
+      },
+      "estimatedQuestions": 216,
+      "averageCharsPerPage": 3047,
+      "puaCharacters": 3452,
+      "status": "OK"
+    },
+    {
+      "index": 24,
+      "name": "Area",
+      "section": "Arithmetical Ability",
+      "pageRange": "688-765",
+      "expectedPages": 78,
+      "processedPages": 78,
+      "questionPages": 42,
+      "solutionPages": 18,
+      "readabilityBreakdown": {
+        "high": 39,
+        "medium": 38,
+        "low": 1
+      },
+      "estimatedQuestions": 603,
+      "averageCharsPerPage": 3145,
+      "puaCharacters": 4947,
+      "status": "OK"
+    },
+    {
+      "index": 25,
+      "name": "Volume and Surface Area",
+      "section": "Arithmetical Ability",
+      "pageRange": "766-813",
+      "expectedPages": 48,
+      "processedPages": 48,
+      "questionPages": 32,
+      "solutionPages": 12,
+      "readabilityBreakdown": {
+        "high": 32,
+        "medium": 16,
+        "low": 0
+      },
+      "estimatedQuestions": 571,
+      "averageCharsPerPage": 3492,
+      "puaCharacters": 2385,
+      "status": "OK"
+    },
+    {
+      "index": 26,
+      "name": "Races and Games of Skill",
+      "section": "Arithmetical Ability",
+      "pageRange": "814-818",
+      "expectedPages": 5,
+      "processedPages": 5,
+      "questionPages": 5,
+      "solutionPages": 0,
+      "readabilityBreakdown": {
+        "high": 1,
+        "medium": 4,
+        "low": 0
+      },
+      "estimatedQuestions": 75,
+      "averageCharsPerPage": 3311,
+      "puaCharacters": 529,
+      "status": "OK"
+    },
+    {
+      "index": 27,
+      "name": "Calendar",
+      "section": "Arithmetical Ability",
+      "pageRange": "819-822",
+      "expectedPages": 4,
+      "processedPages": 4,
+      "questionPages": 2,
+      "solutionPages": 2,
+      "readabilityBreakdown": {
+        "high": 3,
+        "medium": 1,
+        "low": 0
+      },
+      "estimatedQuestions": 25,
+      "averageCharsPerPage": 3045,
+      "puaCharacters": 100,
+      "status": "OK"
+    },
+    {
+      "index": 28,
+      "name": "Clocks",
+      "section": "Arithmetical Ability",
+      "pageRange": "823-833",
+      "expectedPages": 11,
+      "processedPages": 11,
+      "questionPages": 4,
+      "solutionPages": 7,
+      "readabilityBreakdown": {
+        "high": 9,
+        "medium": 2,
+        "low": 0
+      },
+      "estimatedQuestions": 67,
+      "averageCharsPerPage": 2650,
+      "puaCharacters": 324,
+      "status": "OK"
+    },
+    {
+      "index": 29,
+      "name": "Stocks and Shares",
+      "section": "Arithmetical Ability",
+      "pageRange": "834-840",
+      "expectedPages": 7,
+      "processedPages": 7,
+      "questionPages": 4,
+      "solutionPages": 2,
+      "readabilityBreakdown": {
+        "high": 5,
+        "medium": 2,
+        "low": 0
+      },
+      "estimatedQuestions": 69,
+      "averageCharsPerPage": 3340,
+      "puaCharacters": 349,
+      "status": "OK"
+    },
+    {
+      "index": 30,
+      "name": "Permutations and Combinations",
+      "section": "Arithmetical Ability",
+      "pageRange": "841-849",
+      "expectedPages": 9,
+      "processedPages": 9,
+      "questionPages": 5,
+      "solutionPages": 3,
+      "readabilityBreakdown": {
+        "high": 4,
+        "medium": 5,
+        "low": 0
+      },
+      "estimatedQuestions": 70,
+      "averageCharsPerPage": 2751,
+      "puaCharacters": 481,
+      "status": "OK"
+    },
+    {
+      "index": 31,
+      "name": "Probability",
+      "section": "Arithmetical Ability",
+      "pageRange": "850-860",
+      "expectedPages": 11,
+      "processedPages": 11,
+      "questionPages": 5,
+      "solutionPages": 4,
+      "readabilityBreakdown": {
+        "high": 11,
+        "medium": 0,
+        "low": 0
+      },
+      "estimatedQuestions": 83,
+      "averageCharsPerPage": 2855,
+      "puaCharacters": 142,
+      "status": "OK"
+    },
+    {
+      "index": 32,
+      "name": "True Discount",
+      "section": "Arithmetical Ability",
+      "pageRange": "861-865",
+      "expectedPages": 5,
+      "processedPages": 5,
+      "questionPages": 3,
+      "solutionPages": 1,
+      "readabilityBreakdown": {
+        "high": 5,
+        "medium": 0,
+        "low": 0
+      },
+      "estimatedQuestions": 36,
+      "averageCharsPerPage": 2622,
+      "puaCharacters": 0,
+      "status": "OK"
+    },
+    {
+      "index": 33,
+      "name": "Banker's Discount",
+      "section": "Arithmetical Ability",
+      "pageRange": "866-869",
+      "expectedPages": 4,
+      "processedPages": 4,
+      "questionPages": 4,
+      "solutionPages": 0,
+      "readabilityBreakdown": {
+        "high": 3,
+        "medium": 1,
+        "low": 0
+      },
+      "estimatedQuestions": 39,
+      "averageCharsPerPage": 2894,
+      "puaCharacters": 178,
+      "status": "OK"
+    },
+    {
+      "index": 34,
+      "name": "Heights and Distances",
+      "section": "Arithmetical Ability",
+      "pageRange": "870-876",
+      "expectedPages": 7,
+      "processedPages": 7,
+      "questionPages": 3,
+      "solutionPages": 4,
+      "readabilityBreakdown": {
+        "high": 3,
+        "medium": 4,
+        "low": 0
+      },
+      "estimatedQuestions": 39,
+      "averageCharsPerPage": 2248,
+      "puaCharacters": 412,
+      "status": "OK"
+    },
+    {
+      "index": 35,
+      "name": "Odd Man Out and Series",
+      "section": "Arithmetical Ability",
+      "pageRange": "877-883",
+      "expectedPages": 7,
+      "processedPages": 7,
+      "questionPages": 2,
+      "solutionPages": 4,
+      "readabilityBreakdown": {
+        "high": 6,
+        "medium": 1,
+        "low": 0
+      },
+      "estimatedQuestions": 28,
+      "averageCharsPerPage": 2219,
+      "puaCharacters": 192,
+      "status": "OK"
+    },
+    {
+      "index": 36,
+      "name": "Tabulation",
+      "section": "Data Interpretation",
+      "pageRange": "887-904",
+      "expectedPages": 18,
+      "processedPages": 18,
+      "questionPages": 7,
+      "solutionPages": 0,
+      "readabilityBreakdown": {
+        "high": 12,
+        "medium": 6,
+        "low": 0
+      },
+      "estimatedQuestions": 209,
+      "averageCharsPerPage": 2367,
+      "puaCharacters": 406,
+      "status": "OK"
+    },
+    {
+      "index": 37,
+      "name": "Bar Graphs",
+      "section": "Data Interpretation",
+      "pageRange": "905-922",
+      "expectedPages": 18,
+      "processedPages": 18,
+      "questionPages": 4,
+      "solutionPages": 0,
+      "readabilityBreakdown": {
+        "high": 12,
+        "medium": 6,
+        "low": 0
+      },
+      "estimatedQuestions": 60,
+      "averageCharsPerPage": 2599,
+      "puaCharacters": 781,
+      "status": "OK"
+    },
+    {
+      "index": 38,
+      "name": "Pie Charts",
+      "section": "Data Interpretation",
+      "pageRange": "923-936",
+      "expectedPages": 14,
+      "processedPages": 14,
+      "questionPages": 2,
+      "solutionPages": 0,
+      "readabilityBreakdown": {
+        "high": 9,
+        "medium": 5,
+        "low": 0
+      },
+      "estimatedQuestions": 29,
+      "averageCharsPerPage": 2341,
+      "puaCharacters": 578,
+      "status": "OK"
+    },
+    {
+      "index": 39,
+      "name": "Line Graphs",
+      "section": "Data Interpretation",
+      "pageRange": "937-952",
+      "expectedPages": 16,
+      "processedPages": 16,
+      "questionPages": 2,
+      "solutionPages": 0,
+      "readabilityBreakdown": {
+        "high": 11,
+        "medium": 5,
+        "low": 0
+      },
+      "estimatedQuestions": 26,
+      "averageCharsPerPage": 2478,
+      "puaCharacters": 794,
+      "status": "OK"
+    }
+  ],
+  "qualityAssessment": {
+    "overallReadabilityScore": 86,
+    "extractionFeasibility": "HIGH",
+    "recommendedApproach": "Text extraction with selective image fallback for low-confidence pages"
+  },
+  "pageSamples": {
+    "THEORY": [
+      {
+        "pageNumber": 1,
+        "charCount": 439,
+        "wordCount": 66,
+        "readability": "HIGH",
+        "textSample": "ANTITATIVE APTIT DE FOR COMPETITIVE EXAMINATIONS FULLY SOLVED AS PER NEW EXAMINATION PATTERN An ideal book for: Bank PO, SBI-PO, IBPS, RBI Exams MBA, MAT, CMAT, GMAT, CAT, IIFT, IGNOU SSC Combined Pre"
+      },
+      {
+        "pageNumber": 3,
+        "charCount": 1100,
+        "wordCount": 179,
+        "readability": "HIGH",
+        "textSample": "Disclaimer : While the author of this book have made every effort to avoid any mistakes or omission and have used their skill, expertise and knowledge to the best of their capacity to provide accurate"
+      },
+      {
+        "pageNumber": 383,
+        "charCount": 1745,
+        "wordCount": 415,
+        "readability": "MEDIUM",
+        "textSample": "374 12 \tProfit and Loss IMPORTANT FACTS AND FORMULAE Cost Price: The price at which an article is purchased, is called its cost price, abbreviated as C.P. Selling Price: The price at which an article "
+      }
+    ],
+    "CHAPTER_HEADER": [
+      {
+        "pageNumber": 2,
+        "charCount": 96,
+        "wordCount": 12,
+        "readability": "MEDIUM",
+        "textSample": "For Competitive Examinations (Fully Solved) Quantitative Aptitude As per New Examination Pattern"
+      },
+      {
+        "pageNumber": 4,
+        "charCount": 509,
+        "wordCount": 84,
+        "readability": "HIGH",
+        "textSample": "For Competitive Examinations (Fully Solved) S Chand And Company Limited (AN ISO 9001 : 2008 COMPANY) RAM NAGAR, NEW DELHI - 110 055 An ideal book for : u \tBank PO, SBI-PO, IBPS, RBI Exams u \tMBA, MAT,"
+      },
+      {
+        "pageNumber": 7,
+        "charCount": 472,
+        "wordCount": 72,
+        "readability": "HIGH",
+        "textSample": "Salient Features of the Book u \tA whole lot of objective-type questions, with their solutions by short-cut methods. u \tA full coverage of every topic via fully solved examples given at the beginning o"
+      }
+    ],
+    "DATA_INTERPRETATION": [
+      {
+        "pageNumber": 5,
+        "charCount": 3486,
+        "wordCount": 447,
+        "readability": "HIGH",
+        "textSample": "empowering minds P U B L I S H I N G S. CHAND Branches : Ahmedabad \t: \tPh: 27541965, 27542369, ahmedabad@schandpublishing.com Bengaluru \t: \tPh: 22268048, 22354008, bangalore@schandpublishing.com Bhopa"
+      },
+      {
+        "pageNumber": 8,
+        "charCount": 1261,
+        "wordCount": 185,
+        "readability": "HIGH",
+        "textSample": "Contents SECTION–I : ARITHMETICAL ABILITY 1–883 1. \tNumber System \t3–50 2. \tH.C.F. and L.C.M. of Numbers \t51–68 3. \tDecimal Fractions \t69–94 4. \tSimplification \t95–179 5. \tSquare Roots and Cube Roots "
+      },
+      {
+        "pageNumber": 12,
+        "charCount": 2315,
+        "wordCount": 463,
+        "readability": "HIGH",
+        "textSample": "1 Number System FUNDAMENTAL CONCEPTS I. Numbers In Hindu-Arabic system, we have ten digits, namely 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. A number is denoted by a group of digits, called numeral. For denoti"
+      }
+    ],
+    "QUESTION": [
+      {
+        "pageNumber": 6,
+        "charCount": 1553,
+        "wordCount": 243,
+        "readability": "HIGH",
+        "textSample": "Preface to the Revised Edition Ever since its release in 1989, Quantitative Aptitude has come to acquire a special place of respect and acceptance among students and aspirants appearing for a wide gam"
+      },
+      {
+        "pageNumber": 13,
+        "charCount": 3051,
+        "wordCount": 621,
+        "readability": "HIGH",
+        "textSample": "4 \tQUANTITATIVE APTITUDE 3. Integers: All counting numbers, zero and negatives of counting numbers, form the set of integers. Thus, ..........., – 3, – 2, – 1, 0, 1, 2, 3, ........... are all integers"
+      },
+      {
+        "pageNumber": 15,
+        "charCount": 3291,
+        "wordCount": 703,
+        "readability": "HIGH",
+        "textSample": "6 \tQUANTITATIVE APTITUDE Ex. (i) \tIn the number 16789352, the number formed by last 3 digits, namely 352 is divisible by 8. ∴ 16789352 is divisible by 8. (ii) In the number 576484, the number formed b"
+      }
+    ],
+    "BLANK": [
+      {
+        "pageNumber": 9,
+        "charCount": 0,
+        "wordCount": 0,
+        "readability": "MEDIUM",
+        "textSample": ""
+      },
+      {
+        "pageNumber": 11,
+        "charCount": 0,
+        "wordCount": 0,
+        "readability": "MEDIUM",
+        "textSample": ""
+      },
+      {
+        "pageNumber": 893,
+        "charCount": 5,
+        "wordCount": 1,
+        "readability": "MEDIUM",
+        "textSample": "BLANK"
+      }
+    ],
+    "MINIMAL_TEXT": [
+      {
+        "pageNumber": 10,
+        "charCount": 30,
+        "wordCount": 3,
+        "readability": "MEDIUM",
+        "textSample": "Section–I Arithmetical Ability"
+      },
+      {
+        "pageNumber": 894,
+        "charCount": 30,
+        "wordCount": 3,
+        "readability": "MEDIUM",
+        "textSample": "Section–II Data Interpretation"
+      }
+    ],
+    "SOLUTION": [
+      {
+        "pageNumber": 14,
+        "charCount": 2576,
+        "wordCount": 605,
+        "readability": "HIGH",
+        "textSample": "NUMBER SYSTEM \t5 Ex. Test, which of the following are prime numbers? (i) 137 \t(ii) 173 \t(iii) 319 \t(iv) 437 \t(v) 811 Sol. (i) \tWe know that (12)2 > 137. Prime numbers less than 12 are 2, 3, 5, 7, 11. "
+      },
+      {
+        "pageNumber": 16,
+        "charCount": 2366,
+        "wordCount": 592,
+        "readability": "HIGH",
+        "textSample": "NUMBER SYSTEM \t7 Note: If a number is divisible by p as well as q, where p and q are co-primes, then the given number is divisible by pq. If p and q are not co-primes, then the given number need not b"
+      },
+      {
+        "pageNumber": 17,
+        "charCount": 2968,
+        "wordCount": 783,
+        "readability": "HIGH",
+        "textSample": "8 \tQUANTITATIVE APTITUDE Ex. 2. What value will replace the question mark in each of the following questions? (i)? – 1936248 = 1635773 \t(ii) 9587 –? = 7429 – 4358 Sol. (i) Let x – 1936248 = 1635773. T"
+      }
+    ],
+    "ANSWER_KEY": [
+      {
+        "pageNumber": 40,
+        "charCount": 3139,
+        "wordCount": 643,
+        "readability": "HIGH",
+        "textSample": "NUMBER SYSTEM \t31 372. The number of three digit numbers which are multiples of 9 are [CLAT, 2016] (a) 100 \t(b) 99 (c) 98 \t(d) 101 373. Two consecutive even positive integers, sum of the squares of wh"
+      },
+      {
+        "pageNumber": 41,
+        "charCount": 3154,
+        "wordCount": 643,
+        "readability": "HIGH",
+        "textSample": "32 \tQUANTITATIVE APTITUDE 61. (d) \t62. (d) \t63. (c) \t64. (a) \t65. (c) \t66. (a) \t67. (a) \t68. (c) \t69. (d) \t70. (b) 71. (a) \t72. (b) \t73. (c) \t74. (d) \t75. (c) \t76. (b) \t77. (c) \t78. (b) \t79. (d) \t80. "
+      },
+      {
+        "pageNumber": 71,
+        "charCount": 2260,
+        "wordCount": 534,
+        "readability": "HIGH",
+        "textSample": "62 \tQUANTITATIVE APTITUDE 1. (d) \t2. (b) \t3. (a) \t4. (c) \t5. (a) \t6. (b) \t7. (c) \t8. (a) \t9. (d) \t10. (a) 11. (a) \t12. (a) \t13. (c) \t14. (a) \t15. (a) \t16. (b) \t17. (d) \t18. (d) \t19. (d) \t20. (c) 21. ("
+      }
+    ]
+  }
+}

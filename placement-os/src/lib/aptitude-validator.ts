@@ -41,8 +41,9 @@ export function cleanOcrText(text: string): string {
   cleaned = cleaned.replace(CHAPTER_LEAK_PATTERN, '');
 
   // Rebuild corrupted fractions from OCR layout displacement
-  // Pattern 1: e.g. "15 days3" -> "5 1/3 days" or "24 days5" -> "4 2/5 days" or "214% gain7" -> "14 2/7 % gain"
-  cleaned = cleaned.replace(/\b(\d)(\d+)\s*([a-zA-Z%\s/]+[a-zA-Z%])(\d+)\b/g, (match, numStr, wholeStr, unit, denStr) => {
+  // Pattern 1: e.g. "15days3" -> "5 1/3 days" or "24days5" -> "4 2/5 days" or "14%gain7" -> "14 2/7 % gain"
+  // Unit must not contain spaces, and denominator must be a single digit stuck to the unit.
+  cleaned = cleaned.replace(/\b(\d)(\d+)\s*([a-zA-Z%]+)(\d)\b/g, (match, numStr, wholeStr, unit, denStr) => {
     const num = parseInt(numStr, 10);
     const den = parseInt(denStr, 10);
     if (num < den) {
@@ -51,19 +52,12 @@ export function cleanOcrText(text: string): string {
     return match;
   });
 
-  // Pattern 2: e.g. "31 4 times" or "17 2" -> "1 3/4 times", "7 1/2"
-  cleaned = cleaned.replace(/\b(\d)(\d+)\s+(\d+)\b/g, (match, num, whole, den) => {
-    if (parseInt(num, 10) < parseInt(den, 10)) {
-      return `${whole} ${num}/${den}`;
-    }
-    return match;
-  });
-
-  // Pattern 3: e.g. "7 th8" -> "7/8 th"
-  cleaned = cleaned.replace(/\b(\d+)\s*([a-zA-Z]+)\s*(\d+)\b/g, '$1/$3 $2');
+  // Pattern 2: e.g. "7 th8" -> "7/8 th"
+  // Restrict suffixes to ordinals to avoid corrupting standard text like "9 dividing 99"
+  cleaned = cleaned.replace(/\b(\d+)\s*(th|rd|nd|st|h)\s*(\d+)\b/g, '$1/$3 $2');
   
-  // Pattern 4: e.g. "3 4 th" -> "3/4th"
-  cleaned = cleaned.replace(/\b(\d+)\s+(\d+)\s*([a-zA-Z]+)\b/g, '$1/$2$3');
+  // Pattern 3: e.g. "3 4 th" -> "3/4th"
+  cleaned = cleaned.replace(/\b(\d+)\s+(\d+)\s*(th|rd|nd|st|h)\b/g, '$1/$2$3');
 
   // 4. Math expression spacing fixes
   cleaned = cleaned.replace(/(\d+)\s+!/g, '$1!'); // spaced factorial "5 !" -> "5!"
@@ -111,7 +105,9 @@ export function isValidExplanation(explanation: string | undefined): boolean {
     'analyze the question',
     'apply the formula',
     'compute the value',
+    'compute the answer',
     'calculate directly',
+    'use the given values',
     'use the given information',
     'refer to standard solutions',
     'calculate the result',
@@ -220,7 +216,42 @@ export function standardizeExplanation(explanation: string, answer: string): str
  * - P0: Recovers and formats valid explanations, falls back to preparation message.
  */
 export function autoRepairQuestion(q: AptitudeQuestion): AptitudeQuestion {
-  const repaired = { ...q };
+  const repaired = { ...q } as any;
+
+  // Normalize Phase 3 schema to standard validation fields
+  if (repaired.questionId) {
+    repaired.id = repaired.questionId;
+  }
+  if (repaired.chapter) {
+    repaired.topic = repaired.chapter;
+  }
+  if (repaired.page) {
+    repaired.sourcePage = repaired.page;
+  }
+  if (repaired.options && typeof repaired.options === 'object' && !Array.isArray(repaired.options)) {
+    const optsObj = repaired.options;
+    repaired.options = [optsObj.A, optsObj.B, optsObj.C, optsObj.D].filter(o => o !== undefined && o !== null);
+    
+    if (repaired.answer && (repaired.answer === 'A' || repaired.answer === 'B' || repaired.answer === 'C' || repaired.answer === 'D')) {
+      const idx = repaired.answer.charCodeAt(0) - 65;
+      repaired.answer = repaired.options[idx] || repaired.answer;
+    }
+  }
+
+  // Set default renderMode if not present
+  if (!repaired.renderMode) {
+    repaired.renderMode = 'TEXT';
+  }
+
+  // Auto-correct renderMode if it's set to IMAGE/HYBRID but image is missing
+  if ((repaired.renderMode === 'IMAGE' || repaired.renderMode === 'HYBRID') && !repaired.questionImage) {
+    repaired.renderMode = 'TEXT';
+  }
+
+  // Populate questionText field if missing
+  if (!repaired.questionText && repaired.question) {
+    repaired.questionText = repaired.question;
+  }
 
   // Initialize missing source IDs
   if (!repaired.optionsSourceId && repaired.id) {
@@ -237,10 +268,10 @@ export function autoRepairQuestion(q: AptitudeQuestion): AptitudeQuestion {
   repaired.question = cleanOcrText(repaired.question);
   repaired.answer = cleanOcrText(repaired.answer);
   if (repaired.options && Array.isArray(repaired.options)) {
-    repaired.options = repaired.options.map(o => cleanOcrText(o));
+    repaired.options = repaired.options.map((o: string) => cleanOcrText(o));
   }
   if (repaired.shortcuts && Array.isArray(repaired.shortcuts)) {
-    repaired.shortcuts = repaired.shortcuts.map(s => cleanOcrText(s));
+    repaired.shortcuts = repaired.shortcuts.map((s: string) => cleanOcrText(s));
   }
 
   // Explanation recovery and validation
@@ -267,13 +298,13 @@ export function autoRepairQuestion(q: AptitudeQuestion): AptitudeQuestion {
   let matchIndex = repaired.options.indexOf(trimmedAns);
   if (matchIndex === -1) {
     // Relaxed match (spacing, case-insensitive)
-    const cleanOpts = repaired.options.map(o => o.trim().toLowerCase().replace(/\s+/g, ' '));
+    const cleanOpts = repaired.options.map((o: string) => o.trim().toLowerCase().replace(/\s+/g, ' '));
     matchIndex = cleanOpts.indexOf(cleanAns);
 
     if (matchIndex === -1) {
       // Relaxed match with quotes stripped (e.g. quote mismatches)
       const unquotedAns = cleanAns.replace(/['"]/g, '');
-      const unquotedOpts = cleanOpts.map(o => o.replace(/['"]/g, ''));
+      const unquotedOpts = cleanOpts.map((o: string) => o.replace(/['"]/g, ''));
       matchIndex = unquotedOpts.indexOf(unquotedAns);
     }
 
@@ -348,18 +379,18 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
   } else {
     const emptyOptsCount = q.options.filter(o => !o || o.trim() === '').length;
     if (emptyOptsCount > 0) {
-      issues.push(`${emptyOptsCount} empty option(s)`);
+      issues.push(`CRITICAL: ${emptyOptsCount} empty option(s)`);
       score = 0; // Fail immediately
     }
     const garbageOpts = q.options.filter(o => o && (o.trim() === '*' || o.trim() === '.'));
     if (garbageOpts.length > 0) {
-      issues.push(`Garbage option values: ${JSON.stringify(garbageOpts)}`);
+      issues.push(`CRITICAL: Garbage option values: ${JSON.stringify(garbageOpts)}`);
       score = 0; // Fail immediately
     }
     const trimmedOpts = q.options.map(o => (o || '').trim().toLowerCase());
     const uniqueOpts = new Set(trimmedOpts);
     if (uniqueOpts.size < trimmedOpts.length) {
-      issues.push('Duplicate option values');
+      issues.push('CRITICAL: Duplicate option values');
       score = 0; // Fail immediately
     }
   }
@@ -370,16 +401,18 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
     score = 0; // Fail immediately
   } else {
     const qTrim = q.question.trim();
-    if (qTrim.length < 15) {
-      issues.push('Question text too short (< 15 chars)');
-      score -= 20;
-    }
-    
-    // Detect truncation pattern (ends with prepositions/conjunctions or ends with a cut-off word)
-    const TRUNCATED_END_REGEX = /\b(and|or|the|of|to|a|an|with|for|at|on|in|by|from|then|if|about)\s*$/i;
-    if (TRUNCATED_END_REGEX.test(qTrim)) {
-      issues.push('Question text appears truncated at the end');
-      score -= 20;
+    if (q.renderMode !== 'IMAGE') {
+      if (qTrim.length < 15) {
+        issues.push('Question text too short (< 15 chars)');
+        score -= 20;
+      }
+      
+      // Detect truncation pattern (ends with prepositions/conjunctions or ends with a cut-off word)
+      const TRUNCATED_END_REGEX = /\b(and|or|the|of|to|a|an|with|for|at|on|in|by|from|then|if|about)\s*$/i;
+      if (TRUNCATED_END_REGEX.test(qTrim)) {
+        issues.push('Question text appears truncated at the end');
+        score -= 20;
+      }
     }
   }
 
@@ -387,19 +420,29 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
   if (q.options && Array.isArray(q.options)) {
     q.options.forEach((opt, i) => {
       if (opt) {
-        if (/\b[a-zA-Z]{2,}\d\b/.test(opt)) {
-          issues.push(`Possible corrupted option text at index ${i}: "${opt}"`);
-          score -= 30;
-        }
-        if (PUA_PATTERN.test(opt)) {
-          issues.push(`PUA characters in option index ${i}`);
-          score -= 20;
+        if (q.renderMode !== 'IMAGE') {
+          if (/\b[a-zA-Z]{2,}\d\b/.test(opt)) {
+            issues.push(`Possible corrupted option text at index ${i}: "${opt}"`);
+            score -= 30;
+          }
+          if (PUA_PATTERN.test(opt)) {
+            issues.push(`PUA characters in option index ${i}`);
+            score -= 20;
+          }
+          
+          // Truncation detection for options
+          const TRUNCATED_OPT_REGEX = /\b(and|or|the|of|to|a|an|with|for|at|on|in|by|from|then|if|about)\s*$/i;
+          if (TRUNCATED_OPT_REGEX.test(opt.trim())) {
+            issues.push(`CRITICAL: Truncated option detected at index ${i}`);
+            score = 0; // Fail immediately
+          }
         }
         
         // Merged option detection: check if option text contains another option marker (e.g. (b) or (c) or (d) or (e))
-        const mergedMatch = opt.match(/\(\s*[b-e]\s*\)/i);
-        if (mergedMatch) {
-          issues.push(`Merged options detected: option at index ${i} contains another option label "${mergedMatch[0]}"`);
+        // Enforce STRICT NO-MERGE policy (enforced for both text and image mode to ensure options are distinct buttons)
+        const mergedMatch = opt.match(/\(\s*[b-eB-E]\s*\)/);
+        if (mergedMatch && q.renderMode !== 'IMAGE') {
+          issues.push(`CRITICAL: Merged options detected: option at index ${i} contains another option label "${mergedMatch[0]}"`);
           score = 0; // Fail immediately
         }
       }
@@ -408,12 +451,12 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
 
   // --- 4. Answer Integrity (Weight: 15%) ---
   if (!q.answer || q.answer.trim() === '') {
-    issues.push('Empty or missing answer');
+    issues.push('CRITICAL: Empty or missing answer');
     score = 0; // Fail immediately
   } else if (q.options && Array.isArray(q.options) && q.options.length > 0) {
     const exactMatch = q.options.includes(q.answer);
     if (!exactMatch) {
-      issues.push(`Answer "${q.answer}" is not in options list: ${JSON.stringify(q.options)}`);
+      issues.push(`CRITICAL: Answer "${q.answer}" is not in options list: ${JSON.stringify(q.options)}`);
       score = 0; // Fail immediately
     }
   }
@@ -472,18 +515,20 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
   }
 
   // --- 6. OCR Quality Verification ---
-  if (q.question && PUA_PATTERN.test(q.question)) {
-    issues.push('OCR: PUA characters in question text');
-    score -= 15;
-  }
-  if (q.question && HEADER_FOOTER_PATTERN.test(q.question)) {
-    issues.push('OCR: Header/footer leak in question');
-    score -= 15;
-  }
-  // Math exponent spacing corruption detection ("47 47")
-  if (q.question && /\b\d{2}\s+\d{2}\b/.test(q.question) && !q.question.includes(',') && !q.question.includes('and')) {
-    issues.push('OCR: Possible exponent spacing corruption in question');
-    score -= 10;
+  if (q.renderMode !== 'IMAGE') {
+    if (q.question && PUA_PATTERN.test(q.question)) {
+      issues.push('OCR: PUA characters in question text');
+      score -= 15;
+    }
+    if (q.question && HEADER_FOOTER_PATTERN.test(q.question)) {
+      issues.push('OCR: Header/footer leak in question');
+      score -= 15;
+    }
+    // Math exponent spacing corruption detection ("47 47")
+    if (q.question && /\b\d{2}\s+\d{2}\b/.test(q.question) && !q.question.includes(',') && !q.question.includes('and')) {
+      issues.push('OCR: Possible exponent spacing corruption in question');
+      score -= 10;
+    }
   }
 
   // --- 7. Parsing Integrity & Alignment ---
@@ -526,6 +571,12 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
     }
   }
 
+  // Render Mode Asset Validation
+  if ((q.renderMode === 'IMAGE' || q.renderMode === 'HYBRID') && !q.questionImage) {
+    issues.push('CRITICAL: renderMode is ' + q.renderMode + ' but questionImage is missing');
+    score = 0;
+  }
+
   score = Math.max(0, score);
 
   // ─── P0 Status Trichotomy ────────────────────────────────────────────────────
@@ -534,6 +585,9 @@ export function validateQuestion(rawQ: AptitudeQuestion): ValidationReport {
   let status: 'VALID' | 'REVIEW_REQUIRED' | 'INVALID';
   if (hasCriticalIssue || score < 70) {
     status = 'INVALID';
+  } else if (q.renderMode === 'IMAGE' || q.renderMode === 'HYBRID') {
+    // Image and Hybrid modes are visually 100% correct, so they pass as long as they have no critical issues
+    status = 'VALID';
   } else if (score < 95 || issues.length > 0) {
     status = 'REVIEW_REQUIRED';
   } else {

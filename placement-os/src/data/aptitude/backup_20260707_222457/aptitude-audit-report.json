@@ -1,0 +1,243 @@
+{
+  "generated_at": "2026-07-04T08:52:40.067Z",
+  "p0_release": true,
+  "explanation_generation_disabled": true,
+  "status": "ALL_PASS",
+  "summary": {
+    "total_questions_scanned": 4195,
+    "valid_for_production": 4195,
+    "review_required": 0,
+    "invalid_quarantined": 0,
+    "removed_from_production": 0,
+    "duplicate_count": 0,
+    "broken_asset_count": 0
+  },
+  "failure_breakdown": {
+    "options_source_id_mismatch": 0,
+    "answer_source_id_mismatch": 0,
+    "explanation_source_id_mismatch": 0,
+    "missing_or_invalid_options": 0,
+    "invalid_answers": 0,
+    "merged_options": 0
+  },
+  "critical_errors": [],
+  "review_warnings": [],
+  "coverage": {
+    "number-system": {
+      "expected": 180,
+      "imported": 356,
+      "missing": 0,
+      "coverage_pct": 100
+    },
+    "hcf-lcm": {
+      "expected": 85,
+      "imported": 0,
+      "missing": 85,
+      "coverage_pct": 0
+    },
+    "simplification": {
+      "expected": 240,
+      "imported": 408,
+      "missing": 0,
+      "coverage_pct": 100
+    },
+    "average": {
+      "expected": 130,
+      "imported": 134,
+      "missing": 0,
+      "coverage_pct": 100
+    },
+    "ages": {
+      "expected": 65,
+      "imported": 0,
+      "missing": 65,
+      "coverage_pct": 0
+    },
+    "percentages": {
+      "expected": 220,
+      "imported": 0,
+      "missing": 220,
+      "coverage_pct": 0
+    },
+    "profit-loss": {
+      "expected": 180,
+      "imported": 0,
+      "missing": 180,
+      "coverage_pct": 0
+    },
+    "ratios": {
+      "expected": 160,
+      "imported": 0,
+      "missing": 160,
+      "coverage_pct": 0
+    },
+    "pipes-cisterns": {
+      "expected": 60,
+      "imported": 0,
+      "missing": 60,
+      "coverage_pct": 0
+    },
+    "time-work": {
+      "expected": 165,
+      "imported": 0,
+      "missing": 165,
+      "coverage_pct": 0
+    },
+    "speed": {
+      "expected": 115,
+      "imported": 0,
+      "missing": 115,
+      "coverage_pct": 0
+    },
+    "simple-interest": {
+      "expected": 80,
+      "imported": 82,
+      "missing": 0,
+      "coverage_pct": 100
+    },
+    "compound-interest": {
+      "expected": 90,
+      "imported": 62,
+      "missing": 28,
+      "coverage_pct": 68.89
+    },
+    "permutation-combination": {
+      "expected": 45,
+      "imported": 0,
+      "missing": 45,
+      "coverage_pct": 0
+    },
+    "probability": {
+      "expected": 50,
+      "imported": 3,
+      "missing": 47,
+      "coverage_pct": 6
+    },
+    "series": {
+      "expected": 110,
+      "imported": 0,
+      "missing": 110,
+      "coverage_pct": 0
+    },
+    "coding-decoding": {
+      "expected": 104,
+      "imported": 0,
+      "missing": 104,
+      "coverage_pct": 0
+    },
+    "blood-relations": {
+      "expected": 87,
+      "imported": 0,
+      "missing": 87,
+      "coverage_pct": 0
+    },
+    "syllogism": {
+      "expected": 60,
+      "imported": 0,
+      "missing": 60,
+      "coverage_pct": 0
+    },
+    "seating-arrangement": {
+      "expected": 70,
+      "imported": 0,
+      "missing": 70,
+      "coverage_pct": 0
+    },
+    "statement-conclusion": {
+      "expected": 55,
+      "imported": 0,
+      "missing": 55,
+      "coverage_pct": 0
+    },
+    "analogy": {
+      "expected": 45,
+      "imported": 0,
+      "missing": 45,
+      "coverage_pct": 0
+    },
+    "clocks": {
+      "expected": 30,
+      "imported": 46,
+      "missing": 0,
+      "coverage_pct": 100
+    },
+    "calendar": {
+      "expected": 25,
+      "imported": 16,
+      "missing": 9,
+      "coverage_pct": 64
+    },
+    "direction-sense": {
+      "expected": 125,
+      "imported": 0,
+      "missing": 125,
+      "coverage_pct": 0
+    },
+    "synonyms": {
+      "expected": 150,
+      "imported": 1,
+      "missing": 149,
+      "coverage_pct": 0.67
+    },
+    "antonyms": {
+      "expected": 150,
+      "imported": 1,
+      "missing": 149,
+      "coverage_pct": 0.67
+    },
+    "sentence-improvement": {
+      "expected": 120,
+      "imported": 1,
+      "missing": 119,
+      "coverage_pct": 0.83
+    },
+    "rc": {
+      "expected": 80,
+      "imported": 1,
+      "missing": 79,
+      "coverage_pct": 1.25
+    },
+    "error-detection": {
+      "expected": 100,
+      "imported": 0,
+      "missing": 100,
+      "coverage_pct": 0
+    },
+    "vocab": {
+      "expected": 200,
+      "imported": 1,
+      "missing": 199,
+      "coverage_pct": 0.5
+    },
+    "tables": {
+      "expected": 100,
+      "imported": 0,
+      "missing": 100,
+      "coverage_pct": 0
+    },
+    "pie-charts": {
+      "expected": 70,
+      "imported": 0,
+      "missing": 70,
+      "coverage_pct": 0
+    },
+    "bar-graphs": {
+      "expected": 80,
+      "imported": 26,
+      "missing": 54,
+      "coverage_pct": 32.5
+    },
+    "line-graphs": {
+      "expected": 80,
+      "imported": 27,
+      "missing": 53,
+      "coverage_pct": 33.75
+    },
+    "caselets": {
+      "expected": 40,
+      "imported": 0,
+      "missing": 40,
+      "coverage_pct": 0
+    }
+  }
+}

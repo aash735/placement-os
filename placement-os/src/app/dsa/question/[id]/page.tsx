@@ -63,6 +63,19 @@ export default function QuestionDetailPage({ params }: { params: Promise<{ id: s
         <h1 className="mt-4 text-2xl font-bold">{question.title}</h1>
         <p className="mt-2 text-sm text-zinc-400">{question.estimatedMinutes} min · {question.interviewFrequency} frequency</p>
 
+        {question.sources && question.sources.length > 0 && (
+          <div className="mt-3 flex flex-wrap gap-2">
+            {question.sources.map((src) => (
+              <span
+                key={src}
+                className="rounded-full border border-cyan-500/25 bg-cyan-500/10 px-2.5 py-0.5 text-xs text-cyan-400 font-semibold font-mono"
+              >
+                {src}
+              </span>
+            ))}
+          </div>
+        )}
+
         <div className="mt-6 flex flex-wrap gap-3">
           <a href={question.url} target="_blank" rel="noopener noreferrer" className="btn-primary">Solve on {question.platform}</a>
           {question.explanationUrl && <a href={question.explanationUrl} target="_blank" rel="noopener noreferrer" className="btn-ghost">Explanation</a>}

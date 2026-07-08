@@ -9,45 +9,95 @@ const reportPath = path.join(__dirname, '..', 'aptitude-audit-report.json');
 const EXPECTED_COUNTS: Record<string, number> = {
   // Quant
   "number-system": 180,
-  "hcf-lcm": 85,
+  "h-c-f-and-l-c-m-of-numbers": 85,
+  "decimal-fractions": 95,
   "simplification": 240,
+  "square-roots-and-cube-roots": 90,
   "average": 130,
-  "ages": 65,
-  "percentages": 220,
-  "profit-loss": 180,
-  "ratios": 160,
-  "pipes-cisterns": 60,
-  "time-work": 165,
-  "speed": 115,
+  "problems-on-numbers": 80,
+  "problems-on-ages": 65,
+  "surds-and-indices": 85,
+  "logarithms": 55,
+  "percentage": 210,
+  "profit-and-loss": 180,
+  "ratio-and-proportion": 160,
+  "partnership": 60,
+  "chain-rule": 70,
+  "pipes-and-cisterns": 60,
+  "time-and-work": 125,
+  "time-distance": 115,
+  "boats-and-streams": 40,
+  "problems-on-trains": 80,
+  "alligation-or-mixture": 35,
   "simple-interest": 80,
   "compound-interest": 90,
-  "permutation-combination": 45,
+  "area": 200,
+  "volume-and-surface-areas": 150,
+  "races-and-games-of-skill": 20,
+  "stocks-and-shares": 35,
+  "permutation-and-combination": 45,
   "probability": 50,
+  "true-discount": 25,
+  "banker-s-discount": 25,
+  "heights-and-distances": 30,
   // Logical
-  "series": 110,
-  "coding-decoding": 104,
-  "blood-relations": 87,
-  "syllogism": 60,
-  "seating-arrangement": 70,
-  "statement-conclusion": 55,
-  "analogy": 45,
-  "clocks": 30,
   "calendar": 25,
-  "direction-sense": 125,
-  // Verbal
-  "synonyms": 150,
-  "antonyms": 150,
-  "sentence-improvement": 120,
-  "rc": 80,
-  "error-detection": 100,
-  "vocab": 200,
+  "clocks": 30,
+  "odd-man-out-and-series": 55,
   // DI
-  "tables": 100,
-  "pie-charts": 70,
+  "tabulation": 100,
   "bar-graphs": 80,
-  "line-graphs": 80,
-  "caselets": 40
+  "pie-chart": 70,
+  "line-graphs": 80
 };
+
+function toPhase3Schema(q: any): any {
+  if (q.questionId && q.options && typeof q.options === 'object' && !Array.isArray(q.options)) {
+    return q;
+  }
+  
+  const optionsObj = {
+    A: q.options && q.options[0] ? q.options[0] : '',
+    B: q.options && q.options[1] ? q.options[1] : '',
+    C: q.options && q.options[2] ? q.options[2] : '',
+    D: q.options && q.options[3] ? q.options[3] : ''
+  };
+  
+  let answerKey = q.answer;
+  if (q.options && Array.isArray(q.options)) {
+    const ansIdx = q.options.indexOf(q.answer);
+    if (ansIdx !== -1) {
+      answerKey = String.fromCharCode(65 + ansIdx);
+    }
+  }
+  
+  return {
+    questionId: q.id,
+    chapter: q.topic,
+    question: q.question,
+    options: optionsObj,
+    answer: answerKey,
+    page: typeof q.sourcePage === 'number' ? q.sourcePage : parseInt(q.sourcePage as string) || 0,
+    id: q.id,
+    topic: q.topic,
+    category: q.category,
+    difficulty: q.difficulty,
+    estimatedTime: q.estimatedTime,
+    companyRelevance: q.companyRelevance,
+    explanation: q.explanation,
+    questionImage: q.questionImage,
+    optionsImage: q.optionsImage,
+    renderMode: q.renderMode,
+    tableData: q.tableData,
+    chartData: q.chartData,
+    chartType: q.chartType,
+    importBatch: q.importBatch,
+    optionsSourceId: q.optionsSourceId,
+    answerSourceId: q.answerSourceId,
+    explanationSourceId: q.explanationSourceId,
+    sourceFile: q.sourceFile
+  };
+}
 
 function main() {
   console.log('🛡️  P0 PRODUCTION STABILIZATION — Aptitude Content Integrity Pipeline');
@@ -171,12 +221,17 @@ function main() {
     });
 
     // ── Write production dataset (VALID only) ──────────────────────────────
-    fs.writeFileSync(prodPath, JSON.stringify(validQuestions, null, 2), 'utf8');
+    const phase3ValidQuestions = validQuestions.map(q => toPhase3Schema(q));
+    fs.writeFileSync(prodPath, JSON.stringify(phase3ValidQuestions, null, 2), 'utf8');
     console.log(`   ✅ VALID:           ${validQuestions.length} → questions.json`);
 
     // ── Write REVIEW_REQUIRED file ─────────────────────────────────────────
     if (reviewQuestions.length > 0) {
-      fs.writeFileSync(reviewPath, JSON.stringify(reviewQuestions, null, 2), 'utf8');
+      const phase3ReviewQuestions = reviewQuestions.map(item => ({
+        ...item,
+        question: toPhase3Schema(item.question)
+      }));
+      fs.writeFileSync(reviewPath, JSON.stringify(phase3ReviewQuestions, null, 2), 'utf8');
       console.log(`   🔶 REVIEW_REQUIRED: ${reviewQuestions.length} → review.json`);
     } else if (fs.existsSync(reviewPath)) {
       fs.unlinkSync(reviewPath);
@@ -184,7 +239,11 @@ function main() {
 
     // ── Write INVALID quarantine file ──────────────────────────────────────
     if (quarantinedQuestions.length > 0) {
-      fs.writeFileSync(quarantinePath, JSON.stringify(quarantinedQuestions, null, 2), 'utf8');
+      const phase3QuarantinedQuestions = quarantinedQuestions.map(item => ({
+        ...item,
+        question: toPhase3Schema(item.question)
+      }));
+      fs.writeFileSync(quarantinePath, JSON.stringify(phase3QuarantinedQuestions, null, 2), 'utf8');
       console.log(`   🔴 INVALID:         ${quarantinedQuestions.length} → quarantine.json`);
     } else if (fs.existsSync(quarantinePath)) {
       fs.unlinkSync(quarantinePath);

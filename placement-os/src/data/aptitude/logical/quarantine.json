@@ -3,20 +3,21 @@
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 2 options instead of exactly 4",
-      "Question text too short (< 15 chars)",
-      "Merged options detected: option at index 1 contains another option label \"(d)\"",
-      "Explanation contains unbalanced parentheses, square brackets, or curly braces"
+      "CRITICAL: Merged options detected: option at index 3 contains another option label \"(b)\""
     ],
     "question": {
-      "id": "logical-calendar-1",
-      "question": "(b) 2.",
-      "options": [
-        "5.",
-        "3. (d) 4."
-      ],
-      "answer": "3. (d) 4.",
-      "explanation": "Step 1\n4.2001) Odd days in 1600 years = 0 Odd days in 400 years = 0 Jan\n\nStep 2\nFeb\n\nStep 3\nMarch April = 91 days ≡ 0 odd days\n\nFinal Calculation\n(31 + 28 + 31 + 1)\n\nAnswer: 3. (d) 4.",
+      "questionId": "logical-calendar-8",
+      "chapter": "calendar",
+      "question": "What was the day of the week on 28th May, 2006?",
+      "options": {
+        "A": "Thursday",
+        "B": "Friday",
+        "C": "Saturday",
+        "D": "Sunday ANS 1. (b) 2. (c) 3. (d) 4. (b) 5. (d)"
+      },
+      "answer": "D",
+      "page": 829,
+      "id": "logical-calendar-8",
       "topic": "calendar",
       "category": "logical",
       "difficulty": 2,
@@ -26,40 +27,35 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 829,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:06.174280Z",
-      "optionsSourceId": "logical-calendar-1",
-      "answerSourceId": "logical-calendar-1",
-      "explanationSourceId": "logical-calendar-1",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "3. (d) 4.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-calendar-1",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.796Z"
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: Sunday ANS 1. (b) 2. (c) 3. (d) 4. (b) 5. (d)",
+      "renderMode": "TEXT",
+      "importBatch": "2026-07-07T17:27:24.372816Z",
+      "optionsSourceId": "logical-calendar-8",
+      "answerSourceId": "logical-calendar-8",
+      "explanationSourceId": "logical-calendar-8",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Empty question text"
+      "CRITICAL: Merged options detected: option at index 3 contains another option label \"(d)\""
     ],
     "question": {
-      "id": "logical-clocks-1",
-      "question": "",
-      "options": [
-        "5.",
-        "2. (a) 3.",
-        "4."
-      ],
-      "answer": "4.",
-      "explanation": "Step 1\nClealy, time in London is 5/30 hrs minutes behnd 2.35 a.m\n\nStep 2\nwhich is 9.05 p.m\n\nFinal Calculation\nor 21.05 hrs.\n\nAnswer: 4.",
-      "topic": "clocks",
+      "questionId": "logical-calendar-18",
+      "chapter": "calendar",
+      "question": "The calendar for the year 2009 will be the same as that of the year [DMRC— Customer Relationship Assistant (CRA) Exam, 2016]",
+      "options": {
+        "A": "2013",
+        "B": "2014",
+        "C": "2015",
+        "D": "2014 SWERS 6. (d) 7. (c) 8. (d) 9. (a) 10. (b) 16. (c) 17. (b) 18. (c)"
+      },
+      "answer": "C",
+      "page": 829,
+      "id": "logical-calendar-18",
+      "topic": "calendar",
       "category": "logical",
       "difficulty": 2,
       "estimatedTime": 60,
@@ -68,39 +64,34 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 837,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:08.828266Z",
-      "optionsSourceId": "logical-clocks-1",
-      "answerSourceId": "logical-clocks-1",
-      "explanationSourceId": "logical-clocks-1",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "4.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-clocks-1",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.799Z"
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: 2015",
+      "renderMode": "TEXT",
+      "importBatch": "2026-07-07T17:27:24.372816Z",
+      "optionsSourceId": "logical-calendar-18",
+      "answerSourceId": "logical-calendar-18",
+      "explanationSourceId": "logical-calendar-18",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Duplicate option values"
+      "CRITICAL: Duplicate option values"
     ],
     "question": {
-      "id": "logical-clocks-5",
+      "questionId": "logical-clocks-5",
+      "chapter": "clocks",
       "question": "30° A B C A B C",
-      "options": [
-        "4 2 1",
-        "4 3 2",
-        "5 2 1",
-        "4 3 2"
-      ],
-      "answer": "4 2 1",
-      "explanation": "Step 1\nAngle traced by the minute hand in 5 minutes (360 )° = [ ×5] =30°\n\nFinal Calculation\n{ 60 }\n\nAnswer: 4 2 1",
+      "options": {
+        "A": "4 2 1",
+        "B": "4 3 2",
+        "C": "5 2 1",
+        "D": "4 3 2"
+      },
+      "answer": "A",
+      "page": 835,
+      "id": "logical-clocks-5",
       "topic": "clocks",
       "category": "logical",
       "difficulty": 2,
@@ -110,123 +101,34 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 835,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: 4 2 1",
+      "renderMode": "TEXT",
+      "importBatch": "2026-07-07T17:27:25.678183Z",
       "optionsSourceId": "logical-clocks-5",
       "answerSourceId": "logical-clocks-5",
       "explanationSourceId": "logical-clocks-5",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "4 2 1",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-clocks-5",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.800Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Question text too short (< 15 chars)"
+      "CRITICAL: Duplicate option values"
     ],
     "question": {
-      "id": "logical-clocks-11",
-      "question": "(b) 12.",
-      "options": [
-        "15.",
-        "13.",
-        "14."
-      ],
-      "answer": "13.",
-      "explanation": "Step 1\nAngle traced by hour hand in 13 (60 3/13)° hrs=[ × ] =130°\n\nStep 2\n3 { 2 1/3 } (360 ) ° Angle traced by min\n\nStep 3\nhand in 20 min. = [ ×20] =120°. { 60 } \\ Required angle = (130 – 120)° = 10°\n\nFinal Calculation\n21 (60 3/21)° 1°\n\nAnswer: 13.",
-      "topic": "clocks",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 837,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:08.828266Z",
-      "optionsSourceId": "logical-clocks-11",
-      "answerSourceId": "logical-clocks-11",
-      "explanationSourceId": "logical-clocks-11",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "13.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-clocks-11",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.801Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Question text too short (< 15 chars)"
-    ],
-    "question": {
-      "id": "logical-clocks-31",
-      "question": "(b) 32.",
-      "options": [
-        "33.",
-        "35.",
-        "34."
-      ],
-      "answer": "35.",
-      "explanation": "Step 1\nTime lost in 1 hour = 5 min\n\nStep 2\nTime lost in 6 hours = (5 × 6) min = 30 min\n\nStep 3/6 After hours, the correct time will be 6 a.m\n\nFinal Calculation\nand the clock will show 5.30 a.m.\n\nAnswer: 35.",
-      "topic": "clocks",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 837,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:08.828266Z",
-      "optionsSourceId": "logical-clocks-31",
-      "answerSourceId": "logical-clocks-31",
-      "explanationSourceId": "logical-clocks-31",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "35.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-clocks-31",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.804Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Duplicate option values"
-    ],
-    "question": {
+      "questionId": "logical-clocks-38",
+      "chapter": "clocks",
+      "question": "At what time between 7 and 8 o’clock will the hands of a clock be in the same straight line but, not together? (A.A.O. Exam., 2003) 2",
+      "options": {
+        "A": "5 min. past 7",
+        "B": "5 min. past 7 11 3 5",
+        "C": "5 min. past 7",
+        "D": "5 min. past 7 11 11"
+      },
+      "answer": "D",
+      "page": 836,
       "id": "logical-clocks-38",
-      "question": "At what time between 7/8 and o’clock will the hands of a clock be in the same straight line but, not together? (A.A.O. Exam., 2003) 2",
-      "options": [
-        "5 min. past 7",
-        "5 min. past 7 1 1/3 5",
-        "5 min. past 7",
-        "5 min. past 7 1 1/11"
-      ],
-      "answer": "5 min. past 7 1 1/11",
-      "explanation": "Step 1\nWhen the hands of the clock are in the same straight line but not together, they are 30 minute spaces apart\n\nStep 2/7 At o’clock, they are 25 min\n\nStep 3\nspaces apart. \\ Minute hand will have to gain only 5 min. spaces. 55 min. spaces are gained in 60 min. (60 ) 5/5min. spaces are gained in [ ×5]min=5 min. {55 } 1 1/5 \\ Required time = 5 min.past7\n\nFinal Calculation\n11\n\nAnswer: 5 min. past 7 1 1/11",
       "topic": "clocks",
       "category": "logical",
       "difficulty": 2,
@@ -236,85 +138,36 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 836,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: 5 min. past 7 11 11",
+      "renderMode": "TEXT",
+      "importBatch": "2026-07-07T17:27:25.678183Z",
       "optionsSourceId": "logical-clocks-38",
       "answerSourceId": "logical-clocks-38",
       "explanationSourceId": "logical-clocks-38",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "5 min. past 7 1 1/11",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-clocks-38",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.807Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Empty question text",
-      "Merged options detected: option at index 1 contains another option label \"(b)\""
-    ],
-    "question": {
-      "id": "logical-clocks-41",
-      "question": "",
-      "options": [
-        "42.",
-        "43. (b) 44.",
-        "45."
-      ],
-      "answer": "42.",
-      "explanation": "Step 1\nTo be together between 8 A.M\n\nStep 2/9 and A.M, the minute hand has to gain 40 min spaces\n\nStep 3/55min. spaces are gained in 60 min. (60 ) 7/40min. spaces are gained in [ ×40]min=43 min\n\nFinal Calculation\n{55 } 11\n\nAnswer: 42.",
-      "topic": "clocks",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 837,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:08.828266Z",
-      "optionsSourceId": "logical-clocks-41",
-      "answerSourceId": "logical-clocks-41",
-      "explanationSourceId": "logical-clocks-41",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "42.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-clocks-41",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.808Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
+    "score": 10,
     "issues": [
       "Possible corrupted option text at index 0: \"59 min.past3\"",
       "Possible corrupted option text at index 2: \"58 min.past3\"",
-      "Possible corrupted option text at index 3: \"2 min.past4 1 1/11\"",
-      "Explanation contains OCR page/line number leak (word stuck to numbers with dot)"
+      "Possible corrupted option text at index 3: \"2 min.past4 11 11\""
     ],
     "question": {
-      "id": "logical-clocks-47",
+      "questionId": "logical-clocks-47",
+      "chapter": "clocks",
       "question": "A watch which gains 5 seconds in 3 minutes was set right at 7 a.m. In the afternoon of the same day, when the watch indicated quarter past 4 o’clock, the true time is 7",
-      "options": [
-        "59 min.past3",
-        "4 p.m. 2 1/7 3",
-        "58 min.past3",
-        "2 min.past4 1 1/11"
-      ],
-      "answer": "4 p.m. 2 1/7 3",
-      "explanation": "Step 1\nTime from 7 a.m\n\nStep 2/4 to.15 p.m\n\nStep 3\n= 9/15 hrs min. = hrs. 4/3min. 5 sec. of this clock = 3 min. of the correct clock. 37 1 ⇒ hrs of this clock = hrs of the correct clock 0 2/7/0 2/37 ⇒ hrs of this clock 4 ( 1 0 2/7/37) = [ × × ] hrs of the correct clock {0 2/7 3/4 } = 9 hrs of the correct clock \\ The correct time is 9 hrs after 7 a.m., i.e\n\nFinal Calculation\n4 p.m.\n\nAnswer: 4 p.m. 2 1/7 3",
+      "options": {
+        "A": "59 min.past3",
+        "B": "4 p.m. 12 7 3",
+        "C": "58 min.past3",
+        "D": "2 min.past4 11 11"
+      },
+      "answer": "B",
+      "page": 836,
+      "id": "logical-clocks-47",
       "topic": "clocks",
       "category": "logical",
       "difficulty": 2,
@@ -324,41 +177,34 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 836,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:08.828266Z",
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: 4 p.m. 12 7 3",
+      "renderMode": "TEXT",
+      "importBatch": "2026-07-07T17:27:25.678183Z",
       "optionsSourceId": "logical-clocks-47",
       "answerSourceId": "logical-clocks-47",
       "explanationSourceId": "logical-clocks-47",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "4 p.m. 2 1/7 3",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-clocks-47",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.809Z"
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   },
   {
     "status": "INVALID",
     "score": 0,
     "issues": [
-      "Has 3 options instead of exactly 4",
-      "Question text too short (< 15 chars)",
-      "Explanation contains empty formula brackets/placeholders",
-      "Explanation contains disconnected mixed arithmetic operators"
+      "CRITICAL: Merged options detected: option at index 3 contains another option label \"(d)\""
     ],
     "question": {
-      "id": "logical-clocks-51",
-      "question": "(b) 52.",
-      "options": [
-        "SOLU",
-        "53.",
-        "54."
-      ],
-      "answer": "53.",
-      "explanation": "Step 1\nLet angle between the hands of clock be xº\n\nStep 2\nWhen the time is 4 : 25 a.m\n\nFinal Calculation\n{Where M = minutes and H = hours} (M ) M Required angle = 30[ −H]− { 5 } 2 (25 ) 25 (25−20) 25 (5) 5 2/25 =30[ −4]− =30[ ]− =30[ ]− =30− { 5 } 2 { 5 } 2 {5} 2 2 60−5 2/35 1 = = =17 º 2 2/2Answer: 53.",
+      "questionId": "logical-clocks-54",
+      "chapter": "clocks",
+      "question": "There are two clocks, both set to show 10 pm on 21st January 2010. One clock gains 2 minutes in an hour and the other clock loses 5 minutes in an hour. Then by how many minutes do the two clocks differ at 4 pm on 22nd January 2010? [DMRC—Customer Relationship Assistant (CRA) Exam, 2016]",
+      "options": {
+        "A": "126 minutes",
+        "B": "136 minutes",
+        "C": "96 minutes",
+        "D": "106 minutes SWERS 6. (d) 7. (c) 8. (d) 9. (c) 10. (b) 16. (c) 17. (c) 18. (b) 19. (d) 20. (c) 26. (c) 27. (d) 28. (d) 29. (c) 30. (d) 36. (d) 37. (c) 38. (d) 39. (d) 40. (b) 46. (b) 47. (b) 48. (b) 49. (b) 50. (b) UTIONS Angle traced by the hour hand in 5 hrs 10 min, i.e., 31 (360 31) hrs=[ × ] = 155°. 6 { 12 6 } 8. Time from 12 noon to 9 : 38 A.M. = 12 hrs + 9 hrs 38 min = 21 hrs 38 min. 38 19 649 = 21 hrs=21 hrs= hrs. 60 30 30 Angle traced by the hour hand in 12 hrs = 360°. Angle traced by the hour hand in 649 (360 649) hrs=[ × ]°=649°. 30 { 12 30 } 9. Angle traced by hour hand in 12 hrs. = 360°. 11 (360 11)° Angle traced by it in hrs=[ × ] =110°. 3 { 12 3 } Angle traced by minute hand in 60 min. = 360°. (360 )° Angle traced by it in 40 min. = [ ×40] =240°. { 60 } \\ Required angle = (240 – 110)° = 130°."
+      },
+      "answer": "A",
+      "page": 837,
+      "id": "logical-clocks-54",
       "topic": "clocks",
       "category": "logical",
       "difficulty": 2,
@@ -368,478 +214,13 @@
         "Accenture",
         "Infosys"
       ],
-      "sourcePage": 837,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:08.828266Z",
-      "optionsSourceId": "logical-clocks-51",
-      "answerSourceId": "logical-clocks-51",
-      "explanationSourceId": "logical-clocks-51",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "53.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-clocks-51",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.810Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 2 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-11",
-      "question": "(b) 12. (b) 13.",
-      "options": [
-        "14.",
-        "15."
-      ],
-      "answer": "15.",
-      "explanation": "Step 1\nThe pattern is 12, 12 + 22, 12 + 22 + 32, 12 + 22 + 32 + 42, 12 + 22 + 32 + 42 + 52, 12 + 22 + 32 + 42 + 52 + 62\n\nFinal Calculation\nBut, 50 is not of this pattern.\n\nAnswer: 15.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-11",
-      "answerSourceId": "logical-odd-man-out-and-series-11",
-      "explanationSourceId": "logical-odd-man-out-and-series-11",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "15.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-11",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.811Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 2 options instead of exactly 4",
-      "Question text too short (< 15 chars)",
-      "Merged options detected: option at index 1 contains another option label \"(c)\""
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-16",
-      "question": "(b) 17.",
-      "options": [
-        "18.",
-        "19. (c) 20."
-      ],
-      "answer": "19. (c) 20.",
-      "explanation": "Step 1\nThe pattern is x2 + 3, where x = 4, 5, 6, 7, 8, 9 etc\n\nFinal Calculation\nBut, 102 is out of pattern.\n\nAnswer: 19. (c) 20.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-16",
-      "answerSourceId": "logical-odd-man-out-and-series-16",
-      "explanationSourceId": "logical-odd-man-out-and-series-16",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "19. (c) 20.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-16",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.812Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Empty question text"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-21",
-      "question": "",
-      "options": [
-        "22. (a) 23.",
-        "24.",
-        "25."
-      ],
-      "answer": "24.",
-      "explanation": "Step 1\nThe terms are alternately multiplied by 1.5 and divided by 3\n\nFinal Calculation\nHowever, 18.5 does not satisfy it.\n\nAnswer: 24.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-21",
-      "answerSourceId": "logical-odd-man-out-and-series-21",
-      "explanationSourceId": "logical-odd-man-out-and-series-21",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "24.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-21",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.812Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Question text too short (< 15 chars)"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-31",
-      "question": "(b) 32.",
-      "options": [
-        "33.",
-        "34.",
-        "35."
-      ],
-      "answer": "34.",
-      "explanation": "Step 1/1 Subtract, 3, 5, 7, 9, 11 from successive numbers\n\nFinal Calculation\nSo, 34 is wrong.\n\nAnswer: 34.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-31",
-      "answerSourceId": "logical-odd-man-out-and-series-31",
-      "explanationSourceId": "logical-odd-man-out-and-series-31",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "34.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-31",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.813Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 2 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-41",
-      "question": "(b) 42. (a) 43.",
-      "options": [
-        "45.",
-        "44."
-      ],
-      "answer": "44.",
-      "explanation": "Step 1\nEach number is the preceding number multiplied by – 2\n\nFinal Calculation\nSo, the required number is – 128.\n\nAnswer: 44.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-41",
-      "answerSourceId": "logical-odd-man-out-and-series-41",
-      "explanationSourceId": "logical-odd-man-out-and-series-41",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "44.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-41",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.814Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 2 options instead of exactly 4"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-46",
-      "question": "(a) 47. (c) 48.",
-      "options": [
-        "49.",
-        "50."
-      ],
-      "answer": "49.",
-      "explanation": "Step 1\nEach number is twice the preceding one with 1 added or subtracted alternately\n\nFinal Calculation\nSo, the next number is (2 × 261 + 1) = 523.\n\nAnswer: 49.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-46",
-      "answerSourceId": "logical-odd-man-out-and-series-46",
-      "explanationSourceId": "logical-odd-man-out-and-series-46",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "49.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-46",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.815Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Question text too short (< 15 chars)"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-66",
-      "question": "(c) 67.",
-      "options": [
-        "70.",
-        "69.",
-        "68."
-      ],
-      "answer": "68.",
-      "explanation": "Step 1\nGo on dividing by 4 to get the next number\n\nFinal Calculation\nSo, 200 is wrong.\n\nAnswer: 68.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-66",
-      "answerSourceId": "logical-odd-man-out-and-series-66",
-      "explanationSourceId": "logical-odd-man-out-and-series-66",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "68.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-66",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.818Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 2 options instead of exactly 4",
-      "Empty question text",
-      "Merged options detected: option at index 0 contains another option label \"(c)\"",
-      "Merged options detected: option at index 1 contains another option label \"(e)\""
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-71",
-      "question": "",
-      "options": [
-        "72. (c) 73.",
-        "74. (e) 75."
-      ],
-      "answer": "74. (e) 75.",
-      "explanation": "Step 1\nGo on dividing by 6, 5, 4, 3, 2, 1 respectively to obtain the next number\n\nFinal Calculation\nClearly, 92 is wrong.\n\nAnswer: 74. (e) 75.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-71",
-      "answerSourceId": "logical-odd-man-out-and-series-71",
-      "explanationSourceId": "logical-odd-man-out-and-series-71",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "74. (e) 75.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-71",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.819Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Empty question text"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-76",
-      "question": "",
-      "options": [
-        "80.",
-        "77.",
-        "78.",
-        "79."
-      ],
-      "answer": "78.",
-      "explanation": "Step 1\nEach even term of the series is obtained by multiplying the previous term by 2/2 Step\n2nd term = (1st term) × 2 = 6 × 2 = 12; 4th term = (3rd term) × 2 = 48 × 2 = 96; 6th term = (5th term) × 2 = 384 × 2 = 768\n\nFinal Calculation\n\\ 4th term should be 96 instead of 100.\n\nAnswer: 78.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-76",
-      "answerSourceId": "logical-odd-man-out-and-series-76",
-      "explanationSourceId": "logical-odd-man-out-and-series-76",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "78.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-76",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.819Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Empty question text",
-      "Explanation contains unbalanced parentheses, square brackets, or curly braces"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-81",
-      "question": "",
-      "options": [
-        "82.",
-        "84.",
-        "85.",
-        "83."
-      ],
-      "answer": "82.",
-      "explanation": "Step 1\nThere are two sequences (3, 9, 67.5, 810) and (4, 22.5,\n\nAnswer: 82.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-81",
-      "answerSourceId": "logical-odd-man-out-and-series-81",
-      "explanationSourceId": "logical-odd-man-out-and-series-81",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "82.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-81",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.820Z"
-    }
-  },
-  {
-    "status": "INVALID",
-    "score": 0,
-    "issues": [
-      "Has 3 options instead of exactly 4",
-      "Empty question text"
-    ],
-    "question": {
-      "id": "logical-odd-man-out-and-series-86",
-      "question": "",
-      "options": [
-        "87.",
-        "88.",
-        "89. (a) 90."
-      ],
-      "answer": "88.",
-      "explanation": "Step 1/2nd term = (1st term × 2 – 2) = (5 × 2 – 2) = 8; 3rd term = (2nd term × 3 – 2) = (8 × 3 – 2) = 22; 4th term = (3rd term × 2 – 2) = (22 × 2 – 2) = 42; 5th term = (4th term × 3 – 2) = (42 × 3 – 2) = 124 and so on\n\nFinal Calculation\n\\ 20 is wrong.\n\nAnswer: 88.",
-      "topic": "odd-man-out-and-series",
-      "category": "logical",
-      "difficulty": 2,
-      "estimatedTime": 60,
-      "companyRelevance": [
-        "TCS",
-        "Accenture",
-        "Infosys"
-      ],
-      "sourcePage": 888,
-      "sourceBook": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "importBatch": "2026-07-02T16:55:26.312023Z",
-      "optionsSourceId": "logical-odd-man-out-and-series-86",
-      "answerSourceId": "logical-odd-man-out-and-series-86",
-      "explanationSourceId": "logical-odd-man-out-and-series-86",
-      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "correctAnswer": "88.",
-      "sourceReference": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf",
-      "sourceId": "logical-odd-man-out-and-series-86",
-      "confidenceScore": 0,
-      "validationStatus": "FAIL",
-      "integrityStatus": "QUARANTINED",
-      "lastVerificationTime": "2026-07-02T16:56:10.821Z"
+      "explanation": "Step 1\nDetailed explanations will be added in a future update.\n\nAnswer: 126 minutes",
+      "renderMode": "TEXT",
+      "importBatch": "2026-07-07T17:27:25.678183Z",
+      "optionsSourceId": "logical-clocks-54",
+      "answerSourceId": "logical-clocks-54",
+      "explanationSourceId": "logical-clocks-54",
+      "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
     }
   }
 ]

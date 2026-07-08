@@ -1,0 +1,4682 @@
+[
+  {
+    "questionId": "logical-calendar-1",
+    "chapter": "calendar",
+    "question": "January 1, 2007 was Monday. What day of the week lies on Jan. 1, 2008?",
+    "options": {
+      "A": "Monday",
+      "B": "Tuesday",
+      "C": "Wednesday",
+      "D": "Sunday"
+    },
+    "answer": "B",
+    "page": 829,
+    "id": "logical-calendar-1",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-1",
+    "answerSourceId": "logical-calendar-1",
+    "explanationSourceId": "logical-calendar-1",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-2",
+    "chapter": "calendar",
+    "question": "January 1, 2008 is Tuesday. What day of the week lies on Jan. 1, 2009?",
+    "options": {
+      "A": "Monday",
+      "B": "Wednesday",
+      "C": "Thursday",
+      "D": "Sunday"
+    },
+    "answer": "C",
+    "page": 829,
+    "id": "logical-calendar-2",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-2",
+    "answerSourceId": "logical-calendar-2",
+    "explanationSourceId": "logical-calendar-2",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-3",
+    "chapter": "calendar",
+    "question": "On 8th Dec, 2007 Saturday falls. What day of the week was it on 8th Dec. 2006?",
+    "options": {
+      "A": "Sunday",
+      "B": "Thursday",
+      "C": "Tuesday",
+      "D": "Friday"
+    },
+    "answer": "D",
+    "page": 829,
+    "id": "logical-calendar-3",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-3",
+    "answerSourceId": "logical-calendar-3",
+    "explanationSourceId": "logical-calendar-3",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-4",
+    "chapter": "calendar",
+    "question": "On 6th March, 2005 Monday falls. What was the day of the week on 6th March, 2004?",
+    "options": {
+      "A": "Sunday",
+      "B": "Saturday",
+      "C": "Tuesday",
+      "D": "Wednesday"
+    },
+    "answer": "B",
+    "page": 829,
+    "id": "logical-calendar-4",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-4",
+    "answerSourceId": "logical-calendar-4",
+    "explanationSourceId": "logical-calendar-4",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-5",
+    "chapter": "calendar",
+    "question": "The calendar for the year 2007 will be the same for the year:",
+    "options": {
+      "A": "2014",
+      "B": "2016",
+      "C": "2017",
+      "D": "2018"
+    },
+    "answer": "D",
+    "page": 829,
+    "id": "logical-calendar-5",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-5",
+    "answerSourceId": "logical-calendar-5",
+    "explanationSourceId": "logical-calendar-5",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-6",
+    "chapter": "calendar",
+    "question": "On what dates of April, 2001 did Wednesday fall?",
+    "options": {
+      "A": "1st, 8th, 15th, 22nd, 29th",
+      "B": "2nd, 9th, 16th, 23rd, 30th",
+      "C": "3rd, 10th, 17th, 24th",
+      "D": "4th, 11th, 18th, 25th"
+    },
+    "answer": "D",
+    "page": 829,
+    "id": "logical-calendar-6",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-6",
+    "answerSourceId": "logical-calendar-6",
+    "explanationSourceId": "logical-calendar-6",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-7",
+    "chapter": "calendar",
+    "question": "What was the day of the week on 17th June, 1998?",
+    "options": {
+      "A": "Monday",
+      "B": "Tuesday",
+      "C": "Wednesday",
+      "D": "Thursday"
+    },
+    "answer": "C",
+    "page": 829,
+    "id": "logical-calendar-7",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-7",
+    "answerSourceId": "logical-calendar-7",
+    "explanationSourceId": "logical-calendar-7",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-9",
+    "chapter": "calendar",
+    "question": "What will be the day of the week on 15th August, 2010?",
+    "options": {
+      "A": "Sunday",
+      "B": "Monday",
+      "C": "Tuesday",
+      "D": "Friday"
+    },
+    "answer": "A",
+    "page": 829,
+    "id": "logical-calendar-9",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-9",
+    "answerSourceId": "logical-calendar-9",
+    "explanationSourceId": "logical-calendar-9",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-10",
+    "chapter": "calendar",
+    "question": "Today is Monday. After 61 days, it will be",
+    "options": {
+      "A": "Wednesday",
+      "B": "Saturday",
+      "C": "Tuesday",
+      "D": "Thursday"
+    },
+    "answer": "B",
+    "page": 829,
+    "id": "logical-calendar-10",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-10",
+    "answerSourceId": "logical-calendar-10",
+    "explanationSourceId": "logical-calendar-10",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-11",
+    "chapter": "calendar",
+    "question": "The last day of a century cannot be",
+    "options": {
+      "A": "Monday",
+      "B": "Wednesday",
+      "C": "Tuesday",
+      "D": "Friday"
+    },
+    "answer": "C",
+    "page": 829,
+    "id": "logical-calendar-11",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-11",
+    "answerSourceId": "logical-calendar-11",
+    "explanationSourceId": "logical-calendar-11",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-12",
+    "chapter": "calendar",
+    "question": "Which of the following is not a leap year?",
+    "options": {
+      "A": "700",
+      "B": "800",
+      "C": "1200",
+      "D": "2000"
+    },
+    "answer": "A",
+    "page": 829,
+    "id": "logical-calendar-12",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-12",
+    "answerSourceId": "logical-calendar-12",
+    "explanationSourceId": "logical-calendar-12",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-13",
+    "chapter": "calendar",
+    "question": "How many days are there in x weeks x days?",
+    "options": {
+      "A": "7x2",
+      "B": "8x",
+      "C": "14x",
+      "D": "7"
+    },
+    "answer": "B",
+    "page": 829,
+    "id": "logical-calendar-13",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-13",
+    "answerSourceId": "logical-calendar-13",
+    "explanationSourceId": "logical-calendar-13",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-14",
+    "chapter": "calendar",
+    "question": "It was Sunday on Jan 1, 2006. What was the day of the week on Jan 1, 2010?",
+    "options": {
+      "A": "Sunday",
+      "B": "Saturday",
+      "C": "Friday",
+      "D": "Wednesday"
+    },
+    "answer": "C",
+    "page": 829,
+    "id": "logical-calendar-14",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-14",
+    "answerSourceId": "logical-calendar-14",
+    "explanationSourceId": "logical-calendar-14",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-15",
+    "chapter": "calendar",
+    "question": "On 8th Feb, 2005 it was Tuesday. What was the day of the week on 8th Feb, 2004?",
+    "options": {
+      "A": "Tuesday",
+      "B": "Monday",
+      "C": "Sunday",
+      "D": "Wednesday"
+    },
+    "answer": "C",
+    "page": 829,
+    "id": "logical-calendar-15",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-15",
+    "answerSourceId": "logical-calendar-15",
+    "explanationSourceId": "logical-calendar-15",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-16",
+    "chapter": "calendar",
+    "question": "For a certain month, the dates of three of the Sun- days are even numbers. Then, the 15th of the that month falls on a [SSC—CGL (Tier I) Exam, 2012]",
+    "options": {
+      "A": "Thursday",
+      "B": "Friday",
+      "C": "Saturday",
+      "D": "Sunday"
+    },
+    "answer": "C",
+    "page": 829,
+    "id": "logical-calendar-16",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-16",
+    "answerSourceId": "logical-calendar-16",
+    "explanationSourceId": "logical-calendar-16",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-calendar-17",
+    "chapter": "calendar",
+    "question": "What was the day of the week on 15 August, 1947? [DMRC— Customer Relationship Assistant (CRA) Exam, 2016]",
+    "options": {
+      "A": "Saturday",
+      "B": "Friday",
+      "C": "Thursday",
+      "D": "Wednesday"
+    },
+    "answer": "B",
+    "page": 829,
+    "id": "logical-calendar-17",
+    "topic": "calendar",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:21.820301Z",
+    "optionsSourceId": "logical-calendar-17",
+    "answerSourceId": "logical-calendar-17",
+    "explanationSourceId": "logical-calendar-17",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-1",
+    "chapter": "clocks",
+    "question": "London time is five and a half hours behind Delhi time. What time is it in London if it is 0.2.35 in Delhi? (E.P.F.O.S.S.A., 2004)",
+    "options": {
+      "A": "07.05",
+      "B": "08.05",
+      "C": "21.05",
+      "D": "21.35"
+    },
+    "answer": "C",
+    "page": 834,
+    "id": "logical-clocks-1",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-1",
+    "answerSourceId": "logical-clocks-1",
+    "explanationSourceId": "logical-clocks-1",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-2",
+    "chapter": "clocks",
+    "question": "A bus leaves at 12.25 noon and reaches destination at 10.45 am. The duration of the journey is (R.R.B., 2005)",
+    "options": {
+      "A": "22 hrs 20 min",
+      "B": "22 hrs 40 min",
+      "C": "24 hrs 20 min",
+      "D": "24 hrs 40 min"
+    },
+    "answer": "A",
+    "page": 834,
+    "id": "logical-clocks-2",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-2",
+    "answerSourceId": "logical-clocks-2",
+    "explanationSourceId": "logical-clocks-2",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-3",
+    "chapter": "clocks",
+    "question": "An accurate clock shows 80′ clock in the morning. Through how many degrees will the hour hand rotate when the clock shows 2O′ clock in the afternoon?",
+    "options": {
+      "A": "144°",
+      "B": "150°",
+      "C": "168°",
+      "D": "180°"
+    },
+    "answer": "D",
+    "page": 834,
+    "id": "logical-clocks-3",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-3",
+    "answerSourceId": "logical-clocks-3",
+    "explanationSourceId": "logical-clocks-3",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-4",
+    "chapter": "clocks",
+    "question": "How many rotations will the hour hand of a clock complete in 72 hours? (Bank Recruitment, 2006)",
+    "options": {
+      "A": "3",
+      "B": "6",
+      "C": "9",
+      "D": "12"
+    },
+    "answer": "B",
+    "page": 834,
+    "id": "logical-clocks-4",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-4",
+    "answerSourceId": "logical-clocks-4",
+    "explanationSourceId": "logical-clocks-4",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-6",
+    "chapter": "clocks",
+    "question": "In an accurate clock, in a period of 2 hours 20 minutes the minute hand will move over",
+    "options": {
+      "A": "140°",
+      "B": "320°",
+      "C": "520°",
+      "D": "840°"
+    },
+    "answer": "D",
+    "page": 834,
+    "id": "logical-clocks-6",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-6",
+    "answerSourceId": "logical-clocks-6",
+    "explanationSourceId": "logical-clocks-6",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-7",
+    "chapter": "clocks",
+    "question": "A clock is started at noon. By 10 minutes past 5, the hour hand has turned through",
+    "options": {
+      "A": "145°",
+      "B": "150°",
+      "C": "155°",
+      "D": "160°"
+    },
+    "answer": "C",
+    "page": 834,
+    "id": "logical-clocks-7",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-7",
+    "answerSourceId": "logical-clocks-7",
+    "explanationSourceId": "logical-clocks-7",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-8",
+    "chapter": "clocks",
+    "question": "At 9 : 38 A.M, through how many degrees the hour hand of a clock moved since noon the previous day? (SNAP, 2004)",
+    "options": {
+      "A": "323",
+      "B": "612",
+      "C": "646",
+      "D": "649"
+    },
+    "answer": "D",
+    "page": 834,
+    "id": "logical-clocks-8",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-8",
+    "answerSourceId": "logical-clocks-8",
+    "explanationSourceId": "logical-clocks-8",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-9",
+    "chapter": "clocks",
+    "question": "At 3.40, the hour hand and the minute hand of a clock form an angle of (Hotel Management, 2004; Campus Recruitment, 2008)",
+    "options": {
+      "A": "120°",
+      "B": "125°",
+      "C": "130°",
+      "D": "135°"
+    },
+    "answer": "C",
+    "page": 834,
+    "id": "logical-clocks-9",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-9",
+    "answerSourceId": "logical-clocks-9",
+    "explanationSourceId": "logical-clocks-9",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-10",
+    "chapter": "clocks",
+    "question": "The angle between the minute hand and the hour hand of a clock when the time is 8.30, is (R.R.B. 2006)",
+    "options": {
+      "A": "80°",
+      "B": "75°",
+      "C": "60°",
+      "D": "105°"
+    },
+    "answer": "B",
+    "page": 834,
+    "id": "logical-clocks-10",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-10",
+    "answerSourceId": "logical-clocks-10",
+    "explanationSourceId": "logical-clocks-10",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-11",
+    "chapter": "clocks",
+    "question": "The angle between the minute hand and the hour hand of a clock when the time is 4.20, is (P.C.S., 2008)",
+    "options": {
+      "A": "0°",
+      "B": "10°",
+      "C": "5°",
+      "D": "20°"
+    },
+    "answer": "B",
+    "page": 834,
+    "id": "logical-clocks-11",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-11",
+    "answerSourceId": "logical-clocks-11",
+    "explanationSourceId": "logical-clocks-11",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-12",
+    "chapter": "clocks",
+    "question": "At what angle the hands of a clock are inclined at 15 minutes past 5? (L.I.C.A.A.O., 2003) 1°",
+    "options": {
+      "A": "58",
+      "B": "64° 2 1° 1°",
+      "C": "67",
+      "D": "72 2 2"
+    },
+    "answer": "C",
+    "page": 834,
+    "id": "logical-clocks-12",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-12",
+    "answerSourceId": "logical-clocks-12",
+    "explanationSourceId": "logical-clocks-12",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-13",
+    "chapter": "clocks",
+    "question": "The reflex angle between the hands of a clock at 10.25 is 1°",
+    "options": {
+      "A": "180°",
+      "B": "192 2 1°",
+      "C": "195°",
+      "D": "197 2"
+    },
+    "answer": "D",
+    "page": 834,
+    "id": "logical-clocks-13",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-13",
+    "answerSourceId": "logical-clocks-13",
+    "explanationSourceId": "logical-clocks-13",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-15",
+    "chapter": "clocks",
+    "question": "An accurate clock shows the time as 3.00. After the hour hand has moved 135°, the time would be",
+    "options": {
+      "A": "6.30",
+      "B": "7.30",
+      "C": "8.00",
+      "D": "9.30"
+    },
+    "answer": "B",
+    "page": 835,
+    "id": "logical-clocks-15",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-15",
+    "answerSourceId": "logical-clocks-15",
+    "explanationSourceId": "logical-clocks-15",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-16",
+    "chapter": "clocks",
+    "question": "What is the area of the face of a clock described by its minute hand between 9 a.m. and 9.35 a.m; if the minute hand is 10 cm long? (M.B.A., 2004) 2 1",
+    "options": {
+      "A": "36 cm²",
+      "B": "157 cm² 3 7 1",
+      "C": "183 cm²",
+      "D": "None of these 3"
+    },
+    "answer": "C",
+    "page": 835,
+    "id": "logical-clocks-16",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-16",
+    "answerSourceId": "logical-clocks-16",
+    "explanationSourceId": "logical-clocks-16",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-17",
+    "chapter": "clocks",
+    "question": "The hands of a clock are 10 cm and 7 cm respectively. The difference between the distance traversed by their extremities in 3 days 5 hours is (M.A.T., 2006)",
+    "options": {
+      "A": "4552.67 cm",
+      "B": "4555.67 cm",
+      "C": "4557.67 cm",
+      "D": "4559.67 cm"
+    },
+    "answer": "C",
+    "page": 835,
+    "id": "logical-clocks-17",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-17",
+    "answerSourceId": "logical-clocks-17",
+    "explanationSourceId": "logical-clocks-17",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-19",
+    "chapter": "clocks",
+    "question": "At which time number of minutes elapsed since midnight is nine times the number of minutes before noon? (R.R.B., 2006)",
+    "options": {
+      "A": "8.30 a.m.",
+      "B": "6.56 a.m.",
+      "C": "9.46 a.m.",
+      "D": "10.48 a.m."
+    },
+    "answer": "D",
+    "page": 835,
+    "id": "logical-clocks-19",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-19",
+    "answerSourceId": "logical-clocks-19",
+    "explanationSourceId": "logical-clocks-19",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-20",
+    "chapter": "clocks",
+    "question": "How many times do the hands of a clock coincide in a day?",
+    "options": {
+      "A": "20",
+      "B": "21",
+      "C": "22",
+      "D": "24"
+    },
+    "answer": "C",
+    "page": 835,
+    "id": "logical-clocks-20",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-20",
+    "answerSourceId": "logical-clocks-20",
+    "explanationSourceId": "logical-clocks-20",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-21",
+    "chapter": "clocks",
+    "question": "How many times in a day, the hands of a clock are straight? (I.I.F.T., 2005)",
+    "options": {
+      "A": "22",
+      "B": "24",
+      "C": "44",
+      "D": "48"
+    },
+    "answer": "C",
+    "page": 835,
+    "id": "logical-clocks-21",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-21",
+    "answerSourceId": "logical-clocks-21",
+    "explanationSourceId": "logical-clocks-21",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-22",
+    "chapter": "clocks",
+    "question": "How many times are the hands of a clock at right angle in a day?",
+    "options": {
+      "A": "22",
+      "B": "24",
+      "C": "44",
+      "D": "48"
+    },
+    "answer": "C",
+    "page": 835,
+    "id": "logical-clocks-22",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-22",
+    "answerSourceId": "logical-clocks-22",
+    "explanationSourceId": "logical-clocks-22",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-23",
+    "chapter": "clocks",
+    "question": "How many times in a day, are the hands of a clock in straight line but opposite in direction? (R.R.B., 2003)",
+    "options": {
+      "A": "20",
+      "B": "22",
+      "C": "24",
+      "D": "48"
+    },
+    "answer": "B",
+    "page": 835,
+    "id": "logical-clocks-23",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-23",
+    "answerSourceId": "logical-clocks-23",
+    "explanationSourceId": "logical-clocks-23",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-24",
+    "chapter": "clocks",
+    "question": "How many times are the hour hand and the minute hand of a clock at right angles during their motion from 1.00 p.m. to 10.00 p.m.? (I.A.S., 2009)",
+    "options": {
+      "A": "9",
+      "B": "10",
+      "C": "18",
+      "D": "20"
+    },
+    "answer": "C",
+    "page": 835,
+    "id": "logical-clocks-24",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-24",
+    "answerSourceId": "logical-clocks-24",
+    "explanationSourceId": "logical-clocks-24",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-25",
+    "chapter": "clocks",
+    "question": "A clock gains 5 minutes in one hour. Therefore, the angle traversed by the minute hand in 1 hour is",
+    "options": {
+      "A": "360°",
+      "B": "390°",
+      "C": "390.5°",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "page": 835,
+    "id": "logical-clocks-25",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-25",
+    "answerSourceId": "logical-clocks-25",
+    "explanationSourceId": "logical-clocks-25",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-26",
+    "chapter": "clocks",
+    "question": "A clock strikes once at 1O′ clock, twice at 2O′ clock, thrice at 3O′ clock and soon. What is the total number of strikings in a day? (R.R.B., 2006)",
+    "options": {
+      "A": "136",
+      "B": "146",
+      "C": "156",
+      "D": "166"
+    },
+    "answer": "C",
+    "page": 835,
+    "id": "logical-clocks-26",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-26",
+    "answerSourceId": "logical-clocks-26",
+    "explanationSourceId": "logical-clocks-26",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-27",
+    "chapter": "clocks",
+    "question": "A wall-clock takes 9 seconds in tringing at 9O′ clock. The time, it will take in tringing at 11O′ clock, is (C.P.O., 2004)",
+    "options": {
+      "A": "10 seconds",
+      "B": "10.80 seconds",
+      "C": "11 seconds",
+      "D": "11.25 seconds"
+    },
+    "answer": "D",
+    "page": 835,
+    "id": "logical-clocks-27",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-27",
+    "answerSourceId": "logical-clocks-27",
+    "explanationSourceId": "logical-clocks-27",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-28",
+    "chapter": "clocks",
+    "question": "If a clock strikes six times in 5 seconds, the number of strikes in 10 seconds is",
+    "options": {
+      "A": "8",
+      "B": "9",
+      "C": "10",
+      "D": "11"
+    },
+    "answer": "D",
+    "page": 835,
+    "id": "logical-clocks-28",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-28",
+    "answerSourceId": "logical-clocks-28",
+    "explanationSourceId": "logical-clocks-28",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-29",
+    "chapter": "clocks",
+    "question": "In every 30 minutes the time of a watch increases by 3 minutes. After showing the correct time at 5 a.m; what time will the watch show after 6 hours?",
+    "options": {
+      "A": "10 : 54 a.m.",
+      "B": "11 : 30 a.m.",
+      "C": "11 : 36 a.m.",
+      "D": "11 : 42 a.m."
+    },
+    "answer": "C",
+    "page": 835,
+    "id": "logical-clocks-29",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-29",
+    "answerSourceId": "logical-clocks-29",
+    "explanationSourceId": "logical-clocks-29",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-30",
+    "chapter": "clocks",
+    "question": "A watch becomes fast by 5 minutes everyday. By what percent does it become fast? (R.R.B., 2006) 5 1",
+    "options": {
+      "A": "%",
+      "B": "% 24 12 50",
+      "C": "5%",
+      "D": "% 144"
+    },
+    "answer": "D",
+    "page": 835,
+    "id": "logical-clocks-30",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-30",
+    "answerSourceId": "logical-clocks-30",
+    "explanationSourceId": "logical-clocks-30",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-31",
+    "chapter": "clocks",
+    "question": "A clock goes slow from midnight by 5 minutes at the end of the first hour, by 10 minutes at the end of the second hour, by 15 minutes at the end of the third hour and so on. What will be the time by this clock after 6 hours? (S.S.C., 2002)",
+    "options": {
+      "A": "5.15 a.m.",
+      "B": "5.30 a.m.",
+      "C": "6 a.m.",
+      "D": "6.30 a.m."
+    },
+    "answer": "B",
+    "page": 835,
+    "id": "logical-clocks-31",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-31",
+    "answerSourceId": "logical-clocks-31",
+    "explanationSourceId": "logical-clocks-31",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-32",
+    "chapter": "clocks",
+    "question": "A watch goes fast by 15 minutes compared to the right time everyday. If it is corrected and set to the standard time at 120’ clock at noon, which of the following will be the time shown by it at 4 : 00 a.m. in the morning?",
+    "options": {
+      "A": "3 : 45 a.m.",
+      "B": "4 : 10 a.m.",
+      "C": "4 : 15 a.m.",
+      "D": "4 : 30 a.m."
+    },
+    "answer": "B",
+    "page": 835,
+    "id": "logical-clocks-32",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-32",
+    "answerSourceId": "logical-clocks-32",
+    "explanationSourceId": "logical-clocks-32",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-33",
+    "chapter": "clocks",
+    "question": "It is between 3 P.M. and 4 P.M. and the distance between the hour and the minute hand of clock is 18 minute spaces. What time does the clock show? (R.R.B., 2006)",
+    "options": {
+      "A": "3.12 P.M.",
+      "B": "3.27 P.M.",
+      "C": "3.31 P.M.",
+      "D": "3.36 P.M."
+    },
+    "answer": "D",
+    "page": 836,
+    "id": "logical-clocks-33",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-33",
+    "answerSourceId": "logical-clocks-33",
+    "explanationSourceId": "logical-clocks-33",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-34",
+    "chapter": "clocks",
+    "question": "At what time between 9 and 10 o’clock are the hands of a clock 23 minute spaces apart?",
+    "options": {
+      "A": "9 : 18",
+      "B": "9 : 23",
+      "C": "9 : 24",
+      "D": "9 : 26"
+    },
+    "answer": "C",
+    "page": 836,
+    "id": "logical-clocks-34",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-34",
+    "answerSourceId": "logical-clocks-34",
+    "explanationSourceId": "logical-clocks-34",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-35",
+    "chapter": "clocks",
+    "question": "How much does a watch lose per day, if its hands coincide every 64 minutes? (M.B.A. 2004, 05, 06; G.B.O., 2007; Campus Recruitment, 2008, 2010) 8 5",
+    "options": {
+      "A": "32 min.",
+      "B": "36 min. 11 11",
+      "C": "90 min.",
+      "D": "96 min."
+    },
+    "answer": "A",
+    "page": 836,
+    "id": "logical-clocks-35",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-35",
+    "answerSourceId": "logical-clocks-35",
+    "explanationSourceId": "logical-clocks-35",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-36",
+    "chapter": "clocks",
+    "question": "At what time, in minutes, between 3 o’clock and 4 o’clock, both the needles will coincide each other? (R.R.B., 2002) 1 ′′ 4 ′′",
+    "options": {
+      "A": "5 past",
+      "B": "12 past 11 11 4 ′′ 4 ′′",
+      "C": "13 past",
+      "D": "16 past 11 11"
+    },
+    "answer": "D",
+    "page": 836,
+    "id": "logical-clocks-36",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-36",
+    "answerSourceId": "logical-clocks-36",
+    "explanationSourceId": "logical-clocks-36",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-37",
+    "chapter": "clocks",
+    "question": "At what time between 9 and 10 o’clock will the hands of a watch be together?",
+    "options": {
+      "A": "45 min. past 9",
+      "B": "50 min. past 9 1 2",
+      "C": "49 min. past 9",
+      "D": "48 min. past 9 11 11"
+    },
+    "answer": "C",
+    "page": 836,
+    "id": "logical-clocks-37",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-37",
+    "answerSourceId": "logical-clocks-37",
+    "explanationSourceId": "logical-clocks-37",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-39",
+    "chapter": "clocks",
+    "question": "At what time between 4 and 5 o’clock will the hands of a watch point in opposite directions?",
+    "options": {
+      "A": "45 min. past 4",
+      "B": "40 min. past 4 4 6",
+      "C": "50 min. past 4",
+      "D": "54 min. past 4 11 11"
+    },
+    "answer": "D",
+    "page": 836,
+    "id": "logical-clocks-39",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-39",
+    "answerSourceId": "logical-clocks-39",
+    "explanationSourceId": "logical-clocks-39",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-40",
+    "chapter": "clocks",
+    "question": "At what time between 5.30 and 6 will the hands of a clock be at right angles? 5 7",
+    "options": {
+      "A": "43 min. past 5",
+      "B": "43 min. past 5 11 11",
+      "C": "40 min. past 5",
+      "D": "45 min. past 5"
+    },
+    "answer": "B",
+    "page": 836,
+    "id": "logical-clocks-40",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-40",
+    "answerSourceId": "logical-clocks-40",
+    "explanationSourceId": "logical-clocks-40",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-42",
+    "chapter": "clocks",
+    "question": "Imagine that your watch was correct at noon, but then it began to lose 30 minutes each hour. It now shows 4 p.m. but it stopped 5 hours ago. What is the correct time now? (M.B.A. 2004)",
+    "options": {
+      "A": "9.30 p.m.",
+      "B": "11 p.m.",
+      "C": "1 a.m.",
+      "D": "1.30 a.m."
+    },
+    "answer": "C",
+    "page": 836,
+    "id": "logical-clocks-42",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-42",
+    "answerSourceId": "logical-clocks-42",
+    "explanationSourceId": "logical-clocks-42",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-43",
+    "chapter": "clocks",
+    "question": "A mechanical grandfather clock is at present showing 7 hr 40 min 6 sec. Assuming that it loses 4 seconds in every hour, what time will it show after exactly 1 6 hours? (M.B.A. 2004) 2",
+    "options": {
+      "A": "14 hr 9 min 34 sec",
+      "B": "14 hr 9 min 40 sec",
+      "C": "14 hr 10 min 6 sec",
+      "D": "14 hr 10 min 32 sec"
+    },
+    "answer": "B",
+    "page": 836,
+    "id": "logical-clocks-43",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-43",
+    "answerSourceId": "logical-clocks-43",
+    "explanationSourceId": "logical-clocks-43",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-44",
+    "chapter": "clocks",
+    "question": "I have two watches with a 12 hour cycle. One of them gains one minute a day and the other loses 1 1 minutes per day. If I set them both at the correct 2 time, how long will it be before they again tell the correct time together?",
+    "options": {
+      "A": "288 days",
+      "B": "480 days",
+      "C": "720 days",
+      "D": "1440 days"
+    },
+    "answer": "D",
+    "page": 836,
+    "id": "logical-clocks-44",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-44",
+    "answerSourceId": "logical-clocks-44",
+    "explanationSourceId": "logical-clocks-44",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-45",
+    "chapter": "clocks",
+    "question": "A watch is 1 minute slow at 1 p.m. on Tuesday and 2 minutes fast at 1 p.m. on Thursday. When did it show the correct time? (M.A.T. 2004)",
+    "options": {
+      "A": "1.00 a.m. on Wednesday",
+      "B": "5.00 a.m. on Wednesday",
+      "C": "1.00 p.m. on Wednesday",
+      "D": "5.00 p.m. on Wednesday"
+    },
+    "answer": "B",
+    "page": 836,
+    "id": "logical-clocks-45",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-45",
+    "answerSourceId": "logical-clocks-45",
+    "explanationSourceId": "logical-clocks-45",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-46",
+    "chapter": "clocks",
+    "question": "A watch which gains uniformly is 2 minutes low at noon on Monday and is 4 min. 48 sec fast at 2 p.m. on the following Monday. When was it correct?",
+    "options": {
+      "A": "2 p.m. on Tuesday",
+      "B": "2 p.m. on Wednesday",
+      "C": "3 p.m. on Thursday",
+      "D": "1 p.m. on Friday"
+    },
+    "answer": "B",
+    "page": 836,
+    "id": "logical-clocks-46",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-46",
+    "answerSourceId": "logical-clocks-46",
+    "explanationSourceId": "logical-clocks-46",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-48",
+    "chapter": "clocks",
+    "question": "Between 5 and 6, a lady looked at her watch and mistaking the hour hand for the minute hand, she thought that the time was 57 minutes earlier than the correct time. The correct time was (M.B.A. 2003)",
+    "options": {
+      "A": "12 minutes past 5",
+      "B": "24 minutes past 5",
+      "C": "36 minutes past 5",
+      "D": "48 minutes past 5"
+    },
+    "answer": "B",
+    "page": 836,
+    "id": "logical-clocks-48",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-48",
+    "answerSourceId": "logical-clocks-48",
+    "explanationSourceId": "logical-clocks-48",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-49",
+    "chapter": "clocks",
+    "question": "How much does a watch losse per day if its hands coincide every 64 minutes? [IDBI Bank Executive Officers Exam, 2012] 8",
+    "options": {
+      "A": "37 minutes",
+      "B": "32 minutes 11",
+      "C": "31 minutes",
+      "D": "None of these"
+    },
+    "answer": "B",
+    "page": 837,
+    "id": "logical-clocks-49",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-49",
+    "answerSourceId": "logical-clocks-49",
+    "explanationSourceId": "logical-clocks-49",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-50",
+    "chapter": "clocks",
+    "question": "Wall clock gains 2 minutes in 12 hours, while a table clock loses 2 minutes every 36 hours. Both are set right at 12 noon on Tuesday. The correct time when both show the same time next would be [SSC—FCI Gr. III Exam, 2012]",
+    "options": {
+      "A": "12:30 at night, after 130 days",
+      "B": "12 noon, after 135 days",
+      "C": "1:30 at nights, after 130 days",
+      "D": "12 midnight after 135 days"
+    },
+    "answer": "B",
+    "page": 837,
+    "id": "logical-clocks-50",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-50",
+    "answerSourceId": "logical-clocks-50",
+    "explanationSourceId": "logical-clocks-50",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-52",
+    "chapter": "clocks",
+    "question": "At 8:30, the hour hand and the minute hand of clock form an angle of [CDS Exam, 2016]",
+    "options": {
+      "A": "80º",
+      "B": "75º",
+      "C": "70º",
+      "D": "60º"
+    },
+    "answer": "B",
+    "page": 837,
+    "id": "logical-clocks-52",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-52",
+    "answerSourceId": "logical-clocks-52",
+    "explanationSourceId": "logical-clocks-52",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-clocks-53",
+    "chapter": "clocks",
+    "question": "A clock is displaying correct time at 9am on Mon- day. If the clock loses 12 minutes in 24 hours, then the actual time when the clock indicates 8:30pm on Wednesday of the same week is [DMRC—Customer Relationship Assistant (CRA) Exam, 2016]",
+    "options": {
+      "A": "8 pm",
+      "B": "7 pm",
+      "C": "9 pm",
+      "D": "8: 59 : 45 pm"
+    },
+    "answer": "C",
+    "page": 837,
+    "id": "logical-clocks-53",
+    "topic": "clocks",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:24.229947Z",
+    "optionsSourceId": "logical-clocks-53",
+    "answerSourceId": "logical-clocks-53",
+    "explanationSourceId": "logical-clocks-53",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-1",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 5, 7, 12, 17, 19",
+    "options": {
+      "A": "19",
+      "B": "17",
+      "C": "13",
+      "D": "12"
+    },
+    "answer": "D",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-1",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-1",
+    "answerSourceId": "logical-odd-man-out-and-series-1",
+    "explanationSourceId": "logical-odd-man-out-and-series-1",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-2",
+    "chapter": "odd-man-out-and-series",
+    "question": "10, 14, 16, 18, 21, 24, 26",
+    "options": {
+      "A": "26",
+      "B": "24",
+      "C": "21",
+      "D": "18"
+    },
+    "answer": "C",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-2",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-2",
+    "answerSourceId": "logical-odd-man-out-and-series-2",
+    "explanationSourceId": "logical-odd-man-out-and-series-2",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-3",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 5, 9, 11, 14, 17, 21",
+    "options": {
+      "A": "21",
+      "B": "17",
+      "C": "14",
+      "D": "9"
+    },
+    "answer": "C",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-3",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-3",
+    "answerSourceId": "logical-odd-man-out-and-series-3",
+    "explanationSourceId": "logical-odd-man-out-and-series-3",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-4",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 4, 9, 16, 23, 25, 36",
+    "options": {
+      "A": "9",
+      "B": "23",
+      "C": "25",
+      "D": "36"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-4",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-4",
+    "answerSourceId": "logical-odd-man-out-and-series-4",
+    "explanationSourceId": "logical-odd-man-out-and-series-4",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-5",
+    "chapter": "odd-man-out-and-series",
+    "question": "6, 9, 15, 21, 24, 28, 30",
+    "options": {
+      "A": "28",
+      "B": "21",
+      "C": "24",
+      "D": "30"
+    },
+    "answer": "A",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-5",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-5",
+    "answerSourceId": "logical-odd-man-out-and-series-5",
+    "explanationSourceId": "logical-odd-man-out-and-series-5",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-6",
+    "chapter": "odd-man-out-and-series",
+    "question": "41, 43, 47, 53, 61, 71, 73, 81",
+    "options": {
+      "A": "61",
+      "B": "71",
+      "C": "73",
+      "D": "81"
+    },
+    "answer": "D",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-6",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-6",
+    "answerSourceId": "logical-odd-man-out-and-series-6",
+    "explanationSourceId": "logical-odd-man-out-and-series-6",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-7",
+    "chapter": "odd-man-out-and-series",
+    "question": "16, 25, 36, 72, 144, 196, 225",
+    "options": {
+      "A": "36",
+      "B": "72",
+      "C": "196",
+      "D": "225"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-7",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-7",
+    "answerSourceId": "logical-odd-man-out-and-series-7",
+    "explanationSourceId": "logical-odd-man-out-and-series-7",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-8",
+    "chapter": "odd-man-out-and-series",
+    "question": "10, 25, 45, 54, 60, 75, 80",
+    "options": {
+      "A": "10",
+      "B": "45",
+      "C": "54",
+      "D": "75"
+    },
+    "answer": "C",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-8",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-8",
+    "answerSourceId": "logical-odd-man-out-and-series-8",
+    "explanationSourceId": "logical-odd-man-out-and-series-8",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-9",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 4, 9, 16, 20, 36, 49",
+    "options": {
+      "A": "1",
+      "B": "9",
+      "C": "20",
+      "D": "49"
+    },
+    "answer": "C",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-9",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-9",
+    "answerSourceId": "logical-odd-man-out-and-series-9",
+    "explanationSourceId": "logical-odd-man-out-and-series-9",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-10",
+    "chapter": "odd-man-out-and-series",
+    "question": "8, 27, 64, 100, 125, 216, 343",
+    "options": {
+      "A": "27",
+      "B": "100",
+      "C": "125",
+      "D": "343"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-10",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-10",
+    "answerSourceId": "logical-odd-man-out-and-series-10",
+    "explanationSourceId": "logical-odd-man-out-and-series-10",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-11",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 5, 14, 30, 50, 55, 91",
+    "options": {
+      "A": "5",
+      "B": "50",
+      "C": "55",
+      "D": "91"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-11",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-11",
+    "answerSourceId": "logical-odd-man-out-and-series-11",
+    "explanationSourceId": "logical-odd-man-out-and-series-11",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-12",
+    "chapter": "odd-man-out-and-series",
+    "question": "385, 462, 572, 396, 427, 671, 264",
+    "options": {
+      "A": "385",
+      "B": "427",
+      "C": "671",
+      "D": "264"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-12",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-12",
+    "answerSourceId": "logical-odd-man-out-and-series-12",
+    "explanationSourceId": "logical-odd-man-out-and-series-12",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-13",
+    "chapter": "odd-man-out-and-series",
+    "question": "835, 734, 642, 751, 853, 981, 532",
+    "options": {
+      "A": "751",
+      "B": "853",
+      "C": "981",
+      "D": "532 877"
+    },
+    "answer": "A",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-13",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-13",
+    "answerSourceId": "logical-odd-man-out-and-series-13",
+    "explanationSourceId": "logical-odd-man-out-and-series-13",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-14",
+    "chapter": "odd-man-out-and-series",
+    "question": "331, 482, 551, 263, 383, 242, 111",
+    "options": {
+      "A": "263",
+      "B": "383",
+      "C": "242",
+      "D": "111"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-14",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-14",
+    "answerSourceId": "logical-odd-man-out-and-series-14",
+    "explanationSourceId": "logical-odd-man-out-and-series-14",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-15",
+    "chapter": "odd-man-out-and-series",
+    "question": "2, 5, 10, 17, 26, 37, 50, 64",
+    "options": {
+      "A": "50",
+      "B": "26",
+      "C": "37",
+      "D": "64"
+    },
+    "answer": "D",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-15",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-15",
+    "answerSourceId": "logical-odd-man-out-and-series-15",
+    "explanationSourceId": "logical-odd-man-out-and-series-15",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-16",
+    "chapter": "odd-man-out-and-series",
+    "question": "19, 28, 39, 52, 67, 84, 102",
+    "options": {
+      "A": "52",
+      "B": "102",
+      "C": "84",
+      "D": "67"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-16",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-16",
+    "answerSourceId": "logical-odd-man-out-and-series-16",
+    "explanationSourceId": "logical-odd-man-out-and-series-16",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-17",
+    "chapter": "odd-man-out-and-series",
+    "question": "253, 136, 352, 460, 324, 631, 244",
+    "options": {
+      "A": "136",
+      "B": "324",
+      "C": "352",
+      "D": "631"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-17",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-17",
+    "answerSourceId": "logical-odd-man-out-and-series-17",
+    "explanationSourceId": "logical-odd-man-out-and-series-17",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-18",
+    "chapter": "odd-man-out-and-series",
+    "question": "2, 5, 10, 50, 500, 5000",
+    "options": {
+      "A": "0",
+      "B": "5",
+      "C": "10",
+      "D": "5000"
+    },
+    "answer": "D",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-18",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-18",
+    "answerSourceId": "logical-odd-man-out-and-series-18",
+    "explanationSourceId": "logical-odd-man-out-and-series-18",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-19",
+    "chapter": "odd-man-out-and-series",
+    "question": "4, 5, 7, 10, 14, 18, 25, 32",
+    "options": {
+      "A": "7",
+      "B": "14",
+      "C": "18",
+      "D": "33 Directions: Find out the wrong number in each sequence:"
+    },
+    "answer": "C",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-19",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-19",
+    "answerSourceId": "logical-odd-man-out-and-series-19",
+    "explanationSourceId": "logical-odd-man-out-and-series-19",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-20",
+    "chapter": "odd-man-out-and-series",
+    "question": "22, 33, 66, 99, 121, 279, 594",
+    "options": {
+      "A": "33",
+      "B": "121",
+      "C": "279",
+      "D": "594"
+    },
+    "answer": "C",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-20",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-20",
+    "answerSourceId": "logical-odd-man-out-and-series-20",
+    "explanationSourceId": "logical-odd-man-out-and-series-20",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-21",
+    "chapter": "odd-man-out-and-series",
+    "question": "36, 54, 18, 27, 9, 18.5, 4.5",
+    "options": {
+      "A": "4.5",
+      "B": "18.5",
+      "C": "54",
+      "D": "18"
+    },
+    "answer": "B",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-21",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-21",
+    "answerSourceId": "logical-odd-man-out-and-series-21",
+    "explanationSourceId": "logical-odd-man-out-and-series-21",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-22",
+    "chapter": "odd-man-out-and-series",
+    "question": "582, 605, 588, 611, 634, 617, 600",
+    "options": {
+      "A": "634",
+      "B": "611",
+      "C": "605",
+      "D": "600"
+    },
+    "answer": "A",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-22",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-22",
+    "answerSourceId": "logical-odd-man-out-and-series-22",
+    "explanationSourceId": "logical-odd-man-out-and-series-22",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-23",
+    "chapter": "odd-man-out-and-series",
+    "question": "46080, 3840, 384, 48, 24, 2, 1",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "24",
+      "D": "384"
+    },
+    "answer": "C",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-23",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-23",
+    "answerSourceId": "logical-odd-man-out-and-series-23",
+    "explanationSourceId": "logical-odd-man-out-and-series-23",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-24",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 8, 27, 64, 124, 216, 343",
+    "options": {
+      "A": "8",
+      "B": "27",
+      "C": "64",
+      "D": "124"
+    },
+    "answer": "D",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-24",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-24",
+    "answerSourceId": "logical-odd-man-out-and-series-24",
+    "explanationSourceId": "logical-odd-man-out-and-series-24",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-25",
+    "chapter": "odd-man-out-and-series",
+    "question": "5, 16, 6, 16, 7, 16, 9",
+    "options": {
+      "A": "9",
+      "B": "7",
+      "C": "6",
+      "D": "None of these"
+    },
+    "answer": "A",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-25",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-25",
+    "answerSourceId": "logical-odd-man-out-and-series-25",
+    "explanationSourceId": "logical-odd-man-out-and-series-25",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-26",
+    "chapter": "odd-man-out-and-series",
+    "question": "6, 13, 18, 25, 30, 37, 40",
+    "options": {
+      "A": "25",
+      "B": "30",
+      "C": "37",
+      "D": "40 7"
+    },
+    "answer": "D",
+    "page": 885,
+    "id": "logical-odd-man-out-and-series-26",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-26",
+    "answerSourceId": "logical-odd-man-out-and-series-26",
+    "explanationSourceId": "logical-odd-man-out-and-series-26",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-27",
+    "chapter": "odd-man-out-and-series",
+    "question": "56, 72, 90, 110, 132, 150",
+    "options": {
+      "A": "72",
+      "B": "110",
+      "C": "132",
+      "D": "150"
+    },
+    "answer": "D",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-27",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-27",
+    "answerSourceId": "logical-odd-man-out-and-series-27",
+    "explanationSourceId": "logical-odd-man-out-and-series-27",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-28",
+    "chapter": "odd-man-out-and-series",
+    "question": "8, 13, 21, 32, 47, 63, 83",
+    "options": {
+      "A": "47",
+      "B": "63",
+      "C": "32",
+      "D": "83"
+    },
+    "answer": "A",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-28",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-28",
+    "answerSourceId": "logical-odd-man-out-and-series-28",
+    "explanationSourceId": "logical-odd-man-out-and-series-28",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-29",
+    "chapter": "odd-man-out-and-series",
+    "question": "25, 36, 49, 81, 121, 169, 225",
+    "options": {
+      "A": "36",
+      "B": "49",
+      "C": "121",
+      "D": "169"
+    },
+    "answer": "A",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-29",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-29",
+    "answerSourceId": "logical-odd-man-out-and-series-29",
+    "explanationSourceId": "logical-odd-man-out-and-series-29",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-30",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 2, 6, 15, 31, 56, 91",
+    "options": {
+      "A": "31",
+      "B": "91",
+      "C": "56",
+      "D": "15"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-30",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-30",
+    "answerSourceId": "logical-odd-man-out-and-series-30",
+    "explanationSourceId": "logical-odd-man-out-and-series-30",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-31",
+    "chapter": "odd-man-out-and-series",
+    "question": "52, 51, 48, 43, 34, 27, 16",
+    "options": {
+      "A": "27",
+      "B": "34",
+      "C": "43",
+      "D": "48"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-31",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-31",
+    "answerSourceId": "logical-odd-man-out-and-series-31",
+    "explanationSourceId": "logical-odd-man-out-and-series-31",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-32",
+    "chapter": "odd-man-out-and-series",
+    "question": "105, 85, 60, 30, 0, – 45, – 90",
+    "options": {
+      "A": "0",
+      "B": "85",
+      "C": "– 45",
+      "D": "60"
+    },
+    "answer": "A",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-32",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-32",
+    "answerSourceId": "logical-odd-man-out-and-series-32",
+    "explanationSourceId": "logical-odd-man-out-and-series-32",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-33",
+    "chapter": "odd-man-out-and-series",
+    "question": "4, 6, 8, 9, 10, 11, 12",
+    "options": {
+      "A": "10",
+      "B": "11",
+      "C": "12",
+      "D": "9"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-33",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-33",
+    "answerSourceId": "logical-odd-man-out-and-series-33",
+    "explanationSourceId": "logical-odd-man-out-and-series-33",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-34",
+    "chapter": "odd-man-out-and-series",
+    "question": "125, 127, 130, 135, 142, 153, 165",
+    "options": {
+      "A": "130",
+      "B": "142",
+      "C": "153",
+      "D": "165"
+    },
+    "answer": "D",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-34",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-34",
+    "answerSourceId": "logical-odd-man-out-and-series-34",
+    "explanationSourceId": "logical-odd-man-out-and-series-34",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-35",
+    "chapter": "odd-man-out-and-series",
+    "question": "16, 36, 64, 81, 100, 144, 190",
+    "options": {
+      "A": "81",
+      "B": "100",
+      "C": "190",
+      "D": "36"
+    },
+    "answer": "C",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-35",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-35",
+    "answerSourceId": "logical-odd-man-out-and-series-35",
+    "explanationSourceId": "logical-odd-man-out-and-series-35",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-36",
+    "chapter": "odd-man-out-and-series",
+    "question": "125, 123, 120, 115, 108, 100, 84",
+    "options": {
+      "A": "123",
+      "B": "115",
+      "C": "100",
+      "D": "84"
+    },
+    "answer": "C",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-36",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-36",
+    "answerSourceId": "logical-odd-man-out-and-series-36",
+    "explanationSourceId": "logical-odd-man-out-and-series-36",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-37",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 10, 21, 36, 55, 70, 105",
+    "options": {
+      "A": "105",
+      "B": "70",
+      "C": "36",
+      "D": "55"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-37",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-37",
+    "answerSourceId": "logical-odd-man-out-and-series-37",
+    "explanationSourceId": "logical-odd-man-out-and-series-37",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-38",
+    "chapter": "odd-man-out-and-series",
+    "question": "4, 9, 19, 39, 79, 160, 319",
+    "options": {
+      "A": "319",
+      "B": "160",
+      "C": "79",
+      "D": "39"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-38",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-38",
+    "answerSourceId": "logical-odd-man-out-and-series-38",
+    "explanationSourceId": "logical-odd-man-out-and-series-38",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-39",
+    "chapter": "odd-man-out-and-series",
+    "question": "10, 14, 28, 32, 64, 68, 132",
+    "options": {
+      "A": "32",
+      "B": "68",
+      "C": "132",
+      "D": "28"
+    },
+    "answer": "C",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-39",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-39",
+    "answerSourceId": "logical-odd-man-out-and-series-39",
+    "explanationSourceId": "logical-odd-man-out-and-series-39",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-40",
+    "chapter": "odd-man-out-and-series",
+    "question": "8, 27, 125, 343, 1331",
+    "options": {
+      "A": "1331",
+      "B": "343",
+      "C": "125",
+      "D": "None of these Directions: Insert the missing number:"
+    },
+    "answer": "D",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-40",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-40",
+    "answerSourceId": "logical-odd-man-out-and-series-40",
+    "explanationSourceId": "logical-odd-man-out-and-series-40",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-41",
+    "chapter": "odd-man-out-and-series",
+    "question": "4, – 8, 16, – 32, 64, (.....)",
+    "options": {
+      "A": "128",
+      "B": "– 128",
+      "C": "192",
+      "D": "– 192"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-41",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-41",
+    "answerSourceId": "logical-odd-man-out-and-series-41",
+    "explanationSourceId": "logical-odd-man-out-and-series-41",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-42",
+    "chapter": "odd-man-out-and-series",
+    "question": "5, 10, 13, 26, 29, 58, 61, (.....)",
+    "options": {
+      "A": "122",
+      "B": "64",
+      "C": "125",
+      "D": "128"
+    },
+    "answer": "A",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-42",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-42",
+    "answerSourceId": "logical-odd-man-out-and-series-42",
+    "explanationSourceId": "logical-odd-man-out-and-series-42",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-43",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 4, 9, 16, 25, 36, 49, (.....)",
+    "options": {
+      "A": "54",
+      "B": "56",
+      "C": "164",
+      "D": "81"
+    },
+    "answer": "C",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-43",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-43",
+    "answerSourceId": "logical-odd-man-out-and-series-43",
+    "explanationSourceId": "logical-odd-man-out-and-series-43",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-44",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 8, 27, 64, 125, 216, (.....)",
+    "options": {
+      "A": "354",
+      "B": "343",
+      "C": "392",
+      "D": "245"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-44",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-44",
+    "answerSourceId": "logical-odd-man-out-and-series-44",
+    "explanationSourceId": "logical-odd-man-out-and-series-44",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-45",
+    "chapter": "odd-man-out-and-series",
+    "question": "11, 13, 17, 19, 23, 29, 31, 37, 41, (.....)",
+    "options": {
+      "A": "43",
+      "B": "47",
+      "C": "53",
+      "D": "51"
+    },
+    "answer": "A",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-45",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-45",
+    "answerSourceId": "logical-odd-man-out-and-series-45",
+    "explanationSourceId": "logical-odd-man-out-and-series-45",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-46",
+    "chapter": "odd-man-out-and-series",
+    "question": "16, 33, 65, 131, 261, (.....)",
+    "options": {
+      "A": "523",
+      "B": "521",
+      "C": "613",
+      "D": "721"
+    },
+    "answer": "A",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-46",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-46",
+    "answerSourceId": "logical-odd-man-out-and-series-46",
+    "explanationSourceId": "logical-odd-man-out-and-series-46",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-47",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 7, 6, 5, 9, 3, 12, 1, 15, (.....)",
+    "options": {
+      "A": "18",
+      "B": "13",
+      "C": "– 1",
+      "D": "3"
+    },
+    "answer": "C",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-47",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-47",
+    "answerSourceId": "logical-odd-man-out-and-series-47",
+    "explanationSourceId": "logical-odd-man-out-and-series-47",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-48",
+    "chapter": "odd-man-out-and-series",
+    "question": "15, 31, 63, 127, 255, (.....)",
+    "options": {
+      "A": "513",
+      "B": "511",
+      "C": "517",
+      "D": "523"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-48",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-48",
+    "answerSourceId": "logical-odd-man-out-and-series-48",
+    "explanationSourceId": "logical-odd-man-out-and-series-48",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-49",
+    "chapter": "odd-man-out-and-series",
+    "question": "2, 6, 12, 20, 30, 42, 56, (.....)",
+    "options": {
+      "A": "60",
+      "B": "64",
+      "C": "72",
+      "D": "70"
+    },
+    "answer": "C",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-49",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-49",
+    "answerSourceId": "logical-odd-man-out-and-series-49",
+    "explanationSourceId": "logical-odd-man-out-and-series-49",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-50",
+    "chapter": "odd-man-out-and-series",
+    "question": "8, 24, 12, 36, 18, 54, (.....)",
+    "options": {
+      "A": "27",
+      "B": "108",
+      "C": "68",
+      "D": "72"
+    },
+    "answer": "A",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-50",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-50",
+    "answerSourceId": "logical-odd-man-out-and-series-50",
+    "explanationSourceId": "logical-odd-man-out-and-series-50",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-51",
+    "chapter": "odd-man-out-and-series",
+    "question": "165, 195, 255,285, 345, (.....)",
+    "options": {
+      "A": "375",
+      "B": "420",
+      "C": "435",
+      "D": "390"
+    },
+    "answer": "C",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-51",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-51",
+    "answerSourceId": "logical-odd-man-out-and-series-51",
+    "explanationSourceId": "logical-odd-man-out-and-series-51",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-52",
+    "chapter": "odd-man-out-and-series",
+    "question": "7, 26, 63, 124, 215, 342, (.....)",
+    "options": {
+      "A": "481",
+      "B": "511",
+      "C": "391",
+      "D": "421"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-52",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-52",
+    "answerSourceId": "logical-odd-man-out-and-series-52",
+    "explanationSourceId": "logical-odd-man-out-and-series-52",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-53",
+    "chapter": "odd-man-out-and-series",
+    "question": "2, 4, 12, 48, 240, (.....)",
+    "options": {
+      "A": "960",
+      "B": "1440",
+      "C": "1080",
+      "D": "1920"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-53",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-53",
+    "answerSourceId": "logical-odd-man-out-and-series-53",
+    "explanationSourceId": "logical-odd-man-out-and-series-53",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-54",
+    "chapter": "odd-man-out-and-series",
+    "question": "8, 7, 11, 12, 14, 17, 17, 22, (.....)",
+    "options": {
+      "A": "27",
+      "B": "20",
+      "C": "22",
+      "D": "24"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-54",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-54",
+    "answerSourceId": "logical-odd-man-out-and-series-54",
+    "explanationSourceId": "logical-odd-man-out-and-series-54",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-55",
+    "chapter": "odd-man-out-and-series",
+    "question": "10, 5, 13, 10, 16, 20, 19, (.....)",
+    "options": {
+      "A": "22",
+      "B": "40",
+      "C": "38",
+      "D": "23"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-55",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-55",
+    "answerSourceId": "logical-odd-man-out-and-series-55",
+    "explanationSourceId": "logical-odd-man-out-and-series-55",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-56",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 2, 4, 8, 16, 32, 64, (.....), 256",
+    "options": {
+      "A": "148",
+      "B": "128",
+      "C": "154",
+      "D": "164"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-56",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-56",
+    "answerSourceId": "logical-odd-man-out-and-series-56",
+    "explanationSourceId": "logical-odd-man-out-and-series-56",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-57",
+    "chapter": "odd-man-out-and-series",
+    "question": "71, 76, 69, 74, 67, 72, (.....)",
+    "options": {
+      "A": "77",
+      "B": "65",
+      "C": "80",
+      "D": "76"
+    },
+    "answer": "B",
+    "page": 886,
+    "id": "logical-odd-man-out-and-series-57",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-57",
+    "answerSourceId": "logical-odd-man-out-and-series-57",
+    "explanationSourceId": "logical-odd-man-out-and-series-57",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-58",
+    "chapter": "odd-man-out-and-series",
+    "question": "9, 12, 11, 14, 13, (.....), 15",
+    "options": {
+      "A": "12",
+      "B": "16",
+      "C": "10",
+      "D": "17"
+    },
+    "answer": "B",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-58",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-58",
+    "answerSourceId": "logical-odd-man-out-and-series-58",
+    "explanationSourceId": "logical-odd-man-out-and-series-58",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-59",
+    "chapter": "odd-man-out-and-series",
+    "question": "Complete the series : 2, 5, 9, 19, 37, .....",
+    "options": {
+      "A": "76",
+      "B": "74",
+      "C": "75",
+      "D": "None of these Directions: Find the wrong number in the series."
+    },
+    "answer": "C",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-59",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-59",
+    "answerSourceId": "logical-odd-man-out-and-series-59",
+    "explanationSourceId": "logical-odd-man-out-and-series-59",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-60",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 8, 15, 24, 34, 48, 63",
+    "options": {
+      "A": "15",
+      "B": "24",
+      "C": "34",
+      "D": "48"
+    },
+    "answer": "C",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-60",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-60",
+    "answerSourceId": "logical-odd-man-out-and-series-60",
+    "explanationSourceId": "logical-odd-man-out-and-series-60",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-61",
+    "chapter": "odd-man-out-and-series",
+    "question": "2, 9, 28, 65, 126, 216, 344",
+    "options": {
+      "A": "2",
+      "B": "28",
+      "C": "65",
+      "D": "216"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-61",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-61",
+    "answerSourceId": "logical-odd-man-out-and-series-61",
+    "explanationSourceId": "logical-odd-man-out-and-series-61",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-62",
+    "chapter": "odd-man-out-and-series",
+    "question": "5, 15, 30, 135, 405, 1215, 3645",
+    "options": {
+      "A": "3645",
+      "B": "1215",
+      "C": "405",
+      "D": "30"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-62",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-62",
+    "answerSourceId": "logical-odd-man-out-and-series-62",
+    "explanationSourceId": "logical-odd-man-out-and-series-62",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-63",
+    "chapter": "odd-man-out-and-series",
+    "question": "125, 106, 88, 76, 65, 58, 53",
+    "options": {
+      "A": "125",
+      "B": "106",
+      "C": "88",
+      "D": "76"
+    },
+    "answer": "C",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-63",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-63",
+    "answerSourceId": "logical-odd-man-out-and-series-63",
+    "explanationSourceId": "logical-odd-man-out-and-series-63",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-64",
+    "chapter": "odd-man-out-and-series",
+    "question": "190, 166, 145, 128, 112, 100, 91",
+    "options": {
+      "A": "100",
+      "B": "166",
+      "C": "145",
+      "D": "128"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-64",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-64",
+    "answerSourceId": "logical-odd-man-out-and-series-64",
+    "explanationSourceId": "logical-odd-man-out-and-series-64",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-65",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 1, 2, 6, 24, 96, 720",
+    "options": {
+      "A": "720",
+      "B": "96",
+      "C": "24",
+      "D": "6"
+    },
+    "answer": "B",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-65",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-65",
+    "answerSourceId": "logical-odd-man-out-and-series-65",
+    "explanationSourceId": "logical-odd-man-out-and-series-65",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-66",
+    "chapter": "odd-man-out-and-series",
+    "question": "40960, 10240, 2560, 640, 200, 40, 10",
+    "options": {
+      "A": "640",
+      "B": "40",
+      "C": "200",
+      "D": "2560"
+    },
+    "answer": "C",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-66",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-66",
+    "answerSourceId": "logical-odd-man-out-and-series-66",
+    "explanationSourceId": "logical-odd-man-out-and-series-66",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-67",
+    "chapter": "odd-man-out-and-series",
+    "question": "64, 71, 80, 91, 104, 119, 135, 155",
+    "options": {
+      "A": "71",
+      "B": "80",
+      "C": "104",
+      "D": "135"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-67",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-67",
+    "answerSourceId": "logical-odd-man-out-and-series-67",
+    "explanationSourceId": "logical-odd-man-out-and-series-67",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-68",
+    "chapter": "odd-man-out-and-series",
+    "question": "7, 8, 18, 57, 228, 1165, 6996",
+    "options": {
+      "A": "8",
+      "B": "18",
+      "C": "57",
+      "D": "228"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-68",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-68",
+    "answerSourceId": "logical-odd-man-out-and-series-68",
+    "explanationSourceId": "logical-odd-man-out-and-series-68",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-69",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 7, 15, 27, 63, 127, 255",
+    "options": {
+      "A": "7",
+      "B": "15",
+      "C": "27",
+      "D": "63"
+    },
+    "answer": "C",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-69",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-69",
+    "answerSourceId": "logical-odd-man-out-and-series-69",
+    "explanationSourceId": "logical-odd-man-out-and-series-69",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-70",
+    "chapter": "odd-man-out-and-series",
+    "question": "19, 26, 33, 46, 59, 74, 91",
+    "options": {
+      "A": "26",
+      "B": "33",
+      "C": "46",
+      "D": "59"
+    },
+    "answer": "B",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-70",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-70",
+    "answerSourceId": "logical-odd-man-out-and-series-70",
+    "explanationSourceId": "logical-odd-man-out-and-series-70",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-71",
+    "chapter": "odd-man-out-and-series",
+    "question": "2880, 480, 92, 24, 8, 4, 4",
+    "options": {
+      "A": "480",
+      "B": "92",
+      "C": "24",
+      "D": "8"
+    },
+    "answer": "B",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-71",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-71",
+    "answerSourceId": "logical-odd-man-out-and-series-71",
+    "explanationSourceId": "logical-odd-man-out-and-series-71",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-72",
+    "chapter": "odd-man-out-and-series",
+    "question": "445, 221, 109, 46, 25, 11, 4",
+    "options": {
+      "A": "221",
+      "B": "109",
+      "C": "46",
+      "D": "25"
+    },
+    "answer": "C",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-72",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-72",
+    "answerSourceId": "logical-odd-man-out-and-series-72",
+    "explanationSourceId": "logical-odd-man-out-and-series-72",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-73",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 7, 15, 39, 63, 127, 255, 511",
+    "options": {
+      "A": "7",
+      "B": "15",
+      "C": "39",
+      "D": "63"
+    },
+    "answer": "C",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-73",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-73",
+    "answerSourceId": "logical-odd-man-out-and-series-73",
+    "explanationSourceId": "logical-odd-man-out-and-series-73",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-74",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 3, 10, 21, 64, 129, 356, 777",
+    "options": {
+      "A": "10",
+      "B": "21",
+      "C": "64",
+      "D": "356"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-74",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-74",
+    "answerSourceId": "logical-odd-man-out-and-series-74",
+    "explanationSourceId": "logical-odd-man-out-and-series-74",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-75",
+    "chapter": "odd-man-out-and-series",
+    "question": "196, 169, 144, 121, 100, 80, 64",
+    "options": {
+      "A": "169",
+      "B": "144",
+      "C": "121",
+      "D": "80"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-75",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-75",
+    "answerSourceId": "logical-odd-man-out-and-series-75",
+    "explanationSourceId": "logical-odd-man-out-and-series-75",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-76",
+    "chapter": "odd-man-out-and-series",
+    "question": "6, 12, 48, 100, 384, 768, 3072",
+    "options": {
+      "A": "768",
+      "B": "384",
+      "C": "100",
+      "D": "48"
+    },
+    "answer": "C",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-76",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-76",
+    "answerSourceId": "logical-odd-man-out-and-series-76",
+    "explanationSourceId": "logical-odd-man-out-and-series-76",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-77",
+    "chapter": "odd-man-out-and-series",
+    "question": "10, 26, 74, 218, 654, 1946, 5834",
+    "options": {
+      "A": "26",
+      "B": "74",
+      "C": "218",
+      "D": "654"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-77",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-77",
+    "answerSourceId": "logical-odd-man-out-and-series-77",
+    "explanationSourceId": "logical-odd-man-out-and-series-77",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-78",
+    "chapter": "odd-man-out-and-series",
+    "question": "15, 16, 34, 105, 424, 2124, 12576",
+    "options": {
+      "A": "16",
+      "B": "34",
+      "C": "105",
+      "D": "2124"
+    },
+    "answer": "D",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-78",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-78",
+    "answerSourceId": "logical-odd-man-out-and-series-78",
+    "explanationSourceId": "logical-odd-man-out-and-series-78",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-79",
+    "chapter": "odd-man-out-and-series",
+    "question": "2807, 1400, 697, 347, 171, 84, 41, 20",
+    "options": {
+      "A": "697",
+      "B": "347",
+      "C": "171",
+      "D": "84"
+    },
+    "answer": "B",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-79",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-79",
+    "answerSourceId": "logical-odd-man-out-and-series-79",
+    "explanationSourceId": "logical-odd-man-out-and-series-79",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-80",
+    "chapter": "odd-man-out-and-series",
+    "question": "32, 36, 41, 61, 86, 122, 171, 235",
+    "options": {
+      "A": "41",
+      "B": "61",
+      "C": "86",
+      "D": "122"
+    },
+    "answer": "A",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-80",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-80",
+    "answerSourceId": "logical-odd-man-out-and-series-80",
+    "explanationSourceId": "logical-odd-man-out-and-series-80",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-81",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 4, 9, 22.5, 67.5, 202.5, 810",
+    "options": {
+      "A": "4",
+      "B": "9",
+      "C": "22.5",
+      "D": "67.5"
+    },
+    "answer": "A",
+    "page": 887,
+    "id": "logical-odd-man-out-and-series-81",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-81",
+    "answerSourceId": "logical-odd-man-out-and-series-81",
+    "explanationSourceId": "logical-odd-man-out-and-series-81",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-82",
+    "chapter": "odd-man-out-and-series",
+    "question": "1, 2, 8, 33, 148, 760, 4626",
+    "options": {
+      "A": "2",
+      "B": "8",
+      "C": "33",
+      "D": "760"
+    },
+    "answer": "D",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-82",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-82",
+    "answerSourceId": "logical-odd-man-out-and-series-82",
+    "explanationSourceId": "logical-odd-man-out-and-series-82",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-83",
+    "chapter": "odd-man-out-and-series",
+    "question": "3, 8, 18, 46, 100, 210, 432",
+    "options": {
+      "A": "8",
+      "B": "18",
+      "C": "46",
+      "D": "100"
+    },
+    "answer": "B",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-83",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-83",
+    "answerSourceId": "logical-odd-man-out-and-series-83",
+    "explanationSourceId": "logical-odd-man-out-and-series-83",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-84",
+    "chapter": "odd-man-out-and-series",
+    "question": "789, 645, 545, 481, 440, 429, 425",
+    "options": {
+      "A": "645",
+      "B": "545",
+      "C": "481",
+      "D": "440"
+    },
+    "answer": "D",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-84",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-84",
+    "answerSourceId": "logical-odd-man-out-and-series-84",
+    "explanationSourceId": "logical-odd-man-out-and-series-84",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-85",
+    "chapter": "odd-man-out-and-series",
+    "question": "1050, 510, 242, 106, 46, 16, 3",
+    "options": {
+      "A": "510",
+      "B": "242",
+      "C": "106",
+      "D": "46"
+    },
+    "answer": "C",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-85",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-85",
+    "answerSourceId": "logical-odd-man-out-and-series-85",
+    "explanationSourceId": "logical-odd-man-out-and-series-85",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-86",
+    "chapter": "odd-man-out-and-series",
+    "question": "5, 8, 20, 42, 124, 246, 736",
+    "options": {
+      "A": "8",
+      "B": "20",
+      "C": "42",
+      "D": "124"
+    },
+    "answer": "B",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-86",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-86",
+    "answerSourceId": "logical-odd-man-out-and-series-86",
+    "explanationSourceId": "logical-odd-man-out-and-series-86",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-87",
+    "chapter": "odd-man-out-and-series",
+    "question": "2, 3, 6, 15, 52.5, 157.5, 630",
+    "options": {
+      "A": "3",
+      "B": "6",
+      "C": "15",
+      "D": "52.5"
+    },
+    "answer": "D",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-87",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-87",
+    "answerSourceId": "logical-odd-man-out-and-series-87",
+    "explanationSourceId": "logical-odd-man-out-and-series-87",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-88",
+    "chapter": "odd-man-out-and-series",
+    "question": "888, 440, 216, 104, 48, 22, 6",
+    "options": {
+      "A": "440",
+      "B": "216",
+      "C": "104",
+      "D": "22"
+    },
+    "answer": "D",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-88",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-88",
+    "answerSourceId": "logical-odd-man-out-and-series-88",
+    "explanationSourceId": "logical-odd-man-out-and-series-88",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-89",
+    "chapter": "odd-man-out-and-series",
+    "question": "4, 5, 15, 49, 201, 1011, 6073",
+    "options": {
+      "A": "5",
+      "B": "15",
+      "C": "49",
+      "D": "201"
+    },
+    "answer": "A",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-89",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-89",
+    "answerSourceId": "logical-odd-man-out-and-series-89",
+    "explanationSourceId": "logical-odd-man-out-and-series-89",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-91",
+    "chapter": "odd-man-out-and-series",
+    "question": "Find out the wrong number in a given series. 644, 328, 164, 84, 44, 24, 14 [UPSSC—Lower Subordinate (Pre.) Exam, 2016]",
+    "options": {
+      "A": "328",
+      "B": "164",
+      "C": "84",
+      "D": "44 Direction: In the following number series only one number is wrong. Find out the wrong number."
+    },
+    "answer": "A",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-91",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-91",
+    "answerSourceId": "logical-odd-man-out-and-series-91",
+    "explanationSourceId": "logical-odd-man-out-and-series-91",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-92",
+    "chapter": "odd-man-out-and-series",
+    "question": "18000, 3600, 720, 144.2, 28.8, 5.76 [DMRC—Train Operator (Station controller), Exam 2016]",
+    "options": {
+      "A": "5.76",
+      "B": "720",
+      "C": "144.2",
+      "D": "28.8"
+    },
+    "answer": "C",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-92",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-92",
+    "answerSourceId": "logical-odd-man-out-and-series-92",
+    "explanationSourceId": "logical-odd-man-out-and-series-92",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-93",
+    "chapter": "odd-man-out-and-series",
+    "question": "What will be come in place of number ? in the following series? 155 151 144 132 133? [IBPS Bank PO/MT (Pre.) Exam, 2015]",
+    "options": {
+      "A": "89",
+      "B": "71",
+      "C": "85",
+      "D": "92"
+    },
+    "answer": "C",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-93",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-93",
+    "answerSourceId": "logical-odd-man-out-and-series-93",
+    "explanationSourceId": "logical-odd-man-out-and-series-93",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-94",
+    "chapter": "odd-man-out-and-series",
+    "question": "What will be come in place of question mark in the given series. 264 262 271 243 308 ? [IBPS—Bank PO (Pre) Exam, 2015]",
+    "options": {
+      "A": "216",
+      "B": "163",
+      "C": "194",
+      "D": "182 Direction: What will come in the place of the question mark (?) in the following number series? [SBI—Jr. Associates (Pre.) Exam, 2016]"
+    },
+    "answer": "D",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-94",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-94",
+    "answerSourceId": "logical-odd-man-out-and-series-94",
+    "explanationSourceId": "logical-odd-man-out-and-series-94",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  },
+  {
+    "questionId": "logical-odd-man-out-and-series-95",
+    "chapter": "odd-man-out-and-series",
+    "question": "48, 23, ?, 4.25, 1.125",
+    "options": {
+      "A": "10.5",
+      "B": "10",
+      "C": "2.5",
+      "D": "11"
+    },
+    "answer": "A",
+    "page": 888,
+    "id": "logical-odd-man-out-and-series-95",
+    "topic": "odd-man-out-and-series",
+    "category": "logical",
+    "difficulty": 2,
+    "estimatedTime": 60,
+    "companyRelevance": [
+      "TCS",
+      "Accenture",
+      "Infosys"
+    ],
+    "explanation": "Detailed explanation is currently being prepared and will be available in a future update.",
+    "renderMode": "TEXT",
+    "importBatch": "2026-07-04T08:48:39.963061Z",
+    "optionsSourceId": "logical-odd-man-out-and-series-95",
+    "answerSourceId": "logical-odd-man-out-and-series-95",
+    "explanationSourceId": "logical-odd-man-out-and-series-95",
+    "sourceFile": "dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf"
+  }
+]

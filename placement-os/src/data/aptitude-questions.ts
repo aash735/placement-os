@@ -1,5 +1,16 @@
 export interface AptitudeQuestion {
   id: string;
+  chapter?: string;
+  questionText?: string;
+  questionImage?: string;
+  optionsImage?: string;
+  optionImages?: {
+    A: string;
+    B: string;
+    C: string;
+    D: string;
+  };
+  renderMode?: "TEXT" | "IMAGE" | "HYBRID";
   question: string;
   options: string[];
   answer: string; // The correct option text
@@ -28,7 +39,7 @@ export interface AptitudeQuestion {
   correctAnswer?: string;
   sourceReference?: string;
   sourceBook?: string;
-  sourcePage?: number;
+  sourcePage?: number | string;
   integrityStatus?: 'INTEGRATED' | 'QUARANTINED';
 }
 
@@ -463,12 +474,34 @@ const baseAptitudeQuestions: AptitudeQuestion[] = [
   }
 ];
 
+function normalizeAptitudeQuestion(q: any): AptitudeQuestion {
+  if (q.questionId && q.options && typeof q.options === 'object' && !Array.isArray(q.options)) {
+    const optsObj = q.options;
+    const optsArray = [optsObj.A, optsObj.B, optsObj.C, optsObj.D].filter(o => o !== undefined && o !== null);
+    let answerText = q.answer;
+    if (q.answer === 'A' || q.answer === 'B' || q.answer === 'C' || q.answer === 'D') {
+      const idx = q.answer.charCodeAt(0) - 65;
+      answerText = optsArray[idx] || q.answer;
+    }
+    return {
+      ...q,
+      id: q.questionId,
+      options: optsArray,
+      answer: answerText,
+      correctAnswer: answerText,
+      topic: q.chapter || q.topic,
+      sourcePage: q.page || q.sourcePage,
+    };
+  }
+  return q as AptitudeQuestion;
+}
+
 const allJsonQs: AptitudeQuestion[] = [
-  ...(quantQs as AptitudeQuestion[]),
-  ...(logicalQs as AptitudeQuestion[]),
-  ...(verbalQs as AptitudeQuestion[]),
-  ...(diQs as AptitudeQuestion[]),
-  ...(puzzlesQs as AptitudeQuestion[])
+  ...(quantQs as any[]).map(normalizeAptitudeQuestion),
+  ...(logicalQs as any[]).map(normalizeAptitudeQuestion),
+  ...(verbalQs as any[]).map(normalizeAptitudeQuestion),
+  ...(diQs as any[]).map(normalizeAptitudeQuestion),
+  ...(puzzlesQs as any[]).map(normalizeAptitudeQuestion)
 ];
 
 const mergedBase = [...baseAptitudeQuestions];

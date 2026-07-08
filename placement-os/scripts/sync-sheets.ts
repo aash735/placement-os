@@ -137,10 +137,26 @@ function main() {
     console.warn("⚠️  Striver Sheet.xlsx not found in sheet roots.");
   }
 
+  // Check if DSA Sheet by Arsh (45-60 Days Plan).xlsx exists and load it separately
+  const arshSheetPath = findSheetFile("DSA Sheet by Arsh (45-60 Days Plan).xlsx") || findSheetFile("dsa-sheet-by-arsh.xlsx");
+  let arshSheetQuestions: DSAQuestion[] = [];
+  let arshSheetRawRowsCount = 0;
+
+  if (arshSheetPath) {
+    const arshSheetRows = parseSheetFile(arshSheetPath);
+    arshSheetRawRowsCount = arshSheetRows.length;
+    arshSheetQuestions = arshSheetRows
+      .map(rowToDSAQuestion)
+      .filter((q): q is DSAQuestion => q !== null);
+  } else {
+    console.warn("⚠️  DSA Sheet by Arsh (45-60 Days Plan).xlsx not found in sheet roots.");
+  }
+
   console.log(`📊 Loaded raw data:`);
   console.log(`   - Questions rows (existing): ${questionRows.length}`);
   console.log(`   - Questions discovered in DSA SHEET: ${dsaSheetQuestions.length}`);
   console.log(`   - Questions discovered in Striver Sheet: ${striverSheetQuestions.length}`);
+  console.log(`   - Questions discovered in Arsh Sheet: ${arshSheetQuestions.length}`);
   console.log(`   - Mock test rows: ${mockRows.length}`);
   console.log(`   - Company profile rows: ${companyRows.length}`);
   console.log(`   - Aptitude topic rows: ${aptitudeRows.length}`);
@@ -172,16 +188,32 @@ function main() {
     .map(rowToDSAQuestion)
     .filter((q): q is DSAQuestion => q !== null);
 
+  // Initialize sources array for base questions
+  baseQuestions.forEach((q) => {
+    if (!q.sources) {
+      q.sources = ["DSA Sheet"];
+    }
+  });
+
   // Merge datasets using duplicate detection
   const questions = [...baseQuestions];
   let newQuestionsAdded = 0;
   let duplicatesSkipped = 0;
 
-  const mergeCandidate = (candidate: DSAQuestion) => {
+  const mergeCandidate = (candidate: DSAQuestion, sourceName: string) => {
     const existingIdx = questions.findIndex((eq) => isDuplicate(eq, candidate));
     if (existingIdx !== -1) {
       duplicatesSkipped++;
       const existing = questions[existingIdx];
+      
+      // Track sources
+      if (!existing.sources) {
+        existing.sources = ["DSA Sheet"];
+      }
+      if (!existing.sources.includes(sourceName)) {
+        existing.sources.push(sourceName);
+      }
+
       // Reconcile/accumulate additional topics
       if (candidate.topicId && candidate.topicId !== existing.topicId) {
         if (!existing.additionalTopicIds) {
@@ -191,24 +223,88 @@ function main() {
           existing.additionalTopicIds.push(candidate.topicId);
         }
       }
+
+      // Merge metadata
+      if (candidate.companies && candidate.companies.length > 0) {
+        existing.companies = Array.from(new Set([...(existing.companies || []), ...candidate.companies]));
+      }
+      if (!existing.notes && candidate.notes) existing.notes = candidate.notes;
+      if (!existing.takeaways && candidate.takeaways) existing.takeaways = candidate.takeaways;
+      if (!existing.approach && candidate.approach) existing.approach = candidate.approach;
+      if (!existing.timeComplexity && candidate.timeComplexity) existing.timeComplexity = candidate.timeComplexity;
+      if (!existing.spaceComplexity && candidate.spaceComplexity) existing.spaceComplexity = candidate.spaceComplexity;
+      if (candidate.striverRef && !existing.striverRef) existing.striverRef = candidate.striverRef;
+      if (candidate.neetCodeRef && !existing.neetCodeRef) existing.neetCodeRef = candidate.neetCodeRef;
     } else {
       newQuestionsAdded++;
+      candidate.sources = [sourceName];
       questions.push(candidate);
     }
   };
 
   for (const candidate of dsaSheetQuestions) {
-    mergeCandidate(candidate);
+    mergeCandidate(candidate, "DSA Sheet");
   }
 
   for (const candidate of striverSheetQuestions) {
-    mergeCandidate(candidate);
+    mergeCandidate(candidate, "Striver Sheet");
   }
+
+  // Merge Arsh Sheet with sub-stats tracking
+  const preArshNewCount = newQuestionsAdded;
+  const preArshDupCount = duplicatesSkipped;
+  for (const candidate of arshSheetQuestions) {
+    mergeCandidate(candidate, "Arsh DSA Sheet");
+  }
+  const arshNewQuestionsAdded = newQuestionsAdded - preArshNewCount;
+  const arshDuplicatesSkipped = duplicatesSkipped - preArshDupCount;
+
+  // Compile Arsh unique topics
+  const arshTopicsSet = new Set<string>();
+  arshSheetQuestions.forEach(q => {
+    if (q.topicId) arshTopicsSet.add(q.topicId);
+  });
+  const arshTopicsDetected = Array.from(arshTopicsSet);
+
+  // Write import report to generated directory
+  const reportPath = path.join(process.cwd(), "generated", "arsh-import-report.json");
+  const reportDir = path.dirname(reportPath);
+  if (!fs.existsSync(reportDir)) {
+    fs.mkdirSync(reportDir, { recursive: true });
+  }
+  fs.writeFileSync(
+    reportPath,
+    JSON.stringify({
+      totalRowsInWorkbook: arshSheetRawRowsCount,
+      successfullyImported: arshSheetQuestions.length,
+      newQuestionsAdded: arshNewQuestionsAdded,
+      duplicatesSkipped: arshDuplicatesSkipped,
+      recordsMerged: arshDuplicatesSkipped,
+      invalidRecords: arshSheetRawRowsCount - arshSheetQuestions.length,
+      finalQuestionCount: questions.length,
+      topicsDetected: arshTopicsDetected,
+      importSuccessPercentage: arshSheetRawRowsCount > 0 ? (arshSheetQuestions.length / arshSheetRawRowsCount) * 100 : 0,
+      timestamp: new Date().toISOString()
+    }, null, 2)
+  );
+
+  console.log(`\n====================================================`);
+  console.log(`          ARSH DSA SHEET IMPORT REPORT              `);
+  console.log(`====================================================`);
+  console.log(`✔ Total rows in workbook:        ${arshSheetRawRowsCount}`);
+  console.log(`✔ Successfully imported:         ${arshSheetQuestions.length}`);
+  console.log(`✔ New questions added:           ${arshNewQuestionsAdded}`);
+  console.log(`✔ Duplicates/records merged:     ${arshDuplicatesSkipped}`);
+  console.log(`✔ Invalid records:               ${arshSheetRawRowsCount - arshSheetQuestions.length}`);
+  console.log(`✔ Topics detected:               ${arshTopicsDetected.join(", ")}`);
+  console.log(`✔ Import success rate:           ${(arshSheetRawRowsCount > 0 ? (arshSheetQuestions.length / arshSheetRawRowsCount) * 100 : 0).toFixed(1)}%`);
+  console.log(`====================================================\n`);
 
   console.log(`\n📊 Sync Summary:`);
   console.log(`   - Existing question count: ${baseQuestions.length}`);
   console.log(`   - Questions discovered in DSA SHEET: ${dsaSheetQuestions.length}`);
   console.log(`   - Questions discovered in Striver Sheet: ${striverSheetQuestions.length}`);
+  console.log(`   - Questions discovered in Arsh Sheet: ${arshSheetQuestions.length}`);
   console.log(`   - New questions added: ${newQuestionsAdded}`);
   console.log(`   - Duplicate questions skipped: ${duplicatesSkipped}`);
   console.log(`   - Final total count: ${questions.length}\n`);

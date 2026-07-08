@@ -115,6 +115,16 @@ export function QuestionCard({ question, showTopic, compact }: QuestionCardProps
               </span>
             )}
 
+            {/* Sheet Sources */}
+            {question.sources && question.sources.map((src) => (
+              <span
+                key={src}
+                className="rounded-full border border-cyan-500/25 bg-cyan-500/10 px-2 py-0.5 text-[10px] text-cyan-400 font-semibold font-mono"
+              >
+                {src}
+              </span>
+            ))}
+
             {/* Bookmark */}
             <button
               type="button"

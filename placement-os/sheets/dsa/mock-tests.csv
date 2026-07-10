@@ -1,4 +1,4 @@
 id,title,duration_min,question_ids,company_tags
 mock-1,Placement Warm-up,60,arr-l1-3|str-l1-2|ll-l1-1|tr-l1-1|st-l1-1,
-mock-2,Service OA Simulation,90,arr-l2-3|bs-l3-1|tp-l2-2|hm-l3-1|tr-l2-3,
+mock-2,Service OA Simulation,90,arr-l2-3|bs-l3-1|tp-l2-2|hm-l3-1|qu-l2-2,
 mock-3,Product Interview Mix,90,sw-l2-2|ll-l3-2|hp-l2-1|gd-l3-1|str-l4-1,

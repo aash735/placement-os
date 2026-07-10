@@ -22,7 +22,7 @@
         "bs-l3-1",
         "tp-l2-2",
         "hm-l3-1",
-        "tr-l2-3"
+        "qu-l2-2"
       ],
       "companyTags": []
     },
@@ -463,76 +463,131 @@
     {
       "path": "analytics/weekly-plan.csv",
       "rows": 3,
-      "updated": "2026-06-25T16:51:58.534Z"
+      "updated": "2026-07-10T06:48:14.785Z"
     },
     {
       "path": "aptitude/config.csv",
       "rows": 3,
-      "updated": "2026-06-25T16:51:58.534Z"
+      "updated": "2026-07-10T06:48:14.786Z"
     },
     {
       "path": "aptitude/topics.csv",
       "rows": 13,
-      "updated": "2026-06-25T16:51:58.535Z"
+      "updated": "2026-07-10T06:48:14.787Z"
     },
     {
       "path": "companies/profiles.csv",
       "rows": 10,
-      "updated": "2026-06-25T16:51:58.536Z"
+      "updated": "2026-07-10T06:48:14.788Z"
     },
     {
       "path": "companies/resources.csv",
       "rows": 59,
-      "updated": "2026-06-25T16:51:58.536Z"
+      "updated": "2026-07-10T06:48:14.789Z"
     },
     {
       "path": "dsa/mock-tests.csv",
       "rows": 3,
-      "updated": "2026-06-25T16:51:58.537Z"
+      "updated": "2026-07-10T07:22:04.825Z"
     },
     {
       "path": "dsa/questions.csv",
-      "rows": 94,
-      "updated": "2026-06-25T16:51:58.537Z"
+      "rows": 83,
+      "updated": "2026-07-10T07:22:04.823Z"
     },
     {
       "path": "dsa/topics.csv",
       "rows": 19,
-      "updated": "2026-06-25T16:51:58.538Z"
+      "updated": "2026-07-10T06:48:14.796Z"
     },
     {
       "path": "revision/cycles.csv",
       "rows": 4,
-      "updated": "2026-06-25T16:51:58.538Z"
+      "updated": "2026-07-10T06:48:14.799Z"
     },
     {
       "path": "Book1.xlsx",
       "rows": 47,
-      "updated": "2026-06-25T16:51:58.718Z"
+      "updated": "2026-07-10T06:48:15.271Z"
     },
     {
       "path": "DSA by Shradha Ma'am.xlsx",
       "rows": 415,
-      "updated": "2026-06-25T16:51:58.721Z"
+      "updated": "2026-07-10T06:48:15.280Z"
     },
     {
       "path": "DSA Sheet by Arsh (45-60 Days Plan).xlsx",
       "rows": 300,
-      "updated": "2026-07-07T17:01:19.877Z"
+      "updated": "2026-07-10T06:48:15.275Z"
     },
     {
       "path": "DSA SHEET.xlsx",
       "rows": 405,
-      "updated": "2026-06-25T16:51:58.720Z"
+      "updated": "2026-07-10T06:48:15.274Z"
     },
     {
       "path": "Striver Sheet.xlsx",
       "rows": 161,
-      "updated": "2026-06-25T16:51:58.723Z"
+      "updated": "2026-07-10T06:48:15.287Z"
     }
   ],
-  "loadedAt": "2026-07-08T04:27:47.461Z",
+  "loadedAt": "2026-07-10T07:23:37.075Z",
   "validationIssues": [
+    {
+      "row": 85,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 86,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 87,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 88,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 89,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 90,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 91,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 92,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 93,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 94,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
+    {
+      "row": 95,
+      "field": "difficulty",
+      "message": "Required difficulty"
+    },
     {
       "row": 96,
       "field": "difficulty",
@@ -2490,61 +2545,6 @@
     },
     {
       "row": 487,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 488,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 489,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 490,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 491,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 492,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 493,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 494,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 495,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 496,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 497,
-      "field": "difficulty",
-      "message": "Required difficulty"
-    },
-    {
-      "row": 498,
       "field": "difficulty",
       "message": "Required difficulty"
     }

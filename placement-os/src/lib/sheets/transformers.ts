@@ -68,12 +68,12 @@ function normalizeTopicName(topic: string): string {
     .join(" ");
 }
 
-function normalizeCompanyName(name: string): string {
+export function normalizeCompanyName(name: string): string {
   const clean = name.trim();
   if (!clean) return "";
   // Filter out single char, noise words, or very short non-company tokens
   if (clean.length <= 1) return "";
-  if (/^(in|at|of|and|or|for|the|a|an|is|by|to|on)$/i.test(clean)) return "";
+  if (/^(in|at|of|and|or|for|the|a|an|is|by|to|on|all|mnc|mncs|all mnc|all mncs)$/i.test(clean)) return "";
   
   const lower = clean.toLowerCase();
   const map: Record<string, string> = {
@@ -112,6 +112,8 @@ function normalizeCompanyName(name: string): string {
     "morgan stanley": "Morgan Stanley",
     "d-e-shaw": "D.E. Shaw",
     "de shaw": "D.E. Shaw",
+    "d.e. shaw": "D.E. Shaw",
+    "d.e.shaw": "D.E. Shaw",
     "media.net": "Media.net",
     "societe generale": "Societe Generale",
     "makemytrip": "MakeMyTrip",
@@ -129,6 +131,8 @@ function normalizeCompanyName(name: string): string {
     capgemini: "Capgemini",
     amdocs: "Amdocs",
     maq: "MAQ Software",
+    "maq software": "MAQ Software",
+    software: "",
   };
   if (map[lower]) return map[lower];
   // Capitalize properly
@@ -460,7 +464,7 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
     "Goldman Sachs", "Morgan Stanley", "D-E-Shaw", "Media.net", "Societe Generale",
     "MakeMyTrip", "Apna College", "Streamoid Technologies", "LinkedIn",
     "American Express", "Bank of America", "JP Morgan", "J.P. Morgan",
-    "DE Shaw", "Thought Works", "ThoughtWorks",
+    "DE Shaw", "D.E. Shaw", "D.e. Shaw", "MAQ Software", "Thought Works", "ThoughtWorks",
   ];
 
   const rawCompanies = companiesStr
@@ -483,7 +487,8 @@ export function rowToDSAQuestion(row: SheetRow): DSAQuestion | null {
 
   let companies = rawCompanies.map(normalizeCompanyName).filter(Boolean);
   if (matchedQ && matchedQ.companies) {
-    companies = companies.concat(matchedQ.companies);
+    const normalizedSeed = matchedQ.companies.map(normalizeCompanyName).filter(Boolean);
+    companies = companies.concat(normalizedSeed);
   }
   const uniqueCompanies = Array.from(new Set(companies));
 

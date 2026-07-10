@@ -149,7 +149,7 @@ export default function PracticeRoomPage() {
             <HelpCircle className="h-12 w-12 mx-auto text-zinc-500 mb-4" />
             <h3 className="text-lg font-bold text-white mb-2">No Questions Found</h3>
             <p className="text-sm text-zinc-400 mb-6">
-              We don't have any practice questions loaded for "{topicName}" yet. Please try another topic.
+              We don&apos;t have any practice questions loaded for &quot;{topicName}&quot; yet. Please try another topic.
             </p>
             <Link href="/aptitude">
               <button className="px-6 py-2.5 rounded-xl bg-cyan-500 text-black font-semibold hover:bg-cyan-400 transition-colors flex items-center justify-center mx-auto space-x-2">

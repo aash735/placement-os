@@ -391,8 +391,12 @@ export async function saveDailyLog(userId: string, l: DailyLog) {
 /** Add Revision Log entry */
 export async function saveRevisionLog(userId: string, r: RevisionEntry) {
   if (!hasSupabaseConfig) return;
+
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  const isValidUuid = r.id && uuidRegex.test(r.id);
+
   const { error } = await supabase.from("revision_history").insert({
-    id: r.id || undefined,
+    id: isValidUuid ? r.id : undefined,
     user_id: userId,
     question_id: r.questionId,
     reviewed_at: r.reviewedAt || new Date().toISOString(),

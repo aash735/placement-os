@@ -25,6 +25,7 @@ import type {
 } from "@/types";
 import { useDataStore } from "@/store/data-store";
 import * as db from "./supabase-db";
+import { generateUUID } from "./utils";
 
 // Re-export xp helpers
 export { levelFromXp } from "@/lib/xp";
@@ -284,6 +285,7 @@ export const useProgressStore = create<ProgressState>()(
         );
 
         const now = new Date().toISOString();
+        const revisionId = (status === "revised" && prevStatus !== "revised") ? generateUUID() : "";
         const updated: UserQuestionProgress = {
           ...prev,
           status,
@@ -330,7 +332,7 @@ export const useProgressStore = create<ProgressState>()(
           topicProgress: { ...state.topicProgress, [topicId]: topicProg },
           revisionHistory:
             status === "revised" && prevStatus !== "revised"
-              ? [...state.revisionHistory, { id: `${questionId}-${now}`, questionId, reviewedAt: now }]
+              ? [...state.revisionHistory, { id: revisionId, questionId, reviewedAt: now }]
               : state.revisionHistory,
           dailyLogs: logs,
           ...syncLevelFromXp(newXp),
@@ -350,7 +352,7 @@ export const useProgressStore = create<ProgressState>()(
             energyMode: state.energyMode,
           });
           if (status === "revised" && prevStatus !== "revised") {
-            db.saveRevisionLog(state.userId, { id: `${questionId}-${now}`, questionId, reviewedAt: now });
+            db.saveRevisionLog(state.userId, { id: revisionId, questionId, reviewedAt: now });
           }
         }
 

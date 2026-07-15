@@ -29,6 +29,7 @@ import type {
 } from "@/types";
 import { useDataStore } from "@/store/data-store";
 import * as db from "./supabase-db";
+import { generateUUID } from "./utils";
 import mcqQuestions from "@/data/mcq-questions.json";
 
 // Re-export xp helpers
@@ -567,6 +568,7 @@ export const useProgressStore = create<ProgressState>()(
         );
 
         const now = new Date().toISOString();
+        const revisionId = (status === "revised" && prevStatus !== "revised") ? generateUUID() : "";
         const updated: UserQuestionProgress = {
           ...prev,
           status,
@@ -613,7 +615,7 @@ export const useProgressStore = create<ProgressState>()(
           topicProgress: { ...state.topicProgress, [topicId]: topicProg },
           revisionHistory:
             status === "revised" && prevStatus !== "revised"
-              ? [...state.revisionHistory, { id: `${questionId}-${now}`, questionId, reviewedAt: now }]
+              ? [...state.revisionHistory, { id: revisionId, questionId, reviewedAt: now }]
               : state.revisionHistory,
           dailyLogs: logs,
           ...syncLevelFromXp(newXp),
@@ -633,7 +635,7 @@ export const useProgressStore = create<ProgressState>()(
             energyMode: state.energyMode,
           });
           if (status === "revised" && prevStatus !== "revised") {
-            db.saveRevisionLog(state.userId, { id: `${questionId}-${now}`, questionId, reviewedAt: now });
+            db.saveRevisionLog(state.userId, { id: revisionId, questionId, reviewedAt: now });
           }
         }
 
@@ -1580,7 +1582,7 @@ export const useProgressStore = create<ProgressState>()(
       addCountdownGoal: (goal) => {
         const state = get();
         const newGoal = {
-          id: `goal-${Date.now()}`,
+          id: generateUUID(),
           title: goal.title,
           targetDate: goal.targetDate,
           milestones: goal.milestones.map((m) => ({ text: m, completed: false })),
@@ -1641,7 +1643,7 @@ export const useProgressStore = create<ProgressState>()(
         const now = Date.now();
         const endTime = new Date(now + durationSec * 1000).toISOString();
         const session = {
-          id: `int-${now}`,
+          id: generateUUID(),
           type,
           status: "in-progress" as const,
           score: 0,
@@ -1747,7 +1749,7 @@ export const useProgressStore = create<ProgressState>()(
       addPlannerBlock: (block) => {
         const state = get();
         const newBlock = {
-          id: `block-${Date.now()}`,
+          id: generateUUID(),
           time: block.time,
           task: block.task,
           energy: block.energy,

@@ -515,8 +515,12 @@ export async function saveDailyLog(userId: string, l: DailyLog) {
 export async function saveRevisionLog(userId: string, r: RevisionEntry) {
   if (!hasSupabaseConfig) return;
   if (isGuest(userId)) return;
+
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  const isValidUuid = r.id && uuidRegex.test(r.id);
+
   const { error } = await supabase.from("revision_history").insert({
-    id: r.id || undefined,
+    id: isValidUuid ? r.id : undefined,
     user_id: userId,
     question_id: r.questionId,
     reviewed_at: r.reviewedAt || new Date().toISOString(),
@@ -542,14 +546,22 @@ export async function saveAchievement(userId: string, achievementId: string) {
 export async function saveCountdownGoal(userId: string, g: any) {
   if (!hasSupabaseConfig) return;
   if (isGuest(userId)) return;
-  const { error } = await supabase.from("countdown_goals").upsert({
-    id: g.id,
+
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  const isValidUuid = g.id && uuidRegex.test(g.id);
+
+  const payload: any = {
     user_id: userId,
     title: g.title,
     target_date: g.targetDate,
     milestones: g.milestones,
     updated_at: new Date().toISOString(),
-  }, {
+  };
+  if (isValidUuid) {
+    payload.id = g.id;
+  }
+
+  const { error } = await supabase.from("countdown_goals").upsert(payload, {
     onConflict: "user_id,id",
   });
   if (error) console.error("Error saving countdown goal:", extractError(error));
@@ -568,20 +580,28 @@ export async function deleteCountdownGoal(userId: string, id: string) {
 }
 
 /** Save mock interview session */
-export async function saveMockInterview(userId: string, i: any) {
+export async function saveMockInterview(userId: string, session: any) {
   if (!hasSupabaseConfig) return;
   if (isGuest(userId)) return;
-  const { error } = await supabase.from("mock_interviews").upsert({
-    id: i.id,
+
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  const isValidUuid = session.id && uuidRegex.test(session.id);
+
+  const payload: any = {
     user_id: userId,
-    type: i.type,
-    status: i.status,
-    score: i.score,
-    questions: i.questions,
-    answers: i.answers,
-    feedback: i.feedback || null,
-    completed_at: i.completedAt || new Date().toISOString(),
-  }, {
+    type: session.type,
+    status: session.status,
+    score: session.score,
+    questions: session.questions,
+    answers: session.answers,
+    feedback: session.feedback || null,
+    completed_at: session.completedAt || new Date().toISOString(),
+  };
+  if (isValidUuid) {
+    payload.id = session.id;
+  }
+
+  const { error } = await supabase.from("mock_interviews").upsert(payload, {
     onConflict: "user_id,id",
   });
   if (error) console.error("Error saving mock interview:", extractError(error));
@@ -591,15 +611,23 @@ export async function saveMockInterview(userId: string, i: any) {
 export async function savePlannerBlock(userId: string, b: any) {
   if (!hasSupabaseConfig) return;
   if (isGuest(userId)) return;
-  const { error } = await supabase.from("daily_planner").upsert({
-    id: b.id,
+
+  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  const isValidUuid = b.id && uuidRegex.test(b.id);
+
+  const payload: any = {
     user_id: userId,
     time: b.time,
     task: b.task,
     energy: b.energy,
     completed: b.completed,
     updated_at: new Date().toISOString(),
-  }, {
+  };
+  if (isValidUuid) {
+    payload.id = b.id;
+  }
+
+  const { error } = await supabase.from("daily_planner").upsert(payload, {
     onConflict: "user_id,id",
   });
   if (error) console.error("Error saving daily planner block:", extractError(error));

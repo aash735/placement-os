@@ -245,7 +245,7 @@ export async function fetchUserData(userId: string) {
     })) || [];
 
     // Custom weekly plan blocks
-    const customWeeklyPlan = weeklyPlannerRes?.data?.map((w) => ({
+    const customWeeklyPlan = (weeklyPlannerRes?.data || [])?.map((w) => ({
       week: w.week,
       focus: w.focus,
       hours: w.hours,
@@ -519,12 +519,17 @@ export async function saveRevisionLog(userId: string, r: RevisionEntry) {
   const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   const isValidUuid = r.id && uuidRegex.test(r.id);
 
-  const { error } = await supabase.from("revision_history").insert({
-    id: isValidUuid ? r.id : undefined,
+  const payload: any = {
     user_id: userId,
     question_id: r.questionId,
     reviewed_at: r.reviewedAt || new Date().toISOString(),
-  });
+  };
+
+  if (isValidUuid) {
+    payload.id = r.id;
+  }
+
+  const { error } = await supabase.from("revision_history").insert(payload);
   if (error) console.error("Error adding revision log:", extractError(error));
 }
 

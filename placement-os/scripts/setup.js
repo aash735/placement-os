@@ -22,11 +22,13 @@ try {
 const envPath = path.join(__dirname, '..', '.env.local');
 let envCreated = false;
 if (!fs.existsSync(envPath)) {
-  const defaultEnv = `NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
+  const defaultEnv = `NEXT_PUBLIC_SUPABASE_URL=${url}
+NEXT_PUBLIC_SUPABASE_ANON_KEY=${key}
 `;
   fs.writeFileSync(envPath, defaultEnv, 'utf8');
-  console.log("\x1b[32m✔ Created missing .env.local with Supabase placeholders.\x1b[0m");
+  console.log("\x1b[32m✔ Created missing .env.local.\x1b[0m");
   envCreated = true;
 } else {
   console.log("\x1b[32m✔ .env.local exists.\x1b[0m");

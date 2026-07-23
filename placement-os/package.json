@@ -5,14 +5,12 @@
   "scripts": {
     "setup": "node scripts/setup.js",
     "dev": "node scripts/setup.js && npm run sheets:sync && next dev --webpack",
-    "build": "node scripts/setup.js && npm run sheets:sync && next build --webpack",
+    "build": "node scripts/setup.js && npm run sheets:sync && next build",
     "start": "next start",
-    "lint": "npx eslint",
-    "sheets:sync": "node node_modules/tsx/dist/cli.mjs scripts/sync-sheets.ts",
-    "test": "npx tsx --test __tests__/**/*.test.ts"
+    "lint": "eslint",
+    "sheets:sync": "tsx scripts/sync-sheets.ts"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.12.0",
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.106.1",
     "@types/bcryptjs": "^2.4.6",
@@ -27,7 +25,6 @@
     "pdfjs-dist": "^3.11.174",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-redux": "^9.3.0",
     "recharts": "^3.8.1",
     "tailwind-merge": "^3.6.0",
     "xlsx": "^0.18.5",

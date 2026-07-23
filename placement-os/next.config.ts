@@ -1,8 +1,5 @@
 import type { NextConfig } from "next";
 import path from "path";
-import { createRequire } from "module";
-
-const require = createRequire(import.meta.url);
 
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
@@ -16,11 +13,8 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  outputFileTracingRoot: path.resolve(import.meta.dirname || process.cwd()),
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   turbopack: {
+    root: path.resolve(__dirname),
     resolveAlias: {
       canvas: "./src/lib/empty.ts",
     },
@@ -29,9 +23,6 @@ const nextConfig: NextConfig = {
     config.resolve.alias = {
       ...config.resolve.alias,
       canvas: false,
-      "@reduxjs/toolkit": path.dirname(require.resolve("@reduxjs/toolkit/package.json")),
-      "framer-motion": path.dirname(require.resolve("framer-motion/package.json")),
-      "lucide-react": path.dirname(require.resolve("lucide-react/package.json")),
     };
     return config;
   },

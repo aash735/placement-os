@@ -1,7 +1,7 @@
 /**
  * custom-auth.ts
  *
- * Custom authentication layer using Supabase PostgreSQL (users table).
+ * Custom authentication layer using Supabase PostgreSQL (app_users table).
  * NO Supabase Auth. All operations are raw database queries via anon key.
  *
  * KEY FIX: Supabase JS error objects have non-enumerable properties.
@@ -21,12 +21,16 @@ export interface AuthResult {
 /** Extract a readable message from a Supabase error object */
 function extractError(err: any): string {
   if (!err) return "Unknown error";
+
   // Supabase errors have non-enumerable properties — must access directly
   const msg = err?.message || err?.error_description || err?.hint || "";
   const code = err?.code || err?.status || "";
   const details = err?.details || "";
+
   if (msg) return `${msg}${details ? ` — ${details}` : ""}`;
+
   if (code) return `Database error (code: ${code})`;
+
   return "An unexpected database error occurred.";
 }
 
@@ -47,29 +51,56 @@ export async function registerUser(
   }
 
   // ── Input validation ─────────────────────────────────────────────────────
+
   const trimmedUsername = username?.trim().toLowerCase();
   const trimmedName = name?.trim();
 
   if (!trimmedUsername || trimmedUsername.length < 3) {
-    return { user: null, error: "Username must be at least 3 characters." };
+    return {
+      user: null,
+      error: "Username must be at least 3 characters.",
+    };
   }
+
   if (!password || password.length < 6) {
-    return { user: null, error: "Password must be at least 6 characters." };
+    return {
+      user: null,
+      error: "Password must be at least 6 characters.",
+    };
   }
+
   if (!/^[a-zA-Z0-9_.\-]+$/.test(trimmedUsername)) {
     return {
       user: null,
-      error: "Username can only contain letters, numbers, underscores, dots, or hyphens.",
+      error:
+        "Username can only contain letters, numbers, underscores, dots, or hyphens.",
     };
   }
+
   if (!trimmedName) {
-    return { user: null, error: "Name is required." };
+    return {
+      user: null,
+      error: "Name is required.",
+    };
   }
 
   try {
     const token = generateSessionToken();
 
-    // Call database secure registration RPC
+    // Call database registration RPC.
+    //
+    // IMPORTANT:
+    // This matches the current Supabase function:
+    //
+    // register_user(
+    //   p_username text,
+    //   p_password text,
+    //   p_full_name text,
+    //   p_semester text
+    // )
+    //
+    // The RPC itself inserts into public.app_users.
+
     const { data, error: rpcError } = await supabase.rpc("register_user", {
       p_username: trimmedUsername,
       p_password: password,
@@ -79,17 +110,33 @@ export async function registerUser(
 
     if (rpcError) {
       const msg = extractError(rpcError);
-      console.error("[registerUser] RPC failed:", msg, rpcError);
-      return { user: null, error: `Registration failed: ${msg}` };
+
+      console.error(
+        "[registerUser] RPC failed:",
+        msg,
+        rpcError
+      );
+
+      return {
+        user: null,
+        error: `Registration failed: ${msg}`,
+      };
     }
 
     if (data?.error) {
-      return { user: null, error: data.error };
+      return {
+        user: null,
+        error: data.error,
+      };
     }
 
     const userData = data?.user;
+
     if (!userData) {
-      return { user: null, error: "Registration failed: no user data returned." };
+      return {
+        user: null,
+        error: "Registration failed: no user data returned.",
+      };
     }
 
     const sessionUser: SessionUser = {
@@ -102,11 +149,28 @@ export async function registerUser(
       createdAt: new Date().toISOString(),
     };
 
-    return { user: sessionUser, error: null };
+    console.log(
+      "[registerUser] User registered successfully:",
+      userData.username
+    );
+
+    return {
+      user: sessionUser,
+      error: null,
+    };
   } catch (err: any) {
     const msg = extractError(err);
-    console.error("[registerUser] Exception:", msg, err);
-    return { user: null, error: `Unexpected error: ${msg}` };
+
+    console.error(
+      "[registerUser] Exception:",
+      msg,
+      err
+    );
+
+    return {
+      user: null,
+      error: `Unexpected error: ${msg}`,
+    };
   }
 }
 
@@ -127,13 +191,27 @@ export async function loginUser(
   const trimmedUsername = username?.trim().toLowerCase();
 
   if (!trimmedUsername || !password) {
-    return { user: null, error: "Username and password are required." };
+    return {
+      user: null,
+      error: "Username and password are required.",
+    };
   }
 
   try {
     const token = generateSessionToken();
 
-    // Call database secure login RPC
+    // Call database login RPC.
+    //
+    // IMPORTANT:
+    // This matches the current Supabase function:
+    //
+    // login_user(
+    //   p_username text,
+    //   p_password text
+    // )
+    //
+    // The RPC itself reads from public.app_users.
+
     const { data, error: rpcError } = await supabase.rpc("login_user", {
       p_username: trimmedUsername,
       p_password: password,
@@ -141,17 +219,33 @@ export async function loginUser(
 
     if (rpcError) {
       const msg = extractError(rpcError);
-      console.error("[loginUser] RPC failed:", msg, rpcError);
-      return { user: null, error: `Login failed: ${msg}` };
+
+      console.error(
+        "[loginUser] RPC failed:",
+        msg,
+        rpcError
+      );
+
+      return {
+        user: null,
+        error: `Login failed: ${msg}`,
+      };
     }
 
     if (data?.error) {
-      return { user: null, error: data.error };
+      return {
+        user: null,
+        error: data.error,
+      };
     }
 
     const userData = data?.user;
+
     if (!userData) {
-      return { user: null, error: "Login failed: no user data returned." };
+      return {
+        user: null,
+        error: "Login failed: no user data returned.",
+      };
     }
 
     const sessionUser: SessionUser = {
@@ -164,36 +258,65 @@ export async function loginUser(
       createdAt: new Date().toISOString(),
     };
 
-    return { user: sessionUser, error: null };
+    console.log(
+      "[loginUser] User logged in:",
+      userData.username
+    );
+
+    return {
+      user: sessionUser,
+      error: null,
+    };
   } catch (err: any) {
     const msg = extractError(err);
-    console.error("[loginUser] Exception:", msg, err);
-    return { user: null, error: `Unexpected error: ${msg}` };
+
+    console.error(
+      "[loginUser] Exception:",
+      msg,
+      err
+    );
+
+    return {
+      user: null,
+      error: `Unexpected error: ${msg}`,
+    };
   }
 }
 
 // ─── Fetch user profile from DB (for hydration validation) ────────────────────
 
-export async function getUserById(userId: string): Promise<SessionUser | null> {
+export async function getUserById(
+  userId: string
+): Promise<SessionUser | null> {
   if (!hasSupabaseConfig) return null;
-  if (!userId || userId === "guest-user-id") return null;
-  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-  if (!uuidRegex.test(userId)) return null;
+
+  if (!userId || userId === "guest-user-id") {
+    return null;
+  }
+
+  const uuidRegex =
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+  if (!uuidRegex.test(userId)) {
+    return null;
+  }
 
   try {
     const { data, error } = await supabase
-      .from("users")
-      .select("id, username, full_name, semester")
+      .from("app_users")
+      .select("id, username, name, email, semester")
       .eq("id", userId)
       .maybeSingle();
 
-    if (error || !data) return null;
+    if (error || !data) {
+      return null;
+    }
 
     return {
       id: data.id,
       username: data.username,
-      name: data.full_name,
-      email: null,
+      name: data.name,
+      email: data.email ?? null,
       semester: data.semester,
       token: "",
       createdAt: "",

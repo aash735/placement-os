@@ -463,75 +463,75 @@
     {
       "path": "analytics/weekly-plan.csv",
       "rows": 3,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.147Z"
     },
     {
       "path": "aptitude/config.csv",
       "rows": 3,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.148Z"
     },
     {
       "path": "aptitude/topics.csv",
       "rows": 13,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.148Z"
     },
     {
       "path": "companies/profiles.csv",
       "rows": 10,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.149Z"
     },
     {
       "path": "companies/resources.csv",
       "rows": 59,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.149Z"
     },
     {
       "path": "dsa/mock-tests.csv",
       "rows": 3,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.149Z"
     },
     {
       "path": "dsa/questions.csv",
       "rows": 83,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.150Z"
     },
     {
       "path": "dsa/topics.csv",
       "rows": 19,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.150Z"
     },
     {
       "path": "revision/cycles.csv",
       "rows": 4,
-      "updated": "2026-07-15T16:40:04.103Z"
+      "updated": "2026-08-13T17:29:11.150Z"
     },
     {
       "path": "Book1.xlsx",
       "rows": 47,
-      "updated": "2026-07-15T16:40:04.244Z"
+      "updated": "2026-08-13T17:29:11.326Z"
     },
     {
       "path": "DSA by Shradha Ma'am.xlsx",
       "rows": 415,
-      "updated": "2026-07-15T16:40:04.246Z"
+      "updated": "2026-08-13T17:29:11.342Z"
     },
     {
       "path": "DSA Sheet by Arsh (45-60 Days Plan).xlsx",
       "rows": 300,
-      "updated": "2026-07-15T16:40:04.246Z"
+      "updated": "2026-08-13T17:29:11.342Z"
     },
     {
       "path": "DSA SHEET.xlsx",
       "rows": 405,
-      "updated": "2026-07-15T16:40:04.246Z"
+      "updated": "2026-08-13T17:29:11.326Z"
     },
     {
       "path": "Striver Sheet.xlsx",
       "rows": 161,
-      "updated": "2026-07-15T16:40:04.248Z"
+      "updated": "2026-08-13T17:29:11.342Z"
     }
   ],
-  "loadedAt": "2026-07-17T06:44:50.705Z",
+  "loadedAt": "2026-08-14T04:50:52.830Z",
   "validationIssues": [
     {
       "row": 85,

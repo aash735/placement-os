@@ -725,61 +725,141 @@ export async function saveUserProfile(
 
 /**
  * Save or update question status/attempts/notes.
+ *
+ * IMPORTANT:
+ * One user can have only one progress row for each question.
+ *
+ * The unique key is:
+ *
+ *     user_id + question_id
+ *
+ * Therefore:
+ *
+ * - First save = INSERT
+ * - Later save for same user/question = UPDATE
  */
 export async function saveQuestionProgress(
   userId: string,
   p: UserQuestionProgress
 ) {
   if (!hasSupabaseConfig) {
+    console.warn(
+      "saveQuestionProgress: Supabase is not configured."
+    );
     return;
   }
 
   if (isGuest(userId)) {
+    console.warn(
+      "saveQuestionProgress: Guest user. Progress will remain local."
+    );
     return;
   }
 
-  const { error } =
+  if (!userId) {
+    console.error(
+      "saveQuestionProgress: userId is required."
+    );
+    return;
+  }
+
+  if (!p) {
+    console.error(
+      "saveQuestionProgress: progress object is required."
+    );
+    return;
+  }
+
+  if (!p.questionId) {
+    console.error(
+      "saveQuestionProgress: questionId is required."
+    );
+    return;
+  }
+
+  const payload = {
+    user_id: userId,
+
+    question_id:
+      p.questionId,
+
+    status:
+      p.status,
+
+    attempts:
+      p.attempts ?? 0,
+
+    last_attempt_at:
+      p.lastAttemptAt || null,
+
+    solved_at:
+      p.solvedAt || null,
+
+    revised_at:
+      p.revisedAt || null,
+
+    mastered_at:
+      p.masteredAt || null,
+
+    next_revision_at:
+      p.nextRevisionAt || null,
+
+    time_spent_min:
+      p.timeSpentMin ?? 0,
+
+    notes:
+      p.notes || null,
+
+    updated_at:
+      new Date().toISOString(),
+  };
+
+  console.log(
+    "Saving question progress to Supabase:",
+    {
+      userId,
+      questionId:
+        p.questionId,
+      status:
+        p.status,
+      attempts:
+        p.attempts,
+      timeSpentMin:
+        p.timeSpentMin,
+    }
+  );
+
+  const { data, error } =
     await supabase
       .from("user_progress")
-      .upsert({
-        user_id: userId,
-        question_id:
-          p.questionId,
-        status: p.status,
-        attempts:
-          p.attempts,
-
-        last_attempt_at:
-          p.lastAttemptAt,
-
-        solved_at:
-          p.solvedAt,
-
-        revised_at:
-          p.revisedAt,
-
-        mastered_at:
-          p.masteredAt,
-
-        next_revision_at:
-          p.nextRevisionAt,
-
-        time_spent_min:
-          p.timeSpentMin,
-
-        notes:
-          p.notes || null,
-
-        updated_at:
-          new Date().toISOString(),
-      });
+      .upsert(
+        payload,
+        {
+          onConflict:
+            "user_id,question_id",
+        }
+      )
+      .select()
+      .single();
 
   if (error) {
     console.error(
-      "Error saving question progress:",
+      "❌ Error saving question progress:",
       extractError(error)
     );
+
+    console.error(
+      "Question progress payload:",
+      payload
+    );
+
+    return;
   }
+
+  console.log(
+    "✅ Question progress saved successfully:",
+    data
+  );
 }
 
 // ─── Save Bookmark ───────────────────────────────────────────────────────────
